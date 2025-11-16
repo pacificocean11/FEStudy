@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Newton's method can also be adapted to find a local minimum or maximum of a function $f(x)$. A minimum or maximum occurs where the derivative of the function is zero, i.e., $f'(x)=0$. Therefore, finding the minimum of a function $f(x)$ is equivalent to finding a root of its derivative, $f'(x)$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Formula</h3>\n<p class=\"mb-4\">To apply Newton's method for minimization, we apply the standard root-finding formula to the function $g(x) = f'(x)$. This requires finding the derivative of $g(x)$, which is the second derivative of the original function, $g'(x) = f''(x)$.</p>\n<p class=\"mb-4\">The iterative formula for finding a minimum of $f(x)$ is:</p>\n$$x_{n+1} = x_n - \\frac{f'(x_n)}{f''(x_n)}$$\n<p class=\"mb-4\">This process finds a critical point. To confirm it is a minimum, you would typically check that the second derivative is positive ($f''(x) > 0$) near the solution.</p>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "To find the minimum of the function $f(x) = x^2 - 4x + 10$, what is the iterative formula using Newton's method?",
+      "options": [
+        { "text": "$x_{n+1} = x_n - \\frac{2x_n - 4}{2}$", "isCorrect": true },
+        { "text": "$x_{n+1} = x_n - \\frac{x_n^2 - 4x_n + 10}{2x_n - 4}$", "isCorrect": false },
+        { "text": "$x_{n+1} = x_n - (x_n - 2)$", "isCorrect": false },
+        { "text": "$x_{n+1} = 2$", "isCorrect": false }
+      ],
+      "explanation": "We need the first and second derivatives. $f'(x) = 2x - 4$ and $f''(x) = 2$. The iterative formula is $x_{n+1} = x_n - \\frac{f'(x_n)}{f''(x_n)} = x_n - \\frac{2x_n - 4}{2}$."
+    },
+    {
+      "question": "Use one iteration of Newton's method to find the minimum of $f(x) = x^2 - 4x + 10$, starting with an initial guess of $x_0 = 5$.",
+      "options": [
+        { "text": "2", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "2.5", "isCorrect": false },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Using the formula from the previous question: $x_1 = x_0 - \\frac{2x_0 - 4}{2} = 5 - \\frac{2(5) - 4}{2} = 5 - \\frac{10 - 4}{2} = 5 - \\frac{6}{2} = 5 - 3 = 2$. In this case, since the second derivative is a constant, the method converges in one step."
+    },
+    {
+      "question": "What is the iterative formula for finding a critical point of $f(x) = x^3 - 6x^2 + 5$?",
+      "options": [
+        { "text": "$x_{n+1} = x_n - \\frac{3x_n^2 - 12x_n}{6x_n - 12}$", "isCorrect": true },
+        { "text": "$x_{n+1} = x_n - \\frac{x_n^3 - 6x_n^2 + 5}{3x_n^2 - 12x_n}$", "isCorrect": false },
+        { "text": "$x_{n+1} = x_n - \\frac{6x_n - 12}{3x_n^2 - 12x_n}$", "isCorrect": false },
+        { "text": "$x_{n+1} = x_n - (x_n - 2)$", "isCorrect": false }
+      ],
+      "explanation": "First, find the derivatives: $f'(x) = 3x^2 - 12x$ and $f''(x) = 6x - 12$. The iterative formula is $x_{n+1} = x_n - \\frac{f'(x_n)}{f''(x_n)}$, which gives $x_{n+1} = x_n - \\frac{3x_n^2 - 12x_n}{6x_n - 12}$."
+    },
+    {
+      "question": "Using the formula from the previous question, perform one iteration to find a critical point of $f(x) = x^3 - 6x^2 + 5$ starting with $x_0 = 5$.",
+      "options": [
+        { "text": "4.17", "isCorrect": true },
+        { "text": "4.0", "isCorrect": false },
+        { "text": "4.5", "isCorrect": false },
+        { "text": "5.0", "isCorrect": false }
+      ],
+      "explanation": "Plug $x_0=5$ into the formula: $x_1 = 5 - \\frac{3(5)^2 - 12(5)}{6(5) - 12} = 5 - \\frac{3(25) - 60}{30 - 12} = 5 - \\frac{75 - 60}{18} = 5 - \\frac{15}{18} \\approx 5 - 0.833 = 4.167$."
+    },
+    {
+      "question": "To find the maximum of a function $f(x)$, one can find the minimum of which function?",
+      "options": [
+        { "text": "$-f(x)$", "isCorrect": true },
+        { "text": "$f'(x)$", "isCorrect": false },
+        { "text": "$1/f(x)$", "isCorrect": false },
+        { "text": "$f(x)^2$", "isCorrect": false }
+      ],
+      "explanation": "Maximizing a function $f(x)$ is equivalent to minimizing its negative, $-f(x)$. Therefore, you can apply Newton's method for minimization to the function $g(x) = -f(x)$ to find a maximum of $f(x)$."
+    }
+  ]
+}

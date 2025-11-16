@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Rankine cycle is an idealized thermodynamic cycle that describes the process by which most steam turbine power plants generate electricity. It is a practical model for vapor power cycles.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Processes</h3>\n<p class=\"mb-4\">The cycle involves phase changes of a working fluid (usually water) and consists of four main components and processes:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Process 1-2 (Pump):</strong> Saturated liquid is compressed by a pump to a high pressure. This requires a small amount of work input ($W_{in}$). The process is modeled as isentropic (constant entropy).</li>\n    <li><strong>Process 2-3 (Boiler):</strong> The high-pressure liquid enters a boiler, where it is heated at constant pressure by an external heat source ($Q_{in}$) to become a dry saturated or superheated vapor.</li>\n    <li><strong>Process 3-4 (Turbine):</strong> The high-pressure vapor expands through a turbine, rotating it and generating work output ($W_{out}$). The process is modeled as isentropic.</li>\n    <li><strong>Process 4-1 (Condenser):</strong> The low-pressure vapor enters a condenser, where it is cooled at constant pressure and condenses back into a saturated liquid, rejecting heat ($Q_{out}$) to a cooling medium.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Thermal Efficiency</h3>\n<p class=\"mb-4\">The thermal efficiency of the Rankine cycle is the net work output divided by the heat input.</p>\n$$\\eta_{th} = \\frac{W_{net}}{Q_{in}} = \\frac{W_{turbine} - W_{pump}}{Q_{in}}$$\n<p class=\"mb-4\">Using enthalpies ($h$) at each state point:</p>\n$$\\eta_{th} = \\frac{(h_3 - h_4) - (h_2 - h_1)}{h_3 - h_2}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the Rankine cycle, which component is responsible for generating the main work output?",
+      "options": [
+        { "text": "Pump", "isCorrect": false },
+        { "text": "Boiler", "isCorrect": false },
+        { "text": "Turbine", "isCorrect": true },
+        { "text": "Condenser", "isCorrect": false }
+      ],
+      "explanation": "The high-pressure, high-temperature steam expands through the turbine, causing its blades to rotate. This rotational energy is used to drive a generator, producing the primary work output of the power plant."
+    },
+    {
+      "question": "Heat is added to the working fluid in the Rankine cycle in which component?",
+      "options": [
+        { "text": "Pump", "isCorrect": false },
+        { "text": "Boiler", "isCorrect": true },
+        { "text": "Turbine", "isCorrect": false },
+        { "text": "Condenser", "isCorrect": false }
+      ],
+      "explanation": "The boiler (or steam generator) is where heat from an external source (like combustion of fuel) is transferred to the high-pressure liquid water, turning it into steam."
+    },
+    {
+      "question": "The processes in the ideal Rankine cycle's turbine and pump are assumed to be:",
+      "options": [
+        { "text": "Isothermal", "isCorrect": false },
+        { "text": "Isobaric", "isCorrect": false },
+        { "text": "Isentropic", "isCorrect": true },
+        { "text": "Isochoric", "isCorrect": false }
+      ],
+      "explanation": "In the ideal model, both the expansion in the turbine and the compression in the pump are assumed to be reversible and adiabatic, which means they are isentropic (constant entropy)."
+    }
+  ]
+}

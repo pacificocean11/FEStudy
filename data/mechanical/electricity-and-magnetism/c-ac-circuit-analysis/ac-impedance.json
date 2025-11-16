@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Impedance (Z)</strong> is the total opposition that a circuit presents to alternating current. It is a complex quantity that includes both resistance and reactance. Impedance is the AC equivalent of resistance in DC circuits.</p>\n<p class=\"mb-4\">Impedance is represented as a complex number: $Z = R + jX$, where R is resistance and X is reactance. Its unit is the Ohm (\u03A9).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Impedance of Passive Components</h3>\n<p class=\"mb-4\">The impedance of resistors, inductors, and capacitors depends on the frequency ($\\omega$) of the AC signal.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Resistor (R):</strong> Impedance is purely real and equal to its resistance. It is independent of frequency.</li>\n    $$Z_R = R$$\n    <li><strong>Inductor (L):</strong> Impedance is purely imaginary and is called inductive reactance ($X_L$). It increases with frequency.</li>\n    $$Z_L = j\\omega L = jX_L$$\n    <li><strong>Capacitor (C):</strong> Impedance is also purely imaginary and is called capacitive reactance ($X_C$). It decreases with frequency.</li>\n    $$Z_C = \\frac{1}{j\\omega C} = -\\frac{j}{\\omega C} = -jX_C$$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Total Impedance in Series</h3>\n<p class=\"mb-4\">Impedances in series add together just like resistors in series. For a series RLC circuit:</p>\n$$Z_{total} = Z_R + Z_L + Z_C = R + j\\omega L - \\frac{j}{\\omega C} = R + j(X_L - X_C)$$\n<p class=\"mb-4\">The magnitude of the total impedance is found using the Pythagorean theorem:</p>\n$$|Z| = \\sqrt{R^2 + (X_L - X_C)^2}$$\n<p class=\"mb-4\">Ohm's Law for AC circuits is $V = IZ$, where V and I are RMS values.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the inductive reactance of a 50 mH inductor at a frequency of 60 Hz?",
+      "options": [
+        { "text": "3.0 \u03A9", "isCorrect": false },
+        { "text": "18.85 \u03A9", "isCorrect": true },
+        { "text": "0.053 \u03A9", "isCorrect": false },
+        { "text": "377 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "First, find the angular frequency: $\\omega = 2\\pi f = 2\\pi(60) \\approx 377$ rad/s. The inductance is $L = 50 \\text{ mH} = 0.05$ H. The inductive reactance is $X_L = \\omega L = (377)(0.05) \\approx 18.85$ \u03A9."
+    },
+    {
+      "question": "What is the capacitive reactance of a 100 \u03BcF capacitor at a frequency of 60 Hz?",
+      "options": [
+        { "text": "26.5 \u03A9", "isCorrect": true },
+        { "text": "1.67 \u03A9", "isCorrect": false },
+        { "text": "0.038 \u03A9", "isCorrect": false },
+        { "text": "100 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "The angular frequency is $\\omega \\approx 377$ rad/s. The capacitance is $C = 100 \\mu F = 100 \\times 10^{-6}$ F. The capacitive reactance is $X_C = \\frac{1}{\\omega C} = \\frac{1}{(377)(100 \\times 10^{-6})} = \\frac{1}{0.0377} \\approx 26.5$ \u03A9."
+    },
+    {
+      "question": "A series circuit contains a 10 \u03A9 resistor, an inductor with $X_L=25$ \u03A9, and a capacitor with $X_C=13$ \u03A9. What is the magnitude of the total impedance?",
+      "options": [
+        { "text": "48 \u03A9", "isCorrect": false },
+        { "text": "15.6 \u03A9", "isCorrect": true },
+        { "text": "10 \u03A9", "isCorrect": false },
+        { "text": "22 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "The total impedance is $Z = R + j(X_L - X_C) = 10 + j(25-13) = 10 + j12$ \u03A9. The magnitude is $|Z| = \\sqrt{R^2 + (X_L - X_C)^2} = \\sqrt{10^2 + 12^2} = \\sqrt{100 + 144} = \\sqrt{244} \\approx 15.62$ \u03A9."
+    }
+  ]
+}

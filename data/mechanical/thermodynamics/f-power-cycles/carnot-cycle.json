@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Carnot cycle is a theoretical, ideal thermodynamic cycle that provides an upper limit on the efficiency that any classical thermodynamic engine can achieve during the conversion of heat into work, or vice versa. It is not a practical engine cycle but serves as a benchmark for all other cycles.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Processes</h3>\n<p class=\"mb-4\">The Carnot cycle consists of four totally reversible processes:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Reversible Isothermal Expansion:</strong> The system absorbs heat ($Q_H$) from a high-temperature reservoir at $T_H$ and expands, doing work on the surroundings.</li>\n    <li><strong>Reversible Adiabatic Expansion:</strong> The system is thermally insulated and continues to expand, doing work. Its temperature drops from $T_H$ to $T_L$.</li>\n    <li><strong>Reversible Isothermal Compression:</strong> The system is compressed, and it rejects heat ($Q_L$) to a low-temperature reservoir at $T_L$. Work is done on the system.</li>\n    <li><strong>Reversible Adiabatic Compression:</strong> The system is thermally insulated and compressed further. Its temperature rises from $T_L$ back to $T_H$.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Carnot Efficiency</h3>\n<p class=\"mb-4\">The thermal efficiency ($\\eta_{th}$) of any heat engine is defined as the ratio of the net work done ($W_{net}$) to the heat input ($Q_H$). For the Carnot cycle, this efficiency depends only on the absolute temperatures of the hot and cold reservoirs.</p>\n$$\\eta_{th, Carnot} = \\frac{W_{net}}{Q_H} = 1 - \\frac{Q_L}{Q_H} = 1 - \\frac{T_L}{T_H}$$\n<p class=\"mb-4\"><strong>Important:</strong> The temperatures $T_L$ and $T_H$ must be in absolute units (Kelvin or Rankine).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A Carnot heat engine operates between a hot reservoir at 500°C and a cold reservoir at 20°C. What is its maximum possible efficiency?",
+      "options": [
+        { "text": "96.0%", "isCorrect": false },
+        { "text": "62.1%", "isCorrect": true },
+        { "text": "37.9%", "isCorrect": false },
+        { "text": "55.4%", "isCorrect": false }
+      ],
+      "explanation": "First, convert the temperatures to Kelvin. $T_H = 500 + 273.15 = 773.15$ K. $T_L = 20 + 273.15 = 293.15$ K. Now use the Carnot efficiency formula: $\\eta = 1 - \\frac{T_L}{T_H} = 1 - \\frac{293.15}{773.15} = 1 - 0.3791 \approx 0.6209$, or 62.1%."
+    },
+    {
+      "question": "A reversible heat engine has an efficiency of 40%. It operates with a cold reservoir at 300 K. What is the temperature of the hot reservoir?",
+      "options": [
+        { "text": "750 K", "isCorrect": false },
+        { "text": "500 K", "isCorrect": true },
+        { "text": "420 K", "isCorrect": false },
+        { "text": "120 K", "isCorrect": false }
+      ],
+      "explanation": "Use the Carnot efficiency formula $\\eta = 1 - \\frac{T_L}{T_H}$ and solve for $T_H$. $0.40 = 1 - \\frac{300}{T_H} \implies \\frac{300}{T_H} = 1 - 0.40 = 0.60 \implies T_H = \\frac{300}{0.60} = 500$ K."
+    }
+  ]
+}

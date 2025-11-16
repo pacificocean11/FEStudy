@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Diesel cycle is the idealized thermodynamic cycle that describes the functioning of a compression-ignition reciprocating engine (i.e., a diesel engine).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Processes</h3>\n<p class=\"mb-4\">The key difference from the Otto cycle is the heat addition process.</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Process 1-2 (Isentropic Compression):</strong> Air alone is compressed from BDC to TDC, reaching a very high temperature.</li>\n    <li><strong>Process 2-3 (Constant-Pressure Heat Addition):</strong> Fuel is injected into the hot air, and it auto-ignites. The injection is controlled so that the piston moves from TDC while combustion occurs, keeping the pressure constant.</li>\n    <li><strong>Process 3-4 (Isentropic Expansion):</strong> The hot gases expand, pushing the piston to BDC in the power stroke.</li>\n    <li><strong>Process 4-1 (Constant-Volume Heat Rejection):</strong> The exhaust valve opens, and heat is rejected at constant volume.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Thermal Efficiency</h3>\n<p class=\"mb-4\">The efficiency of the Diesel cycle depends on the compression ratio ($r$), the specific heat ratio ($k$), and the cutoff ratio ($r_c$).</p>\n<p class=\"mb-4\">The compression ratio is $r = V_1/V_2$. The cutoff ratio is $r_c = V_3/V_2$.</p>\n$$\\eta_{th, Diesel} = 1 - \\frac{1}{r^{k-1}} \\left[ \\frac{r_c^k - 1}{k(r_c - 1)} \\right]$$\n<p class=\"mb-4\">The term in the brackets is always greater than 1, so for the same compression ratio, a Diesel cycle is less efficient than an Otto cycle. However, diesel engines can operate at much higher compression ratios, making them more efficient in practice.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary difference between the ideal Otto cycle and the ideal Diesel cycle?",
+      "options": [
+        { "text": "The compression process", "isCorrect": false },
+        { "text": "The heat addition process", "isCorrect": true },
+        { "text": "The expansion process", "isCorrect": false },
+        { "text": "The heat rejection process", "isCorrect": false }
+      ],
+      "explanation": "The main difference is how heat is added (representing combustion). In the Otto cycle, it's at constant volume (instantaneous). In the Diesel cycle, it's at constant pressure as the piston starts to move down."
+    },
+    {
+      "question": "For a given compression ratio, which cycle is theoretically more efficient?",
+      "options": [
+        { "text": "Otto cycle", "isCorrect": true },
+        { "text": "Diesel cycle", "isCorrect": false },
+        { "text": "They have the same efficiency", "isCorrect": false },
+        { "text": "It depends on the cutoff ratio", "isCorrect": false }
+      ],
+      "explanation": "The efficiency formula for the Diesel cycle includes a bracketed term that is always greater than 1. This makes the overall efficiency lower than that of an Otto cycle with the same compression ratio."
+    }
+  ]
+}

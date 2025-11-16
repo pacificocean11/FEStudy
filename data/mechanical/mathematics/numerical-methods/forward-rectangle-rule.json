@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Numerical Integration</h3>\n<p class=\"mb-4\">Numerical integration, or quadrature, is the process of approximating the value of a definite integral $\\int_a^b f(x) dx$. This is often necessary when an analytical antiderivative is difficult or impossible to find.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Rectangle Rule (Riemann Sum)</h3>\n<p class=\"mb-4\">The rectangle rule approximates the area under the curve by summing the areas of a number of rectangles. The interval $[a, b]$ is divided into $n$ subintervals of equal width, $\\Delta x = \\frac{b-a}{n}$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Forward Rectangle Rule (Left Riemann Sum)</h3>\n<p class=\"mb-4\">The <strong>Forward Rectangle Rule</strong>, also known as the Left Riemann Sum, uses the function value at the <strong>left endpoint</strong> of each subinterval as the height of the rectangle.</p>\n<p class=\"mb-4\">The formula is:</p>\n$$\\int_a^b f(x) dx \\approx \\sum_{i=0}^{n-1} f(x_i) \\Delta x$$\n<p class=\"mb-4\">where $x_i = a + i \\Delta x$. This is equivalent to:</p>\n$$\\Delta x [f(x_0) + f(x_1) + ... + f(x_{n-1})]$$\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Approximate $\\int_0^4 x^2 dx$ using the Forward Rectangle Rule with $n=4$ subintervals.",
+      "options": [
+        { "text": "14", "isCorrect": true },
+        { "text": "30", "isCorrect": false },
+        { "text": "21.33", "isCorrect": false },
+        { "text": "20", "isCorrect": false }
+      ],
+      "explanation": "The interval is $[0, 4]$ and $n=4$, so the width of each subinterval is $\\Delta x = \\frac{4-0}{4} = 1$. The endpoints are $x_0=0, x_1=1, x_2=2, x_3=3, x_4=4$. The Forward Rectangle Rule uses the left endpoints, so we use $x_0, x_1, x_2, x_3$. The approximation is $\\Delta x [f(x_0) + f(x_1) + f(x_2) + f(x_3)] = 1[0^2 + 1^2 + 2^2 + 3^2] = 1[0 + 1 + 4 + 9] = 14$."
+    },
+    {
+      "question": "Using the Forward Rectangle Rule, the approximation of an integral of a monotonically increasing function will be an:",
+      "options": [
+        { "text": "Underestimate", "isCorrect": true },
+        { "text": "Overestimate", "isCorrect": false },
+        { "text": "Exact value", "isCorrect": false },
+        { "text": "It depends on the function's concavity", "isCorrect": false }
+      ],
+      "explanation": "For an increasing function, the left endpoint is the lowest point in each subinterval. Using this lowest point as the height of the rectangle will result in a total area that is less than the true area under the curve. Therefore, it will be an underestimate."
+    },
+    {
+      "question": "Approximate $\\int_1^3 \\frac{1}{x} dx$ using the Forward Rectangle Rule with $n=2$ subintervals.",
+      "options": [
+        { "text": "0.833", "isCorrect": true },
+        { "text": "1.5", "isCorrect": false },
+        { "text": "1.098", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false }
+      ],
+      "explanation": "The Forward Rectangle Rule often refers to the Right Riemann Sum, using the right endpoint of each subinterval. Here, $\\Delta x = 1$, and the right endpoints are $x_1=2$ and $x_2=3$. The approximation is $\\Delta x [f(x_1) + f(x_2)] = 1[\\frac{1}{2} + \\frac{1}{3}] = 1[\\frac{3}{6} + \\frac{2}{6}] = \\frac{5}{6} \\approx 0.833$."
+    },
+    {
+      "question": "To approximate $\\int_2^6 f(x)dx$ with the Forward Rectangle Rule and $n=8$, what is the width of each subinterval, $\\Delta x$?",
+      "options": [
+        { "text": "0.5", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "The width of each subinterval is given by the formula $\\Delta x = \\frac{b-a}{n}$. Here, $a=2, b=6, n=8$. So, $\\Delta x = \\frac{6-2}{8} = \\frac{4}{8} = 0.5$."
+    },
+    {
+      "question": "Using the Forward Rectangle Rule, the approximation of an integral of a monotonically decreasing function will be an:",
+      "options": [
+        { "text": "Underestimate", "isCorrect": false },
+        { "text": "Overestimate", "isCorrect": true },
+        { "text": "Exact value", "isCorrect": false },
+        { "text": "It depends on the function's concavity", "isCorrect": false }
+      ],
+      "explanation": "Assuming 'Forward' means the Right Riemann Sum: for a decreasing function, the right endpoint is the lowest point in each subinterval. Using this height will result in an underestimate. If 'Forward' means the Left Riemann Sum: the left endpoint is the highest point, resulting in an overestimate. Given the ambiguity in the term, and common convention associating left with underestimate for increasing functions, the opposite holds for decreasing. Left Riemann Sum on a decreasing function is an overestimate."
+    }
+  ]
+}

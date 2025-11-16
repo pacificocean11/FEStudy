@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Simpson's Rule is another numerical integration method that often provides a much better approximation than the Trapezoidal Rule. Instead of using straight line segments, Simpson's Rule approximates the function over pairs of subintervals using a parabola (a second-degree polynomial).</p>\n<p class=\"mb-4\">Because it uses parabolas, it requires an <strong>even number of subintervals</strong>, $n$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Simpson's 1/3 Rule Formula</h3>\n<p class=\"mb-4\">For an integral $\\int_a^b f(x) dx$ divided into an even number of subintervals $n$ of equal width $\\Delta x = \\frac{b-a}{n}$, Simpson's 1/3 Rule is given by:</p>\n$$\\int_a^b f(x) dx \\approx \\frac{\\Delta x}{3} [f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)]$$\n<p class=\"mb-4\">The pattern of coefficients for the function values is 1, 4, 2, 4, 2, ..., 4, 1.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Accuracy</h3>\n<p class=\"mb-4\">Simpson's Rule is exact for quadratic and cubic polynomials. The global error is proportional to $h^4$ (where $h = \\Delta x$), making it significantly more accurate than the Trapezoidal Rule for smooth functions.</p>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Approximate $\\int_0^4 x^2 dx$ using Simpson's Rule with $n=4$ subintervals.",
+      "options": [
+        { "text": "21.33", "isCorrect": true },
+        { "text": "22", "isCorrect": false },
+        { "text": "20", "isCorrect": false },
+        { "text": "21", "isCorrect": false }
+      ],
+      "explanation": "The interval is $[0, 4]$ and $n=4$, so $\\Delta x = 1$. The endpoints are $x_0=0, x_1=1, x_2=2, x_3=3, x_4=4$. The formula is $\\frac{\\Delta x}{3} [f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + f(x_4)]$. Plugging in values: $\\frac{1}{3} [0^2 + 4(1^2) + 2(2^2) + 4(3^2) + 4^2] = \\frac{1}{3} [0 + 4(1) + 2(4) + 4(9) + 16] = \\frac{1}{3} [0 + 4 + 8 + 36 + 16] = \\frac{64}{3} \\approx 21.33$. Since Simpson's rule is exact for polynomials of degree up to 3, this is the exact answer."
+    },
+    {
+      "question": "To use Simpson's Rule, the number of subintervals $n$ must be:",
+      "options": [
+        { "text": "Odd", "isCorrect": false },
+        { "text": "Even", "isCorrect": true },
+        { "text": "A multiple of 3", "isCorrect": false },
+        { "text": "Any integer > 1", "isCorrect": false }
+      ],
+      "explanation": "Simpson's Rule works by fitting parabolas over pairs of subintervals. Therefore, the total number of subintervals must be an even number."
+    },
+    {
+      "question": "What is the pattern of coefficients inside the brackets for Simpson's 1/3 Rule?",
+      "options": [
+        { "text": "1, 2, 2, ..., 2, 1", "isCorrect": false },
+        { "text": "1, 4, 2, 4, ..., 4, 1", "isCorrect": true },
+        { "text": "1, 1, 1, ..., 1, 1", "isCorrect": false },
+        { "text": "1, 3, 3, 1", "isCorrect": false }
+      ],
+      "explanation": "The coefficients follow the pattern 1, 4, 2, 4, 2, ... ending with 4, 1. The first and last terms are multiplied by 1, the odd-indexed terms are multiplied by 4, and the even-indexed intermediate terms are multiplied by 2."
+    },
+    {
+      "question": "Approximate $\\int_0^2 x^3 dx$ using Simpson's rule with $n=2$.",
+      "options": [
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "3.5", "isCorrect": false },
+        { "text": "4.5", "isCorrect": false }
+      ],
+      "explanation": "Here $a=0, b=2, n=2$, so $\\Delta x = 1$. The points are $x_0=0, x_1=1, x_2=2$. The function is $f(x)=x^3$. $f(0)=0, f(1)=1, f(2)=8$. Using the formula: $S = \\frac{\\Delta x}{3}[f(x_0) + 4f(x_1) + f(x_2)] = \\frac{1}{3}[0 + 4(1) + 8] = \\frac{12}{3} = 4$. This is the exact value because Simpson's rule is exact for cubic polynomials."
+    },
+    {
+      "question": "The error in Simpson's Rule approximation is proportional to which of the following, where $h = \\Delta x$?",
+      "options": [
+        { "text": "$h$", "isCorrect": false },
+        { "text": "$h^2$", "isCorrect": false },
+        { "text": "$h^3$", "isCorrect": false },
+        { "text": "$h^4$", "isCorrect": true }
+      ],
+      "explanation": "The global error for Simpson's Rule is on the order of $O(h^4)$. This means that halving the step size reduces the error by a factor of approximately 16, making it a very powerful method for numerical integration."
+    }
+  ]
+}

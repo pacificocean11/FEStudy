@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>fin</strong> is a surface that extends from an object to increase the rate of heat transfer to or from the environment by increasing convection. By increasing the surface area ($A_s$), the overall rate of convective heat transfer, given by Newton's law of cooling ($q = hA_s\\Delta T$), is enhanced.</p>\n<p class=\"mb-4\">Fins are commonly used in applications like engine radiators, computer CPU heat sinks, and air conditioning coils.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Fin Performance</h3>\n<p class=\"mb-4\">Two key parameters are used to evaluate the performance of a fin:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Fin Efficiency ($\\eta_f$):</strong> This compares the actual heat transfer from the fin to the ideal heat transfer that would occur if the entire fin were at the base temperature, $T_b$. The temperature along a real fin decreases from the base to the tip.\n        $$\\eta_f = \\frac{q_{fin}}{q_{max}} = \\frac{\\text{Actual heat transfer from fin}}{\\text{Ideal heat transfer from fin (if entire fin at } T_b)}$$\n        $$q_{max} = hA_{fin}(T_b - T_\\infty)$$\n    </li>\n    <li>\n        <strong>Fin Effectiveness ($\\epsilon_f$):</strong> This compares the heat transfer from the fin to the heat transfer that would occur from the base area if the fin were not there. An effectiveness greater than 1 means the fin is enhancing heat transfer.\n        $$\\epsilon_f = \\frac{q_{fin}}{q_{no\\ fin}} = \\frac{\\text{Heat transfer with fin}}{\\text{Heat transfer from base area without fin}}$$\n        $$q_{no\\ fin} = hA_b(T_b - T_\\infty)$$\n        <p class=\"text-sm\">where $A_b$ is the cross-sectional area of the fin at the base.</p>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Heat Transfer from an Insulated-Tip Fin</h3>\n<p class=\"mb-4\">A common and simple case is a straight rectangular fin that is long enough that the heat transfer from its tip is negligible (the 'insulated tip' assumption). The heat transfer rate for this case is:</p>\n$$q_f = \\sqrt{hPkA_c}(T_b - T_{\\infty}) \\tanh(mL)$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h$ is the convection coefficient.</li>\n    <li>$P$ is the perimeter of the fin's cross-section.</li>\n    <li>$k$ is the thermal conductivity of the fin material.</li>\n    <li>$A_c$ is the cross-sectional area of the fin.</li>\n    <li>$T_b$ is the base temperature.</li>\n    <li>$T_{\\infty}$ is the surrounding fluid temperature.</li>\n    <li>$L$ is the length of the fin.</li>\n    <li>$m = \\sqrt{\\frac{hP}{kA_c}}$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary purpose of adding fins to a surface?",
+      "options": [
+        { "text": "To increase the thermal conductivity of the surface.", "isCorrect": false },
+        { "text": "To increase the convection coefficient.", "isCorrect": false },
+        { "text": "To increase the surface area available for convection.", "isCorrect": true },
+        { "text": "To decrease the surface temperature.", "isCorrect": false }
+      ],
+      "explanation": "Fins are extended surfaces used to increase the total surface area exposed to the surrounding fluid. According to Newton's law of cooling ($q=hA_s\\Delta T$), increasing the area $A_s$ increases the rate of convective heat transfer."
+    },
+    {
+      "question": "For a fin to be effective, its effectiveness ($\\epsilon_f$) must be:",
+      "options": [
+        { "text": "Less than 1", "isCorrect": false },
+        { "text": "Equal to 1", "isCorrect": false },
+        { "text": "Greater than 1", "isCorrect": true },
+        { "text": "Equal to 0", "isCorrect": false }
+      ],
+      "explanation": "Fin effectiveness compares the heat transfer with the fin to the heat transfer without it. If the effectiveness is 1, the fin is not helping. An effective fin must transfer more heat than the base area it covers, so its effectiveness must be greater than 1."
+    }
+  ]
+}

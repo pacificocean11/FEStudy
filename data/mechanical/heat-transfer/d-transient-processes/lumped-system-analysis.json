@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Lumped system (or lumped capacitance) analysis is a simplified method for analyzing transient heat conduction. It assumes that the temperature of a body is uniform at any given time. This is a valid assumption when the resistance to heat conduction *within* the body is much smaller than the resistance to heat convection *from* the body's surface.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Biot Number (Bi)</h3>\n<p class=\"mb-4\">The validity of the lumped system analysis is determined by the <strong>Biot number (Bi)</strong>, a dimensionless quantity.</p>\n$$Bi = \\frac{\\text{Internal Conductive Resistance}}{\\text{External Convective Resistance}} = \\frac{h L_c}{k}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h$ is the convection heat transfer coefficient (W/m²K).</li>\n    <li>$k$ is the thermal conductivity of the body (W/mK).</li>\n    <li>$L_c$ is the characteristic length, defined as the Volume ($V$) divided by the surface area ($A_s$). $L_c = V/A_s$.</li>\n</ul>\n<p class=\"mb-4\">The lumped system analysis is generally considered accurate when <strong>$Bi < 0.1$</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Temperature Equation</h3>\n<p class=\"mb-4\">When the lumped analysis is valid, the temperature $T(t)$ of the body at time $t$ is given by:</p>\n$$\\frac{T(t) - T_{\\infty}}{T_i - T_{\\infty}} = e^{-bt} = \\exp\\left(-\\frac{hA_s}{\\rho V c_p} t\\right)$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$T(t)$ is the temperature at time $t$.</li>\n    <li>$T_i$ is the initial temperature of the body.</li>\n    <li>$T_{\\infty}$ is the temperature of the surrounding fluid.</li>\n    <li>The term $\\frac{\\rho V c_p}{hA_s}$ is the thermal time constant of the system.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Lumped system analysis is a valid method for transient heat conduction when:",
+      "options": [
+        { "text": "The Biot number is large (Bi >> 1).", "isCorrect": false },
+        { "text": "The Biot number is small (Bi < 0.1).", "isCorrect": true },
+        { "text": "The object is very large.", "isCorrect": false },
+        { "text": "The fluid is stagnant.", "isCorrect": false }
+      ],
+      "explanation": "Lumped system analysis assumes a uniform internal temperature, which is true when the internal resistance to heat flow is negligible compared to the external resistance. This condition is met when the Biot number is small, typically less than 0.1."
+    },
+    {
+      "question": "A 2 cm diameter steel sphere ($k=50$ W/mK) is exposed to a convection environment with $h=200$ W/m²K. Is lumped capacitance analysis appropriate?",
+      "options": [
+        { "text": "Yes, because Bi < 0.1", "isCorrect": true },
+        { "text": "No, because Bi > 0.1", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false },
+        { "text": "Yes, because it is a sphere", "isCorrect": false }
+      ],
+      "explanation": "First, find the characteristic length $L_c = V/A_s$. For a sphere, $V = \\frac{4}{3}\\pi r^3$ and $A_s = 4\\pi r^2$, so $L_c = r/3$. The radius is $r = 1 \\text{ cm} = 0.01 \\text{ m}$. $L_c = 0.01/3 \\approx 0.00333$ m. Now calculate the Biot number: $Bi = \\frac{h L_c}{k} = \\frac{(200)(0.00333)}{50} = \\frac{0.666}{50} \\approx 0.0133$. Since $0.0133 < 0.1$, the lumped analysis is valid."
+    }
+  ]
+}

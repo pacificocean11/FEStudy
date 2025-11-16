@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>lever rule</strong> is a tool used to determine the weight fractions (or mole fractions) of each phase in a two-phase region of a binary phase diagram. It can be applied at any temperature and composition that falls within a two-phase field (e.g., the L+$\\alpha$ region).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Procedure</h3>\n<p class=\"mb-4\">To find the phase fractions for an alloy of composition $C_0$ at a temperature T within a two-phase region (e.g., solid $\\alpha$ and liquid L):</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Draw a Tie Line:</strong> At the temperature of interest, draw a horizontal line (an isotherm) across the two-phase region. This is the tie line.</li>\n    <li><strong>Identify Compositions:</strong> Note the compositions where the tie line intersects the phase boundaries. Let $C_\\alpha$ be the composition of the solid phase (on the solidus line) and $C_L$ be the composition of the liquid phase (on the liquidus line).</li>\n    <li><strong>Apply the Lever Rule:</strong> The tie line acts like a lever balanced on a fulcrum at the overall composition $C_0$. The weight fraction of a phase is given by the length of the lever arm on the *opposite* side of the fulcrum, divided by the total length of the lever (the tie line).</li>\n</ol>\n<p class=\"mb-4\"><strong>Formulas:</strong></p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Weight Fraction of Liquid ($W_L$):</strong>\n    $$ W_L = \\frac{C_\\alpha - C_0}{C_\\alpha - C_L} $$\n    </li>\n    <li><strong>Weight Fraction of Solid ($\\alpha$) ($W_\\alpha$):</strong>\n    $$ W_\\alpha = \\frac{C_0 - C_L}{C_\\alpha - C_L} $$\n    </li>\n</ul>\n<p class=\"mb-4\">Note that $W_L + W_\\alpha = 1$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a binary phase diagram, a tie line is drawn in a two-phase region for an alloy of composition $C_0$. The length of the lever arm opposite to the liquid phase represents the relative amount of which phase?",
+      "options": [
+        { "text": "The liquid phase", "isCorrect": false },
+        { "text": "The solid phase", "isCorrect": true },
+        { "text": "Both phases equally", "isCorrect": false },
+        { "text": "The eutectic phase", "isCorrect": false }
+      ],
+      "explanation": "The lever rule works in reverse. The fraction of a phase is calculated using the length of the tie line segment on the opposite side of the overall composition. So, the lever arm from the overall composition ($C_0$) to the liquid composition ($C_L$) is used to find the fraction of the solid phase."
+    }
+  ]
+}

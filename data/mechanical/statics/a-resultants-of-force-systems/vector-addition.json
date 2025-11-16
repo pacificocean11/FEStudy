@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A force system consists of multiple forces acting on a body. The <strong>resultant force</strong> is a single force that has the same effect on the body as the entire system of forces combined. Finding the resultant force is a process of vector addition.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Method of Components</h3>\n<p class=\"mb-4\">The most common method for adding forces is to resolve each force into its Cartesian components (x, y, and z) and then sum the components.</p>\n<p class=\"mb-4\">For a system of forces $\\mathbf{F}_1, \\mathbf{F}_2, ..., \\mathbf{F}_n$ in a 2D plane:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Resolve each force $\\mathbf{F}_i$ into its x and y components: $F_{ix} = F_i \\cos(\\theta_i)$ and $F_{iy} = F_i \\sin(\\theta_i)$.</li>\n    <li>Sum all the x-components to find the x-component of the resultant force, $R_x$:</li>\n    $$ R_x = \\sum F_{ix} $$\n    <li>Sum all the y-components to find the y-component of the resultant force, $R_y$:</li>\n    $$ R_y = \\sum F_{iy} $$\n    <li>The resultant force vector is $\\mathbf{R} = R_x\\mathbf{i} + R_y\\mathbf{j}$.</li>\n    <li>The magnitude of the resultant force is found using the Pythagorean theorem:</li>\n    $$ ||\\mathbf{R}|| = \\sqrt{R_x^2 + R_y^2} $$\n    <li>The direction of the resultant force (angle $\\theta_R$ from the positive x-axis) is found using the arctangent:</li>\n    $$ \\theta_R = \\arctan\\left(\\frac{R_y}{R_x}\\right) $$\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Two forces act on a point: $\\mathbf{F}_1$ is 100 N at 30° from the positive x-axis, and $\\mathbf{F}_2$ is 150 N at 120° from the positive x-axis. What is the x-component of the resultant force?",
+      "options": [
+        { "text": "11.6 N", "isCorrect": true },
+        { "text": "161.6 N", "isCorrect": false },
+        { "text": "250 N", "isCorrect": false },
+        { "text": "86.6 N", "isCorrect": false }
+      ],
+      "explanation": "First, find the x-components of each force. $F_{1x} = 100 \\cos(30^\circ) \\approx 100(0.866) = 86.6$ N. $F_{2x} = 150 \\cos(120^\circ) = 150(-0.5) = -75$ N. The resultant x-component is the sum: $R_x = F_{1x} + F_{2x} = 86.6 - 75 = 11.6$ N."
+    },
+    {
+      "question": "For the forces in the previous problem, what is the y-component of the resultant force?",
+      "options": [
+        { "text": "130 N", "isCorrect": false },
+        { "text": "180 N", "isCorrect": true },
+        { "text": "200 N", "isCorrect": false },
+        { "text": "80 N", "isCorrect": false }
+      ],
+      "explanation": "First, find the y-components of each force. $F_{1y} = 100 \\sin(30^\circ) = 100(0.5) = 50$ N. $F_{2y} = 150 \\sin(120^\circ) \\approx 150(0.866) = 129.9$ N. The resultant y-component is the sum: $R_y = F_{1y} + F_{2y} = 50 + 129.9 = 179.9 \\approx 180$ N."
+    },
+    {
+      "question": "What is the approximate magnitude of the resultant force from the previous two problems ($R_x=11.6$ N, $R_y=180$ N)?",
+      "options": [
+        { "text": "180.4 N", "isCorrect": true },
+        { "text": "191.6 N", "isCorrect": false },
+        { "text": "250 N", "isCorrect": false },
+        { "text": "168.4 N", "isCorrect": false }
+      ],
+      "explanation": "The magnitude is found using the Pythagorean theorem: $||\\mathbf{R}|| = \\sqrt{R_x^2 + R_y^2} = \\sqrt{(11.6)^2 + (180)^2} = \\sqrt{134.56 + 32400} = \\sqrt{32534.56} \\approx 180.4$ N."
+    }
+  ]
+}

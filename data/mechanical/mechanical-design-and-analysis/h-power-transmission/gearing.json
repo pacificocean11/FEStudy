@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Basic Terminology (Spur Gears)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pitch Circle:</strong> The theoretical circle upon which all calculations are usually based. The pitch circles of two mating gears are tangent to each other.</li>\n    <li><strong>Pitch Diameter (d):</strong> The diameter of the pitch circle.</li>\n    <li><strong>Number of Teeth (N):</strong> The number of teeth on the gear.</li>\n    <li><strong>Diametral Pitch (P):</strong> The number of teeth per inch of pitch diameter. A larger value means smaller teeth. $P = N/d$.</li>\n    <li><strong>Module (m):</strong> The ratio of the pitch diameter to the number of teeth (common in SI units). A larger value means larger teeth. $m = d/N$. Note that $P = 25.4/m$.</li>\n    <li><strong>Pressure Angle ($\\phi$):</strong> The angle between the line of action (the line along which the force between mating teeth acts) and the line tangent to the pitch circles. Common values are 20° and 25°.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Fundamental Law of Gearing</h3>\n<p class=\"mb-4\">The fundamental law of gearing states that the angular velocity ratio between two mating gears must remain constant throughout the mesh. This is achieved when the common normal at the point of contact between the teeth passes through the pitch point (the point of tangency of the pitch circles).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A spur gear has 40 teeth and a diametral pitch of 4 teeth/inch. What is its pitch diameter?",
+      "options": [
+        { "text": "160 inches", "isCorrect": false },
+        { "text": "10 inches", "isCorrect": true },
+        { "text": "0.1 inches", "isCorrect": false },
+        { "text": "44 inches", "isCorrect": false }
+      ],
+      "explanation": "The formula for diametral pitch is $P = N/d$. Rearranging for the pitch diameter gives $d = N/P = 40 \\text{ teeth} / 4 \\text{ teeth/inch} = 10$ inches."
+    },
+    {
+      "question": "A gear with a pitch diameter of 150 mm has 30 teeth. What is its module?",
+      "options": [
+        { "text": "0.2 mm", "isCorrect": false },
+        { "text": "4500 mm", "isCorrect": false },
+        { "text": "5 mm", "isCorrect": true },
+        { "text": "50 mm", "isCorrect": false }
+      ],
+      "explanation": "The formula for module is $m = d/N$. So, $m = 150 \\text{ mm} / 30 \\text{ teeth} = 5$ mm."
+    }
+  ]
+}

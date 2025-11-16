@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>normal shock wave</strong> is a very thin discontinuity in a supersonic flow across which the flow properties change almost instantaneously. It is an irreversible, adiabatic process, meaning entropy increases across the shock.</p>\n<p class=\"mb-4\">Across a normal shock:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The flow abruptly decelerates from supersonic ($M_1 > 1$) to subsonic ($M_2 < 1$).</li>\n    <li>The static pressure, static temperature, and density all increase significantly.</li>\n    <li>The stagnation temperature ($T_0$) remains constant because the process is adiabatic.</li>\n    <li>The stagnation pressure ($P_0$) decreases due to the irreversible nature of the shock (increase in entropy).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Normal Shock Relations</h3>\n<p class=\"mb-4\">The relationships for properties before (state 1) and after (state 2) the shock are derived from the conservation of mass, momentum, and energy. For an ideal gas, they can be expressed in terms of the upstream Mach number ($M_1$) and the specific heat ratio ($k$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Mach Number:</strong>\n    $$ M_2^2 = \\frac{1 + \\frac{k-1}{2}M_1^2}{kM_1^2 - \\frac{k-1}{2}} $$\n    </li>\n    <li><strong>Pressure Ratio:</strong>\n    $$ \\frac{P_2}{P_1} = \\frac{2k}{k+1}M_1^2 - \\frac{k-1}{k+1} $$\n    </li>\n    <li><strong>Temperature Ratio:</strong>\n    $$ \\frac{T_2}{T_1} = \\frac{P_2}{P_1} \\frac{\\rho_1}{\\rho_2} = \\left(1 + \\frac{2k}{k+1}(M_1^2 - 1)\\right) \\frac{1 + \\frac{k-1}{2}M_1^2}{\\frac{(k+1)^2}{2(k-1)}M_1^2} $$\n    </li>\n</ul>\n<p class=\"mb-4\">These equations are complex and are typically provided or looked up in tables (Normal Shock Tables) in an exam setting.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A supersonic flow with a Mach number of 2.0 passes through a normal shock wave. The flow downstream of the shock will be:",
+      "options": [
+        { "text": "Supersonic", "isCorrect": false },
+        { "text": "Subsonic", "isCorrect": true },
+        { "text": "Sonic (M=1)", "isCorrect": false },
+        { "text": "Stagnant (M=0)", "isCorrect": false }
+      ],
+      "explanation": "A fundamental property of a normal shock wave is that it abruptly decelerates a supersonic flow (M > 1) to a subsonic flow (M < 1)."
+    },
+    {
+      "question": "Which property remains constant across a normal shock wave?",
+      "options": [
+        { "text": "Stagnation Pressure ($P_0$)", "isCorrect": false },
+        { "text": "Static Pressure (P)", "isCorrect": false },
+        { "text": "Stagnation Temperature ($T_0$)", "isCorrect": true },
+        { "text": "Mach Number (M)", "isCorrect": false }
+      ],
+      "explanation": "A normal shock is an adiabatic process (no heat added or removed). For an ideal gas in an adiabatic flow, the stagnation temperature ($T_0$) is constant. However, because the process is irreversible, entropy increases and stagnation pressure ($P_0$) decreases."
+    }
+  ]
+}

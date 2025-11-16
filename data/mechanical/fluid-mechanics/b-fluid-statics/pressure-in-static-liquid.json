@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Fluid statics deals with fluids at rest. In a static fluid, the pressure increases with depth. This is because the fluid at a certain depth must support the weight of the fluid above it.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Hydrostatic Pressure Equation</h3>\n<p class=\"mb-4\">The pressure ($P$) at a depth $h$ below the free surface of a liquid is given by:</p>\n$$ P = P_0 + \\rho g h $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$P$ is the absolute pressure at depth $h$.</li>\n    <li>$P_0$ is the pressure at the free surface (often atmospheric pressure, $P_{atm}$).</li>\n    <li>$\\rho$ is the density of the fluid (assumed to be constant).</li>\n    <li>$g$ is the acceleration due to gravity.</li>\n    <li>$h$ is the vertical depth below the surface.</li>\n</ul>\n<p class=\"mb-4\">The term $\\rho g h$ is the <strong>gage pressure</strong> at that depth. Gage pressure is the pressure relative to the local atmospheric pressure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Principles</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Pressure acts perpendicular to any surface it contacts.</li>\n    <li>The pressure at any two points at the same elevation in a continuous body of fluid at rest is the same.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the gage pressure at a depth of 10 meters in water? (Use $\\rho_{water} = 1000$ kg/m³ and $g=9.81$ m/s²).",
+      "options": [
+        { "text": "9.81 kPa", "isCorrect": false },
+        { "text": "98.1 kPa", "isCorrect": true },
+        { "text": "981 kPa", "isCorrect": false },
+        { "text": "100 kPa", "isCorrect": false }
+      ],
+      "explanation": "Gage pressure is calculated as $P_{gage} = \\rho g h$. $P_{gage} = (1000 \\text{ kg/m³})(9.81 \\text{ m/s²})(10 \\text{ m}) = 98100 \\text{ Pa} = 98.1$ kPa."
+    },
+    {
+      "question": "An open tank contains water with a layer of oil (density 800 kg/m³) on top. If the oil layer is 2 m deep and the water layer is 3 m deep, what is the gage pressure at the bottom of the tank?",
+      "options": [
+        { "text": "45.1 kPa", "isCorrect": true },
+        { "text": "29.4 kPa", "isCorrect": false },
+        { "text": "15.7 kPa", "isCorrect": false },
+        { "text": "39.2 kPa", "isCorrect": false }
+      ],
+      "explanation": "The total pressure is the sum of the pressure from the oil and the pressure from the water. $P_{total} = P_{oil} + P_{water} = (\\rho_{oil}gh_{oil}) + (\\rho_{water}gh_{water})$. $P_{total} = (800)(9.81)(2) + (1000)(9.81)(3) = 15696 + 29430 = 45126$ Pa, or 45.1 kPa."
+    }
+  ]
+}

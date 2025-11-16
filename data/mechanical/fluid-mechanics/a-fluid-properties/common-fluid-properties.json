@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Density ($\\rho$)</h3>\n<p class=\"mb-4\">Density is the mass of a substance per unit volume. It is a measure of how tightly packed the matter is.</p>\n$$ \\rho = \\frac{m}{V} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Units:</strong> kg/m³ (SI) or lb/ft³ (US Customary).</li>\n    <li>The density of water at 4°C is approximately 1000 kg/m³ or 62.4 lb/ft³.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Specific Volume (v)</h3>\n<p class=\"mb-4\">Specific volume is the reciprocal of density. It is the volume occupied by a unit mass of a substance.</p>\n$$ v = \\frac{V}{m} = \\frac{1}{\\rho} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Units:</strong> m³/kg (SI).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Specific Weight ($\\gamma$)</h3>\n<p class=\"mb-4\">Specific weight is the weight of a substance per unit volume.</p>\n$$ \\gamma = \\frac{W}{V} = \\frac{mg}{V} = \\rho g $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Units:</strong> N/m³ (SI).</li>\n    <li>$g$ is the acceleration due to gravity.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Specific Gravity (SG)</h3>\n<p class=\"mb-4\">Specific gravity is the ratio of the density of a substance to the density of a reference substance, usually water at 4°C. It is a dimensionless quantity.</p>\n$$ SG = \\frac{\\rho_{substance}}{\\rho_{water}} = \\frac{\\gamma_{substance}}{\\gamma_{water}} $$\n<p class=\"mb-4\">If $SG > 1$, the substance is denser than water and will sink. If $SG < 1$, it is less dense and will float.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An object has a mass of 500 kg and a volume of 0.2 m³. What is its density?",
+      "options": [
+        { "text": "100 kg/m³", "isCorrect": false },
+        { "text": "2500 kg/m³", "isCorrect": true },
+        { "text": "2.5 kg/m³", "isCorrect": false },
+        { "text": "500 kg/m³", "isCorrect": false }
+      ],
+      "explanation": "Density is mass divided by volume: $\\rho = \\frac{m}{V} = \\frac{500 \\text{ kg}}{0.2 \\text{ m³}} = 2500$ kg/m³."
+    },
+    {
+      "question": "The specific gravity of mercury is 13.6. What is its density? (Density of water = 1000 kg/m³).",
+      "options": [
+        { "text": "1360 kg/m³", "isCorrect": false },
+        { "text": "13600 kg/m³", "isCorrect": true },
+        { "text": "13.6 kg/m³", "isCorrect": false },
+        { "text": "73.5 kg/m³", "isCorrect": false }
+      ],
+      "explanation": "Specific gravity is the ratio of the substance's density to water's density: $SG = \\rho / \\rho_{water}$. Rearranging gives $\\rho = SG \\cdot \\rho_{water} = 13.6 \\cdot 1000 \\text{ kg/m³} = 13600$ kg/m³."
+    },
+    {
+      "question": "What is the specific weight of a fluid with a density of 800 kg/m³? (Use g = 9.81 m/s²).",
+      "options": [
+        { "text": "81.6 N/m³", "isCorrect": false },
+        { "text": "800 N/m³", "isCorrect": false },
+        { "text": "7848 N/m³", "isCorrect": true },
+        { "text": "9810 N/m³", "isCorrect": false }
+      ],
+      "explanation": "Specific weight is density times the acceleration of gravity: $\\gamma = \\rho g = (800 \\text{ kg/m³})(9.81 \\text{ m/s²}) = 7848$ N/m³."
+    }
+  ]
+}

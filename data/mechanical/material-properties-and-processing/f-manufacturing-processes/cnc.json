@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>CNC (Computer Numerical Control)</strong> is the automated control of machining tools (such as drills, lathes, mills) by means of a computer. A CNC machine processes a piece of material (metal, plastic, wood, etc.) to meet specifications by following a coded programmed instruction and without a manual operator directly controlling the machining operation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Basic Components</h3>\n<p class=\"mb-4\">A CNC system consists of three basic components:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Program of Instructions:</strong> The detailed, step-by-step set of commands that the machine will follow.</li>\n    <li><strong>Machine Control Unit (MCU):</strong> The 'brain' of the system. It reads and interprets the program and converts it into electrical signals to control the machine tool.</li>\n    <li><strong>Machine Tool:</strong> The physical machine that performs the operation (e.g., cutting, drilling). Its axes of motion are controlled by motors that respond to the signals from the MCU.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Programming Language (G-code and M-code)</h3>\n<p class=\"mb-4\">CNC machines are programmed using a language commonly referred to as G-code. It contains two primary types of commands:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>G-codes (Preparatory Functions):</strong> These codes control the motion of the machine. For example, G00 for rapid positioning, G01 for linear interpolation (cutting in a straight line), and G02/G03 for circular interpolation (cutting an arc).</li>\n    <li><strong>M-codes (Miscellaneous Functions):</strong> These codes control auxiliary machine functions. For example, M03 to start the spindle clockwise, M05 to stop the spindle, and M08 to turn on coolant.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In CNC programming, what is the general function of G-codes?",
+      "options": [
+        { "text": "To control spindle speed.", "isCorrect": false },
+        { "text": "To control the motion of the cutting tool.", "isCorrect": true },
+        { "text": "To turn coolant on and off.", "isCorrect": false },
+        { "text": "To signal the end of the program.", "isCorrect": false }
+      ],
+      "explanation": "G-codes, or preparatory codes, are responsible for defining the geometry and movement of the tool path, such as rapid moves, linear cuts, and circular cuts."
+    },
+    {
+      "question": "Which component of a CNC system reads the program and translates it into signals for the motors?",
+      "options": [
+        { "text": "The machine tool", "isCorrect": false },
+        { "text": "The G-code program", "isCorrect": false },
+        { "text": "The Machine Control Unit (MCU)", "isCorrect": true },
+        { "text": "The spindle", "isCorrect": false }
+      ],
+      "explanation": "The Machine Control Unit (MCU) acts as the controller or 'brain' of the CNC system. It interprets the coded instructions and sends the appropriate electrical signals to the drives and motors that control the machine's motion."
+    }
+  ]
+}

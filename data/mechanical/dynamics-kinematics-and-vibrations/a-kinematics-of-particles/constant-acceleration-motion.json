@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Rectilinear Kinematics</h3>\n<p class=\"mb-4\">This section deals with motion in a straight line where the acceleration is constant. This is a very common scenario in introductory physics and engineering, including objects in free fall (where acceleration is $g \approx 9.81 \text{ m/s²}$ or $32.2 \text{ ft/s²}$).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Kinematic Equations</h3>\n<p class=\"mb-4\">When acceleration $a$ is constant, the following three fundamental equations can be derived by integrating $a = dv/dt$ and $v = ds/dt$.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Velocity as a function of time:</strong>\n        $$v = v_0 + at$$\n    </li>\n    <li><strong>Position as a function of time:</strong>\n        $$s = s_0 + v_0t + \frac{1}{2}at^2$$\n    </li>\n    <li><strong>Velocity as a function of position:</strong>\n        $$v^2 = v_0^2 + 2a(s - s_0)$$\n    </li>\n</ul>\n<p class=\"mb-4\">Where:\n    <br>$s_0$ = initial position\n    <br>$s$ = final position\n    <br>$v_0$ = initial velocity\n    <br>$v$ = final velocity\n    <br>$a$ = constant acceleration\n    <br>$t$ = time elapsed\n</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A car starts from rest and accelerates uniformly at 3 m/s². How far does it travel in 5 seconds?",
+      "options": [
+        { "text": "15 m", "isCorrect": false },
+        { "text": "75 m", "isCorrect": false },
+        { "text": "37.5 m", "isCorrect": true },
+        { "text": "45 m", "isCorrect": false }
+      ],
+      "explanation": "We are given: initial velocity $v_0 = 0$ (starts from rest), acceleration $a = 3 \text{ m/s²}$, and time $t = 5$ s. We need to find the distance traveled, which is the change in position ($s - s_0$). Using the equation $s = s_0 + v_0t + \frac{1}{2}at^2$, the distance is $\Delta s = v_0t + \frac{1}{2}at^2 = (0)(5) + \frac{1}{2}(3)(5)^2 = 0 + \frac{1}{2}(3)(25) = 37.5 \text{ m}$."
+    },
+    {
+      "question": "An object is dropped from a height of 80 m. How long does it take to hit the ground? (Use $g = 9.8$ m/s² and ignore air resistance).",
+      "options": [
+        { "text": "16.3 s", "isCorrect": false },
+        { "text": "4.04 s", "isCorrect": true },
+        { "text": "8.16 s", "isCorrect": false },
+        { "text": "2.86 s", "isCorrect": false }
+      ],
+      "explanation": "We have: initial velocity $v_0 = 0$ (dropped), distance $\Delta s = 80$ m, acceleration $a = g = 9.8 \text{ m/s²}$. We need to find time $t$. Using the equation $\Delta s = v_0t + \frac{1}{2}at^2$: $80 = (0)t + \frac{1}{2}(9.8)t^2 \implies 80 = 4.9t^2 \implies t^2 = \frac{80}{4.9} \approx 16.32 \implies t = \sqrt{16.32} \approx 4.04 \text{ s}$."
+    },
+    {
+      "question": "A train slows down from 30 m/s to 10 m/s over a distance of 200 m. What is its constant deceleration?",
+      "options": [
+        { "text": "-2 m/s²", "isCorrect": true },
+        { "text": "-0.1 m/s²", "isCorrect": false },
+        { "text": "-4 m/s²", "isCorrect": false },
+        { "text": "-0.05 m/s²", "isCorrect": false }
+      ],
+      "explanation": "We are given: initial velocity $v_0 = 30$ m/s, final velocity $v = 10$ m/s, and distance $\Delta s = 200$ m. We need to find acceleration $a$. Using the equation $v^2 = v_0^2 + 2a(\Delta s)$: $10^2 = 30^2 + 2a(200) \implies 100 = 900 + 400a \implies -800 = 400a \implies a = \frac{-800}{400} = -2 \text{ m/s²}$."
+    }
+  ]
+}

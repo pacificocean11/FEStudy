@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Voltage, also known as electric potential difference or electromotive force (EMF), is the work required per unit of charge to move a test charge between two points. It represents the \"pressure\" from an electrical circuit's power source that pushes charged electrons (current) through a conducting loop.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">Voltage ($V$) is the change in work or energy ($W$) per unit charge ($Q$):</p>\n$$V = \\frac{dW}{dQ}$$\n<p class=\"mb-4\">For a constant potential difference, this simplifies to:</p>\n$$V = \\frac{\\Delta W}{\\Delta Q} \\quad \\text{or} \\quad V = \\frac{\\text{Energy}}{\\text{Charge}}$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Unit of Voltage</h3>\n<p class=\"mb-4\">The SI unit of voltage is the <strong>volt (V)</strong>, named after Alessandro Volta. One volt is defined as the potential difference between two points when one joule of energy is used to move one coulomb of charge from one point to the other.</p>\n$$1 \\text{ V} = 1 \\frac{\\text{Joule}}{\\text{Coulomb}} = 1 \\frac{\\text{J}}{\\text{C}}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A battery performs 18 joules of work to move 3 coulombs of charge through a circuit. What is the voltage of the battery?",
+      "options": [
+        { "text": "54 V", "isCorrect": false },
+        { "text": "6 V", "isCorrect": true },
+        { "text": "0.167 V", "isCorrect": false },
+        { "text": "21 V", "isCorrect": false }
+      ],
+      "explanation": "Using the formula $V = \\frac{\\Delta W}{\\Delta Q}$.\n$V = \\frac{18 \\text{ J}}{3 \\text{ C}} = 6 \\frac{\\text{J}}{\\text{C}} = 6 \\text{ V}$."
+    },
+    {
+      "question": "How much energy is expended when a 12 V power source moves a charge of 2.5 C between two points?",
+      "options": [
+        { "text": "4.8 J", "isCorrect": false },
+        { "text": "14.5 J", "isCorrect": false },
+        { "text": "30 J", "isCorrect": true },
+        { "text": "0.208 J", "isCorrect": false }
+      ],
+      "explanation": "Rearrange the voltage formula to solve for work/energy: $\\Delta W = V \\cdot \\Delta Q$.\n$\\Delta W = 12 \\text{ V} \\cdot 2.5 \\text{ C} = 30 \\text{ J}$."
+    }
+  ]
+}

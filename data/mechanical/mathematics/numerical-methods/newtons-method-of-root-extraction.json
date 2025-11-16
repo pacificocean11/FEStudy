@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Newton's Method (also known as the Newton-Raphson method) is an iterative numerical technique used to find successively better approximations to the roots (or zeros) of a real-valued function. It starts with an initial guess and uses the tangent line at that point to find the next, hopefully closer, guess.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Formula</h3>\n<p class=\"mb-4\">Given a function $f(x)$ and its derivative $f'(x)$, we start with an initial guess $x_0$. The iterative formula to find the next approximation, $x_{n+1}$, from the current one, $x_n$, is:</p>\n$$x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$$\n<p class=\"mb-4\">This process is repeated until the value of $x_{n+1}$ is sufficiently close to $x_n$, indicating that we have converged to a root.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Potential Issues</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Division by Zero:</strong> The method fails if $f'(x_n) = 0$ at any iteration, as this corresponds to a horizontal tangent line that will not intersect the x-axis.</li>\n    <li><strong>Poor Initial Guess:</strong> A bad starting guess $x_0$ can cause the method to diverge or converge to a different root than the one desired.</li>\n    <li><strong>Oscillation:</strong> For some functions, the iterations may oscillate between two or more values without converging.</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "To find a root of the equation $x^2 - 2 = 0$ using Newton's method, what is the iterative formula?",
+      "options": [
+        { "text": "$x_{n+1} = x_n - \\frac{x_n^2 - 2}{2x_n}$", "isCorrect": true },
+        { "text": "$x_{n+1} = x_n - \\frac{2x_n}{x_n^2 - 2}$", "isCorrect": false },
+        { "text": "$x_{n+1} = \\frac{x_n^2 - 2}{2x_n}$", "isCorrect": false },
+        { "text": "$x_{n+1} = x_n - (x_n^2 - 2)$", "isCorrect": false }
+      ],
+      "explanation": "Here, $f(x) = x^2 - 2$ and its derivative is $f'(x) = 2x$. The Newton's method formula is $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$. Substituting the function and its derivative gives $x_{n+1} = x_n - \\frac{x_n^2 - 2}{2x_n}$."
+    },
+    {
+      "question": "Using the formula $x_{n+1} = x_n - \\frac{x_n^2 - 2}{2x_n}$ to approximate $\\sqrt{2}$, what is the next approximation ($x_1$) if the initial guess is $x_0 = 1$?",
+      "options": [
+        { "text": "1.5", "isCorrect": true },
+        { "text": "2.0", "isCorrect": false },
+        { "text": "1.4", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false }
+      ],
+      "explanation": "Plug $x_0 = 1$ into the formula: $x_1 = 1 - \\frac{(1)^2 - 2}{2(1)} = 1 - \\frac{1 - 2}{2} = 1 - \\frac{-1}{2} = 1 + 0.5 = 1.5$."
+    },
+    {
+      "question": "Perform a second iteration to find $x_2$ for approximating $\\sqrt{2}$, starting from $x_1 = 1.5$.",
+      "options": [
+        { "text": "1.414", "isCorrect": false },
+        { "text": "1.4167", "isCorrect": true },
+        { "text": "1.42", "isCorrect": false },
+        { "text": "1.5", "isCorrect": false }
+      ],
+      "explanation": "Use the formula with $x_1 = 1.5$: $x_2 = 1.5 - \\frac{(1.5)^2 - 2}{2(1.5)} = 1.5 - \\frac{2.25 - 2}{3} = 1.5 - \\frac{0.25}{3} \\approx 1.5 - 0.0833 = 1.4167$."
+    },
+    {
+      "question": "For which initial guess $x_0$ would Newton's method fail when applied to the function $f(x) = x^3 - 3x + 1$?",
+      "options": [
+        { "text": "x = 0", "isCorrect": false },
+        { "text": "x = 2", "isCorrect": false },
+        { "text": "x = 1", "isCorrect": true },
+        { "text": "x = -2", "isCorrect": false }
+      ],
+      "explanation": "Newton's method fails if the derivative is zero. The derivative is $f'(x) = 3x^2 - 3$. Set this to zero: $3x^2 - 3 = 0 \\implies 3x^2 = 3 \\implies x^2 = 1 \\implies x = \\pm 1$. So, the method would fail with an initial guess of $x=1$ or $x=-1$."
+    },
+    {
+      "question": "Newton's method is used to find a root for $f(x) = e^x - 2$. Find the iterative formula.",
+      "options": [
+        { "text": "$x_{n+1} = x_n - \\frac{e^{x_n} - 2}{e^{x_n}}$", "isCorrect": true },
+        { "text": "$x_{n+1} = x_n - (e^{x_n} - 2)$", "isCorrect": false },
+        { "text": "$x_{n+1} = x_n - \\frac{e^{x_n}}{e^{x_n} - 2}$", "isCorrect": false },
+        { "text": "$x_{n+1} = 1 - \\frac{2}{e^{x_n}}$", "isCorrect": false }
+      ],
+      "explanation": "Here, $f(x) = e^x - 2$ and its derivative is $f'(x) = e^x$. The iterative formula is $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} = x_n - \\frac{e^{x_n} - 2}{e^{x_n}}$."
+    }
+  ]
+}

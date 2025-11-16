@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Number of Transfer Units (NTU)</strong> is a dimensionless parameter used in the analysis of heat exchangers. It provides a measure of the thermal size or heat transfer capability of the heat exchanger.</p>\n<p class=\"mb-4\">A larger NTU value corresponds to a heat exchanger that can transfer more heat for given fluid flow rates and inlet temperatures. In essence, it is a measure of how effective the heat exchanger is at transferring heat, independent of the temperature differences.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">NTU is defined as the ratio of the overall heat transfer conductance ($UA$) to the minimum heat capacity rate ($C_{min}$):</p>\n$$NTU = \\frac{UA}{C_{min}}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$U$ is the overall heat transfer coefficient (W/m²K).</li>\n    <li>$A$ is the heat transfer surface area (m²).</li>\n    <li>$C_{min}$ is the minimum heat capacity rate of the two fluids ($C_{min} = \\min(\\dot{m}_h c_{p,h}, \\dot{m}_c c_{p,c})$) in W/K.</li>\n</ul>\n<p class=\"mb-4\">A high NTU value can be achieved by having a large surface area ($A$), a high overall heat transfer coefficient ($U$), or a low minimum heat capacity rate ($C_{min}$).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Number of Transfer Units (NTU) is a dimensionless parameter that represents the ________ of a heat exchanger.",
+      "options": [
+        { "text": "Actual temperature drop", "isCorrect": false },
+        { "text": "Flow arrangement", "isCorrect": false },
+        { "text": "Thermal size", "isCorrect": true },
+        { "text": "Maximum possible heat transfer", "isCorrect": false }
+      ],
+      "explanation": "NTU is a measure of the heat transfer surface's capability to transfer heat. A larger NTU means a larger or more effective heat exchanger in terms of its construction (larger area A or better heat transfer coefficient U)."
+    },
+    {
+      "question": "A heat exchanger has an overall heat transfer coefficient of 800 W/m²K and a surface area of 1.5 m². The minimum heat capacity rate of the fluids is 1200 W/K. What is the NTU for this heat exchanger?",
+      "options": [
+        { "text": "1.0", "isCorrect": true },
+        { "text": "1.25", "isCorrect": false },
+        { "text": "0.8", "isCorrect": false },
+        { "text": "1.5", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for NTU: $NTU = \\frac{UA}{C_{min}}$.\n$NTU = \\frac{(800 \\text{ W/m²K})(1.5 \\text{ m²})}{1200 \\text{ W/K}} = \\frac{1200}{1200} = 1.0$."
+    }
+  ]
+}

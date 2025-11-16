@@ -1,0 +1,47 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>copyright</strong> is a legal right that grants the creator of an original work exclusive rights for its use and distribution. It is a form of intellectual property that protects original works of authorship.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. What Copyright Protects</h3>\n<p class=\"mb-4\">Copyright protects the expression of ideas, not the ideas themselves. It applies to works that are fixed in a tangible medium of expression, such as:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Literary works (books, articles, software source code)</li>\n    <li>Musical works, including any accompanying words</li>\n    <li>Dramatic works, including any accompanying music</li>\n    <li>Pictorial, graphic, and sculptural works (engineering drawings, blueprints, photographs)</li>\n    <li>Motion pictures and other audiovisual works</li>\n    <li>Sound recordings</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Term of Protection</h3>\n<p class=\"mb-4\">For works created by an individual, copyright protection typically lasts for the <strong>life of the author plus an additional 70 years</strong>. For works made for hire or anonymous/pseudonymous works, the copyright term is 95 years from the year of its first publication or 120 years from the year of its creation, whichever expires first.</p>\n<h3 class=\"text-lg font-semibold mb-2\">4. Fair Use</h3>\n<p class=\"mb-4\">Fair use is a doctrine in United States law that permits limited use of copyrighted material without having to first acquire permission from the copyright holder. Examples include use for criticism, comment, news reporting, teaching, scholarship, or research.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer writes a technical manual for a new product. What is the primary form of intellectual property that protects the manual's text and diagrams?",
+      "options": [
+        { "text": "Patent", "isCorrect": false },
+        { "text": "Trademark", "isCorrect": false },
+        { "text": "Copyright", "isCorrect": true },
+        { "text": "Trade Secret", "isCorrect": false }
+      ],
+      "explanation": "Copyright protects original works of authorship fixed in a tangible medium, such as a written manual. It protects the specific expression of the information, including the text, charts, and diagrams."
+    },
+    {
+      "question": "Does copyright protect the idea for a new machine described in an engineering drawing, or the drawing itself?",
+      "options": [
+        { "text": "The idea for the machine only", "isCorrect": false },
+        { "text": "The engineering drawing only", "isCorrect": true },
+        { "text": "Both the idea and the drawing", "isCorrect": false },
+        { "text": "Neither the idea nor the drawing", "isCorrect": false }
+      ],
+      "explanation": "Copyright protects the expression of an idea, not the idea itself. The engineering drawing, as a graphical work, is protected by copyright. The functional idea of the machine itself would need to be protected by a patent."
+    },
+    {
+      "question": "What is the standard copyright term for a work created by an individual author?",
+      "options": [
+        { "text": "20 years from creation", "isCorrect": false },
+        { "text": "95 years from publication", "isCorrect": false },
+        { "text": "The life of the author plus 70 years", "isCorrect": true },
+        { "text": "Indefinite, as long as it is renewed", "isCorrect": false }
+      ],
+      "explanation": "For works created on or after January 1, 1978, the copyright term is the life of the author plus 70 years after the author's death."
+    },
+    {
+      "question": "An engineering professor photocopies a chapter from a copyrighted textbook to distribute to her class for educational purposes. This action is most likely permissible under what legal doctrine?",
+      "options": [
+        { "text": "Public Domain", "isCorrect": false },
+        { "text": "Fair Use", "isCorrect": true },
+        { "text": "Patent Infringement", "isCorrect": false },
+        { "text": "Trade Secret", "isCorrect": false }
+      ],
+      "explanation": "The doctrine of Fair Use allows for the limited use of copyrighted material for purposes such as teaching, scholarship, and research without needing the copyright holder's permission."
+    }
+  ]
+}

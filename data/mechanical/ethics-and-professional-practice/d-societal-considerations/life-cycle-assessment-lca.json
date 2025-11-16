@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Life Cycle Assessment (LCA)</strong> is a systematic analysis of the potential environmental impacts of a product, process, or service throughout its entire life cycle. This is often referred to as a \"cradle-to-grave\" or \"cradle-to-cradle\" analysis.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Stages of a Life Cycle</h3>\n<p class=\"mb-4\">An LCA considers environmental impacts at all stages, including:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Raw Material Extraction:</strong> Acquiring raw materials from the earth (e.g., mining ore, harvesting timber).</li>\n    <li><strong>Manufacturing and Processing:</strong> Converting raw materials into a finished product.</li>\n    <li><strong>Transportation and Distribution:</strong> Moving materials and products between stages.</li>\n    <li><strong>Product Use:</strong> The operational life of the product, including energy consumption and maintenance.</li>\n    <li><strong>End-of-Life:</strong> Disposal, recycling, or reuse of the product after it is no longer useful.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Purpose</h3>\n<p class=\"mb-4\">The goal of an LCA is to identify and quantify the energy and materials used and the wastes released into the environment. This helps engineers and designers to:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Identify opportunities for environmental improvements.</li>\n    <li>Compare different products or design choices.</li>\n    <li>Avoid \"burden shifting,\" where solving one environmental problem creates another one elsewhere in the life cycle.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A Life Cycle Assessment (LCA) of a plastic water bottle would typically include all of the following stages EXCEPT:",
+      "options": [
+        { "text": "The environmental impact of oil extraction to produce the plastic.", "isCorrect": false },
+        { "text": "The energy used to manufacture and transport the bottle.", "isCorrect": false },
+        { "text": "The environmental impact of the product being advertised on television.", "isCorrect": true },
+        { "text": "The fate of the bottle after it is thrown away (landfill or recycling).", "isCorrect": false }
+      ],
+      "explanation": "LCA focuses on the physical life cycle of a product, from raw material extraction to end-of-life disposal. While advertising has its own resource use, it is generally considered outside the scope of the product's direct environmental impact assessment."
+    }
+  ]
+}

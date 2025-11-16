@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Two-Force Member</h3>\n<p class=\"mb-4\">A <strong>two-force member</strong> is a rigid body that is subjected to forces at only two points.</p>\n<p class=\"mb-4\">For a two-force member to be in equilibrium, the two forces must be:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Equal in magnitude.</li>\n    <li>Opposite in direction.</li>\n    <li>Collinear (acting along the same line of action, which is the line connecting the two points where the forces are applied).</li>\n</ol>\n<p class=\"mb-4\">This principle is extremely useful for analyzing trusses, as all members of an ideal truss are two-force members, meaning the forces in them are purely axial (tension or compression).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Three-Force Member</h3>\n<p class=\"mb-4\">A <strong>three-force member</strong> is a rigid body that is in equilibrium under the action of three forces.</p>\n<p class=\"mb-4\">For a three-force member to be in equilibrium, the lines of action of the three forces must be either:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Concurrent:</strong> They must all intersect at a single point. (This ensures zero net moment).</li>\n    <li><strong>Parallel:</strong> A special case where the intersection point is at infinity.</li>\n</ul>\n<p class=\"mb-4\">If the lines of action of two of the three forces are known, the line of action of the third force must pass through the intersection point of the first two. This geometric constraint can simplify the solution of some equilibrium problems.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The members of an ideal simple truss are all examples of what type of member?",
+      "options": [
+        { "text": "Two-force members", "isCorrect": true },
+        { "text": "Three-force members", "isCorrect": false },
+        { "text": "Cantilever beams", "isCorrect": false },
+        { "text": "Multi-force members", "isCorrect": false }
+      ],
+      "explanation": "By the definition of an ideal truss, loads are only applied at the joints (pins), and the weight of the members is neglected. This means each member has forces acting on it at only two points, making them all two-force members. As a result, the internal forces are purely axial."
+    },
+    {
+      "question": "A rigid body is in equilibrium under the action of three forces. If the forces are not parallel, what must be true about their lines of action?",
+      "options": [
+        { "text": "They must be perpendicular to each other.", "isCorrect": false },
+        { "text": "They must intersect at a single point.", "isCorrect": true },
+        { "text": "They must be equal in magnitude.", "isCorrect": false },
+        { "text": "They must form a closed triangle.", "isCorrect": true }
+      ],
+      "explanation": "For the net moment on the body to be zero, the lines of action of the three non-parallel forces must be concurrent (intersect at one point). If they did not, they would create a couple, and the body would not be in rotational equilibrium. Additionally, for the net force to be zero, the force vectors must form a closed triangle when added head-to-tail."
+    }
+  ]
+}

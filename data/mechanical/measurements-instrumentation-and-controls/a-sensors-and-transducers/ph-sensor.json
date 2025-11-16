@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>pH sensor</strong> is an analytical instrument used to measure the acidity or alkalinity of a solution, expressed as pH. pH is defined as the negative logarithm of the hydrogen ion activity ($a_{H^+}$).</p>\n$$pH = -\\log_{10}(a_{H^+})$$\n<p class=\"mb-4\">In dilute solutions, hydrogen ion activity is approximately equal to its concentration $[H^+]$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Operation (Potentiometric)</h3>\n<p class=\"mb-4\">The most common type of pH sensor is a potentiometric pH meter, which consists of two electrodes immersed in the solution to be tested:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Measuring Electrode (Glass Electrode):</strong> This electrode has a very thin glass bulb at the end, which is sensitive to hydrogen ions. A potential difference develops across the glass membrane that is proportional to the difference in pH between the solution inside the bulb and the solution being tested.</li>\n    <li><strong>Reference Electrode:</strong> This electrode provides a stable, constant potential regardless of the solution's composition. Common types include silver/silver chloride (Ag/AgCl) electrodes.</li>\n</ul>\n<p class=\"mb-4\">A high-impedance voltmeter measures the potential difference (voltage) between these two electrodes. This voltage is then related to the pH of the solution by the Nernst equation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Nernst Equation</h3>\n<p class=\"mb-4\">The relationship between the measured potential ($E$) and the pH is given by the Nernst equation. At a standard temperature of 25°C (298 K), it simplifies to:</p>\n$$E = E_0 - 0.0592 \\cdot pH$$\n<p class=\"mb-4\">This shows a linear relationship between the measured voltage and the pH value. The sensor must be calibrated using buffer solutions of known pH to determine the constant $E_0$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A standard pH meter measures the pH of a solution by:",
+      "options": [
+        { "text": "Measuring the solution's electrical resistance.", "isCorrect": false },
+        { "text": "Measuring the voltage difference between a measuring electrode and a reference electrode.", "isCorrect": true },
+        { "text": "Measuring the solution's optical absorbance.", "isCorrect": false },
+        { "text": "Measuring the temperature change during a chemical reaction.", "isCorrect": false }
+      ],
+      "explanation": "A potentiometric pH sensor works by measuring the potential (voltage) that develops between two electrodes—a glass electrode sensitive to hydrogen ions and a stable reference electrode."
+    },
+    {
+      "question": "The relationship between the output voltage of a pH probe and the pH value is approximately:",
+      "options": [
+        { "text": "Logarithmic", "isCorrect": false },
+        { "text": "Quadratic", "isCorrect": false },
+        { "text": "Linear", "isCorrect": true },
+        { "text": "Exponential", "isCorrect": false }
+      ],
+      "explanation": "According to the simplified Nernst equation ($E = E_0 - 0.0592 \\cdot pH$), the measured potential $E$ is a linear function of the pH. For every one-unit change in pH, the voltage changes by approximately 59.2 mV at 25°C."
+    }
+  ]
+}

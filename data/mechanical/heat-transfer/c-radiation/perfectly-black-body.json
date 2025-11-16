@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>black body</strong> is an idealized physical body that absorbs all incident electromagnetic radiation, regardless of frequency or angle of incidence. It does not reflect any radiation, making it appear perfectly black if it were at room temperature.</p>\n<p class=\"mb-4\">While being a perfect absorber, a black body is also a perfect emitter of thermal radiation. The radiation it emits, called black-body radiation, depends only on its temperature.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Radiative Properties</h3>\n<p class=\"mb-4\">For any object, the incident radiation (G) can be reflected, absorbed, or transmitted.</p>\n$$\\rho + \\alpha + \\tau = 1$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\rho$ = Reflectivity (fraction reflected)</li>\n    <li>$\\alpha$ = Absorptivity (fraction absorbed)</li>\n    <li>$\\tau$ = Transmissivity (fraction transmitted)</li>\n</ul>\n<p class=\"mb-4\">For a black body, by definition:</p>\n$$\\alpha = 1, \\quad \\rho = 0, \\quad \\tau = 0$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Emissivity</h3>\n<p class=\"mb-4\"><strong>Emissivity ($\\epsilon$)</strong> is the ratio of the thermal radiation from a surface to the radiation from an ideal black body at the same temperature. It is a measure of a material's ability to emit thermal energy. It is a dimensionless number between 0 and 1.</p>\n<p class=\"mb-4\">For a black body, the emissivity is the maximum possible value:</p>\n$$\\epsilon = 1$$\n<p class=\"mb-4\">Real objects are called \"gray bodies\" and have an emissivity less than 1. Kirchhoff's law of thermal radiation states that for an object in thermal equilibrium, its emissivity is equal to its absorptivity: $\\epsilon = \\alpha$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the absorptivity ($\\alpha$) of a perfectly black body?",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "Infinity", "isCorrect": false }
+      ],
+      "explanation": "By definition, a black body is a perfect absorber. It absorbs 100% of all incident radiation, so its absorptivity is 1."
+    },
+    {
+      "question": "What is the emissivity ($\\epsilon$) of a perfectly black body?",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "Depends on temperature", "isCorrect": false }
+      ],
+      "explanation": "A black body is not only a perfect absorber but also a perfect emitter of thermal radiation. It has the maximum possible emissivity, which is 1."
+    },
+    {
+      "question": "A material has an emissivity of 0.8. Assuming it is in thermal equilibrium, what is its absorptivity?",
+      "options": [
+        { "text": "0.2", "isCorrect": false },
+        { "text": "0.8", "isCorrect": true },
+        { "text": "1.0", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "According to Kirchhoff's law of thermal radiation, for a body in thermal equilibrium, its emissivity is equal to its absorptivity. Therefore, $\\alpha = \\epsilon = 0.8$."
+    }
+  ]
+}

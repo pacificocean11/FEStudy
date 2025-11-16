@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The effectiveness-NTU method is used to analyze heat exchangers when the fluid outlet temperatures are not known. The <strong>effectiveness ($\\epsilon$)</strong> of a heat exchanger is a dimensionless measure of its thermal performance. It is the ratio of the actual heat transfer rate to the maximum possible heat transfer rate.</p>\n$$\\epsilon = \\frac{q_{actual}}{q_{max}}$$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Actual and Maximum Heat Transfer</h3>\n<p class=\"mb-4\">The actual heat transfer rate can be calculated from the temperature change of either fluid:</p>\n$$q_{actual} = C_h(T_{h,in} - T_{h,out}) = C_c(T_{c,out} - T_{c,in})$$\n<p class=\"mb-4\">The <strong>heat capacity rate</strong> is $C = \\dot{m}c_p$, where $\\dot{m}$ is the mass flow rate and $c_p$ is the specific heat.</p>\n<p class=\"mb-4\">The maximum possible heat transfer rate ($q_{max}$) would occur in an infinitely long counter-flow heat exchanger. In such a device, the outlet temperature of the fluid with the smaller heat capacity rate would reach the inlet temperature of the other fluid. Therefore, the maximum heat transfer is determined by the fluid with the smaller heat capacity rate ($C_{min}$).</p>\n$$C_{min} = \\min(C_h, C_c)$$\n$$q_{max} = C_{min}(T_{h,in} - T_{c,in})$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Effectiveness Formula</h3>\n<p class=\"mb-4\">Substituting the definitions, the effectiveness can be written as:</p>\n$$\\epsilon = \\frac{C_h(T_{h,in} - T_{h,out})}{C_{min}(T_{h,in} - T_{c,in})} = \\frac{C_c(T_{c,out} - T_{c,in})}{C_{min}(T_{h,in} - T_{c,in})}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The effectiveness of a heat exchanger represents the ratio of:",
+      "options": [
+        { "text": "LMTD to the maximum temperature difference.", "isCorrect": false },
+        { "text": "Actual heat transfer rate to the maximum possible heat transfer rate.", "isCorrect": true },
+        { "text": "Heat capacity of the hot fluid to the cold fluid.", "isCorrect": false },
+        { "text": "Surface area to the overall heat transfer coefficient.", "isCorrect": false }
+      ],
+      "explanation": "Effectiveness is a dimensionless parameter that compares how much heat was actually transferred to the theoretical maximum amount that could have been transferred."
+    },
+    {
+      "question": "In a heat exchanger, the hot fluid has a heat capacity rate $C_h = 2000$ W/K and the cold fluid has $C_c = 3000$ W/K. The hot fluid enters at 100°C and the cold fluid at 20°C. What is the maximum possible heat transfer rate?",
+      "options": [
+        { "text": "160 kW", "isCorrect": true },
+        { "text": "240 kW", "isCorrect": false },
+        { "text": "80 kW", "isCorrect": false },
+        { "text": "100 kW", "isCorrect": false }
+      ],
+      "explanation": "First, identify the minimum heat capacity rate: $C_{min} = \\min(C_h, C_c) = \\min(2000, 3000) = 2000$ W/K. The maximum possible heat transfer is $q_{max} = C_{min}(T_{h,in} - T_{c,in}) = (2000 \\text{ W/K})(100°C - 20°C) = 2000 \\cdot 80 = 160,000$ W or 160 kW."
+    }
+  ]
+}

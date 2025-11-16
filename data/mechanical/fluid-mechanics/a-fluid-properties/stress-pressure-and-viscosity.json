@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Stress</h3>\n<p class=\"mb-4\">Stress is defined as force per unit area. In fluids, two types of stress are important:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Normal Stress:</strong> Acts perpendicular to a surface. Pressure is a type of normal stress.</li>\n    <li><strong>Shear Stress ($\\tau$):</strong> Acts parallel or tangential to a surface. It arises from the friction between fluid layers moving at different velocities.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Pressure (P)</h3>\n<p class=\"mb-4\">Pressure is the compressive normal stress exerted by a fluid. A key property is that the pressure at a point in a fluid at rest is the same in all directions (Pascal's Law).</p>\n$$ P = \\frac{F_{normal}}{A} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Units:</strong> Pascals (Pa), where 1 Pa = 1 N/m². Other common units include kPa, bar, and psi.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Viscosity ($\\mu$)</h3>\n<p class=\"mb-4\">Viscosity is a measure of a fluid's resistance to shear or angular deformation. It can be thought of as the 'thickness' or internal friction of a fluid. Honey is more viscous than water.</p>\n<p class=\"mb-4\"><strong>Newton's Law of Viscosity:</strong> For many common fluids (called Newtonian fluids), the shear stress is directly proportional to the rate of strain (velocity gradient).</p>\n$$ \\tau = \\mu \\frac{du}{dy} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\tau$ is the shear stress.</li>\n    <li>$\\mu$ is the dynamic (or absolute) viscosity. <strong>Units:</strong> Pa·s or N·s/m².</li>\n    <li>$\\frac{du}{dy}$ is the velocity gradient (rate of shear strain), which is the change in velocity ($du$) over a change in distance perpendicular to the flow ($dy$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Kinematic Viscosity ($\\nu$)</h3>\n<p class=\"mb-4\">Kinematic viscosity is the ratio of the dynamic viscosity to the density of the fluid.</p>\n$$ \\nu = \\frac{\\mu}{\\rho} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Units:</strong> m²/s.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A fluid is flowing between two parallel plates. The top plate moves at 2 m/s and the bottom plate is stationary. The distance between the plates is 0.01 m. If the fluid has a dynamic viscosity of 0.5 Pa·s, what is the shear stress in the fluid? (Assume a linear velocity profile).",
+      "options": [
+        { "text": "10 Pa", "isCorrect": false },
+        { "text": "100 Pa", "isCorrect": true },
+        { "text": "200 Pa", "isCorrect": false },
+        { "text": "0.01 Pa", "isCorrect": false }
+      ],
+      "explanation": "Assuming a linear velocity profile, the velocity gradient is constant: $\\frac{du}{dy} = \\frac{\\Delta u}{\\Delta y} = \\frac{2 \\text{ m/s} - 0 \\text{ m/s}}{0.01 \\text{ m}} = 200 \\text{ s}^{-1}$. Using Newton's law of viscosity: $\\tau = \\mu \\frac{du}{dy} = (0.5 \\text{ Pa·s})(200 \\text{ s}^{-1}) = 100$ Pa."
+    },
+    {
+      "question": "A fluid has a dynamic viscosity of 1.2 Pa·s and a density of 800 kg/m³. What is its kinematic viscosity?",
+      "options": [
+        { "text": "960 m²/s", "isCorrect": false },
+        { "text": "0.0015 m²/s", "isCorrect": true },
+        { "text": "667 m²/s", "isCorrect": false },
+        { "text": "1.5 m²/s", "isCorrect": false }
+      ],
+      "explanation": "Kinematic viscosity is dynamic viscosity divided by density: $\\nu = \\frac{\\mu}{\\rho} = \\frac{1.2 \\text{ Pa·s}}{800 \\text{ kg/m³}} = 0.0015$ m²/s."
+    }
+  ]
+}

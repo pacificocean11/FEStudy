@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Importance</h3>\n<p class=\"mb-4\">The <strong>iron-iron carbide (Fe-Fe₃C) phase diagram</strong> is arguably the most important phase diagram for mechanical and materials engineers. It provides the foundation for understanding the microstructure and properties of steels and cast irons, and how they can be manipulated through heat treatment.</p>\n<p class=\"mb-4\">The diagram maps the phases of iron-carbon alloys at equilibrium as a function of temperature and carbon concentration (up to 6.67% carbon by weight, which is the composition of pure iron carbide, or cementite).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Phases</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Ferrite ($\\alpha$-iron):</strong> The body-centered cubic (BCC) crystal structure of iron. It is relatively soft, ductile, and magnetic. It can only dissolve a very small amount of carbon.</li>\n    <li><strong>Austenite ($\\gamma$-iron):</strong> The face-centered cubic (FCC) crystal structure of iron, stable at high temperatures. It is non-magnetic and can dissolve a significant amount of carbon (up to 2.11%). It is crucial for most heat treatments.</li>\n    <li><strong>Cementite (Fe₃C):</strong> An iron-carbon compound (iron carbide) with 6.67% carbon. It is very hard and brittle.</li>\n    <li><strong>Pearlite:</strong> Not a phase, but a lamellar (layered) microstructure consisting of alternating layers of ferrite and cementite. It forms when austenite cools slowly through the eutectoid temperature.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the Fe-Fe₃C diagram, what is the crystal structure of Austenite?",
+      "options": [
+        { "text": "Body-Centered Cubic (BCC)", "isCorrect": false },
+        { "text": "Face-Centered Cubic (FCC)", "isCorrect": true },
+        { "text": "Hexagonal Close-Packed (HCP)", "isCorrect": false },
+        { "text": "Amorphous", "isCorrect": false }
+      ],
+      "explanation": "Austenite, or gamma-iron ($\\gamma$-Fe), is the phase of iron with a Face-Centered Cubic (FCC) crystal structure. This structure is stable at high temperatures and its ability to dissolve carbon is key to heat treating steel."
+    },
+    {
+      "question": "The phase known as Cementite is:",
+      "options": [
+        { "text": "A soft and ductile form of pure iron.", "isCorrect": false },
+        { "text": "A layered microstructure of ferrite and austenite.", "isCorrect": false },
+        { "text": "An extremely hard and brittle compound of iron and carbon.", "isCorrect": true },
+        { "text": "The liquid phase of steel.", "isCorrect": false }
+      ],
+      "explanation": "Cementite is the chemical compound iron carbide (Fe₃C). It is an intermetallic phase that is very hard and brittle, and it is a key component in the microstructure of steels and cast irons."
+    }
+  ]
+}

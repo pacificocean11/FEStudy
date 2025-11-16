@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Position, Velocity, and Acceleration</h3>\n<p class=\"mb-4\">In kinematics, we describe the motion of objects. The fundamental quantities are position, velocity, and acceleration, which are often represented as vector functions of time.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Position Vector ($\b r(t)$):</strong> A vector that gives the location of a particle at a time $t$. In Cartesian coordinates, $\b r(t) = x(t)\b i + y(t)\b j + z(t)\b k$.</li>\n    <li><strong>Instantaneous Velocity ($\b v(t)$):</strong> The rate of change of the position vector. It is a vector tangent to the particle's path and represents its speed and direction at a specific moment. It is found by taking the first derivative of the position vector.</li>\n    $$\b v(t) = \frac{d\b r}{dt} = \dot{\b r} = v_x \b i + v_y \b j + v_z \b k$$\n    <li><strong>Instantaneous Acceleration ($\b a(t)$):</strong> The rate of change of the velocity vector. It represents how the particle's velocity is changing at a specific moment. It is found by taking the second derivative of the position vector or the first derivative of the velocity vector.</li>\n    $$\b a(t) = \frac{d\b v}{dt} = \dot{\b v} = \frac{d^2\b r}{dt^2} = \ddot{\b r} = a_x \b i + a_y \b j + a_z \b k$$\n</ul>\n<p class=\"mb-4\"><strong>Speed</strong> is the magnitude of the velocity vector: Speed = $||\b v(t)||$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The position of a particle is given by the vector $\b r(t) = (3t^2 - 1)\b i + (t^3)\b j$. What is the velocity vector at $t=2$ s?",
+      "options": [
+        { "text": "$11\b i + 8\b j$", "isCorrect": false },
+        { "text": "$12\b i + 12\b j$", "isCorrect": true },
+        { "text": "$6\b i + 3\b j$", "isCorrect": false },
+        { "text": "$6t \b i + 3t^2 \b j$", "isCorrect": false }
+      ],
+      "explanation": "First, find the velocity vector by differentiating the position vector with respect to time: $\b v(t) = \frac{d\b r}{dt} = \frac{d}{dt}(3t^2 - 1)\b i + \frac{d}{dt}(t^3)\b j = (6t)\b i + (3t^2)\b j$. Now, evaluate this vector at $t=2$: $\b v(2) = (6(2))\b i + (3(2)^2)\b j = 12\b i + 12\b j$."
+    },
+    {
+      "question": "For the particle with velocity $\b v(t) = (6t)\b i + (3t^2)\b j$, what is the acceleration vector at $t=2$ s?",
+      "options": [
+        { "text": "$6\b i + 6\b j$", "isCorrect": false },
+        { "text": "$6\b i + 12t\b j$", "isCorrect": false },
+        { "text": "$6\b i + 12\b j$", "isCorrect": true },
+        { "text": "$12\b i + 12\b j$", "isCorrect": false }
+      ],
+      "explanation": "Find the acceleration vector by differentiating the velocity vector: $\b a(t) = \frac{d\b v}{dt} = \frac{d}{dt}(6t)\b i + \frac{d}{dt}(3t^2)\b j = 6\b i + (6t)\b j$. Now, evaluate at $t=2$: $\b a(2) = 6\b i + (6(2))\b j = 6\b i + 12\b j$."
+    },
+    {
+      "question": "A particle's position is described by $x(t) = 5\sin(2t)$. What is its maximum speed?",
+      "options": [
+        { "text": "5", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "2.5", "isCorrect": false }
+      ],
+      "explanation": "First find the velocity function: $v(t) = \frac{dx}{dt} = \frac{d}{dt}(5\sin(2t)) = 5\cos(2t) \cdot 2 = 10\cos(2t)$. The speed is the magnitude of the velocity, $|v(t)| = |10\cos(2t)|$. The maximum value of the cosine function is 1, so the maximum speed is $10 \cdot 1 = 10$."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>triple point</strong> of a substance is the unique combination of temperature and pressure at which its solid, liquid, and gaseous phases can coexist in thermodynamic equilibrium.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Phase Diagram</h3>\n<p class=\"mb-4\">On a pressure-temperature (P-T) phase diagram, the triple point is the single point where the three phase boundary lines meet:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The melting/freezing curve (solid-liquid boundary)</li>\n    <li>The vaporization/condensation curve (liquid-gas boundary)</li>\n    <li>The sublimation/deposition curve (solid-gas boundary)</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Example: Water</h3>\n<p class=\"mb-4\">The triple point of water is used to define the Kelvin, the SI base unit of thermodynamic temperature. It occurs at a temperature of 273.16 K (0.01 °C) and a vapor pressure of 611.66 pascals (approx. 0.006 atm). At this specific point, you can have ice, liquid water, and water vapor all existing together in a stable state.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The triple point of a substance is the point on a P-T phase diagram where:",
+      "options": [
+        { "text": "The liquid and gas phases become indistinguishable.", "isCorrect": false },
+        { "text": "Only the solid phase can exist.", "isCorrect": false },
+        { "text": "The solid, liquid, and gas phases coexist in equilibrium.", "isCorrect": true },
+        { "text": "The substance is in a supercritical state.", "isCorrect": false }
+      ],
+      "explanation": "By definition, the triple point is the unique temperature and pressure at which all three phases—solid, liquid, and gas—can exist simultaneously in a stable equilibrium."
+    }
+  ]
+}

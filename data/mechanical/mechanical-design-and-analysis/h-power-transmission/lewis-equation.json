@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Lewis Bending Equation</strong> is a foundational formula in gear design used to estimate the bending stress at the root of a gear tooth. It models the gear tooth as a short cantilever beam with the tangential load ($W_t$) applied at the tip.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equation</h3>\n<p class=\"mb-4\">The equation relates the tangential load to the bending stress in the tooth. A common form is:</p>\n$$\\sigma = \\frac{W_t P}{F Y}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sigma$ is the bending stress at the root of the tooth.</li>\n    <li>$W_t$ is the tangential load.</li>\n    <li>$P$ is the Diametral Pitch (in US Customary units).</li>\n    <li>$F$ is the face width of the gear tooth.</li>\n    <li>$Y$ is the Lewis Form Factor, a dimensionless factor that depends on the tooth profile (e.g., pressure angle) and the number of teeth. It accounts for the tooth's geometry.</li>\n</ul>\n<p class=\"mb-4\">Alternatively, using the module ($m$) in SI units:</p>\n$$\\sigma = \\frac{W_t}{F m Y_s}$$\n<p class=\"mb-4\">where $Y_s$ is a slightly different form factor used with the module.</p>\n<p class=\"mb-4\">In a design problem, you would typically calculate the required tangential load, then use this equation (rearranged) to determine the required face width or pitch to keep the stress below the material's allowable limit.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Lewis Bending Equation treats a gear tooth as what type of simple mechanical element?",
+      "options": [
+        { "text": "A simple supported beam", "isCorrect": false },
+        { "text": "A column under compression", "isCorrect": false },
+        { "text": "A cantilever beam", "isCorrect": true },
+        { "text": "A torsion bar", "isCorrect": false }
+      ],
+      "explanation": "The fundamental assumption of the Lewis equation is that a gear tooth behaves like a short cantilever beam, fixed at the root and loaded at the tip by the tangential force from the mating gear."
+    },
+    {
+      "question": "According to the Lewis equation ($\\sigma = W_t P / FY$), if the face width (F) of a gear is doubled while all other parameters remain constant, what happens to the bending stress ($\\sigma$)?",
+      "options": [
+        { "text": "It is halved.", "isCorrect": true },
+        { "text": "It is doubled.", "isCorrect": false },
+        { "text": "It is quadrupled.", "isCorrect": false },
+        { "text": "It does not change.", "isCorrect": false }
+      ],
+      "explanation": "The stress $\\sigma$ is inversely proportional to the face width $F$. Therefore, if you double the face width, you cut the bending stress in half. This is because the same tangential load is distributed over a wider tooth."
+    }
+  ]
+}

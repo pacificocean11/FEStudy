@@ -5,9 +5,10 @@ import { CheckCircleIcon, XCircleIcon } from './icons';
 interface SolvedExampleCardProps {
   example: SolvedExample;
   index: number;
+  onAnswer?: (isCorrect: boolean) => void;
 }
 
-const SolvedExampleCard: React.FC<SolvedExampleCardProps> = ({ example, index }) => {
+const SolvedExampleCard: React.FC<SolvedExampleCardProps> = ({ example, index, onAnswer }) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -33,8 +34,12 @@ const SolvedExampleCard: React.FC<SolvedExampleCardProps> = ({ example, index })
 
   const handleOptionSelect = (optionText: string) => {
     if (isSubmitted) return;
+    const selected = example.options.find(o => o.text === optionText);
     setSelectedOption(optionText);
-setIsSubmitted(true);
+    setIsSubmitted(true);
+    if (onAnswer && selected) {
+      onAnswer(selected.isCorrect);
+    }
   };
 
   const getOptionClasses = (option: { text: string; isCorrect: boolean }) => {

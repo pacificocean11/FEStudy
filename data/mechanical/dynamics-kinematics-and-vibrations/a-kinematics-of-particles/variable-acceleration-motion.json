@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. When Acceleration is Not Constant</h3>\n<p class=\"mb-4\">In many real-world scenarios, acceleration is not constant but varies with time, position, or velocity. In these cases, the simple kinematic equations for constant acceleration cannot be used. Instead, we must use calculus (integration and differentiation).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Fundamental Calculus Relationships</h3>\n<p class=\"mb-4\">The definitions of velocity and acceleration are the starting point:</p>\n$$a(t) = \frac{dv}{dt} \quad \quad v(t) = \frac{ds}{dt}$$\n<p class=\"mb-4\">From these, we can derive the integral relationships:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Finding Velocity from Acceleration:</strong> If acceleration is a function of time, $a(t)$, we can find the change in velocity by integrating:</li>\n    $$\Delta v = v_f - v_i = \int_{t_i}^{t_f} a(t) dt$$\n    <li><strong>Finding Position from Velocity:</strong> If velocity is a function of time, $v(t)$, we can find the change in position (displacement) by integrating:</li>\n    $$\Delta s = s_f - s_i = \int_{t_i}^{t_f} v(t) dt$$\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Acceleration as a Function of Position</h3>\n<p class=\"mb-4\">A third useful relationship, $a ds = v dv$, can be derived from the fundamental definitions. This is useful when acceleration is given as a function of position, $a(s)$. We can integrate it as:</p>\n$$\int_{s_i}^{s_f} a(s) ds = \int_{v_i}^{v_f} v dv = \frac{1}{2}(v_f^2 - v_i^2)$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A particle starts from rest at the origin. Its acceleration is given by $a(t) = 6t$ m/s². What is its velocity at $t=3$ s?",
+      "options": [
+        { "text": "18 m/s", "isCorrect": false },
+        { "text": "54 m/s", "isCorrect": false },
+        { "text": "27 m/s", "isCorrect": true },
+        { "text": "9 m/s", "isCorrect": false }
+      ],
+      "explanation": "Velocity is the integral of acceleration. We are given $v_0 = 0$ at $t_0=0$. $v(t) = v_0 + \int_0^t a(\tau) d\tau = 0 + \int_0^t 6\tau d\tau = [3\tau^2]_0^t = 3t^2$. Now, evaluate at $t=3$: $v(3) = 3(3)^2 = 27 \text{ m/s}$."
+    },
+    {
+      "question": "A particle has a velocity of $v(t) = 3t^2$ m/s and starts at position $s(0)=0$. What is its position at $t=3$ s?",
+      "options": [
+        { "text": "27 m", "isCorrect": true },
+        { "text": "9 m", "isCorrect": false },
+        { "text": "18 m", "isCorrect": false },
+        { "text": "81 m", "isCorrect": false }
+      ],
+      "explanation": "Position is the integral of velocity. We are given $s_0=0$ at $t_0=0$. $s(t) = s_0 + \int_0^t v(\tau) d\tau = 0 + \int_0^t 3\tau^2 d\tau = [\tau^3]_0^t = t^3$. Now, evaluate at $t=3$: $s(3) = (3)^3 = 27 \text{ m}$."
+    },
+    {
+      "question": "The acceleration of an object is given by $a = -2v$, where $v$ is velocity. If the initial velocity is 10 m/s, what is the velocity at $t=1$ s?",
+      "options": [
+        { "text": "5 m/s", "isCorrect": false },
+        { "text": "$10e^{-2}$ m/s", "isCorrect": true },
+        { "text": "8 m/s", "isCorrect": false },
+        { "text": "0 m/s", "isCorrect": false }
+      ],
+      "explanation": "Here, acceleration is a function of velocity. We use $a = dv/dt$. The equation is $\frac{dv}{dt} = -2v$. This is a separable differential equation: $\frac{dv}{v} = -2dt$. Integrating both sides gives $\ln(v) = -2t + C$. Exponentiating gives $v = e^{-2t+C} = e^C e^{-2t} = K e^{-2t}$. Using the initial condition $v(0)=10$, we have $10 = K e^0 \implies K=10$. So, $v(t) = 10e^{-2t}$. At $t=1$, $v(1) = 10e^{-2}$ m/s."
+    }
+  ]
+}

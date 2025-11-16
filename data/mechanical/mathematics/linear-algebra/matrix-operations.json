@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Matrix Addition and Subtraction</h3>\n<p class=\"mb-4\">Matrices can be added or subtracted only if they have the same dimensions (same number of rows and columns). The operation is performed by adding or subtracting the corresponding elements.</p>\n<p class=\"mb-4\">If $A = [a_{ij}]$ and $B = [b_{ij}]$, then $A+B = [a_{ij} + b_{ij}]$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Scalar Multiplication</h3>\n<p class=\"mb-4\">To multiply a matrix by a scalar (a single number), multiply every element of the matrix by that scalar.</p>\n<p class=\"mb-4\">If $k$ is a scalar, then $kA = [ka_{ij}]$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Matrix Multiplication</h3>\n<p class=\"mb-4\">The product of two matrices, $C = AB$, is defined only if the number of columns in matrix A is equal to the number of rows in matrix B. If A is an $m \\times n$ matrix and B is an $n \\times p$ matrix, the resulting matrix C will be an $m \\times p$ matrix.</p>\n<p class=\"mb-4\">The element $c_{ij}$ in the resulting matrix is found by taking the dot product of the $i$-th row of A and the $j$-th column of B.</p>\n<p class=\"mb-4\">Note that matrix multiplication is <strong>not commutative</strong>, i.e., $AB \\neq BA$ in general.</p>\n<h3 class=\"text-lg font-semibold mb-2\">4. Transpose</h3>\n<p class=\"mb-4\">The transpose of a matrix A, denoted $A^T$, is obtained by interchanging the rows and columns. If A is an $m \\times n$ matrix, $A^T$ will be an $n \\times m$ matrix.</p>\n<h3 class=\"text-lg font-semibold mb-2\">5. Inverse</h3>\n<p class=\"mb-4\">The inverse of a square matrix A, denoted $A^{-1}$, is the matrix such that $AA^{-1} = A^{-1}A = I$, where $I$ is the identity matrix. An inverse exists only if the determinant of A is non-zero.</p>\n<p class=\"mb-4\">For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the inverse is: </p>\n$$A^{-1} = \\frac{1}{ad-bc} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$$\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Given $A = \\begin{pmatrix} 1 & 3 \\\\ 2 & 5 \\end{pmatrix}$ and $B = \\begin{pmatrix} 0 & 4 \\\\ 1 & -2 \\end{pmatrix}$, find $A+B$.",
+      "options": [
+        { "text": "$\\begin{pmatrix} 1 & 7 \\\\ 3 & 3 \\end{pmatrix}$", "isCorrect": true },
+        { "text": "$\\begin{pmatrix} 1 & 7 \\\\ 3 & 7 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 1 & 12 \\\\ 2 & -10 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "Undefined", "isCorrect": false }
+      ],
+      "explanation": "Matrix addition is performed element-wise. $A+B = \\begin{pmatrix} 1+0 & 3+4 \\\\ 2+1 & 5+(-2) \\end{pmatrix} = \\begin{pmatrix} 1 & 7 \\\\ 3 & 3 \\end{pmatrix}$."
+    },
+    {
+      "question": "If $A = \\begin{pmatrix} 2 & -1 \\\\ 4 & 6 \\end{pmatrix}$, what is $3A$?",
+      "options": [
+        { "text": "$\\begin{pmatrix} 5 & 2 \\\\ 7 & 9 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 6 & -3 \\\\ 12 & 18 \\end{pmatrix}$", "isCorrect": true },
+        { "text": "$\\begin{pmatrix} 6 & -1 \\\\ 12 & 6 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 2 & -3 \\\\ 4 & 18 \\end{pmatrix}$", "isCorrect": false }
+      ],
+      "explanation": "For scalar multiplication, multiply each element by the scalar: $3A = \\begin{pmatrix} 3(2) & 3(-1) \\\\ 3(4) & 3(6) \\end{pmatrix} = \\begin{pmatrix} 6 & -3 \\\\ 12 & 18 \\end{pmatrix}$."
+    },
+    {
+      "question": "Given $A = \\begin{pmatrix} 1 & 2 \\end{pmatrix}$ and $B = \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}$, find the product $AB$.",
+      "options": [
+        { "text": "$\\begin{pmatrix} 3 & 8 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 3 \\\\ 8 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$11$", "isCorrect": true },
+        { "text": "Undefined", "isCorrect": false }
+      ],
+      "explanation": "A is a $1 \\times 2$ matrix and B is a $2 \\times 1$ matrix. The number of columns in A (2) equals the number of rows in B (2), so the product is defined and will be a $1 \\times 1$ matrix (a scalar). $AB = [ (1)(3) + (2)(4) ] = [3 + 8] = [11]$, which is treated as the scalar 11."
+    },
+    {
+      "question": "What is the transpose of the matrix $C = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}$?",
+      "options": [
+        { "text": "$\\begin{pmatrix} 4 & 5 & 6 \\\\ 1 & 2 & 3 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 1 & 4 \\\\ 2 & 5 \\\\ 3 & 6 \\end{pmatrix}$", "isCorrect": true },
+        { "text": "$\\begin{pmatrix} 3 & 2 & 1 \\\\ 6 & 5 & 4 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\\\ 5 & 6 \\end{pmatrix}$", "isCorrect": false }
+      ],
+      "explanation": "The transpose is found by interchanging rows and columns. The first row [1 2 3] becomes the first column, and the second row [4 5 6] becomes the second column."
+    },
+    {
+      "question": "Find the inverse of the matrix $A = \\begin{pmatrix} 3 & 1 \\\\ 5 & 2 \\end{pmatrix}$.",
+      "options": [
+        { "text": "$\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$", "isCorrect": true },
+        { "text": "$\\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\begin{pmatrix} 2 & -5 \\\\ -1 & 3 \\end{pmatrix}$", "isCorrect": false },
+        { "text": "$\\frac{1}{11}\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$", "isCorrect": false }
+      ],
+      "explanation": "First, find the determinant: $\\det(A) = (3)(2) - (1)(5) = 6 - 5 = 1$. The inverse is $A^{-1} = \\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix} = \\frac{1}{1} \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix} = \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$."
+    }
+  ]
+}

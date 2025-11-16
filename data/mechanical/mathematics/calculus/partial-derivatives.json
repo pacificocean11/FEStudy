@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Partial Derivatives</h3>\n<p class=\"mb-4\">For a function of two or more variables, such as $f(x, y)$, a partial derivative is the derivative with respect to one of those variables, with the other variables held constant.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The partial derivative of $f$ with respect to $x$ is denoted as $\\frac{\\partial f}{\\partial x}$ or $f_x$. To compute it, treat $y$ as a constant and differentiate $f(x, y)$ with respect to $x$.</li>\n    <li>The partial derivative of $f$ with respect to $y$ is denoted as $\\frac{\\partial f}{\\partial y}$ or $f_y$. To compute it, treat $x$ as a constant and differentiate $f(x, y)$ with respect to $y$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Higher-Order Partial Derivatives</h3>\n<p class=\"mb-4\">We can take partial derivatives of partial derivatives. For a function $f(x, y)$, there are four second-order partial derivatives:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\frac{\\partial^2 f}{\\partial x^2} = \\frac{\\partial}{\\partial x} \\left(\\frac{\\partial f}{\\partial x}\\right) = f_{xx}$</li>\n    <li>$\\frac{\\partial^2 f}{\\partial y^2} = \\frac{\\partial}{\\partial y} \\left(\\frac{\\partial f}{\\partial y}\\right) = f_{yy}$</li>\n    <li>$\\frac{\\partial^2 f}{\\partial y \\partial x} = \\frac{\\partial}{\\partial y} \\left(\\frac{\\partial f}{\\partial x}\\right) = f_{xy}$</li>\n    <li>$\\frac{\\partial^2 f}{\\partial x \\partial y} = \\frac{\\partial}{\\partial x} \\left(\\frac{\\partial f}{\\partial y}\\right) = f_{yx}$</li>\n</ul>\n<p class=\"mb-4\"><strong>Clairaut's Theorem:</strong> For most functions encountered in engineering, the mixed partial derivatives are equal: $f_{xy} = f_{yx}$.</p>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Find the partial derivative $\\frac{\\partial f}{\\partial x}$ for the function $f(x, y) = 3x^2y + y^3$.",
+      "options": [
+        { "text": "$6xy$", "isCorrect": true },
+        { "text": "$3x^2 + 3y^2$", "isCorrect": false },
+        { "text": "$6xy + 3y^2$", "isCorrect": false },
+        { "text": "$6x$", "isCorrect": false }
+      ],
+      "explanation": "To find $\\frac{\\partial f}{\\partial x}$, we treat $y$ as a constant. The derivative of $3x^2y$ with respect to $x$ is $3y(2x) = 6xy$. The derivative of $y^3$ with respect to $x$ is 0, since it's treated as a constant. So, $\\frac{\\partial f}{\\partial x} = 6xy$."
+    },
+    {
+      "question": "Find the partial derivative $\\frac{\\partial f}{\\partial y}$ for the function $f(x, y) = 3x^2y + y^3$.",
+      "options": [
+        { "text": "$6xy$", "isCorrect": false },
+        { "text": "$3x^2 + 3y^2$", "isCorrect": true },
+        { "text": "$3x^2$", "isCorrect": false },
+        { "text": "$3y^2$", "isCorrect": false }
+      ],
+      "explanation": "To find $\\frac{\\partial f}{\\partial y}$, we treat $x$ as a constant. The derivative of $3x^2y$ with respect to $y$ is $3x^2(1) = 3x^2$. The derivative of $y^3$ with respect to $y$ is $3y^2$. So, $\\frac{\\partial f}{\\partial y} = 3x^2 + 3y^2$."
+    },
+    {
+      "question": "For $f(x, y) = e^{xy}$, find $f_x(1, 2)$.",
+      "options": [
+        { "text": "$e^2$", "isCorrect": false },
+        { "text": "$2e^2$", "isCorrect": true },
+        { "text": "$e$", "isCorrect": false },
+        { "text": "$2e$", "isCorrect": false }
+      ],
+      "explanation": "First, find the partial derivative $f_x = \\frac{\\partial}{\\partial x}(e^{xy})$. Using the chain rule and treating $y$ as a constant, we get $f_x = e^{xy} \\cdot \\frac{\\partial}{\\partial x}(xy) = e^{xy} \\cdot y = ye^{xy}$. Now, evaluate this at the point $(1, 2)$: $f_x(1, 2) = 2e^{(1)(2)} = 2e^2$."
+    },
+    {
+      "question": "Find the second partial derivative $f_{xx}$ for the function $f(x, y) = x^3 + 2x^2y^2 - 5y^4$.",
+      "options": [
+        { "text": "$6x + 4y^2$", "isCorrect": true },
+        { "text": "$6x$", "isCorrect": false },
+        { "text": "$4y^2$", "isCorrect": false },
+        { "text": "$3x^2 + 4xy^2$", "isCorrect": false }
+      ],
+      "explanation": "First, find the first partial derivative with respect to $x$: $f_x = \\frac{\\partial f}{\\partial x} = 3x^2 + 4xy^2$. Now, differentiate $f_x$ with respect to $x$ again: $f_{xx} = \\frac{\\partial}{\\partial x}(3x^2 + 4xy^2) = 6x + 4y^2$."
+    },
+    {
+      "question": "Find the mixed partial derivative $f_{xy}$ for the function $f(x, y) = \\sin(x) \\cos(y)$.",
+      "options": [
+        { "text": "$-\\sin(x) \\sin(y)$", "isCorrect": true },
+        { "text": "$\\cos(x) \\cos(y)$", "isCorrect": false },
+        { "text": "$-\\cos(x) \\sin(y)$", "isCorrect": false },
+        { "text": "$\\cos(x) \\sin(y)$", "isCorrect": false }
+      ],
+      "explanation": "First, find $f_x$: $f_x = \\frac{\\partial}{\\partial x}(\\sin(x) \\cos(y)) = \\cos(x) \\cos(y)$. Now, differentiate $f_x$ with respect to $y$: $f_{xy} = \\frac{\\partial}{\\partial y}(\\cos(x) \\cos(y)) = \\cos(x) (-\\sin(y)) = -\\sin(x) \\sin(y)$."
+    }
+  ]
+}

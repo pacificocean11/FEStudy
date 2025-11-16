@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Head Loss (Major Loss)</h3>\n<p class=\"mb-4\">As a fluid flows through a pipe, it loses energy due to friction between the fluid and the pipe wall, and between the fluid layers themselves. This energy loss manifests as a pressure drop along the pipe. In fluid mechanics, this is often expressed as 'head loss' ($h_L$), which is the equivalent height of a fluid column that would represent this energy loss.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Darcy-Weisbach Equation</h3>\n<p class=\"mb-4\">The major head loss due to friction in a length of pipe is calculated using the Darcy-Weisbach equation:</p>\n$$ h_L = f \\frac{L}{D} \\frac{v^2}{2g} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h_L$ is the head loss (in meters or feet).</li>\n    <li>$f$ is the Darcy friction factor (dimensionless).</li>\n    <li>$L$ is the length of the pipe.</li>\n    <li>$D$ is the diameter of the pipe.</li>\n    <li>$v$ is the mean velocity of the fluid.</li>\n    <li>$g$ is the acceleration due to gravity.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Friction Factor (f)</h3>\n<p class=\"mb-4\">The friction factor $f$ depends on the flow regime (i.e., the Reynolds number) and the relative roughness of the pipe wall ($\epsilon/D$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Laminar Flow ($Re < 2300$):</strong> The friction factor depends only on the Reynolds number and is independent of surface roughness.</li>\n    $$ f = \\frac{64}{Re} $$\n    <li><strong>Turbulent Flow ($Re > 4000$):</strong> The friction factor is a complex function of both the Reynolds number and the relative roughness. It is typically found using the <strong>Moody Chart</strong> or by solving the Colebrook equation (which is implicit and difficult to solve by hand).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For laminar flow in a pipe, the friction factor is:",
+      "options": [
+        { "text": "A constant value of 0.02.", "isCorrect": false },
+        { "text": "A function of the pipe roughness only.", "isCorrect": false },
+        { "text": "Equal to 64 divided by the Reynolds number.", "isCorrect": true },
+        { "text": "Found using the Moody Chart.", "isCorrect": false }
+      ],
+      "explanation": "In the laminar flow regime (Re < 2300), the flow is orderly and friction is independent of the pipe's surface roughness. The friction factor has a simple analytical solution: $f = 64/Re$."
+    },
+    {
+      "question": "Water flows through a 100 m long pipe with a diameter of 5 cm. The velocity is 2 m/s and the friction factor is 0.02. What is the head loss due to friction? (Use $g=9.81$ m/s²).",
+      "options": [
+        { "text": "8.15 m", "isCorrect": true },
+        { "text": "4.08 m", "isCorrect": false },
+        { "text": "16.3 m", "isCorrect": false },
+        { "text": "20.0 m", "isCorrect": false }
+      ],
+      "explanation": "Use the Darcy-Weisbach equation: $h_L = f \\frac{L}{D} \\frac{v^2}{2g}$. Make sure to use consistent units (D = 0.05 m).\n$h_L = (0.02) \\frac{100 \\text{ m}}{0.05 \\text{ m}} \\frac{(2 \\text{ m/s})^2}{2(9.81 \\text{ m/s²})} = (0.02)(2000) \\frac{4}{19.62} = 40(0.204) \\approx 8.15$ m."
+    }
+  ]
+}

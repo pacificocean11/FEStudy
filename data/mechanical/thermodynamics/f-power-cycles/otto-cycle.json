@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Otto cycle is the idealized thermodynamic cycle that describes the functioning of a typical spark-ignition reciprocating piston engine (i.e., most gasoline car engines).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Processes</h3>\n<p class=\"mb-4\">The ideal Otto cycle consists of four internally reversible processes:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Process 1-2 (Isentropic Compression):</strong> The piston moves from bottom dead center (BDC) to top dead center (TDC), compressing the air-fuel mixture.</li>\n    <li><strong>Process 2-3 (Constant-Volume Heat Addition):</strong> The mixture is ignited by a spark plug, causing a rapid increase in temperature and pressure while the volume is essentially constant (at TDC). This represents combustion.</li>\n    <li><strong>Process 3-4 (Isentropic Expansion):</strong> The high pressure from combustion pushes the piston from TDC to BDC, producing the power stroke.</li>\n    <li><strong>Process 4-1 (Constant-Volume Heat Rejection):</strong> The exhaust valve opens, and heat is rejected from the cylinder at constant volume as the pressure drops to the initial state.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Thermal Efficiency</h3>\n<p class=\"mb-4\">The thermal efficiency of an ideal Otto cycle depends on the compression ratio ($r$) and the specific heat ratio ($k = c_p/c_v$) of the working fluid.</p>\n<p class=\"mb-4\">The compression ratio is $r = V_1/V_2 = V_{max}/V_{min}$.</p>\n$$\\eta_{th, Otto} = 1 - \\frac{1}{r^{k-1}}$$\n<p class=\"mb-4\">This formula shows that increasing the compression ratio increases the efficiency of the Otto cycle.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The ideal Otto cycle models the operation of which type of engine?",
+      "options": [
+        { "text": "Diesel engines", "isCorrect": false },
+        { "text": "Steam turbines", "isCorrect": false },
+        { "text": "Spark-ignition gasoline engines", "isCorrect": true },
+        { "text": "Jet engines", "isCorrect": false }
+      ],
+      "explanation": "The Otto cycle, with its constant-volume heat addition process, is the theoretical model for spark-ignition engines where combustion happens very rapidly after the spark."
+    },
+    {
+      "question": "In the ideal Otto cycle, the combustion process is modeled as:",
+      "options": [
+        { "text": "Isentropic compression", "isCorrect": false },
+        { "text": "Constant-pressure heat addition", "isCorrect": false },
+        { "text": "Constant-volume heat addition", "isCorrect": true },
+        { "text": "Isentropic expansion", "isCorrect": false }
+      ],
+      "explanation": "The ignition by the spark plug is assumed to be instantaneous, occurring while the piston is at Top Dead Center (TDC). This is modeled as a heat addition process at constant volume."
+    },
+    {
+      "question": "An Otto cycle has a compression ratio of 8. Assuming the working fluid is air with a specific heat ratio $k=1.4$, what is the thermal efficiency?",
+      "options": [
+        { "text": "60.2%", "isCorrect": false },
+        { "text": "56.5%", "isCorrect": true },
+        { "text": "43.5%", "isCorrect": false },
+        { "text": "12.5%", "isCorrect": false }
+      ],
+      "explanation": "Use the Otto cycle efficiency formula: $\\eta = 1 - \\frac{1}{r^{k-1}} = 1 - \\frac{1}{8^{1.4-1}} = 1 - \\frac{1}{8^{0.4}} = 1 - \\frac{1}{2.297} \approx 1 - 0.435 = 0.565$, or 56.5%."
+    }
+  ]
+}

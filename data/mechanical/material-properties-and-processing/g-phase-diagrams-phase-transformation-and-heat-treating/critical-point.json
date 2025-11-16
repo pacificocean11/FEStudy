@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">In thermodynamics, a <strong>critical point</strong> (or critical state) is the end point of a phase equilibrium curve. It specifies the conditions of temperature and pressure (the critical temperature and critical pressure) at which the liquid and gas phases of a substance become indistinguishable.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Supercritical Fluid</h3>\n<p class=\"mb-4\">At temperatures and pressures above the critical point, the distinct liquid and gas phases do not exist. The substance is in a state known as a <strong>supercritical fluid</strong>. It can effuse through solids like a gas and dissolve materials like a liquid. It is a unique state of matter with properties that are intermediate between those of a liquid and a gas.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Phase Diagram</h3>\n<p class=\"mb-4\">On a standard pressure-temperature (P-T) phase diagram for a pure substance, the critical point is located at the top-right end of the vaporization curve (the line separating the liquid and gas phases).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The critical point on a P-T phase diagram represents the point where:",
+      "options": [
+        { "text": "Solid, liquid, and gas phases coexist.", "isCorrect": false },
+        { "text": "The substance is always a solid.", "isCorrect": false },
+        { "text": "The liquid and gas phases become indistinguishable.", "isCorrect": true },
+        { "text": "The substance sublimes directly from solid to gas.", "isCorrect": false }
+      ],
+      "explanation": "The critical point is the specific temperature and pressure above which a distinct liquid and gas phase do not exist. The substance enters a supercritical fluid state."
+    }
+  ]
+}

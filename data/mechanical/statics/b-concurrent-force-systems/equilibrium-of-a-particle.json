@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concurrent Forces</h3>\n<p class=\"mb-4\">A <strong>concurrent force system</strong> is a system where the lines of action of all forces intersect at a single common point. When analyzing such a system, the object can often be modeled as a particle, since there is no tendency for rotation (no net moment about the point of concurrency).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Condition for Equilibrium</h3>\n<p class=\"mb-4\">A particle is in equilibrium if it is at rest (static equilibrium) or moving with a constant velocity (dynamic equilibrium). According to Newton's First Law, this occurs when the net force acting on the particle is zero. This means the vector sum of all forces is the zero vector.</p>\n$$ \\sum \\mathbf{F} = \\mathbf{0} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Scalar Equations of Equilibrium</h3>\n<p class=\"mb-4\">The single vector equation for equilibrium can be broken down into scalar component equations. For a 2D (coplanar) concurrent force system, this gives two independent equations:</p>\n$$ \\sum F_x = 0 $$\n$$ \\sum F_y = 0 $$\n<p class=\"mb-4\">For a 3D system, it gives three independent equations:</p>\n$$ \\sum F_x = 0, \\quad \\sum F_y = 0, \\quad \\sum F_z = 0 $$\n<p class=\"mb-4\">These equations are used to solve for unknown forces (like tensions in cables or forces in truss members) by ensuring that the forces in each coordinate direction balance to zero.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A particle is acted upon by two forces: $\\mathbf{F}_1 = 10\\mathbf{i} - 5\\mathbf{j}$ N and $\\mathbf{F}_2 = -3\\mathbf{i} + 8\\mathbf{j}$ N. What third force $\\mathbf{F}_3$ is required to keep the particle in equilibrium?",
+      "options": [
+        { "text": "$7\\mathbf{i} + 3\\mathbf{j}$ N", "isCorrect": false },
+        { "text": "$-7\\mathbf{i} - 3\\mathbf{j}$ N", "isCorrect": true },
+        { "text": "$13\\mathbf{i} + 13\\mathbf{j}$ N", "isCorrect": false },
+        { "text": "$-13\\mathbf{i} - 3\\mathbf{j}$ N", "isCorrect": false }
+      ],
+      "explanation": "For equilibrium, the sum of all forces must be zero: $\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 = \\mathbf{0}$. So, $\\mathbf{F}_3 = -(\\mathbf{F}_1 + \\mathbf{F}_2)$. First, find the sum $\\mathbf{F}_1 + \\mathbf{F}_2 = (10-3)\\mathbf{i} + (-5+8)\\mathbf{j} = 7\\mathbf{i} + 3\\mathbf{j}$. Therefore, $\\mathbf{F}_3 = -(7\\mathbf{i} + 3\\mathbf{j}) = -7\\mathbf{i} - 3\\mathbf{j}$ N."
+    },
+    {
+      "question": "A traffic light weighing 100 N is suspended by two cables. Cable 1 makes an angle of 30° with the horizontal, and Cable 2 makes an angle of 45° with the horizontal. Which equation represents the equilibrium in the horizontal (x) direction? (Let $T_1$ and $T_2$ be the tensions).",
+      "options": [
+        { "text": "$T_1 \\sin(30^\circ) + T_2 \\sin(45^\circ) = 100$", "isCorrect": false },
+        { "text": "$-T_1 \\cos(30^\circ) + T_2 \\cos(45^\circ) = 0$", "isCorrect": true },
+        { "text": "$T_1 \\cos(30^\circ) + T_2 \\cos(45^\circ) = 100$", "isCorrect": false },
+        { "text": "$-T_1 \\sin(30^\circ) + T_2 \\sin(45^\circ) = 0$", "isCorrect": false }
+      ],
+      "explanation": "The condition for equilibrium is $\\sum F_x = 0$. The horizontal component of $T_1$ acts to the left (negative x), and its magnitude is $T_1 \\cos(30^\circ)$. The horizontal component of $T_2$ acts to the right (positive x), and its magnitude is $T_2 \\cos(45^\circ)$. The weight of the light acts only in the y-direction. So, the equation is $-T_1 \\cos(30^\circ) + T_2 \\cos(45^\circ) = 0$."
+    }
+  ]
+}

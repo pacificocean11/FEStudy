@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. AC Waveforms</h3>\n<p class=\"mb-4\">Alternating Current (AC) is an electric current which periodically reverses direction, in contrast to Direct Current (DC) which flows only in one direction. The most common type of AC is the sinusoidal waveform, which can be described by the equation:</p>\n$$ v(t) = V_p \\sin(\\omega t + \\phi) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$v(t)$ is the instantaneous voltage at time $t$.</li>\n    <li>$V_p$ is the peak voltage or amplitude.</li>\n    <li>$\\omega$ is the angular frequency.</li>\n    <li>$t$ is time.</li>\n    <li>$\\phi$ is the phase angle.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Period (T)</h3>\n<p class=\"mb-4\">The <strong>period</strong> is the time it takes for one full cycle of the waveform. It is measured in seconds (s).</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Frequency (f)</h3>\n<p class=\"mb-4\">The <strong>frequency</strong> is the number of cycles that occur in one second. It is the reciprocal of the period.</p>\n$$ f = \\frac{1}{T} $$\n<p class=\"mb-4\">Frequency is measured in Hertz (Hz), where $1 \\text{ Hz} = 1 \\text{ cycle/second}$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">4. Angular Frequency ($\\omega$)</h3>\n<p class=\"mb-4\">The <strong>angular frequency</strong> (or angular velocity) describes the rate of change of the phase angle. It is related to the frequency by:</p>\n$$ \\omega = 2\\pi f = \\frac{2\\pi}{T} $$\n<p class=\"mb-4\">Angular frequency is measured in radians per second (rad/s).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An AC waveform completes 50 cycles in one second. What is its frequency?",
+      "options": [
+        { "text": "0.02 Hz", "isCorrect": false },
+        { "text": "50 Hz", "isCorrect": true },
+        { "text": "100 Hz", "isCorrect": false },
+        { "text": "314 Hz", "isCorrect": false }
+      ],
+      "explanation": "Frequency is defined as the number of cycles per second. Therefore, the frequency is 50 Hz."
+    },
+    {
+      "question": "If an AC signal has a frequency of 60 Hz, what is its period?",
+      "options": [
+        { "text": "60 s", "isCorrect": false },
+        { "text": "0.1 s", "isCorrect": false },
+        { "text": "0.0167 s", "isCorrect": true },
+        { "text": "377 s", "isCorrect": false }
+      ],
+      "explanation": "The period is the reciprocal of the frequency: $T = 1/f = 1/60 \\text{ Hz} \\approx 0.0167$ seconds."
+    },
+    {
+      "question": "The standard power line frequency in North America is 60 Hz. What is the angular frequency of the voltage?",
+      "options": [
+        { "text": "60 rad/s", "isCorrect": false },
+        { "text": "120 rad/s", "isCorrect": false },
+        { "text": "188 rad/s", "isCorrect": false },
+        { "text": "377 rad/s", "isCorrect": true }
+      ],
+      "explanation": "Angular frequency is calculated as $\\omega = 2\\pi f$. So, $\\omega = 2\\pi(60 \\text{ Hz}) = 120\\pi \\approx 377$ rad/s."
+    }
+  ]
+}

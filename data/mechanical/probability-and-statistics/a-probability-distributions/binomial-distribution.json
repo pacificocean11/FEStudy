@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Binomial Experiment</h3>\n<p class=\"mb-4\">The binomial distribution models the probability of obtaining a specific number of successes in a fixed number of independent trials. An experiment must meet the following four criteria to be a binomial experiment:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Fixed Number of Trials:</strong> The experiment consists of a fixed number of trials, denoted by $n$.</li>\n    <li><strong>Two Outcomes:</strong> Each trial has only two possible outcomes, generally labeled \"success\" and \"failure\".</li>\n    <li><strong>Independent Trials:</strong> The outcome of each trial is independent of the outcomes of the other trials.</li>\n    <li><strong>Constant Probability:</strong> The probability of success, denoted by $p$, is the same for each trial. The probability of failure is $q = 1-p$.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">2. Binomial Probability Formula (PMF)</h3>\n<p class=\"mb-4\">The probability of getting exactly $k$ successes in $n$ trials is given by the Probability Mass Function (PMF):</p>\n$$P(X=k) = C(n,k) p^k (1-p)^{n-k} = \\binom{n}{k} p^k q^{n-k}$$\n<p class=\"mb-4\">where $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$ is the binomial coefficient, representing the number of ways to choose $k$ successes from $n$ trials.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Mean, Variance, and Standard Deviation</h3>\n<p class=\"mb-4\">For a binomial distribution, the key descriptive statistics are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Mean (Expected Value):</strong> $\\mu = E[X] = np$</li>\n    <li><strong>Variance:</strong> $\\sigma^2 = Var(X) = np(1-p) = npq$</li>\n    <li><strong>Standard Deviation:</strong> $\\sigma = \\sqrt{np(1-p)} = \\sqrt{npq}$</li>\n</ul>\n    ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A fair coin is flipped 10 times. What is the probability of getting exactly 6 heads?",
+      "options": [
+        { "text": "0.117", "isCorrect": false },
+        { "text": "0.205", "isCorrect": true },
+        { "text": "0.500", "isCorrect": false },
+        { "text": "0.600", "isCorrect": false }
+      ],
+      "explanation": "This is a binomial experiment with $n=10$, $k=6$, and $p=0.5$. The number of ways to get 6 heads is $\\binom{10}{6} = \\frac{10!}{6!4!} = \\frac{10 \\cdot 9 \\cdot 8 \\cdot 7}{4 \\cdot 3 \\cdot 2 \\cdot 1} = 210$. The probability is $P(X=6) = 210 \\cdot (0.5)^6 \\cdot (0.5)^4 = 210 \\cdot (0.5)^{10} \\approx 0.205$."
+    },
+    {
+      "question": "A factory produces widgets, and 5% of them are defective. If a sample of 20 widgets is selected, what is the mean (expected) number of defective widgets in the sample?",
+      "options": [
+        { "text": "0.5", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "This is a binomial distribution with $n=20$ trials and a probability of success (finding a defective widget) of $p=0.05$. The mean is $\\mu = np = 20 \\cdot 0.05 = 1$."
+    },
+    {
+      "question": "For the widget factory in the previous question ($n=20, p=0.05$), what is the variance of the number of defective widgets?",
+      "options": [
+        { "text": "0.95", "isCorrect": true },
+        { "text": "1.00", "isCorrect": false },
+        { "text": "0.975", "isCorrect": false },
+        { "text": "19", "isCorrect": false }
+      ],
+      "explanation": "The variance of a binomial distribution is $\\sigma^2 = np(1-p)$. Here, $n=20$, $p=0.05$, and $1-p = 0.95$. So, the variance is $\\sigma^2 = 20 \\cdot 0.05 \\cdot 0.95 = 1 \\cdot 0.95 = 0.95$."
+    },
+    {
+      "question": "It is estimated that 80% of students who take the FE exam pass on their first try. If 4 friends take the exam, what is the probability that at least one of them fails?",
+      "options": [
+        { "text": "0.1920", "isCorrect": false },
+        { "text": "0.8000", "isCorrect": false },
+        { "text": "0.4096", "isCorrect": false },
+        { "text": "0.5904", "isCorrect": true }
+      ],
+      "explanation": "Let 'success' be passing, so $p=0.8$. The number of trials is $n=4$. The probability of at least one failure is the complement of the probability that *everyone* passes. The probability of everyone passing (k=4 successes) is $P(X=4) = \\binom{4}{4}(0.8)^4(0.2)^0 = 1 \\cdot (0.8)^4 = 0.4096$. Therefore, the probability of at least one failure is $1 - 0.4096 = 0.5904$."
+    },
+    {
+      "question": "Which of the following scenarios is NOT a binomial experiment?",
+      "options": [
+        { "text": "Counting the number of heads in 50 coin flips.", "isCorrect": false },
+        { "text": "Counting the number of defective items in a sample of 20 from a large batch.", "isCorrect": false },
+        { "text": "Counting the number of aces drawn from a deck of cards without replacement.", "isCorrect": true },
+        { "text": "Counting the number of times a '6' is rolled in 10 throws of a die.", "isCorrect": false }
+      ],
+      "explanation": "Drawing cards from a deck without replacement violates the independence criterion. The probability of drawing an ace changes with each card drawn. The other scenarios meet the criteria for a binomial experiment (fixed trials, two outcomes, independence, constant probability)."
+    }
+  ]
+}

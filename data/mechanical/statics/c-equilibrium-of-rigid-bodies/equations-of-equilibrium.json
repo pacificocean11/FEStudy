@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A rigid body is in <strong>static equilibrium</strong> if it is not translating and not rotating. For this to be true, the net force and the net moment acting on the body must both be zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equations of Equilibrium (2D)</h3>\n<p class=\"mb-4\">For a rigid body subjected to a system of coplanar (2D) forces, the conditions for equilibrium can be expressed as three independent scalar equations:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Sum of forces in the x-direction is zero:</strong>\n    $$ \\sum F_x = 0 $$\n    </li>\n    <li><strong>Sum of forces in the y-direction is zero:</strong>\n    $$ \\sum F_y = 0 $$\n    </li>\n    <li><strong>Sum of moments about any point O is zero:</strong>\n    $$ \\sum M_O = 0 $$\n    </li>\n</ol>\n<p class=\"mb-4\">These three equations can be used to solve for up to three unknown forces or moments (e.g., support reactions) in a 2D statics problem.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common 2D Supports and their Reactions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Roller:</strong> Provides one reaction force perpendicular to the surface. It allows translation parallel to the surface and rotation. (1 unknown)</li>\n    <li><strong>Pin or Hinge:</strong> Provides two reaction forces, typically horizontal and vertical. It prevents all translation but allows rotation. (2 unknowns)</li>\n    <li><strong>Fixed Support (Cantilever):</strong> Provides two reaction forces (horizontal and vertical) and one reaction moment. It prevents all translation and all rotation. (3 unknowns)</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported beam has a pin support at one end and a roller support at the other. How many unknown support reactions are there for this beam in a 2D problem?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "A pin support provides two unknown reaction forces (one horizontal, one vertical). A roller support provides one unknown reaction force (perpendicular to the surface). Therefore, the total number of unknowns is 2 + 1 = 3."
+    },
+    {
+      "question": "A 5-meter long beam is fixed to a wall at one end (a cantilever beam). A downward vertical force of 100 N is applied at the free end. What is the reaction moment at the fixed support?",
+      "options": [
+        { "text": "100 N·m (clockwise)", "isCorrect": false },
+        { "text": "500 N·m (counter-clockwise)", "isCorrect": true },
+        { "text": "500 N·m (clockwise)", "isCorrect": false },
+        { "text": "0 N·m", "isCorrect": false }
+      ],
+      "explanation": "To be in equilibrium, the sum of moments about any point must be zero. Let's sum the moments about the fixed support (point A). The applied force creates a clockwise moment of $M = F \\cdot d = 100 \\text{ N} \\cdot 5 \\text{ m} = 500$ N·m. To balance this, the wall must exert an equal and opposite (counter-clockwise) reaction moment. So, $\\sum M_A = M_{reaction} - 500 = 0 \\implies M_{reaction} = 500$ N·m (CCW)."
+    }
+  ]
+}

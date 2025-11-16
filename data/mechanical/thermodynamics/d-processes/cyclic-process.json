@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A cyclic process is a sequence of thermodynamic processes that starts and ends in the same state. At the conclusion of a cycle, all the properties of the system (such as temperature, pressure, volume, and internal energy) have the same values they had at the beginning.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. First Law for a Cycle</h3>\n<p class=\"mb-4\">The change in any state property over a full cycle is zero. Since internal energy ($U$) is a state property, its net change over one cycle is zero.</p>\n$$\\Delta U_{cycle} = 0$$\n<p class=\"mb-4\">Applying the First Law of Thermodynamics, $\\Delta U = Q - W$, to a full cycle:</p>\n$$0 = Q_{net} - W_{net}$$\n$$Q_{net} = W_{net}$$\n<p class=\"mb-4\">This means that for a cyclic process, the net heat transferred to the system is equal to the net work done by the system.</p>\n<p class=\"mb-4\">$Q_{net} = Q_{in} - Q_{out}$ and $W_{net} = W_{out} - W_{in}$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. P-V Diagram</h3>\n<p class=\"mb-4\">A cyclic process is represented by a closed loop on a P-V diagram. The net work done during the cycle is equal to the area enclosed by the loop.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If the loop is traversed in a <strong>clockwise</strong> direction, the net work is positive ($W_{net} > 0$), representing a <strong>heat engine</strong>.</li>\n    <li>If the loop is traversed in a <strong>counter-clockwise</strong> direction, the net work is negative ($W_{net} < 0$), representing a <strong>refrigerator or heat pump</strong>.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the net change in internal energy for any system that undergoes a cyclic process?",
+      "options": [
+        { "text": "Positive", "isCorrect": false },
+        { "text": "Negative", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Equal to the net heat transfer", "isCorrect": false }
+      ],
+      "explanation": "Internal energy is a state property, meaning it only depends on the current state of the system, not how it got there. Since a cyclic process starts and ends in the same state, the net change in internal energy must be zero."
+    },
+    {
+      "question": "A heat engine in a cyclic process absorbs 1000 J of heat from a hot reservoir and rejects 600 J of heat to a cold reservoir. How much net work does the engine perform?",
+      "options": [
+        { "text": "1600 J", "isCorrect": false },
+        { "text": "400 J", "isCorrect": true },
+        { "text": "600 J", "isCorrect": false },
+        { "text": "1000 J", "isCorrect": false }
+      ],
+      "explanation": "For a cyclic process, the net work done is equal to the net heat transfer: $W_{net} = Q_{net}$. The net heat transfer is the heat absorbed minus the heat rejected: $Q_{net} = Q_{in} - Q_{out} = 1000 \\text{ J} - 600 \\text{ J} = 400 \\text{ J}$. Therefore, $W_{net} = 400 \\text{ J}$."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. When to Use the t-Distribution</h3>\n<p class=\"mb-4\">The t-distribution is a continuous probability distribution that is used in statistical inference, particularly when:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>The sample size is small (typically $n < 30$).</li>\n    <li>The population standard deviation ($\u03c3$) is unknown and must be estimated from the sample standard deviation ($s$).</li>\n</ol>\n<p class=\"mb-4\">If the population standard deviation is known or the sample size is large, the normal (Z) distribution is typically used instead.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Properties of the t-Distribution</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It is symmetric and bell-shaped, similar to the normal distribution, and centered at 0.</li>\n    <li>It has \"heavier\" tails than the normal distribution, meaning it has more probability in the tails. This reflects the added uncertainty from estimating the population standard deviation.</li>\n    <li>The shape of the t-distribution depends on a parameter called <strong>degrees of freedom (df)</strong>. For problems involving a sample mean, $df = n - 1$, where $n$ is the sample size.</li>\n    <li>As the degrees of freedom increase (i.e., as the sample size gets larger), the t-distribution gets closer in shape to the standard normal distribution.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Using the t-Distribution</h3>\n<p class=\"mb-4\">The t-distribution is primarily used for constructing confidence intervals and for hypothesis testing about a population mean.</p>\n<p class=\"mb-4\">The formula for the <strong>t-statistic</strong> is analogous to the z-score, but uses the sample standard deviation:</p>\n$$t = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}$$\n<p class=\"mb-4\">where $\\bar{x}$ is the sample mean, $\\mu$ is the population mean, $s$ is the sample standard deviation, and $n$ is the sample size.</p>\n    ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The t-distribution should be used instead of the normal distribution for statistical inference about a population mean when:",
+      "options": [
+        { "text": "The sample size is large and the population standard deviation is known.", "isCorrect": false },
+        { "text": "The sample size is small and the population standard deviation is unknown.", "isCorrect": true },
+        { "text": "The sample is not random.", "isCorrect": false },
+        { "text": "The underlying population is not normally distributed.", "isCorrect": false }
+      ],
+      "explanation": "The primary conditions for using the t-distribution are a small sample size (usually n < 30) and an unknown population standard deviation, which must be estimated using the sample standard deviation."
+    },
+    {
+      "question": "A sample of 16 items is taken. How many degrees of freedom are there for the t-distribution?",
+      "options": [
+        { "text": "16", "isCorrect": false },
+        { "text": "15", "isCorrect": true },
+        { "text": "30", "isCorrect": false },
+        { "text": "Not enough information", "isCorrect": false }
+      ],
+      "explanation": "For problems involving a single sample mean, the degrees of freedom (df) are calculated as $df = n - 1$. In this case, $df = 16 - 1 = 15$."
+    },
+    {
+      "question": "How does the shape of the t-distribution change as the degrees of freedom increase?",
+      "options": [
+        { "text": "It becomes more spread out (wider).", "isCorrect": false },
+        { "text": "It becomes more skewed.", "isCorrect": false },
+        { "text": "It approaches the standard normal distribution.", "isCorrect": true },
+        { "text": "It becomes a uniform distribution.", "isCorrect": false }
+      ],
+      "explanation": "As the sample size (and thus degrees of freedom) increases, the sample standard deviation ($s$) becomes a more reliable estimate of the population standard deviation ($\u03c3$). Consequently, the t-distribution converges in shape to the standard normal (Z) distribution."
+    },
+    {
+      "question": "A sample of 10 measurements has a mean of 25 and a sample standard deviation of 4. Calculate the t-statistic to test the hypothesis that the true population mean is 22.",
+      "options": [
+        { "text": "0.75", "isCorrect": false },
+        { "text": "3.0", "isCorrect": false },
+        { "text": "2.37", "isCorrect": true },
+        { "text": "2.5", "isCorrect": false }
+      ],
+      "explanation": "Use the t-statistic formula: $t = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}} = \\frac{25 - 22}{4 / \\sqrt{10}} = \\frac{3}{4 / 3.162} = \\frac{3}{1.265} \\approx 2.37$."
+    },
+    {
+      "question": "Using a t-table for a 95% confidence interval with 10 degrees of freedom, what is the critical t-value ($t_{\\alpha/2}$)?",
+      "options": [
+        { "text": "1.960", "isCorrect": false },
+        { "text": "1.812", "isCorrect": false },
+        { "text": "2.228", "isCorrect": true },
+        { "text": "1.645", "isCorrect": false }
+      ],
+      "explanation": "For a 95% confidence interval, the total area in the tails is $\\alpha = 1 - 0.95 = 0.05$. We need the t-value with area $\\alpha/2 = 0.025$ in the right tail. Looking up $df=10$ and a cumulative probability of $1-0.025=0.975$ (or a two-tailed $\\alpha$ of 0.05) in a t-table gives a critical value of 2.228."
+    }
+  ]
+}

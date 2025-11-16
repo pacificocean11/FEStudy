@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Potential energy is stored energy that an object has due to its position or configuration. It is associated with conservative forces, where the work done by the force is independent of the path taken.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Gravitational Potential Energy ($U_g$)</h3>\n<p class=\"mb-4\">This is the energy an object has due to its position in a gravitational field. For an object of mass $m$ at a height $h$ above a reference datum (where potential energy is defined to be zero), the gravitational potential energy is:</p>\n$$U_g = mgh$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$m$ is mass (kg).</li>\n    <li>$g$ is the acceleration due to gravity ($\approx 9.81$ m/s²).</li>\n    <li>$h$ is the height (m) above the reference level.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Elastic Potential Energy ($U_e$)</h3>\n<p class=\"mb-4\">This is the energy stored in an elastic object, like a spring, when it is stretched or compressed. According to Hooke's Law, the force required to stretch or compress a spring by a distance $x$ from its equilibrium position is $F = kx$. The potential energy stored in the spring is:</p>\n$$U_e = \frac{1}{2}kx^2$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k$ is the spring constant in Newtons per meter (N/m).</li>\n    <li>$x$ is the displacement (stretch or compression) from the spring's natural, unstretched length, in meters (m).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 5 kg block is lifted to a height of 2 meters above the ground. What is its gravitational potential energy relative to the ground? (Use $g = 9.8$ m/s²).",
+      "options": [
+        { "text": "10 J", "isCorrect": false },
+        { "text": "49 J", "isCorrect": false },
+        { "text": "98 J", "isCorrect": true },
+        { "text": "19.6 J", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for gravitational potential energy: $U_g = mgh$.\n$U_g = (5 \text{ kg})(9.8 \text{ m/s²})(2 \text{ m}) = 98 \text{ J}$."
+    },
+    {
+      "question": "A spring with a spring constant of 200 N/m is compressed by 0.1 meters from its equilibrium position. How much elastic potential energy is stored in the spring?",
+      "options": [
+        { "text": "1 J", "isCorrect": true },
+        { "text": "2 J", "isCorrect": false },
+        { "text": "10 J", "isCorrect": false },
+        { "text": "20 J", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for elastic potential energy: $U_e = \frac{1}{2}kx^2$.\n$U_e = \frac{1}{2}(200 \text{ N/m})(0.1 \text{ m})^2 = \frac{1}{2}(200)(0.01) = 100(0.01) = 1 \text{ J}$."
+    },
+    {
+      "question": "A pendulum bob of mass 2 kg is raised so that its height increases by 0.5 m. What is the increase in its potential energy? (Use $g = 9.8$ m/s²).",
+      "options": [
+        { "text": "1 J", "isCorrect": false },
+        { "text": "4.9 J", "isCorrect": false },
+        { "text": "9.8 J", "isCorrect": true },
+        { "text": "19.6 J", "isCorrect": false }
+      ],
+      "explanation": "The change in potential energy is $\Delta U_g = mg\Delta h$. Here, $\Delta h$ is the vertical change in height, which is 0.5 m.\n$\Delta U_g = (2 \text{ kg})(9.8 \text{ m/s²})(0.5 \text{ m}) = 9.8 \text{ J}$."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Electric current is the rate of flow of electric charge. It is the amount of charge passing through a surface per unit of time. By convention, the direction of current is defined as the direction that positive charge would flow, even though in most metallic conductors it is the negatively charged electrons that are actually moving.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">Current ($I$) is the derivative of charge ($Q$) with respect to time ($t$):</p>\n$$I = \\frac{dQ}{dt}$$\n<p class=\"mb-4\">For a constant flow of charge, this simplifies to:</p>\n$$I = \\frac{\\Delta Q}{\\Delta t}$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Unit of Current</h3>\n<p class=\"mb-4\">The SI unit of electric current is the <strong>ampere (A)</strong>, named after André-Marie Ampère. One ampere is defined as one coulomb of charge passing a point in one second.</p>\n$$1 \\text{ A} = 1 \\frac{\\text{C}}{\\text{s}}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "If 10 coulombs of charge pass a point in a conductor in 2 seconds, what is the current?",
+      "options": [
+        { "text": "20 A", "isCorrect": false },
+        { "text": "5 A", "isCorrect": true },
+        { "text": "0.2 A", "isCorrect": false },
+        { "text": "12 A", "isCorrect": false }
+      ],
+      "explanation": "Using the formula for constant current, $I = \\frac{\\Delta Q}{\\Delta t}$.\n$I = \\frac{10 \\text{ C}}{2 \\text{ s}} = 5 \\frac{\\text{C}}{\\text{s}} = 5 \\text{ A}$."
+    },
+    {
+      "question": "A steady current of 2.5 A flows in a wire for 4 minutes. How much charge passed through any point in the circuit?",
+      "options": [
+        { "text": "10 C", "isCorrect": false },
+        { "text": "0.625 C", "isCorrect": false },
+        { "text": "600 C", "isCorrect": true },
+        { "text": "1000 C", "isCorrect": false }
+      ],
+      "explanation": "First, convert the time to seconds: $\\Delta t = 4 \\text{ minutes} \\times 60 \\frac{\\text{seconds}}{\\text{minute}} = 240 \\text{ s}$.\nRearrange the current formula to solve for charge: $\\Delta Q = I \\cdot \\Delta t$.\n$\\Delta Q = 2.5 \\text{ A} \\cdot 240 \\text{ s} = 600 \\text{ C}$."
+    },
+    {
+      "question": "The charge flowing through a device is given by the equation $Q(t) = 4t^2 + 2t - 1$ C. What is the current at time $t=3$ s?",
+      "options": [
+        { "text": "41 A", "isCorrect": false },
+        { "text": "26 A", "isCorrect": true },
+        { "text": "12 A", "isCorrect": false },
+        { "text": "8 A", "isCorrect": false }
+      ],
+      "explanation": "Current is the derivative of charge with respect to time: $I(t) = \\frac{dQ}{dt}$.\n$I(t) = \\frac{d}{dt}(4t^2 + 2t - 1) = 8t + 2$.\nNow, evaluate the current at $t=3$ s:\n$I(3) = 8(3) + 2 = 24 + 2 = 26 \\text{ A}$."
+    }
+  ]
+}

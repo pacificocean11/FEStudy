@@ -1,0 +1,47 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>trademark</strong> (or service mark) is a word, phrase, symbol, design, or a combination thereof that identifies and distinguishes the source of the goods of one party from those of others. A service mark distinguishes the source of a service rather than goods.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Purpose of Trademarks</h3>\n<p class=\"mb-4\">The primary purpose of a trademark is to prevent consumer confusion by indicating the source of a product or service. It helps consumers associate a product with a specific quality and producer.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Trademark Symbols</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>™ (Trademark Symbol):</strong> Used for unregistered trademarks to promote or brand goods.</li>\n    <li><strong>℠ (Service Mark Symbol):</strong> Used for unregistered service marks to promote or brand services.</li>\n    <li><strong>® (Registered Trademark Symbol):</strong> Used only for trademarks that have been officially registered with the U.S. Patent and Trademark Office (USPTO).</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">4. Term of Protection</h3>\n<p class=\"mb-4\">A trademark can potentially last forever, as long as it is continuously used in commerce and defended against infringement. It must be renewed periodically, typically every 10 years after the initial registration.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The logo of an engineering firm is used on its documents and marketing materials to identify its services. This logo is best protected as a:",
+      "options": [
+        { "text": "Patent", "isCorrect": false },
+        { "text": "Trademark", "isCorrect": true },
+        { "text": "Copyright", "isCorrect": false },
+        { "text": "Trade Secret", "isCorrect": false }
+      ],
+      "explanation": "A logo used to identify the source of goods or services is a trademark. It distinguishes the firm's services from those of its competitors."
+    },
+    {
+      "question": "What is the primary function of a trademark?",
+      "options": [
+        { "text": "To protect an invention from being copied", "isCorrect": false },
+        { "text": "To identify the source of a product and prevent consumer confusion", "isCorrect": true },
+        { "text": "To protect a written manual or software code", "isCorrect": false },
+        { "text": "To keep a formula or process confidential", "isCorrect": false }
+      ],
+      "explanation": "While other forms of IP protect inventions or creative works, a trademark's main role is to act as a source identifier for goods and services in the marketplace."
+    },
+    {
+      "question": "An engineering company has developed a unique brand name for its new software product but has not yet registered it. Which symbol is appropriate to use next to the brand name?",
+      "options": [
+        { "text": "®", "isCorrect": false },
+        { "text": "©", "isCorrect": false },
+        { "text": "™", "isCorrect": true },
+        { "text": "℗", "isCorrect": false }
+      ],
+      "explanation": "The ™ symbol is used to claim rights to a trademark before it is officially registered with the national trademark office. The ® symbol can only be used after registration is complete."
+    },
+    {
+      "question": "How long can a trademark be protected?",
+      "options": [
+        { "text": "20 years", "isCorrect": false },
+        { "text": "The life of the creator plus 70 years", "isCorrect": false },
+        { "text": "Indefinitely, provided it is used and renewed", "isCorrect": true },
+        { "text": "95 years", "isCorrect": false }
+      ],
+      "explanation": "Unlike patents and copyrights, a trademark's protection does not have a fixed term. It can be renewed indefinitely as long as the mark remains in continuous use in commerce."
+    }
+  ]
+}

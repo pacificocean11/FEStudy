@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">In addition to the major head loss from friction along the length of a pipe, fluids lose energy when they flow through components like valves, bends, elbows, tees, and at the entrance and exit of a pipe. These are called <strong>minor losses</strong>, although they can often be a significant portion of the total head loss in a system with many fittings.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Minor Loss Equation</h3>\n<p class=\"mb-4\">Each component causes a head loss that is proportional to the kinetic energy of the flow. The minor head loss ($h_m$) is calculated using a dimensionless loss coefficient, $K$ (also called the resistance coefficient).</p>\n$$ h_m = K \\frac{v^2}{2g} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h_m$ is the minor head loss for a single component.</li>\n    <li>$K$ is the loss coefficient for that specific component (e.g., an elbow, a valve). Values of K are determined experimentally and found in tables.</li>\n    <li>$v$ is the mean velocity of the fluid in the pipe.</li>\n    <li>$g$ is the acceleration due to gravity.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Total Head Loss</h3>\n<p class=\"mb-4\">The total head loss in a piping system is the sum of the major losses and all the minor losses.</p>\n$$ h_{L, total} = h_{L, major} + \\sum h_{m} = f \\frac{L}{D} \\frac{v^2}{2g} + \\sum K \\frac{v^2}{2g} $$\n<p class=\"mb-4\">This can be simplified to:</p>\n$$ h_{L, total} = \\left( f \\frac{L}{D} + \\sum K \\right) \\frac{v^2}{2g} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The energy losses in a piping system due to valves, bends, and other fittings are referred to as:",
+      "options": [
+        { "text": "Major losses", "isCorrect": false },
+        { "text": "Minor losses", "isCorrect": true },
+        { "text": "Friction losses", "isCorrect": false },
+        { "text": "Reynolds losses", "isCorrect": false }
+      ],
+      "explanation": "Losses due to pipe friction are called major losses. Losses due to components that disrupt the smooth flow are called minor losses."
+    },
+    {
+      "question": "Water flows at 2 m/s through a pipe. It passes through a 90° elbow with a loss coefficient $K = 0.9$. What is the head loss due to the elbow? (Use $g=9.81$ m/s²).",
+      "options": [
+        { "text": "0.183 m", "isCorrect": true },
+        { "text": "0.204 m", "isCorrect": false },
+        { "text": "0.9 m", "isCorrect": false },
+        { "text": "1.8 m", "isCorrect": false }
+      ],
+      "explanation": "Use the minor loss formula: $h_m = K \\frac{v^2}{2g}$.\n$h_m = (0.9) \\frac{(2 \\text{ m/s})^2}{2(9.81 \\text{ m/s²})} = 0.9 \\cdot \\frac{4}{19.62} \\approx 0.9 \\cdot 0.204 = 0.183$ m."
+    }
+  ]
+}

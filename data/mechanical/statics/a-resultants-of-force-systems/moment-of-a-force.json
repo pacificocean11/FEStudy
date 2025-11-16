@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>moment of a force</strong> (often called torque) is a measure of its tendency to cause a body to rotate about a specific point or axis. It is a vector quantity.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Scalar Calculation (2D)</h3>\n<p class=\"mb-4\">In a 2D plane, the moment ($M_O$) of a force $\\mathbf{F}$ about a point O is calculated as the magnitude of the force multiplied by the perpendicular distance from the point to the line of action of the force. This perpendicular distance is called the <strong>moment arm ($d$)</strong>.</p>\n$$ M_O = F \\cdot d $$\n<p class=\"mb-4\">The direction is determined by convention, usually counter-clockwise (CCW) is positive and clockwise (CW) is negative.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Vector Calculation (3D)</h3>\n<p class=\"mb-4\">A more general method for calculating the moment of a force about a point O is using the cross product. The moment vector $\\mathbf{M}_O$ is the cross product of the position vector $\\mathbf{r}$ (from the point O to any point on the line of action of the force) and the force vector $\\mathbf{F}$.</p>\n$$ \\mathbf{M}_O = \\mathbf{r} \\times \\mathbf{F} $$\n<p class=\"mb-4\">The direction of the moment vector is perpendicular to the plane containing $\\mathbf{r}$ and $\\mathbf{F}$, and its direction is given by the right-hand rule.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Varignon's Theorem</h3>\n<p class=\"mb-4\">Varignon's theorem, or the principle of moments, states that the moment of a force about any point is equal to the sum of the moments of its components about the same point. This is often easier than finding the perpendicular distance, $d$.</p>\n$$ M_O = F_y \\cdot d_x - F_x \\cdot d_y $$\n<p class=\"mb-4\">Where $F_x$ and $F_y$ are components of the force, and $d_x$ and $d_y$ are the x and y distances from the point to the point of force application.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 100 N force is applied at the end of a 2 m long wrench. The force is perpendicular to the wrench. What is the magnitude of the moment (torque) generated at the pivot point?",
+      "options": [
+        { "text": "50 N·m", "isCorrect": false },
+        { "text": "100 N·m", "isCorrect": false },
+        { "text": "200 N·m", "isCorrect": true },
+        { "text": "0 N·m", "isCorrect": false }
+      ],
+      "explanation": "Since the force is perpendicular to the wrench, the length of the wrench is the moment arm. $M = F \\cdot d = (100 \\text{ N})(2 \\text{ m}) = 200$ N·m."
+    },
+    {
+      "question": "A force of 100 N is applied at the end of a 2 m long wrench at an angle of 30° to the wrench. What is the magnitude of the moment?",
+      "options": [
+        { "text": "200 N·m", "isCorrect": false },
+        { "text": "173.2 N·m", "isCorrect": false },
+        { "text": "100 N·m", "isCorrect": true },
+        { "text": "50 N·m", "isCorrect": false }
+      ],
+      "explanation": "Only the component of the force perpendicular to the wrench creates a moment. The perpendicular component is $F_{\\perp} = F \\sin(30^\circ) = 100(0.5) = 50$ N. The moment is $M = F_{\\perp} \\cdot L = (50 \\text{ N})(2 \\text{ m}) = 100$ N·m."
+    },
+    {
+      "question": "A force is given by the vector $\\mathbf{F} = 5\\mathbf{i}$ N and is applied at a point with position vector $\\mathbf{r} = 2\\mathbf{j}$ m relative to the origin. What is the moment vector about the origin?",
+      "options": [
+        { "text": "10$\\mathbf{k}$ N·m", "isCorrect": false },
+        { "text": "-10$\\mathbf{k}$ N·m", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "10$\\mathbf{j}$ N·m", "isCorrect": false }
+      ],
+      "explanation": "The moment is calculated by the cross product: $\\mathbf{M}_O = \\mathbf{r} \\times \\mathbf{F} = (2\\mathbf{j}) \\times (5\\mathbf{i})$. Using the cross product rules for unit vectors, $\\mathbf{j} \\times \\mathbf{i} = -\\mathbf{k}$. Therefore, $\\mathbf{M}_O = (2)(5)(\\mathbf{j} \\times \\mathbf{i}) = 10(-\\mathbf{k}) = -10\\mathbf{k}$ N·m."
+    }
+  ]
+}

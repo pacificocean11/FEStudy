@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Curvilinear Motion</h3>\n<p class=\"mb-4\">When a particle moves along a curved path, its acceleration vector can be resolved into two components that are more intuitive for describing the motion: a tangential component and a normal component.</p>\n<p class=\"mb-4\">The total acceleration vector is the sum of these two components: $\b a = \b a_t + \b a_n$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Tangential Acceleration ($\b a_t$)</h3>\n<p class=\"mb-4\">The tangential component of acceleration acts along the tangent to the path of motion. It is responsible for the <strong>change in the particle's speed</strong>.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The magnitude is given by the rate of change of speed: $a_t = \frac{dv}{dt} = \dot{v}$.</li>\n    <li>If speed is increasing, $a_t$ is in the direction of motion.</li>\n    <li>If speed is decreasing (deceleration), $a_t$ is opposite to the direction of motion.</li>\n    <li>If speed is constant, $a_t = 0$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Normal Acceleration ($\b a_n$)</h3>\n<p class=\"mb-4\">The normal (or centripetal) component of acceleration acts perpendicular to the tangent, pointing towards the center of curvature of the path. It is responsible for the <strong>change in the direction of the particle's velocity</strong>.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The magnitude is given by: $a_n = \frac{v^2}{\rho}$, where $v$ is the speed and $\rho$ (rho) is the radius of curvature of the path at that point.</li>\n    <li>For motion in a circle of radius $r$, $\rho = r$.</li>\n    <li>If the particle is moving in a straight line, $\rho \to \infty$ and $a_n = 0$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">4. Total Acceleration</h3>\n<p class=\"mb-4\">Since the tangential and normal components are perpendicular, the magnitude of the total acceleration can be found using the Pythagorean theorem:</p>\n$$||\b a|| = \sqrt{a_t^2 + a_n^2}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A car is traveling at a constant speed of 20 m/s around a circular track of radius 100 m. What is the magnitude of its acceleration?",
+      "options": [
+        { "text": "0 m/s²", "isCorrect": false },
+        { "text": "2 m/s²", "isCorrect": false },
+        { "text": "4 m/s²", "isCorrect": true },
+        { "text": "20 m/s²", "isCorrect": false }
+      ],
+      "explanation": "Since the speed is constant, the tangential acceleration $a_t = \frac{dv}{dt} = 0$. The acceleration is purely normal (centripetal). The radius of curvature $\rho$ is the track radius, 100 m. The normal acceleration is $a_n = \frac{v^2}{\rho} = \frac{(20 \text{ m/s})^2}{100 \text{ m}} = \frac{400}{100} = 4 \text{ m/s²}$. The total acceleration is $\sqrt{0^2 + 4^2} = 4 \text{ m/s²}$."
+    },
+    {
+      "question": "A particle moves along a curved path. At a certain instant, its speed is 10 m/s and is increasing at a rate of 3 m/s². The radius of curvature of the path is 50 m. What is the magnitude of the total acceleration?",
+      "options": [
+        { "text": "3.61 m/s²", "isCorrect": true },
+        { "text": "5.00 m/s²", "isCorrect": false },
+        { "text": "2.00 m/s²", "isCorrect": false },
+        { "text": "3.00 m/s²", "isCorrect": false }
+      ],
+      "explanation": "The rate of increase of speed is the tangential acceleration: $a_t = 3 \text{ m/s²}$. The normal acceleration is $a_n = \frac{v^2}{\rho} = \frac{(10 \text{ m/s})^2}{50 \text{ m}} = \frac{100}{50} = 2 \text{ m/s²}$. The magnitude of the total acceleration is $||\b a|| = \sqrt{a_t^2 + a_n^2} = \sqrt{3^2 + 2^2} = \sqrt{9 + 4} = \sqrt{13} \approx 3.61 \text{ m/s²}$."
+    }
+  ]
+}

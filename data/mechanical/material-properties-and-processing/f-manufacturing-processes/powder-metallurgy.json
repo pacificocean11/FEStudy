@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Powder Metallurgy (P/M)</strong> is a metal forming process that creates parts by heating compacted metal powders to just below their melting points. It is a 'net-shape' or 'near-net-shape' process, meaning the initial product requires little to no finishing work.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The P/M Process</h3>\n<p class=\"mb-4\">The process typically involves three main steps:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Powder Production & Blending:</strong> Metal is converted into powder form through methods like atomization. Different powders can be blended to create alloys or composites.</li>\n    <li><strong>Compaction:</strong> The blended powder is pressed into a desired shape in a rigid die at high pressure. The resulting part is called a 'green compact', which is fragile but has the required shape.</li>\n    <li><strong>Sintering:</strong> The green compact is heated in a controlled-atmosphere furnace to a temperature below the melting point of the metal. At this temperature, the particles bond together through solid-state diffusion, which greatly increases the part's strength and integrity.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Advantages and Disadvantages</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Advantages:</strong> Excellent for mass production of complex parts with good dimensional accuracy; minimizes waste (high material utilization); can create unique alloys and composite materials not possible by melting.</li>\n    <li><strong>Disadvantages:</strong> High cost of tooling (dies) and powders; parts typically have some residual porosity, which can lower strength compared to wrought parts; size limitations.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the correct sequence of the three main steps in the powder metallurgy process?",
+      "options": [
+        { "text": "Sintering, Compaction, Blending", "isCorrect": false },
+        { "text": "Compaction, Sintering, Blending", "isCorrect": false },
+        { "text": "Blending, Compaction, Sintering", "isCorrect": true },
+        { "text": "Blending, Sintering, Compaction", "isCorrect": false }
+      ],
+      "explanation": "The standard P/M process is to first blend the metal powders, then compact them into the desired shape (the green compact), and finally sinter the compact to bond the particles and provide strength."
+    },
+    {
+      "question": "The heating process in powder metallurgy, where particles are bonded together below the melting point, is called:",
+      "options": [
+        { "text": "Compaction", "isCorrect": false },
+        { "text": "Atomization", "isCorrect": false },
+        { "text": "Annealing", "isCorrect": false },
+        { "text": "Sintering", "isCorrect": true }
+      ],
+      "explanation": "Sintering is the crucial heat treatment step where solid-state diffusion occurs, fusing the powder particles into a solid, coherent mass."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Thermal properties describe how a material responds to the application of heat.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Thermal Conductivity (k):</strong> A measure of a material's ability to conduct heat. Materials with high thermal conductivity (like metals) transfer heat quickly, while materials with low thermal conductivity (like foam insulation) transfer heat slowly. Units are W/m·K.</li>\n    <li><strong>Coefficient of Thermal Expansion ($\\alpha$):</strong> Describes how the size of an object changes with a change in temperature. Most materials expand when heated and contract when cooled. Units are 1/°C or 1/K.</li>\n    <li><strong>Specific Heat ($c_p$):</strong> The amount of heat energy required to raise the temperature of a unit mass of a substance by one degree. A material with a high specific heat (like water) can absorb a lot of heat with only a small temperature change. Units are J/kg·K.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A material used for the bottom of a cooking pot should have a high:",
+      "options": [
+        { "text": "Thermal conductivity", "isCorrect": true },
+        { "text": "Coefficient of thermal expansion", "isCorrect": false },
+        { "text": "Specific heat", "isCorrect": false },
+        { "text": "Electrical resistivity", "isCorrect": false }
+      ],
+      "explanation": "To transfer heat efficiently from the stove to the food, the pot material must have a high thermal conductivity, allowing heat to flow through it easily."
+    }
+  ]
+}

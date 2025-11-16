@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Ethics vs. Law</h3>\n<p class=\"mb-4\">It is important to understand the difference between ethical and legal standards.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Legal standards</strong> are based on laws and regulations written by government bodies. An action is legal if it does not violate a law. Breaking a law can result in fines, imprisonment, and loss of license.</li>\n    <li><strong>Ethical standards</strong> are based on a set of professional norms and principles (like the codes of ethics). An action can be legal but still be unethical. Violating ethical standards can result in disciplinary action from a professional society or state board.</li>\n</ul>\n<p class=\"mb-4\">Ethics generally represents a higher standard of conduct than the law.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Conflict of Interest</h3>\n<p class=\"mb-4\">A conflict of interest occurs when an engineer's personal interests (e.g., financial, familial) have the potential to interfere with their professional judgment and their duty to a client or employer. Engineers have an ethical obligation to disclose any potential conflicts of interest to their clients and employers and to avoid situations where such conflicts could compromise their work.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Confidentiality</h3>\n<p class=\"mb-4\">Engineers must not reveal facts, data, or information obtained in a professional capacity without the prior consent of the client or employer except as authorized or required by law or the code of ethics. This duty of confidentiality is a core part of acting as a faithful agent.</p>\n<p class=\"mb-4\">However, this duty is not absolute. The obligation to protect the public welfare supersedes the duty of confidentiality. If a client's confidential information reveals a danger to the public, the engineer may be ethically obligated to disclose it to the proper authorities.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer is hired to review a project for a city. The engineer has a significant financial investment in the company that will be doing the construction. What is this situation an example of?",
+      "options": [
+        { "text": "A technical error", "isCorrect": false },
+        { "text": "A conflict of interest", "isCorrect": true },
+        { "text": "A breach of contract", "isCorrect": false },
+        { "text": "Good business practice", "isCorrect": false }
+      ],
+      "explanation": "This is a clear conflict of interest. The engineer's financial stake in the construction company could influence their professional judgment while reviewing the project for the city. The engineer has an ethical duty to disclose this conflict to the city immediately."
+    },
+    {
+      "question": "An engineer's client confidentially reveals that their project is using a substandard material that could fail and endanger the public. The client insists the engineer keep this information secret. What should the engineer do?",
+      "options": [
+        { "text": "Honor the duty of confidentiality and say nothing.", "isCorrect": false },
+        { "text": "Report the danger to the appropriate authorities, as the duty to public safety is paramount.", "isCorrect": true },
+        { "text": "Resign from the project but keep the information confidential.", "isCorrect": false },
+        { "text": "Demand a higher fee to keep the information secret.", "isCorrect": false }
+      ],
+      "explanation": "The ethical hierarchy is clear: the duty to protect the public welfare is the highest obligation and overrides the duty of confidentiality to the client in situations where there is a clear danger."
+    }
+  ]
+}

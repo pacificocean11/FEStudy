@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Phase Diagram</strong> is a graphical representation of the physical states (phases) of a substance under different conditions of temperature, pressure, or composition. In materials science, they are most often used to show the equilibrium phases of alloys at various temperatures and compositions.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Features of a Binary Phase Diagram</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Phases:</strong> Regions on the diagram representing a physically distinct form of matter (e.g., Liquid (L), or solid phases like Alpha ($\\alpha$) and Beta ($\\beta$)).</li>\n    <li><strong>Liquidus Line:</strong> The line on a phase diagram above which the substance is stable in a fully liquid state.</li>\n    <li><strong>Solidus Line:</strong> The line on a phase diagram below which the substance is stable in a fully solid state.</li>\n    <li><strong>Solvus Line:</strong> The line that separates a solid solution from a region of two solid phases.</li>\n    <li><strong>Eutectic Point:</strong> A specific composition and temperature at which a liquid phase transforms directly into two solid phases upon cooling.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a binary alloy phase diagram, what is the region between the liquidus and solidus lines?",
+      "options": [
+        { "text": "A fully liquid phase.", "isCorrect": false },
+        { "text": "A fully solid phase.", "isCorrect": false },
+        { "text": "A mixture of solid and liquid phases.", "isCorrect": true },
+        { "text": "A gaseous phase.", "isCorrect": false }
+      ],
+      "explanation": "The region between the liquidus line (above which everything is liquid) and the solidus line (below which everything is solid) represents a two-phase region where solid crystals and liquid coexist in equilibrium."
+    }
+  ]
+}

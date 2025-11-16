@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Average Value of a Sinusoid</h3>\n<p class=\"mb-4\">The mathematical average value of a function $f(t)$ over an interval from $t_1$ to $t_2$ is given by $\\frac{1}{t_2-t_1}\\int_{t_1}^{t_2} f(t) dt$.</p>\n<p class=\"mb-4\">For a sinusoidal AC waveform, the average value over one full cycle is <strong>zero</strong>. This is because the positive half-cycle is identical in shape and size to the negative half-cycle, and they cancel each other out.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Average Value of a Rectified Waveform</h3>\n<p class=\"mb-4\">In electronics, the term \"average value\" often refers to the average of a rectified signal, which is what a DC voltmeter would measure. This is found by averaging the absolute value of the waveform.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Full-Wave Rectified Sine Wave:</strong> The average value is the average of one half-cycle.</li>\n    $$V_{avg} = \\frac{2V_p}{\\pi} \\approx 0.637 V_p$$\n    <li><strong>Half-Wave Rectified Sine Wave:</strong> The average is taken over the full cycle, but one half is zero.</li>\n    $$V_{avg} = \\frac{V_p}{\\pi} \\approx 0.318 V_p$$\n</ul>\n<p class=\"mb-4\">Unless specified otherwise, \"average value\" in AC circuits typically refers to the full-wave rectified average.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the average value of a pure sinusoidal voltage waveform over one complete cycle?",
+      "options": [
+        { "text": "The peak value", "isCorrect": false },
+        { "text": "The RMS value", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Half the peak value", "isCorrect": false }
+      ],
+      "explanation": "The area under the curve for the positive half-cycle is equal and opposite to the area under the curve for the negative half-cycle. Over one full period, the net area is zero, so the average value is zero."
+    },
+    {
+      "question": "A sinusoidal AC voltage has a peak value of 170 V. What is its full-wave rectified average value?",
+      "options": [
+        { "text": "170 V", "isCorrect": false },
+        { "text": "120 V", "isCorrect": false },
+        { "text": "108 V", "isCorrect": true },
+        { "text": "54 V", "isCorrect": false }
+      ],
+      "explanation": "The average value for a full-wave rectified sine wave is given by $V_{avg} = \\frac{2V_p}{\\pi}$.\n$V_{avg} = \\frac{2(170 \\text{ V})}{\\pi} \\approx 0.637 \\times 170 \\text{ V} \\approx 108.3$ V."
+    }
+  ]
+}

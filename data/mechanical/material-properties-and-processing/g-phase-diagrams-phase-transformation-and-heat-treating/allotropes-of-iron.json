@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Allotropy</h3>\n<p class=\"mb-4\">Allotropy, or polymorphism, is the ability of a solid material to exist in more than one form or crystal structure. Pure iron is allotropic, and this property is the fundamental reason why steels can be heat treated.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Allotropes of Iron</h3>\n<p class=\"mb-4\">As pure iron is heated and cooled, it changes its crystal structure at specific temperatures.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Ferrite (Alpha-iron, $\\alpha$-Fe):</strong> Exists from room temperature up to 912°C. It has a <strong>Body-Centered Cubic (BCC)</strong> crystal structure. This structure is relatively loosely packed, so it has a low solubility for carbon. Ferrite is soft, ductile, and magnetic.</li>\n    <li><strong>Austenite (Gamma-iron, $\\gamma$-Fe):</strong> Exists from 912°C to 1394°C. It has a <strong>Face-Centered Cubic (FCC)</strong> crystal structure. The FCC structure is more closely packed but has larger interstitial spaces, allowing it to dissolve much more carbon than ferrite (up to 2.11%). Austenite is non-magnetic and is the key phase from which most heat treatments begin.</li>\n    <li><strong>Delta-ferrite (Delta-iron, $\\delta$-Fe):</strong> Exists from 1394°C up to the melting point at 1538°C. It has a <strong>Body-Centered Cubic (BCC)</strong> structure, similar to alpha-ferrite. It is of limited practical importance in most steel treatments.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The ability of iron to change its crystal structure with temperature is known as:",
+      "options": [
+        { "text": "Isotropy", "isCorrect": false },
+        { "text": "Allotropy", "isCorrect": true },
+        { "text": "Anisotropy", "isCorrect": false },
+        { "text": "Elasticity", "isCorrect": false }
+      ],
+      "explanation": "Allotropy is the property of some chemical elements to exist in two or more different forms, or allotropes, in the same physical state. The different crystal structures of iron (BCC and FCC) are examples of this."
+    },
+    {
+      "question": "Which phase of iron can dissolve the most carbon?",
+      "options": [
+        { "text": "Ferrite (BCC)", "isCorrect": false },
+        { "text": "Austenite (FCC)", "isCorrect": true },
+        { "text": "Cementite", "isCorrect": false },
+        { "text": "Delta-ferrite (BCC)", "isCorrect": false }
+      ],
+      "explanation": "The Face-Centered Cubic (FCC) structure of Austenite has larger interstitial sites compared to the Body-Centered Cubic (BCC) structure of Ferrite. This allows Austenite to dissolve a much higher concentration of carbon, which is the basis for hardening steel."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Heat treatment</strong> is a group of industrial processes used to alter the physical, and sometimes chemical, properties of a material. It involves controlled heating and cooling to achieve a desired microstructure and, consequently, desired mechanical properties like hardness, toughness, or ductility.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Heat Treatment Processes for Steel</h3>\n<p class=\"mb-4\">Most heat treatments for steel begin by heating the steel into the austenite region to dissolve the carbon into the FCC iron structure. The properties are then determined by the rate of cooling.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Annealing:</strong> The steel is heated to the austenitic temperature, held for some time, and then cooled <strong>very slowly</strong> (often by leaving it in the furnace to cool). This process produces a coarse pearlite microstructure that is very soft and ductile. It is used to relieve stresses, increase ductility, and improve machinability.</li>\n    <li><strong>Normalizing:</strong> The steel is heated to the austenitic temperature and then cooled in <strong>still air</strong>. The cooling rate is faster than in annealing. This results in a finer, more uniform pearlite microstructure, which gives a balance of strength and ductility.</li>\n    <li><strong>Quenching:</strong> The steel is heated to the austenitic temperature and then cooled <strong>very rapidly</strong> by plunging it into a medium like water, oil, or brine. The rapid cooling does not allow time for pearlite to form. Instead, the carbon is trapped in the iron lattice, which transforms into a body-centered tetragonal (BCT) structure called <strong>Martensite</strong>. Martensite is extremely hard and brittle.</li>\n    <li><strong>Tempering:</strong> A quenched, martensitic part is usually too brittle for practical use. Tempering is a subsequent heating process to a temperature *below* the eutectoid temperature (e.g., 200-500°C), followed by air cooling. This process reduces some of the hardness and brittleness of the martensite and increases its toughness.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which heat treatment process involves very slow cooling and results in the softest, most ductile state for steel?",
+      "options": [
+        { "text": "Normalizing", "isCorrect": false },
+        { "text": "Quenching", "isCorrect": false },
+        { "text": "Annealing", "isCorrect": true },
+        { "text": "Tempering", "isCorrect": false }
+      ],
+      "explanation": "Annealing uses the slowest cooling rate (furnace cooling), which allows for the formation of a coarse pearlite microstructure. This is the softest and most ductile equilibrium microstructure for steel."
+    },
+    {
+      "question": "The extremely hard and brittle phase formed by rapid quenching of steel from the austenitic temperature is called:",
+      "options": [
+        { "text": "Pearlite", "isCorrect": false },
+        { "text": "Ferrite", "isCorrect": false },
+        { "text": "Cementite", "isCorrect": false },
+        { "text": "Martensite", "isCorrect": true }
+      ],
+      "explanation": "Martensite is a non-equilibrium, metastable phase that forms when austenite is cooled so rapidly that the carbon atoms do not have time to diffuse out to form cementite. This traps the carbon and distorts the crystal structure, resulting in very high hardness."
+    },
+    {
+      "question": "What is the primary purpose of tempering a quenched steel part?",
+      "options": [
+        { "text": "To make it even harder.", "isCorrect": false },
+        { "text": "To increase its toughness and reduce brittleness.", "isCorrect": true },
+        { "text": "To dissolve carbon into the iron.", "isCorrect": false },
+        { "text": "To return it to a fully annealed state.", "isCorrect": false }
+      ],
+      "explanation": "As-quenched martensite is too brittle for most applications. Tempering is a secondary heat treatment that sacrifices some hardness to significantly increase the toughness and relieve internal stresses, making the part more durable."
+    }
+  ]
+}

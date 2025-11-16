@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>wedge</strong> is a simple machine, often triangular in shape, used to separate two objects or portions of an object, lift up an object, or hold an object in place. It works by converting a force applied to its blunt end into forces perpendicular to its inclined surfaces.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Analysis</h3>\n<p class=\"mb-4\">Problems involving wedges are solved by applying the principles of static friction and equilibrium. The key steps are:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Draw a free-body diagram for the wedge and for the object it is acting upon.</li>\n    <li>Show all forces: the applied force on the wedge ($P$), the weight of the object ($W$), and the normal forces ($N$) and friction forces ($f$) at all contacting surfaces.</li>\n    <li><strong>Crucially, determine the correct direction for the friction forces.</strong> Friction always opposes the direction of impending motion. For example, if you are pushing a wedge in to lift a block, the friction on the wedge will oppose its inward motion. The friction on the block will oppose its upward motion.</li>\n    <li>Set the friction forces to their maximum static value for impending motion ($f = \\mu_s N$).</li>\n    <li>Apply the equations of equilibrium ($\sum F_x = 0$, $\sum F_y = 0$) to each free-body diagram to solve for the unknown forces. It is often helpful to orient the coordinate axes parallel and perpendicular to the inclined surfaces.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When analyzing a wedge being pushed to lift a heavy block, the friction force on the block along its contact surface with the wedge will act in which direction?",
+      "options": [
+        { "text": "In the direction of impending upward motion.", "isCorrect": false },
+        { "text": "Opposite to the direction of impending upward motion (i.e., downward).", "isCorrect": true },
+        { "text": "Perpendicular to the contact surface.", "isCorrect": false },
+        { "text": "In the same direction as the applied force P.", "isCorrect": false }
+      ],
+      "explanation": "Friction always opposes the tendency of motion. The wedge is trying to push the block upwards. Therefore, the friction force exerted by the wedge on the block will act downwards, parallel to the inclined surface, to resist this upward motion."
+    }
+  ]
+}

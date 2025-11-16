@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Electrical resistance is a measure of the opposition to current flow in an electrical circuit. Materials that offer high resistance are called insulators, while materials that offer low resistance are called conductors.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Ohm's Law</h3>\n<p class=\"mb-4\">Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points. The constant of proportionality is the resistance.</p>\n$$V = IR$$\n<p class=\"mb-4\">where $V$ is voltage, $I$ is current, and $R$ is resistance.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Unit of Resistance</h3>\n<p class=\"mb-4\">The SI unit of electrical resistance is the <strong>ohm (\u03A9)</strong>, named after Georg Simon Ohm. One ohm is the resistance between two points of a conductor when a constant potential difference of one volt, applied to these points, produces a current of one ampere.</p>\n$$1 \\; \u03A9 = 1 \\frac{\\text{V}}{\\text{A}}$$\n<h3 class=\"text-lg font-semibold mb-2\">4. Resistivity</h3>\n<p class=\"mb-4\">The resistance of a material depends on its geometry and an intrinsic property called resistivity. The formula is:</p>\n$$R = \\frac{\\rho L}{A}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$R$ is the resistance in ohms (\u03A9).</li>\n    <li>$\\rho$ (rho) is the electrical resistivity of the material in ohm-meters (\u03A9\u00B7m).</li>\n    <li>$L$ is the length of the material in meters (m).</li>\n    <li>$A$ is the cross-sectional area of the material in square meters (m$^2$).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 12 V battery is connected to a resistor, and a current of 2 A flows. What is the resistance of the resistor?",
+      "options": [
+        { "text": "24 \u03A9", "isCorrect": false },
+        { "text": "6 \u03A9", "isCorrect": true },
+        { "text": "0.167 \u03A9", "isCorrect": false },
+        { "text": "10 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "Using Ohm's Law, $V=IR$. Rearrange to solve for $R$: $R = \\frac{V}{I}$.\n$R = \\frac{12 \\text{ V}}{2 \\text{ A}} = 6 \\; \u03A9$."
+    },
+    {
+      "question": "What is the resistance of a 10-meter-long copper wire with a cross-sectional area of $2 \\times 10^{-6} \\text{ m}^2$? The resistivity of copper is $1.7 \\times 10^{-8} \\; \u03A9\\text{\u00B7m}$.",
+      "options": [
+        { "text": "$8.5 \\times 10^{-2} \\; \u03A9$", "isCorrect": true },
+        { "text": "$3.4 \\times 10^{-13} \\; \u03A9$", "isCorrect": false },
+        { "text": "$1.18 \\times 10^{1} \\; \u03A9$", "isCorrect": false },
+        { "text": "$0.0085 \\; \u03A9$", "isCorrect": false }
+      ],
+      "explanation": "Use the resistivity formula: $R = \\frac{\\rho L}{A}$.\n$R = \\frac{(1.7 \\times 10^{-8} \\; \u03A9\\text{\u00B7m})(10 \\text{ m})}{2 \\times 10^{-6} \\text{ m}^2} = \\frac{1.7 \\times 10^{-7}}{2 \\times 10^{-6}} \\; \u03A9$\n$R = 0.85 \\times 10^{-1} \\; \u03A9 = 0.085 \\; \u03A9 = 8.5 \\times 10^{-2} \\; \u03A9$."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Incomplete combustion</strong> occurs when there is not enough oxygen to completely burn the fuel to carbon dioxide (CO₂) and water (H₂O). This is also known as a fuel-rich combustion process.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Products of Incomplete Combustion</h3>\n<p class=\"mb-4\">When combustion is incomplete, the exhaust gases will contain unburned or partially burned products in addition to CO₂ and H₂O. The most common product of incomplete combustion is <strong>carbon monoxide (CO)</strong>.</p>\n<p class=\"mb-4\">Other possible products include unburned hydrocarbons (UHC), hydrogen gas (H₂), and solid carbon (soot).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Chemical Equation</h3>\n<p class=\"mb-4\">Balancing an equation for incomplete combustion is more complex because the products are not fully known. Usually, the problem will provide additional information, such as the ratio of CO to CO₂ in the exhaust, to allow for a complete balance.</p>\n<p class=\"mb-4\">Example: Methane burns with 80% theoretical air. This means there is a deficiency of oxygen. The products will contain CO.</p>\n$$CH_4 + 0.8(2)(O_2 + 3.76N_2) \\rightarrow aCO_2 + bCO + 2H_2O + 6.016N_2$$\n<p class=\"mb-4\">To solve for a and b, you would perform a carbon balance ($a+b=1$) and an oxygen balance ($1.6(2) = 2a + b + 2$). Solving these two simultaneous equations gives the composition of the products.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Consequences</h3>\n<p class=\"mb-4\">Incomplete combustion is undesirable because:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It is less efficient, as not all the chemical energy of the fuel is released.</li>\n    <li>It produces harmful pollutants, most notably carbon monoxide (CO), which is toxic.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Incomplete combustion of a hydrocarbon fuel occurs primarily due to:",
+      "options": [
+        { "text": "An excess of nitrogen in the air.", "isCorrect": false },
+        { "text": "A deficiency of oxygen.", "isCorrect": true },
+        { "text": "Very high combustion temperatures.", "isCorrect": false },
+        { "text": "The presence of water vapor in the fuel.", "isCorrect": false }
+      ],
+      "explanation": "Incomplete combustion happens when the air-fuel mixture is 'fuel-rich', meaning there isn't enough oxygen available to convert all the carbon in the fuel to CO₂."
+    },
+    {
+      "question": "Besides CO₂ and H₂O, what is the most common and significant harmful product of incomplete combustion?",
+      "options": [
+        { "text": "Nitrogen dioxide (NO₂)", "isCorrect": false },
+        { "text": "Sulfur dioxide (SO₂)", "isCorrect": false },
+        { "text": "Ozone (O₃)", "isCorrect": false },
+        { "text": "Carbon monoxide (CO)", "isCorrect": true }
+      ],
+      "explanation": "When there is not enough oxygen, some of the carbon atoms from the fuel only react with one oxygen atom, forming carbon monoxide (CO) instead of the fully oxidized carbon dioxide (CO₂). CO is a toxic gas."
+    }
+  ]
+}

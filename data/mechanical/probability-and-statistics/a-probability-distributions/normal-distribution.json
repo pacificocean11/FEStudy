@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Properties of the Normal Distribution</h3>\n<p class=\"mb-4\">The normal distribution is a continuous probability distribution that is fundamental to statistics. Its graph is a symmetric, bell-shaped curve.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It is defined by its mean ($\u03bc$) and standard deviation ($\u03c3$).</li>\n    <li>The curve is symmetric about the mean.</li>\n    <li>The mean, median, and mode are all equal.</li>\n    <li>The total area under the curve is equal to 1.</li>\n    <li>The <strong>Empirical Rule</strong> (or 68-95-99.7 rule) states that approximately 68% of the data falls within 1 standard deviation of the mean, 95% within 2 standard deviations, and 99.7% within 3 standard deviations.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Standard Normal Distribution</h3>\n<p class=\"mb-4\">The standard normal distribution is a special case of the normal distribution with a mean of 0 and a standard deviation of 1 ($\u03bc=0, \u03c3=1$).</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. The Z-score</h3>\n<p class=\"mb-4\">To find probabilities for any normal distribution, we first convert our value of interest ($x$) into a <strong>z-score</strong>. The z-score tells us how many standard deviations a value is from the mean.</p>\n$$z = \\frac{x - \\mu}{\\sigma}$$\n<p class=\"mb-4\">Once we have the z-score, we can use a standard normal (z-table) or a calculator to find the cumulative probability, which is the area to the left of that z-score.</p>\n<p class=\"mb-4\"><strong>Key Probability Calculations:</strong></p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$P(X < a)$ can be found directly from the z-table after converting $a$ to a z-score.</li>\n    <li>$P(X > a) = 1 - P(X < a)$</li>\n    <li>$P(a < X < b) = P(X < b) - P(X < a)$</li>\n</ul>\n    ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The scores on an exam are normally distributed with a mean of 75 and a standard deviation of 10. What is the z-score for a student who scored 90?",
+      "options": [
+        { "text": "1.0", "isCorrect": false },
+        { "text": "1.5", "isCorrect": true },
+        { "text": "-1.5", "isCorrect": false },
+        { "text": "15", "isCorrect": false }
+      ],
+      "explanation": "Use the z-score formula: $z = \\frac{x - \\mu}{\\sigma} = \\frac{90 - 75}{10} = \\frac{15}{10} = 1.5$."
+    },
+    {
+      "question": "Using a standard normal table, what is the approximate probability corresponding to a z-score of 1.5? (i.e., P(Z < 1.5))",
+      "options": [
+        { "text": "0.0668", "isCorrect": false },
+        { "text": "0.8664", "isCorrect": false },
+        { "text": "0.9332", "isCorrect": true },
+        { "text": "0.9500", "isCorrect": false }
+      ],
+      "explanation": "Looking up a z-score of 1.5 in a standard normal (z-table) gives the cumulative area to the left, which is approximately 0.9332. This means about 93.32% of values are less than a value 1.5 standard deviations above the mean."
+    },
+    {
+      "question": "The height of adult males is normally distributed with a mean of 70 inches and a standard deviation of 3 inches. What is the probability that a randomly selected male is taller than 73 inches?",
+      "options": [
+        { "text": "0.8413", "isCorrect": false },
+        { "text": "0.1587", "isCorrect": true },
+        { "text": "0.3413", "isCorrect": false },
+        { "text": "0.5000", "isCorrect": false }
+      ],
+      "explanation": "First, find the z-score for 73 inches: $z = \\frac{73 - 70}{3} = \\frac{3}{3} = 1.0$. We want $P(X > 73)$, which is equivalent to $P(Z > 1.0)$. From a z-table, $P(Z < 1.0) \\approx 0.8413$. Therefore, $P(Z > 1.0) = 1 - P(Z < 1.0) = 1 - 0.8413 = 0.1587$."
+    },
+    {
+      "question": "For the same population of males (mean=70, std dev=3), what is the probability that a male's height is between 67 and 73 inches?",
+      "options": [
+        { "text": "0.3413", "isCorrect": false },
+        { "text": "0.9500", "isCorrect": false },
+        { "text": "0.6826", "isCorrect": true },
+        { "text": "0.4985", "isCorrect": false }
+      ],
+      "explanation": "This range corresponds to being within one standard deviation of the mean (70 \u00B1 3). According to the Empirical Rule, approximately 68% of the data falls within this range. The closest answer is 0.6826."
+    },
+    {
+      "question": "The lifespan of a certain component is normally distributed with a mean of 1000 hours and a standard deviation of 50 hours. What lifespan represents the 90th percentile?",
+      "options": [
+        { "text": "1064 hours", "isCorrect": true },
+        { "text": "1128 hours", "isCorrect": false },
+        { "text": "936 hours", "isCorrect": false },
+        { "text": "1090 hours", "isCorrect": false }
+      ],
+      "explanation": "We need to work backward. First, find the z-score that corresponds to a cumulative probability of 0.90. Looking this up in a z-table gives a z-score of approximately 1.28. Now, use the z-score formula to solve for x: $1.28 = \\frac{x - 1000}{50}$. This gives $x - 1000 = 1.28 \\cdot 50 = 64$. So, $x = 1000 + 64 = 1064$ hours."
+    }
+  ]
+}

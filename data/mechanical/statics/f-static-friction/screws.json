@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Screws are simple machines used to transmit power or generate large axial forces from a small applied torque. Examples include square-threaded screws used in jacks, vices, and presses. The analysis of screws is similar to analyzing a block on an inclined plane.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Unwrapping the Thread</h3>\n<p class=\"mb-4\">Imagine unwrapping one turn of the screw's thread. It forms a right triangle, which represents an inclined plane. The height of the triangle is the <strong>lead ($L$)</strong> of the screw (the distance the screw advances in one revolution), and the base is the circumference of the screw at its mean radius ($2\\pi r_m$).</p>\n<p class=\"mb-4\">The <strong>lead angle ($\\lambda$)</strong> is the angle of this imaginary incline:</p>\n$$ \\tan(\\lambda) = \\frac{L}{2\\pi r_m} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Torque Equations</h3>\n<p class=\"mb-4\">The axial load on the screw ($W$) acts like the weight on the inclined plane, and the force derived from the applied torque ($P = M/r_m$) acts horizontally to push the 'block' up or down the incline.</p>\n<p class=\"mb-4\">The angle of static friction is $\\phi_s = \\arctan(\\mu_s)$.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Torque to Raise a Load ($M_r$):</strong> This is equivalent to pushing the block up the incline.</li>\n    $$ M_r = W r_m \\tan(\\phi_s + \\lambda) $$\n    <li><strong>Torque to Lower a Load ($M_l$):</strong> This is equivalent to pushing the block down the incline.</li>\n    $$ M_l = W r_m \\tan(\\phi_s - \\lambda) $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Self-Locking</h3>\n<p class=\"mb-4\">A screw is <strong>self-locking</strong> if a positive torque is required to lower the load (i.e., if $M_l \\ge 0$). This occurs if the friction force alone is sufficient to hold the load in place. The condition for self-locking is:</p>\n$$ \\phi_s \\ge \\lambda \\quad \\text{or} \\quad \\mu_s \\ge \\tan(\\lambda) $$\n<p class=\"mb-4\">If the lead angle is greater than the friction angle, the screw is not self-locking and will unwind on its own under the load unless a holding torque is applied.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A screw is described as 'self-locking'. What does this mean?",
+      "options": [
+        { "text": "It requires a large torque to raise a load.", "isCorrect": false },
+        { "text": "It will not unscrew on its own when under load.", "isCorrect": true },
+        { "text": "Its threads are left-handed.", "isCorrect": false },
+        { "text": "It is made of a very hard material.", "isCorrect": false }
+      ],
+      "explanation": "Self-locking means that the friction in the threads is large enough to prevent the screw from turning backward (lowering the load) under the action of the load alone. No braking or reverse torque is needed to hold the load in place."
+    },
+    {
+      "question": "What is the condition for a power screw to be self-locking?",
+      "options": [
+        { "text": "The lead angle is greater than the angle of static friction.", "isCorrect": false },
+        { "text": "The angle of static friction is greater than or equal to the lead angle.", "isCorrect": true },
+        { "text": "The lead is equal to the circumference.", "isCorrect": false },
+        { "text": "The coefficient of friction is zero.", "isCorrect": false }
+      ],
+      "explanation": "A screw is self-locking if the friction angle is greater than or equal to the lead angle ($\\phi_s \\ge \\lambda$). This is equivalent to the coefficient of static friction being greater than or equal to the tangent of the lead angle ($\\mu_s \\ge \\tan(\\lambda)$)."
+    }
+  ]
+}

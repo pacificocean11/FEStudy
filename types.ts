@@ -32,3 +32,13 @@ export interface Subject {
   name: string;
   topics: Topic[];
 }
+
+export type PracticeMode = 'study' | 'timed' | 'review';
+
+export interface PerformanceRecord {
+  discipline: Discipline;
+  subject: string;
+  topic: string;
+  subtopicName: string;
+  question: string;
+}

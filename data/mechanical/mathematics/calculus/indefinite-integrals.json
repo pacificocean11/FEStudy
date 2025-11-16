@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Antiderivative</h3>\n<p class=\"mb-4\">An antiderivative of a function $f(x)$ is a function $F(x)$ whose derivative is $f(x)$, i.e., $F'(x) = f(x)$. The indefinite integral of $f(x)$, denoted by $\\int f(x) dx$, represents the family of all its antiderivatives.</p>\n<p class=\"mb-4\">If $F(x)$ is one antiderivative of $f(x)$, then the indefinite integral is written as:</p>\n$$\\int f(x) dx = F(x) + C$$\n<p class=\"mb-4\">where $C$ is an arbitrary constant of integration.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Basic Integration Rules</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Power Rule:</strong> $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$, for $n \\neq -1$</li>\n    <li><strong>Constant Multiple Rule:</strong> $\\int kf(x) dx = k \\int f(x) dx$</li>\n    <li><strong>Sum/Difference Rule:</strong> $\\int (f(x) \\pm g(x)) dx = \\int f(x) dx \\pm \\int g(x) dx$</li>\n    <li><strong>Integral of 1/x:</strong> $\\int \\frac{1}{x} dx = \\ln|x| + C$</li>\n    <li><strong>Exponential Rule:</strong> $\\int e^x dx = e^x + C$</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Integration Techniques</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Integration by Substitution (u-Substitution):</strong> Used to reverse the chain rule. Choose a substitution $u = g(x)$, find $du = g'(x)dx$, substitute to express the integral in terms of $u$, integrate, and then substitute back for $x$.</li>\n    <li><strong>Integration by Parts:</strong> Used to reverse the product rule. The formula is: $$\\int u dv = uv - \\int v du$$ A common mnemonic for choosing $u$ is LIATE (Logarithmic, Inverse Trig, Algebraic, Trigonometric, Exponential).</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Evaluate the indefinite integral: $\\int (4x^3 + 3x^2 - 5) dx$",
+      "options": [
+        { "text": "$x^4 + x^3 - 5x + C$", "isCorrect": true },
+        { "text": "$12x^2 + 6x + C$", "isCorrect": false },
+        { "text": "$4x^4 + 3x^3 - 5x + C$", "isCorrect": false },
+        { "text": "$x^4 + x^3 - 5 + C$", "isCorrect": false }
+      ],
+      "explanation": "Integrate each term using the power rule: $\\int 4x^3 dx = 4\\frac{x^4}{4} = x^4$. $\\int 3x^2 dx = 3\\frac{x^3}{3} = x^3$. $\\int -5 dx = -5x$. Combining these and adding the constant of integration gives $x^4 + x^3 - 5x + C$."
+    },
+    {
+      "question": "Find the indefinite integral: $\\int \\cos(3x) dx$",
+      "options": [
+        { "text": "$-\\frac{1}{3}\\sin(3x) + C$", "isCorrect": false },
+        { "text": "$\\frac{1}{3}\\sin(3x) + C$", "isCorrect": true },
+        { "text": "$-3\\sin(3x) + C$", "isCorrect": false },
+        { "text": "$3\\sin(3x) + C$", "isCorrect": false }
+      ],
+      "explanation": "Use u-substitution. Let $u = 3x$. Then $du = 3dx$, which means $dx = \\frac{du}{3}$. Substitute into the integral: $\\int \\cos(u) \\frac{du}{3} = \\frac{1}{3} \\int \\cos(u) du = \\frac{1}{3} \\sin(u) + C$. Now substitute back for $x$: $\\frac{1}{3}\\sin(3x) + C$."
+    },
+    {
+      "question": "Evaluate $\\int 2x(x^2 + 1)^4 dx$.",
+      "options": [
+        { "text": "$\\frac{(x^2+1)^5}{5} + C$", "isCorrect": true },
+        { "text": "$\\frac{(x^2+1)^5}{10} + C$", "isCorrect": false },
+        { "text": "$5(x^2+1)^5 + C$", "isCorrect": false },
+        { "text": "$2x \\frac{(x^2+1)^5}{5} + C$", "isCorrect": false }
+      ],
+      "explanation": "Use u-substitution. Let $u = x^2 + 1$. Then $du = 2x dx$. Notice that $2x dx$ is exactly what we have in the integral. Substitute: $\\int u^4 du = \\frac{u^5}{5} + C$. Substitute back for $x$: $\\frac{(x^2+1)^5}{5} + C$."
+    },
+    {
+      "question": "Find the integral: $\\int x e^x dx$",
+      "options": [
+        { "text": "$e^x + C$", "isCorrect": false },
+        { "text": "$xe^x - e^x + C$", "isCorrect": true },
+        { "text": "$\\frac{x^2}{2}e^x + C$", "isCorrect": false },
+        { "text": "$xe^x + e^x + C$", "isCorrect": false }
+      ],
+      "explanation": "Use integration by parts: $\\int u dv = uv - \\int v du$. Let $u = x$ and $dv = e^x dx$. Then $du = dx$ and $v = \\int e^x dx = e^x$. Applying the formula: $\\int x e^x dx = x e^x - \\int e^x dx = xe^x - e^x + C$."
+    },
+    {
+      "question": "Evaluate $\\int \\frac{5}{x} dx$.",
+      "options": [
+        { "text": "$5 \\ln|x| + C$", "isCorrect": true },
+        { "text": "$-\\frac{5}{x^2} + C$", "isCorrect": false },
+        { "text": "$5x^{-1} + C$", "isCorrect": false },
+        { "text": "$\\ln|5x| + C$", "isCorrect": false }
+      ],
+      "explanation": "Use the constant multiple rule and the rule for integrating $1/x$: $\\int \\frac{5}{x} dx = 5 \\int \\frac{1}{x} dx = 5 \\ln|x| + C$."
+    }
+  ]
+}

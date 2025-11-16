@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Free-Body Diagram (FBD)</strong> is a simplified diagram of an object (or a system of objects) showing all the external forces and moments acting on it. The object is isolated from its surroundings, and the effects of those surroundings are replaced by the appropriate forces and moments.</p>\n<p class=\"mb-4\">Drawing a correct FBD is the most crucial step in solving almost any statics or dynamics problem.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Isolate the Body:</strong> Choose the body or system of interest and draw a simple outline of it, separated from everything else.</li>\n    <li><strong>Show External Forces:</strong> Identify all forces that act *on* the body from the *outside*. Do not show internal forces (forces between parts of the same body).</li>\n    <li><strong>Label Forces and Moments:</strong> Each force should be represented by a vector. Common forces include:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Weight:</strong> A force acting vertically downward through the object's center of gravity.</li>\n            <li><strong>Normal Forces:</strong> A compressive force acting perpendicular to a surface where the body is in contact with another body.</li>\n            <li><strong>Friction Forces:</strong> A force acting parallel to a surface, opposing the tendency of motion.</li>\n            <li><strong>Tension in Cables:</strong> A pulling force acting along the direction of a cable or rope.</li>\n            <li><strong>Applied Loads:</strong> Any other external forces or moments acting on the body.</li>\n            <li><strong>Support Reactions:</strong> Forces and moments exerted by supports (pins, rollers, fixed supports) to prevent motion.</li>\n        </ul>\n    </li>\n    <li><strong>Add Dimensions and a Coordinate System:</strong> Label relevant angles and dimensions, and establish a clear coordinate system (x-y axes).</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A block rests on a horizontal surface. Which forces should be included in its free-body diagram?",
+      "options": [
+        { "text": "Weight and Normal Force.", "isCorrect": true },
+        { "text": "Weight only.", "isCorrect": false },
+        { "text": "Normal Force and Friction.", "isCorrect": false },
+        { "text": "Weight, Normal Force, and the force of the block on the surface.", "isCorrect": false }
+      ],
+      "explanation": "The external forces acting on the block are its own Weight (acting downward) and the Normal Force from the surface (acting upward). The force of the block on the surface is an external force on the *surface*, not on the block, so it is not included in the block's FBD."
+    },
+    {
+      "question": "A ladder leans against a smooth (frictionless) wall and rests on a rough floor. How should the reaction force from the wall be drawn on the ladder's FBD?",
+      "options": [
+        { "text": "A vertical force pointing up.", "isCorrect": false },
+        { "text": "A horizontal force pointing away from the wall.", "isCorrect": true },
+        { "text": "A force perpendicular to the ladder.", "isCorrect": false },
+        { "text": "Both a horizontal and a vertical force.", "isCorrect": false }
+      ],
+      "explanation": "A smooth surface can only exert a normal force, which is perpendicular to the surface. Since the wall is vertical, the normal force it exerts on the ladder must be horizontal, pointing away from the wall."
+    }
+  ]
+}

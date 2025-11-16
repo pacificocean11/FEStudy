@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Effectiveness-NTU method relates the two dimensionless parameters, effectiveness ($\\epsilon$) and NTU, to analyze heat exchanger performance. The relationship depends on the flow arrangement and the heat capacity rate ratio, $C_r = C_{min}/C_{max}$.</p>\n<p class=\"mb-4\">This method is particularly useful in design problems where the heat exchanger size (and thus NTU) required to achieve a desired effectiveness (or outlet temperature) needs to be determined.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Relations</h3>\n<p class=\"mb-4\">The specific formulas connecting $\\epsilon$, NTU, and $C_r$ vary by geometry. Here are the most common ones:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Parallel-Flow:</strong>\n    $$\\epsilon = \\frac{1 - \\exp[-NTU(1+C_r)]}{1+C_r}$$\n    </li>\n    <li><strong>Counter-Flow:</strong>\n    $$\\epsilon = \\frac{1 - \\exp[-NTU(1-C_r)]}{1 - C_r\\exp[-NTU(1-C_r)]} \\quad \\text{(for } C_r < 1\\text{)}$$\n    </li>\n    <li><strong>Special Case (Evaporator/Condenser, $C_r = 0$):</strong> When one fluid undergoes a phase change, its temperature is constant, so its heat capacity rate is effectively infinite ($C_{max} \\to \\infty$). This makes $C_r=0$. For any flow arrangement in this case, the formula is:</li>\n    $$\\epsilon = 1 - e^{-NTU}$$\n</ul>\n<p class=\"mb-4\">For other geometries like shell-and-tube or cross-flow, the relations are more complex and are typically found in charts or tables.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Effectiveness-NTU method is particularly useful when which of the following are unknown?",
+      "options": [
+        { "text": "The fluid inlet temperatures.", "isCorrect": false },
+        { "text": "The fluid outlet temperatures.", "isCorrect": true },
+        { "text": "The heat exchanger surface area.", "isCorrect": false },
+        { "text": "The mass flow rates.", "isCorrect": false }
+      ],
+      "explanation": "The LMTD method requires knowledge of all four inlet and outlet temperatures. The Effectiveness-NTU method was developed for cases where the outlet temperatures are not known, which is common in design and performance prediction problems."
+    },
+    {
+      "question": "A condenser is a heat exchanger where one fluid changes phase at a constant temperature. What is the value of the heat capacity ratio, $C_r$, for a condenser?",
+      "options": [
+        { "text": "0", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "Infinity", "isCorrect": false },
+        { "text": "It depends on the other fluid.", "isCorrect": false }
+      ],
+      "explanation": "During a phase change, a fluid can absorb or reject heat without changing its temperature. This means its effective heat capacity rate is infinite ($C_{max} \\to \\infty$). The heat capacity ratio is $C_r = C_{min}/C_{max}$. As $C_{max} \\to \\infty$, the ratio $C_r \\to 0$."
+    },
+    {
+      "question": "For the condenser in the previous question ($C_r = 0$), if the NTU is 1.5, what is its effectiveness?",
+      "options": [
+        { "text": "0.223", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false },
+        { "text": "0.777", "isCorrect": true },
+        { "text": "0.5", "isCorrect": false }
+      ],
+      "explanation": "For any heat exchanger where one fluid is condensing or evaporating ($C_r = 0$), the effectiveness is given by $\\epsilon = 1 - e^{-NTU}$.\n$\\epsilon = 1 - e^{-1.5} \\approx 1 - 0.223 = 0.777$, or 77.7%."
+    }
+  ]
+}

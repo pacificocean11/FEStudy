@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An isothermal process is a thermodynamic process in which the temperature of the system remains constant: $\\Delta T = 0$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Internal Energy</h3>\n<p class=\"mb-4\">For an <strong>ideal gas</strong>, internal energy ($U$) is a function of temperature only. Therefore, in an isothermal process involving an ideal gas, the change in internal energy is zero.</p>\n$$\\Delta U = 0$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. First Law and Work Done</h3>\n<p class=\"mb-4\">The first law is $\\Delta U = Q - W$. Since $\\Delta U = 0$ for an ideal gas, it simplifies to:</p>\n$$Q = W$$\n<p class=\"mb-4\">This means all the heat added to the system is converted into work done by the system. For an ideal gas, $P = \\frac{nRT}{V}$. The work done is:</p>\n$$W = \\int_{V_1}^{V_2} P dV = \\int_{V_1}^{V_2} \\frac{nRT}{V} dV = nRT \\ln\\left(\\frac{V_2}{V_1}\\right)$$\n<p class=\"mb-4\">Since $P_1V_1 = P_2V_2$ for an isothermal process, we can also write: $W = nRT \\ln\\left(\\frac{P_1}{P_2}\\right)$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. P-V Diagram</h3>\n<p class=\"mb-4\">On a Pressure-Volume (P-V) diagram, an isothermal process for an ideal gas follows a hyperbolic curve, described by the equation $PV = \\text{constant}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For an ideal gas undergoing an isothermal process, what is the change in internal energy?",
+      "options": [
+        { "text": "It is positive.", "isCorrect": false },
+        { "text": "It is negative.", "isCorrect": false },
+        { "text": "It is zero.", "isCorrect": true },
+        { "text": "It equals the work done.", "isCorrect": false }
+      ],
+      "explanation": "The internal energy of an ideal gas depends only on its temperature. Since the temperature is constant in an isothermal process, the internal energy does not change."
+    },
+    {
+      "question": "An ideal gas expands isothermally, performing 100 J of work. How much heat was transferred to the gas?",
+      "options": [
+        { "text": "100 J", "isCorrect": true },
+        { "text": "-100 J", "isCorrect": false },
+        { "text": "0 J", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "For an ideal gas in an isothermal process, the First Law of Thermodynamics simplifies to $Q = W$. Since the gas performed 100 J of work, 100 J of heat must have been supplied to it."
+    }
+  ]
+}

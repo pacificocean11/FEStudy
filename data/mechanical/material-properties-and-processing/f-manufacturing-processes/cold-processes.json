@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Cold working</strong> is the plastic deformation of metals and alloys at a temperature <strong>below their recrystallization temperature</strong> (usually at room temperature). Unlike hot working, recrystallization does not occur during the process.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Strain Hardening</h3>\n<p class=\"mb-4\">The most significant effect of cold working is <strong>strain hardening</strong> (or work hardening). As the metal is deformed, dislocations are generated and move within the crystal structure, eventually entangling and impeding each other's movement. This makes the material stronger, harder, and less ductile.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Advantages</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Increased Strength and Hardness:</strong> Due to strain hardening.</li>\n    <li><strong>Good Surface Finish:</strong> No oxidation or scaling occurs.</li>\n    <li><strong>High Dimensional Accuracy:</strong> Tighter tolerances can be achieved compared to hot working.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Disadvantages</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Higher Forces Required:</strong> More powerful equipment is needed to deform the material.</li>\n    <li><strong>Limited Deformation:</strong> The amount of deformation is limited by the material's reduced ductility.</li>\n    <li><strong>Anisotropy:</strong> The material's properties can become directional.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">5. Common Cold Working Processes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Drawing:</strong> Pulling a wire or bar through a die to reduce its cross-section.</li>\n    <li><strong>Bending:</strong> Straining a material around a straight axis.</li>\n    <li><strong>Cold Rolling:</strong> Reducing the thickness of a sheet or plate.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary metallurgical effect of cold working a metal?",
+      "options": [
+        { "text": "Recrystallization", "isCorrect": false },
+        { "text": "Grain growth", "isCorrect": false },
+        { "text": "Strain hardening", "isCorrect": true },
+        { "text": "Oxidation", "isCorrect": false }
+      ],
+      "explanation": "Cold working is done below the recrystallization temperature, so the dislocations created during deformation build up, resulting in strain hardening, which increases the material's strength and hardness."
+    },
+    {
+      "question": "Compared to a hot-worked part, a cold-worked part generally has:",
+      "options": [
+        { "text": "Higher ductility and lower strength.", "isCorrect": false },
+        { "text": "Lower strength and a worse surface finish.", "isCorrect": false },
+        { "text": "Higher strength and a better surface finish.", "isCorrect": true },
+        { "text": "Lower dimensional accuracy and less residual stress.", "isCorrect": false }
+      ],
+      "explanation": "The strain hardening from cold working increases strength (but reduces ductility). Because the process is done at or near room temperature, there is no scaling, which results in a much better surface finish and higher dimensional control."
+    }
+  ]
+}

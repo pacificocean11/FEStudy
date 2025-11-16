@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A flowchart is a type of diagram that represents a workflow, algorithm, or process. It shows the steps as boxes of various kinds, and their order by connecting the boxes with arrows. This diagrammatic representation illustrates a solution model to a given problem.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Flowchart Symbols</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Oval / Terminal:</strong> Represents the start or end point of the process.</li>\n    <li><strong>Rectangle / Process:</strong> Represents an action or operation. For example, a calculation like \"C = A + B\".</li>\n    <li><strong>Parallelogram / Input/Output:</strong> Represents data input (e.g., \"Read A\") or output (e.g., \"Print C\").</li>\n    <li><strong>Diamond / Decision:</strong> Represents a point where a decision must be made. It has one input and two or more outputs (e.g., Yes/No, True/False).</li>\n    <li><strong>Arrow / Flow Line:</strong> Indicates the direction of flow and connects the symbols.</li>\n    <li><strong>Circle / Connector:</strong> Used to connect separate parts of a flowchart, often on the same page.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Example: Calculate the Area of a Circle</h3>\n<p class=\"mb-4\">\n    1. <strong>Start</strong> (Oval)<br>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &darr;<br>\n    2. <strong>Input Radius</strong> (Parallelogram)<br>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &darr;<br>\n    3. <strong>Area = &pi; * Radius^2</strong> (Rectangle)<br>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &darr;<br>\n    4. <strong>Print Area</strong> (Parallelogram)<br>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &darr;<br>\n    5. <strong>End</strong> (Oval)<br>\n</p>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a flowchart, which symbol is used to represent the start or end of a program?",
+      "options": [
+        { "text": "Rectangle", "isCorrect": false },
+        { "text": "Diamond", "isCorrect": false },
+        { "text": "Oval", "isCorrect": true },
+        { "text": "Parallelogram", "isCorrect": false }
+      ],
+      "explanation": "An oval, or terminal symbol, is used to denote the start and end points of a process or algorithm in a flowchart."
+    },
+    {
+      "question": "A diamond-shaped symbol in a flowchart is used for what purpose?",
+      "options": [
+        { "text": "Input/Output", "isCorrect": false },
+        { "text": "Calculation", "isCorrect": false },
+        { "text": "Decision", "isCorrect": true },
+        { "text": "Connector", "isCorrect": false }
+      ],
+      "explanation": "The diamond symbol represents a decision point. It typically contains a condition that evaluates to true or false, leading to two different paths in the flowchart."
+    },
+    {
+      "question": "Which symbol would be used to represent the step 'Calculate a = b + c'?",
+      "options": [
+        { "text": "Rectangle", "isCorrect": true },
+        { "text": "Diamond", "isCorrect": false },
+        { "text": "Oval", "isCorrect": false },
+        { "text": "Parallelogram", "isCorrect": false }
+      ],
+      "explanation": "A rectangle represents a process or an action step. A calculation is a type of process, so a rectangle would be used."
+    },
+    {
+      "question": "The instruction 'Read temperature from sensor' would be placed in which flowchart symbol?",
+      "options": [
+        { "text": "Rectangle", "isCorrect": false },
+        { "text": "Diamond", "isCorrect": false },
+        { "text": "Oval", "isCorrect": false },
+        { "text": "Parallelogram", "isCorrect": true }
+      ],
+      "explanation": "A parallelogram is used for any input or output operation. Reading data from a sensor is an input operation."
+    },
+    {
+      "question": "What do the arrows in a flowchart represent?",
+      "options": [
+        { "text": "The flow of logic", "isCorrect": true },
+        { "text": "Data storage", "isCorrect": false },
+        { "text": "User inputs", "isCorrect": false },
+        { "text": "Program termination", "isCorrect": false }
+      ],
+      "explanation": "The arrows, or flow lines, indicate the direction of flow in the process, connecting the symbols and showing the sequence of operations."
+    }
+  ]
+}

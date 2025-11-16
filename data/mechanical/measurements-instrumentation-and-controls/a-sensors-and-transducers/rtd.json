@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">An <strong>RTD (Resistance Temperature Detector)</strong> is a sensor used to measure temperature. It operates on the principle that the electrical resistance of certain metals changes in a predictable, repeatable, and nearly linear way with temperature.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Material and Construction</h3>\n<p class=\"mb-4\">The most common material for RTDs is <strong>platinum</strong> (Pt) due to its high stability, linearity, and wide temperature range. A common type is the Pt100, which has a resistance of 100 \u03A9 at 0°C.</p>\n<p class=\"mb-4\">The sensor is typically a fine platinum wire wound around a ceramic or glass core, or a thin film of platinum deposited on a substrate.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Resistance-Temperature Relationship</h3>\n<p class=\"mb-4\">The resistance of an RTD can be approximated by a linear relationship over a limited range:</p>\n$$R_T = R_0 (1 + \\alpha T)$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$R_T$ is the resistance at temperature T.</li>\n    <li>$R_0$ is the resistance at a reference temperature (usually 0°C).</li>\n    <li>$\\alpha$ is the temperature coefficient of resistance.</li>\n    <li>$T$ is the temperature in degrees Celsius.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Advantages and Disadvantages</h3>\n<p class=\"mb-4\"><strong>Advantages:</strong> High accuracy, stability, and repeatability.<br><strong>Disadvantages:</strong> Slower response time and higher cost compared to thermocouples, sensitive to shock and vibration.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the operating principle of a Resistance Temperature Detector (RTD)?",
+      "options": [
+        { "text": "Generation of voltage at a junction of dissimilar metals.", "isCorrect": false },
+        { "text": "Change in capacitance with temperature.", "isCorrect": false },
+        { "text": "Change in electrical resistance of a metal with temperature.", "isCorrect": true },
+        { "text": "Emission of infrared radiation.", "isCorrect": false }
+      ],
+      "explanation": "RTDs work because the electrical resistance of metals, like platinum, changes predictably as temperature changes."
+    },
+    {
+      "question": "A Pt100 RTD is a platinum RTD that has a resistance of:",
+      "options": [
+        { "text": "100 \u03A9 at 100°C", "isCorrect": false },
+        { "text": "100 \u03A9 at 0°C", "isCorrect": true },
+        { "text": "0 \u03A9 at 100°C", "isCorrect": false },
+        { "text": "100 \u03A9 at 0 K", "isCorrect": false }
+      ],
+      "explanation": "The '100' in Pt100 signifies that the sensor has a nominal resistance of 100 \u03A9 at the ice point, 0°C."
+    }
+  ]
+}

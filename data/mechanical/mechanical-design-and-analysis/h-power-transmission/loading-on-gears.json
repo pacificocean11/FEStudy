@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Forces on a Spur Gear Tooth</h3>\n<p class=\"mb-4\">The total force ($F_N$) between two mating gear teeth acts along the line of action, at the pressure angle ($\\phi$) to the tangent of the pitch circles. This total force can be resolved into two perpendicular components:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Tangential Force ($W_t$):</strong> This is the useful component that transmits power. It is tangent to the pitch circle. It can be calculated from the torque ($T$) and the pitch radius ($r$).</li>\n    $$W_t = \\frac{T}{r} = \\frac{2T}{d}$$\n    <li><strong>Radial Force ($W_r$):</strong> This component acts radially towards the center of the gear. It does not transmit power but is important for bearing and shaft design. It is related to the tangential force by the pressure angle.</li>\n    $$W_r = W_t \\tan(\\phi)$$\n</ul>\n<p class=\"mb-4\">The total force is the vector sum of these components: $F_N = \\sqrt{W_t^2 + W_r^2} = W_t / \\cos(\\phi)$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A spur gear with a 10-inch pitch diameter transmits a torque of 2000 in-lb. What is the tangential force on the gear teeth?",
+      "options": [
+        { "text": "200 lb", "isCorrect": false },
+        { "text": "400 lb", "isCorrect": true },
+        { "text": "2000 lb", "isCorrect": false },
+        { "text": "100 lb", "isCorrect": false }
+      ],
+      "explanation": "The pitch radius is $r = d/2 = 10/2 = 5$ inches. The tangential force is $W_t = T/r = 2000 \\text{ in-lb} / 5 \\text{ in} = 400$ lb."
+    },
+    {
+      "question": "A gear has a tangential load of 400 lb and a pressure angle of 20°. What is the radial force on the gear?",
+      "options": [
+        { "text": "145.6 lb", "isCorrect": true },
+        { "text": "425.7 lb", "isCorrect": false },
+        { "text": "375.9 lb", "isCorrect": false },
+        { "text": "400 lb", "isCorrect": false }
+      ],
+      "explanation": "The radial force is related to the tangential force by $W_r = W_t \\tan(\\phi)$.\n$W_r = (400 \\text{ lb}) \\tan(20^\circ) \\approx 400 \\cdot 0.364 = 145.6$ lb."
+    }
+  ]
+}

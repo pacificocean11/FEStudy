@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Stefan-Boltzmann law describes the total power radiated from a surface per unit area. It states that the total emissive power of a surface is directly proportional to the fourth power of its absolute temperature.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula for a Black Body</h3>\n<p class=\"mb-4\">For an ideal black body (a perfect emitter with $\\epsilon = 1$), the total heat energy emitted per unit surface area per unit time ($E_b$) is:</p>\n$$E_b = \\sigma T^4$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$E_b$ is the blackbody emissive power in W/m².</li>\n    <li>$\\sigma$ is the Stefan-Boltzmann constant, $\\sigma \\approx 5.67 \\times 10^{-8} \\frac{W}{m^2 K^4}$.</li>\n    <li>$T$ is the absolute temperature of the surface in Kelvin (K).</li>\n</ul>\n<p class=\"mb-4\">To find the total power ($P$ or $q$) radiated from a black body of surface area $A$, you multiply by the area: $q = \\sigma A T^4$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Formula for a Gray Body (Real Surface)</h3>\n<p class=\"mb-4\">Real surfaces are not perfect emitters. Their emissive power ($E$) is less than that of a black body at the same temperature. This is accounted for by the surface's emissivity, $\\epsilon$.</p>\n$$E = \\epsilon \\sigma T^4$$\n<p class=\"mb-4\">The total power radiated from a gray body of surface area $A$ is:</p>\n$$q = \\epsilon \\sigma A T^4$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A spherical black body has a radius of 0.1 m and a surface temperature of 500 K. What is the total rate of energy radiated from the sphere? ($\\sigma = 5.67 \\times 10^{-8}$ W/m²K⁴).",
+      "options": [
+        { "text": "88.9 W", "isCorrect": true },
+        { "text": "71.2 W", "isCorrect": false },
+        { "text": "354 W", "isCorrect": false },
+        { "text": "141 W", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the surface area of the sphere: $A = 4\\pi r^2 = 4\\pi(0.1)^2 = 0.04\\pi \\approx 0.1257$ m². For a black body, $\\epsilon=1$. Use the Stefan-Boltzmann law for total power: $q = \\sigma A T^4 = (5.67 \\times 10^{-8})(0.1257)(500)^4 = (5.67 \\times 10^{-8})(0.1257)(6.25 \\times 10^{10}) \\approx 88.9$ W."
+    },
+    {
+      "question": "If the absolute temperature of a radiating surface is doubled, by what factor does its emissive power increase?",
+      "options": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "16", "isCorrect": true }
+      ],
+      "explanation": "Emissive power is proportional to the fourth power of the absolute temperature ($E \\propto T^4$). If the temperature becomes $2T$, the new emissive power will be proportional to $(2T)^4 = 16T^4$. Therefore, the power increases by a factor of 16."
+    },
+    {
+      "question": "A 1 m² plate at 1000 K has an emissivity of 0.8. How much power does it radiate?",
+      "options": [
+        { "text": "56.7 kW", "isCorrect": false },
+        { "text": "45.4 kW", "isCorrect": true },
+        { "text": "70.9 kW", "isCorrect": false },
+        { "text": "80.0 kW", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for a gray body: $q = \\epsilon \\sigma A T^4$. $q = (0.8)(5.67 \\times 10^{-8})(1)(1000)^4 = (0.8)(5.67 \\times 10^{-8})(10^{12}) = (0.8)(56700) = 45360$ W, or 45.4 kW."
+    }
+  ]
+}

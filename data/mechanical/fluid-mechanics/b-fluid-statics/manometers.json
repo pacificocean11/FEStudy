@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A manometer is a device used to measure pressure by balancing a column of liquid. It is a simple and accurate way to measure pressure differences.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. U-Tube Manometer</h3>\n<p class=\"mb-4\">The most common type is the U-tube manometer. It consists of a U-shaped tube containing a liquid (the 'manometer fluid'), often mercury or water. One end is connected to the pressure to be measured, and the other end is open to a reference pressure (often the atmosphere).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Operation</h3>\n<p class=\"mb-4\">The principle is based on the fact that the pressure at any two points at the same horizontal level in a continuous fluid at rest is equal. To solve a manometer problem:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Start at one end (e.g., the point where pressure is to be measured, $P_1$).</li>\n    <li>Move through the manometer fluid. Add pressure ($\rho g h$) when moving down, and subtract pressure ($\rho g h$) when moving up.</li>\n    <li>Set the resulting expression equal to the pressure at the other end ($P_2$).</li>\n</ol>\n<p class=\"mb-4\">For a simple U-tube measuring gage pressure, with point 1 connected to a tank and point 2 open to the atmosphere ($P_{atm}$):</p>\n$$ P_1 + \\rho_{fluid} g h_1 = P_{atm} + \\rho_{mano} g h_2 $$\n<p class=\"mb-4\">The gage pressure is $P_{gage} = P_1 - P_{atm}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A U-tube manometer is used to measure the pressure in a tank of air. The manometer fluid is mercury (SG = 13.6). The mercury level on the tank side is 10 cm below the air connection, and on the open side, it is 15 cm higher than on the tank side. What is the gage pressure of the air in the tank? (Use $\\gamma_{water} = 9810$ N/m³).",
+      "options": [
+        { "text": "13.3 kPa", "isCorrect": false },
+        { "text": "20.0 kPa", "isCorrect": true },
+        { "text": "33.4 kPa", "isCorrect": false },
+        { "text": "6.6 kPa", "isCorrect": false }
+      ],
+      "explanation": "Start at the air-mercury interface on the tank side (call this point A). Move down 15 cm (0.15 m) to the lowest point and then up 15 cm to the same level on the other side (call this point B). The pressure at B is open to the atmosphere. We start at the tank pressure, $P_{air}$. Moving from the connection down to the mercury level at point A doesn't change the pressure (ignoring the weight of the air). From point A, moving down by a height $h$ and then up by the same height to get to point B, which is at the same elevation, results in a net pressure change of $\\rho g h$ where h is the difference in levels. The pressure difference between the two surfaces is $\\Delta P = \\rho_{Hg} g h$. The height difference is $h = 15$ cm = 0.15 m. The specific weight of mercury is $\\gamma_{Hg} = SG_{Hg} \\cdot \\gamma_{water} = 13.6 \\cdot 9810 = 133416$ N/m³. The gage pressure is $P_{gage} = \\gamma_{Hg} h = (133416 \\text{ N/m³})(0.15 \\text{ m}) = 20012 \\text{ Pa} \\approx 20.0$ kPa."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Projectile motion is the motion of an object thrown or projected into the air, subject only to the acceleration of gravity. Air resistance is typically ignored in these problems.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Decomposing the Motion</h3>\n<p class=\"mb-4\">The key to analyzing projectile motion is to treat the horizontal and vertical components of the motion independently.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Horizontal Motion:</strong> There is no acceleration in the horizontal direction ($a_x = 0$). This means the horizontal velocity is constant.</li>\n    <li><strong>Vertical Motion:</strong> The only acceleration is due to gravity, which acts downward ($a_y = -g$, where $g \approx 9.81 \text{ m/s²}$ or $32.2 \text{ ft/s²}$). This is constant acceleration motion.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Kinematic Equations for Projectiles</h3>\n<p class=\"mb-4\">If an object is launched with an initial speed $v_0$ at an angle $\theta$ above the horizontal, the initial velocity components are:</p>\n$$v_{0x} = v_0 \cos(\theta) \quad \quad v_{0y} = v_0 \sin(\theta)$$\n<p class=\"mb-4\">The motion can then be described by these equations:</p>\n<table class=\"w-full text-left border-collapse\">\n  <thead>\n    <tr>\n      <th class=\"border p-2 font-semibold\">Horizontal (x)</th>\n      <th class=\"border p-2 font-semibold\">Vertical (y)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"border p-2\">$a_x = 0$</td>\n      <td class=\"border p-2\">$a_y = -g$</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2\">$v_x = v_{0x} = v_0 \\cos(\\theta)$</td>\n      <td class=\"border p-2\">$v_y = v_{0y} - gt = v_0 \\sin(\\theta) - gt$</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2\">$x = x_0 + v_{0x}t = x_0 + (v_0 \\cos(\\theta))t$</td>\n      <td class=\"border p-2\">$y = y_0 + v_{0y}t - \frac{1}{2}gt^2 = y_0 + (v_0 \\sin(\\theta))t - \frac{1}{2}gt^2$</td>\n    </tr>\n  </tbody>\n</table>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A projectile is fired with an initial velocity of 100 m/s at an angle of 30° above the horizontal. What are the initial horizontal and vertical components of its velocity?",
+      "options": [
+        { "text": "$v_{0x} = 50$ m/s, $v_{0y} = 86.6$ m/s", "isCorrect": false },
+        { "text": "$v_{0x} = 86.6$ m/s, $v_{0y} = 50$ m/s", "isCorrect": true },
+        { "text": "$v_{0x} = 100$ m/s, $v_{0y} = 100$ m/s", "isCorrect": false },
+        { "text": "$v_{0x} = 30$ m/s, $v_{0y} = 100$ m/s", "isCorrect": false }
+      ],
+      "explanation": "The initial horizontal velocity is $v_{0x} = v_0 \cos(\theta) = 100 \cos(30^\circ) = 100(\frac{\sqrt{3}}{2}) \approx 86.6$ m/s. The initial vertical velocity is $v_{0y} = v_0 \sin(\theta) = 100 \sin(30^\circ) = 100(0.5) = 50$ m/s."
+    },
+    {
+      "question": "A cannonball is fired horizontally from a 45 m high cliff with a velocity of 150 m/s. How long is it in the air? (Use $g = 9.8$ m/s²).",
+      "options": [
+        { "text": "9.18 s", "isCorrect": false },
+        { "text": "0.3 s", "isCorrect": false },
+        { "text": "4.59 s", "isCorrect": false },
+        { "text": "3.03 s", "isCorrect": true }
+      ],
+      "explanation": "The time of flight is determined only by the vertical motion. The initial vertical velocity is $v_{0y} = 0$ since it's fired horizontally. The vertical distance is $\Delta y = -45$ m (downward). Using the vertical position equation: $\Delta y = v_{0y}t - \frac{1}{2}gt^2 \implies -45 = (0)t - \frac{1}{2}(9.8)t^2 \implies -45 = -4.9t^2 \implies t^2 = \frac{45}{4.9} \approx 9.18 \implies t \approx 3.03 \text{ s}$."
+    },
+    {
+      "question": "For the cannonball in the previous question, how far from the base of the cliff does it land?",
+      "options": [
+        { "text": "454.5 m", "isCorrect": true },
+        { "text": "1377 m", "isCorrect": false },
+        { "text": "688.5 m", "isCorrect": false },
+        { "text": "45 m", "isCorrect": false }
+      ],
+      "explanation": "The horizontal distance (range) depends on the constant horizontal velocity and the time of flight. The time of flight is $t \approx 3.03$ s. The horizontal velocity is constant at $v_x = 150$ m/s. Range $R = v_x \cdot t = (150 \text{ m/s})(3.03 \text{ s}) \approx 454.5 \text{ m}$."
+    }
+  ]
+}

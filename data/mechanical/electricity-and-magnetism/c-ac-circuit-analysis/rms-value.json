@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Root Mean Square (RMS)</strong> value of an AC waveform is its effective value. It is defined as the equivalent DC voltage that would produce the same amount of heat (power dissipation) in a resistor as the AC voltage.</p>\n<p class=\"mb-4\">When you see an AC voltage rating, like 120V from a wall outlet, this is the RMS value, not the peak value.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Calculation</h3>\n<p class=\"mb-4\">The name \"Root Mean Square\" describes the mathematical process:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Square</strong> the waveform function.</li>\n    <li>Find the <strong>Mean</strong> (average) of the squared function over one period.</li>\n    <li>Take the square <strong>Root</strong> of that mean.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. RMS Value for a Sinusoidal Waveform</h3>\n<p class=\"mb-4\">For a sinusoidal waveform, the RMS value is related to the peak (amplitude) value by a simple factor:</p>\n$$V_{rms} = \\frac{V_p}{\\sqrt{2}} \\approx 0.707 V_p$$\n$$I_{rms} = \\frac{I_p}{\\sqrt{2}} \\approx 0.707 I_p$$\n<p class=\"mb-4\">Power calculations in AC circuits should be done using RMS values: $P = V_{rms}I_{rms}$ (for a resistive load).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The voltage from a standard US wall outlet is 120 V AC. What does this 120 V represent?",
+      "options": [
+        { "text": "The peak voltage ($V_p$)", "isCorrect": false },
+        { "text": "The average voltage ($V_{avg}$)", "isCorrect": false },
+        { "text": "The RMS voltage ($V_{rms}$)", "isCorrect": true },
+        { "text": "The peak-to-peak voltage", "isCorrect": false }
+      ],
+      "explanation": "Standard AC voltage ratings are given in RMS values because this is the 'effective' value for power calculations, making it equivalent to a DC voltage of the same value for heating purposes."
+    },
+    {
+      "question": "A sinusoidal AC voltage has a peak value of 170 V. What is its RMS value?",
+      "options": [
+        { "text": "170 V", "isCorrect": false },
+        { "text": "120 V", "isCorrect": true },
+        { "text": "108 V", "isCorrect": false },
+        { "text": "340 V", "isCorrect": false }
+      ],
+      "explanation": "For a sine wave, $V_{rms} = \\frac{V_p}{\\sqrt{2}}$.\n$V_{rms} = \\frac{170 \\text{ V}}{\\sqrt{2}} \\approx \\frac{170}{1.414} \\approx 120.2$ V. This is the relationship for standard household voltage."
+    },
+    {
+      "question": "An AC current has an RMS value of 10 A. What is its peak current?",
+      "options": [
+        { "text": "10 A", "isCorrect": false },
+        { "text": "7.07 A", "isCorrect": false },
+        { "text": "14.14 A", "isCorrect": true },
+        { "text": "20 A", "isCorrect": false }
+      ],
+      "explanation": "Rearrange the RMS formula to solve for the peak value: $V_p = V_{rms} \\cdot \\sqrt{2}$.\n$I_p = I_{rms} \\cdot \\sqrt{2} = 10 \\text{ A} \\cdot \\sqrt{2} \\approx 10 \\cdot 1.414 = 14.14$ A."
+    }
+  ]
+}

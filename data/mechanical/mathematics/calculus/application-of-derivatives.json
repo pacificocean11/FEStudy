@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Maxima and Minima (Extrema)</h3>\n<p class=\"mb-4\">Derivatives are used to find the maximum and minimum values of a function.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Critical Points:</strong> A point $c$ in the domain of $f$ is a critical point if either $f'(c) = 0$ or $f'(c)$ is undefined. Local maxima and minima can only occur at critical points.</li>\n    <li><strong>First Derivative Test:</strong> Let $c$ be a critical point.\n        <ul>\n            <li>If $f'(x)$ changes from positive to negative at $c$, then $f$ has a local maximum at $c$.</li>\n            <li>If $f'(x)$ changes from negative to positive at $c$, then $f$ has a local minimum at $c$.</li>\n        </ul>\n    </li>\n    <li><strong>Second Derivative Test:</strong> Let $f'(c) = 0$.\n        <ul>\n            <li>If $f''(c) > 0$, then $f$ has a local minimum at $c$.</li>\n            <li>If $f''(c) < 0$, then $f$ has a local maximum at $c$.</li>\n            <li>If $f''(c) = 0$, the test is inconclusive.</li>\n        </ul>\n    </li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Related Rates</h3>\n<p class=\"mb-4\">Related rates problems involve finding the rate of change of one quantity in terms of the rate of change of another. The process usually involves finding an equation that relates the two quantities and then using the chain rule to differentiate both sides with respect to time ($t$).</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Optimization</h3>\n<p class=\"mb-4\">Optimization problems involve finding the largest or smallest value a function can take. This is done by modeling the problem with a function and then finding its absolute maximum or minimum value by testing the critical points and endpoints of the domain.</p>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Find the critical points of the function $f(x) = x^3 - 6x^2 + 5$.",
+      "options": [
+        { "text": "x = 0, x = 4", "isCorrect": true },
+        { "text": "x = 0, x = 2", "isCorrect": false },
+        { "text": "x = 2, x = 4", "isCorrect": false },
+        { "text": "x = 3, x = 6", "isCorrect": false }
+      ],
+      "explanation": "To find critical points, we first find the derivative: $f'(x) = 3x^2 - 12x$. Then, we set the derivative equal to zero and solve for $x$: $3x^2 - 12x = 0 \\implies 3x(x - 4) = 0$. The solutions are $x = 0$ and $x = 4$. These are the critical points."
+    },
+    {
+      "question": "The function $f(x) = x^3 - 6x^2 + 5$ has a local maximum at which point?",
+      "options": [
+        { "text": "x = 4", "isCorrect": false },
+        { "text": "x = 0", "isCorrect": true },
+        { "text": "x = 2", "isCorrect": false },
+        { "text": "x = 5", "isCorrect": false }
+      ],
+      "explanation": "From the previous problem, the critical points are $x=0$ and $x=4$. We use the second derivative test. $f'(x) = 3x^2 - 12x$, so $f''(x) = 6x - 12$. Now test the critical points: $f''(0) = 6(0) - 12 = -12$. Since $f''(0) < 0$, there is a local maximum at $x=0$. $f''(4) = 6(4) - 12 = 12$. Since $f''(4) > 0$, there is a local minimum at $x=4$."
+    },
+    {
+      "question": "The radius of a circle is increasing at a rate of 2 cm/s. At what rate is the area of the circle increasing when the radius is 10 cm?",
+      "options": [
+        { "text": "$20\\pi$ cm$^2$/s", "isCorrect": false },
+        { "text": "$40\\pi$ cm$^2$/s", "isCorrect": true },
+        { "text": "$100\\pi$ cm$^2$/s", "isCorrect": false },
+        { "text": "$200\\pi$ cm$^2$/s", "isCorrect": false }
+      ],
+      "explanation": "The area of a circle is $A = \\pi r^2$. We want to find $\\frac{dA}{dt}$. Differentiate the equation with respect to time $t$: $\\frac{dA}{dt} = 2\\pi r \\frac{dr}{dt}$. We are given $\\frac{dr}{dt} = 2$ cm/s and we need to find the rate when $r = 10$ cm. Substitute the values: $\\frac{dA}{dt} = 2\\pi (10)(2) = 40\\pi$ cm$^2$/s."
+    },
+    {
+      "question": "What is the maximum value of the function $f(x) = -x^2 + 4x + 1$?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "This is a downward-opening parabola, so its maximum value occurs at the vertex. Find the critical point by setting the derivative to zero: $f'(x) = -2x + 4$. Setting $f'(x) = 0$ gives $-2x + 4 = 0$, so $x = 2$. This is the location of the maximum. To find the maximum value, plug $x=2$ back into the original function: $f(2) = -(2)^2 + 4(2) + 1 = -4 + 8 + 1 = 5$."
+    },
+    {
+      "question": "An object's position is given by $s(t) = t^3 - 3t^2 + 2$ for $t \\ge 0$. When is the object at rest?",
+      "options": [
+        { "text": "t = 0 and t = 2", "isCorrect": true },
+        { "text": "t = 1", "isCorrect": false },
+        { "text": "t = 3", "isCorrect": false },
+        { "text": "t = 0 and t = 3", "isCorrect": false }
+      ],
+      "explanation": "An object is at rest when its velocity is zero. Velocity is the derivative of the position function: $v(t) = s'(t) = 3t^2 - 6t$. Set the velocity to zero and solve for $t$: $3t^2 - 6t = 0 \\implies 3t(t - 2) = 0$. The solutions are $t=0$ and $t=2$."
+    }
+  ]
+}

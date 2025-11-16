@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Invariant Reactions</h3>\n<p class=\"mb-4\">Invariant reactions are transformations that occur at a specific temperature and composition where three phases are in equilibrium. The key invariant points on the Fe-Fe₃C diagram are the eutectoid, eutectic, and peritectic points.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Eutectoid Point</h3>\n<p class=\"mb-4\">This is the most important point for steel heat treatment.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Location:</strong> Occurs at <strong>0.77% Carbon</strong> and <strong>727°C (1341°F)</strong>.</li>\n    <li><strong>Reaction:</strong> Upon slow cooling, one solid phase (Austenite) transforms into two other solid phases (Ferrite and Cementite).</li>\n    $$ Austenite (\\gamma) \\xrightarrow{Cooling} Ferrite (\\alpha) + Cementite (Fe_3C) $$\n    <p>The resulting layered microstructure is called <strong>Pearlite</strong>.</p>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Eutectic Point</h3>\n<p class=\"mb-4\">This point is important for cast irons.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Location:</strong> Occurs at <strong>4.3% Carbon</strong> and <strong>1148°C (2098°F)</strong>.</li>\n    <li><strong>Reaction:</strong> Upon slow cooling, a liquid phase transforms directly into two solid phases (Austenite and Cementite).</li>\n    $$ Liquid (L) \\xrightarrow{Cooling} Austenite (\\gamma) + Cementite (Fe_3C) $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Peritectic Point</h3>\n<p class=\"mb-4\">This reaction is of less practical importance for most common steels.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Location:</strong> Occurs at <strong>0.18% Carbon</strong> and <strong>1495°C (2723°F)</strong>.</li>\n    <li><strong>Reaction:</strong> Upon slow cooling, a liquid phase and a solid phase react to form a new solid phase.</li>\n    $$ Liquid (L) + Delta\\ Ferrite (\\delta) \\xrightarrow{Cooling} Austenite (\\gamma) $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The eutectoid reaction in the iron-carbon system involves the transformation of:",
+      "options": [
+        { "text": "Liquid into two solids.", "isCorrect": false },
+        { "text": "One solid into a liquid and another solid.", "isCorrect": false },
+        { "text": "One solid into two different solids.", "isCorrect": true },
+        { "text": "A liquid into a single solid.", "isCorrect": false }
+      ],
+      "explanation": "The eutectoid reaction is a solid-state reaction where a single solid phase (Austenite) transforms into two new solid phases (Ferrite and Cementite) upon cooling."
+    },
+    {
+      "question": "At what carbon concentration does the eutectoid reaction occur in steel?",
+      "options": [
+        { "text": "4.3%", "isCorrect": false },
+        { "text": "2.11%", "isCorrect": false },
+        { "text": "0.77%", "isCorrect": true },
+        { "text": "6.67%", "isCorrect": false }
+      ],
+      "explanation": "The eutectoid composition for an iron-carbon alloy is approximately 0.77% carbon by weight. A steel with this composition is called a eutectoid steel and will transform entirely into pearlite upon slow cooling."
+    }
+  ]
+}

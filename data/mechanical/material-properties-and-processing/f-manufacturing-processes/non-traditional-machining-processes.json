@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Non-traditional machining</strong> processes are a group of material removal methods that do not use traditional sharp cutting tools. They are often used for materials that are very hard, strong, or brittle, or for creating intricate shapes that are difficult to achieve with conventional machining.</p>\n<p class=\"mb-4\">These processes remove material using various forms of energy, such as thermal, electrical, or chemical energy.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Processes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Electrical Discharge Machining (EDM):</strong> Material is removed from a workpiece by a series of rapidly recurring electrical discharges (sparks) between two electrodes (the tool and the workpiece), separated by a dielectric fluid. It is used for very hard, electrically conductive materials and can create complex cavities.</li>\n    <li><strong>Laser Beam Machining (LBM):</strong> A high-intensity laser beam is focused on the workpiece to melt and vaporize material. It is a non-contact process that can cut, drill, or engrave a wide variety of materials with high precision.</li>\n    <li><strong>Waterjet Cutting:</strong> A very high-pressure jet of water, or a mixture of water and an abrasive substance, is used to cut through material. It is a cold-cutting process, so it does not create a heat-affected zone, making it ideal for materials sensitive to high temperatures.</li>\n    <li><strong>Electrochemical Machining (ECM):</strong> Material is removed by an anodic dissolution process in an electrolytic cell. It is essentially the reverse of electroplating. It produces a stress-free surface and can machine very hard conductive materials.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which non-traditional machining process would be most suitable for cutting a very hard, electrically conductive metal into a complex shape without inducing mechanical stress?",
+      "options": [
+        { "text": "Laser Beam Machining", "isCorrect": false },
+        { "text": "Waterjet Cutting", "isCorrect": false },
+        { "text": "Electrical Discharge Machining (EDM)", "isCorrect": true },
+        { "text": "Conventional Milling", "isCorrect": false }
+      ],
+      "explanation": "EDM is ideal for this application. It requires the material to be electrically conductive, excels at machining very hard materials, and is a non-contact process that does not introduce mechanical stresses like a traditional cutting tool would."
+    },
+    {
+      "question": "An advantage of waterjet cutting over laser or plasma cutting is that it:",
+      "options": [
+        { "text": "Is much faster.", "isCorrect": false },
+        { "text": "Can only cut metals.", "isCorrect": false },
+        { "text": "Does not create a heat-affected zone (HAZ).", "isCorrect": true },
+        { "text": "Is less expensive.", "isCorrect": false }
+      ],
+      "explanation": "Waterjet cutting is a purely mechanical erosion process. Because it does not use heat to remove material, it does not alter the microstructure or properties of the material at the cut edge, which is known as a heat-affected zone (HAZ)."
+    }
+  ]
+}

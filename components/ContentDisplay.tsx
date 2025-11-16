@@ -5,11 +5,12 @@ import SolvedExampleCard from './SolvedExampleCard';
 
 interface ContentDisplayProps {
   content: SubtopicContent;
+  onIncorrectAnswer: (question: string) => void;
 }
 
 type Tab = 'Notes' | 'Video' | 'AI Video' | 'Solved Examples';
 
-const ContentDisplay: React.FC<ContentDisplayProps> = ({ content }) => {
+const ContentDisplay: React.FC<ContentDisplayProps> = ({ content, onIncorrectAnswer }) => {
   const [activeTab, setActiveTab] = useState<Tab>('Notes');
   const notesRef = useRef<HTMLDivElement>(null);
 
@@ -92,7 +93,16 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ content }) => {
         return (
           <div className="p-4 bg-slate-100 dark:bg-slate-900/50 rounded-b-lg space-y-4">
             {content.solvedExamples.map((example, index) => (
-              <SolvedExampleCard key={index} example={example} index={index + 1} />
+              <SolvedExampleCard 
+                key={index} 
+                example={example} 
+                index={index + 1} 
+                onAnswer={(isCorrect) => {
+                  if (!isCorrect) {
+                    onIncorrectAnswer(example.question);
+                  }
+                }}
+              />
             ))}
           </div>
         );

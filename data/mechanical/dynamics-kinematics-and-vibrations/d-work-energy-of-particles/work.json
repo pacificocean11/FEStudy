@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Work</h3>\n<p class=\"mb-4\">In physics, work is the energy transferred to or from an object by applying a force along a displacement. It is a scalar quantity, measured in Joules (J).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas for Work</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Work by a Constant Force:</strong> If a constant force $\b F$ acts on an object that undergoes a displacement $\b d$, the work done by the force is the dot product of the force and displacement vectors.</li>\n    $$W = \b F \cdot \b d = ||\b F|| ||\b d|| \cos(\theta)$$\n    where $\theta$ is the angle between the force and displacement vectors.\n    <li><strong>Work by a Variable Force:</strong> If the force varies as the object moves, the work is calculated by integrating the force component along the path of displacement.</li>\n    $$W = \int_{s_1}^{s_2} F \cos(\theta) ds$$\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Work-Energy Theorem</h3>\n<p class=\"mb-4\">The work-energy theorem is a fundamental principle that connects work and kinetic energy. It states that the <strong>net work</strong> ($W_{net}$) done on a particle by all forces acting on it is equal to the <strong>change in the particle's kinetic energy</strong> ($\Delta KE$).</p>\n$$W_{net} = \Delta KE = KE_{final} - KE_{initial} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$$\n<p class=\"mb-4\">This theorem provides a powerful alternative to using Newton's second law for solving problems involving motion and forces.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A force of 50 N is applied to a box at an angle of 30° to the horizontal. The box is pushed 10 m along the ground. How much work is done by the applied force?",
+      "options": [
+        { "text": "500 J", "isCorrect": false },
+        { "text": "250 J", "isCorrect": false },
+        { "text": "433 J", "isCorrect": true },
+        { "text": "86.6 J", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for work done by a constant force: $W = Fd\cos(\theta)$.\n$W = (50 \text{ N})(10 \text{ m})\cos(30^\circ) = 500 \cdot (\frac{\sqrt{3}}{2}) \approx 500 \cdot 0.866 = 433 \text{ J}$."
+    },
+    {
+      "question": "A 2 kg object is at rest. A net force does 100 J of work on it. What is the final speed of the object?",
+      "options": [
+        { "text": "50 m/s", "isCorrect": false },
+        { "text": "10 m/s", "isCorrect": true },
+        { "text": "100 m/s", "isCorrect": false },
+        { "text": "7.07 m/s", "isCorrect": false }
+      ],
+      "explanation": "Use the work-energy theorem: $W_{net} = \Delta KE = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$. Since the object starts from rest, $v_i = 0$. So, $W_{net} = \frac{1}{2}mv_f^2$. We can solve for $v_f$: $v_f = \sqrt{\frac{2W_{net}}{m}} = \sqrt{\frac{2(100 \text{ J})}{2 \text{ kg}}} = \sqrt{100} = 10 \text{ m/s}$."
+    },
+    {
+      "question": "The force required to stretch a spring is given by $F(x) = kx$. How much work is done in stretching a spring with $k=100$ N/m from its equilibrium position ($x=0$) to $x=0.2$ m?",
+      "options": [
+        { "text": "20 J", "isCorrect": false },
+        { "text": "4 J", "isCorrect": false },
+        { "text": "2 J", "isCorrect": true },
+        { "text": "40 J", "isCorrect": false }
+      ],
+      "explanation": "This is work done by a variable force. We integrate the force over the displacement: $W = \int_{0}^{0.2} kx dx = \int_{0}^{0.2} 100x dx = [50x^2]_0^{0.2} = 50(0.2)^2 - 50(0)^2 = 50(0.04) = 2 \text{ J}$. This is also equal to the elastic potential energy stored in the spring."
+    }
+  ]
+}

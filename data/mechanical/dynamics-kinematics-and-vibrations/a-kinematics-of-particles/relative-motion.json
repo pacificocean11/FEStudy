@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Relative motion analysis is used to describe the motion of an object as observed from a moving frame of reference. The key is to relate the motion of two particles (A and B) using a third, common reference frame (often a fixed, stationary frame).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Relative Motion Equations</h3>\n<p class=\"mb-4\">The relationship between the positions, velocities, and accelerations of two particles A and B can be expressed with the following vector equations:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Relative Position:</strong>\n        $$\b r_A = \b r_B + \b r_{A/B}$$\n        This equation states that the absolute position of A is equal to the absolute position of B plus the position of A *relative to* B.\n    </li>\n    <li><strong>Relative Velocity:</strong>\n        $$\b v_A = \b v_B + \b v_{A/B}$$\n        The absolute velocity of A is the absolute velocity of B plus the velocity of A relative to B.\n    </li>\n    <li><strong>Relative Acceleration:</strong>\n        $$\b a_A = \b a_B + \b a_{A/B}$$\n        The absolute acceleration of A is the absolute acceleration of B plus the acceleration of A relative to B.\n    </li>\n</ul>\n<p class=\"mb-4\">In many problems, you will rearrange these equations to solve for the relative term, for example: $\b v_{A/B} = \b v_A - \b v_B$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Car A is traveling east at 60 km/h. Car B is traveling west at 80 km/h. What is the velocity of Car A relative to Car B?",
+      "options": [
+        { "text": "20 km/h East", "isCorrect": false },
+        { "text": "20 km/h West", "isCorrect": false },
+        { "text": "140 km/h East", "isCorrect": true },
+        { "text": "140 km/h West", "isCorrect": false }
+      ],
+      "explanation": "Let the eastward direction be positive. Then $\b v_A = +60$ km/h and $\b v_B = -80$ km/h. The velocity of A relative to B is $\b v_{A/B} = \b v_A - \b v_B = (+60) - (-80) = 60 + 80 = 140$ km/h. Since the result is positive, the direction is East."
+    },
+    {
+      "question": "An airplane is flying north at 300 mph. A wind is blowing from the west at 50 mph. What is the velocity of the airplane relative to the ground?",
+      "options": [
+        { "text": "350 mph North-East", "isCorrect": false },
+        { "text": "250 mph North-West", "isCorrect": false },
+        { "text": "304 mph at an angle East of North", "isCorrect": true },
+        { "text": "300 mph North", "isCorrect": false }
+      ],
+      "explanation": "This is a vector addition problem. The velocity of the plane relative to the air is $\b v_{P/A} = 300\b j$ mph. The velocity of the air relative to the ground (the wind) is $\b v_{A/G} = 50\b i$ mph. The velocity of the plane relative to the ground is $\b v_{P/G} = \b v_{P/A} + \b v_{A/G} = 50\b i + 300\b j$. The magnitude (speed) is $\sqrt{50^2 + 300^2} = \sqrt{2500 + 90000} = \sqrt{92500} \approx 304.1$ mph. The direction is $\arctan(50/300) \approx 9.46^\circ$ East of North."
+    }
+  ]
+}

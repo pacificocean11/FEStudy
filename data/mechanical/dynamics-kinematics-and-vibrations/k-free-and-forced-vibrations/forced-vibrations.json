@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Forced vibration occurs when a time-varying external force or displacement is applied to a system. A common case is a harmonic excitation, where the force is sinusoidal.</p>\n<p class=\"mb-4\">The equation of motion for a damped system with a harmonic forcing function is:</p>\n$$m\\ddot{x} + c\\dot{x} + kx = F_0 \\cos(\\omega t)$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$F_0$ is the amplitude of the forcing function.</li>\n    <li>$\\omega$ is the forcing frequency.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Steady-State Response</h3>\n<p class=\"mb-4\">The solution to this equation has two parts: a transient part that dies out over time (from the free vibration solution) and a steady-state part that persists. The steady-state solution is a sinusoidal oscillation at the same frequency as the forcing function, but with a different amplitude and phase.</p>\n<p class=\"mb-4\">The amplitude of the steady-state vibration, $X$, is given by:</p>\n$$X = \\frac{F_0/k}{\\sqrt{(1 - (\\omega/\\omega_n)^2)^2 + (2\\zeta(\\omega/\\omega_n))^2}}$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Resonance and Magnification Factor</h3>\n<p class=\"mb-4\">The <strong>magnification factor (MF)</strong> is the ratio of the steady-state amplitude $X$ to the static deflection that would be caused by a force $F_0$ (which is $\\delta_{st} = F_0/k$).</p>\n$$MF = \\frac{X}{\\delta_{st}} = \\frac{1}{\\sqrt{(1 - r^2)^2 + (2\\zeta r)^2}}$$\n<p class=\"mb-4\">where $r = \\omega/\\omega_n$ is the frequency ratio.</p>\n<p class=\"mb-4\"><strong>Resonance</strong> occurs when the forcing frequency $\\omega$ is close to the natural frequency $\\omega_n$ (i.e., when $r \\approx 1$). At resonance, the amplitude of vibration becomes very large, especially in systems with low damping. For an undamped system ($\\zeta=0$), the amplitude theoretically becomes infinite at resonance.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Resonance in a mechanical system occurs when:",
+      "options": [
+        { "text": "The damping is very high.", "isCorrect": false },
+        { "text": "The forcing frequency is much higher than the natural frequency.", "isCorrect": false },
+        { "text": "The forcing frequency is close to the natural frequency.", "isCorrect": true },
+        { "text": "The system is undamped.", "isCorrect": false }
+      ],
+      "explanation": "Resonance is the phenomenon where the amplitude of steady-state vibration becomes very large. This happens when the frequency of the applied force is close or equal to the natural frequency of the system."
+    },
+    {
+      "question": "For an undamped system ($\\zeta=0$) subjected to a harmonic force, what is the magnification factor when the forcing frequency is equal to the natural frequency ($r=1$)?",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false },
+        { "text": "Infinity", "isCorrect": true }
+      ],
+      "explanation": "The formula for the magnification factor is $MF = \\frac{1}{\\sqrt{(1 - r^2)^2 + (2\\zeta r)^2}}$. With $\\zeta=0$ and $r=1$, the denominator becomes $\\sqrt{(1 - 1^2)^2 + 0} = 0$. Division by zero indicates that the amplitude grows without bound, becoming theoretically infinite."
+    }
+  ]
+}

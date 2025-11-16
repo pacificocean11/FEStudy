@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definitions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>A <strong>Shaft</strong> is a rotating machine element, usually circular in cross-section, which is used to transmit power from one part to another, or from a machine which produces power to a machine which absorbs power. It is subjected to torsion and bending moments.</li>\n    <li>An <strong>Axle</strong> is a non-rotating or stationary member that supports rotating components like wheels or pulleys. It is primarily subjected to bending moments and carries no torque.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Power, Torque, and Speed</h3>\n<p class=\"mb-4\">The primary function of a shaft is to transmit power. The power transmitted by a shaft is related to the torque it carries and its rotational speed.</p>\n$$P = T \\omega = \\frac{2\\pi n T}{60}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$P$ is Power in Watts (W).</li>\n    <li>$T$ is Torque in Newton-meters (N·m).</li>\n    <li>$\\omega$ is the angular velocity in radians per second (rad/s).</li>\n    <li>$n$ is the rotational speed in revolutions per minute (rpm).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A shaft is rotating at 1200 rpm and transmits a torque of 150 N·m. What is the power transmitted?",
+      "options": [
+        { "text": "1.88 kW", "isCorrect": false },
+        { "text": "18.85 kW", "isCorrect": true },
+        { "text": "180 kW", "isCorrect": false },
+        { "text": "15.71 kW", "isCorrect": false }
+      ],
+      "explanation": "Use the power formula $P = \\frac{2\\pi n T}{60}$.\n$P = \\frac{2\\pi (1200 \\text{ rpm})(150 \\text{ N·m})}{60} = 2\\pi (20)(150) = 6000\\pi \\approx 18850$ W, which is 18.85 kW."
+    },
+    {
+      "question": "What is the primary loading difference between a shaft and an axle?",
+      "options": [
+        { "text": "Shafts are loaded in tension, axles in compression.", "isCorrect": false },
+        { "text": "Shafts are subjected to torsion, while axles are not.", "isCorrect": true },
+        { "text": "Axles are subjected to torsion, while shafts are not.", "isCorrect": false },
+        { "text": "Shafts are only subjected to bending, axles to torsion.", "isCorrect": false }
+      ],
+      "explanation": "The defining characteristic of a shaft is that it rotates to transmit torque (torsional load). An axle is a stationary member that supports rotating parts and is mainly subjected to bending loads from that support."
+    }
+  ]
+}

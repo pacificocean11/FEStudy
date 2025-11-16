@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Phasors</h3>\n<p class=\"mb-4\">A <strong>phasor</strong> is a complex number that represents the amplitude and phase of a sinusoidal function. It's a graphical way to represent AC quantities that simplifies the analysis of circuits with inductors and capacitors.</p>\n<p class=\"mb-4\">A voltage $v(t) = V_p \\cos(\\omega t + \\phi)$ is represented by the phasor $V = V_{rms} \\angle \\phi$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Phase Relationships</h3>\n<p class=\"mb-4\">In AC circuits, the voltage and current are not always in sync. The phase difference between them depends on the components in the circuit.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Resistor (R):</strong> The voltage across a resistor is exactly in phase with the current through it. The phase angle is 0°.</li>\n    \n    <li><strong>Inductor (L):</strong> The voltage across an inductor <strong>leads</strong> the current through it by 90°. This means the voltage peak occurs 90° (or a quarter cycle) before the current peak. A common mnemonic is <strong>ELI</strong>: in an inductor (L), voltage (E) comes before current (I).</li>\n\n    <li><strong>Capacitor (C):</strong> The current through a capacitor <strong>leads</strong> the voltage across it by 90°. This means the current peak occurs 90° before the voltage peak. A common mnemonic is <strong>ICE</strong>: in a capacitor (C), current (I) comes before voltage (E).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a purely inductive AC circuit, what is the phase relationship between voltage and current?",
+      "options": [
+        { "text": "They are in phase.", "isCorrect": false },
+        { "text": "Voltage leads current by 90°.", "isCorrect": true },
+        { "text": "Current leads voltage by 90°.", "isCorrect": false },
+        { "text": "They are 180° out of phase.", "isCorrect": false }
+      ],
+      "explanation": "For an inductor, the voltage must build up to drive the current against the inductor's opposition to change. This results in the voltage waveform leading the current waveform by 90°. This is remembered by the mnemonic 'ELI the ICE man'."
+    },
+    {
+      "question": "In a purely capacitive AC circuit, what is the phase relationship between voltage and current?",
+      "options": [
+        { "text": "They are in phase.", "isCorrect": false },
+        { "text": "Voltage leads current by 90°.", "isCorrect": false },
+        { "text": "Current leads voltage by 90°.", "isCorrect": true },
+        { "text": "They are 180° out of phase.", "isCorrect": false }
+      ],
+      "explanation": "For a capacitor, current must flow first to charge the plates, which then builds up a voltage. This results in the current waveform leading the voltage waveform by 90°. This is remembered by the mnemonic 'ELI the ICE man'."
+    },
+    {
+      "question": "If the current phasor in a circuit is $10 \\angle 0^\\circ$ A and the voltage phasor is $50 \\angle -90^\\circ$ V, the circuit is predominantly:",
+      "options": [
+        { "text": "Resistive", "isCorrect": false },
+        { "text": "Inductive", "isCorrect": false },
+        { "text": "Capacitive", "isCorrect": true },
+        { "text": "Resonant", "isCorrect": false }
+      ],
+      "explanation": "The voltage angle is -90° relative to the current angle of 0°. This means the voltage lags the current by 90°, or equivalently, the current leads the voltage by 90°. This is the characteristic of a capacitive circuit."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Isentropic flow is a fluid flow that is both adiabatic (no heat transfer) and reversible (no friction or other dissipative effects). It is an idealized model for flow in devices like nozzles and diffusers. In isentropic flow, entropy remains constant.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stagnation Properties</h3>\n<p class=\"mb-4\">Stagnation properties (denoted by subscript 0) are the properties a fluid would have if it were brought to rest isentropically (e.g., at the tip of a Pitot tube). The stagnation temperature ($T_0$), pressure ($P_0$), and density ($\\rho_0$) are important reference values.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Isentropic Flow Relations for an Ideal Gas</h3>\n<p class=\"mb-4\">The ratios of static properties (T, P, $\\rho$) to stagnation properties can be expressed as a function of the local Mach number (M) and the specific heat ratio (k):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Temperature:</strong>\n    $$ \\frac{T_0}{T} = 1 + \\frac{k-1}{2}M^2 $$\n    </li>\n    <li><strong>Pressure:</strong>\n    $$ \\frac{P_0}{P} = \\left(1 + \\frac{k-1}{2}M^2\\right)^{\\frac{k}{k-1}} $$\n    </li>\n    <li><strong>Density:</strong>\n    $$ \\frac{\\rho_0}{\\rho} = \\left(1 + \\frac{k-1}{2}M^2\\right)^{\\frac{1}{k-1}} $$\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Choked Flow and Area-Mach Relation</h3>\n<p class=\"mb-4\">For flow in a variable-area duct, the area-Mach number relation is critical. It relates the local area (A) to the area of the throat where M=1 (A*).</p>\n$$ \\frac{A}{A^*} = \\frac{1}{M}\\left[\\frac{1 + \\frac{k-1}{2}M^2}{1 + \\frac{k-1}{2}}\\right]^{\\frac{k+1}{2(k-1)}} $$\n<p class=\"mb-4\">This relationship shows that for subsonic flow ($M<1$), a converging duct accelerates the flow. For supersonic flow ($M>1$), a diverging duct accelerates the flow. To accelerate a flow from subsonic to supersonic, a converging-diverging nozzle is required.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Air (k=1.4) flows at a Mach number of 0.5. What is the ratio of stagnation temperature to static temperature ($T_0/T$)?",
+      "options": [
+        { "text": "1.0", "isCorrect": false },
+        { "text": "1.05", "isCorrect": true },
+        { "text": "1.2", "isCorrect": false },
+        { "text": "0.95", "isCorrect": false }
+      ],
+      "explanation": "Use the isentropic temperature relation: $ \\frac{T_0}{T} = 1 + \\frac{k-1}{2}M^2 = 1 + \\frac{1.4-1}{2}(0.5)^2 = 1 + \\frac{0.4}{2}(0.25) = 1 + 0.2(0.25) = 1 + 0.05 = 1.05$."
+    },
+    {
+      "question": "To accelerate a fluid from subsonic to supersonic speeds, what shape of nozzle is required?",
+      "options": [
+        { "text": "A converging nozzle.", "isCorrect": false },
+        { "text": "A diverging nozzle.", "isCorrect": false },
+        { "text": "A converging-diverging nozzle.", "isCorrect": true },
+        { "text": "A straight duct.", "isCorrect": false }
+      ],
+      "explanation": "According to the area-Mach relation, a converging section is needed to accelerate subsonic flow to M=1 at the throat, and a diverging section is then needed to accelerate the flow further into the supersonic regime (M>1)."
+    }
+  ]
+}

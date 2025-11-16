@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Uniform Circular Motion describes the movement of an object traveling in a circular path at a <strong>constant speed</strong>. While the speed is constant, the velocity is continuously changing because the direction of motion is always changing. This change in velocity means there must be an acceleration.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Quantities</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Angular Velocity ($\omega$):</strong> The rate of change of angular position, measured in radians per second (rad/s). For UCM, $\omega$ is constant.</li>\n    <li><strong>Period ($T$):</strong> The time it takes to complete one full revolution. $T = \frac{2\pi}{\omega}$.</li>\n    <li><strong>Frequency ($f$):</strong> The number of revolutions per unit time, measured in Hertz (Hz). $f = \frac{1}{T} = \frac{\omega}{2\pi}$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Velocity and Acceleration</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Tangential Velocity ($v$):</strong> The linear speed of the object. Its magnitude is constant and given by $v = r\omega$, where $r$ is the radius of the circle. The direction is always tangent to the circle.</li>\n    <li><strong>Acceleration ($a_c$):</strong> In UCM, the acceleration is purely normal, pointing towards the center of the circle. It is called <strong>centripetal acceleration</strong>. Its magnitude is constant and given by:</li>\n    $$a_c = \frac{v^2}{r} = r\omega^2$$\n    <p>Since the speed is constant, the tangential component of acceleration is zero ($a_t = 0$).</p>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A satellite orbits the Earth in a circular path of radius 7,000 km. It completes one orbit in 90 minutes. What is its angular velocity in rad/s?",
+      "options": [
+        { "text": "0.00116 rad/s", "isCorrect": true },
+        { "text": "0.0698 rad/s", "isCorrect": false },
+        { "text": "1.11 rad/s", "isCorrect": false },
+        { "text": "4.19 rad/s", "isCorrect": false }
+      ],
+      "explanation": "The period $T$ is 90 minutes, which is $90 \times 60 = 5400$ seconds. Angular velocity $\omega$ is related to the period by $\omega = \frac{2\pi}{T}$. So, $\omega = \frac{2\pi \text{ rad}}{5400 \text{ s}} \approx 0.00116 \text{ rad/s}$."
+    },
+    {
+      "question": "A spinning top has an angular velocity of 10 rad/s. A point on its surface is 5 cm from the axis of rotation. What is the linear speed of this point?",
+      "options": [
+        { "text": "200 m/s", "isCorrect": false },
+        { "text": "50 m/s", "isCorrect": false },
+        { "text": "2 m/s", "isCorrect": false },
+        { "text": "0.5 m/s", "isCorrect": true }
+      ],
+      "explanation": "First, convert the radius to meters: $r = 5 \text{ cm} = 0.05 \text{ m}$. The linear speed is given by $v = r\omega$. So, $v = (0.05 \text{ m})(10 \text{ rad/s}) = 0.5 \text{ m/s}$."
+    },
+    {
+      "question": "A ball is swung in a horizontal circle of radius 2 m at a constant speed of 6 m/s. What is the magnitude of its centripetal acceleration?",
+      "options": [
+        { "text": "3 m/s²", "isCorrect": false },
+        { "text": "12 m/s²", "isCorrect": false },
+        { "text": "18 m/s²", "isCorrect": true },
+        { "text": "36 m/s²", "isCorrect": false }
+      ],
+      "explanation": "The centripetal acceleration is given by the formula $a_c = \frac{v^2}{r}$. Plugging in the values: $a_c = \frac{(6 \text{ m/s})^2}{2 \text{ m}} = \frac{36}{2} = 18 \text{ m/s²}$."
+    }
+  ]
+}

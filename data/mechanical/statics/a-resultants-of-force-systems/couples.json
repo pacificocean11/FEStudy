@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>couple</strong> is a system of two parallel forces that are equal in magnitude and opposite in direction. A couple produces a pure moment (rotation) without any net translation, because the resultant force of a couple is zero ($\mathbf{F} + (-\mathbf{F}) = 0$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Moment of a Couple</h3>\n<p class=\"mb-4\">The moment produced by a couple ($M$) is the magnitude of one of the forces ($F$) multiplied by the perpendicular distance ($d$) between their lines of action.</p>\n$$ M = F \\cdot d $$\n<p class=\"mb-4\">An important property of a couple is that its moment is a <strong>free vector</strong>. This means the moment of a couple is the same about *any* point. It does not depend on where you calculate the moment from.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Equivalent Systems</h3>\n<p class=\"mb-4\">Any force $\\mathbf{F}$ acting at a point A can be moved to another point B by adding a couple. The equivalent system at point B will consist of the same force $\\mathbf{F}$ and a couple of moment $\\mathbf{M} = \\mathbf{r}_{BA} \\times \\mathbf{F}$, where $\\mathbf{r}_{BA}$ is the position vector from the new point B to the original point A.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Two parallel forces of 10 N each act in opposite directions. The perpendicular distance between them is 0.5 m. What is the magnitude of the couple moment they produce?",
+      "options": [
+        { "text": "20 N·m", "isCorrect": false },
+        { "text": "5 N·m", "isCorrect": true },
+        { "text": "0 N·m", "isCorrect": false },
+        { "text": "10 N·m", "isCorrect": false }
+      ],
+      "explanation": "The magnitude of the moment of a couple is the magnitude of one of the forces multiplied by the perpendicular distance between them. $M = F \\cdot d = (10 \\text{ N})(0.5 \\text{ m}) = 5$ N·m."
+    },
+    {
+      "question": "What is the resultant force of a couple?",
+      "options": [
+        { "text": "Equal to one of the forces.", "isCorrect": false },
+        { "text": "Equal to twice one of the forces.", "isCorrect": false },
+        { "text": "Zero.", "isCorrect": true },
+        { "text": "Depends on the distance between the forces.", "isCorrect": false }
+      ],
+      "explanation": "A couple consists of two forces that are equal in magnitude and opposite in direction. When added as vectors, they cancel each other out, resulting in a zero net force. A couple produces only a pure moment."
+    },
+    {
+      "question": "The moment of a couple is considered a 'free vector'. What does this mean?",
+      "options": [
+        { "text": "It can be applied anywhere without changing its effect.", "isCorrect": true },
+        { "text": "It has no magnitude.", "isCorrect": false },
+        { "text": "It has no direction.", "isCorrect": false },
+        { "text": "It only acts at the origin.", "isCorrect": false }
+      ],
+      "explanation": "A free vector is a vector whose effect is independent of its point of application. The rotational effect (moment) of a couple is the same regardless of which point on the rigid body the moment is calculated about."
+    }
+  ]
+}

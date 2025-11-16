@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A gear train is two or more gears working together to transmit power and motion from one shaft to another. They are used to change speed, torque, and direction of rotation.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Simple Gear Train</h3>\n<p class=\"mb-4\">A simple gear train is one where each shaft carries only one gear. The <strong>velocity ratio (VR)</strong> or <strong>gear ratio</strong> is the ratio of the input speed to the output speed.</p>\n$$VR = \\frac{\\omega_{in}}{\\omega_{out}} = \\frac{N_{out}}{N_{in}}$$\n<p class=\"mb-4\">where $\\omega$ is angular velocity and $N$ is the number of teeth. Note that the gear with more teeth spins slower.</p>\n<p class=\"mb-4\">An <strong>idler gear</strong> can be placed between the input and output gears. It changes the direction of rotation but does not affect the magnitude of the overall velocity ratio.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Compound Gear Train</h3>\n<p class=\"mb-4\">A compound gear train is one where at least one shaft carries more than one gear. The overall velocity ratio is the product of the velocity ratios of each simple gear pair in the train.</p>\n$$VR_{total} = VR_1 \\cdot VR_2 \\cdot ... = \\left(\\frac{N_{driven1}}{N_{driver1}}\\right) \\cdot \\left(\\frac{N_{driven2}}{N_{driver2}}\\right) \\cdot ...$$\n$$VR_{total} = \\frac{\\text{Product of number of teeth on driven gears}}{\\text{Product of number of teeth on driver gears}}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A pinion gear with 20 teeth drives a larger gear with 60 teeth. If the pinion rotates at 1800 rpm, what is the speed of the larger gear?",
+      "options": [
+        { "text": "5400 rpm", "isCorrect": false },
+        { "text": "1800 rpm", "isCorrect": false },
+        { "text": "600 rpm", "isCorrect": true },
+        { "text": "200 rpm", "isCorrect": false }
+      ],
+      "explanation": "Use the velocity ratio formula: $\\frac{\\omega_{in}}{\\omega_{out}} = \\frac{N_{out}}{N_{in}}$.\n$\\frac{1800 \\text{ rpm}}{\\omega_{out}} = \\frac{60}{20} = 3$. Solving for $\\omega_{out}$: $\\omega_{out} = \\frac{1800}{3} = 600$ rpm."
+    },
+    {
+      "question": "In a compound gear train, a 20-tooth driver meshes with a 50-tooth driven gear. On the same shaft as the 50-tooth gear is a 30-tooth driver that meshes with a 90-tooth final gear. What is the total gear ratio?",
+      "options": [
+        { "text": "0.133", "isCorrect": false },
+        { "text": "1.2", "isCorrect": false },
+        { "text": "7.5", "isCorrect": true },
+        { "text": "5.8", "isCorrect": false }
+      ],
+      "explanation": "The total velocity ratio is the product of the individual ratios: $VR_{total} = \\left(\\frac{N_{driven1}}{N_{driver1}}\\right) \\cdot \\left(\\frac{N_{driven2}}{N_{driver2}}\\right) = \\left(\\frac{50}{20}\\right) \\cdot \\left(\\frac{90}{30}\\right) = (2.5) \\cdot (3) = 7.5$."
+    }
+  ]
+}

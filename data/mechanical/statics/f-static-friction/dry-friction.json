@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Dry friction</strong> (or Coulomb friction) is the force that resists the relative lateral motion between two solid surfaces in contact. The friction force, $f$, always acts parallel to the contacting surface and in a direction that opposes the motion or tendency of motion.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Static Friction ($f_s$)</h3>\n<p class=\"mb-4\">Static friction acts when the surfaces are not moving relative to each other. The static friction force is a reactive force; it is only as large as it needs to be to prevent motion, up to a maximum value.</p>\n$$ f_s \\le \\mu_s N $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\mu_s$ is the coefficient of static friction (a dimensionless property of the two surfaces).</li>\n    <li>$N$ is the normal force perpendicular to the surface.</li>\n</ul>\n<p class=\"mb-4\">Motion is said to be <strong>impending</strong> when the friction force reaches its maximum possible value, $f_{s,max} = \\mu_s N$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Kinetic Friction ($f_k$)</h3>\n<p class=\"mb-4\">Kinetic (or dynamic) friction acts when the surfaces are sliding relative to each other. The kinetic friction force has a constant magnitude as long as the surfaces are slipping.</p>\n$$ f_k = \\mu_k N $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\mu_k$ is the coefficient of kinetic friction.</li>\n</ul>\n<p class=\"mb-4\">Typically, the coefficient of kinetic friction is less than the coefficient of static friction ($\\mu_k < \\mu_s$). This is why it takes more force to get an object moving than to keep it moving.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 10 kg block rests on a horizontal surface. The coefficient of static friction is $\\mu_s = 0.5$. What is the maximum static friction force? (Use $g=9.8$ m/s²).",
+      "options": [
+        { "text": "5 N", "isCorrect": false },
+        { "text": "49 N", "isCorrect": true },
+        { "text": "98 N", "isCorrect": false },
+        { "text": "0.5 N", "isCorrect": false }
+      ],
+      "explanation": "First, find the normal force. Since the block is on a horizontal surface, the normal force equals the weight of the block: $N = W = mg = (10 \\text{ kg})(9.8 \\text{ m/s²}) = 98$ N. The maximum static friction force is $f_{s,max} = \\mu_s N = (0.5)(98 \\text{ N}) = 49$ N."
+    },
+    {
+      "question": "A horizontal force of 30 N is applied to the 10 kg block from the previous problem ($f_{s,max} = 49$ N). What is the magnitude of the friction force acting on the block?",
+      "options": [
+        { "text": "49 N", "isCorrect": false },
+        { "text": "30 N", "isCorrect": true },
+        { "text": "19 N", "isCorrect": false },
+        { "text": "0 N", "isCorrect": false }
+      ],
+      "explanation": "The applied force (30 N) is less than the maximum possible static friction force (49 N). Therefore, the block will not move. The static friction force is a reactive force and will only be as large as necessary to prevent motion. In this case, it exactly balances the applied force, so $f_s = 30$ N."
+    },
+    {
+      "question": "If the 10 kg block is sliding on a surface where the coefficient of kinetic friction is $\\mu_k=0.3$, what is the kinetic friction force?",
+      "options": [
+        { "text": "3 N", "isCorrect": false },
+        { "text": "29.4 N", "isCorrect": true },
+        { "text": "49 N", "isCorrect": false },
+        { "text": "98 N", "isCorrect": false }
+      ],
+      "explanation": "The normal force is still $N = 98$ N. The kinetic friction force is constant while the object is sliding and is calculated as $f_k = \\mu_k N = (0.3)(98 \\text{ N}) = 29.4$ N."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Composition of Air</h3>\n<p class=\"mb-4\">Most combustion processes occur in air, not pure oxygen. For engineering calculations, air is approximated as a mixture of oxygen and nitrogen on a molar basis:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>21% Oxygen (O₂)</li>\n    <li>79% Nitrogen (N₂)</li>\n</ul>\n<p class=\"mb-4\">This means that for every mole of O₂, there are $79/21 \\approx 3.76$ moles of N₂. Therefore, one mole of air can be modeled as $(1 O_2 + 3.76 N_2)$. Nitrogen is mostly inert and does not participate in the reaction at typical combustion temperatures, so it appears on both sides of the chemical equation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stoichiometric Combustion in Air</h3>\n<p class=\"mb-4\">The balanced equation for stoichiometric (100% theoretical air) combustion of a hydrocarbon C$_x$H$_y$ in air is:</p>\n$$C_xH_y + a_{th}(O_2 + 3.76N_2) \\rightarrow xCO_2 + \\frac{y}{2}H_2O + a_{th}(3.76)N_2$$\n<p class=\"mb-4\">where $a_{th} = x + y/4$ is the stoichiometric coefficient for oxygen.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Combustion with Excess Air</h3>\n<p class=\"mb-4\">To ensure complete combustion and control temperature, more air than the stoichiometric amount is often supplied. This is called 'excess air'. For example, 150% theoretical air means that 1.5 times the stoichiometric amount of air is used.</p>\n<p class=\"mb-4\">The equation for combustion with excess air becomes:</p>\n$$C_xH_y + (1+E)a_{th}(O_2 + 3.76N_2) \\rightarrow xCO_2 + \\frac{y}{2}H_2O + E \\cdot a_{th}O_2 + (1+E)a_{th}(3.76)N_2$$\n<p class=\"mb-4\">where $E$ is the fraction of excess air (e.g., for 50% excess air, $E=0.5$). Note that unused oxygen now appears in the products.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Air-Fuel Ratio (AF)</h3>\n<p class=\"mb-4\">The air-fuel ratio is a key parameter in combustion. It can be expressed on a molar basis or a mass basis.</p>\n<p class=\"mb-4\">Mass basis: $AF = \\frac{m_{air}}{m_{fuel}} = \\frac{(N_{air})(M_{air})}{(N_{fuel})(M_{fuel})}$</p>\n<p class=\"mb-4\">where $M$ is the molar mass (e.g., $M_{air} \\approx 29$ kg/kmol, $M_{CH4} \\approx 16$ kg/kmol).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the approximate molar ratio of nitrogen to oxygen in air?",
+      "options": [
+        { "text": "1:1", "isCorrect": false },
+        { "text": "4.76:1", "isCorrect": false },
+        { "text": "3.76:1", "isCorrect": true },
+        { "text": "0.21:0.79", "isCorrect": false }
+      ],
+      "explanation": "Air is approximately 79% nitrogen and 21% oxygen by volume (moles). The ratio of nitrogen to oxygen is $79/21 \\approx 3.76$. So for every 1 mole of O₂, there are 3.76 moles of N₂."
+    },
+    {
+      "question": "What is the stoichiometric air-fuel ratio on a mass basis for methane (CH₄)? (Molar masses: C=12, H=1, O=16, N=14)",
+      "options": [
+        { "text": "17.2", "isCorrect": true },
+        { "text": "15.1", "isCorrect": false },
+        { "text": "34.3", "isCorrect": false },
+        { "text": "8.0", "isCorrect": false }
+      ],
+      "explanation": "The stoichiometric equation is CH₄ + 2(O₂ + 3.76N₂) → CO₂ + 2H₂O + 7.52N₂. The number of moles of air is 2 * (1 + 3.76) = 9.52 moles. Molar mass of fuel (CH₄) = 12 + 4(1) = 16. Molar mass of air ≈ 29. $AF = \\frac{m_{air}}{m_{fuel}} = \\frac{N_{air} M_{air}}{N_{fuel} M_{fuel}} = \\frac{(9.52)(29)}{(1)(16)} = \\frac{276.08}{16} \\approx 17.26$."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>patent</strong> is a form of intellectual property that gives its owner the legal right to exclude others from making, using, selling, and importing an invention for a limited period of years, in exchange for publishing an enabling public disclosure of the invention.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Patents</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Utility Patent:</strong> The most common type, covers a new and useful process, machine, article of manufacture, or composition of matter. The term is typically <strong>20 years</strong> from the earliest filing date.</li>\n    <li><strong>Design Patent:</strong> Covers a new, original, and ornamental design for an article of manufacture. The term is <strong>15 years</strong> from the date of grant.</li>\n    <li><strong>Plant Patent:</strong> Covers a new and distinct, invented or discovered asexually reproduced plant. The term is <strong>20 years</strong> from the date of filing.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Conditions for Patentability</h3>\n<p class=\"mb-4\">For an invention to be patentable, it must be:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Novel:</strong> It must not have been known or used by others in this country, or patented or described in a printed publication in this or a foreign country, before the invention thereof by the applicant for patent.</li>\n    <li><strong>Useful:</strong> The invention must have a useful purpose.</li>\n    <li><strong>Non-obvious:</strong> The invention must not be obvious to a person having ordinary skill in the art to which said subject matter pertains.</li>\n</ul>\n<p class=\"mb-4\">Abstract ideas, laws of nature, and natural phenomena cannot be patented.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer invents a new type of gear mechanism for a machine. What is the most appropriate form of intellectual property to protect this invention?",
+      "options": [
+        { "text": "Copyright", "isCorrect": false },
+        { "text": "Trademark", "isCorrect": false },
+        { "text": "Utility Patent", "isCorrect": true },
+        { "text": "Trade Secret", "isCorrect": false }
+      ],
+      "explanation": "A new and useful mechanism, such as a gear system, falls under the category of a machine or process. A utility patent is the correct form of protection for this type of functional invention."
+    },
+    {
+      "question": "What is the typical term of protection for a utility patent in the United States?",
+      "options": [
+        { "text": "15 years from grant date", "isCorrect": false },
+        { "text": "20 years from filing date", "isCorrect": true },
+        { "text": "Life of the inventor + 70 years", "isCorrect": false },
+        { "text": "Indefinite, as long as it is used", "isCorrect": false }
+      ],
+      "explanation": "The term for a utility patent is generally 20 years from the date the patent application was filed with the U.S. Patent and Trademark Office (USPTO)."
+    },
+    {
+      "question": "Which of the following cannot be patented?",
+      "options": [
+        { "text": "A new chemical compound", "isCorrect": false },
+        { "text": "A newly discovered law of physics", "isCorrect": true },
+        { "text": "A genetically engineered microbe", "isCorrect": false },
+        { "text": "A new software algorithm that improves data processing", "isCorrect": false }
+      ],
+      "explanation": "Laws of nature, natural phenomena, and abstract ideas are not eligible for patent protection. A law of physics is a discovery of something that already exists in nature, not an invention."
+    },
+    {
+      "question": "An invention must be novel, useful, and what other key criterion to be granted a utility patent?",
+      "options": [
+        { "text": "Profitable", "isCorrect": false },
+        { "text": "Marketable", "isCorrect": false },
+        { "text": "Non-obvious", "isCorrect": true },
+        { "text": "Complex", "isCorrect": false }
+      ],
+      "explanation": "The three main requirements for patentability are that the invention must be novel (new), useful (have a utility), and non-obvious to someone with ordinary skill in the relevant field."
+    }
+  ]
+}

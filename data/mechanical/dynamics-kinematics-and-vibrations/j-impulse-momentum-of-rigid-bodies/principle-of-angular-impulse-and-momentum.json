@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Principle of Linear Impulse and Momentum</h3>\n<p class=\"mb-4\">For a rigid body, the principle of linear impulse and momentum is the same as for a particle, but it is applied to the motion of the body's center of mass, G.</p>\n<p class=\"mb-4\">The linear impulse exerted on the body is equal to the change in the body's linear momentum. Linear momentum is the product of the body's mass ($m$) and the velocity of its center of mass ($\\bar{v}$).</p>\n$$\\sum \\int_{t_1}^{t_2} \\mathbf{F} dt = m\\bar{\\mathbf{v}}_2 - m\\bar{\\mathbf{v}}_1$$\n<p class=\"mb-4\">If the sum of all external impulses is zero, the linear momentum of the body is conserved.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Angular Impulse and Momentum</h3>\n<p class=\"mb-4\">The angular impulse about the body's mass center, G, is equal to the change in the body's angular momentum about G.</p>\n$$\\sum \\int_{t_1}^{t_2} \\mathbf{M}_G dt = I_G\\omega_2 - I_G\\omega_1$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sum \\int \\mathbf{M}_G dt$ is the angular impulse.</li>\n    <li>$I_G$ is the mass moment of inertia about the center of mass.</li>\n    <li>$\\omega$ is the angular velocity.</li>\n    <li>$I_G \\omega$ is the angular momentum of the rigid body.</li>\n</ul>\n<p class=\"mb-4\"><strong>Conservation of Angular Momentum:</strong> If the net angular impulse on a body about its center of mass is zero, its angular momentum is conserved ($I_G\\omega_1 = I_G\\omega_2$). This is a key principle for analyzing problems where objects collide or change their configuration while rotating (e.g., an ice skater pulling in their arms).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A flywheel with a moment of inertia $I = 0.5$ kg·m² is initially at rest. A constant torque of 10 N·m is applied for 2 seconds. What is the final angular velocity of the flywheel?",
+      "options": [
+        { "text": "10 rad/s", "isCorrect": false },
+        { "text": "20 rad/s", "isCorrect": false },
+        { "text": "40 rad/s", "isCorrect": true },
+        { "text": "5 rad/s", "isCorrect": false }
+      ],
+      "explanation": "Use the principle of angular impulse and momentum: Angular Impulse = Change in Angular Momentum. The angular impulse is $M_G \\cdot \\Delta t = (10 \\text{ N·m})(2 \\text{ s}) = 20$ N·m·s. The change in angular momentum is $I_G(\\omega_2 - \\omega_1)$. Since it starts from rest, $\\omega_1 = 0$. So, $20 = 0.5(\\omega_2 - 0)$. Solving for $\\omega_2$ gives $\\omega_2 = 20 / 0.5 = 40$ rad/s."
+    },
+    {
+      "question": "A spinning disk ($I_1 = 2$ kg·m², $\\omega_1 = 10$ rad/s) is dropped onto an identical, stationary disk ($I_2 = 2$ kg·m², $\\omega_2 = 0$). They stick together and rotate as one. What is their final common angular velocity?",
+      "options": [
+        { "text": "10 rad/s", "isCorrect": false },
+        { "text": "5 rad/s", "isCorrect": true },
+        { "text": "7.5 rad/s", "isCorrect": false },
+        { "text": "20 rad/s", "isCorrect": false }
+      ],
+      "explanation": "This is a conservation of angular momentum problem, as there are no external torques on the two-disk system. The initial total angular momentum is $L_i = I_1\\omega_1 + I_2\\omega_2 = (2)(10) + (2)(0) = 20$ kg·m²/s. After they stick together, the total moment of inertia is $I_f = I_1 + I_2 = 2 + 2 = 4$ kg·m². The final angular momentum is $L_f = I_f\\omega_f = 4\\omega_f$. By conservation, $L_i = L_f$, so $20 = 4\\omega_f$. The final angular velocity is $\\omega_f = 20/4 = 5$ rad/s."
+    }
+  ]
+}

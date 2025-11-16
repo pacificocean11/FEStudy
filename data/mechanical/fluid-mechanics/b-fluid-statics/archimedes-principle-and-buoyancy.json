@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Archimedes' Principle</h3>\n<p class=\"mb-4\">Archimedes' principle states that a body wholly or partially submerged in a fluid is buoyed up by a force equal to the weight of the fluid it displaces. This upward force is called the <strong>buoyant force ($F_B$)</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Buoyant Force Formula</h3>\n<p class=\"mb-4\">The magnitude of the buoyant force is given by:</p>\n$$ F_B = \\rho_{fluid} g V_{submerged} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\rho_{fluid}$ is the density of the fluid in which the object is submerged.</li>\n    <li>$g$ is the acceleration due to gravity.</li>\n    <li>$V_{submerged}$ is the volume of the part of the object that is submerged in the fluid (i.e., the volume of the displaced fluid).</li>\n</ul>\n<p class=\"mb-4\">The buoyant force acts upward through the centroid of the displaced volume, which is called the center of buoyancy.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Floating and Sinking</h3>\n<p class=\"mb-4\">The behavior of a submerged object depends on the comparison between the buoyant force and the object's weight ($W = \\rho_{object} g V_{object}$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $F_B < W$ (or $\\rho_{fluid} < \\rho_{object}$), the object will sink.</li>\n    <li>If $F_B > W$ (or $\\rho_{fluid} > \\rho_{object}$), the object will rise to the surface and float.</li>\n    <li>If $F_B = W$ (or $\\rho_{fluid} = \\rho_{object}$), the object will remain suspended (neutrally buoyant) at any depth.</li>\n</ul>\n<p class=\"mb-4\">For a floating object, the buoyant force exactly balances its weight: $F_B = W_{object}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 0.5 m³ block of wood is fully submerged in water ($\\rho_{water} = 1000$ kg/m³). What is the buoyant force acting on it? (Use $g=9.81$ m/s²).",
+      "options": [
+        { "text": "4905 N", "isCorrect": true },
+        { "text": "500 N", "isCorrect": false },
+        { "text": "9810 N", "isCorrect": false },
+        { "text": "4.9 N", "isCorrect": false }
+      ],
+      "explanation": "The buoyant force is equal to the weight of the displaced fluid. Since the block is fully submerged, the volume of displaced fluid is equal to the volume of the block. $F_B = \\rho_{fluid} g V_{submerged} = (1000 \\text{ kg/m³})(9.81 \\text{ m/s²})(0.5 \\text{ m³}) = 4905$ N."
+    },
+    {
+      "question": "An object has a volume of 2 m³ and a density of 800 kg/m³. If it is placed in water ($\\rho_{water} = 1000$ kg/m³), what will happen?",
+      "options": [
+        { "text": "It will sink.", "isCorrect": false },
+        { "text": "It will float.", "isCorrect": true },
+        { "text": "It will remain fully submerged wherever it is placed.", "isCorrect": false },
+        { "text": "It will dissolve.", "isCorrect": false }
+      ],
+      "explanation": "To determine if an object floats or sinks, we compare its density to the fluid's density. Since the object's density (800 kg/m³) is less than the density of water (1000 kg/m³), the object will float."
+    },
+    {
+      "question": "For the floating object in the previous question, what volume of the object will be submerged?",
+      "options": [
+        { "text": "2.0 m³", "isCorrect": false },
+        { "text": "1.6 m³", "isCorrect": true },
+        { "text": "0.8 m³", "isCorrect": false },
+        { "text": "1.0 m³", "isCorrect": false }
+      ],
+      "explanation": "For a floating object, the buoyant force equals its weight. $F_B = W_{object} \\implies \\rho_{fluid} g V_{submerged} = \\rho_{object} g V_{object}$. The 'g' term cancels out. $\\rho_{water} V_{submerged} = \\rho_{object} V_{object}$. $1000 \\cdot V_{submerged} = 800 \\cdot 2 \\implies V_{submerged} = \\frac{1600}{1000} = 1.6$ m³. This means 80% of the object will be submerged."
+    }
+  ]
+}

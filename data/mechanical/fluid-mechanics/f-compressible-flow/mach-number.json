@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Compressible flow is a branch of fluid mechanics that deals with flows in which the fluid density changes significantly. This typically occurs at high speeds. The key parameter to determine if a flow is compressible is the Mach number.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Mach Number (M)</h3>\n<p class=\"mb-4\">The <strong>Mach number</strong> is a dimensionless quantity representing the ratio of the flow velocity past a boundary to the local speed of sound in the medium.</p>\n$$ M = \\frac{v}{c} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$v$ is the velocity of the fluid flow.</li>\n    <li>$c$ is the local speed of sound in the fluid.</li>\n</ul>\n<p class=\"mb-4\">For an ideal gas, the speed of sound is given by:</p>\n$$ c = \\sqrt{kRT} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k$ is the specific heat ratio ($c_p/c_v$, approx. 1.4 for air).</li>\n    <li>$R$ is the specific gas constant (287 J/kg·K for air).</li>\n    <li>$T$ is the absolute temperature in Kelvin.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Flow Regimes</h3>\n<p class=\"mb-4\">Flows are classified based on their Mach number:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Incompressible Flow:</strong> $M < 0.3$. Density variations are negligible (less than 5%).</li>\n    <li><strong>Subsonic Flow:</strong> $0.3 < M < 1$. Compressibility effects are significant.</li>\n    <li><strong>Transonic Flow:</strong> $M \\approx 1$. A mixture of subsonic and supersonic flow occurs.</li>\n    <li><strong>Supersonic Flow:</strong> $M > 1$. Flow is faster than the speed of sound. Shock waves can occur.</li>\n    <li><strong>Hypersonic Flow:</strong> $M > 5$. Very high-speed flow where extreme temperatures and chemical effects become important.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An aircraft is flying at 600 m/s in air at a temperature where the speed of sound is 300 m/s. What is the Mach number?",
+      "options": [
+        { "text": "0.5", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false },
+        { "text": "2.0", "isCorrect": true },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "Mach number is the ratio of the flow velocity to the speed of sound: $M = v/c = 600 \\text{ m/s} / 300 \\text{ m/s} = 2.0$."
+    },
+    {
+      "question": "A flow with a Mach number of 0.8 is classified as:",
+      "options": [
+        { "text": "Incompressible", "isCorrect": false },
+        { "text": "Subsonic", "isCorrect": true },
+        { "text": "Supersonic", "isCorrect": false },
+        { "text": "Hypersonic", "isCorrect": false }
+      ],
+      "explanation": "Flows with Mach numbers between 0.3 and 1 are considered subsonic, where compressibility effects are important."
+    }
+  ]
+}

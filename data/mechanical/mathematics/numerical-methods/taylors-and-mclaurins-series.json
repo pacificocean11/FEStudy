@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A Taylor Series is a representation of a function as an infinite sum of terms, calculated from the values of the function's derivatives at a single point. It allows us to approximate complicated functions using simpler polynomial functions.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Taylor Series Formula</h3>\n<p class=\"mb-4\">The Taylor series of a real or complex-valued function $f(x)$ that is infinitely differentiable at a real number $a$ is the power series:</p>\n$$f(x) = \\sum_{n=0}^\\infty \\frac{f^{(n)}(a)}{n!}(x-a)^n$$\n$$= f(a) + \\frac{f'(a)}{1!}(x-a) + \\frac{f''(a)}{2!}(x-a)^2 + \\frac{f'''(a)}{3!}(x-a)^3 + \\cdots$$\n<p class=\"mb-4\">where $f^{(n)}(a)$ denotes the $n$-th derivative of $f$ evaluated at the point $a$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Maclaurin Series</h3>\n<p class=\"mb-4\">A Maclaurin series is a special case of the Taylor series where the expansion is centered at $a=0$.</p>\n$$f(x) = \\sum_{n=0}^\\infty \\frac{f^{(n)}(0)}{n!}x^n = f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\cdots$$\n<h3 class=\"text-lg font-semibold mb-2\">4. Common Maclaurin Series</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots = \\sum_{n=0}^\\infty \\frac{x^n}{n!}$</li>\n    <li>$\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\cdots = \\sum_{n=0}^\\infty (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$</li>\n    <li>$\\cos(x) = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\cdots = \\sum_{n=0}^\\infty (-1)^n \\frac{x^{2n}}{(2n)!}$</li>\n    <li>$\\frac{1}{1-x} = 1 + x + x^2 + x^3 + \\cdots = \\sum_{n=0}^\\infty x^n$ (for $|x|<1$)</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the Maclaurin series for $f(x) = e^x$?",
+      "options": [
+        { "text": "$1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots$", "isCorrect": true },
+        { "text": "$1 - x + \\frac{x^2}{2!} - \\frac{x^3}{3!} + \\cdots$", "isCorrect": false },
+        { "text": "$x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\cdots$", "isCorrect": false },
+        { "text": "$1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\cdots$", "isCorrect": false }
+      ],
+      "explanation": "The derivatives of $f(x)=e^x$ are all $e^x$. At $a=0$, $f^{(n)}(0) = e^0 = 1$ for all $n$. The Maclaurin series is $\\sum \\frac{f^{(n)}(0)}{n!}x^n = \\sum \\frac{1}{n!}x^n = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots$."
+    },
+    {
+      "question": "Find the first three non-zero terms of the Taylor series for $f(x) = \\ln(x)$ centered at $a=1$.",
+      "options": [
+        { "text": "$(x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3}$", "isCorrect": true },
+        { "text": "$1 + (x-1) - \\frac{(x-1)^2}{2}$", "isCorrect": false },
+        { "text": "$x - \\frac{x^2}{2} + \\frac{x^3}{3}$", "isCorrect": false },
+        { "text": "$(x-1) + \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{6}$", "isCorrect": false }
+      ],
+      "explanation": "We need the derivatives at $a=1$. $f(x)=\\ln(x) \\implies f(1)=0$. $f'(x)=1/x \\implies f'(1)=1$. $f''(x)=-1/x^2 \\implies f''(1)=-1$. $f'''(x)=2/x^3 \\implies f'''(1)=2$. The Taylor series is $f(1) + f'(1)(x-1) + \\frac{f''(1)}{2!}(x-1)^2 + \\frac{f'''(1)}{3!}(x-1)^3 + \\cdots = 0 + 1(x-1) + \\frac{-1}{2}(x-1)^2 + \\frac{2}{6}(x-1)^3 + \\cdots = (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} + \\cdots$"
+    },
+    {
+      "question": "The Maclaurin series for $\\cos(x)$ is $1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\cdots$. Use this to find the series for $\\cos(2x)$.",
+      "options": [
+        { "text": "$1 - \\frac{2x^2}{2!} + \\frac{4x^4}{4!} - \\cdots$", "isCorrect": false },
+        { "text": "$1 - \\frac{4x^2}{2!} + \\frac{16x^4}{4!} - \\cdots$", "isCorrect": true },
+        { "text": "$2 - \\frac{8x^2}{2!} + \\frac{32x^4}{4!} - \\cdots$", "isCorrect": false },
+        { "text": "$1 - \\frac{x^2}{4!} + \\frac{x^4}{8!} - \\cdots$", "isCorrect": false }
+      ],
+      "explanation": "To find the series for $\\cos(2x)$, simply substitute $2x$ for $x$ in the original series for $\\cos(x)$. This gives $1 - \\frac{(2x)^2}{2!} + \\frac{(2x)^4}{4!} - \\cdots = 1 - \\frac{4x^2}{2!} + \\frac{16x^4}{4!} - \\cdots$."
+    },
+    {
+      "question": "What function is represented by the Maclaurin series $x - x^2 + x^3 - x^4 + \\cdots$?",
+      "options": [
+        { "text": "$\\frac{1}{1-x}$", "isCorrect": false },
+        { "text": "$\\frac{1}{1+x}$", "isCorrect": false },
+        { "text": "$\\frac{x}{1+x}$", "isCorrect": true },
+        { "text": "$e^{-x}$", "isCorrect": false }
+      ],
+      "explanation": "This is a geometric series. We can factor out an $x$: $x(1 - x + x^2 - x^3 + \\cdots)$. The part in the parentheses is the geometric series for $\\frac{1}{1 - (-x)} = \\frac{1}{1+x}$. Therefore, the entire series is $x \\cdot \\frac{1}{1+x} = \\frac{x}{1+x}$."
+    },
+    {
+      "question": "Using the approximation $\\sin(x) \\approx x - \\frac{x^3}{6}$, estimate the value of $\\sin(0.1)$.",
+      "options": [
+        { "text": "0.099833", "isCorrect": true },
+        { "text": "0.1", "isCorrect": false },
+        { "text": "0.099", "isCorrect": false },
+        { "text": "0.098333", "isCorrect": false }
+      ],
+      "explanation": "Plug $x=0.1$ into the approximation: $\\sin(0.1) \\approx 0.1 - \\frac{(0.1)^3}{6} = 0.1 - \\frac{0.001}{6} = 0.1 - 0.0001666... \\approx 0.099833$."
+    }
+  ]
+}

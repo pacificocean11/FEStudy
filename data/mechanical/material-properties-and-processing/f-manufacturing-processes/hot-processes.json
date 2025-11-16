@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Hot working</strong> refers to the plastic deformation of metals and alloys at a temperature <strong>above their recrystallization temperature</strong>. Recrystallization is a process in which deformed grains are replaced by a new set of defect-free grains that nucleate and grow until the original grains have been entirely consumed.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Characteristics</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Large Deformations:</strong> The metal has a low yield strength and high ductility at these temperatures, allowing for very large shape changes with relatively low forces.</li>\n    <li><strong>No Strain Hardening:</strong> The recrystallization process occurs simultaneously with the deformation, preventing the material from becoming harder and more brittle (strain hardening).</li>\n    <li><strong>Improved Properties:</strong> Hot working can refine the grain structure, reduce porosity, and improve the toughness and ductility of the metal.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Disadvantages</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Poor Surface Finish:</strong> High temperatures cause oxidation and scaling on the metal surface.</li>\n    <li><strong>Low Dimensional Accuracy:</strong> Due to thermal expansion and contraction, it is difficult to achieve precise dimensions.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Common Hot Working Processes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Forging:</strong> Shaping metal using localized compressive forces (hammering or pressing).</li>\n    <li><strong>Rolling:</strong> Reducing the thickness of a workpiece by passing it between two rollers.</li>\n    <li><strong>Extrusion:</strong> Pushing a workpiece through a die of a desired cross-section.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Hot working of a metal is performed at a temperature that is:",
+      "options": [
+        { "text": "Just below its melting point.", "isCorrect": false },
+        { "text": "Above its recrystallization temperature.", "isCorrect": true },
+        { "text": "Below its recrystallization temperature.", "isCorrect": false },
+        { "text": "At room temperature.", "isCorrect": false }
+      ],
+      "explanation": "The defining characteristic of hot working is that the deformation takes place at a temperature high enough for recrystallization to occur concurrently, which relieves strain hardening."
+    },
+    {
+      "question": "Which of the following is an advantage of hot working compared to cold working?",
+      "options": [
+        { "text": "Better surface finish.", "isCorrect": false },
+        { "text": "Higher dimensional accuracy.", "isCorrect": false },
+        { "text": "Strain hardening of the material.", "isCorrect": false },
+        { "text": "Lower forces and power are required.", "isCorrect": true }
+      ],
+      "explanation": "At elevated temperatures, the metal is softer and more ductile, meaning it requires significantly less force to achieve large deformations compared to cold working."
+    }
+  ]
+}

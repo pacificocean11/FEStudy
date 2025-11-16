@@ -1,0 +1,57 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The determinant is a scalar value that can be computed from the elements of a square matrix. It is denoted as $\\det(A)$ or $|A|$. The determinant provides important information about the matrix, such as whether it is invertible.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Determinant of a 2x2 Matrix</h3>\n<p class=\"mb-4\">For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is:</p>\n$$|A| = ad - bc$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Determinant of a 3x3 Matrix</h3>\n<p class=\"mb-4\">For a 3x3 matrix $A = \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix}$, the determinant can be calculated using the method of cofactor expansion. Expanding along the first row gives:</p>\n$$|A| = a \\begin{vmatrix} e & f \\\\ h & i \\end{vmatrix} - b \\begin{vmatrix} d & f \\\\ g & i \\end{vmatrix} + c \\begin{vmatrix} d & e \\\\ g & h \\end{vmatrix}$$\n$$|A| = a(ei - fh) - b(di - fg) + c(dh - eg)$$\n<h3 class=\"text-lg font-semibold mb-2\">4. Properties of Determinants</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>A matrix has an inverse if and only if its determinant is non-zero ($|A| \\neq 0$).</li>\n    <li>The determinant of the identity matrix is 1, $|I|=1$.</li>\n    <li>If a row or column consists entirely of zeros, the determinant is 0.</li>\n    <li>If two rows or columns are identical, the determinant is 0.</li>\n    <li>The determinant of a matrix product is the product of their determinants: $|AB| = |A||B|$.</li>\n    <li>The determinant of a transpose is the same as the original: $|A^T| = |A|$.</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Calculate the determinant of the matrix $A = \\begin{pmatrix} 3 & 1 \\\\ 4 & 2 \\end{pmatrix}$.",
+      "options": [
+        { "text": "2", "isCorrect": true },
+        { "text": "10", "isCorrect": false },
+        { "text": "-2", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "For a 2x2 matrix $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is $ad - bc$. So, for this matrix, the determinant is $(3)(2) - (1)(4) = 6 - 4 = 2$."
+    },
+    {
+      "question": "Find the determinant of $B = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 4 & 5 \\\\ 0 & 0 & 6 \\end{pmatrix}$.",
+      "options": [
+        { "text": "12", "isCorrect": false },
+        { "text": "24", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "For a triangular matrix (either upper or lower), the determinant is the product of the diagonal entries. So, $|B| = 1 \\cdot 4 \\cdot 6 = 24$."
+    },
+    {
+      "question": "For what value of $k$ is the matrix $C = \\begin{pmatrix} 2 & 4 \\\\ 3 & k \\end{pmatrix}$ singular (i.e., not invertible)?",
+      "options": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": true },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "A matrix is singular if its determinant is zero. The determinant of C is $(2)(k) - (4)(3) = 2k - 12$. Set this equal to zero: $2k - 12 = 0 \\implies 2k = 12 \\implies k = 6$."
+    },
+    {
+      "question": "Calculate the determinant of the matrix $D = \\begin{pmatrix} 1 & 0 & 3 \\\\ 2 & 1 & 0 \\\\ -1 & 0 & 2 \\end{pmatrix}$.",
+      "options": [
+        { "text": "5", "isCorrect": true },
+        { "text": "-1", "isCorrect": false },
+        { "text": "0", "isCorrect": false },
+        { "text": "-5", "isCorrect": false }
+      ],
+      "explanation": "It's easiest to expand along the second column because it has two zeros. $|D| = -0 \\cdot |...| + 1 \\begin{vmatrix} 1 & 3 \\\\ -1 & 2 \\end{vmatrix} - 0 \\cdot |...|$. This simplifies to $1 \\cdot ((1)(2) - (3)(-1)) = 1 \\cdot (2 + 3) = 5$."
+    },
+    {
+      "question": "If $\\det(A) = 3$ and $\\det(B) = -2$, what is $\\det(AB)$?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "-6", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "A property of determinants is that $\\det(AB) = \\det(A) \\cdot \\det(B)$. Therefore, $\\det(AB) = (3)(-2) = -6$."
+    }
+  ]
+}
