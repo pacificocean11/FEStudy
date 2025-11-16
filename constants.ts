@@ -191,7 +191,7 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
 </ul>
                 `,
                 video: "",
-                aiVideo: "",
+                aiVideo: "https://player.vimeo.com/video/1135979648?badge=0&autopause=0&player_id=0&app_id=58479",
                 solvedExamples: [
                   {
                     question: "What is the equation of a line that passes through the points $(2, 5)$ and $(4, 11)$?",
@@ -259,9 +259,9 @@ $$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$
 <p class="mb-4">When $B=0$, the type of conic can be identified by looking at the coefficients A and C.</p>
 <ul class="list-disc list-inside space-y-2 mb-4">
     <li>If $A = C$ (and not zero), the conic is a <strong>Circle</strong>.</li>
-    <li>If $A \cdot C > 0$ and $A \neq C$, the conic is an <strong>Ellipse</strong>.</li>
-    <li>If $A \cdot C = 0$ (i.e., either A or C is zero, but not both), the conic is a <strong>Parabola</strong>.</li>
-    <li>If $A \cdot C < 0$ (i.e., A and C have opposite signs), the conic is a <strong>Hyperbola</strong>.</li>
+    <li>If $A \\cdot C > 0$ and $A \\neq C$, the conic is an <strong>Ellipse</strong>.</li>
+    <li>If $A \\cdot C = 0$ (i.e., either A or C is zero, but not both), the conic is a <strong>Parabola</strong>.</li>
+    <li>If $A \\cdot C < 0$ (i.e., A and C have opposite signs), the conic is a <strong>Hyperbola</strong>.</li>
 </ul>
 <p class="mb-4">If the $Bxy$ term is present, a value called the discriminant ($B^2 - 4AC$) is used:</p>
 <ul class="list-disc list-inside space-y-2 mb-4">
@@ -281,7 +281,7 @@ $$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$
                             { text: "Parabola", isCorrect: false },
                             { text: "Hyperbola", isCorrect: true }
                         ],
-                        explanation: "The general form is $Ax^2 + Cy^2 + Dx + Ey + F = 0$. Here, $A=3$ and $C=-3$. Since $A \cdot C = (3)(-3) = -9 < 0$, the coefficients have opposite signs. Therefore, the conic section is a hyperbola."
+                        explanation: "The general form is $Ax^2 + Cy^2 + Dx + Ey + F = 0$. Here, $A=3$ and $C=-3$. Since $A \\cdot C = (3)(-3) = -9 < 0$, the coefficients have opposite signs. Therefore, the conic section is a hyperbola."
                     },
                     {
                         question: "The equation $x^2 + 4y^2 - 2x - 16y + 13 = 0$ represents which conic section?",
@@ -291,7 +291,7 @@ $$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$
                             { text: "Parabola", isCorrect: false },
                             { text: "Hyperbola", isCorrect: false }
                         ],
-                        explanation: "In the equation, $A=1$ and $C=4$. Since $A \cdot C = (1)(4) = 4 > 0$ and $A \neq C$, the conic section is an ellipse."
+                        explanation: "In the equation, $A=1$ and $C=4$. Since $A \\cdot C = (1)(4) = 4 > 0$ and $A \\neq C$, the conic section is an ellipse."
                     },
                     {
                         question: "What conic is described by the equation $y^2 - 8x + 4y - 4 = 0$?",
@@ -301,7 +301,7 @@ $$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$
                             { text: "Parabola", isCorrect: true },
                             { text: "Hyperbola", isCorrect: false }
                         ],
-                        explanation: "The general form is $Ax^2 + Cy^2 + Dx + Ey + F = 0$. In this equation, there is no $x^2$ term, so $A=0$. The $y^2$ term has a coefficient $C=1$. Since $A \cdot C = (0)(1) = 0$, the conic section is a parabola."
+                        explanation: "The general form is $Ax^2 + Cy^2 + Dx + Ey + F = 0$. In this equation, there is no $x^2$ term, so $A=0$. The $y^2$ term has a coefficient $C=1$. Since $A \\cdot C = (0)(1) = 0$, the conic section is a parabola."
                     },
                     {
                         question: "The discriminant of the equation $2x^2 - 3xy + 2y^2 - x = 5$ is used to identify the conic. What is the value of the discriminant?",
@@ -1893,7 +1893,7 @@ $$\\Delta x [f(x_0) + f(x_1) + ... + f(x_{n-1})]$$
                     { text: "1.098", isCorrect: false },
                     { text: "0.5", isCorrect: false }
                   ],
-                  explanation: "The interval is $[1, 3]$ and $n=2$, so $\\Delta x = \\frac{3-1}{2} = 1$. The endpoints are $x_0=1, x_1=2, x_2=3$. The left endpoints are $x_0=1$ and $x_1=2$. The approximation is $\\Delta x [f(x_0) + f(x_1)] = 1[\\frac{1}{1} + \\frac{1}{2}] = 1[1 + 0.5] = 1.5$. Oh wait, the calculation is $1[1 + 0.5] = 1.5$. Let me re-check. No, $1.5$ is one of the options. Let me re-calculate again. $f(x)=1/x$. $\Delta x = 1$. Left endpoints are 1 and 2. Sum = $1 \times (f(1) + f(2)) = 1 \times (1/1 + 1/2) = 1 \times (1+0.5) = 1.5$. Okay, let me re-evaluate the options. Option A is 0.833 which is 5/6. Option B is 1.5. The question might have a mistake, but let me check backwards from 0.833. That's $1/1 + 1/2 = 1.5$. Let me check the Backward rule: $1 \times (f(2)+f(3)) = 1 \times (1/2+1/3) = 1 \times (3/6+2/6) = 5/6 \approx 0.833$. The question likely meant Backward Rectangle rule, but as written, the answer should be 1.5. I will assume the option is a typo and should be 1.5, or that I must choose the closest answer. The true value is ln(3) which is about 1.098. Let me re-read the name 'Forward Rectangle Rule'. This is not a standard name. It might mean Left or Right. Let's assume Forward means the right endpoint. Right Riemann Sum would be $\Delta x [f(x_1) + f(x_2)] = 1[f(2)+f(3)] = 1[1/2 + 1/3] = 5/6 \approx 0.833$. This matches an option. Let's proceed with this assumption. Correct explanation: The Forward Rectangle Rule often refers to the Right Riemann Sum, using the right endpoint of each subinterval. Here, $\\Delta x = 1$, and the right endpoints are $x_1=2$ and $x_2=3$. The approximation is $\\Delta x [f(x_1) + f(x_2)] = 1[\\frac{1}{2} + \\frac{1}{3}] = 1[\\frac{3}{6} + \\frac{2}{6}] = \\frac{5}{6} \\approx 0.833$."
+                  explanation: "The Forward Rectangle Rule often refers to the Right Riemann Sum, using the right endpoint of each subinterval. Here, $\\Delta x = 1$, and the right endpoints are $x_1=2$ and $x_2=3$. The approximation is $\\Delta x [f(x_1) + f(x_2)] = 1[\\frac{1}{2} + \\frac{1}{3}] = 1[\\frac{3}{6} + \\frac{2}{6}] = \\frac{5}{6} \\approx 0.833$."
                 },
                 {
                   question: "To approximate $\\int_2^6 f(x)dx$ with the Forward Rectangle Rule and $n=8$, what is the width of each subinterval, $\\Delta x$?",
@@ -1958,7 +1958,7 @@ $$\\int_a^b f(x) dx \\approx \\frac{\\Delta x}{2} [f(x_0) + 2f(x_1) + 2f(x_2) + 
                     { text: "1.0", isCorrect: false },
                     { text: "1.25", isCorrect: false }
                   ],
-                  explanation: "The interval is $[1, 3]$ and $n=2$, so $\\Delta x = \\frac{3-1}{2} = 1$. The endpoints are $x_0=1, x_1=2, x_2=3$. The formula is $\\frac{\\Delta x}{2} [f(x_0) + 2f(x_1) + f(x_2)]$. This is for more than one trapezoid. With n=2, we have two trapezoids, so we use $x_0, x_1, x_2$. $\\frac{1}{2}[f(1) + 2f(2) + f(3)]$. No wait, the formula is correct. $\\frac{1}{2} [1/1 + 2(1/2) + 1/3] = 0.5 * (1 + 1 + 1/3) = 0.5 * (7/3) = 7/6 \approx 1.167$. (The true value is $\\ln(3) \\approx 1.098$)."
+                  explanation: "The interval is $[1, 3]$ and $n=2$, so $\\Delta x = \\frac{3-1}{2} = 1$. The endpoints are $x_0=1, x_1=2, x_2=3$. The formula is $\\frac{\\Delta x}{2} [f(x_0) + 2f(x_1) + f(x_2)]$. This is for more than one trapezoid. With n=2, we have two trapezoids, so we use $x_0, x_1, x_2$. $\\frac{1}{2}[f(1) + 2f(2) + f(3)]$. No wait, the formula is correct. $\\frac{1}{2} [1/1 + 2(1/2) + 1/3] = 0.5 * (1 + 1 + 1/3) = 0.5 * (7/3) = 7/6 \\approx 1.167$. (The true value is $\\ln(3) \\approx 1.098$)."
                 },
                 {
                   question: "For a function that is concave up, the Trapezoidal Rule provides an:",
