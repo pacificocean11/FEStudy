@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>efficiency ($\\eta$)</strong> of an electric motor is the ratio of the mechanical power output to the electrical power input. It is a measure of how effectively the motor converts electrical energy into useful mechanical work.</p>\n$$ \\eta = \\frac{P_{out}}{P_{in}} = \\frac{\\text{Mechanical Power Output}}{\\text{Electrical Power Input}} $$\n<p class=\"mb-4\">Efficiency is a dimensionless number, usually expressed as a percentage.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Power and Losses</h3>\n<p class=\"mb-4\">No motor is 100% efficient. The difference between the input and output power is the power lost within the motor, primarily as heat.</p>\n$$ P_{in} = P_{out} + P_{loss} $$\n<p class=\"mb-4\">Losses in a motor include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Copper Losses ($I^2R$ losses):</strong> Heat dissipated in the stator and rotor windings due to their resistance.</li>\n    <li><strong>Core Losses:</strong> Hysteresis and eddy current losses in the iron core.</li>\n    <li><strong>Mechanical Losses:</strong> Friction in the bearings and windage (air resistance) on the rotor.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Power Formulas</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Electrical Power Input ($P_{in}$):</strong> For a three-phase motor, this is given by $P_{in} = \\sqrt{3} V_L I_L \\cos(\\phi)$, where $V_L$ and $I_L$ are line voltage and current, and $\\cos(\\phi)$ is the power factor.</li>\n    <li><strong>Mechanical Power Output ($P_{out}$):</strong> This is given by the product of the shaft torque ($T$) and the angular velocity ($\\omega$).</li>\n    $$ P_{out} = T \\omega = \\frac{2\\pi n T}{60} $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A three-phase motor draws 10 kW of electrical power while producing 8 kW of mechanical power at its shaft. What is the efficiency of the motor?",
+      "options": [
+        { "text": "125%", "isCorrect": false },
+        { "text": "80%", "isCorrect": true },
+        { "text": "20%", "isCorrect": false },
+        { "text": "1.25%", "isCorrect": false }
+      ],
+      "explanation": "Efficiency is the ratio of power out to power in: $\\eta = P_{out} / P_{in} = 8 \\text{ kW} / 10 \\text{ kW} = 0.8$. As a percentage, this is 80%."
+    },
+    {
+      "question": "A motor with an efficiency of 90% has a mechanical power output of 18 kW. How much electrical power does it consume?",
+      "options": [
+        { "text": "16.2 kW", "isCorrect": false },
+        { "text": "18.0 kW", "isCorrect": false },
+        { "text": "20.0 kW", "isCorrect": true },
+        { "text": "2.0 kW", "isCorrect": false }
+      ],
+      "explanation": "Rearrange the efficiency formula to solve for input power: $P_{in} = P_{out} / \\eta$. $P_{in} = 18 \\text{ kW} / 0.90 = 20$ kW."
+    }
+  ]
+}

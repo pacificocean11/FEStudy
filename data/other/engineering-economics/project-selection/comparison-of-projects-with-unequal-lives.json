@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Challenge</h3>\n<p class=\"mb-4\">When comparing mutually exclusive investment alternatives that have different useful lives, using the Present Worth (PW) method over a single life cycle of each can lead to an incorrect decision. The comparison must be made over an equal time horizon for both alternatives.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Methods for Comparison</h3>\n<p class=\"mb-4\">There are two primary methods to handle unequal lives:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Least Common Multiple (LCM) of Lives Method:</strong> This method assumes that each alternative will be repeated until the end of a common time period, which is the LCM of the individual lives. The Present Worth of each alternative is then calculated over this common study period. The alternative with the more favorable PW (e.g., lower cost) is chosen.\n    </li>\n    <li>\n        <strong>Equivalent Annual Worth (EAW) Method:</strong> This is often the simpler method. The EAW is calculated for a single life cycle of each alternative. The method implicitly assumes that when an alternative reaches the end of its life, it will be replaced by another identical alternative with the same costs. Because the EAW is a cost per year, it can be directly compared regardless of the project lifespan. The alternative with the more favorable EAW is chosen.\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When comparing two investment projects with different useful lives, which method is often the most straightforward to use?",
+      "options": [
+        { "text": "Payback Period", "isCorrect": false },
+        { "text": "Present Worth (PW) over the shorter life", "isCorrect": false },
+        { "text": "Equivalent Annual Worth (EAW)", "isCorrect": true },
+        { "text": "Internal Rate of Return (IRR) over one cycle", "isCorrect": false }
+      ],
+      "explanation": "The Equivalent Annual Worth (EAW) method is generally the easiest for comparing projects with unequal lives because it converts all costs to an annual basis, allowing for a direct comparison without needing to find a least common multiple of the lives."
+    },
+    {
+      "question": "Project A has a life of 3 years and Project B has a life of 4 years. If using the Present Worth method for comparison, what is the minimum study period that should be used?",
+      "options": [
+        { "text": "3 years", "isCorrect": false },
+        { "text": "4 years", "isCorrect": false },
+        { "text": "7 years", "isCorrect": false },
+        { "text": "12 years", "isCorrect": true }
+      ],
+      "explanation": "To compare projects with unequal lives using the Present Worth method, the analysis must be conducted over a time period that is a common multiple of the lives of the projects. The least common multiple (LCM) of 3 and 4 is 12 years."
+    }
+  ]
+}

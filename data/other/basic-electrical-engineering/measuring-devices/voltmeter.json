@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>voltmeter</strong> is an instrument used for measuring the electric potential difference, or voltage, between two points in an electric circuit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. How to Connect a Voltmeter</h3>\n<p class=\"mb-4\">To measure the voltage across a circuit component (like a resistor), a voltmeter must be connected in <strong>parallel</strong> with that component. This means the voltmeter's probes are placed on either side of the component.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Ideal Voltmeter</h3>\n<p class=\"mb-4\">An ideal voltmeter has <strong>infinite internal resistance</strong>. This is to ensure that when it is connected in parallel, it draws no current from the main circuit. If the voltmeter drew current, it would alter the voltage it is trying to measure. Real voltmeters have very high, but not infinite, internal resistance.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "To measure the voltage drop across a resistor in a circuit, how should a voltmeter be connected?",
+      "options": [
+        { "text": "In series with the resistor.", "isCorrect": false },
+        { "text": "In parallel with the resistor.", "isCorrect": true },
+        { "text": "In place of the resistor.", "isCorrect": false },
+        { "text": "It does not matter.", "isCorrect": false }
+      ],
+      "explanation": "A voltmeter measures potential difference between two points, so it must be connected in parallel to the component whose voltage is being measured."
+    },
+    {
+      "question": "What is the internal resistance of an ideal voltmeter and why?",
+      "options": [
+        { "text": "Zero, so it does not add resistance to the circuit.", "isCorrect": false },
+        { "text": "Infinite, so it draws no current from the circuit.", "isCorrect": true },
+        { "text": "Zero, so all the current flows through it.", "isCorrect": false },
+        { "text": "Infinite, so all the voltage drops across it.", "isCorrect": false }
+      ],
+      "explanation": "An ideal voltmeter has infinite resistance. When connected in parallel, this high resistance ensures that a negligible amount of current is diverted through the meter, so the meter does not significantly alter the behavior or voltage of the circuit being measured."
+    }
+  ]
+}

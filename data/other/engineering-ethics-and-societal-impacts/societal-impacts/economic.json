@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Engineering projects can have profound economic impacts on society, both positive and negative. Engineers have a responsibility to consider these impacts in their work.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Positive Economic Impacts</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Job Creation:</strong> Large infrastructure projects (roads, bridges, power plants) create jobs during construction and can support long-term employment through operation and maintenance.</li>\n    <li><strong>Economic Growth:</strong> Improved infrastructure can increase efficiency, reduce transportation costs, and facilitate trade, leading to broader economic growth.</li>\n    <li><strong>Technological Advancement:</strong> Engineering innovation leads to new products, services, and industries, driving economic development.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Negative Economic Impacts</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Displacement:</strong> A new highway or dam may require the acquisition of land, displacing homes and businesses and causing economic hardship.</li>\n    <li><strong>Externalities:</strong> Projects can have unintended negative economic side effects (externalities), such as pollution that harms a local fishing industry.</li>\n    <li><strong>Cost Overruns:</strong> Poorly managed projects that go significantly over budget can strain public finances or bankrupt companies.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Engineer's Role</h3>\n<p class=\"mb-4\">Engineers contribute to positive economic outcomes by designing efficient, reliable, and cost-effective solutions. They also have an ethical responsibility to perform thorough economic analyses (like cost-benefit analysis) and to be transparent about the potential costs and economic risks of a project.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The construction of a new high-speed rail line is expected to reduce travel times and shipping costs between two major cities. This is an example of what kind of societal impact?",
+      "options": [
+        { "text": "A negative environmental impact", "isCorrect": false },
+        { "text": "A positive economic impact", "isCorrect": true },
+        { "text": "A public safety risk", "isCorrect": false },
+        { "text": "A social sustainability issue", "isCorrect": false }
+      ],
+      "explanation": "Improving infrastructure to make commerce and transportation more efficient is a direct positive economic impact. It lowers the cost of doing business and can spur economic growth."
+    }
+  ]
+}

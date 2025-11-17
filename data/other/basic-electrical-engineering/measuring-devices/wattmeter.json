@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>wattmeter</strong> is an instrument used for measuring the electric power (in watts) in an electric circuit. Since power is the product of voltage and current ($P=VI$), a wattmeter must measure both quantities simultaneously.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. How to Connect a Wattmeter</h3>\n<p class=\"mb-4\">A wattmeter has two sets of terminals: a current coil and a voltage coil (or potential coil).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The <strong>current coil</strong> is connected in <strong>series</strong> with the load, like an ammeter, to measure the current flowing through the load. It has very low resistance.</li>\n    <li>The <strong>voltage coil</strong> is connected in <strong>parallel</strong> with the load, like a voltmeter, to measure the voltage across the load. It has very high resistance.</li>\n</ul>\n<p class=\"mb-4\">The meter's internal mechanism multiplies the measured current and voltage to provide a reading of power.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A wattmeter is used to measure the power consumed by a motor. How are its internal coils connected to the motor?",
+      "options": [
+        { "text": "Both coils are in series.", "isCorrect": false },
+        { "text": "Both coils are in parallel.", "isCorrect": false },
+        { "text": "The current coil is in series, and the voltage coil is in parallel.", "isCorrect": true },
+        { "text": "The current coil is in parallel, and the voltage coil is in series.", "isCorrect": false }
+      ],
+      "explanation": "To measure power (P=VI), the wattmeter must measure both current and voltage. Its current coil acts like an ammeter (connected in series), and its voltage coil acts like a voltmeter (connected in parallel)."
+    }
+  ]
+}

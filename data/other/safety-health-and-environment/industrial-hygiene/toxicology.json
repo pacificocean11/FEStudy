@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Toxicology</strong> is the scientific study of adverse effects that occur in living organisms due to chemicals. It involves observing and reporting symptoms, mechanisms, detection, and treatments of toxic substances.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Dose-Response Relationship</h3>\n<p class=\"mb-4\">A fundamental concept in toxicology is the <strong>dose-response relationship</strong>, which describes the change in effect on an organism caused by differing levels of exposure (or doses) to a stressor after a certain exposure time. The principle, often summarized as \"the dose makes the poison,\" states that a substance can produce a harmful effect only if it reaches a susceptible biological system within the body in a sufficient concentration.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. LD₅₀ (Median Lethal Dose)</h3>\n<p class=\"mb-4\">A common measure of a substance's acute toxicity is the <strong>LD₅₀</strong>, or median lethal dose. It is the dose of a substance required to kill 50% of a tested population. It is usually expressed as the mass of substance administered per unit of body mass of the test subject (e.g., milligrams per kilogram, mg/kg).</p>\n<p class=\"mb-4\">A <strong>lower LD₅₀ value indicates higher toxicity</strong>, as a smaller amount of the substance is needed to cause a lethal effect.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Routes of Exposure</h3>\n<p class=\"mb-4\">The way a substance enters the body can significantly affect its toxicity. The main routes of exposure in the workplace are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Inhalation:</strong> Breathing in gases, vapors, or dusts.</li>\n    <li><strong>Absorption:</strong> Through the skin or eyes.</li>\n    <li><strong>Ingestion:</strong> Swallowing the substance.</li>\n    <li><strong>Injection:</strong> Through a puncture wound.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Chemical A has an LD₅₀ of 5 mg/kg, and Chemical B has an LD₅₀ of 500 mg/kg. Which chemical is more toxic?",
+      "options": [
+        { "text": "Chemical A", "isCorrect": true },
+        { "text": "Chemical B", "isCorrect": false },
+        { "text": "They are equally toxic.", "isCorrect": false },
+        { "text": "Cannot be determined.", "isCorrect": false }
+      ],
+      "explanation": "The LD₅₀ is the dose required to be lethal to 50% of a test population. A lower LD₅₀ means a smaller dose is required to cause this effect. Therefore, Chemical A is significantly more toxic than Chemical B."
+    },
+    {
+      "question": "The central principle of toxicology, \"the dose makes the poison,\" refers to what concept?",
+      "options": [
+        { "text": "The route of exposure.", "isCorrect": false },
+        { "text": "The dose-response relationship.", "isCorrect": true },
+        { "text": "The chemical's half-life.", "isCorrect": false },
+        { "text": "The substance's flammability.", "isCorrect": false }
+      ],
+      "explanation": "This principle highlights the dose-response relationship, which establishes that the magnitude of the toxic effect is a function of the dose (the amount of exposure) of the substance."
+    }
+  ]
+}

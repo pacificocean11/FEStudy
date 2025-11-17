@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>economic life</strong> of an asset is the period of time over which it provides benefits and is the most economical to keep in service. This is not necessarily the same as its physical life (how long it can technically function) or its accounting life (depreciation period).</p>\n<p class=\"mb-4\">Determining the optimal economic life, also known as the <strong>Economic Service Life (ESL)</strong>, involves finding the number of years of service that minimizes the total cost of owning and operating the asset on an annual basis.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Cost Trade-Off</h3>\n<p class=\"mb-4\">The analysis involves a trade-off between two types of costs:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Capital Costs (Ownership Costs):</strong> These costs decrease over time. They consist of the initial purchase price minus the salvage value, spread over the life of the asset. The longer you keep the asset, the lower the average annual capital cost.</li>\n    <li><strong>Operating and Maintenance (O&M) Costs:</strong> These costs typically increase over time as the asset ages, becomes less efficient, and requires more repairs.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Finding the Optimal Life</h3>\n<p class=\"mb-4\">The optimal economic life is the number of years, $n$, that minimizes the <strong>Equivalent Uniform Annual Cost (EUAC)</strong> of the asset.</p>\n<p class=\"mb-4\">To find it, you would typically:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>For each possible life ($n=1, 2, 3, ...$), calculate the total EUAC.</li>\n    <li>The total EUAC for a life of $n$ years is the sum of the annualized capital cost for $n$ years and the annualized operating costs up to year $n$.</li>\n    <li>The economic service life is the value of $n$ for which the total EUAC is at a minimum. This is the optimal time to replace the asset.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The economic service life of a piece of equipment is the time period that:",
+      "options": [
+        { "text": "Maximizes its salvage value.", "isCorrect": false },
+        { "text": "Minimizes its total Equivalent Uniform Annual Cost (EUAC).", "isCorrect": true },
+        { "text": "Matches its depreciation period for tax purposes.", "isCorrect": false },
+        { "text": "Equals its maximum possible physical life.", "isCorrect": false }
+      ],
+      "explanation": "The optimal economic life is found by analyzing the cost trade-off over time. It is the number of years of service that results in the lowest overall annual cost, considering both the declining capital cost and the rising operating costs."
+    },
+    {
+      "question": "As an asset gets older, its annual operating and maintenance costs typically:",
+      "options": [
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Remain constant", "isCorrect": false },
+        { "text": "Increase", "isCorrect": true },
+        { "text": "Become zero", "isCorrect": false }
+      ],
+      "explanation": "Generally, as equipment ages, it becomes less efficient, requires more frequent repairs, and is more prone to breakdowns. This leads to an increasing trend in its annual operating and maintenance costs."
+    }
+  ]
+}

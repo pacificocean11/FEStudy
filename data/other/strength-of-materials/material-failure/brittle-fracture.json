@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Brittle fracture</strong> is the sudden, rapid fracture of a material under stress with very little evidence of plastic deformation. It occurs without any prior warning and can be catastrophic.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Ductile vs. Brittle Fracture</h3>\n<p class=\"mb-4\">Fracture can be broadly classified into two modes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Ductile Fracture:</strong> Characterized by extensive plastic deformation before fracture. It is a slow, energy-absorbing process and provides a visible warning of impending failure.</li>\n    <li><strong>Brittle Fracture:</strong> Occurs with little or no prior plastic deformation. It is a rapid, low-energy process.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Factors Promoting Brittle Fracture</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Low Temperatures:</strong> Many metals that are ductile at room temperature can become brittle at low temperatures. This is known as the ductile-to-brittle transition.</li>\n    <li><strong>High Strain Rates:</strong> Rapid application of a load (impact) can promote brittle fracture.</li>\n    <li><strong>Stress Concentrations:</strong> The presence of notches, cracks, or sharp corners can elevate local stress and initiate a brittle fracture.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Fracture Toughness</h3>\n<p class=\"mb-4\">A key property is <strong>fracture toughness ($K_{IC}$),</strong> which is a measure of a material's resistance to brittle fracture when a crack is present. A material with a high fracture toughness can tolerate larger cracks before it fails.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which type of fracture is generally preferred in engineering design, and why?",
+      "options": [
+        { "text": "Brittle fracture, because it is faster.", "isCorrect": false },
+        { "text": "Ductile fracture, because it provides a visible warning before failure.", "isCorrect": true },
+        { "text": "Brittle fracture, because it requires less energy.", "isCorrect": false },
+        { "text": "Ductile fracture, because it looks better.", "isCorrect": false }
+      ],
+      "explanation": "Ductile fracture is preferred because the significant plastic deformation (e.g., necking, bulging) that precedes it gives a clear visual warning that the component is about to fail, allowing for replacement or repair. Brittle fracture is dangerous because it can occur suddenly and without warning."
+    },
+    {
+      "question": "The tendency of some steels to fail in a brittle manner at low temperatures is known as the:",
+      "options": [
+        { "text": "Fatigue limit", "isCorrect": false },
+        { "text": "Ductile-to-brittle transition", "isCorrect": true },
+        { "text": "Elastic limit", "isCorrect": false },
+        { "text": "Creep failure", "isCorrect": false }
+      ],
+      "explanation": "The ductile-to-brittle transition temperature (DBTT) is the temperature at which the fracture energy of a material drops sharply. Below this temperature, the material is much more susceptible to brittle fracture."
+    }
+  ]
+}

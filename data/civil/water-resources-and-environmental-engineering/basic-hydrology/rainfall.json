@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition and Measurement</h3>\n<p class=\"mb-4\"><strong>Rainfall</strong>, or precipitation, is the primary input to most hydrologic systems. It is typically measured as a depth of water (in inches or millimeters) that would accumulate on a flat surface, collected by a <strong>rain gauge</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Characteristics</h3>\n<p class=\"mb-4\">Rainfall events are characterized by their intensity, duration, and frequency.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Intensity (i):</strong> The rate at which rain falls, typically measured in inches per hour or mm per hour.</li>\n    <li><strong>Duration (d):</strong> The length of time over which a rainfall event occurs.</li>\n    <li><strong>Frequency (or Return Period, T):</strong> The average time interval between the occurrence of a rainfall event of a given magnitude or greater. For example, a '100-year storm' is a rainfall event that has a 1% chance of being equaled or exceeded in any given year.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Intensity-Duration-Frequency (IDF) Curves</h3>\n<p class=\"mb-4\">IDF curves are graphical representations of the relationship between rainfall intensity, duration, and frequency for a specific geographic location. They are a fundamental tool in water resources engineering, used to determine the 'design storm' for sizing hydraulic structures like storm sewers and culverts.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Hyetograph</h3>\n<p class=\"mb-4\">A <strong>hyetograph</strong> is a graph that plots rainfall intensity (or depth) over time. It shows how the intensity of a storm changes during its duration.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A '25-year storm' refers to a rainfall event that:",
+      "options": [
+        { "text": "Happens every 25 years.", "isCorrect": false },
+        { "text": "Lasts for 25 hours.", "isCorrect": false },
+        { "text": "Has a 4% chance of being equaled or exceeded in any given year.", "isCorrect": true },
+        { "text": "Produces 25 inches of rain.", "isCorrect": false }
+      ],
+      "explanation": "The return period is a statistical concept. The annual probability of occurrence is the reciprocal of the return period. For a 25-year storm, the annual probability is $P = 1/T = 1/25 = 0.04$, or 4%."
+    },
+    {
+      "question": "A graph that shows rainfall intensity as a function of time for a storm event is called a:",
+      "options": [
+        { "text": "Hydrograph", "isCorrect": false },
+        { "text": "Hyetograph", "isCorrect": true },
+        { "text": "IDF Curve", "isCorrect": false },
+        { "text": "Rating Curve", "isCorrect": false }
+      ],
+      "explanation": "A hyetograph is the specific name for a plot of rainfall intensity vs. time. A hydrograph, in contrast, is a plot of water flow (discharge) vs. time."
+    }
+  ]
+}

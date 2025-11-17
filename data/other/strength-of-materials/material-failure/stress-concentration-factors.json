@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Stress concentration</strong> is a condition in which stress is significantly higher in a localized region of a structural member. This occurs at geometric discontinuities or abrupt changes in cross-section, such as holes, notches, fillets, and grooves.</p>\n<p class=\"mb-4\">These features disrupt the smooth flow of stress through the part, causing the stress lines to crowd together, leading to a localized increase in stress.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stress Concentration Factor (Kt)</h3>\n<p class=\"mb-4\">The <strong>theoretical stress concentration factor ($K_t$)</strong> is a dimensionless factor used to quantify the severity of a stress concentration. It is the ratio of the maximum stress at the discontinuity to the nominal (average) stress in the net cross-section.</p>\n$$ K_t = \\frac{\\sigma_{max}}{\\sigma_{nom}} $$\n<p class=\"mb-4\">The value of $K_t$ depends only on the geometry of the part and the type of loading (axial, bending, torsion). It is independent of the material. Values of $K_t$ for various geometries are found in standard charts and graphs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Effect on Failure</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Brittle Materials:</strong> Stress concentrations are very dangerous for brittle materials. The high local stress can easily exceed the material's fracture strength and initiate a crack, leading to sudden failure.</li>\n    <li><strong>Ductile Materials (Static Loading):</strong> Under static loads, stress concentrations are less of a concern for ductile materials. If the local stress exceeds the yield strength, the material will undergo localized plastic deformation, which blunts the crack and redistributes the stress more evenly.</li>\n    <li><strong>Fatigue Loading:</strong> Stress concentrations are a major cause of fatigue failure in all materials. They act as initiation sites for fatigue cracks.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A wide plate with a central hole is subjected to a tensile load. Where will the stress be highest?",
+      "options": [
+        { "text": "Uniformly across the plate.", "isCorrect": false },
+        { "text": "At the edges of the plate, far from the hole.", "isCorrect": false },
+        { "text": "At the edge of the hole, on a line perpendicular to the loading direction.", "isCorrect": true },
+        { "text": "At the edge of the hole, on a line parallel to the loading direction.", "isCorrect": false }
+      ],
+      "explanation": "The hole acts as a geometric discontinuity that forces the stress lines to flow around it. This causes the stress to be highest at the 'sides' of the hole (at the 3 o'clock and 9 o'clock positions relative to the load)."
+    },
+    {
+      "question": "A flat bar has a nominal tensile stress of 100 MPa. The bar contains a notch with a theoretical stress concentration factor of $K_t = 2.5$. What is the maximum stress at the notch?",
+      "options": [
+        { "text": "100 MPa", "isCorrect": false },
+        { "text": "40 MPa", "isCorrect": false },
+        { "text": "250 MPa", "isCorrect": true },
+        { "text": "25 MPa", "isCorrect": false }
+      ],
+      "explanation": "The maximum stress is the nominal stress multiplied by the stress concentration factor: $\\sigma_{max} = K_t \\cdot \\sigma_{nom} = 2.5 \\times 100 \\text{ MPa} = 250$ MPa."
+    }
+  ]
+}

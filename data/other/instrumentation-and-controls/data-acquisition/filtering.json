@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">In signal processing, a <strong>filter</strong> is a device or process that removes some unwanted components or features from a signal. In data acquisition, filtering is crucial for removing noise and isolating the signal of interest.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Filters</h3>\n<p class=\"mb-4\">Filters are classified by the range of frequencies they allow to pass:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Low-Pass Filter:</strong> Allows low-frequency signals to pass and attenuates (reduces the amplitude of) signals with frequencies higher than a certain cutoff frequency. This is the most common type, used for removing high-frequency noise. An anti-aliasing filter is a type of low-pass filter.</li>\n    <li><strong>High-Pass Filter:</strong> Allows high-frequency signals to pass and attenuates low-frequency signals. Used for removing low-frequency drift or DC offset from a signal.</li>\n    <li><strong>Band-Pass Filter:</strong> Allows signals within a certain frequency range (the 'passband') to pass and attenuates signals outside that range.</li>\n    <li><strong>Band-Stop Filter (or Notch Filter):</strong> Attenuates signals within a certain frequency range and allows signals outside that range to pass. Often used to remove specific unwanted frequencies, like 60 Hz power line noise.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "To prevent aliasing, what type of filter should be used before sampling an analog signal?",
+      "options": [
+        { "text": "High-pass filter", "isCorrect": false },
+        { "text": "Low-pass filter", "isCorrect": true },
+        { "text": "Notch filter", "isCorrect": false },
+        { "text": "Band-pass filter", "isCorrect": false }
+      ],
+      "explanation": "An anti-aliasing filter is a low-pass filter used to remove any frequency components in the signal that are above half the sampling rate. This is necessary to satisfy the Nyquist theorem and prevent high frequencies from being incorrectly represented as lower frequencies in the sampled data."
+    },
+    {
+      "question": "A sensor signal is corrupted by 60 Hz noise from nearby power lines. What type of filter would be most effective at removing this specific noise?",
+      "options": [
+        { "text": "A low-pass filter with a cutoff of 50 Hz", "isCorrect": false },
+        { "text": "A high-pass filter with a cutoff of 70 Hz", "isCorrect": false },
+        { "text": "A band-stop (notch) filter centered at 60 Hz", "isCorrect": true },
+        { "text": "An all-pass filter", "isCorrect": false }
+      ],
+      "explanation": "A band-stop or notch filter is specifically designed to attenuate a narrow band of frequencies. Setting this filter to 60 Hz would remove the unwanted power line noise while having minimal effect on the other frequencies in the signal."
+    }
+  ]
+}

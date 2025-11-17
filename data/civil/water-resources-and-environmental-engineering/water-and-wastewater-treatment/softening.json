@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose of Softening</h3>\n<p class=\"mb-4\"><strong>Water softening</strong> is the process of removing the dissolved minerals that cause water hardness, primarily calcium (Ca²⁺) and magnesium (Mg²⁺) ions. Hard water can cause scale buildup in pipes and water heaters, and it reduces the effectiveness of soaps and detergents.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Lime-Soda Ash Softening</h3>\n<p class=\"mb-4\">This is a chemical precipitation process used in large-scale municipal water treatment. Chemicals are added to the water to cause the hardness ions to precipitate out as solids (sludge), which can then be removed by sedimentation and filtration.</p>\n<p class=\"mb-4\">The chemicals used are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lime (calcium hydroxide, Ca(OH)₂):</strong> Added to increase the pH. Lime reacts with and removes all of the <strong>carbonate hardness</strong> and the magnesium non-carbonate hardness.</li>\n    <li><strong>Soda Ash (sodium carbonate, Na₂CO₃):</strong> Added to provide carbonate ions. Soda ash reacts with and removes the <strong>calcium non-carbonate hardness</strong>.</li>\n</ul>\n<p class=\"mb-4\">The process involves adding the chemicals in a rapid mix tank, followed by flocculation and sedimentation to remove the precipitates (calcium carbonate and magnesium hydroxide).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Ion Exchange Softening</h3>\n<p class=\"mb-4\">This is the process used in most home water softeners. The hard water is passed through a bed of resin beads. The resin beads are initially coated with sodium ions (Na⁺). As the water flows through, the hardness ions (Ca²⁺ and Mg²⁺) are attracted to the resin and 'exchange' places with the sodium ions, which are released into the water. When the resin becomes saturated with hardness ions, it is 'regenerated' by flushing it with a concentrated salt (sodium chloride) brine solution.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the lime-soda ash softening process, which chemical is primarily used to remove carbonate hardness?",
+      "options": [
+        { "text": "Sodium chloride (salt)", "isCorrect": false },
+        { "text": "Lime (calcium hydroxide)", "isCorrect": true },
+        { "text": "Soda ash (sodium carbonate)", "isCorrect": false },
+        { "text": "Alum (aluminum sulfate)", "isCorrect": false }
+      ],
+      "explanation": "Lime is added to raise the pH and provide hydroxide ions. It reacts with the bicarbonate alkalinity associated with carbonate hardness, causing calcium carbonate (CaCO₃) and magnesium hydroxide (Mg(OH)₂) to precipitate."
+    },
+    {
+      "question": "Which of the following processes exchanges hardness ions (calcium and magnesium) for sodium ions?",
+      "options": [
+        { "text": "Disinfection", "isCorrect": false },
+        { "text": "Flocculation", "isCorrect": false },
+        { "text": "Lime-soda ash softening", "isCorrect": false },
+        { "text": "Ion exchange", "isCorrect": true }
+      ],
+      "explanation": "Ion exchange is the principle behind home water softeners. The resin has a higher affinity for the divalent calcium and magnesium ions than for the monovalent sodium ions, so an exchange takes place, releasing sodium into the treated water."
+    }
+  ]
+}

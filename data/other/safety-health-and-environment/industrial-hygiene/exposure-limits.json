@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">To protect workers from the health effects of exposure to hazardous substances, regulatory bodies and health organizations establish exposure limits. These are the maximum concentrations of airborne contaminants to which a worker can be exposed during a specified period without expecting to suffer adverse effects.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. OSHA Permissible Exposure Limits (PELs)</h3>\n<p class=\"mb-4\">PELs are legal limits enforced by the Occupational Safety and Health Administration (OSHA) in the United States.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>PEL-TWA (Time-Weighted Average):</strong> The average exposure over an 8-hour workday. A worker's exposure can be higher than the TWA at times, as long as it is compensated by periods of lower exposure.</li>\n    <li><strong>PEL-STEL (Short-Term Exposure Limit):</strong> A concentration to which workers can be exposed continuously for a short period (usually 15 minutes) without suffering adverse effects.</li>\n    <li><strong>PEL-C (Ceiling):</strong> A concentration that must not be exceeded at any time during the workday.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. ACGIH Threshold Limit Values (TLVs)</h3>\n<p class=\"mb-4\">TLVs are recommendations from the American Conference of Governmental Industrial Hygienists (ACGIH). While not legal standards like PELs, they are widely respected and often more up-to-date. The categories (TLV-TWA, TLV-STEL, TLV-C) are analogous to OSHA's PELs.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An exposure limit that defines the average concentration for a conventional 8-hour workday is called a:",
+      "options": [
+        { "text": "Ceiling Limit (C)", "isCorrect": false },
+        { "text": "Short-Term Exposure Limit (STEL)", "isCorrect": false },
+        { "text": "Time-Weighted Average (TWA)", "isCorrect": true },
+        { "text": "Lethal Dose (LD₅₀)", "isCorrect": false }
+      ],
+      "explanation": "The Time-Weighted Average (TWA) is the standard for acceptable average exposure over a full workday."
+    },
+    {
+      "question": "A chemical's exposure limit is listed as a 'Ceiling'. What does this mean?",
+      "options": [
+        { "text": "It is the average exposure allowed over a 15-minute period.", "isCorrect": false },
+        { "text": "It is the maximum concentration that should never be exceeded, even for an instant.", "isCorrect": true },
+        { "text": "It is a recommended guideline, not a legal limit.", "isCorrect": false },
+        { "text": "It only applies to ceiling-mounted sensors.", "isCorrect": false }
+      ],
+      "explanation": "A Ceiling limit is an absolute maximum that should not be surpassed at any point during work. It protects against substances that can cause immediate irritation or harm."
+    }
+  ]
+}

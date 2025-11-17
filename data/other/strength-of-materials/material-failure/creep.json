@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Creep</strong> is the tendency of a solid material to move slowly or deform permanently under the influence of persistent mechanical stresses. It is a time-dependent and temperature-sensitive phenomenon. Creep is most significant in materials that are subjected to high levels of stress at temperatures close to their melting point.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stages of Creep</h3>\n<p class=\"mb-4\">A typical creep curve (Strain vs. Time at constant stress and temperature) shows three distinct stages:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Primary (Transient) Creep:</strong> The initial stage where the strain rate starts high and decreases over time as the material strain hardens.</li>\n    <li><strong>Secondary (Steady-State) Creep:</strong> A period of nearly constant strain rate. This is the longest stage of the creep life. The slope of this region, the steady-state creep rate, is an important design parameter.</li>\n    <li><strong>Tertiary (Rupture) Creep:</strong> The strain rate accelerates rapidly, leading to necking and eventual fracture of the material.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Importance in Engineering</h3>\n<p class=\"mb-4\">Creep is a major design consideration for components that operate at high temperatures for long periods. Examples include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Turbine blades in jet engines and power plants.</li>\n    <li>High-pressure steam pipes.</li>\n    <li>Nuclear reactor components.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Creep is a failure mechanism characterized by:",
+      "options": [
+        { "text": "Sudden fracture due to a single overload.", "isCorrect": false },
+        { "text": "Failure due to cyclic loading.", "isCorrect": false },
+        { "text": "Time-dependent deformation under a constant load at high temperature.", "isCorrect": true },
+        { "text": "Cracking due to a sudden temperature change.", "isCorrect": false }
+      ],
+      "explanation": "The defining characteristics of creep are that it is time-dependent (occurs over a long period) and happens under a constant load. It is highly sensitive to temperature, becoming a significant factor at 'high' temperatures (which is relative to the material's melting point)."
+    },
+    {
+      "question": "In which stage of creep is the strain rate approximately constant?",
+      "options": [
+        { "text": "Primary Creep", "isCorrect": false },
+        { "text": "Secondary Creep", "isCorrect": true },
+        { "text": "Tertiary Creep", "isCorrect": false },
+        { "text": "The strain rate is never constant.", "isCorrect": false }
+      ],
+      "explanation": "The secondary creep stage, also known as the steady-state creep stage, is characterized by a nearly constant strain rate. This stage represents a balance between the competing processes of strain hardening and recovery (softening) at high temperatures."
+    }
+  ]
+}

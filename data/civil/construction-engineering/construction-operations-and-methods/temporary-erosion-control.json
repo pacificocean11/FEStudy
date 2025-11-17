@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">Construction activities disturb large areas of land, exposing soil to erosion from wind and rain. <strong>Temporary Erosion and Sediment Control (TESC)</strong> involves implementing measures, known as Best Management Practices (BMPs), to prevent soil from eroding and to keep any eroded sediment from leaving the construction site and polluting nearby waterways.</p>\n<p class=\"mb-4\">This is required by law under the EPA's Clean Water Act, often managed through a <strong>Stormwater Pollution Prevention Plan (SWPPP)</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Erosion Control vs. Sediment Control</h3>\n<p class=\"mb-4\">It's important to distinguish between these two strategies:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Erosion Control:</strong> Measures that prevent soil particles from becoming detached in the first place. This is the preferred, proactive approach. Erosion control BMPs are source control measures that protect the soil surface.</li>\n    <li><strong>Sediment Control:</strong> Measures that are designed to capture soil particles after they have already been dislodged and are being transported by stormwater runoff. This is a reactive approach.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Best Management Practices (BMPs)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Erosion Control BMPs:</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Seeding and Mulching:</strong> Applying seed and a protective layer of straw or wood chips to establish vegetation and cover bare soil.</li>\n            <li><strong>Erosion Control Blankets:</strong> Biodegradable blankets made of straw or coconut fiber, rolled out and staked onto slopes to provide immediate protection.</li>\n        </ul>\n    </li>\n    <li><strong>Sediment Control BMPs:</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Silt Fence:</strong> A geotextile fabric fence installed along the downhill perimeter of a site to slow runoff and allow sediment to settle out.</li>\n            <li><strong>Wattles (Fiber Rolls):</strong> Tubes of straw or other material placed on slopes to intercept and slow down sheet flow, trapping sediment.</li>\n            <li><strong>Check Dams:</strong> Small, temporary dams made of rock or wattles constructed across a drainage ditch or swale to slow the velocity of water and allow sediment to settle.</li>\n            <li><strong>Sediment Basin/Trap:</strong> A temporary pond created to detain sediment-laden runoff long enough for the sediment to settle out.</li>\n        </ul>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is an example of an erosion control measure, rather than a sediment control measure?",
+      "options": [
+        { "text": "Silt fence", "isCorrect": false },
+        { "text": "Spreading mulch over bare soil", "isCorrect": true },
+        { "text": "Rock check dam", "isCorrect": false },
+        { "text": "Sediment basin", "isCorrect": false }
+      ],
+      "explanation": "Erosion control aims to prevent soil from detaching in the first place. Spreading mulch is a source control measure that covers and protects the soil surface. Silt fences, check dams, and sediment basins are all sediment control measures designed to trap soil that has already eroded."
+    },
+    {
+      "question": "What is the primary function of a silt fence on a construction site?",
+      "options": [
+        { "text": "To prevent workers from falling into a trench.", "isCorrect": false },
+        { "text": "To stop the wind from blowing soil away.", "isCorrect": false },
+        { "text": "To serve as a temporary site boundary.", "isCorrect": false },
+        { "text": "To trap sediment from stormwater runoff before it leaves the site.", "isCorrect": true }
+      ],
+      "explanation": "A silt fence is a sediment control device. It acts as a filter, allowing water to pass through slowly while trapping and retaining the suspended soil particles, preventing them from contaminating adjacent properties or water bodies."
+    }
+  ]
+}

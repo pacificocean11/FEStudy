@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A <strong>pressure relief valve (PRV)</strong> is a type of safety valve used to protect a pressure vessel, piping system, or other equipment from an overpressure event. It is designed to automatically open at a predetermined pressure (the setpoint) and discharge fluid to relieve the excess pressure, then close again when the pressure returns to a safe level.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Relief Valve:</strong> Typically used for liquids. It opens in proportion to the increase in pressure over the opening pressure.</li>\n    <li><strong>Safety Valve:</strong> Typically used for compressible fluids like steam or gases. It is designed to open rapidly and fully ('pop open') when the set pressure is reached.</li>\n    <li><strong>Pressure Safety Valve (PSV):</strong> A generic term that can refer to either a relief valve or a safety valve.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Operation</h3>\n<p class=\"mb-4\">Most PRVs are spring-loaded. The system pressure acts on a disc, pushing against the force of a compressed spring. When the system pressure force exceeds the spring force, the disc lifts off its seat, allowing fluid to escape. When the pressure drops, the spring forces the disc back onto its seat, resealing the system.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary function of a pressure relief valve on a boiler?",
+      "options": [
+        { "text": "To regulate the operating temperature.", "isCorrect": false },
+        { "text": "To prevent a catastrophic failure due to overpressure.", "isCorrect": true },
+        { "text": "To control the flow rate of steam out of the boiler.", "isCorrect": false },
+        { "text": "To drain water from the boiler.", "isCorrect": false }
+      ],
+      "explanation": "A pressure relief valve is a safety device of last resort. Its sole purpose is to automatically open and vent pressure if the system's pressure exceeds a safe limit, thus preventing a rupture or explosion."
+    },
+    {
+      "question": "A safety valve used for steam service is designed to:",
+      "options": [
+        { "text": "Open slowly and proportionally to the pressure.", "isCorrect": false },
+        { "text": "Open rapidly and fully (pop open) at its set pressure.", "isCorrect": true },
+        { "text": "Close when the pressure exceeds the setpoint.", "isCorrect": false },
+        { "text": "Only be opened manually in an emergency.", "isCorrect": false }
+      ],
+      "explanation": "Safety valves for compressible fluids like steam are designed to pop open quickly to their full lift capacity to vent a large volume of fluid rapidly and bring the system pressure down quickly."
+    }
+  ]
+}

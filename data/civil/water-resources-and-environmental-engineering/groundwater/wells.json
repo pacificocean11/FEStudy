@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pumping Wells</h3>\n<p class=\"mb-4\">A well is a structure created in the ground by digging, driving, or drilling to access groundwater in an aquifer. Pumping water from the well lowers the water level in the aquifer surrounding the well, creating a 'cone of depression'.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Steady-State Flow to a Well</h3>\n<p class=\"mb-4\">When a well has been pumping at a constant rate for a long time, the water levels may stabilize, reaching a steady-state condition where the shape of the cone of depression is no longer changing. The flow rate can be related to the water levels (head) in the aquifer.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Thiem Equation for a Confined Aquifer</h3>\n<p class=\"mb-4\">The Thiem equation describes steady-state, radial flow to a fully penetrating well in a confined aquifer.</p>\n$$ Q = \\frac{2\\pi T (h_2 - h_1)}{\\ln(r_2/r_1)} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q$: Pumping rate (m³/s).</li>\n    <li>$T$: Transmissivity of the aquifer (m²/s). Transmissivity is the hydraulic conductivity ($K$) multiplied by the aquifer thickness ($b$), $T=Kb$.</li>\n    <li>$h_1$ and $h_2$: Hydraulic heads (water level elevations) at two observation wells.</li>\n    <li>$r_1$ and $r_2$: Distances of the two observation wells from the pumping well.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Pumping water from a well in an unconfined aquifer causes the water table to lower in a shape known as a:",
+      "options": [
+        { "text": "Cone of depression", "isCorrect": true },
+        { "text": "Hydraulic jump", "isCorrect": false },
+        { "text": "Drawdown curve", "isCorrect": false },
+        { "text": "Well point", "isCorrect": false }
+      ],
+      "explanation": "As water is pumped from the well, the water level in the surrounding aquifer is drawn down. This drawdown is greatest at the well and decreases with distance, forming a three-dimensional cone shape called the cone of depression."
+    },
+    {
+      "question": "A well in a confined aquifer is pumped at a steady rate. Two observation wells are located at r₁=10m and r₂=100m. The measured heads are h₁=40m and h₂=48m. The aquifer has a transmissivity T=0.005 m²/s. What is the pumping rate Q?",
+      "options": [
+        { "text": "0.027 m³/s", "isCorrect": false },
+        { "text": "0.109 m³/s", "isCorrect": true },
+        { "text": "0.054 m³/s", "isCorrect": false },
+        { "text": "0.218 m³/s", "isCorrect": false }
+      ],
+      "explanation": "Use the Thiem equation: $Q = \\frac{2\\pi T (h_2 - h_1)}{\\ln(r_2/r_1)}$.\n$Q = \\frac{2\\pi (0.005)(48 - 40)}{\\ln(100/10)} = \\frac{2\\pi (0.005)(8)}{\\ln(10)} = \\frac{0.2513}{2.3026} \\approx 0.109$ m³/s."
+    }
+  ]
+}

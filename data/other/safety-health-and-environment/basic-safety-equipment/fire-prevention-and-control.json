@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Fire Tetrahedron</h3>\n<p class=\"mb-4\">For a fire to occur, four elements must be present at the same time. Removing any one of these elements will extinguish the fire.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Fuel:</strong> Any combustible material (solid, liquid, or gas).</li>\n    <li><strong>Heat:</strong> An ignition source to raise the fuel to its ignition temperature.</li>\n    <li><strong>Oxygen:</strong> The oxidizer, usually from the air.</li>\n    <li><strong>Chemical Chain Reaction:</strong> The self-sustaining process of combustion.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Classes of Fire</h3>\n<p class=\"mb-4\">Fires are classified based on the type of fuel that is burning. This is important for selecting the correct type of fire extinguisher.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Class A:</strong> Ordinary combustibles like wood, paper, cloth, and plastics.</li>\n    <li><strong>Class B:</strong> Flammable liquids like gasoline, oil, and grease, and flammable gases.</li>\n    <li><strong>Class C:</strong> Energized electrical equipment.</li>\n    <li><strong>Class D:</strong> Combustible metals like magnesium, titanium, and sodium.</li>\n    <li><strong>Class K:</strong> Cooking oils and fats in commercial cooking equipment.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Types of Fire Extinguishers</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Water (APW):</strong> For Class A fires only. Cools the fuel.</li>\n    <li><strong>Carbon Dioxide (CO₂):</strong> For Class B and C fires. Displaces oxygen and cools the fuel.</li>\n    <li><strong>Dry Chemical (ABC or BC):</strong> Multipurpose (ABC) extinguishers are effective on Class A, B, and C fires. They work by interrupting the chemical chain reaction.</li>\n    <li><strong>Wet Chemical:</strong> For Class K fires. Forms a soap-like barrier to prevent re-ignition.</li>\n    <li><strong>Dry Powder:</strong> For Class D fires only. Smothers the fire.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A fire involving live electrical equipment is classified as what class of fire?",
+      "options": [
+        { "text": "Class A", "isCorrect": false },
+        { "text": "Class B", "isCorrect": false },
+        { "text": "Class C", "isCorrect": true },
+        { "text": "Class D", "isCorrect": false }
+      ],
+      "explanation": "Class C fires are those involving energized electrical equipment. Using a conductive extinguishing agent like water would be extremely dangerous due to the risk of electric shock."
+    },
+    {
+      "question": "Which type of fire extinguisher is the most versatile and can be used on ordinary combustibles, flammable liquids, and electrical fires?",
+      "options": [
+        { "text": "Water", "isCorrect": false },
+        { "text": "Carbon Dioxide (CO₂)", "isCorrect": false },
+        { "text": "ABC Dry Chemical", "isCorrect": true },
+        { "text": "Class D Dry Powder", "isCorrect": false }
+      ],
+      "explanation": "An ABC-rated dry chemical extinguisher is a multipurpose extinguisher effective against the three most common classes of fire (A, B, and C), making it a common choice for general-purpose use."
+    }
+  ]
+}

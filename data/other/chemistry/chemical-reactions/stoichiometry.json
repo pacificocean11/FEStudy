@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Stoichiometry</strong> is the calculation of reactants and products in chemical reactions. It is based on the law of conservation of mass, which states that the mass of the reactants must equal the mass of the products.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Mole and Molar Mass</h3>\n<p class=\"mb-4\">The <strong>mole</strong> is the SI unit for amount of substance. One mole contains Avogadro's number of particles ($6.022 \\times 10^{23}$). The <strong>molar mass</strong> (M) of a substance is the mass of one mole of that substance, typically expressed in grams per mole (g/mol).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Stoichiometric Ratios</h3>\n<p class=\"mb-4\">A balanced chemical equation provides the <strong>mole ratio</strong> of reactants and products. For the reaction $2H_2 + O_2 \\rightarrow 2H_2O$, the mole ratio is 2 moles of hydrogen react with 1 mole of oxygen to produce 2 moles of water.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Limiting Reactant</h3>\n<p class=\"mb-4\">In many reactions, the reactants are not present in exact stoichiometric amounts. The <strong>limiting reactant</strong> (or limiting reagent) is the reactant that is completely consumed first in a chemical reaction. It determines the maximum amount of product that can be formed. The other reactants are said to be in 'excess'.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Given the balanced reaction $2H_2 + O_2 \\rightarrow 2H_2O$, how many moles of water can be formed from 4 moles of hydrogen and 3 moles of oxygen?",
+      "options": [
+        { "text": "2 moles", "isCorrect": false },
+        { "text": "4 moles", "isCorrect": true },
+        { "text": "3 moles", "isCorrect": false },
+        { "text": "6 moles", "isCorrect": false }
+      ],
+      "explanation": "First, identify the limiting reactant. The reaction requires 2 moles of H₂ for every 1 mole of O₂. We have 4 moles of H₂, which would require $4/2 = 2$ moles of O₂. Since we have 3 moles of O₂, oxygen is in excess and hydrogen is the limiting reactant. The amount of product is determined by the limiting reactant. According to the ratio, 2 moles of H₂ produce 2 moles of H₂O. Therefore, 4 moles of H₂ will produce 4 moles of H₂O."
+    }
+  ]
+}

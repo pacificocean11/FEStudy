@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose of Biological Treatment</h3>\n<p class=\"mb-4\">Biological treatment is the cornerstone of secondary wastewater treatment. Its primary purpose is to use microorganisms (bacteria, protozoa, etc.) to remove the soluble organic matter (measured as BOD) and nutrients (nitrogen and phosphorus) from wastewater.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Activated Sludge Process</h3>\n<p class=\"mb-4\">This is the most common biological treatment process. It involves two main components:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Aeration Tank:</strong> Wastewater is mixed with a concentrated culture of microorganisms (the 'activated sludge'). Air is pumped into the tank to provide the oxygen needed for the aerobic bacteria to thrive and consume the organic 'food' (BOD).</li>\n    <li><strong>Secondary Clarifier:</strong> The mixture from the aeration tank (called mixed liquor) flows into a settling tank. Here, the microorganisms clump together to form a sludge that settles to the bottom, leaving clear, treated water (effluent) at the top.</li>\n</ol>\n<p class=\"mb-4\">A portion of the settled sludge, rich in microorganisms, is recycled back to the aeration tank. This is called <strong>Return Activated Sludge (RAS)</strong>. The excess sludge that is generated is removed from the system as <strong>Waste Activated Sludge (WAS)</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Operational Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Food-to-Microorganism (F/M) Ratio:</strong> The ratio of the incoming BOD ('food') to the mass of microorganisms in the aeration tank. It is a key control parameter.</li>\n    <li><strong>Mean Cell Residence Time (MCRT) or Solids Retention Time (SRT):</strong> The average amount of time the microorganisms are kept in the system before being wasted. Longer MCRTs are needed for nitrification (conversion of ammonia to nitrate).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the activated sludge process, what is the primary purpose of the aeration tank?",
+      "options": [
+        { "text": "To allow solids to settle out by gravity.", "isCorrect": false },
+        { "text": "To disinfect the wastewater with chlorine.", "isCorrect": false },
+        { "text": "To provide oxygen for microorganisms to consume organic waste.", "isCorrect": true },
+        { "text": "To physically screen out large objects.", "isCorrect": false }
+      ],
+      "explanation": "The aeration tank is the biological reactor. It provides the ideal environment (mixing and oxygen) for aerobic microorganisms to metabolize the soluble organic pollutants in the wastewater."
+    },
+    {
+      "question": "What is 'Return Activated Sludge' (RAS)?",
+      "options": [
+        { "text": "The final treated effluent from the plant.", "isCorrect": false },
+        { "text": "The excess sludge that is removed and disposed of.", "isCorrect": false },
+        { "text": "The raw sewage entering the plant.", "isCorrect": false },
+        { "text": "A portion of the settled sludge that is recycled back to the aeration tank.", "isCorrect": true }
+      ],
+      "explanation": "RAS is the process of returning a portion of the concentrated microorganisms from the bottom of the secondary clarifier to the beginning of the aeration tank. This ensures that a high concentration of active microorganisms is maintained in the reactor to efficiently treat the incoming wastewater."
+    }
+  ]
+}

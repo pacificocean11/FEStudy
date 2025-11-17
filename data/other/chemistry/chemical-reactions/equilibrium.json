@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Chemical Equilibrium</h3>\n<p class=\"mb-4\"><strong>Chemical equilibrium</strong> is the state in a reversible chemical reaction where the rate of the forward reaction equals the rate of the reverse reaction. At this point, the concentrations of reactants and products remain constant over time.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equilibrium Constant (K)</h3>\n<p class=\"mb-4\">For a general reversible reaction $aA + bB \\rightleftharpoons cC + dD$, the <strong>equilibrium constant ($K_c$)</strong> is a ratio of the product concentrations to the reactant concentrations at equilibrium, with each concentration raised to the power of its stoichiometric coefficient.</p>\n$$ K_c = \\frac{[C]^c [D]^d}{[A]^a [B]^b} $$\n<p class=\"mb-4\">The value of K indicates the extent of the reaction. A large K means the equilibrium lies to the right (products are favored), while a small K means the equilibrium lies to the left (reactants are favored).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Le Chatelier's Principle</h3>\n<p class=\"mb-4\">Le Chatelier's principle states that if a change of condition (such as concentration, temperature, or pressure) is applied to a system in equilibrium, the system will shift in a direction that counteracts the change.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Concentration:</strong> Adding a reactant will shift the equilibrium to the right (to consume the reactant). Removing a product will also shift it to the right.</li>\n    <li><strong>Pressure (for gases):</strong> Increasing the pressure will shift the equilibrium to the side with fewer moles of gas.</li>\n    <li><strong>Temperature:</strong> Increasing the temperature will shift the equilibrium in the direction of the endothermic reaction (the one that absorbs heat).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For the reaction $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$, which is an exothermic process, what will happen if the temperature of the system is increased?",
+      "options": [
+        { "text": "The equilibrium will shift to the right (more products).", "isCorrect": false },
+        { "text": "The equilibrium will shift to the left (more reactants).", "isCorrect": true },
+        { "text": "The equilibrium will not change.", "isCorrect": false },
+        { "text": "The reaction will stop.", "isCorrect": false }
+      ],
+      "explanation": "According to Le Chatelier's principle, if the temperature is increased, the system will try to counteract this by absorbing heat. Since the forward reaction is exothermic (releases heat), the reverse reaction must be endothermic (absorbs heat). Therefore, the equilibrium will shift to the left, favoring the reactants."
+    }
+  ]
+}

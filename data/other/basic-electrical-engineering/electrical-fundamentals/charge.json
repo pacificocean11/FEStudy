@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Electric charge is the fundamental physical property of matter that causes it to experience a force when placed in an electromagnetic field. There are two types of electric charge: positive and negative. Like charges repel each other, and opposite charges attract.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Unit of Charge</h3>\n<p class=\"mb-4\">The SI unit of electric charge is the <strong>coulomb (C)</strong>. It is a very large unit of charge.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Elementary Charge</h3>\n<p class=\"mb-4\">The smallest unit of charge observed in nature is the elementary charge, denoted by $e$. The charge of a single proton is $+e$, and the charge of a single electron is $-e$. All free charges are integer multiples of this elementary charge.</p>\n$$e \\approx 1.602 \\times 10^{-19} \\text{ C}$$\n<h3 class=\"text-lg font-semibold mb-2\">4. Conservation of Charge</h3>\n<p class=\"mb-4\">The principle of conservation of charge states that the net electric charge in an isolated system remains constant. Charge is not created or destroyed; it is only transferred from one object to another.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An object has an excess of $5.0 \\times 10^{20}$ electrons. What is the net charge on the object?",
+      "options": [
+        { "text": "+80.1 C", "isCorrect": false },
+        { "text": "-80.1 C", "isCorrect": true },
+        { "text": "+31.2 C", "isCorrect": false },
+        { "text": "-31.2 C", "isCorrect": false }
+      ],
+      "explanation": "The total charge $Q$ is the number of electrons ($n$) times the charge of a single electron ($-e$).\n$Q = n \\cdot (-e) = (5.0 \\times 10^{20}) \\cdot (-1.602 \\times 10^{-19} \\text{ C})$\n$Q \\approx -80.1 \\text{ C}$."
+    },
+    {
+      "question": "How many electrons would be required to produce a net charge of -1.0 C?",
+      "options": [
+        { "text": "$1.602 \\times 10^{19}$ electrons", "isCorrect": false },
+        { "text": "$6.24 \\times 10^{18}$ electrons", "isCorrect": true },
+        { "text": "$1.0 \\times 10^{19}$ electrons", "isCorrect": false },
+        { "text": "$1.0$ electron", "isCorrect": false }
+      ],
+      "explanation": "The number of electrons ($n$) is the total charge ($Q$) divided by the charge of one electron ($-e$).\n$n = \\frac{Q}{-e} = \\frac{-1.0 \\text{ C}}{-1.602 \\times 10^{-19} \\text{ C/electron}}$\n$n \\approx 6.24 \\times 10^{18}$ electrons."
+    }
+  ]
+}

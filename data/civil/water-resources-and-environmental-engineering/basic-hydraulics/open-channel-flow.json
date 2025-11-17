@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Open-channel flow</strong> is a type of liquid flow within a conduit that has a <strong>free surface</strong>, where the liquid is not in contact with the top of the conduit. The free surface is subject to atmospheric pressure. Examples include flow in rivers, canals, ditches, and partially-filled pipes like storm sewers.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Flow Classification by Froude Number</h3>\n<p class=\"mb-4\">The state of flow in an open channel is characterized by the <strong>Froude Number (Fr)</strong>, a dimensionless number that represents the ratio of inertial forces to gravitational forces.</p>\n$$ Fr = \\frac{v}{\\sqrt{gD_h}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$v$: Average flow velocity.</li>\n    <li>$g$: Acceleration due to gravity.</li>\n    <li>$D_h$: Hydraulic depth, defined as the cross-sectional area of flow ($A$) divided by the top width of the free surface ($T$). $D_h = A/T$.</li>\n</ul>\n<p class=\"mb-4\">The flow is classified based on the Froude number:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Subcritical Flow ($Fr < 1$):</strong> The flow is deep and slow ('tranquil' flow). Gravitational forces are dominant.</li>\n    <li><strong>Critical Flow ($Fr = 1$):</strong> The flow is at a critical state. This corresponds to the minimum specific energy for a given discharge.</li>\n    <li><strong>Supercritical Flow ($Fr > 1$):</strong> The flow is shallow and fast ('rapid' or 'shooting' flow). Inertial forces are dominant.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hydraulic Jump</h3>\n<p class=\"mb-4\">A <strong>hydraulic jump</strong> is a phenomenon that occurs when a supercritical flow abruptly transitions to a subcritical flow. This involves a sudden rise in the water surface, significant turbulence, and a large loss of energy. Hydraulic jumps are often designed to occur at the base of spillways to dissipate the energy of the fast-moving water.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A flow in an open channel is described as being 'tranquil', deep, and slow. Its Froude number would be:",
+      "options": [
+        { "text": "Less than 1 (Subcritical)", "isCorrect": true },
+        { "text": "Equal to 1 (Critical)", "isCorrect": false },
+        { "text": "Greater than 1 (Supercritical)", "isCorrect": false },
+        { "text": "Zero", "isCorrect": false }
+      ],
+      "explanation": "Subcritical flow is characterized by low velocities and large depths. The Froude number for subcritical flow is less than 1."
+    },
+    {
+      "question": "A sudden, turbulent transition from supercritical to subcritical flow in an open channel is known as a:",
+      "options": [
+        { "text": "Hydraulic gradient", "isCorrect": false },
+        { "text": "Hydraulic jump", "isCorrect": true },
+        { "text": "Hydraulic radius", "isCorrect": false },
+        { "text": "Weir", "isCorrect": false }
+      ],
+      "explanation": "A hydraulic jump is a highly energetic and turbulent phenomenon where a shallow, high-velocity flow abruptly slows down and increases in depth. This transition from supercritical to subcritical flow is a key feature of open-channel hydraulics."
+    }
+  ]
+}

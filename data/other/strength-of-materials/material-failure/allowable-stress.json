@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Allowable stress</strong>, also known as the design stress, is the maximum stress that a material or component is designed to withstand during normal service. It is a value determined by the designer to ensure the safety and reliability of a structure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Calculation</h3>\n<p class=\"mb-4\">The allowable stress is calculated by taking a relevant material strength property and dividing it by a factor of safety (F.S.).</p>\n$$ \\sigma_{allow} = \\frac{\\text{Material Strength}}{F.S.} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Basis for Calculation</h3>\n<p class=\"mb-4\">The strength property used depends on the material type and the anticipated mode of failure:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>For <strong>ductile materials</strong> under static loading, the allowable stress is typically based on the <strong>yield strength ($S_y$)</strong>. This ensures the component will not permanently deform.</li>\n    $$ \\sigma_{allow} = \\frac{S_y}{F.S.} $$\n    <li>For <strong>brittle materials</strong> under static loading, the allowable stress is based on the <strong>ultimate tensile strength ($S_{ut}$)</strong>, as these materials do not yield significantly before fracturing.</li>\n    $$ \\sigma_{allow} = \\frac{S_{ut}}{F.S.} $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Design Requirement</h3>\n<p class=\"mb-4\">Once the allowable stress is determined, the fundamental requirement for a safe design is that the actual stress induced in the component under the most severe loading conditions must be less than or equal to the allowable stress.</p>\n$$ \\sigma_{actual} \\le \\sigma_{allow} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A structural steel member has a yield strength of 350 MPa. If a factor of safety of 1.75 is required for the design, what is the allowable tensile stress?",
+      "options": [
+        { "text": "350 MPa", "isCorrect": false },
+        { "text": "612.5 MPa", "isCorrect": false },
+        { "text": "200 MPa", "isCorrect": true },
+        { "text": "1.75 MPa", "isCorrect": false }
+      ],
+      "explanation": "Steel is a ductile material, so the allowable stress is based on the yield strength. $\\sigma_{allow} = S_y / F.S. = 350 \\text{ MPa} / 1.75 = 200$ MPa."
+    },
+    {
+      "question": "The primary purpose of using a factor of safety to determine allowable stress is to:",
+      "options": [
+        { "text": "Account for uncertainties in material properties, loading, and analysis.", "isCorrect": true },
+        { "text": "Make the component heavier.", "isCorrect": false },
+        { "text": "Calculate the exact stress at which the component will fail.", "isCorrect": false },
+        { "text": "Increase the stiffness of the component.", "isCorrect": false }
+      ],
+      "explanation": "The factor of safety provides a margin to account for all the things that are not known with certainty in a design: variations in material strength, potential overloads that were not anticipated, inaccuracies in the stress analysis models, and the consequences of failure."
+    }
+  ]
+}

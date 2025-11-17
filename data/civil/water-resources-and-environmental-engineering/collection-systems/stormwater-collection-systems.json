@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A stormwater collection system, or storm sewer, is a network of inlets, pipes, and outfalls designed to collect and convey rainwater (stormwater) runoff from developed areas to a point of disposal, such as a river, lake, or detention basin.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. System Components</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Inlets:</strong> Structures that collect surface runoff and direct it into the pipe system. Common types are <strong>curb inlets</strong> (openings in the face of the curb) and <strong>grate inlets</strong> (grated openings in the street or low point).</li>\n    <li><strong>Pipes:</strong> Typically large-diameter pipes made of reinforced concrete (RCP) or corrugated metal (CMP).</li>\n    <li><strong>Manholes:</strong> Provide access for inspection and maintenance and are located at junctions, changes in direction, or changes in pipe size.</li>\n    <li><strong>Outfall:</strong> The point where the storm sewer system discharges into a receiving water body.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hydraulic Design</h3>\n<p class=\"mb-4\">The design of a storm sewer system involves two main steps:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Hydrologic Analysis:</strong> Estimating the peak flow rate that the system must carry for a given design storm (e.g., a 10-year storm). The <strong>Rational Method</strong> is a common method for small urban catchments.</li>\n    $$ Q = CIA $$\n    <ul class=\"list-circle list-inside ml-6\">\n        <li>$Q$ = Peak runoff rate (cfs)</li>\n        <li>$C$ = Runoff coefficient (dimensionless, depends on surface type)</li>\n        <li>$I$ = Rainfall intensity (inches/hour) for a given storm duration</li>\n        <li>$A$ = Drainage area (acres)</li>\n    </ul>\n    <li><strong>Hydraulic Analysis:</strong> Sizing the pipes and determining their slopes to carry the design flow. <strong>Manning's Equation</strong> is typically used for this, assuming the pipes are flowing partially full under gravity (open-channel flow).</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Rational Method (Q=CIA) is a simple hydrologic model used to estimate what?",
+      "options": [
+        { "text": "The total volume of rainfall in a year.", "isCorrect": false },
+        { "text": "The peak stormwater runoff rate for a design storm.", "isCorrect": true },
+        { "text": "The velocity of flow in a sewer pipe.", "isCorrect": false },
+        { "text": "The quality of the stormwater runoff.", "isCorrect": false }
+      ],
+      "explanation": "The Rational Method is a widely used technique to calculate the peak discharge (flow rate) from a small drainage area. This peak flow is then used to size the components of the storm sewer system, such as pipes and inlets."
+    },
+    {
+      "question": "What is the primary function of a curb or grate inlet in a street?",
+      "options": [
+        { "text": "To provide access for cleaning the pipes.", "isCorrect": false },
+        { "text": "To filter pollutants from the runoff.", "isCorrect": false },
+        { "text": "To capture surface runoff and direct it into the storm sewer system.", "isCorrect": true },
+        { "text": "To slow down traffic.", "isCorrect": false }
+      ],
+      "explanation": "Inlets are the entry points to the storm sewer system. Their purpose is to efficiently collect the water flowing along the street gutter and channel it into the underground pipes to prevent surface flooding."
+    }
+  ]
+}

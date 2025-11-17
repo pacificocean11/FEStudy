@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. OSHA and Site Safety</h3>\n<p class=\"mb-4\">The Occupational Safety and Health Administration (OSHA) is the primary regulatory agency for workplace safety in the United States. In construction, the general contractor has the primary responsibility for maintaining a safe job site.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. OSHA's 'Focus Four' Hazards</h3>\n<p class=\"mb-4\">OSHA has identified four hazards that account for the vast majority of fatalities in the construction industry. These are the primary focus of safety inspections and training.</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Falls:</strong> The leading cause of death in construction. Fall protection is generally required for work at heights of 6 feet or more.</li>\n    <li><strong>Struck-By:</strong> Accidents involving a worker being struck by a moving object, such as a piece of equipment, a vehicle, or a falling tool.</li>\n    <li><strong>Caught-In/Between:</strong> Injuries that occur when a worker is caught, crushed, squeezed, or compressed between two or more objects. Trench collapses are a major hazard in this category.</li>\n    <li><strong>Electrocution:</strong> Fatalities caused by contact with energized sources, such as overhead power lines or faulty equipment.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Excavation and Trenching Safety</h3>\n<p class=\"mb-4\">Cave-ins are one of the most serious excavation hazards. OSHA requires a protective system for trenches that are <strong>5 feet deep or greater</strong>, unless the excavation is made entirely in stable rock. The main types of protective systems are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Sloping/Benching:</strong> Cutting back the trench wall at an angle inclined to the horizontal. The required angle depends on the soil type.</li>\n    <li><strong>Shoring:</strong> Using supports, like hydraulic or timber shoring, to prevent the movement of soil.</li>\n    <li><strong>Shielding:</strong> Using a 'trench box' or similar shield that workers can be inside, which protects them from a cave-in.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Fall Protection</h3>\n<p class=\"mb-4\">When workers are exposed to a fall of 6 feet or more, a fall protection system must be used. Common systems include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Guardrail Systems:</strong> A barrier erected to prevent workers from falling to a lower level.</li>\n    <li><strong>Personal Fall Arrest Systems (PFAS):</strong> Consist of an anchorage, connectors, and a body harness. They stop a worker during a fall.</li>\n    <li><strong>Safety Net Systems:</strong> Nets installed below a work area to catch falling workers.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is NOT one of OSHA's 'Focus Four' hazards for construction?",
+      "options": [
+        { "text": "Falls", "isCorrect": false },
+        { "text": "Struck-By", "isCorrect": false },
+        { "text": "Ergonomic Injuries", "isCorrect": true },
+        { "text": "Electrocution", "isCorrect": false }
+      ],
+      "explanation": "The 'Focus Four' are Falls, Struck-By, Caught-In/Between, and Electrocution. While ergonomic injuries are a concern, they are not one of the top four causes of fatalities identified by OSHA for special emphasis."
+    },
+    {
+      "question": "According to OSHA standards, a protective system (such as shoring or sloping) is generally required for any trench or excavation that is:",
+      "options": [
+        { "text": "More than 20 feet long", "isCorrect": false },
+        { "text": "Dug in Type C soil", "isCorrect": false },
+        { "text": "5 feet or greater in depth", "isCorrect": true },
+        { "text": "Open for more than 24 hours", "isCorrect": false }
+      ],
+      "explanation": "The threshold for requiring a protective system against cave-ins is a depth of 5 feet, unless the excavation is in stable rock. For depths of 20 feet or greater, the protective system must be designed by a registered professional engineer."
+    }
+  ]
+}

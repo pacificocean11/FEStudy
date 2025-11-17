@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>column</strong> is a structural element that transmits, through compression, the weight of the structure above to other structural elements below. In reinforced concrete, columns are primarily designed to resist axial compression, but they must almost always resist bending moments as well (combined loading).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Reinforcement</h3>\n<p class=\"mb-4\">Concrete columns consist of longitudinal (vertical) steel bars and transverse reinforcement to hold the longitudinal bars in place and provide confinement to the concrete core.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Tied Columns:</strong> The most common type. The longitudinal bars are enclosed by individual, smaller-diameter transverse bars called <strong>ties</strong>, spaced at intervals up the column.</li>\n    <li><strong>Spiral Columns:</strong> The longitudinal bars are enclosed by a continuous, closely spaced spiral reinforcement. Spiral columns provide better ductility and toughness than tied columns because the spiral is very effective at confining the concrete core.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Axial Strength of Short Columns</h3>\n<p class=\"mb-4\">For a short column subjected to a purely concentric axial load (an idealization), the nominal axial strength ($P_n$) is the sum of the strengths of the concrete and the steel.</p>\n$$ P_n = 0.85 f'_c (A_g - A_{st}) + f_y A_{st} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$f'_c$: Specified compressive strength of concrete.</li>\n    <li>$A_g$: Gross area of the column cross-section.</li>\n    <li>$A_{st}$: Total area of longitudinal steel reinforcement.</li>\n    <li>$f_y$: Yield strength of the steel.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Design Strength and Interaction Diagrams</h3>\n<p class=\"mb-4\">Real columns are subject to moments and accidental eccentricities. ACI 318 requires that the design axial strength, $\\phi P_n$, be limited to a maximum value to account for this. The strength reduction factor ($\phi$) is 0.65 for tied columns and 0.75 for spiral columns.</p>\n<p class=\"mb-4\">The full behavior of a column under combined axial load and bending is represented by a <strong>P-M interaction diagram</strong>. This diagram plots the allowable combinations of axial load ($P_n$) and moment ($M_n$) that the column can carry. For a given design, the point representing the factored loads ($P_u, M_u$) must fall within the boundary of the interaction diagram.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In reinforced concrete column design, which type of transverse reinforcement provides better ductility and confinement for the concrete core?",
+      "options": [
+        { "text": "Ties", "isCorrect": false },
+        { "text": "Spirals", "isCorrect": true },
+        { "text": "Stirrups", "isCorrect": false },
+        { "text": "Longitudinal bars", "isCorrect": false }
+      ],
+      "explanation": "A continuous spiral provides much better confinement to the concrete core than discrete ties. If the outer concrete cover spalls off under extreme load, the spiral continues to hold the core together, allowing the column to sustain a large deformation before failing. This increased ductility is why spiral columns have a higher strength reduction factor (0.75) than tied columns (0.65)."
+    },
+    {
+      "question": "A graphical tool used to show the allowable combinations of axial load and bending moment for a given column cross-section is called a(n):",
+      "options": [
+        { "text": "Shear and moment diagram", "isCorrect": false },
+        { "text": "Stress-strain curve", "isCorrect": false },
+        { "text": "P-M interaction diagram", "isCorrect": true },
+        { "text": "S-N curve", "isCorrect": false }
+      ],
+      "explanation": "A P-M (or Pu-Mu) interaction diagram is a fundamental tool in column design. It defines the failure envelope for a column under combined axial load (P) and moment (M). Any combination of factored loads that falls inside the diagram is considered safe."
+    }
+  ]
+}

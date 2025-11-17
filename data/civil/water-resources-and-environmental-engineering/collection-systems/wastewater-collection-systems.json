@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A wastewater collection system, or sanitary sewer system, is a network of pipes, manholes, and lift stations that convey sewage from homes, businesses, and industries to a wastewater treatment plant.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Gravity Sewers</h3>\n<p class=\"mb-4\">The vast majority of collection systems are designed as <strong>gravity sewers</strong>. They are designed to flow partially full, like an open channel, and rely on a downward slope to transport the wastewater.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Self-Cleansing Velocity:</strong> A critical design parameter is the flow velocity. The sewer must be sloped to achieve a minimum velocity that will keep solid particles suspended and prevent them from settling in the pipe. A widely used minimum velocity is <strong>2.0 feet per second (ft/s)</strong> or approximately 0.6 m/s.</li>\n    <li><strong>Manning's Equation:</strong> This equation is used to calculate the flow velocity in a gravity pipe based on its size, slope, and roughness.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. System Components</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pipes:</strong> The conduits that carry the wastewater. They are typically made of materials like PVC, vitrified clay, or concrete.</li>\n    <li><strong>Manholes:</strong> Provide access to the sewer line for inspection, cleaning, and maintenance. They are also located where there is a change in pipe size, direction, or slope.</li>\n    <li><strong>Laterals:</strong> Smaller-diameter pipes that connect individual buildings to the public sewer main in the street.</li>\n    <li><strong>Lift (Pump) Stations:</strong> In low-lying areas where gravity flow is not possible, lift stations are used to pump the wastewater up to a higher elevation so it can continue to flow by gravity.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the generally accepted minimum self-cleansing velocity for a sanitary sewer to prevent the deposition of solids?",
+      "options": [
+        { "text": "1.0 ft/s", "isCorrect": false },
+        { "text": "2.0 ft/s", "isCorrect": true },
+        { "text": "5.0 ft/s", "isCorrect": false },
+        { "text": "0.5 ft/s", "isCorrect": false }
+      ],
+      "explanation": "A minimum velocity of 2.0 ft/s (0.6 m/s) when the pipe is flowing full or partially full is the standard design criterion to ensure that grit and other solid particles are kept in suspension and transported through the system, preventing blockages."
+    },
+    {
+      "question": "In a wastewater collection system, what is the primary purpose of a manhole?",
+      "options": [
+        { "text": "To treat the wastewater.", "isCorrect": false },
+        { "text": "To store excess flow during storms.", "isCorrect": false },
+        { "text": "To provide access for inspection and maintenance.", "isCorrect": true },
+        { "text": "To add chemicals to the wastewater.", "isCorrect": false }
+      ],
+      "explanation": "Manholes are the primary access points to the sewer system. They are strategically located to allow workers to inspect the condition of the pipes, perform cleaning (like jetting or rodding), and conduct repairs."
+    }
+  ]
+}

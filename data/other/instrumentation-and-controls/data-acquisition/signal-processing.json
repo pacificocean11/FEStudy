@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Signal processing</strong> is the manipulation and analysis of signals to perform useful operations. After a signal has been acquired and digitized by a DAQ system, signal processing techniques are used to extract meaningful information, remove noise, and prepare the data for display or control purposes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Techniques</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Digital Filtering:</strong> Applying filtering algorithms (low-pass, high-pass, etc.) to the digitized data in software. This is often more flexible than using analog hardware filters.</li>\n    <li><strong>Averaging:</strong> Taking the average of multiple readings to reduce the effects of random noise.</li>\n    <li><strong>Fourier Transform (FFT):</strong> The Fast Fourier Transform (FFT) is an algorithm that converts a signal from the time domain (amplitude vs. time) to the frequency domain (amplitude vs. frequency). This is extremely useful for analyzing vibrations, sounds, and other periodic signals to identify their constituent frequencies.</li>\n    <li><strong>Linearization:</strong> Many sensors (like thermocouples) have a non-linear response. Signal processing is used to apply a calibration equation or a lookup table to convert the raw sensor reading into an accurate, linear measurement.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer wants to analyze the vibration of a motor to determine the frequencies at which it is vibrating most strongly. Which signal processing technique is most appropriate for this task?",
+      "options": [
+        { "text": "Signal averaging", "isCorrect": false },
+        { "text": "Low-pass filtering", "isCorrect": false },
+        { "text": "Fast Fourier Transform (FFT)", "isCorrect": true },
+        { "text": "Linearization", "isCorrect": false }
+      ],
+      "explanation": "The FFT is the standard tool for converting a time-domain signal (like a vibration signal from an accelerometer) into the frequency domain. The resulting frequency spectrum will show peaks at the dominant frequencies of vibration."
+    }
+  ]
+}

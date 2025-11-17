@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>subgrade</strong> is the in-situ, native soil that forms the foundation upon which the pavement structure (subbase, base, and surface layers) is built. The performance of the entire pavement system is critically dependent on the strength and stability of the subgrade.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Subgrade Characterization</h3>\n<p class=\"mb-4\">The strength of the subgrade determines its ability to support the loads transmitted through the pavement. Weaker subgrades require thicker and more robust pavement structures. The strength is typically characterized by one of two tests:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>California Bearing Ratio (CBR):</strong> An empirical, penetration-based test that compares the strength of the soil to that of a standard crushed rock. A higher CBR value indicates a stronger subgrade. For example, a CBR of 3 represents a very weak clay, while a CBR of 80 represents a high-quality crushed stone.</li>\n    <li><strong>Resilient Modulus (Mr):</strong> A more fundamental property that measures the stiffness of the soil under repeated traffic-like loading. It is defined as the applied stress divided by the recoverable strain. Mr is a required input for modern Mechanistic-Empirical pavement design.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Subgrade Improvement</h3>\n<p class=\"mb-4\">If the in-situ subgrade soil is too weak to support the pavement, it must be improved. Common methods include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Compaction:</strong> The most basic method, which increases the density and strength of the soil by removing air voids.</li>\n    <li><strong>Stabilization:</strong> Mixing additives into the soil to improve its properties. Common additives include lime for clayey soils and cement or fly ash for a wider range of soils.</li>\n    <li><strong>Replacement (Undercutting):</strong> Removing a layer of weak subgrade soil and replacing it with a stronger, imported fill material (borrow).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The strength of the native soil that forms the foundation of a road is measured by a property such as CBR or Resilient Modulus. This soil layer is known as the:",
+      "options": [
+        { "text": "Base course", "isCorrect": false },
+        { "text": "Subbase course", "isCorrect": false },
+        { "text": "Surface course", "isCorrect": false },
+        { "text": "Subgrade", "isCorrect": true }
+      ],
+      "explanation": "The subgrade is the prepared, natural ground on which the pavement structure is built. Its strength is one of the most important factors in pavement design."
+    },
+    {
+      "question": "Holding all other factors constant, if the California Bearing Ratio (CBR) of a subgrade soil decreases, the required pavement structural thickness will:",
+      "options": [
+        { "text": "Increase", "isCorrect": true },
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Remain the same", "isCorrect": false },
+        { "text": "Become zero", "isCorrect": false }
+      ],
+      "explanation": "A lower CBR value indicates a weaker subgrade. A weaker subgrade can withstand less stress, so a thicker pavement structure is required to spread the traffic loads over a larger area and reduce the stress transmitted to the subgrade."
+    }
+  ]
+}

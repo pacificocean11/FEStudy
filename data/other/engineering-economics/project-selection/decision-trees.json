@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>decision tree</strong> is a graphical tool used to support decision-making under conditions of uncertainty. It maps out a series of decisions and their possible consequences (outcomes), including chance events, resource costs, and utility.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Components of a Decision Tree</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Decision Nodes:</strong> Represented by squares (□). These are points where a decision maker has a choice to make.</li>\n    <li><strong>Chance Nodes:</strong> Represented by circles (○). These are points where there are multiple possible outcomes, each with an associated probability. The probabilities for all branches leaving a chance node must sum to 1.</li>\n    <li><strong>Branches:</strong> Lines that connect the nodes. Branches from a decision node represent the different choices, while branches from a chance node represent the different possible outcomes.</li>\n    <li><strong>End Nodes (Leaves):</strong> Represent the final outcome or payoff of a particular path.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Solving a Decision Tree</h3>\n<p class=\"mb-4\">Decision trees are solved by working backward from the end nodes to the root (from right to left).</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>At each chance node, calculate the <strong>Expected Monetary Value (EMV)</strong> by multiplying the value of each outcome by its probability and summing the results. Write the EMV at the chance node.</li>\n    <li>At each decision node, compare the EMVs of the different choices. Select the choice with the highest EMV (if maximizing profit) or lowest EMV (if minimizing cost). Prune (cross off) the branches that are not chosen.</li>\n    <li>Continue working backward until the first decision node is reached. The path that has not been pruned is the optimal decision strategy.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a decision tree, what does a square (□) represent?",
+      "options": [
+        { "text": "A point where there are uncertain outcomes.", "isCorrect": false },
+        { "text": "A point where a choice must be made.", "isCorrect": true },
+        { "text": "The final payoff of a decision path.", "isCorrect": false },
+        { "text": "The probability of an event.", "isCorrect": false }
+      ],
+      "explanation": "A square node is a decision node, representing a point in the process where the decision maker has control and must choose between one or more alternatives."
+    },
+    {
+      "question": "A chance node has two possible outcomes: a 60% probability of a $100,000 profit and a 40% probability of a $20,000 loss. What is the Expected Monetary Value (EMV) of this chance node?",
+      "options": [
+        { "text": "$68,000", "isCorrect": false },
+        { "text": "$80,000", "isCorrect": false },
+        { "text": "$52,000", "isCorrect": true },
+        { "text": "$60,000", "isCorrect": false }
+      ],
+      "explanation": "The EMV is the weighted average of the outcomes. EMV = (Probability of Outcome 1 × Value of Outcome 1) + (Probability of Outcome 2 × Value of Outcome 2). EMV = (0.60 × $100,000) + (0.40 × -$20,000) = $60,000 - $8,000 = $52,000."
+    }
+  ]
+}

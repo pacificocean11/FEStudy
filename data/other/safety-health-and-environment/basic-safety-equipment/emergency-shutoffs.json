@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An <strong>emergency stop</strong> (or E-stop) is a safety mechanism used to shut off machinery in an emergency, when it cannot be shut down in the usual manner. The purpose of an E-stop is to avert harm to a person, to limit damage to a machine, or to stop a process that has become unsafe.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Design and Characteristics</h3>\n<p class=\"mb-4\">According to standards like ISO 13850, emergency stop devices must be:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Highly Visible and Accessible:</strong> They are almost always red, often with a yellow background, and placed in easily accessible locations.</li>\n    <li><strong>Direct-Opening Action:</strong> The contacts are designed to be forced open mechanically, ensuring the circuit is broken even if the contacts have welded shut.</li>\n    <li><strong>Latching:</strong> Once actuated, the E-stop must remain in the 'off' position. The machine cannot be restarted until the E-stop is manually reset (e.g., by twisting or pulling the button).</li>\n    <li><strong>Unambiguous:</strong> The function of the E-stop must be clear. It should not be used for routine stopping of the machine.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Emergency Shutdown (ESD) Systems</h3>\n<p class=\"mb-4\">In larger process industries (like chemical plants or oil refineries), a more complex <strong>Emergency Shutdown (ESD) System</strong> is used. This is a safety instrumented system that can shut down an entire process or plant in a safe and orderly manner if an unsafe condition is detected. It goes beyond a single machine and can involve closing valves, shutting down pumps, and de-pressurizing vessels automatically.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is a key feature of an emergency stop button?",
+      "options": [
+        { "text": "It is blue and blends in with the control panel.", "isCorrect": false },
+        { "text": "It automatically resets after being pushed.", "isCorrect": false },
+        { "text": "It must be manually reset before the machine can be restarted.", "isCorrect": true },
+        { "text": "It is used for the normal stopping of the machine.", "isCorrect": false }
+      ],
+      "explanation": "A critical safety feature of an E-stop is that it latches in the off position. This prevents an accidental restart of the machine before the cause of the emergency has been resolved and the E-stop has been consciously reset."
+    }
+  ]
+}

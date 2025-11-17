@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Aquifers</h3>\n<p class=\"mb-4\">An aquifer is an underground layer of water-bearing permeable rock, rock fractures, or unconsolidated materials (gravel, sand, or silt). Groundwater can be extracted using a water well.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Unconfined Aquifer:</strong> An aquifer whose upper water surface (water table) is at atmospheric pressure, and thus is able to rise and fall.</li>\n    <li><strong>Confined Aquifer:</strong> An aquifer that is overlain by a relatively impermeable layer of rock or clay (an aquitard or confining layer). The water in a confined aquifer is under pressure.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Darcy's Law</h3>\n<p class=\"mb-4\">Groundwater flow is governed by Darcy's Law, which states that the discharge rate ($Q$) is proportional to the hydraulic gradient ($i$) and the hydraulic conductivity ($K$).</p>\n$$ Q = KiA $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q$: Volumetric flow rate (m³/s).</li>\n    <li>$K$: Hydraulic conductivity, a property of the soil that describes the ease with which water can move through it (m/s).</li>\n    <li>$i$: Hydraulic gradient, the slope of the water table or potentiometric surface. It is dimensionless ($i = \\Delta h / L$).</li>\n    <li>$A$: The cross-sectional area through which the water flows (m²).</li>\n</ul>\n<p class=\"mb-4\">The average flow velocity, or Darcy velocity, is $v = Q/A = Ki$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An aquifer in which the water is under pressure between two impermeable layers is called:",
+      "options": [
+        { "text": "An unconfined aquifer", "isCorrect": false },
+        { "text": "A confined aquifer", "isCorrect": true },
+        { "text": "An aquitard", "isCorrect": false },
+        { "text": "A water table", "isCorrect": false }
+      ],
+      "explanation": "A confined aquifer is 'sandwiched' between two confining layers (aquitards), which causes the water within it to be under pressure. When a well penetrates a confined aquifer, the water level will rise above the top of the aquifer."
+    },
+    {
+      "question": "The water level is measured in two observation wells 200 m apart. The head is 55 m in one well and 50 m in the other. The aquifer has a hydraulic conductivity of 10 m/day. What is the Darcy velocity of the groundwater flow between the wells?",
+      "options": [
+        { "text": "0.25 m/day", "isCorrect": true },
+        { "text": "2.5 m/day", "isCorrect": false },
+        { "text": "0.025 m/day", "isCorrect": false },
+        { "text": "5 m/day", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the hydraulic gradient: $i = \\Delta h / L = (55 \\text{ m} - 50 \\text{ m}) / 200 \\text{ m} = 5 / 200 = 0.025$. Then, use Darcy's Law for velocity: $v = Ki = (10 \\text{ m/day})(0.025) = 0.25$ m/day."
+    }
+  ]
+}

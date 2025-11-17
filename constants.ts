@@ -93,17 +93,73 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '10. Water Resources and Environmental Engineering',
       topics: [
-        { name: 'A. Basic hydrology', subtopics: [{ name: 'A. Basic hydrology', content: null }] },
-        { name: 'B. Basic hydraulics', subtopics: [{ name: 'B. Basic hydraulics', content: null }] },
+        {
+          name: 'A. Basic hydrology',
+          subtopics: [
+            { name: 'Infiltration', content: null },
+            { name: 'Rainfall', content: null },
+            { name: 'Runoff', content: null },
+            { name: 'Watersheds', content: null },
+          ],
+        },
+        {
+          name: 'B. Basic hydraulics',
+          subtopics: [
+            { name: 'Manning Equation', content: null },
+            { name: 'Bernoulli Theorem', content: null },
+            { name: 'Open-Channel Flow', content: null },
+          ],
+        },
         { name: 'C. Pumps', subtopics: [{ name: 'C. Pumps', content: null }] },
         { name: 'D. Water distribution systems', subtopics: [{ name: 'D. Water distribution systems', content: null }] },
         { name: 'E. Flood control', subtopics: [{ name: 'E. Flood control', content: null }] },
-        { name: 'F. Stormwater', subtopics: [{ name: 'F. Stormwater', content: null }] },
-        { name: 'G. Collection systems', subtopics: [{ name: 'G. Collection systems', content: null }] },
-        { name: 'H. Groundwater', subtopics: [{ name: 'H. Groundwater', content: null }] },
-        { name: 'I. Water quality', subtopics: [{ name: 'I. Water quality', content: null }] },
-        { name: 'J. Testing and standards', subtopics: [{ name: 'J. Testing and standards', content: null }] },
-        { name: 'K. Water and wastewater treatment', subtopics: [{ name: 'K. Water and wastewater treatment', content: null }] },
+        {
+          name: 'F. Stormwater',
+          subtopics: [
+            { name: 'Detention', content: null },
+            { name: 'Routing', content: null },
+            { name: 'Quality', content: null },
+          ],
+        },
+        {
+          name: 'G. Collection systems',
+          subtopics: [
+            { name: 'Wastewater Collection Systems', content: null },
+            { name: 'Stormwater Collection Systems', content: null },
+          ],
+        },
+        {
+          name: 'H. Groundwater',
+          subtopics: [
+            { name: 'Flow', content: null },
+            { name: 'Wells', content: null },
+            { name: 'Drawdown', content: null },
+          ],
+        },
+        {
+          name: 'I. Water quality',
+          subtopics: [
+            { name: 'Ground and Surface', content: null },
+            { name: 'Basic Water Chemistry', content: null },
+          ],
+        },
+        {
+          name: 'J. Testing and standards',
+          subtopics: [
+            { name: 'Water', content: null },
+            { name: 'Wastewater', content: null },
+            { name: 'Air', content: null },
+            { name: 'Noise', content: null },
+          ],
+        },
+        {
+          name: 'K. Water and wastewater treatment',
+          subtopics: [
+            { name: 'Biological Processes', content: null },
+            { name: 'Softening', content: null },
+            { name: 'Drinking Water Treatment', content: null },
+          ],
+        },
       ],
     },
     {
@@ -116,7 +172,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'E. Elementary statically indeterminate structures', subtopics: [{ name: 'E. Elementary statically indeterminate structures', content: null }] },
         { name: 'F. Loads, load combinations, and load paths', subtopics: [{ name: 'F. Loads, load combinations, and load paths', content: null }] },
         { name: 'G. Design of steel components', subtopics: [{ name: 'G. Design of steel components', content: null }] },
-        { name: 'H. Design of reinforced concrete components', subtopics: [{ name: 'H. Design of reinforced concrete components', content: null }] },
+        {
+          name: 'H. Design of reinforced concrete components',
+          subtopics: [
+            { name: 'Code and Design Philosophies', content: null },
+            { name: 'Beams', content: null },
+            { name: 'Columns', content: null },
+          ],
+        },
       ],
     },
     {
@@ -131,7 +194,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'G. Bearing capacity', subtopics: [{ name: 'G. Bearing capacity', content: null }] },
         { name: 'H. Foundation types', subtopics: [{ name: 'H. Foundation types', content: null }] },
         { name: 'I. Consolidation and differential settlement', subtopics: [{ name: 'I. Consolidation and differential settlement', content: null }] },
-        { name: 'J. Slope stability', subtopics: [{ name: 'J. Slope stability', content: null }] },
+        {
+          name: 'J. Slope stability',
+          subtopics: [
+            { name: 'Fills', content: null },
+            { name: 'Embankments', content: null },
+            { name: 'Cuts', content: null },
+            { name: 'Dams', content: null },
+          ],
+        },
         { name: 'K. Soil stabilization', subtopics: [{ name: 'K. Soil stabilization', content: null }] },
       ],
     },
@@ -139,7 +210,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       name: '13. Transportation Engineering',
       topics: [
         { name: 'A. Geometric design', subtopics: [{ name: 'A. Geometric design', content: null }] },
-        { name: 'B. Pavement system design', subtopics: [{ name: 'B. Pavement system design', content: null }] },
+        {
+          name: 'B. Pavement system design',
+          subtopics: [
+            { name: 'Thickness', content: null },
+            { name: 'Subgrade', content: null },
+            { name: 'Drainage', content: null },
+            { name: 'Rehabilitation', content: null },
+          ],
+        },
         { name: 'C. Traffic capacity and flow theory', subtopics: [{ name: 'C. Traffic capacity and flow theory', content: null }] },
         { name: 'D. Traffic control devices', subtopics: [{ name: 'D. Traffic control devices', content: null }] },
         { name: 'E. Transportation planning', subtopics: [{ name: 'E. Transportation planning', content: null }] },
@@ -148,9 +227,33 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '14. Construction Engineering',
       topics: [
-        { name: 'A. Project administration', subtopics: [{ name: 'A. Project administration', content: null }] },
-        { name: 'B. Construction operations and methods', subtopics: [{ name: 'B. Construction operations and methods', content: null }] },
-        { name: 'C. Project controls', subtopics: [{ name: 'C. Project controls', content: null }] },
+        {
+          name: 'A. Project Administration',
+          subtopics: [
+            { name: 'Project Documents', content: null },
+            { name: 'Management', content: null },
+            { name: 'Procurement', content: null },
+            { name: 'Project Delivery Methods', content: null },
+          ],
+        },
+        {
+          name: 'B. Construction operations and methods',
+          subtopics: [
+            { name: 'Safety', content: null },
+            { name: 'Equipment', content: null },
+            { name: 'Productivity Analysis', content: null },
+            { name: 'Temporary Erosion Control', content: null },
+          ],
+        },
+        {
+          name: 'C. Project Controls',
+          subtopics: [
+            { name: 'Earned Value', content: null },
+            { name: 'Scheduling', content: null },
+            { name: 'Allocation of Resources', content: null },
+            { name: 'Activity Relationships', content: null },
+          ],
+        },
         { name: 'D. Construction estimating', subtopics: [{ name: 'D. Construction estimating', content: null }] },
         { name: 'E. Interpretation of engineering drawings', subtopics: [{ name: 'E. Interpretation of engineering drawings', content: null }] },
       ],
@@ -330,11 +433,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { 
           name: 'B. DC circuit analysis', 
           subtopics: [
-            { name: "Ohm's Law", content: null },
-            { name: "Kirchhoff's Laws", content: null },
             { name: 'Series Circuits', content: null },
             { name: 'Parallel Circuits', content: null }
           ] 
+        },
+        {
+          name: 'Electrical Circuits',
+          subtopics: [
+            { name: "Ohm's Law", content: null },
+            { name: "Kirchhoff's Laws", content: null },
+          ]
         },
         { 
           name: 'C. AC circuit analysis', 
@@ -841,11 +949,278 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
   ],
   Other: [
     {
-      name: '1. General Engineering',
+      name: '1. Mathematics',
       topics: [
-        { name: 'A. Mathematics', subtopics: [{ name: 'A. Mathematics', content: null }] },
-        { name: 'B. Statics', subtopics: [{ name: 'B. Statics', content: null }] },
-        { name: 'C. Dynamics', subtopics: [{ name: 'C. Dynamics', content: null }] },
+        { name: 'A. Analytic geometry and trigonometry', subtopics: [{ name: 'A. Analytic geometry and trigonometry', content: null }] },
+        { name: 'B. Differential equations', subtopics: [{ name: 'B. Differential equations', content: null }] },
+        { name: 'C. Numerical methods', subtopics: [{ name: 'C. Numerical methods', content: null }] },
+        { name: 'D. Linear algebra', subtopics: [{ name: 'D. Linear algebra', content: null }] },
+        { name: 'E. Single-variable calculus', subtopics: [{ name: 'E. Single-variable calculus', content: null }] },
+      ],
+    },
+    {
+      name: '2. Probability and Statistics',
+      topics: [
+        { name: 'A. Estimation', subtopics: [{ name: 'A. Estimation', content: null }] },
+        { name: 'B. Expected value and expected error in decision making', subtopics: [{ name: 'B. Expected value and expected error in decision making', content: null }] },
+        { name: 'C. Sample distributions and sizes', subtopics: [{ name: 'C. Sample distributions and sizes', content: null }] },
+        { name: 'D. Goodness of fit', subtopics: [{ name: 'D. Goodness of fit', content: null }] },
+      ],
+    },
+    {
+      name: '3. Chemistry',
+      topics: [
+        { 
+          name: 'A. Oxidation and reduction', 
+          subtopics: [
+            { name: 'Oxidation and Reduction Reactions', content: null },
+            { name: 'Corrosion Control', content: null }
+          ] 
+        },
+        { 
+          name: 'B. Acids and bases', 
+          subtopics: [
+            { name: 'pH', content: null },
+            { name: 'Buffers', content: null }
+          ] 
+        },
+        { 
+          name: 'C. Chemical reactions', 
+          subtopics: [
+            { name: 'Stoichiometry', content: null },
+            { name: 'Equilibrium', content: null },
+            { name: 'Bioconversion', content: null }
+          ] 
+        },
+      ],
+    },
+    {
+      name: '4. Instrumentation and Controls',
+      topics: [
+        { name: 'A. Sensors', subtopics: [{ name: 'A. Sensors', content: null }] },
+        { 
+          name: 'B. Data acquisition', 
+          subtopics: [
+            { name: 'Logging', content: null },
+            { name: 'Sampling Rate', content: null },
+            { name: 'Sampling Range', content: null },
+            { name: 'Filtering', content: null },
+            { name: 'Amplification', content: null },
+            { name: 'Signal Interface', content: null },
+            { name: 'Signal Processing', content: null },
+            { name: 'Analog to Digital Converters', content: null },
+            { name: 'Digital to Analog Converters', content: null },
+            { name: 'Digital Data Acquisition', content: null }
+          ] 
+        },
+        { name: 'C. Logic diagrams', subtopics: [{ name: 'C. Logic diagrams', content: null }] },
+      ],
+    },
+    {
+      name: '5. Engineering Ethics and Societal Impacts',
+      topics: [
+        { name: 'A. Codes of ethics', subtopics: [{ name: 'A. Codes of ethics', content: null }] },
+        { name: 'B. Public protection issues', subtopics: [{ name: 'B. Public protection issues', content: null }] },
+        { 
+          name: 'C. Societal impacts', 
+          subtopics: [
+            { name: 'Economic', content: null },
+            { name: 'Sustainability', content: null },
+            { name: 'Life-Cycle Analysis', content: null },
+            { name: 'Environmental', content: null },
+            { name: 'Public Safety', content: null }
+          ] 
+        },
+      ],
+    },
+    {
+      name: '6. Safety, Health, and Environment',
+      topics: [
+        { 
+          name: 'A. Industrial hygiene', 
+          subtopics: [
+            { name: 'Carcinogens', content: null },
+            { name: 'Toxicology', content: null },
+            { name: 'Exposure Limits', content: null },
+            { name: 'Radiation Exposure', content: null },
+            { name: 'Biohazards', content: null },
+            { name: 'Half-Life', content: null }
+          ] 
+        },
+        { 
+          name: 'B. Basic safety equipment', 
+          subtopics: [
+            { name: 'Pressure-Relief Valves', content: null },
+            { name: 'Emergency Shutoffs', content: null },
+            { name: 'Fire Prevention and Control', content: null },
+            { name: 'Personal Protective Equipment', content: null }
+          ] 
+        },
+        { name: 'C. Gas detection and monitoring', subtopics: [{ name: 'C. Gas detection and monitoring', content: null }] },
+        { name: 'D. Electrical safety', subtopics: [{ name: 'D. Electrical safety', content: null }] },
+        { name: 'E. Confined space entry and ventilation rates', subtopics: [{ name: 'E. Confined space entry and ventilation rates', content: null }] },
+        { 
+          name: 'F. Hazard communications', 
+          subtopics: [
+            { name: 'SDS', content: null },
+            { name: 'Proper Labeling', content: null },
+            { name: 'Concentrations', content: null },
+            { name: 'Fire Ratings', content: null },
+            { name: 'Safety Equipment', content: null }
+          ] 
+        },
+      ],
+    },
+    {
+      name: '7. Engineering Economics',
+      topics: [
+        { name: 'A. Time value of money', subtopics: [{ name: 'A. Time value of money', content: null }] },
+        { name: 'B. Cost analysis', subtopics: [{ name: 'B. Cost analysis', content: null }] },
+        { 
+          name: 'C. Economic analyses', 
+          subtopics: [
+            { name: 'Break-Even Analysis', content: null },
+            { name: 'Benefit-Cost Analysis', content: null },
+            { name: 'Optimal Economic Life', content: null }
+          ] 
+        },
+        { 
+          name: 'E. Project selection', 
+          subtopics: [
+            { name: 'Comparison of Projects with Unequal Lives', content: null },
+            { name: 'Lease/Buy/Make', content: null },
+            { name: 'Depreciation', content: null },
+            { name: 'Discounted Cash Flow', content: null },
+            { name: 'Decision Trees', content: null }
+          ]
+        },
+      ],
+    },
+    {
+      name: '8. Statics',
+      topics: [
+        { name: 'A. Vector analysis', subtopics: [{ name: 'A. Vector analysis', content: null }] },
+        { name: 'B. Force systems', subtopics: [{ name: 'B. Force systems', content: null }] },
+        { name: 'C. Force couple systems', subtopics: [{ name: 'C. Force couple systems', content: null }] },
+        { name: 'D. Equilibrium of rigid bodies', subtopics: [{ name: 'D. Equilibrium of rigid bodies', content: null }] },
+        { name: 'E. Internal forces in rigid bodies', subtopics: [{ name: 'E. Internal forces in rigid bodies', content: null }] },
+        { name: 'F. Area properties', subtopics: [{ name: 'F. Area properties', content: null }] },
+        { name: 'G. Static friction', subtopics: [{ name: 'G. Static friction', content: null }] },
+        { name: 'H. Free-body diagrams', subtopics: [{ name: 'H. Free-body diagrams', content: null }] },
+        { name: 'I. Weight and mass computations', subtopics: [{ name: 'I. Weight and mass computations', content: null }] },
+      ],
+    },
+    {
+      name: '9. Dynamics',
+      topics: [
+        { name: 'A. Particle and rigid-body kinematics', subtopics: [{ name: 'A. Particle and rigid-body kinematics', content: null }] },
+        { name: 'B. Linear motion', subtopics: [{ name: 'B. Linear motion', content: null }] },
+        { name: 'C. Angular motion', subtopics: [{ name: 'C. Angular motion', content: null }] },
+        { name: 'D. Mass moment of inertia', subtopics: [{ name: 'D. Mass moment of inertia', content: null }] },
+        { name: 'E. Impulse and momentum', subtopics: [{ name: 'E. Impulse and momentum', content: null }] },
+        { name: 'F. Work, energy, and power', subtopics: [{ name: 'F. Work, energy, and power', content: null }] },
+        { name: 'G. Dynamic friction', subtopics: [{ name: 'G. Dynamic friction', content: null }] },
+        { name: 'H. Vibrations', subtopics: [{ name: 'H. Vibrations', content: null }] },
+      ],
+    },
+    {
+      name: '10. Strength of Materials',
+      topics: [
+        { name: 'A. Stress types', subtopics: [{ name: 'A. Stress types', content: null }] },
+        { name: 'B. Combined loading–principle of superposition', subtopics: [{ name: 'B. Combined loading–principle of superposition', content: null }] },
+        { name: 'C. Stress and strain caused by axial loads, bending loads, torsion, or transverse shear forces', subtopics: [{ name: 'C. Stress and strain caused by axial loads, bending loads, torsion, or transverse shear forces', content: null }] },
+        { name: 'D. Shear and moment diagrams', subtopics: [{ name: 'D. Shear and moment diagrams', content: null }] },
+        { name: 'E. Analysis of beams, trusses, frames, and columns', subtopics: [{ name: 'E. Analysis of beams, trusses, frames, and columns', content: null }] },
+        { name: 'F. Loads and deformations', subtopics: [{ name: 'F. Loads and deformations', content: null }] },
+        { name: 'G. Stress transformation and principal stresses, including stress-based yielding and fracture criteria', subtopics: [{ name: 'G. Stress transformation and principal stresses, including stress-based yielding and fracture criteria', content: null }] },
+        { 
+          name: 'H. Material failure', 
+          subtopics: [
+            { name: 'Euler Buckling', content: null },
+            { name: 'Creep', content: null },
+            { name: 'Fatigue', content: null },
+            { name: 'Brittle Fracture', content: null },
+            { name: 'Stress Concentration Factors', content: null },
+            { name: 'Factor of Safety', content: null },
+            { name: 'Allowable Stress', content: null }
+          ]
+        },
+      ],
+    },
+    {
+      name: '11. Materials',
+      topics: [
+        { name: 'A. Physical (phase diagrams) properties of materials', subtopics: [{ name: 'A. Physical (phase diagrams) properties of materials', content: null }] },
+        { name: 'B. Mechanical properties of materials', subtopics: [{ name: 'B. Mechanical properties of materials', content: null }] },
+        { name: 'C. Chemical properties of materials', subtopics: [{ name: 'C. Chemical properties of materials', content: null }] },
+        { name: 'D. Thermal properties of materials', subtopics: [{ name: 'D. Thermal properties of materials', content: null }] },
+        { name: 'E. Electrical properties of materials', subtopics: [{ name: 'E. Electrical properties of materials', content: null }] },
+        { name: 'F. Material selection', subtopics: [{ name: 'F. Material selection', content: null }] },
+      ],
+    },
+    {
+      name: '12. Fluid Mechanics',
+      topics: [
+        { name: 'A. Fluid properties', subtopics: [{ name: 'A. Fluid properties', content: null }] },
+        { name: 'B. Dimensionless numbers', subtopics: [{ name: 'B. Dimensionless numbers', content: null }] },
+        { name: 'C. Laminar and turbulent flow', subtopics: [{ name: 'C. Laminar and turbulent flow', content: null }] },
+        { name: 'D. Fluid statics', subtopics: [{ name: 'D. Fluid statics', content: null }] },
+        { name: 'E. Energy, impulse, and momentum equations', subtopics: [{ name: 'E. Energy, impulse, and momentum equations', content: null }] },
+        { name: 'F. Pipe and duct flow and friction losses', subtopics: [{ name: 'F. Pipe and duct flow and friction losses', content: null }] },
+        { name: 'G. Open-channel flow', subtopics: [{ name: 'G. Open-channel flow', content: null }] },
+        { name: 'H. Fluid transport systems', subtopics: [{ name: 'H. Fluid transport systems', content: null }] },
+        { name: 'I. Flow measurement', subtopics: [{ name: 'I. Flow measurement', content: null }] },
+        { name: 'J. Turbomachinery', subtopics: [{ name: 'J. Turbomachinery', content: null }] },
+        { name: 'K. Ideal gas law', subtopics: [{ name: 'K. Ideal gas law', content: null }] },
+        { name: 'L. Real gas law', subtopics: [{ name: 'L. Real gas law', content: null }] },
+      ],
+    },
+    {
+      name: '13. Basic Electrical Engineering',
+      topics: [
+        { 
+          name: 'A. Electrical fundamentals', 
+          subtopics: [
+            { name: 'Charge', content: null },
+            { name: 'Current', content: null },
+            { name: 'Voltage', content: null },
+            { name: 'Resistance', content: null },
+            { name: 'Power', content: null },
+            { name: 'Energy', content: null }
+          ] 
+        },
+        { name: 'B. Current and voltage laws', subtopics: [{ name: 'B. Current and voltage laws', content: null }] },
+        { name: 'C. AC and DC circuits', subtopics: [{ name: 'C. AC and DC circuits', content: null }] },
+        { 
+          name: 'D. Measuring devices', 
+          subtopics: [
+            { name: 'Voltmeter', content: null },
+            { name: 'Ammeter', content: null },
+            { name: 'Wattmeter', content: null }
+          ] 
+        },
+        { 
+          name: 'E. Three-phase power', 
+          subtopics: [
+            { name: 'Motor Efficiency', content: null },
+            { name: 'Balanced Loads', content: null },
+            { name: 'Power Equation', content: null }
+          ]
+        },
+      ],
+    },
+    {
+      name: '14. Thermodynamics and Heat Transfer',
+      topics: [
+        { name: 'A. Thermodynamic laws', subtopics: [{ name: 'A. Thermodynamic laws', content: null }] },
+        { name: 'B. Thermodynamic equilibrium', subtopics: [{ name: 'B. Thermodynamic equilibrium', content: null }] },
+        { name: 'C. Thermodynamic properties', subtopics: [{ name: 'C. Thermodynamic properties', content: null }] },
+        { name: 'D. Thermodynamic processes', subtopics: [{ name: 'D. Thermodynamic processes', content: null }] },
+        { name: 'E. Heat transfer', subtopics: [{ name: 'E. Heat transfer', content: null }] },
+        { name: 'F. Mass and energy balances', subtopics: [{ name: 'F. Mass and energy balances', content: null }] },
+        { name: 'G. Property and phase diagrams', subtopics: [{ name: 'G. Property and phase diagrams', content: null }] },
+        { name: 'H. Combustion and combustion products', subtopics: [{ name: 'H. Combustion and combustion products', content: null }] },
+        { name: 'I. Psychrometrics', subtopics: [{ name: 'I. Psychrometrics', content: null }] },
       ],
     },
   ],

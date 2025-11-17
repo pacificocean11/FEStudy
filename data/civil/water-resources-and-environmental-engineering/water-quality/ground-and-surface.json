@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Surface Water</h3>\n<p class=\"mb-4\">Surface water is water located on the surface of the Earth, such as in rivers, lakes, and reservoirs. It is the primary source for most public water supplies.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Characteristics:</strong> The quality of surface water is highly variable and changes with seasons and runoff events. It is generally low in dissolved minerals but high in suspended solids (turbidity), microorganisms (bacteria, viruses), and organic matter.</li>\n    <li><strong>Vulnerability:</strong> Surface water is directly exposed to the atmosphere and runoff from the surrounding land, making it vulnerable to both point source (e.g., industrial discharge pipes) and non-point source (e.g., agricultural runoff) pollution.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Groundwater</h3>\n<p class=\"mb-4\">Groundwater is water that exists underground in saturated zones beneath the land surface. The upper surface of the saturated zone is called the water table.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Characteristics:</strong> As water percolates through the soil, it is naturally filtered. As a result, groundwater is typically very low in turbidity and microorganisms. However, as it passes through rock and soil, it dissolves minerals, leading to higher concentrations of dissolved solids, hardness (calcium and magnesium), and metals like iron and manganese.</li>\n    <li><strong>Vulnerability:</strong> Groundwater is naturally protected from many sources of pollution. However, once contaminated (e.g., from leaking underground storage tanks or septic systems), it is extremely difficult and expensive to clean up. The movement of contaminants is slow and hard to track.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Groundwater Under the Direct Influence of Surface Water (GWUDI)</h3>\n<p class=\"mb-4\">This is a special category for groundwater sources (like wells or springs) that are located close to surface water bodies and are susceptible to contamination by microorganisms from the surface. These sources require a higher level of treatment, similar to surface water.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Compared to groundwater, surface water is generally characterized by:",
+      "options": [
+        { "text": "Higher hardness and lower turbidity.", "isCorrect": false },
+        { "text": "Lower hardness and higher turbidity.", "isCorrect": true },
+        { "text": "Consistent quality year-round.", "isCorrect": false },
+        { "text": "A lower risk of microbiological contamination.", "isCorrect": false }
+      ],
+      "explanation": "Surface water is exposed to runoff, which carries suspended particles (causing high turbidity) and microorganisms. It is typically 'softer' because it has had less time to dissolve minerals from rock. Groundwater is the opposite: naturally filtered (low turbidity) but high in dissolved minerals (hardness)."
+    },
+    {
+      "question": "The natural flow of groundwater into a river, which provides the river with its dry-weather flow, is known as:",
+      "options": [
+        { "text": "Runoff", "isCorrect": false },
+        { "text": "Infiltration", "isCorrect": false },
+        { "text": "Baseflow", "isCorrect": true },
+        { "text": "Transpiration", "isCorrect": false }
+      ],
+      "explanation": "Baseflow is the portion of streamflow that comes from deep subsurface flow and groundwater seeping into the stream channel. It is the primary source of water for many rivers during periods of little or no rainfall."
+    }
+  ]
+}

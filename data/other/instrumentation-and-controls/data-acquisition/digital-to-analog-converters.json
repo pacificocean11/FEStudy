@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Digital-to-Analog Converter (DAC or D/A)</strong> is an electronic circuit that converts a digital number (usually a binary number) into a corresponding analog voltage or current. DACs are the counterpart to ADCs and are used to control analog devices with a computer.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Applications</h3>\n<p class=\"mb-4\">DACs are used in many applications, including:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Control Systems:</strong> Generating an analog voltage to control a motor, valve, or heater.</li>\n    <li><strong>Audio and Video:</strong> Converting digital audio files into an analog signal to drive speakers, or digital video data into signals for a display.</li>\n    <li><strong>Waveform Generation:</strong> Creating arbitrary analog waveforms from digital data.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Resolution:</strong> The number of bits of the digital input. An $n$-bit DAC can produce $2^n$ different output levels.</li>\n    <li><strong>Output Range:</strong> The minimum and maximum output voltage or current.</li>\n    <li><strong>Settling Time:</strong> The time it takes for the output to settle to its final value after the digital input changes.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 4-bit DAC has an output range of 0 to 15 V. If the digital input is the binary number 1010, what is the analog output voltage?",
+      "options": [
+        { "text": "10 V", "isCorrect": true },
+        { "text": "5 V", "isCorrect": false },
+        { "text": "15 V", "isCorrect": false },
+        { "text": "2.5 V", "isCorrect": false }
+      ],
+      "explanation": "First, convert the binary input to a decimal number: $1010_2 = 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 8 + 0 + 2 + 0 = 10$. A 4-bit DAC has $2^4 = 16$ levels (from 0 to 15). The output voltage is proportional to the digital input value. The voltage step per LSB is $15 V / (16-1) = 1$ V. So for an input of 10, the output is $10 \\times 1 V = 10$ V."
+    }
+  ]
+}

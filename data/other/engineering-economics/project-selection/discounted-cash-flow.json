@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Discounted Cash Flow (DCF)</strong> is a valuation method used to estimate the value of an investment based on its expected future cash flows. DCF analysis attempts to figure out the value of an investment today, based on projections of how much money it will generate in the future. This is the core of Present Worth analysis.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key DCF Methods</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Net Present Worth (NPW) or Net Present Value (NPV):</strong> This is the sum of the present worths of all cash flows, both incoming (benefits) and outgoing (costs), over the life of the project. The interest rate used is the Minimum Acceptable Rate of Return (MARR).\n        $$ NPW = \\sum_{t=0}^{n} CF_t(1+i)^{-t} $$\n        <p class=\"text-sm\">Decision Rule: If $NPW \\ge 0$, the project is acceptable.</p>\n    </li>\n    <li>\n        <strong>Internal Rate of Return (IRR):</strong> The discount rate that makes the NPW of all cash flows from a particular project equal to zero. It is the breakeven interest rate for the project.\n        <p class=\"text-sm\">Decision Rule: If $IRR \\ge MARR$, the project is acceptable.</p>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Non-Discounted Method: Payback Period</h3>\n<p class=\"mb-4\">The <strong>Payback Period</strong> is a simpler, non-discounted method. It is the length of time required for an investment's cumulative net cash flows to equal its initial cost. While easy to calculate, it is a poor method for project selection because it ignores the time value of money and all cash flows that occur after the payback period is reached.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An investment has an initial cost of $10,000 and is expected to generate net cash flows of $3,000 per year for 5 years. If the MARR is 10%, what is the NPW of this project? The (P/A, 10%, 5) factor is 3.7908.",
+      "options": [
+        { "text": "$1,372.40", "isCorrect": true },
+        { "text": "$5,000", "isCorrect": false },
+        { "text": "-$1,372.40", "isCorrect": false },
+        { "text": "$11,372.40", "isCorrect": false }
+      ],
+      "explanation": "The NPW is the Present Worth of the benefits minus the Present Worth of the costs. The PW of the annual benefits is $A(P/A, 10%, 5) = $3,000(3.7908) = $11,372.40$. The initial cost is already a present worth. NPW = $11,372.40 - $10,000 = $1,372.40$. Since NPW > 0, the project is acceptable."
+    },
+    {
+      "question": "What is a major disadvantage of using the Payback Period method to select projects?",
+      "options": [
+        { "text": "It is too complicated to calculate.", "isCorrect": false },
+        { "text": "It ignores the time value of money and cash flows after the payback period.", "isCorrect": true },
+        { "text": "It always favors long-term projects.", "isCorrect": false },
+        { "text": "It requires knowing the MARR.", "isCorrect": false }
+      ],
+      "explanation": "The simple Payback Period method treats a dollar received in year 3 the same as a dollar spent today, ignoring the time value of money. It also completely disregards any profits or costs that occur after the initial investment has been paid back, which can lead to poor long-term decisions."
+    }
+  ]
+}

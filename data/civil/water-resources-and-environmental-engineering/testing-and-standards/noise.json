@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Sound Pressure and Decibels (dB)</h3>\n<p class=\"mb-4\">Noise is unwanted sound. Sound is a pressure wave, and its intensity is measured on a logarithmic scale called the decibel (dB) scale. This scale more closely approximates the human ear's perception of loudness.</p>\n<p class=\"mb-4\">A 10 dB increase represents a tenfold increase in sound intensity and is perceived as roughly twice as loud.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. A-Weighting (dBA)</h3>\n<p class=\"mb-4\">The human ear is not equally sensitive to all frequencies. It is most sensitive to frequencies in the range of human speech (around 1-4 kHz) and less sensitive to very low and very high frequencies. The <strong>A-weighting scale</strong> is an electronic filter applied to sound level meters to make their readings more closely match what the human ear actually hears. Measurements made with this filter are expressed in <strong>dBA</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Noise Regulations (OSHA)</h3>\n<p class=\"mb-4\">OSHA regulates occupational noise exposure to protect against hearing loss. The key standards are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Permissible Exposure Limit (PEL):</strong> The legal limit is a Time-Weighted Average (TWA) of <strong>90 dBA</strong> for an 8-hour workday.</li>\n    <li><strong>Action Level:</strong> An 8-hour TWA of <strong>85 dBA</strong>. When exposure reaches or exceeds this level, employers must implement a hearing conservation program.</li>\n    <li><strong>Exchange Rate:</strong> OSHA uses a 5-dB exchange rate. This means that for every 5 dB increase in noise level, the allowable exposure time is cut in half. For example, the allowable exposure time at 95 dBA is 4 hours.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The 'A' in the unit 'dBA' refers to:",
+      "options": [
+        { "text": "The amplitude of the sound wave.", "isCorrect": false },
+        { "text": "A weighting scale that mimics human hearing.", "isCorrect": true },
+        { "text": "The average sound level.", "isCorrect": false },
+        { "text": "An 'acceptable' noise level.", "isCorrect": false }
+      ],
+      "explanation": "The A-weighting is a standard frequency-response curve applied to sound measurements to better reflect the sensitivity of the human ear. It filters out some of the very low and very high frequencies that people don't hear as well."
+    },
+    {
+      "question": "According to OSHA regulations, what is the maximum permissible noise exposure limit (PEL) for an 8-hour workday?",
+      "options": [
+        { "text": "85 dBA", "isCorrect": false },
+        { "text": "90 dBA", "isCorrect": true },
+        { "text": "100 dBA", "isCorrect": false },
+        { "text": "115 dBA", "isCorrect": false }
+      ],
+      "explanation": "The OSHA PEL for occupational noise is a time-weighted average of 90 dBA over an 8-hour shift. The 'action level', which triggers the need for a hearing conservation program, is lower, at 85 dBA."
+    }
+  ]
+}

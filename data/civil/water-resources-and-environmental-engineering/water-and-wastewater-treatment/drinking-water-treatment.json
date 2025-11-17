@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Conventional Surface Water Treatment</h3>\n<p class=\"mb-4\">This is the most common process train used to treat water from sources like rivers and lakes to make it safe for drinking. It involves a series of physical and chemical processes to remove turbidity, microorganisms, and other contaminants.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Treatment Process Train</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Screening:</strong> Raw water is passed through screens to remove large debris like sticks, leaves, and fish.</li>\n    <li><strong>Coagulation:</strong> A chemical, called a coagulant (most commonly alum, aluminum sulfate), is added to the water and mixed rapidly. The coagulant neutralizes the negative electrical charge on fine suspended particles that cause turbidity and color, allowing them to stick together.</li>\n    <li><strong>Flocculation:</strong> The water is mixed slowly and gently in a flocculation basin. This gentle mixing causes the destabilized particles to collide and clump together to form larger, visible particles called 'floc'.</li>\n    <li><strong>Sedimentation (or Clarification):</strong> The water flows into a large, quiet tank called a sedimentation basin or clarifier. The heavy floc particles settle to the bottom by gravity, forming a sludge that is later removed.</li>\n    <li><strong>Filtration:</strong> The clarified water from the top of the sedimentation basin is passed through filters to remove any remaining fine particles. Granular media filters, consisting of layers of sand, gravel, and anthracite coal, are common.</li>\n    <li><strong>Disinfection:</strong> A chemical disinfectant is added to kill any remaining pathogenic microorganisms (bacteria, viruses, protozoa). Chlorine is the most common disinfectant. The water is held in a contact basin to ensure sufficient time for the disinfectant to work.</li>\n    <li><strong>Storage:</strong> The finished water is stored in a clearwell or elevated tank before being pumped to the distribution system.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In water treatment, what is the purpose of adding a coagulant like alum?",
+      "options": [
+        { "text": "To disinfect the water by killing bacteria.", "isCorrect": false },
+        { "text": "To neutralize the charge on fine particles, allowing them to clump together.", "isCorrect": true },
+        { "text": "To adjust the pH of the water.", "isCorrect": false },
+        { "text": "To remove dissolved minerals like calcium.", "isCorrect": false }
+      ],
+      "explanation": "Coagulation is a chemical process that neutralizes the electrostatic charges on tiny suspended particles. These particles naturally repel each other, but once neutralized by the coagulant, they can stick together during the subsequent flocculation step."
+    },
+    {
+      "question": "What is the final and most critical step in the drinking water treatment process for ensuring the water is free from disease-causing microorganisms?",
+      "options": [
+        { "text": "Flocculation", "isCorrect": false },
+        { "text": "Sedimentation", "isCorrect": false },
+        { "text": "Filtration", "isCorrect": false },
+        { "text": "Disinfection", "isCorrect": true }
+      ],
+      "explanation": "While coagulation, sedimentation, and filtration remove a large percentage of microorganisms, disinfection is the final barrier specifically designed to inactivate or kill any remaining pathogenic bacteria, viruses, and protozoa to make the water safe to drink."
+    }
+  ]
+}

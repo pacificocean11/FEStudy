@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An <strong>embankment</strong> is a raised bank or mound, typically made of earth, constructed to carry a road or railway over low-lying ground, or to confine a river (a levee).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stability Analysis</h3>\n<p class=\"mb-4\">The stability of an embankment is analyzed using slope stability methods, such as the Method of Slices. The goal is to calculate the factor of safety (FS) against a rotational or translational failure. $FS = \\frac{\\text{Resisting Forces}}{\\text{Driving Forces}}$. A factor of safety greater than 1.0 is required for stability (typically 1.5 for static conditions).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Failure Modes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rotational Slope Failure:</strong> A deep-seated failure along a circular or arc-shaped surface that passes through the body of the embankment. This is common in homogeneous clay embankments.</li>\n    <li><strong>Foundation Failure:</strong> If the embankment is built on a weak, soft foundation soil (like soft clay), the failure surface may pass primarily through the weak foundation layer. The weight of the embankment can cause the foundation soil to fail in bearing capacity.</li>\n    <li><strong>Surface Sloughing:</strong> Shallow failures on the face of the slope, often caused by erosion or saturation from rainfall.</li>\n    <li><strong>Seepage-Related Failures (for Dams/Levees):</strong> Water seeping through the embankment can increase pore water pressures, reducing the effective stress and shear strength of the soil, which can lead to instability.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Construction</h3>\n<p class=\"mb-4\">Similar to general fills, the key to a stable embankment is proper construction. This includes stripping the foundation of weak soils, providing adequate drainage, and placing the fill material in thin, well-compacted layers (lifts) to achieve the required density and strength.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A common mode of failure for an embankment constructed on a soft clay foundation is:",
+      "options": [
+        { "text": "A rotational failure passing through the foundation soil.", "isCorrect": true },
+        { "text": "A tension crack at the toe of the slope.", "isCorrect": false },
+        { "text": "Excessive settlement only.", "isCorrect": false },
+        { "text": "Erosion of the embankment crest.", "isCorrect": false }
+      ],
+      "explanation": "When the foundation soil is significantly weaker than the embankment fill, the failure surface will seek the path of least resistance. The weight of the embankment imposes a large load on the foundation, which can lead to a deep-seated rotational failure that passes mostly through the weak foundation layer."
+    },
+    {
+      "question": "Why is it standard practice to construct earth embankments by compacting the soil in thin layers (lifts)?",
+      "options": [
+        { "text": "To allow the soil to dry faster.", "isCorrect": false },
+        { "text": "To ensure that the compaction energy is applied uniformly through the material, achieving consistent density and strength.", "isCorrect": true },
+        { "text": "To make the embankment look aesthetically pleasing.", "isCorrect": false },
+        { "text": "To meet the requirements of environmental regulations.", "isCorrect": false }
+      ],
+      "explanation": "Compaction equipment is only effective for a certain depth. Placing soil in thin lifts (typically 6-12 inches) allows the compactor to impart enough energy to densify the soil properly. This process is repeated for each layer to build a strong, stable, and homogeneous embankment."
+    }
+  ]
+}

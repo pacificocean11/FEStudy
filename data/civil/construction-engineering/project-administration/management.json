@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Project Team Roles</h3>\n<p class=\"mb-4\">Successful project management requires a clear understanding of the roles of the key parties involved.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Owner:</strong> The individual or organization that commissions and funds the project.</li>\n    <li><strong>Architect/Engineer (A/E or Designer):</strong> The professional responsible for the design of the project, preparation of contract documents, and often, contract administration during construction.</li>\n    <li><strong>Contractor (General Contractor or GC):</strong> The firm responsible for the physical construction of the project in accordance with the contract documents.</li>\n    <li><strong>Subcontractors:</strong> Specialized contractors hired by the GC to perform specific portions of the work (e.g., electrical, plumbing, HVAC).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Quality Management</h3>\n<p class=\"mb-4\">Quality management involves two distinct activities:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Quality Assurance (QA):</strong> Process-oriented activities focused on preventing defects. It involves setting up a system to ensure quality is built into the project from the start (e.g., proper training, following procedures, using qualified suppliers). QA is often the responsibility of the owner or a third party.</li>\n    <li><strong>Quality Control (QC):</strong> Product-oriented activities focused on identifying defects. It involves testing and inspections to ensure the completed work meets the standards set by the contract documents (e.g., concrete cylinder testing, soil compaction tests). QC is primarily the responsibility of the contractor.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Safety Management</h3>\n<p class=\"mb-4\">The contractor is primarily responsible for construction site safety. This is governed by the Occupational Safety and Health Administration (OSHA).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>OSHA's 'Focus Four':</strong> The four leading causes of fatalities in construction are Falls, Electrocution, Struck-By (e.g., by equipment or falling objects), and Caught-In/Between (e.g., in trenches or between equipment).</li>\n    <li><strong>Site Safety Plan:</strong> A comprehensive plan developed by the contractor to identify and mitigate hazards on the job site.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The process of inspecting and testing concrete cylinders to ensure they meet the compressive strength required by the specifications is an example of:",
+      "options": [
+        { "text": "Quality Assurance (QA)", "isCorrect": false },
+        { "text": "Quality Control (QC)", "isCorrect": true },
+        { "text": "Value Engineering", "isCorrect": false },
+        { "text": "Project Procurement", "isCorrect": false }
+      ],
+      "explanation": "Quality Control (QC) involves the direct testing and inspection of the work product to identify defects and verify compliance with the project specifications. Quality Assurance (QA) is the overall management system to ensure quality processes are followed."
+    },
+    {
+      "question": "In a traditional Design-Bid-Build project, who is primarily responsible for ensuring the safety of workers on the construction site?",
+      "options": [
+        { "text": "The Owner", "isCorrect": false },
+        { "text": "The Architect/Engineer", "isCorrect": false },
+        { "text": "The General Contractor", "isCorrect": true },
+        { "text": "OSHA", "isCorrect": false }
+      ],
+      "explanation": "The General Contractor has direct control over the construction site, means, and methods. Therefore, they have the primary contractual and legal responsibility for maintaining a safe work environment for all personnel on site, in compliance with OSHA regulations."
+    }
+  ]
+}

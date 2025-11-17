@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Activity relationships</strong>, or logical dependencies, define the sequence in which project activities are performed. The Precedence Diagramming Method (PDM) is a technique used in the Critical Path Method (CPM) to build a project schedule network diagram that uses nodes to represent activities and arrows to show the dependencies between them.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Logical Relationships</h3>\n<p class=\"mb-4\">There are four types of dependencies used to link a predecessor activity (A) to a successor activity (B):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Finish-to-Start (FS):</strong> The successor activity (B) cannot start until the predecessor activity (A) has finished. This is the most common and logical relationship.\n        <br><em>Example: The concrete cannot be poured (B) until the formwork is built (A).</em>\n    </li>\n    <li>\n        <strong>Start-to-Start (SS):</strong> The successor activity (B) cannot start until the predecessor activity (A) has started.\n        <br><em>Example: Leveling the concrete (B) can begin shortly after the concrete pour (A) has started.</em>\n    </li>\n    <li>\n        <strong>Finish-to-Finish (FF):</strong> The successor activity (B) cannot finish until the predecessor activity (A) has finished.\n        <br><em>Example: Final system testing (B) cannot be completed until the last component is installed (A).</em>\n    </li>\n    <li>\n        <strong>Start-to-Finish (SF):</strong> The successor activity (B) cannot finish until the predecessor activity (A) has started. This is the least common type of relationship.\n        <br><em>Example: The night security guard shift (B) cannot finish until the morning shift (A) has started.</em>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Leads and Lags</h3>\n<p class=\"mb-4\">Relationships can be modified with leads and lags to make them more realistic.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lag:</strong> A required delay between activities. For example, 'FS + 3 days' means activity B can start 3 days *after* activity A finishes (e.g., waiting for concrete to cure).</li>\n    <li><strong>Lead:</strong> An acceleration of the successor activity. It allows an overlap in the activities. For example, 'FS - 2 days' means activity B can start 2 days *before* activity A is finished (e.g., starting to install plumbing fixtures before all drywall is complete).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The requirement that drywall must be installed before it can be painted is an example of which type of activity relationship?",
+      "options": [
+        { "text": "Finish-to-Start (FS)", "isCorrect": true },
+        { "text": "Start-to-Start (SS)", "isCorrect": false },
+        { "text": "Finish-to-Finish (FF)", "isCorrect": false },
+        { "text": "Start-to-Finish (SF)", "isCorrect": false }
+      ],
+      "explanation": "This is the most common and logical dependency. The first task (installing drywall) must be 100% complete before the second task (painting) can begin."
+    },
+    {
+      "question": "A schedule indicates that 'Pour Foundation' and 'Cure Foundation' are linked with a 'FS + 7 days' relationship. What does this mean?",
+      "options": [
+        { "text": "Curing must start 7 days after the pour starts.", "isCorrect": false },
+        { "text": "Curing must start 7 days before the pour is finished.", "isCorrect": false },
+        { "text": "Curing requires a 7-day delay after the pour is finished before it is considered complete.", "isCorrect": true },
+        { "text": "The total duration of the pour and cure is 7 days.", "isCorrect": false }
+      ],
+      "explanation": "The 'FS' means the successor ('Cure Foundation') can start after the predecessor ('Pour Foundation') finishes. The '+ 7 days' represents a lag, meaning there is a required duration associated with the successor activity. So, the curing process, which is the successor activity itself, is defined as a 7-day waiting period after the pour is finished."
+    }
+  ]
+}

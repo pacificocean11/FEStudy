@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Electrical power is the rate at which electrical energy is transferred by an electric circuit. It is the amount of energy consumed per unit of time.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas</h3>\n<p class=\"mb-4\">The primary formula for power ($P$) is the product of voltage ($V$) and current ($I$):</p>\n$$P = VI$$\n<p class=\"mb-4\">By substituting Ohm's Law ($V = IR$) into the primary power formula, two other common forms can be derived:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Substitute $V=IR$: $P = (IR)I = I^2R$</li>\n    <li>Substitute $I=V/R$: $P = V(\\frac{V}{R}) = \\frac{V^2}{R}$</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Unit of Power</h3>\n<p class=\"mb-4\">The SI unit of power is the <strong>watt (W)</strong>, named after James Watt. One watt is defined as one joule of energy per second.</p>\n$$1 \\text{ W} = 1 \\frac{\\text{Joule}}{\\text{second}} = 1 \\frac{\\text{J}}{\\text{s}}$$\n<p class=\"mb-4\">In electrical terms, one watt is the power dissipated when one ampere of current flows through a potential difference of one volt.</p>\n$$1 \\text{ W} = 1 \\text{ V} \\cdot 1 \\text{ A}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An electric heater draws 10 A of current from a 120 V source. How much power does it consume?",
+      "options": [
+        { "text": "12 W", "isCorrect": false },
+        { "text": "1200 W", "isCorrect": true },
+        { "text": "0.083 W", "isCorrect": false },
+        { "text": "1.2 kW", "isCorrect": false }
+      ],
+      "explanation": "Use the formula $P = VI$.\n$P = (120 \\text{ V})(10 \\text{ A}) = 1200 \\text{ W}$. Note that 1.2 kW is also correct, but 1200 W is a more direct answer."
+    },
+    {
+      "question": "A 100 \u03A9 resistor has a current of 0.5 A flowing through it. How much power is dissipated as heat in the resistor?",
+      "options": [
+        { "text": "50 W", "isCorrect": false },
+        { "text": "200 W", "isCorrect": false },
+        { "text": "25 W", "isCorrect": true },
+        { "text": "100 W", "isCorrect": false }
+      ],
+      "explanation": "Use the formula $P = I^2R$, which is most direct when current and resistance are known.\n$P = (0.5 \\text{ A})^2 (100 \\; \u03A9) = (0.25 \\text{ A}^2)(100 \\; \u03A9) = 25 \\text{ W}$."
+    },
+    {
+      "question": "A light bulb is rated at 60 W when connected to a 120 V source. What is the resistance of the light bulb?",
+      "options": [
+        { "text": "0.5 \u03A9", "isCorrect": false },
+        { "text": "2 \u03A9", "isCorrect": false },
+        { "text": "7200 \u03A9", "isCorrect": false },
+        { "text": "240 \u03A9", "isCorrect": true }
+      ],
+      "explanation": "Use the formula $P = \\frac{V^2}{R}$, which is best when power and voltage are known. Rearrange to solve for $R$: $R = \\frac{V^2}{P}$.\n$R = \\frac{(120 \\text{ V})^2}{60 \\text{ W}} = \\frac{14400 \\text{ V}^2}{60 \\text{ W}} = 240 \\; \u03A9$."
+    }
+  ]
+}

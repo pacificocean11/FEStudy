@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Common Wastewater Quality Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Biochemical Oxygen Demand (BOD):</strong> The amount of dissolved oxygen needed by aerobic biological organisms to break down organic material present in a given water sample. It's a measure of the organic pollution. A 5-day test (BOD₅) is the standard.</li>\n    <li><strong>Chemical Oxygen Demand (COD):</strong> The amount of oxygen required to chemically oxidize both organic and inorganic compounds in water. The COD value is always higher than the BOD value for the same sample.</li>\n    <li><strong>Total Suspended Solids (TSS):</strong> The total amount of solid material that is suspended (not dissolved) in the water. High TSS can block light and harm aquatic life.</li>\n    <li><strong>Nutrients (Nitrogen and Phosphorus):</strong> Excess nitrogen and phosphorus in wastewater can lead to eutrophication (over-enrichment) in receiving water bodies, causing algae blooms that deplete dissolved oxygen.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Clean Water Act (CWA)</h3>\n<p class=\"mb-4\">The CWA is the primary federal law in the U.S. governing water pollution. Its objective is to restore and maintain the chemical, physical, and biological integrity of the nation's waters.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>National Pollutant Discharge Elimination System (NPDES):</strong> The CWA established the NPDES permit program to control water pollution by regulating point sources (like pipes from industrial facilities and wastewater treatment plants) that discharge pollutants into waters of the United States.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Biochemical Oxygen Demand (BOD) is a measure of what in wastewater?",
+      "options": [
+        { "text": "The amount of dissolved oxygen present.", "isCorrect": false },
+        { "text": "The amount of oxygen required to break down organic waste.", "isCorrect": true },
+        { "text": "The total amount of solids.", "isCorrect": false },
+        { "text": "The concentration of heavy metals.", "isCorrect": false }
+      ],
+      "explanation": "BOD measures the amount of oxygen that will be consumed by microorganisms as they decompose the organic matter in the water. It is an indirect measure of the concentration of biodegradable organic pollution."
+    },
+    {
+      "question": "Under the Clean Water Act, a wastewater treatment plant that discharges treated effluent into a river must obtain what type of permit?",
+      "options": [
+        { "text": "An MCL permit", "isCorrect": false },
+        { "text": "An NPDES permit", "isCorrect": true },
+        { "text": "A SWPPP permit", "isCorrect": false },
+        { "text": "A building permit", "isCorrect": false }
+      ],
+      "explanation": "The National Pollutant Discharge Elimination System (NPDES) is the permit program that controls discharges from point sources into surface waters. All municipal and industrial dischargers must have an NPDES permit."
+    }
+  ]
+}

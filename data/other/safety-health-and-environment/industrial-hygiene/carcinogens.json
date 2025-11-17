@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>carcinogen</strong> is any substance, radionuclide, or radiation that is an agent directly involved in causing cancer. This may be due to the ability to damage the genome or to the disruption of cellular metabolic processes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Classification</h3>\n<p class=\"mb-4\">Several agencies classify substances based on their carcinogenic potential. A primary one is the <strong>International Agency for Research on Cancer (IARC)</strong>, which is part of the World Health Organization (WHO).</p>\n<p class=\"mb-4\">IARC classifies agents into groups:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Group 1: Carcinogenic to humans.</strong> There is sufficient evidence of carcinogenicity in humans. Examples: Asbestos, benzene, formaldehyde, solar radiation.</li>\n    <li><strong>Group 2A: Probably carcinogenic to humans.</strong> Limited evidence in humans but sufficient evidence in experimental animals.</li>\n    <li><strong>Group 2B: Possibly carcinogenic to humans.</strong> Limited evidence in humans and less than sufficient evidence in animals.</li>\n    <li><strong>Group 3: Not classifiable as to its carcinogenicity to humans.</strong> Evidence is inadequate.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Engineering Controls</h3>\n<p class=\"mb-4\">When working with known or suspected carcinogens, the hierarchy of controls is especially important. The primary goal is to minimize exposure through:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Elimination/Substitution:</strong> Replacing the carcinogen with a less hazardous substance.</li>\n    <li><strong>Engineering Controls:</strong> Using closed systems or ventilation (like fume hoods) to contain the substance.</li>\n    <li><strong>Administrative Controls and PPE:</strong> Implementing strict work procedures and using appropriate personal protective equipment as a last line of defense.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "According to the IARC classification system, an agent in Group 1 is considered:",
+      "options": [
+        { "text": "Possibly carcinogenic to humans.", "isCorrect": false },
+        { "text": "Probably carcinogenic to humans.", "isCorrect": false },
+        { "text": "Carcinogenic to humans.", "isCorrect": true },
+        { "text": "Not classifiable.", "isCorrect": false }
+      ],
+      "explanation": "Group 1 is the highest-risk category, reserved for agents where there is sufficient evidence from epidemiological studies to confirm that they cause cancer in humans."
+    },
+    {
+      "question": "Which of the following is the most effective method for protecting workers from a known carcinogen used in a process?",
+      "options": [
+        { "text": "Requiring workers to wear respirators.", "isCorrect": false },
+        { "text": "Replacing the carcinogen with a safer alternative chemical.", "isCorrect": true },
+        { "text": "Training workers on the chemical's hazards.", "isCorrect": false },
+        { "text": "Monitoring the air concentration of the chemical.", "isCorrect": false }
+      ],
+      "explanation": "According to the hierarchy of controls, the most effective methods are elimination and substitution. Replacing the hazardous substance with a non-hazardous or less hazardous one is the best way to control the risk because it removes the hazard from the workplace entirely."
+    }
+  ]
+}

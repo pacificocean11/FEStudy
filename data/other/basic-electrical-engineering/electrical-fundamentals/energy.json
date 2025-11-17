@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Electrical energy is the capacity to do work. In a circuit, it is the energy that is delivered by the source and consumed by the load. Since power is the rate at which energy is used, energy is simply power multiplied by the time over which it is used.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">Energy ($W$ or $E$) is the product of power ($P$) and time ($t$):</p>\n$$E = P \\cdot t$$\n<p class=\"mb-4\">By substituting the formulas for power ($P=VI, P=I^2R, P=V^2/R$), we can also express energy as:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$E = VIt$</li>\n    <li>$E = I^2Rt$</li>\n    <li>$E = \\frac{V^2}{R}t$</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Units of Energy</h3>\n<p class=\"mb-4\">The SI unit of energy is the <strong>joule (J)</strong>. One joule is equal to one watt-second ($1 \\text{ J} = 1 \\text{ W} \\cdot \\text{s}$).</p>\n<p class=\"mb-4\">For residential and commercial billing, a much larger unit, the <strong>kilowatt-hour (kWh)</strong>, is used. A kilowatt-hour is the energy consumed by a 1-kilowatt device running for one hour.</p>\n<p class=\"mb-4\"><strong>Conversion:</strong></p>\n$$1 \\text{ kWh} = (1000 \\text{ W}) \\cdot (3600 \\text{ s}) = 3,600,000 \\text{ W} \\cdot \\text{s} = 3.6 \\times 10^6 \\text{ J}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 100 W light bulb is left on for 5 hours. How much energy does it consume in kilowatt-hours (kWh)?",
+      "options": [
+        { "text": "500 kWh", "isCorrect": false },
+        { "text": "0.5 kWh", "isCorrect": true },
+        { "text": "20 kWh", "isCorrect": false },
+        { "text": "5 kWh", "isCorrect": false }
+      ],
+      "explanation": "First, convert the power from watts to kilowatts: $P = 100 \\text{ W} = 0.1 \\text{ kW}$.\nThen, use the formula $E = P \\cdot t$.\n$E = (0.1 \\text{ kW}) \\cdot (5 \\text{ h}) = 0.5 \\text{ kWh}$."
+    },
+    {
+      "question": "A motor with a resistance of 10 \u03A9 draws a current of 5 A. If it runs for 2 hours, how much energy does it use in joules?",
+      "options": [
+        { "text": "500 J", "isCorrect": false },
+        { "text": "100 J", "isCorrect": false },
+        { "text": "1,800,000 J", "isCorrect": true },
+        { "text": "360,000 J", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the power using $P = I^2R$: $P = (5 \\text{ A})^2 (10 \\; \u03A9) = 25 \\cdot 10 = 250 \\text{ W}$.\nNext, convert the time to seconds: $t = 2 \\text{ hours} \\times 3600 \\text{ s/hr} = 7200 \\text{ s}$.\nFinally, calculate the energy in joules: $E = P \\cdot t = 250 \\text{ W} \\cdot 7200 \\text{ s} = 1,800,000 \\text{ J}$."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>watershed</strong>, also known as a catchment area or drainage basin, is an area of land where all the precipitation that falls on it drains to a common outlet. This outlet could be a point on a river, a lake, or the ocean.</p>\n<p class=\"mb-4\">The watershed is the fundamental unit of study in hydrology. It acts like a funnel, collecting all the water within its area and channeling it to a single point.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Drainage Divide</h3>\n<p class=\"mb-4\">The boundary of a watershed is called the <strong>drainage divide</strong>. It is a line of high ground (like a ridge) that separates adjacent watersheds. A drop of rain falling on one side of the divide will flow to one watershed's outlet, while a drop falling on the other side will flow to a different outlet.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Delineating a Watershed</h3>\n<p class=\"mb-4\">Watershed boundaries are determined from topographic maps, which show the elevation of the land using contour lines.</p>\n<p class=\"mb-4\">To delineate a watershed for a given outlet point:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Identify the outlet point on the stream.</li>\n    <li>Identify the high points (ridges) surrounding the stream.</li>\n    <li>Draw the drainage divide line connecting these high points, ensuring the line is always perpendicular to the contour lines it crosses. Water flows downhill, perpendicular to contour lines.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An area of land that drains all its surface water to a single, common outlet is called a:",
+      "options": [
+        { "text": "Aquifer", "isCorrect": false },
+        { "text": "Watershed", "isCorrect": true },
+        { "text": "Floodplain", "isCorrect": false },
+        { "text": "Water table", "isCorrect": false }
+      ],
+      "explanation": "A watershed, also known as a catchment or drainage basin, is the fundamental hydrologic unit defined by the area of land that contributes flow to a specific outlet point."
+    },
+    {
+      "question": "On a topographic map, the boundary line that separates two adjacent watersheds is known as the:",
+      "options": [
+        { "text": "Contour line", "isCorrect": false },
+        { "text": "Stream line", "isCorrect": false },
+        { "text": "Drainage divide", "isCorrect": true },
+        { "text": "Property line", "isCorrect": false }
+      ],
+      "explanation": "The drainage divide is a line of highest elevation that separates the flow of water into different drainage basins. A raindrop falling on one side of the divide flows to one watershed, while a drop on the other side flows to the neighboring one."
+    }
+  ]
+}

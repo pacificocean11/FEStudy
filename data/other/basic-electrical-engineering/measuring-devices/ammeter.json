@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">An <strong>ammeter</strong> is an instrument used for measuring the electric current in a circuit. The name is derived from the unit of current, the ampere.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. How to Connect an Ammeter</h3>\n<p class=\"mb-4\">To measure the current flowing through a circuit, an ammeter must be connected in <strong>series</strong> with the circuit. This requires breaking the circuit and inserting the ammeter so that all the current being measured flows through the meter.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Ideal Ammeter</h3>\n<p class=\"mb-4\">An ideal ammeter has <strong>zero internal resistance</strong>. This is to ensure that when it is inserted into the circuit, it does not add any extra resistance, which would reduce the current it is trying to measure. Real ammeters have very low, but not zero, internal resistance.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "To measure the total current flowing out of a battery, how should an ammeter be connected?",
+      "options": [
+        { "text": "In series with the battery.", "isCorrect": true },
+        { "text": "In parallel with the battery.", "isCorrect": false },
+        { "text": "It should replace the battery.", "isCorrect": false },
+        { "text": "It should be connected to a different circuit.", "isCorrect": false }
+      ],
+      "explanation": "An ammeter measures current flow, so it must be placed in the path of the current. This requires connecting it in series, so that the circuit current flows through the meter."
+    },
+    {
+      "question": "What is the internal resistance of an ideal ammeter and why?",
+      "options": [
+        { "text": "Zero, so it does not add resistance to the circuit.", "isCorrect": true },
+        { "text": "Infinite, so it draws no current from the circuit.", "isCorrect": false },
+        { "text": "Zero, so all the current flows through it.", "isCorrect": false },
+        { "text": "Infinite, so all the voltage drops across it.", "isCorrect": false }
+      ],
+      "explanation": "An ideal ammeter has zero resistance. Since it is connected in series, this ensures it does not add any additional resistance to the circuit, which would alter the current that it is intended to measure."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>pH</strong> is a logarithmic scale used to specify the acidity or basicity of an aqueous solution. It is defined as the negative of the base-10 logarithm of the hydrogen ion concentration, $[H^+]$.</p>\n$$ pH = -\\log_{10}[H^+] $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The pH Scale</h3>\n<p class=\"mb-4\">At 25°C:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Acidic solutions:</strong> $pH < 7$</li>\n    <li><strong>Neutral solutions:</strong> $pH = 7$</li>\n    <li><strong>Basic (alkaline) solutions:</strong> $pH > 7$</li>\n</ul>\n<p class=\"mb-4\">Because it is a logarithmic scale, a change of one pH unit represents a tenfold change in hydrogen ion concentration.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. pOH and the Ion Product of Water</h3>\n<p class=\"mb-4\">Similarly, <strong>pOH</strong> is defined in terms of the hydroxide ion concentration, $[OH^-]$:</p>\n$$ pOH = -\\log_{10}[OH^-] $$\n<p class=\"mb-4\">In any aqueous solution at 25°C, the ion product of water is a constant: $K_w = [H^+][OH^-] = 10^{-14}$. Taking the negative logarithm of this equation gives a simple relationship between pH and pOH:</p>\n$$ pH + pOH = 14 $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A solution has a hydrogen ion concentration of $[H^+] = 1 \\times 10^{-4}$ M. What is the pH of the solution?",
+      "options": [
+        { "text": "4", "isCorrect": true },
+        { "text": "-4", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "14", "isCorrect": false }
+      ],
+      "explanation": "Using the definition of pH: $pH = -\\log_{10}[H^+] = -\\log_{10}(10^{-4}) = -(-4) = 4$."
+    },
+    {
+      "question": "A basic solution has a pH of 9. What is its hydroxide ion concentration, $[OH^-]$?",
+      "options": [
+        { "text": "$1 \\times 10^{-9}$ M", "isCorrect": false },
+        { "text": "$1 \\times 10^{-5}$ M", "isCorrect": true },
+        { "text": "$1 \\times 10^{9}$ M", "isCorrect": false },
+        { "text": "$1 \\times 10^{5}$ M", "isCorrect": false }
+      ],
+      "explanation": "First, find the pOH using the relationship $pH + pOH = 14$. So, $pOH = 14 - pH = 14 - 9 = 5$. Now, use the definition of pOH to find $[OH^-]$: $5 = -\\log_{10}[OH^-] \\implies [OH^-] = 10^{-5}$ M."
+    }
+  ]
+}

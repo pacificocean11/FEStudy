@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Bernoulli Theorem</strong> is a statement of the conservation of energy for a fluid in motion. It states that for an inviscid (frictionless), incompressible, and steady flow, the total energy along a streamline is constant.</p>\n<p class=\"mb-4\">The total energy is composed of three parts: the energy due to pressure, the kinetic energy due to velocity, and the potential energy due to elevation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Bernoulli Equation</h3>\n<p class=\"mb-4\">The theorem is expressed as the Bernoulli equation. In its 'head' form, each term represents a height of fluid:</p>\n$$ \\frac{P_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 = \\frac{P_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 = \\text{Constant Total Head} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\frac{P}{\\gamma}$ is the <strong>Pressure Head</strong> (energy due to pressure).</li>\n    <li>$\\frac{v^2}{2g}$ is the <strong>Velocity Head</strong> (kinetic energy).</li>\n    <li>$z$ is the <strong>Elevation Head</strong> (potential energy).</li>\n    <li>$P$ is pressure, $\\gamma$ is the specific weight of the fluid ($\rho g$), $v$ is velocity, $g$ is gravity, and $z$ is elevation.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Energy and Hydraulic Grade Lines</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Energy Grade Line (EGL):</strong> A line that represents the total head of the fluid. For an ideal flow, the EGL is horizontal. In a real flow with friction, the EGL slopes downward in the direction of flow.</li>\n    <li><strong>Hydraulic Grade Line (HGL):</strong> A line that represents the sum of the pressure head and elevation head ($P/\\gamma + z$). The HGL is always below the EGL by a distance equal to the velocity head ($v^2/2g$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Extended Bernoulli Equation</h3>\n<p class=\"mb-4\">For real flows with friction, and with energy added (by a pump) or removed (by a turbine), the equation is modified:</p>\n$$ \\frac{P_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 + H_p = \\frac{P_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 + H_t + H_L $$\n<p class=\"mb-4\">where $H_p$ is the head added by a pump, $H_t$ is the head removed by a turbine, and $H_L$ is the total head loss due to friction.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the Bernoulli equation, the term $v^2/2g$ represents what?",
+      "options": [
+        { "text": "Pressure head", "isCorrect": false },
+        { "text": "Elevation head", "isCorrect": false },
+        { "text": "Velocity head", "isCorrect": true },
+        { "text": "Head loss", "isCorrect": false }
+      ],
+      "explanation": "The term $v^2/2g$ represents the kinetic energy of the fluid per unit weight, which is known as the velocity head."
+    },
+    {
+      "question": "Water flows through a horizontal pipe that constricts from a large diameter to a smaller diameter (a Venturi). What happens to the pressure in the constricted section?",
+      "options": [
+        { "text": "It increases.", "isCorrect": false },
+        { "text": "It decreases.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false },
+        { "text": "It depends on the temperature.", "isCorrect": false }
+      ],
+      "explanation": "According to the continuity equation, the velocity must increase in the smaller diameter section. According to the Bernoulli equation, if the velocity head ($v^2/2g$) increases and the elevation head ($z$) is constant, the pressure head ($P/\\gamma$) must decrease to keep the total head constant. Therefore, the pressure is lower in the constricted section."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Critical Path Method (CPM)</h3>\n<p class=\"mb-4\">The Critical Path Method is a project modeling technique used to find the longest sequence of dependent tasks and measure the total project duration. This sequence of tasks is known as the 'critical path'.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Terminology</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Activity:</strong> A single task or piece of work in a project.</li>\n    <li><strong>Duration:</strong> The amount of time required to complete an activity.</li>\n    <li><strong>Early Start (ES):</strong> The earliest possible time an activity can begin, assuming all predecessor activities start at their earliest possible times.</li>\n    <li><strong>Early Finish (EF):</strong> The earliest possible time an activity can be completed. $EF = ES + Duration$.</li>\n    <li><strong>Late Finish (LF):</strong> The latest possible time an activity can be completed without delaying the project's overall completion date.</li>\n    <li><strong>Late Start (LS):</strong> The latest possible time an activity can begin without delaying the project's overall completion date. $LS = LF - Duration$.</li>\n    <li><strong>Float (or Slack):</strong> The amount of time an activity can be delayed without affecting the project's final completion date. Float = $LS - ES$ or $LF - EF$.</li>\n    <li><strong>Critical Path:</strong> The sequence of activities that have zero float. Any delay to an activity on the critical path will directly delay the entire project. It is the longest duration path through the network diagram.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Forward and Backward Pass</h3>\n<p class=\"mb-4\">The ES and EF times are calculated by a <strong>forward pass</strong> through the network diagram (from start to finish). The LS and LF times are calculated by a <strong>backward pass</strong> (from finish to start).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An activity on the critical path of a project schedule must have:",
+      "options": [
+        { "text": "The longest duration.", "isCorrect": false },
+        { "text": "Zero float.", "isCorrect": true },
+        { "text": "The highest cost.", "isCorrect": false },
+        { "text": "The most resources assigned.", "isCorrect": false }
+      ],
+      "explanation": "By definition, the critical path is the sequence of activities where there is no flexibility in the schedule. These activities have a float (or slack) of zero, meaning any delay in their start or finish will delay the entire project."
+    },
+    {
+      "question": "An activity has an Early Start (ES) of day 5, a Late Start (LS) of day 8, and a duration of 3 days. What is the float for this activity?",
+      "options": [
+        { "text": "0 days", "isCorrect": false },
+        { "text": "3 days", "isCorrect": true },
+        { "text": "5 days", "isCorrect": false },
+        { "text": "8 days", "isCorrect": false }
+      ],
+      "explanation": "Float can be calculated in two ways. Using start times: Float = $LS - ES = 8 - 5 = 3$ days. Or, using finish times: Early Finish $EF = ES + Duration = 5 + 3 = 8$ days. Late Finish $LF = LS + Duration = 8 + 3 = 11$ days. Float = $LF - EF = 11 - 8 = 3$ days."
+    },
+    {
+        "question": "In a project network diagram, the longest path determines the:",
+        "options": [
+          { "text": "Total project cost", "isCorrect": false },
+          { "text": "Total number of activities", "isCorrect": false },
+          { "text": "Minimum project duration", "isCorrect": true },
+          { "text": "Total float for the project", "isCorrect": false }
+        ],
+        "explanation": "The critical path is the longest sequence of dependent activities through the project network. The sum of the durations of the activities on this path determines the shortest possible time to complete the entire project."
+      }
+  ]
+}

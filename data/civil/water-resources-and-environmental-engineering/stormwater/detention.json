@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose of Stormwater Management</h3>\n<p class=\"mb-4\">Urban development increases impervious surfaces (like roofs, roads, and parking lots), which prevents rainwater from soaking into the ground. This leads to increased volume and velocity of stormwater runoff, which can cause downstream flooding, channel erosion, and pollution. The primary goal of stormwater management is to mitigate these impacts.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Detention vs. Retention</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Detention Basin (Dry Pond):</strong> A basin designed to temporarily store stormwater runoff and release it slowly over time through a controlled outlet structure. The primary goal is <strong>peak flow reduction</strong> (quantity control). The basin is designed to be dry between storm events.</li>\n    <li><strong>Retention Basin (Wet Pond):</strong> A basin designed to maintain a permanent pool of water. It also provides peak flow reduction, but the permanent pool allows for significant <strong>water quality improvement</strong> as pollutants settle out.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hydrograph Modification</h3>\n<p class=\"mb-4\">A <strong>hydrograph</strong> is a graph showing the rate of flow (discharge) versus time past a specific point in a river, channel, or conduit carrying flow. Land development makes the hydrograph 'peakier' and faster (higher peak flow, shorter time to peak).</p>\n<p class=\"mb-4\">A detention basin modifies the post-development hydrograph by storing water and releasing it slowly. This results in a new outflow hydrograph that has a <strong>lower peak flow rate</strong> and a <strong>longer duration</strong>. The goal is often to make the post-development peak flow no greater than the pre-development peak flow.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary purpose of a stormwater detention basin?",
+      "options": [
+        { "text": "To improve water quality by removing pollutants.", "isCorrect": false },
+        { "text": "To reduce the peak rate of stormwater runoff.", "isCorrect": true },
+        { "text": "To store water for irrigation.", "isCorrect": false },
+        { "text": "To increase the velocity of stormwater flow.", "isCorrect": false }
+      ],
+      "explanation": "The main function of a detention basin is quantity control. It is designed to capture a large volume of runoff during a storm and release it at a much lower, controlled rate to prevent downstream flooding and erosion."
+    },
+    {
+      "question": "How does a detention basin affect the shape of a storm hydrograph?",
+      "options": [
+        { "text": "It increases the peak flow and shortens the duration.", "isCorrect": false },
+        { "text": "It has no effect on the hydrograph.", "isCorrect": false },
+        { "text": "It decreases the peak flow and increases the duration.", "isCorrect": true },
+        { "text": "It shifts the hydrograph to an earlier time.", "isCorrect": false }
+      ],
+      "explanation": "By storing water and releasing it slowly, a detention basin effectively 'flattens' the hydrograph. The peak of the outflow hydrograph will be significantly lower than the peak of the inflow hydrograph, and the flow will be spread out over a longer period of time."
+    }
+  ]
+}

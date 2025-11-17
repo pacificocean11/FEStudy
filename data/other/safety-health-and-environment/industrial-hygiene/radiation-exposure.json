@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Types of Radiation</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Non-ionizing Radiation:</strong> Radiation that has enough energy to move atoms in a molecule around or cause them to vibrate, but not enough to remove electrons. Examples include radio waves, microwaves, and visible light.</li>\n    <li><strong>Ionizing Radiation:</strong> Radiation with enough energy to remove tightly bound electrons from atoms, thus creating ions. This is the type of radiation that is most hazardous to health. Examples include alpha particles, beta particles, gamma rays, and X-rays.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Health Effects and Dose</h3>\n<p class=\"mb-4\">Ionizing radiation can damage living tissue and DNA. The biological effect of radiation is measured by the <strong>equivalent dose</strong>, which accounts for the type of radiation. The SI unit for equivalent dose is the <strong>sievert (Sv)</strong>. A more traditional unit is the <strong>rem</strong> (roentgen equivalent man), where $1 Sv = 100 rem$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principles of Radiation Protection (ALARA)</h3>\n<p class=\"mb-4\">The guiding principle for radiation safety is <strong>ALARA</strong>: As Low As Reasonably Achievable. This is accomplished through three basic control measures:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Time:</strong> Minimize the time spent in a radiation field. The total dose is directly proportional to the time of exposure.</li>\n    <li><strong>Distance:</strong> Maximize the distance from the radiation source. The intensity of radiation from a point source decreases with the square of the distance (Inverse Square Law).</li>\n    <li><strong>Shielding:</strong> Use appropriate absorbing material (shielding) between the source and the person. The type and thickness of shielding depend on the type of radiation (e.g., lead for X-rays and gamma rays, plexiglass for beta particles).</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is a form of ionizing radiation?",
+      "options": [
+        { "text": "Radio waves", "isCorrect": false },
+        { "text": "Microwaves", "isCorrect": false },
+        { "text": "Visible light", "isCorrect": false },
+        { "text": "X-rays", "isCorrect": true }
+      ],
+      "explanation": "X-rays have sufficient energy to knock electrons out of atoms, creating ions. This ability to ionize atoms is what makes them a health hazard. Radio waves, microwaves, and visible light are all forms of non-ionizing radiation."
+    },
+    {
+      "question": "If you double your distance from a point source of gamma radiation, the radiation intensity you are exposed to will be reduced to:",
+      "options": [
+        { "text": "One-half of the original intensity.", "isCorrect": false },
+        { "text": "One-quarter of the original intensity.", "isCorrect": true },
+        { "text": "One-eighth of the original intensity.", "isCorrect": false },
+        { "text": "It will not change.", "isCorrect": false }
+      ],
+      "explanation": "Radiation from a point source follows the Inverse Square Law. The intensity is inversely proportional to the square of the distance ($I \\propto 1/d^2$). If the distance is doubled ($d \\rightarrow 2d$), the intensity becomes proportional to $1/(2d)^2 = 1/(4d^2)$, which is one-quarter of the original intensity."
+    }
+  ]
+}

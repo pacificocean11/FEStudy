@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Hydrologic routing</strong> is a technique used to predict the changes in a flood hydrograph as it moves through a river reach or a reservoir. It is the process of determining the outflow hydrograph at a downstream point, given an inflow hydrograph at an upstream point.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Continuity Equation</h3>\n<p class=\"mb-4\">All routing methods are based on the principle of conservation of mass, expressed by the continuity equation:</p>\n<p class=\"text-center font-semibold mb-4\">Inflow - Outflow = Change in Storage</p>\n$$ I(t) - O(t) = \\frac{dS}{dt} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$I(t)$ is the inflow rate at time t.</li>\n    <li>$O(t)$ is the outflow rate at time t.</li>\n    <li>$dS/dt$ is the rate of change of water volume stored in the system.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Reservoir Routing (Level Pool Routing)</h3>\n<p class=\"mb-4\">This method is used to route a hydrograph through a reservoir or detention basin. It assumes that the water surface in the reservoir is perfectly horizontal. The method requires two key relationships for the reservoir:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Storage-Outflow Relationship:</strong> A curve or equation that relates the amount of water stored ($S$) in the reservoir to the outflow rate ($O$) from the outlet structure.</li>\n    <li><strong>Storage-Elevation Relationship:</strong> A curve or equation that relates the amount of water stored ($S$) to the water surface elevation ($h$).</li>\n</ol>\n<p class=\"mb-4\">Given an inflow hydrograph, the continuity equation is solved in discrete time steps to calculate the outflow hydrograph and the changing water level in the basin.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "All hydrologic routing methods are fundamentally based on which principle?",
+      "options": [
+        { "text": "Conservation of energy (Bernoulli's equation)", "isCorrect": false },
+        { "text": "Conservation of mass (the continuity equation)", "isCorrect": true },
+        { "text": "Conservation of momentum", "isCorrect": false },
+        { "text": "Darcy's Law", "isCorrect": false }
+      ],
+      "explanation": "The core of any routing method is the mass balance equation, which states that the difference between the rate of inflow and the rate of outflow must equal the rate at which storage is changing within the system (reservoir or river reach)."
+    },
+    {
+      "question": "The process of calculating an outflow hydrograph for a detention pond, given an inflow hydrograph and the pond's characteristics, is known as:",
+      "options": [
+        { "text": "Unit hydrograph development", "isCorrect": false },
+        { "text": "Rainfall analysis", "isCorrect": false },
+        { "text": "Reservoir routing", "isCorrect": true },
+        { "text": "Frequency analysis", "isCorrect": false }
+      ],
+      "explanation": "Reservoir routing (or level pool routing) is the specific hydrologic procedure used to model the passage of a flood wave through a reservoir or detention pond."
+    }
+  ]
+}

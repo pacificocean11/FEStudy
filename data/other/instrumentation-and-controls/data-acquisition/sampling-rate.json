@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Sampling</strong> is the process of converting a continuous-time analog signal into a discrete-time signal by taking measurements, or samples, at regular intervals. The <strong>sampling rate</strong> (or sampling frequency) is the number of samples taken per second, measured in Hertz (Hz) or samples per second (S/s).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Nyquist-Shannon Sampling Theorem</h3>\n<p class=\"mb-4\">This is a fundamental theorem in signal processing that dictates the minimum sampling rate required to accurately capture the information in a continuous signal. It states:</p>\n<blockquote class=\"border-l-4 border-slate-300 pl-4 italic my-4\">\n    The sampling rate ($f_s$) must be strictly greater than twice the highest frequency component ($f_{max}$) present in the signal.\n</blockquote>\n$$ f_s > 2f_{max} $$\n<p class=\"mb-4\">The frequency $2f_{max}$ is known as the <strong>Nyquist rate</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Aliasing</h3>\n<p class=\"mb-4\">If a signal is sampled at a rate below the Nyquist rate ($f_s < 2f_{max}$), a phenomenon called <strong>aliasing</strong> occurs. High-frequency components in the signal impersonate lower frequencies in the sampled data, leading to a distorted and incorrect representation of the original signal. To prevent aliasing, an anti-aliasing filter (a low-pass filter) is often used to remove frequencies above $f_s/2$ before sampling.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "To accurately capture a sinusoidal signal with a frequency of 500 Hz, what is the theoretical minimum sampling rate required?",
+      "options": [
+        { "text": "500 Hz", "isCorrect": false },
+        { "text": "1000 Hz", "isCorrect": false },
+        { "text": "Slightly greater than 1000 Hz", "isCorrect": true },
+        { "text": "250 Hz", "isCorrect": false }
+      ],
+      "explanation": "According to the Nyquist theorem, the sampling rate ($f_s$) must be greater than twice the highest frequency in the signal ($f_{max}$). Here, $f_{max} = 500$ Hz. The Nyquist rate is $2 \\times 500 = 1000$ Hz. Therefore, the sampling rate must be strictly greater than 1000 Hz."
+    },
+    {
+      "question": "A 1200 Hz signal is sampled at a rate of 1000 Hz. What will be the apparent (aliased) frequency in the sampled data?",
+      "options": [
+        { "text": "1200 Hz", "isCorrect": false },
+        { "text": "1000 Hz", "isCorrect": false },
+        { "text": "200 Hz", "isCorrect": false },
+        { "text": "200 Hz (folded)", "isCorrect": true }
+      ],
+      "explanation": "Since the sampling rate is less than the Nyquist rate, aliasing will occur. The apparent frequency is the absolute difference between the signal frequency and the nearest integer multiple of the sampling frequency. Here, $|1200 - 1 \\times 1000| = 200$ Hz. The 1200 Hz signal will appear as a 200 Hz signal in the data. The actual aliased frequency is more complex to determine without more info, but it will be a low frequency related to 200 Hz."
+    }
+  ]
+}

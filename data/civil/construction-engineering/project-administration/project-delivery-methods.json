@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>project delivery method</strong> is a system used by a project owner to organize and finance the design, construction, operations, and maintenance services for a project. The choice of delivery method establishes the relationships and responsibilities of the parties involved.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Design-Bid-Build (DBB)</h3>\n<p class=\"mb-4\">This is the traditional method in the United States.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Process:</strong> The owner hires a designer to create a complete set of drawings and specifications. The project is then bid out to contractors, and the lowest responsive, responsible bidder is awarded the contract to build the project.</li>\n    <li><strong>Contracts:</strong> The owner has two separate contracts: one with the designer and one with the builder.</li>\n    <li><strong>Characteristics:</strong> Linear, sequential process. Design is 100% complete before construction begins. Provides a firm, lump-sum price before construction, but can be slow and may lead to adversarial relationships if design errors are found.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Design-Build (DB)</h3>\n<p class=\"mb-4\">This method provides the owner with a single point of responsibility for both design and construction.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Process:</strong> The owner hires a single entity (a design-build firm, or a joint venture between a designer and contractor) to perform both design and construction.</li>\n    <li><strong>Contracts:</strong> The owner has only one contract.</li>\n    <li><strong>Characteristics:</strong> Allows for fast-tracking (construction can begin before design is 100% complete), promotes collaboration, and provides a single point of accountability. The owner has less control over the details of the design compared to DBB.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Construction Manager at Risk (CMAR)</h3>\n<p class=\"mb-4\">This method involves the contractor (as a Construction Manager) early in the design process to provide constructability and cost-estimating expertise.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Process:</strong> The owner hires a designer and a CMAR firm. The CMAR acts as a consultant during the design phase. Before construction, the CMAR provides a <strong>Guaranteed Maximum Price (GMP)</strong>. The CMAR then acts as the general contractor and is 'at risk' for any costs that exceed the GMP.</li>\n    <li><strong>Contracts:</strong> The owner has two contracts: one with the designer and one with the CMAR.</li>\n    <li><strong>Characteristics:</strong> Good collaboration, allows for fast-tracking, and gives the owner a price guarantee before construction is complete.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which project delivery method is characterized by the owner having separate contracts with the architect and the contractor, and construction not beginning until the design is 100% complete?",
+      "options": [
+        { "text": "Design-Build (DB)", "isCorrect": false },
+        { "text": "Design-Bid-Build (DBB)", "isCorrect": true },
+        { "text": "Construction Manager at Risk (CMAR)", "isCorrect": false },
+        { "text": "Public-Private Partnership (P3)", "isCorrect": false }
+      ],
+      "explanation": "Design-Bid-Build is the traditional, sequential method where the design phase is fully completed before the project is sent out for competitive bidding and then construction. The owner manages two separate contracts."
+    },
+    {
+      "question": "An owner wants to complete a project as quickly as possible and prefers to have a single point of responsibility for both design and construction. Which delivery method best suits these needs?",
+      "options": [
+        { "text": "Design-Build (DB)", "isCorrect": true },
+        { "text": "Design-Bid-Build (DBB)", "isCorrect": false },
+        { "text": "Multi-prime", "isCorrect": false },
+        { "text": "Agency CM", "isCorrect": false }
+      ],
+      "explanation": "The Design-Build method provides a single contract and single point of responsibility for the owner. This integration of design and construction allows for 'fast-tracking', where construction can start on early phases of the project (like foundations) before the later design phases are finalized, significantly shortening the overall project schedule."
+    }
+  ]
+}

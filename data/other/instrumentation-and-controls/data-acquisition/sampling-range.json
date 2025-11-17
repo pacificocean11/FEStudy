@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Range</h3>\n<p class=\"mb-4\">The <strong>range</strong> of a data acquisition system or sensor is the span of input values that it can measure, from the minimum to the maximum. For example, a pressure sensor might have a range of 0 to 100 psi, or a thermocouple might have a range of -200°C to 1200°C.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Resolution</h3>\n<p class=\"mb-4\"><strong>Resolution</strong> is the smallest change in the input signal that can be detected and represented by the data acquisition system. For digital systems, it is determined by the number of bits of the Analog-to-Digital Converter (ADC).</p>\n<p class=\"mb-4\">A system with an $n$-bit ADC can resolve the input range into $2^n$ discrete levels. The resolution is then:</p>\n$$ \\text{Resolution} = \\frac{\\text{Input Range}}{\\text{Number of Levels}} = \\frac{\\text{Range}}{2^n} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Dynamic Range</h3>\n<p class=\"mb-4\">Dynamic range is the ratio of the largest to the smallest signal that a system can measure, often expressed in decibels (dB).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A data acquisition system uses a 12-bit ADC and has an input voltage range of 0 to 10 V. What is the smallest voltage change it can detect (i.e., its resolution)?",
+      "options": [
+        { "text": "10 mV", "isCorrect": false },
+        { "text": "1.2 mV", "isCorrect": false },
+        { "text": "2.44 mV", "isCorrect": true },
+        { "text": "0.83 mV", "isCorrect": false }
+      ],
+      "explanation": "A 12-bit ADC can represent the input with $2^{12} = 4096$ discrete levels. The input range is 10 V. The resolution is the range divided by the number of levels: Resolution = $10 \\text{ V} / 4096 \\approx 0.00244$ V, or 2.44 mV."
+    }
+  ]
+}

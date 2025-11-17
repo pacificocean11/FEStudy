@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Digital Data Acquisition (DAQ) System</strong> is a system that measures real-world physical phenomena and converts them into a digital format that can be processed by a computer. It is the interface between the analog world and the digital world.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Components of a DAQ System</h3>\n<p class=\"mb-4\">A typical DAQ system consists of several stages:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Sensor/Transducer:</strong> Converts a physical phenomenon (e.g., temperature, pressure, strain) into a measurable electrical signal (usually voltage).</li>\n    <li><strong>Signal Conditioning:</strong> Prepares the analog signal for the ADC. This can include amplification, filtering, and isolation.</li>\n    <li><strong>Multiplexer (MUX):</strong> An electronic switch that allows a single ADC to measure signals from multiple input channels one at a time.</li>\n    <li><strong>Analog-to-Digital Converter (ADC):</strong> Converts the conditioned analog signal into a digital number.</li>\n    <li><strong>Computer/Processor:</strong> Controls the DAQ hardware, processes the digital data, and stores or displays the results.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a data acquisition system, what is the role of the signal conditioning circuitry?",
+      "options": [
+        { "text": "To convert the physical quantity into an electrical signal.", "isCorrect": false },
+        { "text": "To convert the analog signal to a digital signal.", "isCorrect": false },
+        { "text": "To amplify, filter, and otherwise prepare the analog signal for digitization.", "isCorrect": true },
+        { "text": "To store the acquired data.", "isCorrect": false }
+      ],
+      "explanation": "Signal conditioning takes the raw analog signal from the sensor and prepares it for the ADC. This involves making the signal 'cleaner' (filtering) and adjusting its amplitude (amplification) to match the ADC's input range."
+    }
+  ]
+}

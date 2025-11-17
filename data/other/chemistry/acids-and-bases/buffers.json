@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>buffer solution</strong> (or simply, a buffer) is an aqueous solution consisting of a mixture of a weak acid and its conjugate base, or a weak base and its conjugate acid. Buffers have the property that their pH changes very little when a small amount of strong acid or strong base is added to them.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. How Buffers Work</h3>\n<p class=\"mb-4\">A buffer works by neutralizing added acid or base. Consider a buffer made of a weak acid ($HA$) and its conjugate base ($A^-$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>When a strong acid ($H^+$) is added, the conjugate base reacts with it: $A^- + H^+ \\rightarrow HA$.</li>\n    <li>When a strong base ($OH^-$) is added, the weak acid reacts with it: $HA + OH^- \\rightarrow A^- + H_2O$.</li>\n</ul>\n<p class=\"mb-4\">In both cases, the strong acid or base is converted into a weak acid or base, which causes a much smaller change in pH than the strong acid/base would have caused on its own.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Henderson-Hasselbalch Equation</h3>\n<p class=\"mb-4\">This equation relates the pH of a buffer solution to the acid dissociation constant ($K_a$) of the weak acid and the ratio of the concentrations of the conjugate base to the weak acid.</p>\n$$ pH = pK_a + \\log_{10}\\left(\\frac{[A^-]}{[HA]}\\right) $$\n<p class=\"mb-4\">where $pK_a = -\\log_{10}(K_a)$. This equation shows that the pH of a buffer is most effective (changes the least) when the concentrations of the acid and its conjugate base are equal ($[A^-]/[HA] = 1$). At this point, $pH = pK_a$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following pairs would make an effective buffer solution?",
+      "options": [
+        { "text": "HCl (a strong acid) and NaCl", "isCorrect": false },
+        { "text": "HC₂H₃O₂ (acetic acid, a weak acid) and NaC₂H₃O₂ (its conjugate base)", "isCorrect": true },
+        { "text": "NaOH (a strong base) and NaCl", "isCorrect": false },
+        { "text": "HCl and NaOH", "isCorrect": false }
+      ],
+      "explanation": "A buffer solution consists of a weak acid and its conjugate base, or a weak base and its conjugate acid. Acetic acid is a weak acid, and sodium acetate provides its conjugate base (the acetate ion), so this pair will form a buffer."
+    },
+    {
+      "question": "A buffer is most effective at resisting pH change when:",
+      "options": [
+        { "text": "The concentration of the weak acid is much greater than the conjugate base.", "isCorrect": false },
+        { "text": "The concentration of the conjugate base is much greater than the weak acid.", "isCorrect": false },
+        { "text": "The concentrations of the weak acid and its conjugate base are approximately equal.", "isCorrect": true },
+        { "text": "The solution is strongly diluted.", "isCorrect": false }
+      ],
+      "explanation": "According to the Henderson-Hasselbalch equation, when $[A^-] = [HA]$, the ratio is 1, and $\\log(1) = 0$. This means $pH = pK_a$. At this point, the buffer has equal capacity to neutralize both added acid and added base, making it most effective."
+    }
+  ]
+}

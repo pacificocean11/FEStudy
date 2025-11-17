@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pavement Structure</h3>\n<p class=\"mb-4\">A flexible pavement (like asphalt) is a layered system designed to distribute concentrated traffic loads to the subgrade soil without over-stressing it. The typical layers are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Surface Course:</strong> The top layer, typically hot-mix asphalt (HMA). It provides a smooth, durable, and weather-resistant surface.</li>\n    <li><strong>Base Course:</strong> A layer of crushed aggregate or treated material beneath the surface course. It provides the main structural support.</li>\n    <li><strong>Subbase Course:</strong> An optional layer between the base and subgrade, often used when the subgrade is weak. It consists of lower-quality materials than the base course.</li>\n    <li><strong>Subgrade:</strong> The natural, compacted soil that forms the foundation of the pavement.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Pavement Design Methods</h3>\n<p class=\"mb-4\">The goal of thickness design is to determine the required thickness of each layer to last for a specified design life (e.g., 20 years).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Empirical Design (AASHTO 1993):</strong> This is a traditional method based on the results of the AASHO Road Test. It uses empirical equations and nomographs to relate traffic, subgrade strength, and material properties to a required 'Structural Number' (SN), which is then converted into layer thicknesses.</li>\n    <li><strong>Mechanistic-Empirical (M-E) Design:</strong> A more advanced method (e.g., AASHTOWare Pavement ME Design). It uses mechanistic models to calculate pavement stresses and strains under traffic and environmental loads, and then uses empirical models to predict pavement distresses (like cracking and rutting) over time.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Design Inputs</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Traffic:</strong> The total accumulated traffic over the design life, converted to a standard loading. This is expressed in <strong>Equivalent Single Axle Loads (ESALs)</strong>. An ESAL is the damage done by one pass of an 18,000-pound single axle.</li>\n    <li><strong>Subgrade Strength:</strong> The strength of the foundation soil, typically measured by the California Bearing Ratio (CBR) or the Resilient Modulus (Mr).</li>\n    <li><strong>Material Properties:</strong> The stiffness and strength of the asphalt, base, and subbase materials.</li>\n    <li><strong>Reliability:</strong> The desired probability that the pavement will perform satisfactorily over its design life.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In pavement design, the cumulative traffic loading over the design life is commonly expressed in terms of:",
+      "options": [
+        { "text": "Average Daily Traffic (ADT)", "isCorrect": false },
+        { "text": "Vehicle Miles Traveled (VMT)", "isCorrect": false },
+        { "text": "Equivalent Single Axle Loads (ESALs)", "isCorrect": true },
+        { "text": "Number of trucks per day", "isCorrect": false }
+      ],
+      "explanation": "ESALs are the standard unit for quantifying traffic loading for pavement design. This method converts the damage from wheel loads of various magnitudes and configurations into the damage done by a standard 18,000-pound single axle load."
+    },
+    {
+      "question": "A thicker pavement structure is generally required when:",
+      "options": [
+        { "text": "The subgrade soil is very strong.", "isCorrect": false },
+        { "text": "The anticipated traffic volume is low.", "isCorrect": false },
+        { "text": "The subgrade soil is weak.", "isCorrect": true },
+        { "text": "The design life is short.", "isCorrect": false }
+      ],
+      "explanation": "The primary function of the pavement structure is to spread the traffic loads so that the pressure on the subgrade is low enough to prevent deformation. A weaker subgrade can withstand less pressure, so a thicker pavement structure is needed to distribute the load over a wider area."
+    }
+  ]
+}

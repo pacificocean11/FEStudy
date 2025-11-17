@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Common Water Quality Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>pH:</strong> A measure of how acidic or basic the water is. A pH of 7 is neutral. Drinking water is typically between 6.5 and 8.5.</li>\n    <li><strong>Turbidity:</strong> A measure of the cloudiness or haziness of water caused by suspended particles. It is measured in Nephelometric Turbidity Units (NTU). High turbidity can protect microorganisms from disinfection.</li>\n    <li><strong>Hardness:</strong> Caused by dissolved minerals, primarily calcium (Ca²⁺) and magnesium (Mg²⁺). Hard water can cause mineral buildup (scale) in pipes and requires more soap to produce a lather.</li>\n    <li><strong>Dissolved Oxygen (DO):</strong> The amount of oxygen dissolved in water. It is a critical indicator of water quality for aquatic life. Low DO levels can indicate pollution from organic wastes.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Safe Drinking Water Act (SDWA)</h3>\n<p class=\"mb-4\">The SDWA is the main federal law in the U.S. that ensures the quality of Americans' drinking water. Under this act, the EPA sets standards for drinking water quality.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Maximum Contaminant Level Goal (MCLG):</strong> The level of a contaminant in drinking water below which there is no known or expected risk to health. MCLGs are non-enforceable public health goals.</li>\n    <li><strong>Maximum Contaminant Level (MCL):</strong> The highest level of a contaminant that is allowed in drinking water. MCLs are set as close to MCLGs as is feasible using the best available treatment technology and taking cost into consideration. MCLs are enforceable standards.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Water hardness is primarily caused by the presence of which dissolved ions?",
+      "options": [
+        { "text": "Sodium and Potassium", "isCorrect": false },
+        { "text": "Chloride and Sulfate", "isCorrect": false },
+        { "text": "Calcium and Magnesium", "isCorrect": true },
+        { "text": "Iron and Manganese", "isCorrect": false }
+      ],
+      "explanation": "Hardness in water is defined as the concentration of multivalent cations. The most common of these cations in natural water are calcium (Ca²⁺) and magnesium (Mg²⁺)."
+    },
+    {
+      "question": "Under the Safe Drinking Water Act, which standard is an enforceable limit on the concentration of a contaminant in public water supplies?",
+      "options": [
+        { "text": "Maximum Contaminant Level (MCL)", "isCorrect": true },
+        { "text": "Maximum Contaminant Level Goal (MCLG)", "isCorrect": false },
+        { "text": "Total Maximum Daily Load (TMDL)", "isCorrect": false },
+        { "text": "Biochemical Oxygen Demand (BOD)", "isCorrect": false }
+      ],
+      "explanation": "The Maximum Contaminant Level (MCL) is the legally enforceable standard that public water systems must meet. The MCLG is a non-enforceable health goal."
+    }
+  ]
+}

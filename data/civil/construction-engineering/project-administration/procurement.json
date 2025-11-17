@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Procurement</strong> is the process of acquiring the goods and services needed to complete a project. In construction, this primarily refers to the process of selecting and hiring a contractor.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Competitive Bidding</h3>\n<p class=\"mb-4\">This is the most common procurement method for public projects (funded by taxpayer money). It is designed to be open, fair, and to obtain the lowest price for the work.</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Advertisement/Solicitation:</strong> The project is publicly advertised, inviting all qualified contractors to submit a bid.</li>\n    <li><strong>Bid Submission:</strong> Bidders prepare a detailed cost estimate and submit a sealed bid by a specific deadline.</li>\n    <li><strong>Bid Opening:</strong> All bids are opened publicly at the designated time, and the prices are read aloud.</li>\n    <li><strong>Bid Evaluation:</strong> The owner (or their representative) evaluates the bids to ensure they are complete and conform to the requirements.</li>\n    <li><strong>Contract Award:</strong> The contract is typically awarded to the <strong>'lowest responsive, responsible bidder'</strong>.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Bidder Qualifications</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Responsive Bidder:</strong> A bidder who has submitted a bid that conforms to all the material terms and conditions of the invitation for bids (e.g., filled out the bid form correctly, included a required bid bond).</li>\n    <li><strong>Responsible Bidder:</strong> A bidder who is deemed to be qualified, with the financial and technical capacity to perform the work.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Negotiation</h3>\n<p class=\"mb-4\">In private projects, the owner is not always required to select the lowest bidder. They may choose to negotiate a price and contract terms with one or more pre-selected contractors based on qualifications, reputation, and other factors.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In public construction procurement, a contract is typically awarded to the:",
+      "options": [
+        { "text": "Fastest bidder", "isCorrect": false },
+        { "text": "Contractor with the most experience", "isCorrect": false },
+        { "text": "Lowest responsive, responsible bidder", "isCorrect": true },
+        { "text": "Contractor recommended by the engineer", "isCorrect": false }
+      ],
+      "explanation": "Public procurement laws are designed to ensure fairness and protect public funds. This requires awarding the contract to the bidder who is not only the lowest in price but is also responsible (qualified to do the work) and responsive (has followed all bidding rules)."
+    },
+    {
+      "question": "A contractor submits the lowest bid for a city project but fails to include a required bid bond with their submission. The city would likely deem this contractor to be:",
+      "options": [
+        { "text": "Not responsible", "isCorrect": false },
+        { "text": "Not responsive", "isCorrect": true },
+        { "text": "The best value", "isCorrect": false },
+        { "text": "The winner of the contract", "isCorrect": false }
+      ],
+      "explanation": "A 'responsive' bidder is one who has complied with all the procedural requirements of the bid invitation. Failing to include a required document like a bid bond makes the bid non-responsive, and it will typically be rejected, even if it is the lowest price."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Bioconversion</strong> (or biotransformation) is the conversion of organic materials, such as plant or animal waste, into useful products or energy sources by biological processes. This typically involves microorganisms like bacteria, fungi, or their enzymes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Processes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Fermentation:</strong> An anaerobic (without oxygen) process in which microorganisms like yeast and bacteria break down sugars. A common example is the fermentation of glucose by yeast to produce ethanol and carbon dioxide.</li>\n    $$ C_6H_{12}O_6 \\rightarrow 2C_2H_5OH + 2CO_2 $$\n    <li><strong>Anaerobic Digestion:</strong> A sequence of processes by which microorganisms break down biodegradable material in the absence of oxygen. It is widely used to treat wastewater and organic wastes, producing biogas (mostly methane and carbon dioxide) which can be used as a fuel.</li>\n    <li><strong>Composting:</strong> An aerobic (with oxygen) process of decomposing organic solid wastes.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The production of ethanol from corn sugars by yeast is an example of which bioconversion process?",
+      "options": [
+        { "text": "Anaerobic digestion", "isCorrect": false },
+        { "text": "Composting", "isCorrect": false },
+        { "text": "Fermentation", "isCorrect": true },
+        { "text": "Oxidation", "isCorrect": false }
+      ],
+      "explanation": "Fermentation is the specific anaerobic process where microorganisms convert sugars into alcohols, acids, or gases. The production of bioethanol is a large-scale industrial application of fermentation."
+    }
+  ]
+}

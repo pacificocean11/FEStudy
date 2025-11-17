@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Factor of Safety (F.S.)</strong>, also known as Safety Factor (SF), is a term describing the structural capacity of a system beyond the expected or actual loads. It is a ratio of the strength of the material to the actual stress it is experiencing (or expected to experience).</p>\n$$ F.S. = \\frac{\\text{Failure Stress}}{\\text{Allowable Stress}} \\text{ or } \\frac{\\text{Material Strength}}{\\text{Design Stress}} $$\n<p class=\"mb-4\">The factor of safety is a measure of the reliability of a particular design. A value greater than 1.0 is required for a design to be considered safe.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Application</h3>\n<p class=\"mb-4\">The choice of which material strength to use depends on the material and the failure mode:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>For <strong>ductile materials</strong>, where failure is defined by yielding, the yield strength ($S_y$) is used:</li>\n    $$ F.S. = \\frac{S_y}{\\sigma_{max}} $$\n    <li>For <strong>brittle materials</strong>, where failure is by fracture, the ultimate tensile strength ($S_{ut}$) is used:</li>\n    $$ F.S. = \\frac{S_{ut}}{\\sigma_{max}} $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Choosing a Factor of Safety</h3>\n<p class=\"mb-4\">The required factor of safety depends on many factors, including:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The uncertainty in the loading conditions.</li>\n    <li>The consequences of failure (e.g., higher F.S. for aircraft components than for a shelf bracket).</li>\n    <li>The quality of the materials and manufacturing processes.</li>\n    <li>The operating environment (e.g., corrosive environments may require a higher F.S.).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A steel rod with a yield strength of 400 MPa is subjected to a tensile stress of 250 MPa. What is the factor of safety against yielding?",
+      "options": [
+        { "text": "0.625", "isCorrect": false },
+        { "text": "1.6", "isCorrect": true },
+        { "text": "150", "isCorrect": false },
+        { "text": "400", "isCorrect": false }
+      ],
+      "explanation": "For a ductile material like steel, the factor of safety against yielding is the yield strength divided by the working stress. $F.S. = S_y / \\sigma = 400 \\text{ MPa} / 250 \\text{ MPa} = 1.6$."
+    },
+    {
+      "question": "A design requires a factor of safety of 2.0. If the material is brittle with an ultimate tensile strength of 60 ksi, what is the maximum allowable stress in the component?",
+      "options": [
+        { "text": "120 ksi", "isCorrect": false },
+        { "text": "60 ksi", "isCorrect": false },
+        { "text": "30 ksi", "isCorrect": true },
+        { "text": "2.0 ksi", "isCorrect": false }
+      ],
+      "explanation": "The relationship is $F.S. = \\text{Strength} / \\text{Allowable Stress}$. Rearranging gives Allowable Stress = Strength / F.S. For a brittle material, we use the ultimate strength. Allowable Stress = $60 \\text{ ksi} / 2.0 = 30$ ksi."
+    }
+  ]
+}

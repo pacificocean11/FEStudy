@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Resource allocation</strong> is the process of assigning and managing the assets of an organization (such as labor, equipment, and materials) in a manner that supports the organization's strategic goals. In project management, it involves scheduling activities and the resources required by those activities while considering both resource availability and project time.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Resource Overallocation</h3>\n<p class=\"mb-4\">A common problem in project scheduling is <strong>resource overallocation</strong>, where more resources are required for a given time period than are available. For example, a schedule might require 12 carpenters on a day when only 8 are available.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Resource Optimization Techniques</h3>\n<p class=\"mb-4\">Two main techniques are used to resolve resource overallocation and optimize the schedule:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Resource Leveling:</strong> This technique adjusts the start and finish dates of activities to balance the demand for resources with the available supply. The primary goal is to create a resource usage profile that is as flat and constant as possible, avoiding large peaks and valleys. To achieve this, activities may be delayed beyond their float. Therefore, <strong>resource leveling can often extend the project's critical path and change the completion date</strong>.\n    </li>\n    <li>\n        <strong>Resource Smoothing:</strong> This is a less disruptive technique that attempts to optimize resource usage only within the available float of non-critical activities. It adjusts activities without affecting the project's critical path or its completion date. The goal is to smooth out resource usage, but it may not be able to resolve all resource conflicts if the available float is insufficient.\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A project manager adjusts a schedule by delaying non-critical activities to reduce the peak demand for a specific type of crane. The project's original completion date does not change. This is an example of:",
+      "options": [
+        { "text": "The Critical Path Method", "isCorrect": false },
+        { "text": "Resource Smoothing", "isCorrect": true },
+        { "text": "Resource Leveling", "isCorrect": false },
+        { "text": "Crashing the schedule", "isCorrect": false }
+      ],
+      "explanation": "Resource smoothing is the process of optimizing resource usage by only using the available float of activities. Since it does not delay activities beyond their float, it does not impact the critical path or the project's end date."
+    },
+    {
+      "question": "Which of the following statements best describes the potential outcome of resource leveling?",
+      "options": [
+        { "text": "It always shortens the project duration.", "isCorrect": false },
+        { "text": "It has no impact on the project duration.", "isCorrect": false },
+        { "text": "It may extend the project duration.", "isCorrect": true },
+        { "text": "It only affects the project cost.", "isCorrect": false }
+      ],
+      "explanation": "The primary objective of resource leveling is to resolve resource over-allocations, even if it means delaying critical tasks. Therefore, unlike resource smoothing, resource leveling can change the critical path and push out the project's final completion date."
+    }
+  ]
+}

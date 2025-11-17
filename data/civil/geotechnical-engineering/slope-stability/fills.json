@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>fill slope</strong> is a man-made slope constructed by placing and compacting soil or rock. Fills are used to raise the elevation of a site, create level areas for development (building pads), or build embankments for roads and dams.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stability Considerations</h3>\n<p class=\"mb-4\">The stability of a fill slope depends almost entirely on how it is constructed.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Compaction:</strong> This is the most critical factor. Fill material must be placed in thin layers (lifts) and compacted to a specified density (e.g., 95% of the maximum dry density determined by a Proctor test). Proper compaction increases the soil's shear strength and reduces its permeability and future settlement. Poor compaction is a primary cause of fill failure.</li>\n    <li><strong>Foundation Preparation:</strong> The natural ground beneath the fill must be properly prepared. This often involves removing weak topsoil and vegetation. If a fill is placed on a hillside, <strong>benching</strong> (cutting horizontal steps into the existing slope) is required to 'key' the new fill into the slope and prevent a sliding failure at the contact surface.</li>\n    <li><strong>Drainage:</strong> Water can significantly weaken a fill slope. Proper drainage must be installed to prevent water from saturating the fill material. This can include surface drainage swales and internal drains.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the most critical factor in ensuring the stability of a man-made fill slope?",
+      "options": [
+        { "text": "The type of equipment used.", "isCorrect": false },
+        { "text": "The time of year it is built.", "isCorrect": false },
+        { "text": "Proper compaction of the fill material in lifts.", "isCorrect": true },
+        { "text": "The final slope angle.", "isCorrect": false }
+      ],
+      "explanation": "While the slope angle is important, the stability of a fill slope is fundamentally dependent on the shear strength of the soil used to build it. Proper compaction is the process that densifies the soil, increases its shear strength, and ensures its long-term stability."
+    },
+    {
+      "question": "When constructing a fill on an existing hillside, the process of cutting step-like excavations into the hillside before placing the new fill is called:",
+      "options": [
+        { "text": "Shoring", "isCorrect": false },
+        { "text": "Leveling", "isCorrect": false },
+        { "text": "Grading", "isCorrect": false },
+        { "text": "Benching", "isCorrect": true }
+      ],
+      "explanation": "Benching is used to create a stable foundation for the new fill by keying it into the existing, stable ground. This prevents a weak interface from forming between the old and new material, which could become a slip surface."
+    }
+  ]
+}

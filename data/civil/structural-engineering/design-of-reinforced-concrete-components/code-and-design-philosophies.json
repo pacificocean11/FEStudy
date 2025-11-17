@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Governing Code</h3>\n<p class=\"mb-4\">The design of reinforced concrete structures in the United States is governed by the <strong>ACI 318, 'Building Code Requirements for Structural Concrete'</strong>, published by the American Concrete Institute.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Load and Resistance Factor Design (LRFD)</h3>\n<p class=\"mb-4\">ACI 318 is based on the <strong>Load and Resistance Factor Design (LRFD)</strong> philosophy, also known as Strength Design. This is a limit states design method that provides a consistent level of safety across different types of loads and structural members.</p>\n<p class=\"mb-4\">The fundamental principle of LRFD is:</p>\n<p class=\"text-center font-semibold text-lg mb-4\">Factored Resistance $\\ge$ Factored Loads</p>\n$$ \\phi R_n \\ge U $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$U$ is the required strength, calculated from the <strong>factored loads</strong> (service loads multiplied by load factors).</li>\n    <li>$\\phi R_n$ is the design strength, calculated from the <strong>nominal strength ($R_n$)</strong> multiplied by a <strong>strength reduction factor ($\\phi$)</strong>.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Load Factors</h3>\n<p class=\"mb-4\">Load factors ($\gamma$) are applied to the service loads (actual expected loads) to account for uncertainties in the load magnitudes. The factors are greater than 1.0. Common load combinations from ASCE 7 include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$U = 1.4D$</li>\n    <li>$U = 1.2D + 1.6L$</li>\n</ul>\n<p class=\"text-sm\">(D = Dead Load, L = Live Load)</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Strength Reduction Factors</h3>\n<p class=\"mb-4\">Strength reduction factors ($\phi$) are applied to the calculated nominal strength of a member to account for uncertainties in material properties, dimensions, and inaccuracies in design equations. The factors are less than 1.0.</p>\n<p class=\"mb-4\">The value of $\phi$ depends on the type of member and its failure mode, providing a higher safety margin for more brittle and consequential failures:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Tension-controlled sections (e.g., most beams):</strong> $\\phi = 0.90$ (ductile failure)</li>\n    <li><strong>Shear and Torsion:</strong> $\\phi = 0.75$</li>\n    <li><strong>Compression-controlled sections (e.g., columns):</strong> $\\phi = 0.65$ (brittle failure)</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The fundamental principle of Load and Resistance Factor Design (LRFD) is best described by which inequality?",
+      "options": [
+        { "text": "Actual Stress > Allowable Stress", "isCorrect": false },
+        { "text": "Factored Resistance $\\ge$ Factored Loads", "isCorrect": true },
+        { "text": "Nominal Strength < Service Loads", "isCorrect": false },
+        { "text": "Factor of Safety = 1.0", "isCorrect": false }
+      ],
+      "explanation": "LRFD ensures safety by requiring that the calculated design strength ($\phi R_n$) of a member, which is reduced to account for uncertainties, is greater than or equal to the required strength ($U$), which is calculated from loads that have been increased to account for uncertainties."
+    },
+    {
+      "question": "Why is the strength reduction factor ($\\phi$) for a tied concrete column (0.65) lower than for a concrete beam in bending (0.90)?",
+      "options": [
+        { "text": "Columns are less important than beams.", "isCorrect": false },
+        { "text": "The failure of a column is more brittle and catastrophic than the ductile failure of a properly designed beam.", "isCorrect": true },
+        { "text": "Columns use less steel reinforcement.", "isCorrect": false },
+        { "text": "The load calculations for columns are less accurate.", "isCorrect": false }
+      ],
+      "explanation": "The value of $\phi$ reflects the ductility and consequence of failure. A properly designed beam fails in a ductile manner (tension-controlled), providing warning. A compression member like a column can fail suddenly and without warning (brittle compression failure), which could lead to the progressive collapse of a structure. Therefore, a larger margin of safety (lower $\phi$ factor) is required for columns."
+    }
+  ]
+}

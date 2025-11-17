@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Oxidation-reduction (redox) reactions</strong> are chemical reactions that involve the transfer of electrons between chemical species.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Oxidation</strong> is the loss of electrons, resulting in an increase in oxidation state.</li>\n    <li><strong>Reduction</strong> is the gain of electrons, resulting in a decrease in oxidation state.</li>\n</ul>\n<p class=\"mb-4\">A helpful mnemonic is <strong>OIL RIG</strong>: <strong>O</strong>xidation <strong>I</strong>s <strong>L</strong>oss, <strong>R</strong>eduction <strong>I</strong>s <strong>G</strong>ain (of electrons).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Oxidation State</h3>\n<p class=\"mb-4\">The oxidation state (or oxidation number) is a hypothetical charge that an atom would have if all bonds to atoms of different elements were 100% ionic. It is a way to keep track of electrons in a redox reaction.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Oxidizing and Reducing Agents</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The <strong>oxidizing agent</strong> (or oxidant) is the substance that causes oxidation by accepting electrons. The oxidizing agent itself gets reduced.</li>\n    <li>The <strong>reducing agent</strong> (or reductant) is the substance that causes reduction by donating electrons. The reducing agent itself gets oxidized.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the reaction $Zn + Cu^{2+} \\rightarrow Zn^{2+} + Cu$, what is happening to the zinc (Zn)?",
+      "options": [
+        { "text": "It is being reduced.", "isCorrect": false },
+        { "text": "It is being oxidized.", "isCorrect": true },
+        { "text": "It is the oxidizing agent.", "isCorrect": false },
+        { "text": "It is unchanged.", "isCorrect": false }
+      ],
+      "explanation": "The zinc atom (Zn) starts with an oxidation state of 0 and ends as a zinc ion ($Zn^{2+}$) with an oxidation state of +2. It has lost two electrons, so it has been oxidized."
+    },
+    {
+      "question": "In the same reaction, $Zn + Cu^{2+} \\rightarrow Zn^{2+} + Cu$, what is the oxidizing agent?",
+      "options": [
+        { "text": "$Zn$", "isCorrect": false },
+        { "text": "$Cu^{2+}$", "isCorrect": true },
+        { "text": "$Zn^{2+}$", "isCorrect": false },
+        { "text": "$Cu$", "isCorrect": false }
+      ],
+      "explanation": "The oxidizing agent is the species that gets reduced. The copper ion ($Cu^{2+}$) has an initial oxidation state of +2 and ends as a copper atom (Cu) with an oxidation state of 0. It has gained two electrons, so it was reduced. Therefore, $Cu^{2+}$ is the oxidizing agent."
+    }
+  ]
+}

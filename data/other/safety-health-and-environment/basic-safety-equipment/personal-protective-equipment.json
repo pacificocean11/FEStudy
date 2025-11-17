@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Personal Protective Equipment (PPE)</h3>\n<p class=\"mb-4\"><strong>Personal Protective Equipment (PPE)</strong> is equipment worn to minimize exposure to hazards that cause serious workplace injuries and illnesses. It is considered the last line of defense in the hierarchy of controls, used when engineering and administrative controls are not feasible or effective enough to reduce risks to acceptable levels.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Hierarchy of Controls</h3>\n<p class=\"mb-4\">It's important to remember that PPE is the least effective control. The hierarchy, from most effective to least effective, is:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Elimination:</strong> Physically remove the hazard.</li>\n    <li><strong>Substitution:</strong> Replace the hazard with a less hazardous alternative.</li>\n    <li><strong>Engineering Controls:</strong> Isolate people from the hazard (e.g., fume hoods, machine guards).</li>\n    <li><strong>Administrative Controls:</strong> Change the way people work (e.g., safety procedures, training).</li>\n    <li><strong>PPE:</strong> Protect the worker with personal equipment.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Types of PPE</h3>\n<p class=\"mb-4\">The required PPE depends on the specific hazards present. Common types include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Eye and Face Protection:</strong> Safety glasses, goggles, and face shields to protect against flying particles, chemical splashes, or radiation.</li>\n    <li><strong>Respiratory Protection:</strong> Respirators to protect against dust, fumes, vapors, and gases. Requires proper selection, fit testing, and training.</li>\n    <li><strong>Hand Protection:</strong> Gloves selected for the specific hazard (e.g., nitrile for chemical resistance, leather for cuts, insulated for heat).</li>\n    <li><strong>Body Protection:</strong> Lab coats, chemical-resistant suits, or aprons to protect the skin.</li>\n    <li><strong>Hearing Protection:</strong> Earmuffs or earplugs for environments with high noise levels.</li>\n    <li><strong>Foot Protection:</strong> Safety-toed boots to protect against falling objects or punctures.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "According to the hierarchy of controls, which of the following is considered the most effective method of protecting workers?",
+      "options": [
+        { "text": "Substitution (using a safer chemical)", "isCorrect": false },
+        { "text": "Engineering Controls (installing a ventilation system)", "isCorrect": false },
+        { "text": "Elimination (physically removing the hazard)", "isCorrect": true },
+        { "text": "Personal Protective Equipment (wearing a respirator)", "isCorrect": false }
+      ],
+      "explanation": "Elimination is at the top of the hierarchy because it physically removes the hazard from the workplace, which is the most effective way to ensure worker safety."
+    },
+    {
+      "question": "Safety glasses, gloves, and steel-toed boots are all examples of:",
+      "options": [
+        { "text": "Engineering controls", "isCorrect": false },
+        { "text": "Administrative controls", "isCorrect": false },
+        { "text": "Work practice controls", "isCorrect": false },
+        { "text": "Personal Protective Equipment (PPE)", "isCorrect": true }
+      ],
+      "explanation": "These are all items of equipment worn by the worker to protect them from specific hazards, which is the definition of PPE."
+    }
+  ]
+}

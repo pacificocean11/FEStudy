@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Many sensors, such as thermocouples and strain gages, produce very low-level output signals (on the order of microvolts or millivolts). <strong>Amplification</strong> is the process of increasing the amplitude of this signal to a level that is suitable for processing by the next stage of the data acquisition system, typically an Analog-to-Digital Converter (ADC).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Amplifier</h3>\n<p class=\"mb-4\">An amplifier is an electronic circuit that increases the power of a signal. The key parameter of an amplifier is its <strong>gain (G)</strong>.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Voltage Gain:</strong> The ratio of the output voltage to the input voltage.</li>\n    $$ G_v = \\frac{V_{out}}{V_{in}} $$\n    <p>Gain is often expressed in decibels (dB): $G_{dB} = 20 \\log_{10}(G_v)$.</p>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Purpose in DAQ Systems</h3>\n<p class=\"mb-4\">The main goals of amplification in a DAQ system are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>To boost the signal strength to match the input range of the ADC, thereby making full use of the ADC's resolution.</li>\n    <li>To improve the signal-to-noise ratio (SNR) by amplifying the signal more than the noise.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A thermocouple produces a maximum signal of 10 mV. The data acquisition system's ADC has an input range of 0 to 5 V. What is the minimum voltage gain required to utilize the full range of the ADC?",
+      "options": [
+        { "text": "50", "isCorrect": false },
+        { "text": "500", "isCorrect": true },
+        { "text": "0.002", "isCorrect": false },
+        { "text": "5,000", "isCorrect": false }
+      ],
+      "explanation": "The gain is the ratio of the desired output voltage to the input voltage. The desired output is the full range of the ADC (5 V). The input is the maximum sensor signal (10 mV = 0.01 V). Gain = $V_{out} / V_{in} = 5 \\text{ V} / 0.01 \\text{ V} = 500$."
+    }
+  ]
+}

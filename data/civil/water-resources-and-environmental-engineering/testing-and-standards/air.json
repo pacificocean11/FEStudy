@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Clean Air Act (CAA)</h3>\n<p class=\"mb-4\">The Clean Air Act is the comprehensive U.S. federal law that regulates air emissions from stationary and mobile sources. It authorizes the Environmental Protection Agency (EPA) to establish National Ambient Air Quality Standards (NAAQS) to protect public health and public welfare and to regulate emissions of hazardous air pollutants.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Criteria Air Pollutants</h3>\n<p class=\"mb-4\">The EPA has set NAAQS for six common air pollutants, called 'criteria' pollutants, because the agency regulates them by developing human health-based and/or environmentally-based criteria for setting permissible levels.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Carbon Monoxide (CO)</strong></li>\n    <li><strong>Lead (Pb)</strong></li>\n    <li><strong>Nitrogen Dioxide (NO₂)</strong></li>\n    <li><strong>Ozone (O₃)</strong> (ground-level)</li>\n    <li><strong>Particulate Matter</strong> (PM₂.₅ and PM₁₀)</li>\n    <li><strong>Sulfur Dioxide (SO₂)</strong></li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. National Ambient Air Quality Standards (NAAQS)</h3>\n<p class=\"mb-4\">NAAQS are standards for the concentration of the criteria pollutants in the outdoor (ambient) air. There are two types:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Primary Standards:</strong> Set to protect public health, including the health of 'sensitive' populations such as asthmatics, children, and the elderly.</li>\n    <li><strong>Secondary Standards:</strong> Set to protect public welfare, including protection against decreased visibility and damage to animals, crops, vegetation, and buildings.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is NOT one of the six EPA 'criteria' air pollutants?",
+      "options": [
+        { "text": "Carbon Dioxide (CO₂)", "isCorrect": true },
+        { "text": "Carbon Monoxide (CO)", "isCorrect": false },
+        { "text": "Lead (Pb)", "isCorrect": false },
+        { "text": "Ground-level Ozone (O₃)", "isCorrect": false }
+      ],
+      "explanation": "The six criteria pollutants are Carbon Monoxide (CO), Lead (Pb), Nitrogen Dioxide (NO₂), Ozone (O₃), Particulate Matter (PM), and Sulfur Dioxide (SO₂). Carbon Dioxide (CO₂) is a major greenhouse gas but is not currently regulated as a criteria air pollutant under NAAQS."
+    },
+    {
+      "question": "The primary National Ambient Air Quality Standards (NAAQS) are set to protect:",
+      "options": [
+        { "text": "Visibility", "isCorrect": false },
+        { "text": "Public health", "isCorrect": true },
+        { "text": "Crops and vegetation", "isCorrect": false },
+        { "text": "Historical buildings", "isCorrect": false }
+      ],
+      "explanation": "Primary standards are specifically designed to protect human health, with a margin of safety, particularly for sensitive groups. Secondary standards are set to protect public welfare, which includes things like visibility, crops, and buildings."
+    }
+  ]
+}

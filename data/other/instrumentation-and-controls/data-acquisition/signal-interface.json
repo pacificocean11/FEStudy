@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>signal interface</strong> refers to the physical and electrical connection between a sensor or transducer and the data acquisition (DAQ) system. Proper interfacing is crucial for maintaining signal integrity and obtaining accurate measurements.</p>\n<p class=\"mb-4\">Interfacing often involves <strong>signal conditioning</strong>, which is the process of manipulating an analog signal in such a way that it meets the requirements of the next stage for further processing. This includes amplification, filtering, and isolation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Interface Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Voltage Signal:</strong> The most common interface. The sensor outputs a voltage proportional to the measured quantity. Prone to noise over long distances.</li>\n    <li><strong>Current Loop (4-20 mA):</strong> The sensor outputs a current that varies from 4 mA to 20 mA. This is very common in industrial environments because current signals are much less susceptible to noise and voltage drops over long cable runs. A 4 mA signal represents the low end of the measurement range (0%), and 20 mA represents the high end (100%). A reading of 0 mA indicates a fault (e.g., a broken wire).</li>\n    <li><strong>Digital Interface:</strong> Some sensors have built-in electronics and output a digital signal directly (e.g., using protocols like I²C, SPI, or USB), eliminating the need for an external ADC.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary advantage of using a 4-20 mA current loop for transmitting a sensor signal in an industrial setting?",
+      "options": [
+        { "text": "It is cheaper than a voltage signal.", "isCorrect": false },
+        { "text": "It is less susceptible to electrical noise and voltage drop over long distances.", "isCorrect": true },
+        { "text": "It requires less power to operate.", "isCorrect": false },
+        { "text": "It is a digital signal.", "isCorrect": false }
+      ],
+      "explanation": "Current signals are highly immune to noise from motors and other electrical equipment. Also, because the same current flows through the entire loop regardless of wire resistance, voltage drops along long cables do not affect the accuracy of the measurement at the receiving end."
+    },
+    {
+      "question": "In a 4-20 mA current loop, what does a reading of 4 mA typically represent?",
+      "options": [
+        { "text": "A broken wire or sensor fault.", "isCorrect": false },
+        { "text": "The midpoint of the measurement range.", "isCorrect": false },
+        { "text": "The maximum value of the measurement range.", "isCorrect": false },
+        { "text": "The minimum value (zero point) of the measurement range.", "isCorrect": true }
+      ],
+      "explanation": "The 4-20 mA standard uses a 'live zero'. The 4 mA signal represents the 0% or minimum reading of the sensor. This is useful because a reading of 0 mA would indicate a fault in the loop, such as a broken wire, which would not be distinguishable from a zero reading in a 0-20 mA system."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Earth-Fill Dams</h3>\n<p class=\"mb-4\">An <strong>earth-fill dam</strong> is a large artificial dam constructed from compacted soil or rock. It uses its weight to resist the horizontal thrust of the water it impounds.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Seepage Analysis</h3>\n<p class=\"mb-4\">The most critical aspect of earth dam stability is controlling the flow of water (seepage) through the dam. Uncontrolled seepage can lead to failure.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Phreatic Surface (Seepage Line):</strong> This is the line within the dam below which the soil is saturated (i.e., the water table within the dam). The goal of seepage analysis is to determine the location of this line.</li>\n    <li><strong>Piping (Internal Erosion):</strong> If the seepage velocity is too high, it can start to carry fine soil particles away. This creates small 'pipes' or channels within the dam. As these channels grow, the flow increases, which can lead to a rapid and catastrophic failure of the dam. This is a primary stability concern.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Seepage Control Measures</h3>\n<p class=\"mb-4\">To ensure stability, dams are designed with features to control the phreatic surface and prevent piping.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Impermeable Core:</strong> A central zone of low-permeability material (like clay) that acts as a barrier to reduce the overall quantity of seepage.</li>\n    <li><strong>Internal Drains:</strong> Layers or zones of high-permeability material (like sand or gravel) designed to collect seepage and carry it safely away. By keeping the downstream portion of the dam dry, they increase its stability.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Toe Drain:</strong> A drain at the downstream toe of the dam.</li>\n            <li><strong>Chimney Drain:</strong> A vertical drain located just downstream of the core.</li>\n        </ul>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Slope Stability</h3>\n<p class=\"mb-4\">The upstream and downstream slopes must also be stable against rotational failure. The analysis is performed using methods like the Method of Slices, considering various loading conditions such as steady-state seepage and rapid drawdown of the reservoir.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A primary cause of failure in earth dams, where seepage water carries away soil particles to form channels within the dam, is known as:",
+      "options": [
+        { "text": "Overtopping", "isCorrect": false },
+        { "text": "Piping", "isCorrect": true },
+        { "text": "Liquefaction", "isCorrect": false },
+        { "text": "Consolidation", "isCorrect": false }
+      ],
+      "explanation": "Piping is a form of internal erosion caused by uncontrolled seepage. It is extremely dangerous because it can progress rapidly and lead to a complete structural collapse of the dam."
+    },
+    {
+      "question": "What is the primary function of a toe drain or chimney drain in an earth-fill dam?",
+      "options": [
+        { "text": "To increase the weight of the dam.", "isCorrect": false },
+        { "text": "To stop all water from seeping through the dam.", "isCorrect": false },
+        { "text": "To collect seepage water and keep the downstream slope unsaturated and stable.", "isCorrect": true },
+        { "text": "To provide a pathway for fish.", "isCorrect": false }
+      ],
+      "explanation": "Internal drains are designed to intercept water that seeps through the core of the dam. By collecting this water and safely discharging it, they keep the downstream portion of the dam from becoming saturated. A saturated downstream slope would have high pore water pressures and significantly lower shear strength, making it much more susceptible to a slope stability failure."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Runoff</strong>, also known as rainfall excess, is the portion of precipitation that does not infiltrate into the ground or evaporate, and therefore flows over the land surface into streams, rivers, and other water bodies.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Water Balance</h3>\n<p class=\"mb-4\">The generation of runoff can be described by a simple water balance equation for a given watershed over a period of time:</p>\n<p class=\"text-center font-semibold mb-4\">Runoff = Precipitation - Losses</p>\n<p class=\"mb-4\">The 'Losses' term primarily consists of:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Infiltration:</strong> Water soaking into the soil.</li>\n    <li><strong>Evapotranspiration (ET):</strong> Water returned to the atmosphere by evaporation from surfaces and transpiration from plants.</li>\n    <li><strong>Depression Storage:</strong> Water temporarily stored in small puddles and depressions.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hydrograph</h3>\n<p class=\"mb-4\">A <strong>hydrograph</strong> is a graph that plots the flow rate (discharge) of runoff at a specific point (e.g., the outlet of a watershed) as a function of time. It shows how a watershed responds to a rainfall event.</p>\n<p class=\"mb-4\">Key features of a storm hydrograph include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rising Limb:</strong> The portion of the graph where the flow rate is increasing.</li>\n    <li><strong>Crest Segment (Peak):</strong> The highest point on the hydrograph, representing the maximum flow rate.</li>\n    <li><strong>Falling Limb (or Recession Limb):</strong> The portion of the graph where the flow rate is decreasing after the peak.</li>\n    <li><strong>Baseflow:</strong> The portion of the streamflow that comes from groundwater, which is the flow that exists in the stream before and after the runoff event.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A storm produces 3 inches of rainfall over a watershed. It is estimated that 1.8 inches of this rainfall infiltrated the ground or was lost to evaporation. How many inches of direct runoff were generated?",
+      "options": [
+        { "text": "4.8 inches", "isCorrect": false },
+        { "text": "1.2 inches", "isCorrect": true },
+        { "text": "1.5 inches", "isCorrect": false },
+        { "text": "3.0 inches", "isCorrect": false }
+      ],
+      "explanation": "Using the basic water balance equation: Runoff = Precipitation - Losses = 3.0 inches - 1.8 inches = 1.2 inches."
+    },
+    {
+      "question": "The highest point on a storm hydrograph represents the:",
+      "options": [
+        { "text": "Total volume of runoff", "isCorrect": false },
+        { "text": "Peak rainfall intensity", "isCorrect": false },
+        { "text": "Peak flow rate (discharge)", "isCorrect": true },
+        { "text": "Start of the storm", "isCorrect": false }
+      ],
+      "explanation": "The crest, or peak, of the hydrograph is the point of maximum discharge that occurs at the watershed outlet as a result of the storm event. This is a critical value for the design of hydraulic structures."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Stormwater Pollutants</h3>\n<p class=\"mb-4\">As stormwater runs over impervious surfaces like roads, parking lots, and rooftops, it picks up a variety of pollutants. Common stormwater pollutants include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Sediment:</strong> Soil particles eroded from construction sites and other bare land. This is the largest pollutant by volume.</li>\n    <li><strong>Nutrients:</strong> Nitrogen and phosphorus, primarily from fertilizers used on lawns.</li>\n    <li><strong>Heavy Metals:</strong> Zinc, copper, and lead, often from vehicle tire and brake wear.</li>\n    <li><strong>Oil and Grease:</strong> Leaks and drips from vehicles.</li>\n    <li><strong>Bacteria:</strong> From pet waste and sewer overflows.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. First Flush</h3>\n<p class=\"mb-4\">The <strong>'first flush'</strong> is the initial surface runoff of a rainstorm. During the dry period between storms, pollutants build up on impervious surfaces. The first portion of the runoff 'washes off' these accumulated pollutants, resulting in a runoff that has the highest concentration of pollutants. Stormwater quality BMPs are often designed specifically to capture and treat this first flush.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Best Management Practices (BMPs) for Quality</h3>\n<p class=\"mb-4\">These are engineered systems designed to remove pollutants from stormwater runoff. Many are forms of Low Impact Development (LID).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Retention Basins (Wet Ponds):</strong> The permanent pool of water allows sediment and associated pollutants to settle out. Biological processes in the pond can also remove nutrients.</li>\n    <li><strong>Constructed Wetlands:</strong> Shallow marsh systems that use wetland plants, soils, and their associated microorganisms to remove pollutants from stormwater.</li>\n    <li><strong>Infiltration Trenches/Basins:</strong> Trenches or basins filled with stone that temporarily store stormwater and allow it to soak into the ground, which naturally filters pollutants.</li>\n    <li><strong>Vegetated Swales:</strong> Grassy channels that slow down runoff, allowing for filtration and some infiltration.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is typically the largest stormwater pollutant by volume from urban and developing areas?",
+      "options": [
+        { "text": "Oil and grease", "isCorrect": false },
+        { "text": "Heavy metals", "isCorrect": false },
+        { "text": "Sediment", "isCorrect": true },
+        { "text": "Pesticides", "isCorrect": false }
+      ],
+      "explanation": "Eroded soil from construction sites, streambanks, and other disturbed areas constitutes the largest volume of stormwater pollution. Sediment can smother aquatic habitats and carry other pollutants with it."
+    },
+    {
+      "question": "The 'first flush' phenomenon refers to:",
+      "options": [
+        { "text": "The initial, most polluted portion of stormwater runoff.", "isCorrect": true },
+        { "text": "The overflow from a sewer system during a storm.", "isCorrect": false },
+        { "text": "The first test of a new fire hydrant.", "isCorrect": false },
+        { "text": "The water used to clean streets.", "isCorrect": false }
+      ],
+      "explanation": "The first flush describes the high concentration of pollutants found in the first part of a storm's runoff. This occurs because the rain washes off pollutants that have accumulated on surfaces during dry weather."
+    }
+  ]
+}

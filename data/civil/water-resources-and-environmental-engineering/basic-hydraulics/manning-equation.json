@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Manning's Equation</strong> is an empirical formula used to calculate the average velocity of liquid flowing in an open channel (a channel that is not completely full, such as a river, ditch, or partially-full pipe). It is one of the most widely used equations in open-channel hydraulics.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equation</h3>\n<p class=\"mb-4\">The equation relates the flow velocity to the channel's geometry, slope, and roughness.</p>\n<p class=\"mb-4\"><strong>SI Units:</strong></p>\n$$ V = \\frac{1}{n} R_h^{2/3} S^{1/2} $$\n<p class=\"mb-4\"><strong>US Customary Units:</strong></p>\n$$ V = \\frac{1.49}{n} R_h^{2/3} S^{1/2} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$V$: Average flow velocity (m/s or ft/s).</li>\n    <li>$n$: Manning's roughness coefficient. This is an empirical, dimensionless value that depends on the channel's surface material (e.g., concrete, grass, gravel).</li>\n    <li>$R_h$: Hydraulic radius (m or ft).</li>\n    <li>$S$: The slope of the channel bed (dimensionless, m/m or ft/ft).</li>\n</ul>\n<p class=\"mb-4\">The flow rate (discharge, $Q$) is then found by $Q = VA$, where $A$ is the cross-sectional area of flow.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hydraulic Radius ($R_h$)</h3>\n<p class=\"mb-4\">The hydraulic radius is a measure of a channel's flow efficiency. It is the ratio of the cross-sectional area of the flow ($A$) to the wetted perimeter ($P_w$).</p>\n$$ R_h = \\frac{A}{P_w} $$\n<p class=\"mb-4\">The wetted perimeter is the length of the channel's cross-section that is in contact with the water.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A rectangular concrete channel is 3 meters wide and is flowing with water at a depth of 1.5 meters. What is the hydraulic radius?",
+      "options": [
+        { "text": "4.5 m", "isCorrect": false },
+        { "text": "0.75 m", "isCorrect": true },
+        { "text": "1.5 m", "isCorrect": false },
+        { "text": "0.5 m", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the cross-sectional area of flow: $A = \\text{width} \\times \\text{depth} = 3 \\text{ m} \\times 1.5 \\text{ m} = 4.5 \\text{ m²}$. Next, calculate the wetted perimeter, which is the bottom and the two sides in contact with water: $P_w = \\text{bottom width} + 2 \\times \\text{depth} = 3 + 2(1.5) = 6$ m. Finally, the hydraulic radius is $R_h = A / P_w = 4.5 \\text{ m²} / 6 \\text{ m} = 0.75$ m."
+    },
+    {
+      "question": "Using Manning's equation, if the roughness of a channel (n) increases, what will happen to the flow velocity, assuming all other factors remain constant?",
+      "options": [
+        { "text": "It will increase.", "isCorrect": false },
+        { "text": "It will decrease.", "isCorrect": true },
+        { "text": "It will remain the same.", "isCorrect": false },
+        { "text": "It depends on the hydraulic radius.", "isCorrect": false }
+      ],
+      "explanation": "Velocity ($V$) is inversely proportional to the Manning's roughness coefficient ($n$). A higher value of 'n' means a rougher surface, which creates more friction and slows down the flow."
+    }
+  ]
+}

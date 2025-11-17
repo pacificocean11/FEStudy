@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">Proper labeling of chemical containers is a key component of the Hazard Communication Standard (HCS). Labels provide a quick, immediate warning and essential information about the hazards of a chemical.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. GHS Label Elements</h3>\n<p class=\"mb-4\">OSHA requires that labels on shipped containers for hazardous chemicals include the following six elements, aligned with the Globally Harmonized System (GHS):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Product Identifier:</strong> The name or number used for a hazardous chemical on a label or in the SDS.</li>\n    <li><strong>Signal Word:</strong> Used to indicate the relative level of severity of the hazard. \"<strong>Danger</strong>\" is used for more severe hazards, while \"<strong>Warning</strong>\" is used for less severe hazards.</li>\n    <li><strong>Hazard Statement(s):</strong> A standardized phrase assigned to a hazard class and category that describes the nature of the hazard(s) of a chemical (e.g., \"Causes serious eye damage\").</li>\n    <li><strong>Precautionary Statement(s):</strong> A phrase that describes recommended measures to be taken to minimize or prevent adverse effects resulting from exposure to a hazardous chemical.</li>\n    <li><strong>Pictogram(s):</strong> A symbol on a white background with a red border that is intended to convey specific information about the hazards of a chemical. There are nine GHS pictograms.</li>\n    <li><strong>Supplier Identification:</strong> The name, address, and telephone number of the chemical manufacturer, importer, or other responsible party.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a GHS-compliant chemical label, which signal word indicates a more severe hazard?",
+      "options": [
+        { "text": "Caution", "isCorrect": false },
+        { "text": "Warning", "isCorrect": false },
+        { "text": "Danger", "isCorrect": true },
+        { "text": "Notice", "isCorrect": false }
+      ],
+      "explanation": "There are only two signal words used in the GHS system. 'Danger' is used for the more severe hazard categories, while 'Warning' is used for the less severe ones."
+    },
+    {
+      "question": "Which of the following GHS label elements is a graphical symbol used to communicate a specific hazard?",
+      "options": [
+        { "text": "Signal Word", "isCorrect": false },
+        { "text": "Hazard Statement", "isCorrect": false },
+        { "text": "Precautionary Statement", "isCorrect": false },
+        { "text": "Pictogram", "isCorrect": true }
+      ],
+      "explanation": "A pictogram is a symbol, such as the flame for flammability or the skull and crossbones for acute toxicity, that provides an immediate visual warning about the chemical's hazards."
+    }
+  ]
+}

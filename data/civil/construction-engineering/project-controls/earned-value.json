@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Earned Value Management (EVM)</h3>\n<p class=\"mb-4\">Earned Value Management is a project management technique that integrates project scope, schedule, and cost to provide an objective measure of project performance and progress. It allows you to forecast future performance and project completion dates and costs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Core Metrics</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Planned Value (PV):</strong> The budgeted cost for the work that was scheduled to be completed by a certain date. Also known as Budgeted Cost of Work Scheduled (BCWS).</li>\n    <li><strong>Earned Value (EV):</strong> The budgeted cost of the work that has actually been completed by that date. Also known as Budgeted Cost of Work Performed (BCWP).</li>\n    <li><strong>Actual Cost (AC):</strong> The actual amount of money spent to complete the work that has been performed. Also known as Actual Cost of Work Performed (ACWP).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Performance Variances and Indices</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Cost Variance (CV):</strong> Measures cost performance. $CV = EV - AC$. A positive value is under budget, negative is over budget.</li>\n    <li><strong>Schedule Variance (SV):</strong> Measures schedule performance in monetary terms. $SV = EV - PV$. A positive value is ahead of schedule, negative is behind schedule.</li>\n    <li><strong>Cost Performance Index (CPI):</strong> A measure of cost efficiency. $CPI = EV / AC$. A value greater than 1 is under budget, less than 1 is over budget.</li>\n    <li><strong>Schedule Performance Index (SPI):</strong> A measure of schedule efficiency. $SPI = EV / PV$. A value greater than 1 is ahead of schedule, less than 1 is behind schedule.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Forecasting</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Budget at Completion (BAC):</strong> The total original budget for the project.</li>\n    <li><strong>Estimate at Completion (EAC):</strong> The forecasted total cost of the project based on current performance. A common formula is: $EAC = BAC / CPI$.</li>\n    <li><strong>Estimate to Complete (ETC):</strong> The forecasted cost to finish the remaining work. $ETC = EAC - AC$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A project has a Planned Value (PV) of $50,000, an Earned Value (EV) of $45,000, and an Actual Cost (AC) of $55,000. What is the Cost Variance (CV)?",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$-5,000$", "isCorrect": false },
+        { "text": "$-10,000$", "isCorrect": true },
+        { "text": "$5,000", "isCorrect": false }
+      ],
+      "explanation": "Cost Variance is calculated as $CV = EV - AC$. So, $CV = $45,000 - $55,000 = -$10,000$. The negative value indicates the project is over budget."
+    },
+    {
+      "question": "For the same project (PV=$50k, EV=$45k, AC=$55k), what can you conclude about its performance?",
+      "options": [
+        { "text": "Ahead of schedule and under budget.", "isCorrect": false },
+        { "text": "Behind schedule and over budget.", "isCorrect": true },
+        { "text": "Ahead of schedule and over budget.", "isCorrect": false },
+        { "text": "Behind schedule and under budget.", "isCorrect": false }
+      ],
+      "explanation": "Cost Variance ($CV = 45k - 55k = -10k$) is negative, so the project is over budget. Schedule Variance ($SV = 45k - 50k = -5k$) is negative, so the project is behind schedule."
+    },
+    {
+        "question": "A project has a total budget (BAC) of $200,000. At a certain point, the CPI is calculated to be 0.8. What is the Estimate at Completion (EAC)?",
+        "options": [
+          { "text": "$160,000", "isCorrect": false },
+          { "text": "$200,000", "isCorrect": false },
+          { "text": "$250,000", "isCorrect": true },
+          { "text": "$225,000", "isCorrect": false }
+        ],
+        "explanation": "The most common formula for the Estimate at Completion is $EAC = BAC / CPI$. So, $EAC = $200,000 / 0.8 = $250,000$. This forecast indicates that if the current cost performance continues, the project will cost $250,000 instead of the planned $200,000."
+      }
+  ]
+}

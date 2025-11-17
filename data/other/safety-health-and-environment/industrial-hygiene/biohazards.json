@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>biohazard</strong>, or biological hazard, is a biological substance that poses a threat to the health of living organisms, primarily humans. This can include medical waste or samples of a microorganism, virus, or toxin that can adversely affect human health. The international symbol for biohazards is the biohazard symbol (☣).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Sources of Biohazards</h3>\n<p class=\"mb-4\">Biohazards are commonly found in:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Hospitals and healthcare facilities</li>\n    <li>Medical and research laboratories</li>\n    <li>Wastewater treatment plants</li>\n    <li>Veterinary offices</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Biosafety Levels (BSLs)</h3>\n<p class=\"mb-4\">Laboratories are classified into one of four biosafety levels based on the agents or organisms being researched. The levels dictate the required laboratory practices, safety equipment, and facility construction to protect workers and the environment.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>BSL-1:</strong> For work with agents not known to consistently cause disease in healthy adults. Basic safety procedures (hand washing, no food/drink) are required.</li>\n    <li><strong>BSL-2:</strong> For work with agents that pose a moderate hazard. Access is restricted, and work is often done in a biological safety cabinet (BSC).</li>\n    <li><strong>BSL-3:</strong> For work with indigenous or exotic agents that may cause serious or potentially lethal disease through inhalation. The lab has special engineering and design features, like self-closing double doors and negative air pressure.</li>\n    <li><strong>BSL-4:</strong> For work with dangerous and exotic agents that pose a high individual risk of aerosol-transmitted lab infections and life-threatening disease. This is the maximum containment level, requiring full-body, air-supplied positive pressure suits.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which Biosafety Level (BSL) is required for working with a dangerous, exotic agent that poses a high risk of life-threatening disease, such as the Ebola virus?",
+      "options": [
+        { "text": "BSL-1", "isCorrect": false },
+        { "text": "BSL-2", "isCorrect": false },
+        { "text": "BSL-3", "isCorrect": false },
+        { "text": "BSL-4", "isCorrect": true }
+      ],
+      "explanation": "BSL-4 is the highest level of biocontainment and is reserved for agents that are frequently fatal, for which there are no vaccines or treatments. It involves the most stringent safety protocols, including the use of positive-pressure personnel suits."
+    }
+  ]
+}

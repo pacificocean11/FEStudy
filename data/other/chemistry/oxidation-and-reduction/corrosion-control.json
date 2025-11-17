@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Corrosion</h3>\n<p class=\"mb-4\"><strong>Corrosion</strong> is the gradual destruction of a material, usually a metal, by chemical or electrochemical reaction with its environment. It is an oxidation process. The most common example is the rusting of steel.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Methods of Corrosion Control</h3>\n<p class=\"mb-4\">Several methods are used to prevent or slow down corrosion:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Material Selection:</strong> Choosing a material that is naturally resistant to corrosion in the service environment (e.g., using stainless steel, aluminum, or polymers instead of plain carbon steel).</li>\n    <li><strong>Protective Coatings:</strong> Applying a barrier between the metal and the environment. This includes painting, powder coating, or plating with a more resistant metal (e.g., galvanizing steel with zinc).</li>\n    <li><strong>Cathodic Protection:</strong> Making the structure to be protected the cathode of an electrochemical cell. This forces the structure to be reduced rather than oxidized. There are two main types:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Sacrificial Anode:</strong> A more reactive metal (e.g., zinc, magnesium, or aluminum) is electrically connected to the protected metal (e.g., a steel pipeline or ship hull). The sacrificial anode corrodes preferentially, protecting the structure.</li>\n            <li><strong>Impressed Current:</strong> An external DC power source is used to impress a current onto the structure, forcing it to be a cathode.</li>\n        </ul>\n    </li>\n    <li><strong>Inhibitors:</strong> Chemicals added to the environment that decrease the rate of corrosion.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Galvanizing steel involves coating it with a layer of zinc. This protects the steel even if the coating is scratched. This is an example of what type of corrosion control?",
+      "options": [
+        { "text": "Barrier coating only", "isCorrect": false },
+        { "text": "Cathodic protection (sacrificial anode)", "isCorrect": true },
+        { "text": "Impressed current", "isCorrect": false },
+        { "text": "Using an inhibitor", "isCorrect": false }
+      ],
+      "explanation": "Zinc is more reactive (more anodic) than steel (iron). When the two are in electrical contact in an electrolyte (like rainwater), the zinc will corrode preferentially, acting as a sacrificial anode to protect the steel. This is a form of cathodic protection, in addition to the barrier protection the coating provides."
+    }
+  ]
+}

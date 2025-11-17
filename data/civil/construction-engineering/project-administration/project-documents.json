@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Bidding Documents</h3>\n<p class=\"mb-4\">These documents are provided to potential bidders before a contract is awarded.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Invitation for Bids (IFB):</strong> A public notice of the project, inviting contractors to bid.</li>\n    <li><strong>Instructions to Bidders:</strong> Explains the procedures for submitting a bid, including the bid deadline, format, and evaluation criteria.</li>\n    <li><strong>Bid Form:</strong> The document on which the bidder submits their price.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Contract Documents</h3>\n<p class=\"mb-4\">These documents form the legal agreement between the owner and the contractor.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Agreement:</strong> The core document that formalizes the contract, including the price and duration.</li>\n    <li><strong>General Conditions:</strong> Standard clauses that define the rights, responsibilities, and relationships of the parties.</li>\n    <li><strong>Supplementary/Special Conditions:</strong> Project-specific clauses that modify or add to the General Conditions.</li>\n    <li><strong>Drawings (Plans):</strong> The graphical representation of the project, showing the geometry, dimensions, and location of components.</li>\n    <li><strong>Specifications (Specs):</strong> Detailed written requirements for materials, equipment, construction systems, standards, and workmanship. They complement the drawings.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Construction Administration Documents</h3>\n<p class=\"mb-4\">These documents are used during the construction phase to manage the project.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Request for Information (RFI):</strong> A formal question from the contractor to the designer to clarify a discrepancy or missing information in the contract documents.</li>\n    <li><strong>Submittals:</strong> Information provided by the contractor to the designer for approval, such as material data, samples, or shop drawings.</li>\n    <li><strong>Shop Drawings:</strong> Detailed fabrication and assembly drawings prepared by the contractor or supplier.</li>\n    <li><strong>Change Order:</strong> A formal document that modifies the contract to account for a change in scope, price, or schedule.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary function of the specifications in a set of contract documents?",
+      "options": [
+        { "text": "To show the physical layout and dimensions of the project.", "isCorrect": false },
+        { "text": "To detail the qualitative requirements for materials, workmanship, and quality.", "isCorrect": true },
+        { "text": "To outline the bidding process.", "isCorrect": false },
+        { "text": "To legally bind the owner and contractor.", "isCorrect": false }
+      ],
+      "explanation": "While drawings show 'what' is to be built and 'where', specifications describe the qualitative aspects: the type and quality of materials, the required standards for workmanship, and methods for testing and inspection."
+    },
+    {
+      "question": "A contractor encounters a conflict between a drawing and a specification during construction. To resolve this, the contractor should first submit a(n):",
+      "options": [
+        { "text": "Change Order", "isCorrect": false },
+        { "text": "Invoice", "isCorrect": false },
+        { "text": "Request for Information (RFI)", "isCorrect": true },
+        { "text": "Shop Drawing", "isCorrect": false }
+      ],
+      "explanation": "A Request for Information (RFI) is the formal process used to ask the design professional for clarification when there is an ambiguity, conflict, or omission in the contract documents. It is the first step before any change is made."
+    },
+    {
+        "question": "A formal, written modification to the construction contract price or schedule is known as a:",
+        "options": [
+          { "text": "Submittal", "isCorrect": false },
+          { "text": "Request for Information (RFI)", "isCorrect": false },
+          { "text": "Addendum", "isCorrect": false },
+          { "text": "Change Order", "isCorrect": true }
+        ],
+        "explanation": "A Change Order is a legal document that formally amends the original contract to reflect a change in the project's scope of work, cost, or time. It must be agreed upon by the owner, contractor, and architect/engineer."
+      }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Power in Three-Phase Systems</h3>\n<p class=\"mb-4\">The total power in a balanced three-phase system is the sum of the power in each of the three phases. The advantage of three-phase power is that the total instantaneous power is constant, which results in smoother operation for large motors.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Total Power Formulas</h3>\n<p class=\"mb-4\">The formulas for total active power ($P$), reactive power ($Q$), and apparent power ($S$) in a balanced three-phase system are given in terms of <strong>line quantities</strong> ($V_L, I_L$). These formulas work for both Wye and Delta connected loads.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Total Active Power (P):</strong> The real power consumed by the load, measured in Watts (W).</li>\n    $$ P = \\sqrt{3} V_L I_L \\cos(\\phi) $$\n    <li><strong>Total Reactive Power (Q):</strong> The power that oscillates between the source and the load, measured in Volt-Amps Reactive (VAR).</li>\n    $$ Q = \\sqrt{3} V_L I_L \\sin(\\phi) $$\n    <li><strong>Total Apparent Power (S):</strong> The vector sum of active and reactive power, measured in Volt-Amps (VA).</li>\n    $$ S = \\sqrt{3} V_L I_L = \\sqrt{P^2 + Q^2} $$\n</ul>\n<p class=\"mb-4\">In these formulas, $\\phi$ is the phase angle of the load impedance, and $\\cos(\\phi)$ is the <strong>power factor (PF)</strong>.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A balanced three-phase load is connected to a 480 V line. It draws a line current of 20 A at a power factor of 0.8 lagging. What is the total active power consumed by the load?",
+      "options": [
+        { "text": "9.6 kW", "isCorrect": false },
+        { "text": "7.68 kW", "isCorrect": false },
+        { "text": "16.6 kW", "isCorrect": false },
+        { "text": "13.3 kW", "isCorrect": true }
+      ],
+      "explanation": "Use the formula for total active power: $P = \\sqrt{3} V_L I_L \\cos(\\phi)$.\n$P = \\sqrt{3} (480 \\text{ V})(20 \\text{ A})(0.8) \\approx (1.732)(480)(20)(0.8) \\approx 13302$ W, or 13.3 kW."
+    },
+    {
+      "question": "For the load in the previous problem, what is the total apparent power?",
+      "options": [
+        { "text": "16.6 kVA", "isCorrect": true },
+        { "text": "13.3 kVA", "isCorrect": false },
+        { "text": "9.6 kVA", "isCorrect": false },
+        { "text": "20.8 kVA", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for total apparent power: $S = \\sqrt{3} V_L I_L$.\n$S = \\sqrt{3} (480 \\text{ V})(20 \\text{ A}) \\approx (1.732)(480)(20) \\approx 16627$ VA, or 16.6 kVA. Alternatively, $S = P / PF = 13.3 \\text{ kW} / 0.8 = 16.625$ kVA."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Importance of Drainage</h3>\n<p class=\"mb-4\">Water is a primary enemy of pavement. The presence of excess moisture in the pavement's base, subbase, and subgrade layers can significantly reduce their strength and stiffness. This leads to premature pavement distresses such as rutting, cracking, and potholing. Effective drainage is therefore critical for long-term pavement performance.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Surface Drainage</h3>\n<p class=\"mb-4\">Surface drainage is the system used to quickly remove rainwater from the pavement surface.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Crown:</strong> The slope of the pavement surface from the center to the edge. A crowned roadway is higher in the middle than at the sides.</li>\n    <li><strong>Cross Slope:</strong> The transverse slope of the pavement, which directs water to the edge. A typical cross slope for an asphalt road is 2%.</li>\n    <li><strong>Gutters and Inlets:</strong> Structures at the edge of the pavement to collect the surface runoff and convey it to the storm sewer system.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Subsurface Drainage</h3>\n<p class=\"mb-4\">Subsurface drainage is the system used to remove water that infiltrates the pavement structure through cracks or from the sides.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Permeable Base:</strong> A layer of open-graded aggregate beneath the pavement surface that allows infiltrated water to drain freely to the side.</li>\n    <li><strong>Underdrains (Edge Drains):</strong> Perforated pipes installed in a trench along the edge of the pavement. They collect water from the permeable base and carry it away to a discharge point.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary purpose of building a crown on a two-lane road?",
+      "options": [
+        { "text": "To improve driver visibility.", "isCorrect": false },
+        { "text": "To provide a passing lane.", "isCorrect": false },
+        { "text": "To facilitate surface drainage of rainwater to the sides of the road.", "isCorrect": true },
+        { "text": "To increase the structural strength of the pavement.", "isCorrect": false }
+      ],
+      "explanation": "A crown provides a cross slope that directs water from the center of the road to the edges (shoulders or gutters). This is a fundamental component of surface drainage, designed to remove water from the pavement surface as quickly as possible."
+    },
+    {
+      "question": "Perforated pipes installed along the edge of a pavement to collect and remove water that has entered the base course are called:",
+      "options": [
+        { "text": "Culverts", "isCorrect": false },
+        { "text": "Underdrains", "isCorrect": true },
+        { "text": "Storm sewers", "isCorrect": false },
+        { "text": "Ditches", "isCorrect": false }
+      ],
+      "explanation": "Underdrains, also known as edge drains, are the primary component of a subsurface drainage system. Their function is to intercept water within the pavement structure and carry it away, preventing the base and subgrade from becoming saturated."
+    }
+  ]
+}

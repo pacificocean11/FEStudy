@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Drawdown</h3>\n<p class=\"mb-4\"><strong>Drawdown ($s$)</strong> is the vertical drop in hydraulic head at a given location in an aquifer due to pumping. It is the difference between the static (non-pumping) water level and the water level during pumping.</p>\n$$ s = h_0 - h $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$s$ is the drawdown.</li>\n    <li>$h_0$ is the static hydraulic head before pumping.</li>\n    <li>$h$ is the hydraulic head during pumping.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Cone of Depression</h3>\n<p class=\"mb-4\">The drawdown is not uniform around a well. It is greatest at the well itself and decreases with distance from the well, forming a three-dimensional cone shape in the water table or potentiometric surface, known as the <strong>cone of depression</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Radius of Influence</h3>\n<p class=\"mb-4\">The <strong>radius of influence</strong> is the maximum horizontal distance from the center of a pumping well at which the drawdown is no longer perceptible. Beyond this radius, the water level is essentially unaffected by the pumping.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Well Interference</h3>\n<p class=\"mb-4\"><strong>Well interference</strong> occurs when the cones of depression of two or more pumping wells overlap. The total drawdown at any point in the area of overlap is the sum of the drawdowns that would be caused by each well pumping individually. This means that wells placed too close together will be less efficient, as they will have to lift water from a lower level than if they were operating alone.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Before pumping, the static water level in a well is at an elevation of 150 m. After pumping at a steady rate, the water level in the well stabilizes at 135 m. What is the drawdown in the well?",
+      "options": [
+        { "text": "150 m", "isCorrect": false },
+        { "text": "135 m", "isCorrect": false },
+        { "text": "15 m", "isCorrect": true },
+        { "text": "285 m", "isCorrect": false }
+      ],
+      "explanation": "Drawdown is the difference between the static water level and the pumping water level: $s = h_0 - h = 150 \\text{ m} - 135 \\text{ m} = 15$ m."
+    },
+    {
+      "question": "If two wells are pumping close to each other, their cones of depression can overlap. This phenomenon is called:",
+      "options": [
+        { "text": "Well loss", "isCorrect": false },
+        { "text": "Aquifer recharge", "isCorrect": false },
+        { "text": "Well interference", "isCorrect": true },
+        { "text": "Darcy's Law", "isCorrect": false }
+      ],
+      "explanation": "Well interference occurs when the drawdown from one well is compounded by the drawdown from a nearby well. This results in an increased drawdown at both wells and a reduced yield for a given pumping effort."
+    }
+  ]
+}

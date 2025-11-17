@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">An <strong>Analog-to-Digital Converter (ADC or A/D)</strong> is an electronic circuit that converts a continuous analog voltage into a discrete digital number. This is a fundamental step in any digital data acquisition system, as it allows a computer to read and process signals from the real world.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Conversion Process</h3>\n<p class=\"mb-4\">The process involves two main steps:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Sampling:</strong> The analog signal is sampled at discrete time intervals.</li>\n    <li><strong>Quantization:</strong> The sampled analog voltage is mapped to the nearest available digital value.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Resolution:</strong> The number of bits the ADC uses to represent the analog signal. An $n$-bit ADC can represent $2^n$ different voltage levels. Higher resolution means smaller voltage steps and a more accurate representation of the signal.</li>\n    <li><strong>Sampling Rate:</strong> The number of conversions the ADC can perform per second.</li>\n    <li><strong>Input Range:</strong> The minimum and maximum voltage the ADC can convert.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Quantization Error</h3>\n<p class=\"mb-4\">Because the ADC can only output a finite number of discrete values, there is always a small error between the actual analog input and the quantized digital output. This is called <strong>quantization error</strong>. The maximum quantization error is typically $\pm 1/2$ of the value of the least significant bit (LSB), where the LSB is the voltage step size (Resolution).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary function of an Analog-to-Digital Converter (ADC)?",
+      "options": [
+        { "text": "To convert a digital number into a voltage.", "isCorrect": false },
+        { "text": "To amplify a low-level analog signal.", "isCorrect": false },
+        { "text": "To filter noise from a signal.", "isCorrect": false },
+        { "text": "To convert a continuous analog voltage into a discrete digital number.", "isCorrect": true }
+      ],
+      "explanation": "An ADC is the bridge between the analog world of sensors and the digital world of computers. It samples a continuous voltage and represents it as a binary number."
+    },
+    {
+      "question": "A 10-bit ADC has an input range of 0 to 5 V. What is its resolution (the smallest voltage change it can represent)?",
+      "options": [
+        { "text": "5 mV", "isCorrect": false },
+        { "text": "10 mV", "isCorrect": false },
+        { "text": "4.88 mV", "isCorrect": true },
+        { "text": "0.5 V", "isCorrect": false }
+      ],
+      "explanation": "A 10-bit ADC has $2^{10} = 1024$ levels. The resolution is the total voltage range divided by the number of levels: Resolution = $5 \\text{ V} / 1024 \\approx 0.00488$ V, or 4.88 mV."
+    }
+  ]
+}

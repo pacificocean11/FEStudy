@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Behavior of Reinforced Concrete Beams</h3>\n<p class=\"mb-4\">Concrete is strong in compression but very weak in tension. Steel reinforcement (rebar) is strong in tension. By placing steel rebar in the parts of a beam that will be in tension, we create a composite material that is strong in both compression and tension.</p>\n<p class=\"mb-4\">In a simply supported beam under a downward load, the bottom of the beam experiences tension, so the primary flexural reinforcement is placed near the bottom.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Flexural Design (Bending)</h3>\n<p class=\"mb-4\">The goal of flexural design is to determine the amount of steel reinforcement ($A_s$) needed for a beam to resist the factored bending moment ($M_u$). The design must satisfy $\\phi M_n \\ge M_u$.</p>\n<p class=\"mb-4\">The nominal moment strength ($M_n$) is calculated based on an internal force couple between the compression force in the concrete and the tension force in the steel.</p>\n$$ M_n = A_s f_y (d - a/2) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$A_s$: Area of steel reinforcement.</li>\n    <li>$f_y$: Yield strength of the steel.</li>\n    <li>$d$: Effective depth of the beam (distance from the extreme compression fiber to the centroid of the steel).</li>\n    <li>$a$: Depth of the equivalent rectangular stress block (Whitney stress block). $a = A_s f_y / (0.85 f'_c b)$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Ductility and Reinforcement Limits</h3>\n<p class=\"mb-4\">It is critical that concrete beams fail in a ductile manner. This means the steel should yield (stretch) significantly before the concrete crushes. This is called a <strong>tension-controlled</strong> failure and gives visible warning (large cracks and deflections) before collapse. To ensure this:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Maximum Reinforcement:</strong> ACI 318 limits the amount of steel to ensure the net tensile strain ($\epsilon_t$) in the extreme layer of steel is at least 0.005. This guarantees a tension-controlled section where $\\phi = 0.9$.</li>\n    <li><strong>Minimum Reinforcement:</strong> A minimum amount of steel ($A_{s,min}$) is required to ensure that the beam's flexural strength is greater than its cracking moment, preventing a sudden, brittle failure when the first crack forms.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Shear Design</h3>\n<p class=\"mb-4\">Beams must also resist shear forces. The shear strength of a concrete beam ($V_n$) is the sum of the shear strength provided by the concrete itself ($V_c$) and the shear strength provided by steel stirrups ($V_s$). <strong>Stirrups</strong> are vertical or angled rebar that enclose the main flexural bars. They are essential for resisting diagonal tension cracks caused by shear.</p>\n$$ V_u \\le \\phi V_n = \\phi (V_c + V_s) $$\n<p class=\"mb-4\">If the factored shear force $V_u$ is too high, stirrups must be designed to carry the excess shear.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a simply supported concrete beam subjected to a uniform downward load, where should the primary tensile reinforcement be placed?",
+      "options": [
+        { "text": "Near the top of the beam.", "isCorrect": false },
+        { "text": "Near the bottom of the beam.", "isCorrect": true },
+        { "text": "At the neutral axis (middle).", "isCorrect": false },
+        { "text": "Uniformly throughout the cross-section.", "isCorrect": false }
+      ],
+      "explanation": "A simply supported beam bends like a 'smile'. The top fibers are in compression, and the bottom fibers are in tension. Since concrete is weak in tension, steel rebar must be placed near the bottom to resist these tensile forces."
+    },
+    {
+      "question": "What is the primary purpose of stirrups in a reinforced concrete beam?",
+      "options": [
+        { "text": "To resist the primary bending moment.", "isCorrect": false },
+        { "text": "To hold the main reinforcement in place during construction.", "isCorrect": false },
+        { "text": "To resist shear forces and prevent diagonal tension cracks.", "isCorrect": true },
+        { "text": "To reduce the overall weight of the beam.", "isCorrect": false }
+      ],
+      "explanation": "While stirrups do help position the main steel, their primary structural function is to act as shear reinforcement. They intersect potential diagonal tension cracks and provide the tensile strength needed to prevent a brittle shear failure."
+    }
+  ]
+}

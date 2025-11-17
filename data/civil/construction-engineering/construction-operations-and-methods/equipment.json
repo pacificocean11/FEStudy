@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Earthmoving Equipment</h3>\n<p class=\"mb-4\">This is a broad category of heavy equipment used to excavate, move, and grade soil and rock.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Dozers (Bulldozers):</strong> Powerful tracked machines with a front-mounted blade used for pushing large quantities of soil, sand, or rubble. Excellent for clearing and grading land.</li>\n    <li><strong>Excavators:</strong> Consist of a boom, dipper (or stick), bucket, and cab on a rotating platform. Used for digging trenches, foundations, and handling materials.</li>\n    <li><strong>Loaders:</strong> Used to move or load materials such as asphalt, dirt, snow, and gravel into another machine (such as a dump truck). Can be wheeled or tracked.</li>\n    <li><strong>Scrapers:</strong> Large machines used for open-area earthmoving. They can self-load, haul, and spread material, making them efficient for large grading operations over medium haul distances.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Soil Volume and States</h3>\n<p class=\"mb-4\">The volume of soil changes as it is handled. This must be accounted for in earthwork calculations.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Bank:</strong> Soil in its natural, undisturbed state before excavation. Measured in Bank Cubic Yards (BCY) or Bank Cubic Meters (BCM).</li>\n    <li><strong>Loose:</strong> Soil after it has been excavated. The volume increases because of voids created during digging. This is called 'swell'. Measured in Loose Cubic Yards (LCY) or Loose Cubic Meters (LCM).</li>\n    <li><strong>Compacted:</strong> Soil after it has been placed and compacted in a fill. The volume is typically less than the bank volume because the voids have been removed. This is called 'shrinkage'. Measured in Compacted Cubic Yards (CCY) or Compacted Cubic Meters (CCM).</li>\n</ul>\n<p class=\"mb-4\"><strong>Swell Factor:</strong> $Loose Volume = Bank Volume \\times (1 + Swell\\%)$</p>\n<p class=\"mb-4\"><strong>Shrinkage Factor:</strong> $Compacted Volume = Bank Volume \\times (1 - Shrinkage\\%)$</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which piece of equipment is most suitable for digging a deep, narrow trench for a utility pipe?",
+      "options": [
+        { "text": "Dozer", "isCorrect": false },
+        { "text": "Scraper", "isCorrect": false },
+        { "text": "Excavator", "isCorrect": true },
+        { "text": "Smooth-wheel roller", "isCorrect": false }
+      ],
+      "explanation": "An excavator is designed for digging below the machine's grade level and has the reach and bucket shape ideal for trenching operations."
+    },
+    {
+      "question": "An excavation requires the removal of 1,000 bank cubic yards (BCY) of soil. If the soil has a swell factor of 25%, how many loose cubic yards (LCY) of material must be hauled away?",
+      "options": [
+        { "text": "1,000 LCY", "isCorrect": false },
+        { "text": "1,250 LCY", "isCorrect": true },
+        { "text": "750 LCY", "isCorrect": false },
+        { "text": "800 LCY", "isCorrect": false }
+      ],
+      "explanation": "Swell means the volume increases after excavation. The loose volume is calculated as: $Loose Volume = Bank Volume \\times (1 + Swell\\%) = 1,000 \\text{ BCY} \\times (1 + 0.25) = 1,000 \\times 1.25 = 1,250$ LCY."
+    }
+  ]
+}

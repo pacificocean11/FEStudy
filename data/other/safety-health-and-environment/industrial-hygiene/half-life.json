@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Half-life ($t_{1/2}$)</strong> is the time required for a quantity to reduce to half of its initial value. The term is most commonly used in the context of radioactive decay, but it can also be used to describe the persistence of other substances, like chemicals in the body.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Radioactive Half-Life</h3>\n<p class=\"mb-4\">The radioactive half-life is the time it takes for half of the atoms in a radioactive sample to decay. It is a constant property of each specific radioisotope. The number of atoms, N(t), remaining at a time t is given by the exponential decay formula:</p>\n$$ N(t) = N_0 e^{-\\lambda t} $$\n<p class=\"mb-4\">where $N_0$ is the initial number of atoms and $\\lambda$ is the decay constant. The half-life is related to the decay constant by:</p>\n$$ t_{1/2} = \\frac{\\ln(2)}{\\lambda} \\approx \\frac{0.693}{\\lambda} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Biological Half-Life</h3>\n<p class=\"mb-4\">In toxicology, the biological half-life of a substance (like a drug or a toxin) is the time it takes for the substance to lose half of its pharmacological or physiological activity. It is the time required for the concentration of the substance in the body to be reduced by half through processes like metabolism and excretion.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The half-life of Carbon-14 is approximately 5,730 years. If a fossil sample initially contained 100 grams of Carbon-14, how much would remain after 11,460 years?",
+      "options": [
+        { "text": "100 g", "isCorrect": false },
+        { "text": "50 g", "isCorrect": false },
+        { "text": "25 g", "isCorrect": true },
+        { "text": "12.5 g", "isCorrect": false }
+      ],
+      "explanation": "The time elapsed, 11,460 years, is exactly two half-lives (11,460 / 5,730 = 2). After the first half-life (5,730 years), 50 g would remain. After the second half-life, half of that amount would remain: 50 g / 2 = 25 g."
+    },
+    {
+      "question": "A radioactive isotope has a decay constant of $\\lambda = 0.02$ day⁻¹. What is its half-life?",
+      "options": [
+        { "text": "50 days", "isCorrect": false },
+        { "text": "100 days", "isCorrect": false },
+        { "text": "34.7 days", "isCorrect": true },
+        { "text": "0.014 days", "isCorrect": false }
+      ],
+      "explanation": "The half-life is related to the decay constant by the formula $t_{1/2} = \\ln(2) / \\lambda$. $t_{1/2} = 0.693 / 0.02 \\text{ day⁻¹} = 34.65$ days."
+    }
+  ]
+}

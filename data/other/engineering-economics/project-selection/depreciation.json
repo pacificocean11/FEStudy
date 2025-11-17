@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Depreciation</strong> is the decrease in the value of an asset over time, due in particular to wear and tear. In accounting and engineering economics, it is a method of allocating the cost of a tangible asset over its useful life. It is a non-cash expense that affects a company's taxable income.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Terminology</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>First Cost (P or B):</strong> The initial purchase price of the asset.</li>\n    <li><strong>Salvage Value (S):</strong> The estimated resale value of an asset at the end of its useful life.</li>\n    <li><strong>Useful Life (n):</strong> The estimated period over which the asset will be used.</li>\n    <li><strong>Book Value (BV):</strong> The remaining, undepreciated value of an asset on the company's books. $BV_t = \\text{First Cost} - \\text{Total Depreciation up to year t}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Depreciation Methods</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Straight-Line (SL) Depreciation:</strong> The asset depreciates by an equal amount each year.</li>\n    $$ D_t = \\frac{P - S}{n} $$\n    <li><strong>Modified Accelerated Cost Recovery System (MACRS):</strong> The required depreciation method for most US federal tax purposes. It is an accelerated method, meaning more depreciation is charged in the early years of an asset's life. MACRS uses specified property classes and depreciation percentages that are provided in tables. It also assumes a salvage value of zero for calculation purposes.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A machine is purchased for $60,000. It has a useful life of 10 years and an estimated salvage value of $5,000. What is the annual depreciation charge using the straight-line method?",
+      "options": [
+        { "text": "$6,000", "isCorrect": false },
+        { "text": "$5,500", "isCorrect": true },
+        { "text": "$5,000", "isCorrect": false },
+        { "text": "$6,500", "isCorrect": false }
+      ],
+      "explanation": "The annual straight-line depreciation is calculated as (First Cost - Salvage Value) / Useful Life. $D = ($60,000 - $5,000) / 10 = $55,000 / 10 = $5,500$ per year."
+    },
+    {
+      "question": "For the machine in the previous problem, what is its book value at the end of year 3?",
+      "options": [
+        { "text": "$43,500", "isCorrect": true },
+        { "text": "$16,500", "isCorrect": false },
+        { "text": "$42,000", "isCorrect": false },
+        { "text": "$54,500", "isCorrect": false }
+      ],
+      "explanation": "The annual depreciation is $5,500. After 3 years, the total accumulated depreciation is $5,500 \\times 3 = $16,500$. The book value is the first cost minus the accumulated depreciation: $BV_3 = $60,000 - $16,500 = $43,500$."
+    }
+  ]
+}

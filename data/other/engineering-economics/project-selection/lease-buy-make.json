@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>lease-buy-make decision</strong> is a common business decision that involves choosing between different ways of acquiring an asset or service. Engineering economic analysis provides a framework for making the most financially sound choice.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Make:</strong> Produce the item or service in-house.</li>\n    <li><strong>Buy:</strong> Purchase the item or service from an outside supplier.</li>\n    <li><strong>Lease:</strong> Obtain the right to use an asset for a period of time in return for periodic payments.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Analysis Method</h3>\n<p class=\"mb-4\">The decision is made by comparing the economic value of each alternative. All costs and benefits associated with each option are identified and then converted to a common basis using an appropriate interest rate.</p>\n<p class=\"mb-4\">The most common methods for comparison are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Present Worth (PW) Analysis:</strong> Calculate the total present worth of all costs for each alternative. The alternative with the lowest present worth of costs is the most economical.</li>\n    <li><strong>Equivalent Annual Worth (EAW) Analysis:</strong> Calculate the equivalent annual cost for each alternative. The alternative with the lowest annual cost is the best choice. This method is particularly useful if the options have different timeframes.</li>\n</ul>\n<p class=\"mb-4\">It is important to include all relevant cash flows, such as initial costs, annual operating costs, maintenance costs, lease payments, and any salvage value.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When deciding between leasing a piece of equipment for 5 years or buying it (with a 10-year life), which economic analysis method is most appropriate for the comparison?",
+      "options": [
+        { "text": "Payback Period", "isCorrect": false },
+        { "text": "Internal Rate of Return (IRR)", "isCorrect": false },
+        { "text": "Equivalent Annual Worth (EAW)", "isCorrect": true },
+        { "text": "Present Worth (PW) over 5 years", "isCorrect": false }
+      ],
+      "explanation": "Because the alternatives have unequal time horizons, the Equivalent Annual Worth (EAW) method is the most suitable. It converts the costs of each option into an equivalent annual amount, allowing for a direct and fair comparison."
+    }
+  ]
+}

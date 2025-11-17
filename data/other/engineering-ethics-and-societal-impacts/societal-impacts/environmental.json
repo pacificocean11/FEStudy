@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Engineering projects and technologies can have significant impacts on the natural environment. Ethical engineering practice requires a thorough consideration of these impacts and a commitment to minimizing harm.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Environmental Impacts</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pollution:</strong> Release of harmful substances into the air, water, or soil. This includes greenhouse gas emissions, toxic chemical discharge, and noise pollution.</li>\n    <li><strong>Resource Depletion:</strong> Consumption of non-renewable resources like fossil fuels and minerals, as well as the over-consumption of renewable resources like water and forests.</li>\n    <li><strong>Habitat Destruction:</strong> The alteration or destruction of natural habitats due to construction, mining, or pollution, leading to a loss of biodiversity.</li>\n    <li><strong>Land Use Change:</strong> Converting natural landscapes (forests, wetlands) into urban or agricultural areas.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Engineer's Role</h3>\n<p class=\"mb-4\">Engineers are central to mitigating environmental impacts. Their responsibilities include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Designing products and processes that are more energy and resource-efficient.</li>\n    <li>Developing and implementing technologies for pollution control and waste management.</li>\n    <li>Conducting Environmental Impact Assessments (EIAs) to predict and evaluate the environmental consequences of a proposed project.</li>\n    <li>Adhering to environmental laws and regulations.</li>\n    <li>Promoting sustainable practices and the use of renewable resources.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The release of sulfur dioxide from a coal-fired power plant, which contributes to acid rain, is an example of what type of environmental impact?",
+      "options": [
+        { "text": "Habitat destruction", "isCorrect": false },
+        { "text": "Resource depletion", "isCorrect": false },
+        { "text": "Air pollution", "isCorrect": true },
+        { "text": "Land use change", "isCorrect": false }
+      ],
+      "explanation": "Sulfur dioxide is a pollutant released into the atmosphere from the combustion of fossil fuels containing sulfur. It is a primary contributor to air pollution and the formation of acid rain."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Paramount Duty</h3>\n<p class=\"mb-4\">The most fundamental principle of engineering ethics, as stated in the NCEES Model Rules and all major engineering codes of ethics, is that engineers shall <strong>hold paramount the safety, health, and welfare of the public</strong>.</p>\n<p class=\"mb-4\">This means that an engineer's duty to protect the public is their highest professional obligation, overriding all other duties, including those to clients, employers, colleagues, or the profession.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Aspects of Public Safety</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Risk Assessment and Management:</strong> Identifying potential hazards in a design or project, assessing their likelihood and consequences, and implementing measures to eliminate or mitigate them to an acceptable level.</li>\n    <li><strong>Fail-Safe Design:</strong> Designing systems so that if a component fails, the system defaults to a safe state. For example, a railway signal that shows red if the power fails.</li>\n    <li><strong>Adherence to Codes and Standards:</strong> Following established design codes, standards, and regulations that are developed to ensure a minimum level of safety.</li>\n    <li><strong>Duty to Report:</strong> If an engineer's professional judgment is overruled in a way that endangers public safety, they have an ethical obligation to inform their employer or client. If the issue is not corrected, they may be obligated to report the situation to the appropriate authorities (whistleblowing).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer discovers a critical design flaw in a consumer product that is already on the market. The flaw could potentially cause serious injury. The engineer's manager instructs them to ignore the issue to avoid a costly recall. What is the engineer's primary ethical responsibility?",
+      "options": [
+        { "text": "To obey the manager's instructions to maintain company loyalty.", "isCorrect": false },
+        { "text": "To inform the appropriate regulatory agency and/or the public of the danger.", "isCorrect": true },
+        { "text": "To wait and see if any injuries are reported before taking action.", "isCorrect": false },
+        { "text": "To quietly fix the flaw in future versions of the product.", "isCorrect": false }
+      ],
+      "explanation": "The engineer's paramount duty is to the public's safety. When there is a direct conflict between this duty and the interests of an employer, the duty to the public must prevail. The engineer must take steps to ensure the danger is addressed, which includes reporting it to authorities if the company refuses to act."
+    }
+  ]
+}

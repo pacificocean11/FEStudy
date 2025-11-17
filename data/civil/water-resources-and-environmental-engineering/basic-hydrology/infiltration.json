@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Infiltration</strong> is the process by which water on the ground surface enters the soil. It is a key component of the hydrologic cycle.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Infiltration Capacity and Rate</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Infiltration Capacity ($f_c$):</strong> The maximum rate at which a given soil can absorb water. It is highest when the soil is dry and decreases as the soil becomes saturated.</li>\n    <li><strong>Actual Infiltration Rate ($f$):</strong> The rate at which water is actually entering the soil.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>If rainfall intensity ($i$) is less than the infiltration capacity ($i < f_c$), then the actual infiltration rate is equal to the rainfall intensity ($f = i$). All the rain soaks in.</li>\n            <li>If rainfall intensity is greater than the infiltration capacity ($i > f_c$), then the actual infiltration rate is equal to the infiltration capacity ($f = f_c$). The excess water becomes surface runoff.</li>\n        </ul>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Factors Affecting Infiltration</h3>\n<p class=\"mb-4\">The infiltration capacity is influenced by several factors:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Soil Type:</strong> Coarse-grained soils like sand have high infiltration rates, while fine-grained soils like clay have very low infiltration rates.</li>\n    <li><strong>Soil Moisture Content:</strong> Dry soil can absorb water more quickly than wet or saturated soil.</li>\n    <li><strong>Surface Cover:</strong> Vegetation and mulch protect the soil surface from the impact of raindrops, which can seal the surface pores. They also slow down runoff, giving water more time to infiltrate.</li>\n    <li><strong>Land Slope:</strong> Steeper slopes promote faster runoff, reducing the time available for water to infiltrate.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following soil types would be expected to have the highest infiltration capacity?",
+      "options": [
+        { "text": "Clay", "isCorrect": false },
+        { "text": "Silt", "isCorrect": false },
+        { "text": "Sand", "isCorrect": true },
+        { "text": "Pavement", "isCorrect": false }
+      ],
+      "explanation": "Sand has large pore spaces between its grains, which allows water to pass through it easily. Clay particles are very small and tightly packed, resulting in a very low infiltration capacity."
+    },
+    {
+      "question": "A steady rain is falling at a rate of 1.5 inches/hour. The soil in the area has an infiltration capacity of 2.0 inches/hour. What is the rate of surface runoff?",
+      "options": [
+        { "text": "2.0 in/hr", "isCorrect": false },
+        { "text": "1.5 in/hr", "isCorrect": false },
+        { "text": "0.5 in/hr", "isCorrect": false },
+        { "text": "0 in/hr", "isCorrect": true }
+      ],
+      "explanation": "Runoff only occurs when the rainfall intensity is greater than the infiltration capacity. In this case, the rainfall rate (1.5 in/hr) is less than the rate at which the soil can absorb it (2.0 in/hr). Therefore, all the rain infiltrates, and there is no surface runoff."
+    }
+  ]
+}

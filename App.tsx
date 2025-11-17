@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { SUBJECTS_BY_DISCIPLINE } from './constants';
 import { Discipline, Subtopic, SubtopicContent, PracticeMode, PerformanceRecord } from './types';
@@ -77,8 +78,18 @@ const App: React.FC = () => {
       .replace(/-+$/, '');
 
     const slugifySubject = (text: string) => slugify(text.replace(/^\d+\.\s*/, ''));
+    
+    // Handle inconsistent topic slugification between disciplines
+    let slugifiedTopic: string;
+    if (discipline === 'Mechanical') {
+        // For Mechanical, 'A. Topic' becomes 'a-topic' by just slugifying
+        slugifiedTopic = slugify(topic);
+    } else {
+        // For Civil and Other, 'A. Topic' becomes 'topic' by stripping the prefix
+        slugifiedTopic = slugify(topic.replace(/^[A-Z]\.\s*/, ''));
+    }
 
-    const path = `/data/${slugify(discipline)}/${slugifySubject(subject)}/${slugify(topic)}/${slugify(subtopic.name)}.json`;
+    const path = `/data/${slugify(discipline)}/${slugifySubject(subject)}/${slugifiedTopic}/${slugify(subtopic.name)}.json`;
 
     try {
       const response = await fetch(path);

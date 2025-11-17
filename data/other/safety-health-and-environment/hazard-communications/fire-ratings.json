@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. NFPA 704 Diamond</h3>\n<p class=\"mb-4\">The <strong>NFPA 704 standard</strong>, often referred to as the \"fire diamond\" or \"hazard diamond,\" is a system for quickly and easily identifying the hazards of materials. It is used by emergency responders to determine what, if any, special equipment should be used, procedures followed, or precautions taken during an emergency.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Sections</h3>\n<p class=\"mb-4\">The diamond is divided into four colored sections, each representing a different hazard category and rated on a scale from 0 (no hazard) to 4 (severe hazard).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Blue - Health Hazard:</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>4: Deadly</li>\n            <li>3: Extreme Danger</li>\n            <li>2: Hazardous</li>\n            <li>1: Slightly Hazardous</li>\n            <li>0: Normal Material</li>\n        </ul>\n    </li>\n    <li><strong>Red - Flammability:</strong> Based on flash point.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>4: Below 73°F (23°C)</li>\n            <li>3: Below 100°F (38°C)</li>\n            <li>2: Below 200°F (93°C)</li>\n            <li>1: Above 200°F (93°C)</li>\n            <li>0: Will Not Burn</li>\n        </ul>\n    </li>\n    <li><strong>Yellow - Instability (Reactivity):</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>4: May Detonate</li>\n            <li>3: Shock and Heat May Detonate</li>\n            <li>2: Violent Chemical Change</li>\n            <li>1: Unstable if Heated</li>\n            <li>0: Stable</li>\n        </ul>\n    </li>\n    <li><strong>White - Special Hazards:</strong> This section uses symbols, not numbers.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>OX</strong>: Oxidizer</li>\n            <li><strong>W</strong> (with a line through it): Reacts with water in an unusual or dangerous manner</li>\n            <li><strong>SA</strong>: Simple Asphyxiant Gas</li>\n        </ul>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On an NFPA 704 diamond, what type of hazard is indicated by the red section?",
+      "options": [
+        { "text": "Health Hazard", "isCorrect": false },
+        { "text": "Instability/Reactivity", "isCorrect": false },
+        { "text": "Special Hazards", "isCorrect": false },
+        { "text": "Flammability", "isCorrect": true }
+      ],
+      "explanation": "The red diamond indicates the flammability hazard of the material, with a rating from 0 (will not burn) to 4 (extremely flammable)."
+    },
+    {
+      "question": "A chemical has a '4' in the blue section of its NFPA diamond. What does this signify?",
+      "options": [
+        { "text": "It is extremely flammable.", "isCorrect": false },
+        { "text": "It may detonate.", "isCorrect": false },
+        { "text": "A very short exposure could cause death or major residual injury (Deadly).", "isCorrect": true },
+        { "text": "It reacts violently with water.", "isCorrect": false }
+      ],
+      "explanation": "The blue diamond represents the health hazard. A rating of 4 is the highest level of danger, indicating that the material is deadly or can cause major permanent injury with very short exposure."
+    }
+  ]
+}

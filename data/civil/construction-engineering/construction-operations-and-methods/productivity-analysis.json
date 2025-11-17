@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Productivity</strong> is the rate at which work is performed. In construction, it is typically measured as output per unit of time (e.g., cubic yards of soil moved per hour, square feet of drywall installed per day).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equipment Cycle Time</h3>\n<p class=\"mb-4\">For cyclic operations like earthmoving with a loader and truck, productivity is determined by the <strong>cycle time</strong>. A cycle is one complete round trip of the process.</p>\n<p class=\"mb-4\">Example cycle for a truck being loaded by an excavator:</p>\n$$ T_{cycle} = T_{load} + T_{haul} + T_{dump} + T_{return} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Production Rate</h3>\n<p class=\"mb-4\">The production rate is calculated based on the volume moved per cycle and the cycle time.</p>\n$$ Production = \\frac{Volume \\ per \\ Cycle}{Cycle \\ Time} $$\n<p class=\"mb-4\">This gives a theoretical or ideal production rate. To get a realistic estimate, this must be adjusted by an efficiency factor.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Efficiency Factor</h3>\n<p class=\"mb-4\">No operation runs at 100% efficiency due to breaks, minor delays, and other interruptions. An efficiency factor is used to account for this. A common method is the '50-minute hour', which assumes an efficiency of 50/60 = 0.83.</p>\n$$ Realistic \\ Production = Ideal \\ Production \\times Efficiency \\ Factor $$\n<p class=\"mb-4\">Example: If an ideal production rate is 120 CY/hr and the efficiency is 0.83 (a 50-minute hour), the realistic production is $120 \\times 0.83 = 99.6$ CY/hr.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A wheel loader takes 1.5 minutes to load a truck, and the truck takes 8 minutes to haul, dump, and return. What is the total cycle time for the truck?",
+      "options": [
+        { "text": "6.5 minutes", "isCorrect": false },
+        { "text": "8.0 minutes", "isCorrect": false },
+        { "text": "9.5 minutes", "isCorrect": true },
+        { "text": "1.5 minutes", "isCorrect": false }
+      ],
+      "explanation": "The total cycle for the truck includes all the steps it goes through. The truck is being loaded for 1.5 minutes, and its haul/dump/return time is 8 minutes. The total cycle time is the sum: $1.5 + 8.0 = 9.5$ minutes."
+    },
+    {
+      "question": "A scraper has a capacity of 20 loose cubic yards (LCY). Its total cycle time is 12 minutes. Assuming a 50-minute hour efficiency, what is its expected hourly production?",
+      "options": [
+        { "text": "100 LCY/hr", "isCorrect": false },
+        { "text": "120 LCY/hr", "isCorrect": false },
+        { "text": "83.3 LCY/hr", "isCorrect": true },
+        { "text": "1.67 LCY/hr", "isCorrect": false }
+      ],
+      "explanation": "First, find the number of cycles per hour: $60 \\text{ min/hr} / 12 \\text{ min/cycle} = 5$ cycles/hr. The ideal production is $5 \\text{ cycles/hr} \\times 20 \\text{ LCY/cycle} = 100$ LCY/hr. Now, apply the efficiency factor. A 50-minute hour means the efficiency is $50/60 \\approx 0.833$. Realistic Production = $100 \\text{ LCY/hr} \\times (50/60) \\approx 83.3$ LCY/hr."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>cut slope</strong> is a slope formed by excavating into natural ground. Cuts are made to create level areas for roads, railways, or building sites in hilly or mountainous terrain.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stability Considerations</h3>\n<p class=\"mb-4\">Unlike fill slopes where the material properties are controlled by compaction, the stability of cut slopes depends on the properties of the existing in-situ soil or rock that is being exposed.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Soil Properties:</strong> The analysis depends on the type of soil (e.g., cohesive clay vs. cohesionless sand) and its shear strength. The excavation process can reduce the strength of some soils due to stress relief.</li>\n    <li><strong>Geological Structure:</strong> In rock cuts, stability is often controlled by the orientation and properties of discontinuities like bedding planes, joints, and faults. Failures often occur as translational slides along these weak planes.</li>\n    <li><strong>Groundwater:</strong> Excavating can alter the local groundwater regime. Water seeping out of a cut face (daylighting) increases pore water pressure, which reduces the effective stress and shear strength of the soil or rock, significantly increasing the risk of failure.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Failure Modes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rotational Slump:</strong> Common in deep, homogeneous clay cuts.</li>\n    <li><strong>Translational Slide:</strong> Occurs when a block of soil or rock slides along a planar weak layer, such as a clay seam or a rock bedding plane that dips out of the slope.</li>\n    <li><strong>Rockfall:</strong> The detachment and free-fall of individual rock blocks from a steep rock face, often triggered by weathering or freeze-thaw cycles.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The stability of a cut slope in rock is primarily governed by:",
+      "options": [
+        { "text": "The compressive strength of the intact rock.", "isCorrect": false },
+        { "text": "The orientation and properties of discontinuities like joints and bedding planes.", "isCorrect": true },
+        { "text": "The air temperature.", "isCorrect": false },
+        { "text": "The type of excavation equipment used.", "isCorrect": false }
+      ],
+      "explanation": "While the strength of the rock itself is a factor, most rock slope failures are not caused by the rock crushing, but by blocks of rock sliding or falling along pre-existing weak planes (discontinuities). Therefore, the geometry and friction angle of these features are the most critical parameters."
+    },
+    {
+      "question": "Why is the presence of groundwater seeping from the face of a cut slope a major concern for stability?",
+      "options": [
+        { "text": "It makes the soil heavier.", "isCorrect": false },
+        { "text": "It can cause the soil to freeze.", "isCorrect": false },
+        { "text": "It increases the pore water pressure, which reduces the soil's shear strength.", "isCorrect": true },
+        { "text": "It lubricates the soil particles, making them slippery.", "isCorrect": false }
+      ],
+      "explanation": "The fundamental principle of effective stress states that the shear strength of a soil is dependent on the effective stress, not the total stress. Water pressure in the pores (pore water pressure) counteracts the normal stress between soil grains. Increased pore water pressure leads to lower effective stress and a significant reduction in shear strength, making a slope failure much more likely."
+    }
+  ]
+}

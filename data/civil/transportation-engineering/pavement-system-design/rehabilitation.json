@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pavement Preservation vs. Rehabilitation</h3>\n<p class=\"mb-4\">Pavement management involves a range of activities to keep a road network in serviceable condition.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Maintenance:</strong> Routine, preventative activities to keep a good road in good condition (e.g., crack sealing, pothole patching).</li>\n    <li><strong>Rehabilitation:</strong> Structural enhancements to an existing pavement to extend its service life. This is done when the pavement has deteriorated beyond what routine maintenance can effectively address.</li>\n    <li><strong>Reconstruction:</strong> Complete removal and replacement of the entire pavement structure. This is done when the pavement has failed.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Rehabilitation Techniques (Asphalt)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Overlay:</strong> The most common rehabilitation method. A new layer of hot-mix asphalt is placed over the existing surface. This adds structural capacity and provides a new, smooth riding surface.</li>\n    <li><strong>Milling and Overlay:</strong> The top few inches of the existing asphalt surface are removed with a milling machine before the new overlay is placed. This is done to remove surface distresses, maintain curb height and overhead clearances, and improve the bond between the old and new layers.</li>\n    <li><strong>Full-Depth Reclamation (FDR):</strong> A process where the full thickness of the asphalt pavement and a portion of the underlying base are pulverized, mixed together, stabilized (e.g., with cement or asphalt emulsion), and re-compacted to form a new, strong base for a new surface course. This is an effective in-place recycling method.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Placing a new layer of asphalt on top of an existing, deteriorated road surface to add structural strength and improve ride quality is a rehabilitation technique known as a(n):",
+      "options": [
+        { "text": "Seal coat", "isCorrect": false },
+        { "text": "Overlay", "isCorrect": true },
+        { "text": "Subgrade stabilization", "isCorrect": false },
+        { "text": "Pothole patch", "isCorrect": false }
+      ],
+      "explanation": "An overlay is the application of a new layer of asphalt concrete over the existing pavement. It is a structural solution intended to extend the life of the road, which defines it as a rehabilitation activity."
+    },
+    {
+      "question": "What is the primary reason for milling an old asphalt surface before placing a new overlay?",
+      "options": [
+        { "text": "To make the road narrower.", "isCorrect": false },
+        { "text": "To recycle the old asphalt for use in another project.", "isCorrect": false },
+        { "text": "To remove surface distresses and maintain vertical clearances.", "isCorrect": true },
+        { "text": "To test the strength of the underlying base.", "isCorrect": false }
+      ],
+      "explanation": "Milling removes the most deteriorated part of the pavement (the top layer), which may have cracks and ruts. It also allows for a new layer to be added without significantly raising the road's elevation, which is important for maintaining curb heights, drainage, and clearance under bridges."
+    }
+  ]
+}

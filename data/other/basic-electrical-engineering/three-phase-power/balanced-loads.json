@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Three-Phase Systems</h3>\n<p class=\"mb-4\">Three-phase power is a common method of AC electric power generation, transmission, and distribution. It consists of three separate AC voltages of the same frequency and amplitude, but with a 120° phase shift between each one.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Balanced Load</h3>\n<p class=\"mb-4\">A <strong>balanced load</strong> is one in which the impedance in each of the three phases is identical. Large three-phase motors are a common example of a balanced load. When the load is balanced, the currents drawn by each phase are equal in magnitude and are also 120° out of phase with each other.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Load Connections</h3>\n<p class=\"mb-4\">Three-phase loads can be connected in two ways:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Wye (Y) or Star Connection:</strong> The three phase impedances are connected at a common central point (the neutral point).</li>\n    <li><strong>Delta ($\\Delta$) Connection:</strong> The three phase impedances are connected in a closed loop, like a triangle.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Line and Phase Quantities</h3>\n<p class=\"mb-4\">It is important to distinguish between line and phase quantities:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Line Voltage ($V_L$):</strong> The voltage between any two of the three lines.</li>\n    <li><strong>Phase Voltage ($V_\\phi$):</strong> The voltage across a single phase of the load.</li>\n    <li><strong>Line Current ($I_L$):</strong> The current flowing in any one of the three lines.</li>\n    <li><strong>Phase Current ($I_\\phi$):</strong> The current flowing through a single phase of the load.</li>\n</ul>\n\n<p class=\"mb-4\">For a balanced system:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Wye Connection:</strong> $V_L = \\sqrt{3} V_\\phi$ and $I_L = I_\\phi$.</li>\n    <li><strong>Delta Connection:</strong> $V_L = V_\\phi$ and $I_L = \\sqrt{3} I_\\phi$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a balanced, three-phase, wye-connected load, the line voltage is 480 V. What is the phase voltage?",
+      "options": [
+        { "text": "480 V", "isCorrect": false },
+        { "text": "277 V", "isCorrect": true },
+        { "text": "831 V", "isCorrect": false },
+        { "text": "160 V", "isCorrect": false }
+      ],
+      "explanation": "For a wye connection, the relationship is $V_L = \\sqrt{3} V_\\phi$. Rearranging gives $V_\\phi = V_L / \\sqrt{3} = 480 / \\sqrt{3} \\approx 277$ V."
+    },
+    {
+      "question": "In a balanced, three-phase, delta-connected load, the phase current is 10 A. What is the line current?",
+      "options": [
+        { "text": "10 A", "isCorrect": false },
+        { "text": "5.77 A", "isCorrect": false },
+        { "text": "17.3 A", "isCorrect": true },
+        { "text": "30 A", "isCorrect": false }
+      ],
+      "explanation": "For a delta connection, the relationship is $I_L = \\sqrt{3} I_\\phi$. So, $I_L = \\sqrt{3} \\times 10 \\text{ A} \\approx 17.3$ A."
+    }
+  ]
+}
