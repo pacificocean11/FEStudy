@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Functional Classification</h3>\n<p class=\"mb-4\">Streets and roads are classified based on the character of service they are intended to provide. This hierarchy helps in planning and designing a road network that balances mobility (movement of traffic) and access (to adjacent land).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Local Streets:</strong> The primary function is to provide access to abutting land (homes, businesses). Mobility is a low priority. They have low speed limits and are not intended for through traffic.</li>\n    <li><strong>Collector Streets:</strong> These streets collect traffic from local streets and connect them to the arterial network. They provide a balance of access and mobility.</li>\n    <li><strong>Arterial Streets:</strong> The primary function is mobility, moving large volumes of traffic over longer distances. Access to abutting land is controlled and limited.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Design Elements</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lane Width:</strong> Typical lane widths range from 9 to 12 feet. Wider lanes are used on higher-speed arterials, while narrower lanes can be used on local streets to calm traffic.</li>\n    <li><strong>Cross Slope:</strong> The transverse slope of the street surface, designed to drain rainwater to the sides. A typical cross slope is 2%.</li>\n    <li><strong>Curbs and Gutters:</strong> Curbs define the edge of the pavement and provide a channel (the gutter) to collect and convey stormwater to inlets.</li>\n    <li><strong>Sidewalks:</strong> Pedestrian facilities separated from the roadway.</li>\n    <li><strong>Sight Distance:</strong> The length of roadway ahead that is visible to the driver. Adequate sight distance must be provided at intersections and on curves to allow drivers to perceive and react to hazards.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which class of street has the primary function of providing access to adjacent properties rather than moving through traffic?",
+      "options": [
+        { "text": "Arterial", "isCorrect": false },
+        { "text": "Collector", "isCorrect": false },
+        { "text": "Local", "isCorrect": true },
+        { "text": "Freeway", "isCorrect": false }
+      ],
+      "explanation": "Local streets are at the bottom of the functional hierarchy. Their main purpose is to provide direct access to residences and businesses, with traffic movement being a secondary concern."
+    },
+    {
+      "question": "The transverse slope provided on a street surface to facilitate drainage is known as the:",
+      "options": [
+        { "text": "Grade", "isCorrect": false },
+        { "text": "Superelevation", "isCorrect": false },
+        { "text": "Cross slope", "isCorrect": true },
+        { "text": "Side slope", "isCorrect": false }
+      ],
+      "explanation": "The cross slope, often achieved by creating a crown in the center of the road, is the slope perpendicular to the direction of travel. Its purpose is to shed water to the edges of the pavement."
+    }
+  ]
+}

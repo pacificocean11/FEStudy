@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An <strong>influence line</strong> is a diagram used in structural analysis. It is a graph that plots the variation of a single function (such as the reaction, shear, or bending moment) at a <strong>single, specific point</strong> on a structure as a single unit load moves across the structure.</p>\n<p class=\"mb-4\">The y-axis of an influence line represents the magnitude of the function (e.g., reaction force in lbs or kips) at the specific point of interest, and the x-axis represents the position of the moving unit load.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Purpose</h3>\n<p class=\"mb-4\">Influence lines are essential for designing structures that are subjected to moving loads, such as bridges and crane girders. They are used to determine the position of a live load that will cause the maximum possible force or stress at a specific point on the structure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Müller-Breslau Principle</h3>\n<p class=\"mb-4\">This principle provides a simple qualitative method for drawing the shape of an influence line. It states:</p>\n<blockquote class=\"border-l-4 border-slate-300 pl-4 italic my-4\">\n    The influence line for a force function (like reaction or shear) is the same shape as the deflected shape of the structure if the constraint corresponding to that function were removed and a unit displacement were applied in its place.\n</blockquote>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Using Influence Lines</h3>\n<p class=\"mb-4\">Once the influence line diagram is constructed, the value of the function for any concentrated load $P$ at a position $x$ is found by multiplying the load by the ordinate (height) of the influence line at that position, $y(x)$.</p>\n$$ \\text{Function Value} = P \\times y(x) $$\n<p class=\"mb-4\">For a uniform distributed load $w$, the value of the function is the intensity of the load multiplied by the area under the influence line over the length that the load is applied.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An influence line for a beam shows:",
+      "options": [
+        { "text": "The variation of shear along the length of the beam for a fixed load.", "isCorrect": false },
+        { "text": "The deflected shape of the beam under a fixed load.", "isCorrect": false },
+        { "text": "The variation of a function at a single point as a unit load moves across the beam.", "isCorrect": true },
+        { "text": "The maximum load the beam can carry.", "isCorrect": false }
+      ],
+      "explanation": "The key concept of an influence line is that it describes the effect at one specific point (the 'point of interest') due to a load that can be at any position along the structure."
+    },
+    {
+      "question": "According to the Müller-Breslau principle, the influence line for the vertical reaction at a roller support of a continuous beam has the same shape as:",
+      "options": [
+        { "text": "The moment diagram for the beam.", "isCorrect": false },
+        { "text": "The shear diagram for the beam.", "isCorrect": false },
+        { "text": "The deflected shape of the beam if the roller were pushed up by one unit.", "isCorrect": true },
+        { "text": "A straight line.", "isCorrect": false }
+      ],
+      "explanation": "The principle states that to find the shape of the influence line for a reaction, you remove that reaction's constraint and apply a unit displacement in its direction. So, for a vertical reaction, you would 'push' the beam up at that support and draw the resulting deflected shape."
+    }
+  ]
+}

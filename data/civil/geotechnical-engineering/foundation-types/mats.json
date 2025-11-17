@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>mat foundation</strong>, also known as a <strong>raft foundation</strong>, is a large, thick, continuous concrete slab that supports the entire structure (all columns and walls) and rests directly on the soil. It is a type of shallow foundation that covers the entire footprint of the building.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. When to Use a Mat Foundation</h3>\n<p class=\"mb-4\">Mat foundations are used under one or more of the following conditions:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Low Soil Bearing Capacity:</strong> When the soil is weak and/or compressible, a mat is used to spread the heavy building loads over a very large area, resulting in a low bearing pressure.</li>\n    <li><strong>Heavy Loads:</strong> For structures with very heavy and closely spaced column loads, such as high-rise buildings, where individual spread footings would be so large that they would nearly touch or overlap.</li>\n    <li><strong>Minimize Differential Settlement:</strong> A mat foundation is very rigid and can bridge over variations in soil conditions, helping to minimize differential settlement (uneven sinking) across the building.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Design Concept</h3>\n<p class=\"mb-4\">A mat foundation is designed as an inverted two-way slab. The soil pressure acting upward on the bottom of the slab is the 'distributed load', and the columns and walls are the 'supports' pushing downward on the slab.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A raft or mat foundation is most likely to be recommended in which of the following situations?",
+      "options": [
+        { "text": "A light wood-frame house on dense sand.", "isCorrect": false },
+        { "text": "A heavy high-rise building on soft, compressible clay.", "isCorrect": true },
+        { "text": "A bridge pier founded on solid bedrock.", "isCorrect": false },
+        { "text": "A utility pole.", "isCorrect": false }
+      ],
+      "explanation": "Mat foundations are ideal for situations with weak soils and heavy loads. They distribute the entire weight of the structure over its full footprint, significantly reducing the pressure on the underlying soil and helping to control settlement."
+    },
+    {
+      "question": "A building with a total weight of 50,000 kips is to be supported on a mat foundation measuring 100 ft by 200 ft. What is the average bearing pressure the mat exerts on the soil?",
+      "options": [
+        { "text": "2,000 psf", "isCorrect": false },
+        { "text": "2,500 psf", "isCorrect": true },
+        { "text": "5,000 psf", "isCorrect": false },
+        { "text": "500 psf", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the total area of the mat: $A = 100 \\text{ ft} \\times 200 \\text{ ft} = 20,000$ sq ft. The total load is $P = 50,000 \\text{ kips} = 50,000,000$ lbs. The average bearing pressure is $q_{avg} = P/A = 50,000,000 \\text{ lbs} / 20,000 \\text{ sq ft} = 2,500$ psf."
+    }
+  ]
+}

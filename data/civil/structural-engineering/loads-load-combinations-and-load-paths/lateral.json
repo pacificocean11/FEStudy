@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Lateral loads</strong> are forces that act horizontally on a structure. The design of a building's lateral force resisting system (LFRS) is a critical part of structural engineering, ensuring the building can withstand these forces without collapsing.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Primary Types of Lateral Loads</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Wind Loads:</strong> These are pressures and suctions that the wind exerts on the surfaces of a building. The magnitude of the load depends on:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Basic Wind Speed:</strong> Determined from maps in ASCE 7 for a specific geographic location.</li>\n            <li><strong>Exposure:</strong> The characteristics of the surrounding terrain.</li>\n            <li><strong>Building Height and Shape:</strong> Taller buildings and complex shapes experience different wind pressures.</li>\n        </ul>\n    </li>\n    <li>\n        <strong>Seismic (Earthquake) Loads:</strong> These are not external forces, but rather inertial forces that are generated within the structure itself in response to the ground shaking during an earthquake. The magnitude of the seismic forces depends on:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Mass of the Building:</strong> Heavier buildings generate larger inertial forces ($F=ma$).</li>\n            <li><strong>Ground Acceleration:</strong> The intensity of the earthquake at the site, determined from seismic hazard maps.</li>\n            <li><strong>Dynamic Characteristics of the Building:</strong> The building's natural period of vibration.</li>\n        </ul>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Other Lateral Loads</h3>\n<p class=\"mb-4\">Other, less common lateral loads include fluid pressure from retained soil (earth pressure) or water, blast loads, and the force from moving vehicles (e.g., on a bridge).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The two primary types of lateral loads that buildings are designed to resist are:",
+      "options": [
+        { "text": "Dead loads and live loads", "isCorrect": false },
+        { "text": "Wind loads and seismic loads", "isCorrect": true },
+        { "text": "Snow loads and rain loads", "isCorrect": false },
+        { "text": "Tension and compression", "isCorrect": false }
+      ],
+      "explanation": "Wind and seismic (earthquake) forces are the main horizontal loads that govern the design of a building's lateral force resisting system. Dead and live loads are primarily gravity (vertical) loads."
+    },
+    {
+      "question": "Seismic loads on a building are inertial forces that are directly proportional to the building's:",
+      "options": [
+        { "text": "Height", "isCorrect": false },
+        { "text": "Mass", "isCorrect": true },
+        { "text": "Color", "isCorrect": false },
+        { "text": "Age", "isCorrect": false }
+      ],
+      "explanation": "From Newton's second law, Force = mass × acceleration ($F=ma$). During an earthquake, the ground accelerates, and the building's inertia resists this motion. The resulting force generated within the structure is directly proportional to its mass. This is why heavier buildings typically experience larger seismic forces."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Axial deformation</strong> is the change in length of a member when it is subjected to a tensile or compressive axial force (a force acting along its longitudinal axis). Tensile forces cause the member to elongate, while compressive forces cause it to shorten.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula for Elastic Deformation</h3>\n<p class=\"mb-4\">Within the elastic limit of the material, the deformation ($\\delta$) of a prismatic member (one with a constant cross-section) is given by the formula:</p>\n$$ \\delta = \\frac{PL}{AE} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\delta$: Total deformation (change in length).</li>\n    <li>$P$: Applied axial load.</li>\n    <li>$L$: Original length of the member.</li>\n    <li>$A$: Cross-sectional area of the member.</li>\n    <li>$E$: Modulus of Elasticity (Young's Modulus) of the material, a measure of its stiffness.</li>\n</ul>\n<p class=\"mb-4\">The term $AE/L$ is often referred to as the axial stiffness of the member.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A steel rod is 10 feet long and has a cross-sectional area of 0.5 in². It is subjected to a tensile force of 10,000 lbs. If the Modulus of Elasticity for steel is 29,000,000 psi, what is the total elongation of the rod?",
+      "options": [
+        { "text": "0.083 in", "isCorrect": true },
+        { "text": "0.0069 in", "isCorrect": false },
+        { "text": "1.45 in", "isCorrect": false },
+        { "text": "0.83 in", "isCorrect": false }
+      ],
+      "explanation": "Use the deformation formula $\\delta = PL/AE$. First, ensure all units are consistent. Convert the length to inches: L = 10 ft * 12 in/ft = 120 in. Now plug in the values: $\\delta = \\frac{(10,000 \\text{ lbs})(120 \\text{ in})}{(0.5 \\text{ in²})(29,000,000 \\text{ lb/in²})} = \\frac{1,200,000}{14,500,000} \\approx 0.0828$ inches."
+    },
+    {
+      "question": "A member with a constant cross-section is made of a certain material. If both the applied load and the length of the member are doubled, how does its axial deformation change?",
+      "options": [
+        { "text": "It is halved.", "isCorrect": false },
+        { "text": "It doubles.", "isCorrect": false },
+        { "text": "It quadruples.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false }
+      ],
+      "explanation": "Deformation is directly proportional to both load (P) and length (L). If P becomes 2P and L becomes 2L, the new deformation will be $\\delta_{new} = \\frac{(2P)(2L)}{AE} = 4 \\frac{PL}{AE} = 4\\delta_{old}$. The deformation quadruples."
+    }
+  ]
+}

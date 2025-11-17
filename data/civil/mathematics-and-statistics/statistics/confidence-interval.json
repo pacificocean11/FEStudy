@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">While a sample mean ($\bar{x}$) is a single-point estimate of the true population mean ($\\mu$), it is unlikely to be exactly correct. A <strong>confidence interval</strong> provides a range of values that is likely to contain the true population mean. It gives us a measure of the uncertainty associated with our sample estimate.</p>\n<p class=\"mb-4\">A 95% confidence interval, for example, means that if we were to take many samples and construct an interval for each one, about 95% of those intervals would contain the true population mean.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula for a Mean</h3>\n<p class=\"mb-4\">The general form of a confidence interval is:</p>\n<p class=\"text-center font-semibold mb-4\">Point Estimate ± Margin of Error</p>\n\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Case 1: Population Standard Deviation ($\\sigma$) is Known (or n > 30)</strong><br>\n    The interval is calculated using a z-score from the standard normal distribution.\n    $$ CI = \\bar{x} \\pm z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}} $$\n    </li>\n    <li><strong>Case 2: Population Standard Deviation ($\\sigma$) is Unknown (and n < 30)</strong><br>\n    The interval is calculated using a t-score from the t-distribution with $n-1$ degrees of freedom. The sample standard deviation ($s$) is used as an estimate for $\\sigma$.\n    $$ CI = \\bar{x} \\pm t_{\\alpha/2} \\frac{s}{\\sqrt{n}} $$\n    </li>\n</ul>\n<p class=\"mb-4\">Here, $z_{\\alpha/2}$ and $t_{\\alpha/2}$ are the critical values corresponding to the desired confidence level (e.g., for a 95% confidence level, $\\alpha=0.05$, and $z_{\\alpha/2} = 1.96$).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A sample of 49 bolts is found to have a mean diameter of 10.02 mm. The population standard deviation is known to be 0.14 mm. What is the 95% confidence interval for the true mean diameter?",
+      "options": [
+        { "text": "[10.00, 10.04] mm", "isCorrect": false },
+        { "text": "[9.98, 10.06] mm", "isCorrect": true },
+        { "text": "[9.88, 10.16] mm", "isCorrect": false },
+        { "text": "[10.01, 10.03] mm", "isCorrect": false }
+      ],
+      "explanation": "Since the population standard deviation $\\sigma$ is known, we use the z-interval. For a 95% confidence level, the critical z-value is $z_{\\alpha/2} = 1.96$. The standard error is $\\frac{\\sigma}{\\sqrt{n}} = \\frac{0.14}{\\sqrt{49}} = \\frac{0.14}{7} = 0.02$. The margin of error is $ME = z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}} = 1.96 \\times 0.02 = 0.0392$. The confidence interval is $\\bar{x} \\pm ME = 10.02 \\pm 0.0392$, which is approximately [9.98, 10.06] mm."
+    },
+    {
+      "question": "If a 95% confidence interval is calculated to be [14.2, 15.8], what is the margin of error?",
+      "options": [
+        { "text": "1.6", "isCorrect": false },
+        { "text": "15.0", "isCorrect": false },
+        { "text": "0.8", "isCorrect": true },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "The confidence interval is centered at the sample mean, and its total width is twice the margin of error. The width of the interval is $15.8 - 14.2 = 1.6$. The margin of error is half of the width: $ME = 1.6 / 2 = 0.8$."
+    }
+  ]
+}

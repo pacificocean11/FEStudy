@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition and Purpose</h3>\n<p class=\"mb-4\">A <strong>spillway</strong> is a structure constructed at or near a dam to provide a controlled means of releasing floodwaters from the reservoir. Its primary purpose is to protect the dam from damage due to <strong>overtopping</strong>.</p>\n<p class=\"mb-4\">Overtopping is the uncontrolled flow of water over the crest of the dam. For an earth-fill dam, overtopping is extremely dangerous as it can quickly erode the downstream face and lead to a catastrophic failure of the entire structure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Spillway Components</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Control Structure:</strong> The part of the spillway that controls the outflow from the reservoir. It could be an uncontrolled weir or it could have gates to regulate the flow.</li>\n    <li><strong>Discharge Channel:</strong> A channel that conveys the water from the control structure safely downstream.</li>\n    <li><strong>Energy Dissipator:</strong> A structure at the end of the discharge channel designed to slow down the high-velocity flow and dissipate its energy to prevent erosion of the riverbed downstream of the dam. A hydraulic jump is often induced in a structure called a stilling basin for this purpose.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Types of Spillways</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Ogee (or Overflow) Spillway:</strong> The most common type, typically used with concrete gravity dams. The crest of the spillway is shaped like an S-curve (an ogee) to match the profile of flowing water, which maximizes discharge efficiency.</li>\n    <li><strong>Chute Spillway:</strong> An open channel, usually constructed of concrete, that runs from the reservoir down the side of the dam or along an abutment.</li>\n    <li><strong>Morning Glory (or Shaft) Spillway:</strong> A vertical shaft with a funnel-shaped inlet that is located in the reservoir. Water spills into the funnel and is carried away by a tunnel or conduit.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the most critical function of a spillway on an earth-fill dam?",
+      "options": [
+        { "text": "To generate hydroelectric power.", "isCorrect": false },
+        { "text": "To provide a water supply intake.", "isCorrect": false },
+        { "text": "To prevent the dam from being overtopped during a flood.", "isCorrect": true },
+        { "text": "To allow fish to pass the dam.", "isCorrect": false }
+      ],
+      "explanation": "The spillway is a primary safety feature for a dam. It is designed to pass large flood flows safely, preventing the reservoir level from rising so high that it flows over the top of the dam, which could cause the dam to erode and fail."
+    },
+    {
+      "question": "A structure at the bottom of a dam spillway designed to create a hydraulic jump and reduce the energy of the high-velocity flow is called a:",
+      "options": [
+        { "text": "Stilling basin", "isCorrect": true },
+        { "text": "Intake tower", "isCorrect": false },
+        { "text": "Penstock", "isCorrect": false },
+        { "text": "Fish ladder", "isCorrect": false }
+      ],
+      "explanation": "A stilling basin is a common type of energy dissipator. It is a concrete apron at the downstream toe of the spillway designed to force a hydraulic jump to occur, which is a very effective (though turbulent) way to convert the kinetic energy of the flow into heat, thus protecting the downstream river channel from erosion."
+    }
+  ]
+}

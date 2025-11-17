@@ -12,7 +12,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'A. Analytic geometry', subtopics: [{ name: 'A. Analytic geometry', content: null }] },
         { name: 'B. Single-variable calculus', subtopics: [{ name: 'B. Single-variable calculus', content: null }] },
         { name: 'C. Vector operations', subtopics: [{ name: 'C. Vector operations', content: null }] },
-        { name: 'D. Statistics', subtopics: [{ name: 'D. Statistics', content: null }] },
+        {
+          name: 'D. Statistics',
+          subtopics: [
+            { name: 'Distributions', content: null },
+            { name: 'Mean, Median and Mode', content: null },
+            { name: 'Standard Deviation', content: null },
+            { name: 'Confidence Interval', content: null },
+            { name: 'Regression and Curve Fitting', content: null },
+          ],
+        },
       ],
     },
     {
@@ -27,7 +36,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '3. Engineering Economics',
       topics: [
-        { name: 'A. Time value of money', subtopics: [{ name: 'A. Time value of money', content: null }] },
+        {
+          name: 'A. Time value of money',
+          subtopics: [
+            { name: 'Equivalence', content: null },
+            { name: 'Present Worth', content: null },
+            { name: 'Equivalent Annual Worth', content: null },
+            { name: 'Future Worth', content: null },
+            { name: 'Rate of Return', content: null },
+          ],
+        },
         { name: 'B. Cost', subtopics: [{ name: 'B. Cost', content: null }] },
         { name: 'C. Analyses', subtopics: [{ name: 'C. Analyses', content: null }] },
         { name: 'D. Uncertainty', subtopics: [{ name: 'D. Uncertainty', content: null }] },
@@ -59,7 +77,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       topics: [
         { name: 'A. Shear and moment diagrams', subtopics: [{ name: 'A. Shear and moment diagrams', content: null }] },
         { name: 'B. Stresses and strains', subtopics: [{ name: 'B. Stresses and strains', content: null }] },
-        { name: 'C. Deformations', subtopics: [{ name: 'C. Deformations', content: null }] },
+        {
+          name: 'C. Deformations',
+          subtopics: [
+            { name: 'Axial', content: null },
+            { name: 'Torsion', content: null },
+            { name: 'Bending', content: null },
+            { name: 'Thermal', content: null },
+          ],
+        },
         { name: "D. Combined stresses, principal stresses, and Mohr's circle", subtopics: [{ name: "D. Combined stresses, principal stresses, and Mohr's circle", content: null }] },
       ],
     },
@@ -87,7 +113,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'B. Area computations', subtopics: [{ name: 'B. Area computations', content: null }] },
         { name: 'C. Earthwork and volume computations', subtopics: [{ name: 'C. Earthwork and volume computations', content: null }] },
         { name: 'D. Coordinate systems', subtopics: [{ name: 'D. Coordinate systems', content: null }] },
-        { name: 'E. Leveling', subtopics: [{ name: 'E. Leveling', content: null }] },
+        {
+          name: 'E. Leveling',
+          subtopics: [
+            { name: 'Differential', content: null },
+            { name: 'Elevations', content: null },
+            { name: 'Percent Grades', content: null },
+          ],
+        },
       ],
     },
     {
@@ -112,7 +145,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         },
         { name: 'C. Pumps', subtopics: [{ name: 'C. Pumps', content: null }] },
         { name: 'D. Water distribution systems', subtopics: [{ name: 'D. Water distribution systems', content: null }] },
-        { name: 'E. Flood control', subtopics: [{ name: 'E. Flood control', content: null }] },
+        {
+          name: 'E. Flood control',
+          subtopics: [
+            { name: 'Dams', content: null },
+            { name: 'Routing', content: null },
+            { name: 'Spillways', content: null },
+          ],
+        },
         {
           name: 'F. Stormwater',
           subtopics: [
@@ -170,7 +210,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'C. Column analysis', subtopics: [{ name: 'C. Column analysis', content: null }] },
         { name: 'D. Structural determinacy and stability analysis of beams, trusses, and frames', subtopics: [{ name: 'D. Structural determinacy and stability analysis of beams, trusses, and frames', content: null }] },
         { name: 'E. Elementary statically indeterminate structures', subtopics: [{ name: 'E. Elementary statically indeterminate structures', content: null }] },
-        { name: 'F. Loads, load combinations, and load paths', subtopics: [{ name: 'F. Loads, load combinations, and load paths', content: null }] },
+        {
+          name: 'F. Loads, load combinations, and load paths',
+          subtopics: [
+            { name: 'Dead', content: null },
+            { name: 'Live', content: null },
+            { name: 'Lateral', content: null },
+            { name: 'Influence Lines and Moving Loads', content: null },
+            { name: 'Tributary Areas', content: null },
+          ],
+        },
         { name: 'G. Design of steel components', subtopics: [{ name: 'G. Design of steel components', content: null }] },
         {
           name: 'H. Design of reinforced concrete components',
@@ -186,13 +235,27 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       name: '12. Geotechnical Engineering',
       topics: [
         { name: 'A. Index properties and soil classifications', subtopics: [{ name: 'A. Index properties and soil classifications', content: null }] },
-        { name: 'B. Phase relations', subtopics: [{ name: 'B. Phase relations', content: null }] },
+        {
+          name: 'B. Phase relations',
+          subtopics: [
+            { name: 'Volume Relations', content: null },
+            { name: 'Weight Relations', content: null },
+          ],
+        },
         { name: 'C. Laboratory and field tests', subtopics: [{ name: 'C. Laboratory and field tests', content: null }] },
         { name: 'D. Effective stress', subtopics: [{ name: 'D. Effective stress', content: null }] },
         { name: 'E. Stability of retaining structures', subtopics: [{ name: 'E. Stability of retaining structures', content: null }] },
         { name: 'F. Shear strength', subtopics: [{ name: 'F. Shear strength', content: null }] },
         { name: 'G. Bearing capacity', subtopics: [{ name: 'G. Bearing capacity', content: null }] },
-        { name: 'H. Foundation types', subtopics: [{ name: 'H. Foundation types', content: null }] },
+        {
+          name: 'H. Foundation types',
+          subtopics: [
+            { name: 'Spread Footings', content: null },
+            { name: 'Deep Foundations', content: null },
+            { name: 'Wall Footings', content: null },
+            { name: 'Mats', content: null },
+          ],
+        },
         { name: 'I. Consolidation and differential settlement', subtopics: [{ name: 'I. Consolidation and differential settlement', content: null }] },
         {
           name: 'J. Slope stability',
@@ -203,13 +266,26 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Dams', content: null },
           ],
         },
-        { name: 'K. Soil stabilization', subtopics: [{ name: 'K. Soil stabilization', content: null }] },
+        {
+          name: 'K. Soil stabilization',
+          subtopics: [
+            { name: 'Chemical Additives', content: null },
+            { name: 'Geosynthetics', content: null },
+          ],
+        },
       ],
     },
     {
       name: '13. Transportation Engineering',
       topics: [
-        { name: 'A. Geometric design', subtopics: [{ name: 'A. Geometric design', content: null }] },
+        {
+          name: 'A. Geometric design',
+          subtopics: [
+            { name: 'Streets', content: null },
+            { name: 'Highways', content: null },
+            { name: 'Intersections', content: null },
+          ],
+        },
         {
           name: 'B. Pavement system design',
           subtopics: [
@@ -220,8 +296,20 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           ],
         },
         { name: 'C. Traffic capacity and flow theory', subtopics: [{ name: 'C. Traffic capacity and flow theory', content: null }] },
-        { name: 'D. Traffic control devices', subtopics: [{ name: 'D. Traffic control devices', content: null }] },
-        { name: 'E. Transportation planning', subtopics: [{ name: 'E. Transportation planning', content: null }] },
+        {
+          name: 'D. Traffic control devices',
+          subtopics: [
+            { name: 'Signals', content: null },
+          ],
+        },
+        {
+          name: 'E. Transportation planning',
+          subtopics: [
+            { name: 'Travel Forecast Modeling', content: null },
+            { name: 'Safety', content: null },
+            { name: 'Trip Generation', content: null },
+          ],
+        },
       ],
     },
     {

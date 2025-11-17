@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Four-Step Travel Demand Model</h3>\n<p class=\"mb-4\">Travel forecast modeling is a cornerstone of transportation planning. The traditional approach is the <strong>four-step model</strong>, which is a sequential process used to predict travel patterns and demand on a transportation network.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Steps</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Trip Generation:</strong> This is the first step. It estimates the total number of trips that will begin or end in each defined geographic area, called a <strong>Traffic Analysis Zone (TAZ)</strong>. It predicts trip 'productions' (e.g., from residential areas) and trip 'attractions' (e.g., to commercial or employment centers), but it does not say where the trips go.\n    </li>\n    <li>\n        <strong>Trip Distribution:</strong> This step connects the trip ends. It takes the trip productions and attractions from step 1 and determines the origin-destination (O-D) patterns. It answers the question: 'Where are the trips going?'. The most common model for this is the <strong>Gravity Model</strong>, which assumes that the number of trips between two zones is directly proportional to the number of trips produced and attracted by those zones, and inversely proportional to the 'friction' (travel time, distance, or cost) between them.\n    </li>\n    <li>\n        <strong>Mode Choice (or Modal Split):</strong> This step determines what mode of transportation will be used for each trip (e.g., private car, bus, train, walk, bike). This is typically modeled using logit models that consider factors like travel time, cost, and convenience for each available mode.\n    </li>\n    <li>\n        <strong>Trip Assignment (or Route Assignment):</strong> The final step. It assigns the trips for each mode from step 3 to specific routes on the transportation network (e.g., which specific roads will be used). This step predicts traffic volumes on individual road segments and congestion levels.\n    </li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which step of the four-step travel demand model estimates the total number of trips originating from or destined for a specific zone?",
+      "options": [
+        { "text": "Trip Generation", "isCorrect": true },
+        { "text": "Trip Distribution", "isCorrect": false },
+        { "text": "Mode Choice", "isCorrect": false },
+        { "text": "Trip Assignment", "isCorrect": false }
+      ],
+      "explanation": "Trip Generation is the first step, and its purpose is to forecast the number of trips that will be produced by and attracted to each Traffic Analysis Zone (TAZ) in the study area."
+    },
+    {
+      "question": "The Gravity Model is most commonly used in which step of the travel demand model?",
+      "options": [
+        { "text": "Trip Generation", "isCorrect": false },
+        { "text": "Trip Distribution", "isCorrect": true },
+        { "text": "Mode Choice", "isCorrect": false },
+        { "text": "Trip Assignment", "isCorrect": false }
+      ],
+      "explanation": "The Gravity Model is the classic method for Trip Distribution. It distributes the trips generated in the first step among all the origin-destination pairs in the network, based on the principle that trips are attracted to larger zones but are deterred by the friction of longer travel times or distances."
+    }
+  ]
+}

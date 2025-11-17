@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition and Types</h3>\n<p class=\"mb-4\">An intersection is any location where two or more roads cross or meet. They are points of conflict in a transportation network and a major focus of traffic engineering and safety.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>At-Grade Intersections:</strong> The most common type, where roads cross at the same level. Controlled by signs, signals, or rules of the road.</li>\n    <li><strong>Grade-Separated Interchanges:</strong> Roads cross at different levels using bridges or tunnels. Ramps are used to connect the different levels. Used for freeways and major arterials to allow for high-speed, high-volume traffic flow.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Design Elements for At-Grade Intersections</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Turning Radii:</strong> The curves at the corners of an intersection must be designed with a large enough radius to accommodate the turning path of a design vehicle (e.g., a large truck or bus).</li>\n    <li><strong>Intersection Sight Distance (ISD):</strong> The corner of an intersection must be clear of obstructions (like buildings or vegetation) so that a driver on the minor road can see approaching vehicles on the major road and has enough time to safely enter or cross the intersection. This clear area is called the sight triangle.</li>\n    <li><strong>Channelization:</strong> The use of raised islands or painted markings to guide drivers through a complex intersection. It helps to simplify movements, separate conflict points, and provide a refuge for pedestrians.</li>\n    <li><strong>Turn Lanes:</strong> Exclusive lanes for left-turning or right-turning vehicles. They improve safety and capacity by removing turning vehicles from the through traffic stream.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary purpose of providing adequate intersection sight distance?",
+      "options": [
+        { "text": "To make the intersection look more open and aesthetically pleasing.", "isCorrect": false },
+        { "text": "To allow drivers on the major road to see vehicles on the minor road.", "isCorrect": false },
+        { "text": "To allow drivers on the minor road to see approaching traffic and safely enter or cross the intersection.", "isCorrect": true },
+        { "text": "To provide a place for pedestrians to wait.", "isCorrect": false }
+      ],
+      "explanation": "Intersection Sight Distance (ISD) is a critical safety element. It ensures that a driver stopped on a minor road has a clear line of sight down the major road for a sufficient distance to make a safe decision to proceed."
+    },
+    {
+      "question": "The use of raised islands to guide vehicles through a complex intersection is a traffic engineering technique known as:",
+      "options": [
+        { "text": "Channelization", "isCorrect": true },
+        { "text": "Superelevation", "isCorrect": false },
+        { "text": "Delineation", "isCorrect": false },
+        { "text": "Signalization", "isCorrect": false }
+      ],
+      "explanation": "Channelization uses traffic islands, medians, and painted markings to define the intended paths for vehicles. This can simplify complex movements, reduce the number of conflict points, and generally improve the safety and efficiency of an intersection."
+    }
+  ]
+}

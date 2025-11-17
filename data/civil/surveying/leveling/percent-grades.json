@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>grade</strong> (or slope) of a line is a measure of its steepness. In civil engineering and surveying, it is typically expressed as a percentage.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Calculation</h3>\n<p class=\"mb-4\">Percent grade is calculated as the ratio of the vertical change in elevation ('rise') to the horizontal distance ('run'), multiplied by 100.</p>\n$$ \\text{Grade (\\%)} = \\frac{\\text{Rise}}{\\text{Run}} \\times 100 = \\frac{\\text{Change in Elevation}}{\\text{Horizontal Distance}} \\times 100$$\n<p class=\"mb-4\">A positive grade indicates an upward slope, while a negative grade indicates a downward slope.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application</h3>\n<p class=\"mb-4\">Grades are fundamental in the design of roads, railways, and drainage systems.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Roads:</strong> Grades are kept within limits to ensure vehicle safety and performance. A 5% grade means the road rises 5 feet for every 100 feet of horizontal distance.</li>\n    <li><strong>Drainage:</strong> Pipes and ditches must be sloped at a minimum grade to ensure that water flows by gravity and maintains a self-cleansing velocity. A typical minimum grade for a storm sewer is 0.5%.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A road rises 12 feet in elevation over a horizontal distance of 300 feet. What is the grade of the road?",
+      "options": [
+        { "text": "12%", "isCorrect": false },
+        { "text": "25%", "isCorrect": false },
+        { "text": "4%", "isCorrect": true },
+        { "text": "0.04%", "isCorrect": false }
+      ],
+      "explanation": "Grade = (Rise / Run) * 100 = (12 ft / 300 ft) * 100 = 0.04 * 100 = 4%."
+    },
+    {
+      "question": "A storm drain pipe is 500 feet long and is to be installed at a uniform grade of -0.5%. What is the total drop in elevation from the start of the pipe to the end?",
+      "options": [
+        { "text": "2.5 ft", "isCorrect": true },
+        { "text": "0.5 ft", "isCorrect": false },
+        { "text": "5.0 ft", "isCorrect": false },
+        { "text": "10.0 ft", "isCorrect": false }
+      ],
+      "explanation": "The grade is given in percent, so first convert it to a decimal: -0.5% = -0.005. The change in elevation (Rise) is the grade multiplied by the horizontal distance (Run). Rise = Grade * Run = -0.005 * 500 ft = -2.5 ft. The drop in elevation is 2.5 ft."
+    }
+  ]
+}

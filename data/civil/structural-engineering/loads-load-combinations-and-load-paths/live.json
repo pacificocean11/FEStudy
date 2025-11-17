@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Live loads</strong> are temporary, movable loads produced by the use and occupancy of a building. They are variable and not a permanent part of the structure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Examples of Live Loads</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The weight of occupants (people)</li>\n    <li>Furniture and movable equipment</li>\n    <li>Stored materials</li>\n    <li>Vehicles in a parking garage</li>\n    <li>Environmental loads such as snow, rain, and ice (though sometimes categorized separately)</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Design Values from Codes</h3>\n<p class=\"mb-4\">Because live loads are variable and uncertain, structural design does not use the actual expected load but rather a conservative, uniform design load specified by building codes. <strong>ASCE 7, 'Minimum Design Loads for Buildings and Other Structures'</strong>, provides the standard minimum live loads based on the intended use (occupancy) of a space.</p>\n<p class=\"mb-4\">Example Minimum Live Loads from ASCE 7:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Residences: 40 psf</li>\n    <li>Offices: 50 psf</li>\n    <li>Libraries: 60 psf (reading rooms) to 150 psf (stacks)</li>\n    <li>Heavy Storage: 250 psf</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Live Load Reduction</h3>\n<p class=\"mb-4\">For large floor areas, it is statistically unlikely that the entire area will be subjected to the full design live load at the same time. Building codes permit a reduction in the design live load for members that support large floor areas (like girders and columns). This reduction does not apply to all occupancies (e.g., places of public assembly) or to one-way slabs.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is considered a live load?",
+      "options": [
+        { "text": "The weight of a building's steel frame.", "isCorrect": false },
+        { "text": "The weight of a brick facade wall.", "isCorrect": false },
+        { "text": "The weight of snow on the roof.", "isCorrect": true },
+        { "text": "The weight of a permanently installed air handling unit.", "isCorrect": false }
+      ],
+      "explanation": "Live loads are transient and variable. Snow is an environmental live load. The steel frame, brick wall, and permanent equipment are all examples of dead loads."
+    },
+    {
+      "question": "An engineer is designing an office building. Where would they find the required minimum design live load to use for the office floors?",
+      "options": [
+        { "text": "The ACI 318 code", "isCorrect": false },
+        { "text": "The AISC Steel Construction Manual", "isCorrect": false },
+        { "text": "The local building code or ASCE 7", "isCorrect": true },
+        { "text": "The geotechnical report", "isCorrect": false }
+      ],
+      "explanation": "Minimum design loads, including live loads for various occupancies, are specified in the governing local building code, which typically adopts the standards set forth in ASCE 7, 'Minimum Design Loads for Buildings and Other Structures'."
+    }
+  ]
+}

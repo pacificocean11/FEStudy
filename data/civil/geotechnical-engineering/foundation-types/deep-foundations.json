@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Deep foundations</strong> are a type of foundation that transfers building loads to the earth farther down from the surface than a shallow foundation does, to a subsurface layer or a range of depths. They are used when the soil at shallow depths is not strong enough to support the structural loads.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Piles:</strong> Long, slender members that are driven or drilled into the ground. They can be made of timber, steel, or concrete.</li>\n    <li><strong>Drilled Shafts (or Caissons):</strong> A type of deep foundation that is constructed by drilling a hole into the ground and filling it with concrete. Reinforcing steel is often placed in the hole before the concrete is poured.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Load Transfer Mechanism</h3>\n<p class=\"mb-4\">Deep foundations support loads in two ways, often in combination:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>End Bearing:</strong> The load is transferred from the tip of the pile or shaft to a strong, underlying layer of soil or rock. The pile acts like a column.</li>\n    <li><strong>Skin Friction (or Side Friction):</strong> The load is transferred from the sides of the pile to the surrounding soil through friction.</li>\n</ul>\n<p class=\"mb-4\">The total ultimate capacity of a single pile ($Q_{ult}$) is the sum of its end bearing capacity ($Q_p$) and its skin friction capacity ($Q_s$). An allowable capacity is then determined by applying a factor of safety.</p>\n$$ Q_{ult} = Q_p + Q_s $$ \n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Deep foundations are typically required in which of the following situations?",
+      "options": [
+        { "text": "When building a lightweight, single-story structure on strong gravel.", "isCorrect": false },
+        { "text": "When building a heavy high-rise building on soft, compressible clay.", "isCorrect": true },
+        { "text": "When the groundwater table is very deep.", "isCorrect": false },
+        { "text": "When the project budget is very limited.", "isCorrect": false }
+      ],
+      "explanation": "Deep foundations are used to bypass weak, shallow soils and transfer heavy structural loads to deeper, stronger, and less compressible materials like dense sand, gravel, or bedrock. A heavy building on soft clay is a classic case where deep foundations are necessary."
+    },
+    {
+      "question": "The load-carrying capacity of a pile that is derived from the friction between the pile surface and the surrounding soil is known as:",
+      "options": [
+        { "text": "End bearing", "isCorrect": false },
+        { "text": "Skin friction", "isCorrect": true },
+        { "text": "Pile driving resistance", "isCorrect": false },
+        { "text": "Negative skin friction", "isCorrect": false }
+      ],
+      "explanation": "Skin friction, or side friction, is the component of a pile's capacity that comes from shear stress developed along its sides as it interacts with the soil. End bearing is the capacity derived from the soil or rock directly beneath the pile tip."
+    }
+  ]
+}

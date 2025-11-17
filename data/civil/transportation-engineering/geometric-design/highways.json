@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Horizontal Alignment</h3>\n<p class=\"mb-4\">The horizontal alignment consists of straight sections (tangents) connected by circular curves.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Superelevation ($e$):</strong> On horizontal curves, the roadway is banked (tilted) to counteract the centrifugal force that pushes a vehicle outward. This banking is called superelevation. The relationship between speed ($V$), radius ($R$), superelevation ($e$), and side friction factor ($f_s$) is:</li>\n    $$ R_{min} = \\frac{V^2}{g(e + f_s)} $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Vertical Alignment</h3>\n<p class=\"mb-4\">The vertical alignment consists of constant-grade sections (tangents) connected by vertical curves, which are parabolic.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Crest Vertical Curves:</strong> Curves that have a convex shape (like the top of a hill). Design is governed by providing adequate stopping sight distance.</li>\n    <li><strong>Sag Vertical Curves:</strong> Curves that have a concave shape (like the bottom of a valley). Design is governed by headlight sight distance at night, as well as rider comfort and drainage.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Stopping Sight Distance (SSD)</h3>\n<p class=\"mb-4\">SSD is the minimum distance required for a driver traveling at the design speed to see an object on the road, react, and bring the vehicle to a complete stop before hitting the object. It is the sum of two components:</p>\n<p class=\"text-center font-semibold mb-4\">SSD = Brake Reaction Distance + Braking Distance</p>\n$$ SSD = V t_r + \\frac{V^2}{2g(a/g \\pm G)} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$V$: Design speed.</li>\n    <li>$t_r$: Brake reaction time (typically 2.5 seconds).</li>\n    <li>$a$: Deceleration rate.</li>\n    <li>$G$: Grade of the roadway (as a decimal).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a horizontal highway curve, the purpose of superelevation is to:",
+      "options": [
+        { "text": "Improve drainage.", "isCorrect": false },
+        { "text": "Counteract the centrifugal force on the vehicle.", "isCorrect": true },
+        { "text": "Increase the design speed.", "isCorrect": false },
+        { "text": "Improve driver visibility.", "isCorrect": false }
+      ],
+      "explanation": "Superelevation, or banking, tilts the roadway to help vehicles navigate a curve. A component of the car's weight helps resist the centrifugal force that is pushing the car to the outside of the curve, reducing the reliance on side friction from the tires."
+    },
+    {
+      "question": "The design of a sag vertical curve is primarily governed by which criterion?",
+      "options": [
+        { "text": "Stopping sight distance during the day.", "isCorrect": false },
+        { "text": "Headlight sight distance at night.", "isCorrect": true },
+        { "text": "Passing sight distance.", "isCorrect": false },
+        { "text": "Aesthetics.", "isCorrect": false }
+      ],
+      "explanation": "In a sag curve at night, the driver's sight distance is limited by the length of road illuminated by the vehicle's headlights. The curve must be long enough to ensure that the headlight beam provides the required stopping sight distance."
+    }
+  ]
+}

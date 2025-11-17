@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Hydrologic routing</strong> is the technique used to trace the movement of a flood wave (hydrograph) through a hydrologic system, such as a river channel or a reservoir. The goal is to predict the shape of the hydrograph at a downstream location, given its shape at an upstream location.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Continuity Equation</h3>\n<p class=\"mb-4\">All routing methods are based on the principle of conservation of mass, expressed by the continuity equation:</p>\n<p class=\"text-center font-semibold mb-4\">Inflow - Outflow = Change in Storage</p>\n$$ I(t) - O(t) = \\frac{dS}{dt} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Reservoir Routing</h3>\n<p class=\"mb-4\">Reservoir routing is used to model the effect of a reservoir on a flood hydrograph. As a flood wave enters a reservoir, water is stored, and the outflow is typically controlled by a spillway or outlet structure.</p>\n<p class=\"mb-4\">The effect of the reservoir's storage is to <strong>attenuate</strong> the flood peak. This means:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The peak of the outflow hydrograph will be <strong>lower</strong> than the peak of the inflow hydrograph.</li>\n    <li>The peak of the outflow hydrograph will occur <strong>later</strong> in time than the peak of the inflow hydrograph.</li>\n</ul>\n<p class=\"mb-4\">This peak flow reduction is the primary mechanism by which reservoirs provide flood control.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Channel Routing</h3>\n<p class=\"mb-4\">Channel routing models the movement of a flood wave down a river reach. As the wave moves, it also attenuates and becomes more spread out due to storage within the channel and frictional resistance.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The process of predicting the outflow hydrograph from a reservoir based on a given inflow hydrograph is known as:",
+      "options": [
+        { "text": "Unit hydrograph analysis", "isCorrect": false },
+        { "text": "Frequency analysis", "isCorrect": false },
+        { "text": "Reservoir routing", "isCorrect": true },
+        { "text": "Stage-discharge rating", "isCorrect": false }
+      ],
+      "explanation": "Reservoir routing is the specific hydrologic procedure used to simulate the passage of a flood through a reservoir, accounting for the effects of storage."
+    },
+    {
+      "question": "What is the typical effect of a flood control reservoir on a flood hydrograph passing through it?",
+      "options": [
+        { "text": "It increases the peak flow and makes it occur earlier.", "isCorrect": false },
+        { "text": "It decreases the peak flow and makes it occur later.", "isCorrect": true },
+        { "text": "It has no effect on the peak flow but delays it.", "isCorrect": false },
+        { "text": "It decreases the peak flow but does not change its timing.", "isCorrect": false }
+      ],
+      "explanation": "By temporarily storing a portion of the flood volume, a reservoir reduces the maximum outflow rate (peak attenuation) and spreads the outflow over a longer period, causing the peak to occur later in time."
+    }
+  ]
+}

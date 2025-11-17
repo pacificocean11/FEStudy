@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Three-Phase Soil Model</h3>\n<p class=\"mb-4\">Soil is a particulate material, meaning it consists of solid particles with empty spaces, called voids, between them. These voids can be filled with either air, water, or a combination of both. To analyze the properties of soil, it is convenient to represent it with a phase diagram, which separates the soil into its three constituent phases: solid, water, and air.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Volume Relationships</h3>\n<p class=\"mb-4\">Several key parameters are defined based on the volumes of these phases:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Void Ratio ($e$):</strong> The ratio of the volume of voids ($V_v$) to the volume of the solid particles ($V_s$). It is a measure of how 'loose' or 'dense' the soil is. It is not expressed as a percentage.</li>\n    $$ e = \\frac{V_v}{V_s} $$\n    <li><strong>Porosity ($n$):</strong> The ratio of the volume of voids ($V_v$) to the total volume of the soil ($V_T$). It is often expressed as a percentage.</li>\n    $$ n = \\frac{V_v}{V_T} \\times 100\\% $$\n    <li><strong>Degree of Saturation ($S$):</strong> The ratio of the volume of water ($V_w$) to the total volume of voids ($V_v$). It indicates how much of the void space is filled with water, expressed as a percentage.</li>\n    $$ S = \\frac{V_w}{V_v} \\times 100\\% $$\n    <ul class=\"list-circle list-inside ml-6\">\n        <li>If $S=0\\%$, the soil is perfectly dry.</li>\n        <li>If $S=100\\%$, the soil is fully saturated.</li>\n    </ul>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Relationships between n and e</h3>\n<p class=\"mb-4\">Void ratio and porosity measure the same thing (the amount of void space) but relate it to different bases. They can be related to each other:</p>\n$$ n = \\frac{e}{1+e} \\quad \\text{and} \\quad e = \\frac{n}{1-n} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A soil sample has a total volume of 1.2 m³. The volume of the solid particles is 0.8 m³. What is the porosity of the soil?",
+      "options": [
+        { "text": "50%", "isCorrect": false },
+        { "text": "33.3%", "isCorrect": true },
+        { "text": "66.7%", "isCorrect": false },
+        { "text": "25%", "isCorrect": false }
+      ],
+      "explanation": "First, find the volume of voids: $V_v = V_T - V_s = 1.2 - 0.8 = 0.4$ m³. Porosity is the ratio of the volume of voids to the total volume: $n = V_v / V_T = 0.4 / 1.2 = 1/3 \\approx 33.3\\%$."
+    },
+    {
+      "question": "For the soil sample in the previous problem ($V_v = 0.4$ m³, $V_s = 0.8$ m³), what is the void ratio?",
+      "options": [
+        { "text": "0.5", "isCorrect": true },
+        { "text": "0.33", "isCorrect": false },
+        { "text": "0.67", "isCorrect": false },
+        { "text": "2.0", "isCorrect": false }
+      ],
+      "explanation": "Void ratio is the ratio of the volume of voids to the volume of solids: $e = V_v / V_s = 0.4 / 0.8 = 0.5$."
+    },
+    {
+        "question": "A soil has a void ratio of 0.6. What is its porosity?",
+        "options": [
+          { "text": "60%", "isCorrect": false },
+          { "text": "40%", "isCorrect": false },
+          { "text": "37.5%", "isCorrect": true },
+          { "text": "25%", "isCorrect": false }
+        ],
+        "explanation": "Use the relationship between porosity and void ratio: $n = e / (1+e) = 0.6 / (1+0.6) = 0.6 / 1.6 = 0.375$, or 37.5%."
+      }
+  ]
+}

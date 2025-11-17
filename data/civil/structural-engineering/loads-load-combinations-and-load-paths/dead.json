@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Dead loads</strong> are static forces that are relatively permanent and constant over time. They consist of the weight of the structure's own components and any permanent attachments.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Components of Dead Load</h3>\n<p class=\"mb-4\">Dead loads include the weight of:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Structural members (beams, columns, slabs, foundations)</li>\n    <li>Walls (interior and exterior)</li>\n    <li>Flooring materials (tile, carpet, wood)</li>\n    <li>Roofing materials</li>\n    <li>Fixed service equipment (plumbing, HVAC, electrical systems)</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Calculation</h3>\n<p class=\"mb-4\">Dead loads are calculated by multiplying the volume of each component by its material's unit weight. Standard unit weights for common construction materials are provided in building codes and design manuals (e.g., from ASCE 7, 'Minimum Design Loads for Buildings and Other Structures').</p>\n<p class=\"mb-4\">Example Unit Weights:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Reinforced Concrete: approx. 150 lb/ft³</li>\n    <li>Steel: approx. 490 lb/ft³</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is considered a dead load?",
+      "options": [
+        { "text": "The weight of snow on a roof.", "isCorrect": false },
+        { "text": "The weight of people in a room.", "isCorrect": false },
+        { "text": "The weight of the concrete slab itself.", "isCorrect": true },
+        { "text": "The force of wind on a wall.", "isCorrect": false }
+      ],
+      "explanation": "Dead loads are permanent and part of the structure. The weight of the concrete slab is a dead load. Snow, people, and wind are all transient loads (live loads or environmental loads)."
+    },
+    {
+      "question": "A reinforced concrete floor slab is 6 inches thick. If the unit weight of reinforced concrete is 150 lb/ft³, what is the dead load of the slab in pounds per square foot (psf)?",
+      "options": [
+        { "text": "900 psf", "isCorrect": false },
+        { "text": "150 psf", "isCorrect": false },
+        { "text": "75 psf", "isCorrect": true },
+        { "text": "25 psf", "isCorrect": false }
+      ],
+      "explanation": "First, convert the thickness to feet: 6 inches = 0.5 feet. The dead load per unit area is the unit weight multiplied by the thickness. Load = $150 \\frac{lb}{ft³} \\times 0.5 \\text{ ft} = 75 \\frac{lb}{ft²}$, or 75 psf."
+    }
+  ]
+}

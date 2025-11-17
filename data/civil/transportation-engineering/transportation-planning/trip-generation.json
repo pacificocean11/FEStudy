@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Trip generation</strong> is the first step in the conventional four-step transportation forecasting model. It predicts the number of trips originating in or destined for a particular Traffic Analysis Zone (TAZ). The result of this step is the total number of trip 'productions' and trip 'attractions' for each zone.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Trip Productions and Attractions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Trip Productions (P):</strong> The home-end of a trip. Residential land uses are the primary producers of trips. Trip productions are typically related to the characteristics of the households in the zone, such as income, number of vehicles owned, and household size.</li>\n    <li><strong>Trip Attractions (A):</strong> The non-home end of a trip. Commercial, industrial, and institutional land uses are the primary attractors of trips. Trip attractions are typically related to the characteristics of the non-residential land use, such as the number of employees or the square footage of retail space.</li>\n</ul>\n<p class=\"mb-4\">For any study area, the total number of productions must equal the total number of attractions: $\\sum P_i = \\sum A_j$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Trip Generation Models</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Trip Rate Analysis:</strong> The simplest method. The number of trips is estimated by multiplying an average trip generation rate by a measure of the land use activity. For example, the number of trips to a shopping center might be calculated as: (Trip Rate per 1000 sq ft) $\\times$ (Total sq ft of the shopping center / 1000). Trip rates are published in manuals like the ITE 'Trip Generation Manual'.</li>\n    <li><strong>Cross-Classification:</strong> A more detailed method used for trip productions. Households are categorized into groups based on multiple variables (e.g., household size and vehicle ownership). An average trip rate is determined for each category, providing a more accurate estimate than a single average rate.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In trip generation analysis, which of the following would be considered a trip 'production' zone?",
+      "options": [
+        { "text": "A large shopping mall.", "isCorrect": false },
+        { "text": "A central business district.", "isCorrect": false },
+        { "text": "A residential subdivision.", "isCorrect": true },
+        { "text": "An industrial park.", "isCorrect": false }
+      ],
+      "explanation": "Trip productions are associated with the home end of a trip, where the trip begins in the morning. Therefore, residential land uses are the primary producers of trips."
+    },
+    {
+      "question": "A fast-food restaurant has an average trip generation rate of 480 trips per 1,000 square feet of gross floor area per day. If a new restaurant with 5,000 square feet is proposed, how many daily trips is it expected to generate?",
+      "options": [
+        { "text": "480 trips", "isCorrect": false },
+        { "text": "2,400 trips", "isCorrect": true },
+        { "text": "96 trips", "isCorrect": false },
+        { "text": "5,000 trips", "isCorrect": false }
+      ],
+      "explanation": "This is a trip rate analysis. The number of trips is the rate multiplied by the size of the development (in the correct units). Trips = (480 trips / 1000 sq ft) * 5,000 sq ft = 2,400 trips."
+    }
+  ]
+}

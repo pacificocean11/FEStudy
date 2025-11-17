@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>wall footing</strong>, also known as a <strong>strip footing</strong>, is a continuous strip of concrete that serves to spread the weight of a load-bearing wall over a larger area of soil. It is a type of shallow foundation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Purpose and Use</h3>\n<p class=\"mb-4\">Wall footings are used to support linear loads from foundation walls, retaining walls, or load-bearing architectural walls. The continuous nature of the footing ensures that the load is distributed evenly along the length of the wall.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Design</h3>\n<p class=\"mb-4\">The primary design consideration for a wall footing is its width ($B$). The width must be sufficient to ensure that the bearing pressure exerted on the soil does not exceed the allowable soil bearing capacity ($q_{allow}$).</p>\n<p class=\"mb-4\">The analysis is typically done per unit length of the wall (e.g., per foot or per meter). The bearing pressure ($q$) is calculated as:</p>\n$$ q = \\frac{P}{B} $$\n<p class=\"mb-4\">Where $P$ is the load from the wall per unit length (e.g., in lb/ft or kN/m). The required width is then:</p>\n$$ B_{req} \\ge \\frac{P}{q_{allow}} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A continuous foundation that supports a load-bearing wall is known as a:",
+      "options": [
+        { "text": "Isolated footing", "isCorrect": false },
+        { "text": "Pile cap", "isCorrect": false },
+        { "text": "Mat foundation", "isCorrect": false },
+        { "text": "Strip footing", "isCorrect": true }
+      ],
+      "explanation": "A strip footing or wall footing is a continuous strip foundation used to support a linear structural element like a wall."
+    },
+    {
+      "question": "A load-bearing wall exerts a total dead and live load of 15,000 lb per linear foot. If the allowable soil bearing capacity is 3,000 psf, what is the minimum required width of the wall footing?",
+      "options": [
+        { "text": "3 ft", "isCorrect": false },
+        { "text": "4 ft", "isCorrect": false },
+        { "text": "5 ft", "isCorrect": true },
+        { "text": "6 ft", "isCorrect": false }
+      ],
+      "explanation": "The required width is found by dividing the load per linear foot by the allowable bearing pressure. $B_{req} = P / q_{allow} = (15,000 \\text{ lb/ft}) / (3,000 \\text{ lb/ft²}) = 5$ ft."
+    }
+  ]
+}

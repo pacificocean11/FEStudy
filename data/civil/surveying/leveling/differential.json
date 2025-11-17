@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Differential leveling</strong> is the most common method of leveling used by surveyors to determine the difference in elevation between two points. It involves using a surveying instrument called a level, which establishes a horizontal line of sight, and a graduated leveling rod.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Basic Procedure</h3>\n<p class=\"mb-4\">The process involves a series of instrument setups and readings:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Set up the level at a location where you can see a point of known elevation (a <strong>benchmark, BM</strong>) and a point of unknown elevation.</li>\n    <li>Take a reading on the leveling rod held on the benchmark. This reading is called a <strong>backsight (BS)</strong>.</li>\n    <li>Calculate the <strong>Height of Instrument (HI)</strong>. This is the elevation of the horizontal line of sight.</li>\n    $$ HI = Elevation_{BM} + BS $$\n    <li>Move the rod to a point of unknown elevation and take a reading. This is a <strong>foresight (FS)</strong>.</li>\n    <li>Calculate the elevation of the new point.</li>\n    $$ Elevation_{New Point} = HI - FS $$\n</ol>\n<p class=\"mb-4\">This process can be repeated by moving the instrument, using the new point as a <strong>turning point (TP)</strong> to establish a new HI.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Field Notes and Checks</h3>\n<p class=\"mb-4\">Surveyors keep meticulous field notes in a table format. A common arithmetic check is to ensure that the sum of all backsights minus the sum of all foresights equals the difference between the starting and ending elevations.</p>\n$$ \\sum BS - \\sum FS = Elevation_{End} - Elevation_{Start} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A surveyor sets up a level and takes a backsight reading of 4.52 ft on a benchmark with an elevation of 100.00 ft. What is the Height of Instrument (HI)?",
+      "options": [
+        { "text": "95.48 ft", "isCorrect": false },
+        { "text": "100.00 ft", "isCorrect": false },
+        { "text": "104.52 ft", "isCorrect": true },
+        { "text": "4.52 ft", "isCorrect": false }
+      ],
+      "explanation": "The Height of Instrument is the elevation of the known point plus the backsight reading. $HI = Elevation + BS = 100.00 \\text{ ft} + 4.52 \\text{ ft} = 104.52$ ft."
+    },
+    {
+      "question": "From the same instrument setup (HI = 104.52 ft), the surveyor takes a foresight reading of 6.89 ft on a new point. What is the elevation of the new point?",
+      "options": [
+        { "text": "111.41 ft", "isCorrect": false },
+        { "text": "97.63 ft", "isCorrect": true },
+        { "text": "100.00 ft", "isCorrect": false },
+        { "text": "102.21 ft", "isCorrect": false }
+      ],
+      "explanation": "The elevation of a new point is the Height of Instrument minus the foresight reading. $Elevation = HI - FS = 104.52 \\text{ ft} - 6.89 \\text{ ft} = 97.63$ ft."
+    }
+  ]
+}

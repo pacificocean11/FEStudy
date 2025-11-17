@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Regression analysis</strong> is a statistical method used to model the relationship between a dependent variable ($y$) and one or more independent variables ($x$). <strong>Curve fitting</strong> is the process of finding a mathematical function that best fits a series of data points.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Simple Linear Regression</h3>\n<p class=\"mb-4\">The simplest form is simple linear regression, which finds the best-fit straight line through a set of data points. The line has the equation:</p>\n$$ y = mx + b $$\n<p class=\"mb-4\">The 'best-fit' line is found using the <strong>method of least squares</strong>, which minimizes the sum of the squares of the vertical distances (residuals) between the data points and the fitted line.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Coefficient of Determination (R²)</h3>\n<p class=\"mb-4\">The <strong>coefficient of determination</strong>, $R^2$, is a statistical measure of the 'goodness of fit' of the regression model. It represents the proportion of the variance in the dependent variable that is predictable from the independent variable(s).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$R^2$ ranges from 0 to 1.</li>\n    <li>An $R^2$ of 1 indicates that the regression line perfectly fits the data.</li>\n    <li>An $R^2$ of 0 indicates that the model explains none of the variability in the response data.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A linear regression analysis between rainfall and runoff results in a coefficient of determination ($R^2$) of 0.85. What does this mean?",
+      "options": [
+        { "text": "The slope of the regression line is 0.85.", "isCorrect": false },
+        { "text": "85% of the data points lie on the regression line.", "isCorrect": false },
+        { "text": "85% of the variation in runoff can be explained by the variation in rainfall.", "isCorrect": true },
+        { "text": "The correlation is weak.", "isCorrect": false }
+      ],
+      "explanation": "The coefficient of determination, $R^2$, quantifies the proportion of the variance in the dependent variable (runoff) that can be predicted from the independent variable (rainfall). A value of 0.85 indicates a strong linear relationship where 85% of the variability is accounted for by the model."
+    }
+  ]
+}

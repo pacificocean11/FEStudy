@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose and Terminology</h3>\n<p class=\"mb-4\">Traffic signals are control devices used to assign the right-of-way to conflicting traffic movements at an intersection. The design and timing of signals is a key part of traffic engineering.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Cycle Length (C):</strong> The total time required for one complete sequence of all signal indications.</li>\n    <li><strong>Phase:</strong> A part of the cycle allocated to any combination of traffic movements receiving the right-of-way simultaneously.</li>\n    <li><strong>Interval:</strong> A period of time during which all signal indications are fixed (unchanged). The main intervals are Green, Yellow, and All-Red.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Change and Clearance Intervals</h3>\n<p class=\"mb-4\">The transition from green to red is a critical safety period. It consists of the yellow change interval and may include an all-red clearance interval.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Yellow Change Interval ($t_y$):</strong> Warns drivers that the green is ending and the red is about to begin. It should be long enough for a driver to either come to a safe stop before the intersection or to proceed through the intersection before the red light appears.</li>\n    $$ t_y = t_p + \\frac{v}{2a} $$\n    <p class=\"text-sm\">where $t_p$ is the driver perception-reaction time (typically 1.0 s), $v$ is the approach speed, and $a$ is the comfortable deceleration rate.</p>\n    <li><strong>All-Red Clearance Interval ($t_{ar}$):</strong> An optional interval that follows the yellow, during which all approaches have a red light. It provides time for a vehicle that entered the intersection at the end of the yellow to clear the intersection before the conflicting traffic is released.</li>\n    $$ t_{ar} = \\frac{W+L}{v} $$\n    <p class=\"text-sm\">where $W$ is the width of the intersection, $L$ is the length of the vehicle, and $v$ is the approach speed.</p>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Dilemma Zone</h3>\n<p class=\"mb-4\">The <strong>dilemma zone</strong> is an area on the approach to a signalized intersection where a driver, upon the onset of the yellow light, can neither come to a safe stop before the intersection nor clear the intersection before the red light. The proper calculation of the yellow interval is intended to eliminate this dilemma zone.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary purpose of the yellow change interval at a traffic signal?",
+      "options": [
+        { "text": "To allow more cars to get through the intersection.", "isCorrect": false },
+        { "text": "To warn drivers of an impending change in the right-of-way.", "isCorrect": true },
+        { "text": "To provide time for pedestrians to cross.", "isCorrect": false },
+        { "text": "To slow down all traffic.", "isCorrect": false }
+      ],
+      "explanation": "The yellow interval serves as a warning that the green light is ending and a red light will soon be displayed. It gives drivers time to decide whether to stop safely or to proceed through the intersection if they are too close to stop."
+    },
+    {
+      "question": "A vehicle is approaching an intersection at 45 ft/s. The intersection is 60 ft wide and the vehicle length is 20 ft. What is the required all-red clearance interval for this vehicle to clear the intersection?",
+      "options": [
+        { "text": "1.33 s", "isCorrect": false },
+        { "text": "0.89 s", "isCorrect": false },
+        { "text": "1.78 s", "isCorrect": true },
+        { "text": "2.25 s", "isCorrect": false }
+      ],
+      "explanation": "The all-red interval provides time for the vehicle to travel a distance equal to the width of the intersection plus its own length. $t_{ar} = (W+L)/v = (60 \\text{ ft} + 20 \\text{ ft}) / 45 \\text{ ft/s} = 80 / 45 \\approx 1.78$ seconds."
+    }
+  ]
+}

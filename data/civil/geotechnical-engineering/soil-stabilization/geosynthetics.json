@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Geosynthetics</strong> are a class of synthetic polymer materials used in geotechnical and environmental engineering applications. They are used to improve soil behavior and solve civil engineering problems.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Main Functions and Types</h3>\n<p class=\"mb-4\">Geosynthetics perform one or more of five primary functions:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Separation:</strong> Preventing two dissimilar soil or aggregate layers from mixing. The most common type used for this is a <strong>Geotextile</strong>. For example, a nonwoven geotextile can be placed between a soft subgrade and a granular base course to prevent the aggregate from punching into the subgrade.</li>\n    <li><strong>Reinforcement:</strong> Providing tensile strength to the soil mass, similar to how rebar reinforces concrete. The most common type for this is a <strong>Geogrid</strong>, which has a grid-like structure with large openings. Geogrids are used to reinforce retaining walls, steep slopes, and the base of roadways over soft soils.</li>\n    <li><strong>Filtration:</strong> Allowing water to pass through while retaining soil particles. <strong>Geotextiles</strong> are used as filters in applications like French drains or behind retaining walls to prevent soil from clogging the drainage system.</li>\n    <li><strong>Drainage:</strong> Collecting and conveying water. Thick, needle-punched nonwoven geotextiles or composite materials called geocomposites are used for this.</li>\n    <li><strong>Barrier:</strong> Preventing the movement of fluids. A <strong>Geomembrane</strong> is a very low-permeability liner used in applications like landfills, ponds, and canals to contain liquids.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which type of geosynthetic is primarily used to provide tensile reinforcement to a soil mass, such as in a mechanically stabilized earth (MSE) wall?",
+      "options": [
+        { "text": "Geomembrane", "isCorrect": false },
+        { "text": "Geotextile", "isCorrect": false },
+        { "text": "Geogrid", "isCorrect": true },
+        { "text": "Geopipe", "isCorrect": false }
+      ],
+      "explanation": "Geogrids are specifically designed for reinforcement. Their open, grid-like structure allows them to interlock with the surrounding soil or aggregate, and their high tensile strength provides the force necessary to hold the soil mass together."
+    },
+    {
+      "question": "A layer of nonwoven geotextile is placed between a soft clay subgrade and the crushed stone base of a new road. What is the primary function of the geotextile in this application?",
+      "options": [
+        { "text": "Reinforcement", "isCorrect": false },
+        { "text": "Separation", "isCorrect": true },
+        { "text": "Barrier (waterproofing)", "isCorrect": false },
+        { "text": "Drainage", "isCorrect": false }
+      ],
+      "explanation": "The primary function here is separation. The geotextile prevents the crushed stone base material from mixing with the soft subgrade soil under the repeated loads of traffic. This preserves the structural integrity and thickness of the base layer."
+    }
+  ]
+}

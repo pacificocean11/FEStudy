@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>tributary area</strong> of a structural member is the portion of the floor, roof, or other surface area that is supported by that member. It is the area from which a beam, girder, or column collects its load.</p>\n<p class=\"mb-4\">The concept is based on the assumption that the load on a surface is transferred to the nearest supporting member.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. One-Way vs. Two-Way Slabs</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>One-Way Slab:</strong> A slab supported by beams on two opposite sides. It bends in one direction only. The tributary area for a supporting beam is a rectangle extending halfway to the adjacent beams on either side.</li>\n    <li><strong>Two-Way Slab:</strong> A slab supported on all four sides. It bends in two directions. The load is distributed to the four supporting beams based on trapezoidal and triangular tributary areas.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Calculating Loads</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Beams and Girders:</strong> The total load on a beam is found by multiplying the uniform area load (e.g., in pounds per square foot, psf) by the tributary area. For a one-way system, the tributary width is the distance halfway to the next beam on each side. The load on the beam is then expressed as a uniform line load (in pounds per linear foot, plf).</li>\n    $$ \\text{Line Load (plf)} = \\text{Area Load (psf)} \\times \\text{Tributary Width (ft)} $$\n    <li><strong>Columns:</strong> The load on a column is found by multiplying the area load by the column's tributary area. For a regular grid, the tributary area is a rectangle bounded by lines halfway to the adjacent columns in all four directions. The result is a concentrated load on the column.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A floor system has parallel beams spaced 8 feet apart. If the total dead and live load on the floor is 100 psf, what is the uniform line load on a typical interior beam?",
+      "options": [
+        { "text": "100 plf", "isCorrect": false },
+        { "text": "800 plf", "isCorrect": true },
+        { "text": "400 plf", "isCorrect": false },
+        { "text": "12.5 plf", "isCorrect": false }
+      ],
+      "explanation": "The tributary width for an interior beam is half the distance to the adjacent beam on each side. So, the tributary width is $(8 \\text{ ft} / 2) + (8 \\text{ ft} / 2) = 4 + 4 = 8$ ft. The line load on the beam is the area load multiplied by the tributary width: $100 \\text{ psf} \\times 8 \\text{ ft} = 800$ plf (pounds per linear foot)."
+    },
+    {
+      "question": "In a building with columns spaced in a 30 ft by 40 ft grid, what is the tributary area for a typical interior column?",
+      "options": [
+        { "text": "70 sq ft", "isCorrect": false },
+        { "text": "600 sq ft", "isCorrect": false },
+        { "text": "1200 sq ft", "isCorrect": true },
+        { "text": "2400 sq ft", "isCorrect": false }
+      ],
+      "explanation": "The tributary area for an interior column extends halfway to the next column in each direction. If the grid is 30 ft x 40 ft, the tributary area is simply the area of one grid bay. Tributary Area = $30 \\text{ ft} \\times 40 \\text{ ft} = 1200$ sq ft."
+    }
+  ]
+}

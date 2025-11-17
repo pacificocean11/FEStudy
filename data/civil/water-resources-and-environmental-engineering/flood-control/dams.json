@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition and Purpose</h3>\n<p class=\"mb-4\">A <strong>dam</strong> is a barrier constructed across a river or stream to impound water. Dams create a reservoir behind them and are built for various purposes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flood Control:</strong> To store floodwaters and release them at a controlled rate, reducing downstream flood peaks.</li>\n    <li><strong>Water Supply:</strong> To store water for municipal, industrial, or agricultural (irrigation) use.</li>\n    <li><strong>Hydropower:</strong> To generate electricity by using the potential energy of the stored water to turn turbines.</li>\n    <li><strong>Recreation:</strong> To create lakes for boating, fishing, and other recreational activities.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Dams</h3>\n<p class=\"mb-4\">Dams are generally classified by the materials they are made of and how they resist the force of the water.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Embankment Dams:</strong> These dams are made from compacted earth (earth-fill) or rock (rock-fill). They are massive in size and use their immense weight to resist the horizontal thrust of the water. They are the most common type of dam.</li>\n    <li><strong>Concrete Gravity Dams:</strong> These dams are also designed to hold back water by using only the weight of the material (concrete) to resist the horizontal force of water pushing against it. They are typically used in wide valleys.</li>\n    <li><strong>Concrete Arch Dams:</strong> These dams are curved in plan and are built in narrow, rocky canyons. They transfer the water load horizontally to the abutments (the sides of the canyon) through arch action. They are thinner and require less concrete than gravity dams of similar height.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which type of dam is constructed from compacted soil and relies on its massive weight to resist the force of the water?",
+      "options": [
+        { "text": "Arch dam", "isCorrect": false },
+        { "text": "Embankment dam", "isCorrect": true },
+        { "text": "Buttress dam", "isCorrect": false },
+        { "text": "Cofferdam", "isCorrect": false }
+      ],
+      "explanation": "Embankment dams, which include earth-fill and rock-fill dams, are essentially large, heavy mounds that act as gravity structures. Their weight provides the stability to resist the horizontal thrust from the impounded water."
+    },
+    {
+      "question": "A concrete dam that is curved and built in a narrow canyon to transfer the water load to the canyon walls is known as a(n):",
+      "options": [
+        { "text": "Gravity dam", "isCorrect": false },
+        { "text": "Embankment dam", "isCorrect": false },
+        { "text": "Arch dam", "isCorrect": true },
+        { "text": "Levee", "isCorrect": false }
+      ],
+      "explanation": "Arch dams are structurally efficient because they use the arch shape to transmit the water pressure horizontally into the rock of the abutments. This makes them suitable for narrow canyons with strong rock foundations."
+    }
+  ]
+}

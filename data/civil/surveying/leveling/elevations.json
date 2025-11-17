@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">In surveying, <strong>elevation</strong> is the vertical distance of a point above or below a reference datum. The datum is a level surface to which elevations are referred.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Datums</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Geodetic Datum:</strong> A datum that serves as a reference for a network of control points. In the United States, the official vertical datum is the <strong>North American Vertical Datum of 1988 (NAVD 88)</strong>, which is based on a reference point in Quebec, Canada. It is often approximated by Mean Sea Level (MSL).</li>\n    <li><strong>Assumed Datum:</strong> For a small, local project, a surveyor may establish an assumed datum for convenience, such as assigning an arbitrary elevation of 100.00 ft to a permanent site feature like a fire hydrant or manhole cover.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Benchmarks</h3>\n<p class=\"mb-4\">A <strong>benchmark (BM)</strong> is a relatively permanent point of known elevation. Benchmarks are the starting points for leveling surveys. Official benchmarks are established with high accuracy by government agencies like the National Geodetic Survey (NGS) and the U.S. Geological Survey (USGS).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Contour Lines</h3>\n<p class=\"mb-4\">Elevations across an area of land are represented on a topographic map by <strong>contour lines</strong>. A contour line is a line of constant elevation. All points on a single contour line have the same elevation. The vertical distance between adjacent contour lines is called the <strong>contour interval</strong>.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A line on a topographic map that connects points of equal elevation is called a:",
+      "options": [
+        { "text": "Baseline", "isCorrect": false },
+        { "text": "Datum", "isCorrect": false },
+        { "text": "Contour line", "isCorrect": true },
+        { "text": "Grade line", "isCorrect": false }
+      ],
+      "explanation": "A contour line is the standard method for representing a three-dimensional land surface on a two-dimensional map. Every point along a given contour line has the exact same elevation."
+    },
+    {
+      "question": "A permanent, stable point of known elevation used as a starting point for leveling is called a:",
+      "options": [
+        { "text": "Benchmark", "isCorrect": true },
+        { "text": "Hub", "isCorrect": false },
+        { "text": "Turning point", "isCorrect": false },
+        { "text": "Station", "isCorrect": false }
+      ],
+      "explanation": "A benchmark is a reliable reference point with a precisely determined elevation. It serves as the basis for determining the elevations of other points in a survey."
+    }
+  ]
+}

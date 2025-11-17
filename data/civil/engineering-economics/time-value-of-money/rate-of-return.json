@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Rate of Return (ROR)</strong> is a measure of the profitability of an investment. It is the interest rate that equates the benefits of a project to its costs. The most common ROR measure is the <strong>Internal Rate of Return (IRR)</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Internal Rate of Return (IRR)</h3>\n<p class=\"mb-4\">The IRR is defined as the interest rate ($i^*$) at which the Net Present Worth (NPW) of all cash flows (revenues and costs) for a project is equal to zero.</p>\n$$ NPW = \\sum_{t=0}^{n} CF_t(1+i^*)^{-t} = 0 $$\n<p class=\"mb-4\">Alternatively, it is the interest rate that makes the Present Worth of benefits equal to the Present Worth of costs, or the Equivalent Annual Worth of benefits equal to the Equivalent Annual Worth of costs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Decision Rule</h3>\n<p class=\"mb-4\">To decide if a project is economically viable, the calculated IRR is compared to a pre-determined <strong>Minimum Acceptable Rate of Return (MARR)</strong>, which is the minimum return an organization will accept for an investment.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $IRR \\ge MARR$, the project is economically justified.</li>\n    <li>If $IRR < MARR$, the project is not economically justified.</li>\n</ul>\n<p class=\"mb-4\">Solving for IRR usually requires trial and error or a financial calculator, as the equation is a polynomial in terms of $(1+i)$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Internal Rate of Return (IRR) is the interest rate at which:",
+      "options": [
+        { "text": "The Future Worth is maximized.", "isCorrect": false },
+        { "text": "The project costs are minimized.", "isCorrect": false },
+        { "text": "The Net Present Worth is equal to zero.", "isCorrect": true },
+        { "text": "The payback period is exactly one year.", "isCorrect": false }
+      ],
+      "explanation": "By definition, the IRR is the discount rate that makes the net present worth (NPW) of a project's cash flows equal to zero. It's the breakeven interest rate for the investment."
+    },
+    {
+      "question": "A project has a calculated IRR of 12%. The company's Minimum Acceptable Rate of Return (MARR) is 10%. Should the project be accepted?",
+      "options": [
+        { "text": "Yes, because IRR > MARR.", "isCorrect": true },
+        { "text": "No, because IRR < MARR.", "isCorrect": false },
+        { "text": "Maybe, more information is needed.", "isCorrect": false },
+        { "text": "No, because the IRR is too low.", "isCorrect": false }
+      ],
+      "explanation": "The decision rule is to accept projects whose IRR is greater than or equal to the MARR. Since 12% is greater than the required minimum of 10%, the project is economically acceptable."
+    }
+  ]
+}

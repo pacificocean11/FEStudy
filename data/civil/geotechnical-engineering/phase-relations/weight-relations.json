@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Weight Relationships</h3>\n<p class=\"mb-4\">Continuing with the three-phase soil model, several key parameters are defined based on the weights of the phases.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Water Content (w):</strong> The ratio of the weight of water ($W_w$) to the weight of the solid particles ($W_s$). It is a key soil property and is always expressed as a percentage.</li>\n    $$ w = \\frac{W_w}{W_s} \\times 100\\% $$\n    <li><strong>Unit Weight ($\\gamma$):</strong> The total weight of the soil ($W_T$) divided by its total volume ($V_T$). Also known as total or moist unit weight.</li>\n    $$ \\gamma = \\frac{W_T}{V_T} $$\n    <li><strong>Dry Unit Weight ($\\gamma_d$):</strong> The weight of the solid particles only ($W_s$) divided by the total volume ($V_T$). It is a measure of how densely the solid particles are packed.</li>\n    $$ \\gamma_d = \\frac{W_s}{V_T} $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Relationship Formulas</h3>\n<p class=\"mb-4\">The various phase properties are interconnected through a set of fundamental formulas. (Note: $\\gamma_w$ is the unit weight of water, approx. 9.81 kN/m³ or 62.4 lb/ft³).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Relationship between moist and dry unit weight:</li>\n    $$ \\gamma_d = \\frac{\\gamma}{1+w} $$\n    <li>The most important relationship connecting weight and volume properties:</li>\n    $$ Se = w G_s $$\n    <ul class=\"list-circle list-inside ml-6\">\n        <li>$S$: Degree of saturation (as a decimal)</li>\n        <li>$e$: Void ratio</li>\n        <li>$w$: Water content (as a decimal)</li>\n        <li>$G_s$: Specific gravity of the soil solids (typically around 2.65 - 2.75 for most soils).</li>\n    </ul>\n    <li>Another very useful formula for unit weight:</li>\n    $$ \\gamma = \\frac{(G_s + Se)\\gamma_w}{1+e} $$\n    <p>This can be simplified for dry soil ($S=0$) to $\\gamma_d = \\frac{G_s \\gamma_w}{1+e}$ and for saturated soil ($S=1$) to $\\gamma_{sat} = \\frac{(G_s + e)\\gamma_w}{1+e}$.</p>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A sample of wet soil weighs 120 lbs. After oven-drying, it weighs 100 lbs. What is the water content of the soil?",
+      "options": [
+        { "text": "16.7%", "isCorrect": false },
+        { "text": "20.0%", "isCorrect": true },
+        { "text": "83.3%", "isCorrect": false },
+        { "text": "1.2%", "isCorrect": false }
+      ],
+      "explanation": "The weight of the solid particles is the dry weight, $W_s = 100$ lbs. The weight of the water is the difference between the wet and dry weights: $W_w = 120 - 100 = 20$ lbs. The water content is $w = (W_w / W_s) \\times 100\\% = (20 / 100) \\times 100\\% = 20\\%$."
+    },
+    {
+      "question": "A soil has a moist unit weight of 125 lb/ft³ and a water content of 15%. What is its dry unit weight?",
+      "options": [
+        { "text": "108.7 lb/ft³", "isCorrect": true },
+        { "text": "143.8 lb/ft³", "isCorrect": false },
+        { "text": "110.0 lb/ft³", "isCorrect": false },
+        { "text": "125.0 lb/ft³", "isCorrect": false }
+      ],
+      "explanation": "Use the formula relating moist and dry unit weight: $\\gamma_d = \\gamma / (1+w)$. Remember to use the water content as a decimal ($15\\% = 0.15$). $\\gamma_d = 125 / (1 + 0.15) = 125 / 1.15 \\approx 108.7$ lb/ft³."
+    },
+    {
+        "question": "A saturated soil sample has a water content of 30% and a specific gravity of solids ($G_s$) of 2.70. What is the void ratio of the soil?",
+        "options": [
+          { "text": "0.90", "isCorrect": false },
+          { "text": "0.81", "isCorrect": true },
+          { "text": "0.30", "isCorrect": false },
+          { "text": "1.11", "isCorrect": false }
+        ],
+        "explanation": "Use the key relationship $Se = wG_s$. Since the soil is saturated, the degree of saturation $S=1.0$. The water content must be expressed as a decimal, so $w=0.30$. $(1.0)e = (0.30)(2.70) \implies e = 0.81$."
+      }
+  ]
+}

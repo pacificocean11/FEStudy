@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Chemical soil stabilization</strong> is the process of improving the engineering properties of a soil (such as strength, stiffness, and durability) by mixing in chemical additives. This is a common ground improvement technique used when the on-site soils are unsuitable for construction.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Additives and Their Functions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lime (Calcium Oxide or Calcium Hydroxide):</strong> Lime is most effective for stabilizing high-plasticity clay soils. It works through a two-step process: first, it modifies the soil by reducing its plasticity and making it more workable; second, a long-term pozzolanic reaction occurs where the lime reacts with silica and alumina in the clay to form a strong, cement-like matrix. This significantly increases the soil's strength and reduces its swell potential.</li>\n    <li><strong>Cement (Portland Cement):</strong> Cement is effective for a wider range of soils, particularly granular soils like sands and gravels, as well as low-plasticity clays. When mixed with soil and water, the cement hydrates and forms a rigid, high-strength matrix that binds the soil particles together. This is known as soil-cement.</li>\n    <li><strong>Fly Ash:</strong> A byproduct of coal combustion, fly ash can be used as a stabilizing agent, often in conjunction with lime or cement. It is a pozzolanic material, meaning it reacts with calcium hydroxide (from lime or cement) to form cementitious compounds.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which chemical additive is most effective for reducing the plasticity and swell potential of a highly plastic clay soil?",
+      "options": [
+        { "text": "Sand", "isCorrect": false },
+        { "text": "Lime", "isCorrect": true },
+        { "text": "Asphalt emulsion", "isCorrect": false },
+        { "text": "Water", "isCorrect": false }
+      ],
+      "explanation": "Lime is the preferred additive for treating high-plasticity clays. The calcium ions in lime trigger cation exchange, which flocculates the clay particles, immediately reducing the plasticity index and making the soil more friable and workable. This is followed by a long-term pozzolanic reaction that increases strength."
+    },
+    {
+      "question": "The primary goal of mixing Portland cement with a sandy soil is to:",
+      "options": [
+        { "text": "Increase its permeability.", "isCorrect": false },
+        { "text": "Decrease its density.", "isCorrect": false },
+        { "text": "Significantly increase its strength and stiffness.", "isCorrect": true },
+        { "text": "Change its color.", "isCorrect": false }
+      ],
+      "explanation": "Cement stabilization works by hydrating and forming a cementitious matrix that binds the sand grains together, creating a hard, rigid material known as soil-cement. This dramatically increases the soil's compressive strength and stiffness."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>spread footing</strong> is a type of shallow foundation used to transmit the load from a single column or a wall to the underlying soil. It 'spreads' the concentrated load over a larger area to ensure the bearing pressure on the soil does not exceed its allowable bearing capacity.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Isolated or Pad Footing:</strong> A square, rectangular, or circular slab of concrete that supports a single column. This is the most common type of footing.</li>\n    <li><strong>Combined Footing:</strong> A single footing that supports two or more columns. This is used when columns are too close together for individual footings or when a column is located at a property line.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Bearing Capacity</h3>\n<p class=\"mb-4\">The design of a spread footing is governed by the bearing capacity of the soil. The pressure exerted by the footing on the soil must not exceed the allowable bearing capacity.</p>\n<p class=\"mb-4\">The actual bearing pressure ($q_{actual}$) under a concentrically loaded footing is:</p>\n$$ q_{actual} = \\frac{P}{A} $$\n<p class=\"mb-4\">Where $P$ is the total load on the column (including the weight of the footing itself) and $A$ is the area of the footing.</p>\n<p class=\"mb-4\">The design requirement is: $q_{actual} \\le q_{allow}$, where $q_{allow}$ is the allowable soil bearing capacity.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A square column footing must support a total load of 400 kips. If the allowable soil bearing capacity is 4,000 pounds per square foot (psf), what is the minimum required side length of the footing?",
+      "options": [
+        { "text": "4 ft", "isCorrect": false },
+        { "text": "100 ft", "isCorrect": false },
+        { "text": "10 ft", "isCorrect": true },
+        { "text": "8 ft", "isCorrect": false }
+      ],
+      "explanation": "First, convert the load to pounds: $P = 400 \\text{ kips} = 400,000$ lbs. The required area is $A_{req} = P / q_{allow} = 400,000 \\text{ lbs} / 4,000 \\text{ psf} = 100$ sq ft. Since the footing is square, the side length is the square root of the area: $L = \\sqrt{A_{req}} = \\sqrt{100} = 10$ ft."
+    },
+    {
+      "question": "A 5 ft by 5 ft square footing supports a column load of 50 kips. The footing itself weighs 5 kips. What is the actual bearing pressure exerted on the soil?",
+      "options": [
+        { "text": "2000 psf", "isCorrect": false },
+        { "text": "2200 psf", "isCorrect": true },
+        { "text": "1800 psf", "isCorrect": false },
+        { "text": "2500 psf", "isCorrect": false }
+      ],
+      "explanation": "The total load on the soil is the sum of the column load and the footing weight: $P = 50 \\text{ kips} + 5 \\text{ kips} = 55 \\text{ kips} = 55,000$ lbs. The area of the footing is $A = 5 \\text{ ft} \\times 5 \\text{ ft} = 25$ sq ft. The bearing pressure is $q_{actual} = P/A = 55,000 \\text{ lbs} / 25 \\text{ sq ft} = 2200$ psf."
+    }
+  ]
+}

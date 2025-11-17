@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Quantifying Safety</h3>\n<p class=\"mb-4\">Transportation safety analysis involves identifying high-risk locations, evaluating the effectiveness of safety countermeasures, and predicting the safety performance of roadways. Safety is typically quantified by analyzing historical crash data.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Crash Rates</h3>\n<p class=\"mb-4\">To compare the safety of different locations, it is not enough to just count the number of crashes, as locations with more traffic are expected to have more crashes. Therefore, crash rates are used to normalize the data by exposure.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rate for Roadway Segments:</strong> The crash rate is typically expressed as crashes per million vehicle-miles traveled (MVMT).\n    $$ R = \\frac{C \\times 1,000,000}{VMT} \\quad \\text{where} \\quad VMT = ADT \\times L \\times 365 $$\n    <ul class=\"list-circle list-inside ml-6\">\n        <li>$R$ = Crash rate per MVMT</li>\n        <li>$C$ = Total number of crashes in the study period</li>\n        <li>$ADT$ = Average Daily Traffic</li>\n        <li>$L$ = Length of the roadway segment in miles</li>\n    </ul>\n    </li>\n    <li><strong>Rate for Intersections:</strong> The crash rate is expressed as crashes per million entering vehicles (MEV).\n    $$ R = \\frac{C \\times 1,000,000}{MEV} \\quad \\text{where} \\quad MEV = ADT_{major} \\times 365 + ADT_{minor} \\times 365 $$\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Highway Safety Manual (HSM)</h3>\n<p class=\"mb-4\">The HSM provides a modern, science-based approach to safety analysis. It introduces Safety Performance Functions (SPFs), which are regression models that predict the average number of crashes for a specific type of facility (e.g., a two-lane rural road) based on its traffic volume and geometric characteristics. This allows for proactive safety analysis and the quantification of the expected safety benefits of improvements.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 2-mile long segment of a highway has an Average Daily Traffic (ADT) of 15,000 vehicles. Over a one-year period, 20 crashes occurred on this segment. What is the crash rate per million vehicle-miles traveled (MVMT)?",
+      "options": [
+        { "text": "1.83", "isCorrect": true },
+        { "text": "0.91", "isCorrect": false },
+        { "text": "20.0", "isCorrect": false },
+        { "text": "1.33", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the total vehicle-miles traveled (VMT) for the year: $VMT = ADT \\times L \\times 365 = 15,000 \\times 2 \\times 365 = 10,950,000$ vehicle-miles. Now, calculate the rate: $R = (C \\times 1,000,000) / VMT = (20 \\times 1,000,000) / 10,950,000 \\approx 1.83$ crashes per MVMT."
+    }
+  ]
+}
