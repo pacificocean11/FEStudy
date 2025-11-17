@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>fit</strong> describes the range of tightness or looseness that may result from the assembly of two parts, such as a shaft in a hole. The type of fit is determined by the relationship between the tolerance zones of the hole and the shaft.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Fits</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Clearance Fit:</strong> A fit that always results in a clearance (a gap) between the hole and shaft when they are assembled. In a clearance fit, the maximum size of the shaft is smaller than the minimum size of the hole. This is used for parts that need to slide or rotate freely relative to each other.</li>\n    <li><strong>Interference Fit:</strong> A fit that always results in an interference between the parts when assembled. The minimum size of the shaft is larger than the maximum size of the hole. These parts must be forced together (e.g., a press fit or shrink fit) and are used for permanent or semi-permanent assemblies that need to transmit torque or prevent motion.</li>\n    <li><strong>Transition Fit:</strong> A fit that may result in either a clearance or an interference, depending on the actual sizes of the mating parts. The tolerance zones of the hole and shaft overlap. This is used where accurate location is important, but a small amount of either clearance or interference is permissible.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A shaft has limits of 24.98 mm to 25.00 mm. A hole has limits of 25.01 mm to 25.03 mm. What type of fit is this?",
+      "options": [
+        { "text": "Clearance Fit", "isCorrect": true },
+        { "text": "Interference Fit", "isCorrect": false },
+        { "text": "Transition Fit", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "The largest possible shaft (25.00 mm) is smaller than the smallest possible hole (25.01 mm). This means there will always be a gap, or clearance, between the two parts. Therefore, it is a clearance fit."
+    },
+    {
+      "question": "A shaft has limits of 50.01 mm to 50.02 mm. A hole has limits of 49.99 mm to 50.00 mm. What type of fit is this?",
+      "options": [
+        { "text": "Clearance Fit", "isCorrect": false },
+        { "text": "Interference Fit", "isCorrect": true },
+        { "text": "Transition Fit", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "The smallest possible shaft (50.01 mm) is larger than the largest possible hole (50.00 mm). This means the shaft will always be larger than the hole, resulting in an interference fit."
+    }
+  ]
+}

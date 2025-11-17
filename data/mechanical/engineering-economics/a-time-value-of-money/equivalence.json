@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Time Value of Money</h3>\n<p class=\"mb-4\">The core principle of engineering economics is that money has a time value. A dollar today is worth more than a dollar a year from now, because a dollar today can be invested to earn interest. This relationship between interest, time, and money is the foundation of economic equivalence.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equivalence</h3>\n<p class=\"mb-4\"><strong>Equivalence</strong> is the concept that different sums of money at different points in time can be equal in economic value. For example, given a certain interest rate, a payment of $100 today might be equivalent to a payment of $110 in one year. Equivalence depends on the interest rate ($i$) and the time ($n$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Interest and Interest Rate</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Interest</strong> is the compensation paid for the use of borrowed money. It is the difference between an ending amount of money and a beginning amount of money.</li>\n    <li><strong>Interest Rate</strong> is the ratio of the interest charged to the principal amount, over a certain time period (usually a year).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Simple vs. Compound Interest</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Simple Interest:</strong> Interest is calculated only on the original principal amount. The total interest earned is $I = P \\cdot n \\cdot i$, where P is principal, n is number of periods, and i is interest rate per period. The future value is $F = P(1 + ni)$.</li>\n    <li><strong>Compound Interest:</strong> Interest earned in each period is calculated on the original principal plus the accumulated interest from all previous periods. The future value is $F = P(1 + i)^n$. Unless stated otherwise, interest is always assumed to be compounded in engineering economy problems.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the future worth of $1,000 invested for 5 years at a simple interest rate of 6% per year?",
+      "options": [
+        { "text": "$1,300", "isCorrect": true },
+        { "text": "$1,338", "isCorrect": false },
+        { "text": "$300", "isCorrect": false },
+        { "text": "$1,000", "isCorrect": false }
+      ],
+      "explanation": "For simple interest, the future worth is $F = P(1 + ni)$. $F = 1000(1 + 5 \\cdot 0.06) = 1000(1 + 0.30) = 1000(1.30) = $1,300$."
+    },
+    {
+      "question": "What is the future worth of $1,000 invested for 5 years at an interest rate of 6% per year, compounded annually?",
+      "options": [
+        { "text": "$1,300.00", "isCorrect": false },
+        { "text": "$1,338.23", "isCorrect": true },
+        { "text": "$747.26", "isCorrect": false },
+        { "text": "$1,262.48", "isCorrect": false }
+      ],
+      "explanation": "For compound interest, the future worth is $F = P(1 + i)^n$. $F = 1000(1 + 0.06)^5 = 1000(1.06)^5 = 1000(1.338225) \\approx $1,338.23$."
+    }
+  ]
+}

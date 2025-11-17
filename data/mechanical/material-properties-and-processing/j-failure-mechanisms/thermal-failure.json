@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Thermal failure refers to the failure of a material or component due to the effects of temperature. This can occur due to steady high temperatures, or rapid changes in temperature.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Thermal Stress</h3>\n<p class=\"mb-4\">Most materials expand when heated and contract when cooled. If a component is constrained and cannot freely expand or contract, a change in temperature will induce internal stresses, known as <strong>thermal stress</strong>.</p>\n$$ \\sigma_{thermal} = E \\alpha \\Delta T $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$E$ is the Modulus of Elasticity.</li>\n    <li>$\\alpha$ is the coefficient of thermal expansion.</li>\n    <li>$\\Delta T$ is the change in temperature.</li>\n</ul>\n<p class=\"mb-4\">If this stress exceeds the material's yield or ultimate strength, it can cause plastic deformation or fracture.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Thermal Shock</h3>\n<p class=\"mb-4\"><strong>Thermal shock</strong> is a type of failure that occurs due to a rapid, large change in temperature. When a material is suddenly heated or cooled, different parts of the object expand or contract at different rates, creating large internal stresses. Brittle materials, like ceramics, are particularly susceptible to thermal shock failure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. High-Temperature Failure</h3>\n<p class=\"mb-4\">At elevated temperatures (relative to their melting point), materials lose strength and stiffness. The dominant failure mechanism at high temperatures is often <strong>creep</strong>, which is a slow, continuous deformation under a constant load.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A steel rod is fixed between two rigid walls at 20°C. If the temperature is raised to 120°C, what kind of stress will develop in the rod?",
+      "options": [
+        { "text": "Tensile stress", "isCorrect": false },
+        { "text": "Compressive stress", "isCorrect": true },
+        { "text": "Shear stress", "isCorrect": false },
+        { "text": "No stress", "isCorrect": false }
+      ],
+      "explanation": "As the temperature increases, the rod wants to expand. However, the rigid walls prevent it from expanding. This constraint results in a compressive stress developing within the rod."
+    },
+    {
+      "question": "Plunging a hot ceramic dish into cold water is likely to cause it to crack. This type of failure is known as:",
+      "options": [
+        { "text": "Creep", "isCorrect": false },
+        { "text": "Fatigue", "isCorrect": false },
+        { "text": "Thermal shock", "isCorrect": true },
+        { "text": "Ductile fracture", "isCorrect": false }
+      ],
+      "explanation": "The rapid cooling causes the outer surface of the dish to contract much faster than the inner core. This differential contraction creates large tensile stresses on the surface, which can exceed the ceramic's low fracture toughness, causing it to crack. This is a classic example of thermal shock."
+    }
+  ]
+}

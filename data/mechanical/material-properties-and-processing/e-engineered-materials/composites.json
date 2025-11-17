@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>composite material</strong> is a material made from two or more constituent materials with significantly different physical or chemical properties which remain separate and distinct at the macroscopic level within the finished structure. The goal is to create a new material with properties superior to those of the individual components.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Components of a Composite</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Matrix:</strong> The continuous phase that surrounds the other phase. It binds the reinforcement together, transfers load to it, and protects it from the environment. Common matrix materials are polymers (e.g., epoxy), metals, and ceramics.</li>\n    <li><strong>Reinforcement (or Reinforcing Phase):</strong> The phase that is embedded in the matrix. It is usually stronger and stiffer than the matrix and provides the primary load-bearing capability. Reinforcements are typically in the form of fibers (e.g., carbon, glass, aramid), particles, or flakes.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Fiber-Reinforced Polymers (FRP):</strong> The most common type. High-strength fibers embedded in a polymer matrix. Examples include carbon fiber reinforced polymer (CFRP) and glass reinforced polymer (GRP, or fiberglass).</li>\n    <li><strong>Metal Matrix Composites (MMC):</strong> A metallic matrix reinforced with fibers or particles (e.g., silicon carbide particles in an aluminum matrix). Used for high-temperature applications.</li>\n    <li><strong>Ceramic Matrix Composites (CMC):</strong> A ceramic matrix reinforced with fibers (e.g., carbon or silicon carbide fibers). Used for very high-temperature, high-stress environments.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Key Advantages</h3>\n<p class=\"mb-4\">The primary advantage of composites is their high strength-to-weight and stiffness-to-weight ratios. They can also be designed to have specific properties (anisotropy) in different directions, which allows for highly optimized structures.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a fiber-reinforced composite, which component is primarily responsible for providing strength and stiffness?",
+      "options": [
+        { "text": "The matrix", "isCorrect": false },
+        { "text": "The reinforcing fibers", "isCorrect": true },
+        { "text": "The adhesive", "isCorrect": false },
+        { "text": "The surface coating", "isCorrect": false }
+      ],
+      "explanation": "The reinforcing fibers are the main load-bearing elements in a composite. The role of the matrix is to bind the fibers together, transfer the load to the fibers, and protect them."
+    },
+    {
+      "question": "What is the primary advantage of composite materials like carbon fiber reinforced polymer (CFRP) in aerospace applications?",
+      "options": [
+        { "text": "Low cost", "isCorrect": false },
+        { "text": "High ductility", "isCorrect": false },
+        { "text": "High strength-to-weight ratio", "isCorrect": true },
+        { "text": "High electrical conductivity", "isCorrect": false }
+      ],
+      "explanation": "Composites offer strength and stiffness comparable to metals like aluminum and steel but at a significantly lower density (weight). This high strength-to-weight ratio is crucial for making lightweight and fuel-efficient aircraft."
+    }
+  ]
+}

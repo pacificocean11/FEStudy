@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Zeroth Law of Thermodynamics</strong> deals with thermal equilibrium. It is the basis for the concept of temperature.</p>\n<p class=\"mb-4\">The law states:</p>\n<blockquote class=\"border-l-4 border-slate-300 pl-4 italic my-4\">\n    If two thermodynamic systems are each in thermal equilibrium with a third one, then they are in thermal equilibrium with each other.\n</blockquote>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Explanation</h3>\n<p class=\"mb-4\">Imagine you have three objects: A, B, and C.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If you touch object A to object C and no heat flows between them, they are in thermal equilibrium.</li>\n    <li>If you touch object B to object C and no heat flows between them, they are also in thermal equilibrium.</li>\n    <li>The Zeroth Law then tells us that if you touch object A to object B, no heat will flow between them either. They are already in thermal equilibrium with each other.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Basis for Temperature</h3>\n<p class=\"mb-4\">This law is fundamental because it implies the existence of a property called <strong>temperature</strong>. If two objects are in thermal equilibrium, they have the same temperature. Object C in the example above can be thought of as a thermometer. By showing that A and B are both at the same temperature as C, we know that A and B are at the same temperature as each other without ever having to bring them into contact.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Zeroth Law of Thermodynamics provides the basis for the measurement of which property?",
+      "options": [
+        { "text": "Pressure", "isCorrect": false },
+        { "text": "Temperature", "isCorrect": true },
+        { "text": "Heat", "isCorrect": false },
+        { "text": "Work", "isCorrect": false }
+      ],
+      "explanation": "The Zeroth Law establishes the concept of thermal equilibrium, which is the foundation for defining and measuring temperature. It allows us to use a third body (a thermometer) to determine if two other bodies are at the same temperature."
+    },
+    {
+      "question": "If object X is in thermal equilibrium with object Y, and object Y is in thermal equilibrium with object Z, what can be concluded?",
+      "options": [
+        { "text": "Object X and object Z have the same mass.", "isCorrect": false },
+        { "text": "Object X and object Z are in thermal equilibrium.", "isCorrect": true },
+        { "text": "More heat will flow from Z to X than from Y to X.", "isCorrect": false },
+        { "text": "Object Y is a perfect insulator.", "isCorrect": false }
+      ],
+      "explanation": "This is a direct statement of the Zeroth Law of Thermodynamics. If X and Y have the same temperature, and Y and Z have the same temperature, then X and Z must also have the same temperature, meaning they are in thermal equilibrium."
+    }
+  ]
+}

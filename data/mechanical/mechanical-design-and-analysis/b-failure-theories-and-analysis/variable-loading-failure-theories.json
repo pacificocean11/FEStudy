@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Variable Loading</h3>\n<p class=\"mb-4\">Many machine components are subjected to fluctuating or cyclic stresses. This is known as variable loading or fatigue loading. Such a stress cycle can be characterized by a mean stress ($\\sigma_m$) and an alternating or amplitude stress ($\\sigma_a$).</p>\n$$ \\sigma_m = \\frac{\\sigma_{max} + \\sigma_{min}}{2} $$$$ \\sigma_a = \\frac{\\sigma_{max} - \\sigma_{min}}{2} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Fatigue Failure Criteria with Mean Stress</h3>\n<p class=\"mb-4\">The endurance limit ($S_e$) is determined for a completely reversed stress ($\\sigma_m=0$). When a non-zero mean stress is present, the fatigue life is reduced. Several criteria have been developed to predict failure under these conditions. They are often plotted on a diagram of alternating stress vs. mean stress.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Soderberg Line (Very Conservative):</strong> A straight line connecting the endurance limit ($S_e$) on the alternating stress axis to the yield strength ($S_y$) on the mean stress axis. It guards against any possibility of yielding.</li>\n    $$ \\frac{\\sigma_a}{S_e} + \\frac{\\sigma_m}{S_y} = \\frac{1}{n} $$\n    <li><strong>Goodman Line (Conservative):</strong> A straight line connecting $S_e$ on the alternating axis to the ultimate tensile strength ($S_{ut}$) on the mean stress axis. Widely used.</li>\n    $$ \\frac{\\sigma_a}{S_e} + \\frac{\\sigma_m}{S_{ut}} = \\frac{1}{n} $$\n    <li><strong>Gerber Line (Parabolic):</strong> A parabola connecting $S_e$ to $S_{ut}$. It more accurately fits experimental data for many materials but is more complex to calculate.</li>\n</ul>\n<p class=\"mb-4\">In these equations, $n$ is the factor of safety.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A component is subjected to a fluctuating stress that varies from a minimum of 20 MPa to a maximum of 100 MPa. What are the mean and alternating stresses?",
+      "options": [
+        { "text": "$\\sigma_m = 60$ MPa, $\\sigma_a = 40$ MPa", "isCorrect": true },
+        { "text": "$\\sigma_m = 120$ MPa, $\\sigma_a = 80$ MPa", "isCorrect": false },
+        { "text": "$\\sigma_m = 40$ MPa, $\\sigma_a = 60$ MPa", "isCorrect": false },
+        { "text": "$\\sigma_m = 50$ MPa, $\\sigma_a = 50$ MPa", "isCorrect": false }
+      ],
+      "explanation": "The mean stress is the average: $\\sigma_m = (100 + 20)/2 = 120/2 = 60$ MPa. The alternating stress is half the range: $\\sigma_a = (100 - 20)/2 = 80/2 = 40$ MPa."
+    },
+    {
+      "question": "Which fatigue failure criterion for variable loading is generally considered the most conservative?",
+      "options": [
+        { "text": "Goodman", "isCorrect": false },
+        { "text": "Gerber", "isCorrect": false },
+        { "text": "Soderberg", "isCorrect": true },
+        { "text": "ASME Elliptic", "isCorrect": false }
+      ],
+      "explanation": "The Soderberg criterion is the most conservative because it uses the yield strength ($S_y$) as the limit for mean stress, ensuring that no yielding can occur. Its failure line lies entirely within the failure lines of the other criteria."
+    },
+    {
+      "question": "A component has a mean stress of 150 MPa and an alternating stress of 100 MPa. The material properties are $S_{ut} = 600$ MPa and $S_e = 200$ MPa. Calculate the factor of safety using the Goodman criterion.",
+      "options": [
+        { "text": "1.0", "isCorrect": false },
+        { "text": "1.33", "isCorrect": true },
+        { "text": "1.5", "isCorrect": false },
+        { "text": "2.0", "isCorrect": false }
+      ],
+      "explanation": "The Goodman equation is $\\frac{\\sigma_a}{S_e} + \\frac{\\sigma_m}{S_{ut}} = \\frac{1}{n}$. Plugging in the values: $\\frac{100}{200} + \\frac{150}{600} = \\frac{1}{n} \\implies 0.5 + 0.25 = \\frac{1}{n} \\implies 0.75 = \\frac{1}{n} \\implies n = 1/0.75 \\approx 1.33$."
+    }
+  ]
+}

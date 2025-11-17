@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Mechanical fasteners</strong> are devices that mechanically join or affix two or more objects together. They are typically used to create non-permanent joints, meaning the objects can be disassembled without damaging the components.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Threaded Fasteners</h3>\n<p class=\"mb-4\">This is the largest category and includes bolts and screws.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Bolt:</strong> An externally threaded fastener intended to be inserted through holes in assembled parts and is normally intended to be tightened or released by torquing a nut.</li>\n    <li><strong>Screw:</strong> An externally threaded fastener capable of being inserted into holes in assembled parts, of mating with a preformed internal thread or forming its own thread, and of being tightened or released by torquing the head.</li>\n    <li><strong>Bolt Preload:</strong> When a bolt and nut are tightened, the bolt is stretched, creating a tensile force in the bolt. This force creates a clamping force on the joint. This clamping force is called the preload. A properly preloaded joint is stronger and more resistant to fatigue and loosening.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Other Fastener Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rivets:</strong> A permanent mechanical fastener. Before being installed, a rivet consists of a smooth cylindrical shaft with a head on one end. The end opposite to the head is called the buck-tail. On installation, the rivet is placed in a punched or drilled hole, and the tail is 'upset' (or 'bucked') so that it expands to about 1.5 times the original shaft diameter, holding the rivet in place.</li>\n    <li><strong>Pins:</strong> Used to locate or fasten parts. Dowel pins are used for precise alignment, while cotter pins and clevis pins are used to secure other fasteners.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The clamping force that is created by stretching a bolt when it is tightened is called:",
+      "options": [
+        { "text": "Torque", "isCorrect": false },
+        { "text": "Shear force", "isCorrect": false },
+        { "text": "Preload", "isCorrect": true },
+        { "text": "Bearing stress", "isCorrect": false }
+      ],
+      "explanation": "Preload is the tension created in a fastener when it is tightened. It is this tension that creates the clamping force holding the joint together. Proper preload is critical for the strength and fatigue life of a bolted joint."
+    },
+    {
+      "question": "Which of the following is generally considered a permanent fastener?",
+      "options": [
+        { "text": "Bolt and nut", "isCorrect": false },
+        { "text": "Rivet", "isCorrect": true },
+        { "text": "Screw", "isCorrect": false },
+        { "text": "Clevis pin", "isCorrect": false }
+      ],
+      "explanation": "Rivets are installed by deforming the tail, creating a second head. To remove a rivet, it must be drilled out or otherwise destroyed. Bolts, screws, and pins are designed to be removable without being damaged."
+    }
+  ]
+}

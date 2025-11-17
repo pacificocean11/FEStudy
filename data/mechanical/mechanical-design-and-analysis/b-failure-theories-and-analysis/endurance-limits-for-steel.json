@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Endurance Limit</h3>\n<p class=\"mb-4\">The <strong>endurance limit ($S_e$)</strong>, or fatigue limit, is the stress level below which a material can withstand a very large or infinite number of stress cycles without failing due to fatigue. Steels and titanium alloys exhibit a distinct endurance limit, while many other metals like aluminum and copper do not.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Estimating the Endurance Limit</h3>\n<p class=\"mb-4\">The endurance limit is not a fixed property but depends on many factors. The analysis begins with an estimate of the endurance limit of an ideal, polished laboratory specimen ($S_e'$), which is determined from the ultimate tensile strength ($S_{ut}$).</p>\n<p class=\"mb-4\"><strong>Rule of Thumb for Steels:</strong></p>\n$$ S_e' = \\begin{cases} 0.5 S_{ut} & \\text{if } S_{ut} \\le 1400 \\text{ MPa (200 ksi)} \\\\ 700 \\text{ MPa (100 ksi)} & \\text{if } S_{ut} > 1400 \\text{ MPa (200 ksi)} \\end{cases} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Marin Factors</h3>\n<p class=\"mb-4\">To find the endurance limit ($S_e$) of a real mechanical component, the ideal specimen value ($S_e'$) must be modified by a series of reduction factors, known as <strong>Marin factors</strong>.</p>\n$$ S_e = k_a k_b k_c k_d k_e k_f S_e' $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>$k_a$ (Surface Finish Factor):</strong> Accounts for surface quality. A rougher surface (e.g., as-forged) has more stress concentrations and a lower endurance limit than a polished surface. $k_a < 1$.</li>\n    <li><strong>$k_b$ (Size Factor):</strong> Larger parts have a higher probability of containing a flaw that can initiate a fatigue crack. Therefore, larger parts have a lower endurance limit. $k_b < 1$.</li>\n    <li><strong>$k_c$ (Load Factor):</strong> Accounts for different types of loading. The endurance limit is highest for bending, lower for axial loading, and lower still for torsion.</li>\n    <li><strong>$k_d$ (Temperature Factor):</strong> Accounts for operating temperatures that are significantly higher or lower than room temperature.</li>\n    <li><strong>$k_e$ (Reliability Factor):</strong> Accounts for the scatter in fatigue data. A higher reliability requirement (e.g., 99.9%) requires a lower endurance limit.</li>\n    <li><strong>$k_f$ (Miscellaneous Factor):</strong> Accounts for other effects like stress concentrations, corrosion, etc.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a steel with an ultimate tensile strength of 800 MPa, what is the best estimate for the endurance limit of an ideal rotating-beam test specimen ($S_e'$)?",
+      "options": [
+        { "text": "800 MPa", "isCorrect": false },
+        { "text": "400 MPa", "isCorrect": true },
+        { "text": "200 MPa", "isCorrect": false },
+        { "text": "700 MPa", "isCorrect": false }
+      ],
+      "explanation": "For steels with $S_{ut} \\le 1400$ MPa, the baseline endurance limit is estimated as half the ultimate tensile strength. $S_e' = 0.5 S_{ut} = 0.5(800) = 400$ MPa."
+    },
+    {
+      "question": "The Marin factors ($k_a, k_b, k_c$, etc.) are used to adjust the ideal endurance limit. Why are most of these factors less than 1.0?",
+      "options": [
+        { "text": "To increase the calculated factor of safety.", "isCorrect": false },
+        { "text": "Because real parts have conditions (e.g., rough surface, larger size) that reduce fatigue life compared to an ideal lab specimen.", "isCorrect": true },
+        { "text": "To account for ductile failure instead of brittle failure.", "isCorrect": false },
+        { "text": "They are always greater than 1.0.", "isCorrect": false }
+      ],
+      "explanation": "The baseline endurance limit ($S_e'$) is determined under ideal laboratory conditions (polished surface, small size, bending load). Real-world components almost always have conditions that are less ideal (e.g., rougher surface, larger size, stress concentrations), which reduce the fatigue strength. The Marin factors are correction factors, typically less than one, to account for these real-world effects."
+    }
+  ]
+}

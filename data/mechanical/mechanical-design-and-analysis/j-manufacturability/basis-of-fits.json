@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">To standardize the system of fits and reduce the number of required tools (like reamers and gauges), one of the two mating parts (either the hole or the shaft) is chosen as the 'basis'. This means its basic size is set as a reference, and the other part's dimensions are adjusted to achieve the desired fit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Hole Basis System</h3>\n<p class=\"mb-4\">In the <strong>hole basis system</strong>, the design size of the hole is taken as the basic size, and its lower deviation is set to zero. This means the minimum size of the hole is the basic size. The tolerance is then applied above this size. Different fits (clearance, transition, interference) are achieved by varying the tolerance and deviation of the shaft.</p>\n<p class=\"mb-4\"><strong>This is the most widely used system.</strong> It is easier and more economical to manufacture shafts to various precise diameters than it is to produce holes of various precise diameters, as standard tools like drills and reamers are used for holes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Shaft Basis System</h3>\n<p class=\"mb-4\">In the <strong>shaft basis system</strong>, the design size of the shaft is taken as the basic size, and its upper deviation is set to zero. This means the maximum size of the shaft is the basic size. The tolerance is applied below this size. Different fits are then achieved by varying the tolerance and deviation of the hole.</p>\n<p class=\"mb-4\">This system is less common and is typically used only when it is advantageous to use a standard-size shaft, such as when using commercial cold-drawn shafting.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which basis of fit system is most commonly used in manufacturing and why?",
+      "options": [
+        { "text": "Shaft basis, because shafts are more important.", "isCorrect": false },
+        { "text": "Hole basis, because it is easier to vary the shaft diameter than the hole diameter.", "isCorrect": true },
+        { "text": "Shaft basis, because holes are harder to measure.", "isCorrect": false },
+        { "text": "Hole basis, because it allows for larger tolerances.", "isCorrect": false }
+      ],
+      "explanation": "The hole basis system is preferred because standard-size tools like drills and reamers are used to create holes. It is generally more economical to produce a standard hole and then machine a shaft to the specific size needed to achieve the desired fit."
+    },
+    {
+      "question": "In the hole basis system, the lower deviation of the hole is always:",
+      "options": [
+        { "text": "Positive", "isCorrect": false },
+        { "text": "Negative", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Equal to the shaft's upper deviation", "isCorrect": false }
+      ],
+      "explanation": "By definition, in the hole basis system, the hole is the reference. Its minimum size is set to the basic size, which means its lower deviation (Minimum Limit - Basic Size) is zero."
+    }
+  ]
+}

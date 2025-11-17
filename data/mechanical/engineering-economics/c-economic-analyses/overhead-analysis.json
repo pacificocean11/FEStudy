@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Overhead costs</strong>, also known as indirect costs or burden, are expenses that are not directly attributable to a specific product or project but are necessary for the general operation of the business. Examples include rent, utilities, administrative salaries, marketing, and depreciation on general-purpose equipment.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Overhead Allocation</h3>\n<p class=\"mb-4\">To determine the full cost of a product, these indirect overhead costs must be allocated to the products or projects. This is typically done using a predetermined <strong>overhead rate</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Calculating the Overhead Rate</h3>\n<p class=\"mb-4\">The overhead rate is calculated by dividing the total estimated overhead costs for a period by an allocation base.</p>\n$$ \\text{Overhead Rate} = \\frac{\\text{Total Estimated Overhead Costs}}{\\text{Total Estimated Allocation Base}} $$\n<p class=\"mb-4\">The allocation base should be a measure that is related to the incurrence of overhead costs. Common bases include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Direct labor hours</li>\n    <li>Direct labor cost</li>\n    <li>Machine hours</li>\n    <li>Direct material cost</li>\n</ul>\n<p class=\"mb-4\">Once the rate is determined, the overhead applied to a specific job is calculated as: Overhead Applied = Overhead Rate × Actual amount of allocation base used by the job.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A factory has total estimated overhead costs of $200,000 for the year. It is estimated that 10,000 direct labor hours will be worked. What is the overhead rate based on direct labor hours?",
+      "options": [
+        { "text": "$0.05 per hour", "isCorrect": false },
+        { "text": "$20 per hour", "isCorrect": true },
+        { "text": "$2 per hour", "isCorrect": false },
+        { "text": "$50 per hour", "isCorrect": false }
+      ],
+      "explanation": "Overhead Rate = Total Overhead / Total Allocation Base = $200,000 / 10,000 direct labor hours = $20 per direct labor hour."
+    },
+    {
+      "question": "Using the overhead rate of $20 per direct labor hour from the previous problem, how much overhead is allocated to a job that required 50 direct labor hours to complete?",
+      "options": [
+        { "text": "$2.50", "isCorrect": false },
+        { "text": "$70", "isCorrect": false },
+        { "text": "$1,000", "isCorrect": true },
+        { "text": "$5,000", "isCorrect": false }
+      ],
+      "explanation": "Overhead Applied = Overhead Rate × Actual Base Used = ($20 per hour) × (50 hours) = $1,000."
+    }
+  ]
+}

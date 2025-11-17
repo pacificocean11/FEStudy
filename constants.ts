@@ -232,11 +232,19 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           name: 'B. Measures of central tendencies and dispersions', 
           subtopics: [
             { name: 'Mean, Median Mode', content: null },
-            { name: 'Standard Deviation and Variance', content: null }
+            { name: 'Standard Deviation and Variance', content: null },
+            { name: 'Null Hypothesis', content: null },
+            { name: 'Confidence Intervals', content: null },
           ] 
         },
         { name: 'C. Expected value (weighted average) in decision making', subtopics: [{ name: 'C. Expected value (weighted average) in decision making', content: null }] },
-        { name: 'D. Regression (linear, multiple), curve fitting, and goodness of fit', subtopics: [{ name: 'D. Regression (linear, multiple), curve fitting, and goodness of fit', content: null }] },
+        { 
+          name: 'D. Regression (linear, multiple), curve fitting, and goodness of fit', 
+          subtopics: [
+            { name: 'Linear Regression', content: null },
+            { name: 'Correlation Coefficient', content: null }
+          ] 
+        },
       ],
     },
     {
@@ -272,9 +280,36 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '4. Engineering Economics',
       topics: [
-        { name: 'A. Time value of money', subtopics: [{ name: 'A. Time value of money', content: null }] },
-        { name: 'B. Cost types and breakdowns', subtopics: [{ name: 'B. Cost types and breakdowns', content: null }] },
-        { name: 'C. Economic analyses', subtopics: [{ name: 'C. Economic analyses', content: null }] },
+        { 
+          name: 'A. Time value of money', 
+          subtopics: [
+            { name: 'Equivalence', content: null },
+            { name: 'Present Worth', content: null },
+            { name: 'Equivalent Annual Worth', content: null },
+            { name: 'Future Worth', content: null },
+            { name: 'Rate of Return', content: null },
+            { name: 'Annuities', content: null }
+          ] 
+        },
+        { 
+          name: 'B. Cost types and breakdowns', 
+          subtopics: [
+            { name: 'Fixed and Variable Costs', content: null },
+            { name: 'Incremental Costs', content: null },
+            { name: 'Average Costs', content: null },
+            { name: 'Sunk Costs', content: null }
+          ] 
+        },
+        { 
+          name: 'C. Economic analyses', 
+          subtopics: [
+            { name: 'Cost-Benefit Analysis', content: null },
+            { name: 'Break-Even Analysis', content: null },
+            { name: 'Minimum Cost Analysis', content: null },
+            { name: 'Overhead Analysis', content: null },
+            { name: 'Life Cycle Analysis', content: null }
+          ] 
+        },
       ],
     },
     {
@@ -292,7 +327,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Magnetic Flux', content: null },
           ]
         },
-        { name: 'B. DC circuit analysis', subtopics: [{ name: 'B. DC circuit analysis', content: null }] },
+        { 
+          name: 'B. DC circuit analysis', 
+          subtopics: [
+            { name: "Ohm's Law", content: null },
+            { name: "Kirchhoff's Laws", content: null },
+            { name: 'Series Circuits', content: null },
+            { name: 'Parallel Circuits', content: null }
+          ] 
+        },
         { 
           name: 'C. AC circuit analysis', 
           subtopics: [
@@ -482,10 +525,22 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Chemical Properties of Materials', content: null }
           ]
         },
-        { name: 'B. Stress-strain diagrams', subtopics: [{ name: 'B. Stress-strain diagrams', content: null }] },
+        { 
+          name: 'B. Stress-strain diagrams', 
+          subtopics: [
+            { name: 'Stress-Strain Diagrams', content: null },
+            { name: 'True vs. Engineering Stress-Strain Diagram', content: null }
+          ] 
+        },
         { name: 'C. Ferrous metals', subtopics: [{ name: 'C. Ferrous metals', content: null }] },
         { name: 'D. Nonferrous metals', subtopics: [{ name: 'D. Nonferrous metals', content: null }] },
-        { name: 'E. Engineered materials', subtopics: [{ name: 'E. Engineered materials', content: null }] },
+        {
+          name: 'E. Engineered materials',
+          subtopics: [
+            { name: 'Composites', content: null },
+            { name: 'Polymers', content: null },
+          ]
+        },
         {
           name: 'F. Manufacturing processes',
           subtopics: [
@@ -511,7 +566,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         },
         { name: 'H. Materials selection', subtopics: [{ name: 'H. Materials selection', content: null }] },
         { name: 'I. Corrosion mechanisms and control', subtopics: [{ name: 'I. Corrosion mechanisms and control', content: null }] },
-        { name: 'J. Failure mechanisms', subtopics: [{ name: 'J. Failure mechanisms', content: null }] },
+        {
+          name: 'J. Failure mechanisms',
+          subtopics: [
+            { name: 'Thermal Failure', content: null },
+            { name: 'Fatigue', content: null },
+            { name: 'Fracture', content: null },
+            { name: 'Creep', content: null },
+          ]
+        },
       ],
     },
     {
@@ -563,7 +626,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       topics: [
         { name: 'A. Properties of ideal gases and pure substances', subtopics: [{ name: 'A. Properties of ideal gases and pure substances', content: null }] },
         { name: 'B. Energy transfers', subtopics: [{ name: 'B. Energy transfers', content: null }] },
-        { name: 'C. Laws of thermodynamics', subtopics: [{ name: 'C. Laws of thermodynamics', content: null }] },
+        {
+          name: 'C. Laws of thermodynamics',
+          subtopics: [
+            { name: 'Zeroth Law of Thermodynamics', content: null },
+            { name: 'First Law of Thermodynamics', content: null },
+            { name: 'Second Law of Thermodynamics', content: null },
+            { name: 'Third Law of Thermodynamics', content: null }
+          ]
+        },
         {
           name: 'D. Processes',
           subtopics: [
@@ -585,8 +656,20 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Diesel Cycle', content: null },
           ]
         },
-        { name: 'G. Refrigeration and heat pump cycles', subtopics: [{ name: 'G. Refrigeration and heat pump cycles', content: null }] },
-        { name: 'H. Nonreacting mixtures of gases', subtopics: [{ name: 'H. Nonreacting mixtures of gases', content: null }] },
+        { 
+          name: 'G. Refrigeration and heat pump cycles', 
+          subtopics: [
+            { name: 'Stages of Refrigeration Cycle', content: null },
+            { name: 'Air Refrigeration Cycle', content: null },
+          ] 
+        },
+        {
+          name: 'H. Nonreacting mixtures of gases',
+          subtopics: [
+            { name: 'Mass and Mole Fractions', content: null },
+            { name: "Dalton's Law of Partial Pressure", content: null }
+          ]
+        },
         { name: 'I. Psychrometrics', subtopics: [{ name: 'I. Psychrometrics', content: null }] },
         { name: 'J. Heating, ventilation, and air-conditioning (HVAC) processes', subtopics: [{ name: 'J. Heating, ventilation, and air-conditioning (HVAC) processes', content: null }] },
         {
@@ -658,16 +741,45 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'pH Sensor', content: null },
           ]
         },
-        { name: 'B. Control systems', subtopics: [{ name: 'B. Control systems', content: null }] },
-        { name: 'C. Dynamic system response', subtopics: [{ name: 'C. Dynamic system response', content: null }] },
-        { name: 'D. Measurement uncertainty', subtopics: [{ name: 'D. Measurement uncertainty', content: null }] },
+        {
+          name: 'B. Control systems',
+          subtopics: [
+            { name: 'Feedback', content: null },
+            { name: 'Block Diagrams', content: null },
+          ]
+        },
+        { 
+          name: 'C. Dynamic system response', 
+          subtopics: [
+            { name: 'Dynamic System Response Terminology', content: null },
+            { name: 'Time Response of a First Order System', content: null },
+            { name: 'Time Response of a Second Order Underdamped System', content: null },
+            { name: 'Steady State Error', content: null }
+          ] 
+        },
+        { 
+          name: 'D. Measurement uncertainty', 
+          subtopics: [
+            { name: 'Error Propagation', content: null },
+            { name: 'Accuracy and Precision', content: null },
+            { name: 'Significant Figures', content: null }
+          ] 
+        },
       ],
     },
     {
       name: '14. Mechanical Design and Analysis',
       topics: [
         { name: 'A. Stress analysis of machine elements', subtopics: [{ name: 'A. Stress analysis of machine elements', content: null }] },
-        { name: 'B. Failure theories and analysis', subtopics: [{ name: 'B. Failure theories and analysis', content: null }] },
+        { 
+          name: 'B. Failure theories and analysis', 
+          subtopics: [
+            { name: 'Failure Theory for Brittle Materials', content: null },
+            { name: 'Failure Theory for Ductile Materials', content: null },
+            { name: 'Variable Loading Failure Theories', content: null },
+            { name: 'Endurance Limits for Steel', content: null }
+          ] 
+        },
         { name: 'C. Deformation and stiffness', subtopics: [{ name: 'C. Deformation and stiffness', content: null }] },
         { name: 'D. Springs', subtopics: [{ name: 'D. Springs', content: null }] },
         { name: 'E. Pressure vessels and piping', subtopics: [{ name: 'E. Pressure vessels and piping', content: null }] },
@@ -689,8 +801,24 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Lewis Equation', content: null },
           ] 
         },
-        { name: 'I. Joining methods', subtopics: [{ name: 'I. Joining methods', content: null }] },
-        { name: 'J. Manufacturability', subtopics: [{ name: 'J. Manufacturability', content: null }] },
+        { 
+          name: 'I. Joining methods', 
+          subtopics: [
+            { name: 'Welding', content: null },
+            { name: 'Adhesives', content: null },
+            { name: 'Mechanical Fasteners', content: null }
+          ] 
+        },
+        { 
+          name: 'J. Manufacturability', 
+          subtopics: [
+            { name: 'Terminology of Limit Systems', content: null },
+            { name: 'Types of Fits', content: null },
+            { name: 'Feature Control Frame', content: null },
+            { name: 'Basis of Fits', content: null },
+            { name: 'Limit Gauges', content: null }
+          ] 
+        },
         { name: 'K. Quality and reliability', subtopics: [{ name: 'K. Quality and reliability', content: null }] },
         { 
           name: 'L. Components', 
@@ -701,7 +829,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Electromechanical Components', content: null },
           ] 
         },
-        { name: 'M. Engineering drawing interpretations and geometric dimensioning and tolerancing (GD&T)', subtopics: [{ name: 'M. Engineering drawing interpretations and geometric dimensioning and tolerancing (GD&T)', content: null }] },
+        { 
+          name: 'M. Engineering drawing interpretations and geometric dimensioning and tolerancing (GD&T)', 
+          subtopics: [
+            { name: 'Engineering Drawing', content: null },
+            { name: 'GD and T', content: null }
+          ] 
+        },
       ],
     },
   ],

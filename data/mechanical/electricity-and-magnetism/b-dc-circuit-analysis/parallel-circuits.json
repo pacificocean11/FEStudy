@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">In a parallel circuit, components are connected across the same two points, providing multiple paths for the current to flow.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Voltage:</strong> The voltage is the same across every component in the parallel circuit. $V_{total} = V_1 = V_2 = V_3 = ...$</li>\n    <li><strong>Current:</strong> The total current from the source is divided among the branches. The sum of the currents in each branch equals the total current (KCL). $I_{total} = I_1 + I_2 + I_3 + ...$</li>\n    <li><strong>Equivalent Resistance:</strong> The reciprocal of the equivalent resistance is the sum of the reciprocals of the individual resistances.</li>\n    $$ \\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3} + ... $$\n    <p class=\"mb-4\">For the special case of only two resistors in parallel, a simpler formula is often used:</p>\n    $$ R_{eq} = \\frac{R_1 R_2}{R_1 + R_2} $$\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Current Divider Rule</h3>\n<p class=\"mb-4\">This rule is a shortcut to find the current flowing through a specific branch in a parallel circuit. For two parallel resistors, the current through resistor $R_x$ is:</p>\n$$ I_x = I_{total} \\left( \\frac{R_{other}}{R_x + R_{other}} \\right) $$\n<p class=\"mb-4\">Note that the current divides inversely proportional to the resistance; more current flows through the path of lower resistance.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Two resistors, $R_1=10$ \u03A9 and $R_2=40$ \u03A9, are connected in parallel. What is their equivalent resistance?",
+      "options": [
+        { "text": "50 \u03A9", "isCorrect": false },
+        { "text": "25 \u03A9", "isCorrect": false },
+        { "text": "8 \u03A9", "isCorrect": true },
+        { "text": "4 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "For two resistors in parallel, use the formula $R_{eq} = \\frac{R_1 R_2}{R_1 + R_2} = \\frac{(10)(40)}{10 + 40} = \\frac{400}{50} = 8$ \u03A9."
+    },
+    {
+      "question": "A 12 \u03A9 resistor and a 6 \u03A9 resistor are in parallel. A total current of 3 A enters the combination. How much current flows through the 6 \u03A9 resistor?",
+      "options": [
+        { "text": "1 A", "isCorrect": false },
+        { "text": "1.5 A", "isCorrect": false },
+        { "text": "2 A", "isCorrect": true },
+        { "text": "3 A", "isCorrect": false }
+      ],
+      "explanation": "Use the current divider rule to find the current in the 6 \u03A9 resistor ($R_2$). $I_2 = I_{total} \\left( \\frac{R_1}{R_1 + R_2} \\right) = 3 \\text{ A} \\left( \\frac{12 \\; \u03A9}{12 \\; \u03A9 + 6 \\; \u03A9} \\right) = 3 \\left( \\frac{12}{18} \\right) = 3 \\left( \\frac{2}{3} \\right) = 2$ A."
+    }
+  ]
+}

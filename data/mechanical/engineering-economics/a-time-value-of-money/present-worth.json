@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Present Worth (PW)</strong>, also known as Present Value (PV), is the current value of a future sum of money or stream of cash flows, given a specified rate of return. Present worth analysis is one of the most common methods for comparing investment alternatives. It brings all future costs and revenues back to a single equivalent value at time zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Formulas (Interest Factors)</h3>\n<p class=\"mb-4\">The formulas are often expressed using standard factor notation, where (X/Y, i, n) means \"Find X, given Y, at interest rate i for n periods\".</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Find P, given F (Single Payment Present Worth Factor, P/F):</strong><br>This calculates the present value of a single future amount.\n    $$ P = F(1+i)^{-n} = F(P/F, i, n)$$\n    </li>\n    <li><strong>Find P, given A (Uniform Series Present Worth Factor, P/A):</strong><br>This calculates the present value of a uniform series of payments (annuity).\n    $$ P = A \\left[ \\frac{(1+i)^n - 1}{i(1+i)^n} \\right] = A(P/A, i, n)$$\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the present worth of $10,000 to be received 8 years from now, if the interest rate is 6% per year? The (P/F, 6%, 8) factor is 0.6274.",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$15,938", "isCorrect": false },
+        { "text": "$6,274", "isCorrect": true },
+        { "text": "$6,000", "isCorrect": false }
+      ],
+      "explanation": "We need to find the present worth (P) of a future sum (F). We use the P/F factor. $P = F(P/F, i, n) = $10,000(0.6274) = $6,274$."
+    },
+    {
+      "question": "A project will generate a net revenue of $5,000 per year for 10 years. What is the present worth of this revenue stream if the interest rate is 8%? The (P/A, 8%, 10) factor is 6.7101.",
+      "options": [
+        { "text": "$50,000", "isCorrect": false },
+        { "text": "$33,550.50", "isCorrect": true },
+        { "text": "$7,451.50", "isCorrect": false },
+        { "text": "$23,159.50", "isCorrect": false }
+      ],
+      "explanation": "We need to find the present worth (P) of an annual series of payments (A). We use the P/A factor. $P = A(P/A, i, n) = $5,000(6.7101) = $33,550.50$."
+    }
+  ]
+}

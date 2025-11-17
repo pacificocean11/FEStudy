@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>polymer</strong> is a large molecule, or macromolecule, composed of many repeated subunits, known as monomers. The process of forming a polymer from monomers is called polymerization. Plastics and rubbers are examples of polymers.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Classification</h3>\n<p class=\"mb-4\">Polymers are broadly classified based on their response to heat:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Thermoplastics:</strong> These polymers soften when heated and become firm again when cooled. This process is reversible and can be repeated. The polymer chains are held together by weak intermolecular forces. Examples include Polyethylene (PE), Polyvinyl chloride (PVC), and Polypropylene (PP).</li>\n    <li><strong>Thermosets (or Thermosetting Polymers):</strong> These polymers are initially soft but become permanently hard and rigid when heated. They cannot be remelted or reshaped. During curing, strong covalent cross-links form between the polymer chains. Examples include Epoxy, Phenolic, and Polyurethane.</li>\n    <li><strong>Elastomers (Rubbers):</strong> These are polymers that exhibit large elastic deformation. They can be stretched to many times their original length and return to their original shape when the load is removed. They have a lightly cross-linked structure. Examples include natural rubber and silicone.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. General Properties</h3>\n<p class=\"mb-4\">Compared to metals, polymers generally have:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Low density</li>\n    <li>Low strength and stiffness</li>\n    <li>Good corrosion resistance</li>\n    <li>Good thermal and electrical insulation properties</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A polymer that can be repeatedly softened by heating and hardened by cooling is known as a:",
+      "options": [
+        { "text": "Thermoset", "isCorrect": false },
+        { "text": "Elastomer", "isCorrect": false },
+        { "text": "Thermoplastic", "isCorrect": true },
+        { "text": "Composite", "isCorrect": false }
+      ],
+      "explanation": "Thermoplastics have a molecular structure that allows the polymer chains to slide past one another when heated, making the softening and hardening process reversible. This property makes them easily recyclable and suitable for processes like injection molding."
+    },
+    {
+      "question": "Epoxy is a common adhesive and matrix material. Once it cures (hardens), it cannot be remelted. How is it classified?",
+      "options": [
+        { "text": "As a thermoplastic", "isCorrect": false },
+        { "text": "As a thermoset", "isCorrect": true },
+        { "text": "As an elastomer", "isCorrect": false },
+        { "text": "As a metal", "isCorrect": false }
+      ],
+      "explanation": "Epoxy undergoes an irreversible chemical reaction (curing) that forms strong cross-links between polymer chains. This creates a rigid, 3D network structure that does not soften upon reheating, which is the defining characteristic of a thermoset."
+    }
+  ]
+}

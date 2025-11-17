@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Dalton's Law</h3>\n<p class=\"mb-4\"><strong>Dalton's Law of Partial Pressures</strong> states that the total pressure exerted by a mixture of non-reacting gases is equal to the sum of the partial pressures of the individual gases.</p>\n$$ P_{mixture} = \\sum P_i = P_A + P_B + P_C + ... $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Partial Pressure ($P_i$)</h3>\n<p class=\"mb-4\">The <strong>partial pressure</strong> of a gas in a mixture is the pressure that the gas would exert if it occupied the entire volume of the mixture by itself, at the same temperature.</p>\n<p class=\"mb-4\">For an ideal gas mixture, the partial pressure of a component is directly proportional to its mole fraction ($y_i$).</p>\n$$ P_i = y_i P_{mixture} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Amagat's Law of Partial Volumes</h3>\n<p class=\"mb-4\">A related law is <strong>Amagat's Law</strong>, which states that the total volume of a gas mixture is equal to the sum of the partial volumes of the individual component gases.</p>\n$$ V_{mixture} = \\sum V_i $$\n<p class=\"mb-4\">The partial volume ($V_i$) is the volume that a component would occupy if it were at the mixture's temperature and total pressure. The partial volume fraction is equal to the mole fraction.</p>\n$$ \\frac{V_i}{V_{mixture}} = y_i $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A container holds a mixture of gases with a total pressure of 200 kPa. If the mixture is 20% oxygen and 80% nitrogen by mole, what is the partial pressure of the oxygen?",
+      "options": [
+        { "text": "20 kPa", "isCorrect": false },
+        { "text": "40 kPa", "isCorrect": true },
+        { "text": "160 kPa", "isCorrect": false },
+        { "text": "200 kPa", "isCorrect": false }
+      ],
+      "explanation": "The mole fraction of oxygen is $y_{O2} = 0.20$. The partial pressure is the mole fraction times the total pressure: $P_{O2} = y_{O2} P_{total} = 0.20 \\times 200 \\text{ kPa} = 40$ kPa."
+    },
+    {
+      "question": "A tank contains 1 mole of helium and 3 moles of argon at a total pressure of 4 atm. What is the partial pressure of the argon?",
+      "options": [
+        { "text": "1 atm", "isCorrect": false },
+        { "text": "2 atm", "isCorrect": false },
+        { "text": "3 atm", "isCorrect": true },
+        { "text": "4 atm", "isCorrect": false }
+      ],
+      "explanation": "First, find the mole fraction of argon. The total number of moles is $N_m = 1 + 3 = 4$ moles. The mole fraction of argon is $y_{Ar} = N_{Ar} / N_m = 3 / 4 = 0.75$. The partial pressure is $P_{Ar} = y_{Ar} P_{total} = 0.75 \\times 4 \\text{ atm} = 3$ atm."
+    },
+    {
+      "question": "Air is approximately 21% oxygen and 79% nitrogen by volume. At a standard atmospheric pressure of 101.3 kPa, what is the partial pressure of nitrogen?",
+      "options": [
+        { "text": "21.3 kPa", "isCorrect": false },
+        { "text": "101.3 kPa", "isCorrect": false },
+        { "text": "80.0 kPa", "isCorrect": true },
+        { "text": "79.0 kPa", "isCorrect": false }
+      ],
+      "explanation": "For ideal gases, the volume fraction is equal to the mole fraction. So, the mole fraction of nitrogen is $y_{N2} = 0.79$. The partial pressure is $P_{N2} = y_{N2} P_{total} = 0.79 \\times 101.3 \\text{ kPa} \\approx 80.0$ kPa."
+    }
+  ]
+}

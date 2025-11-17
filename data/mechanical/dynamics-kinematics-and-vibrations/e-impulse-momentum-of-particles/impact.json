@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Impact</strong> is a collision between two bodies which occurs in a very short period of time and during which the two bodies exert relatively large forces on each other. The analysis of impacts typically uses the principle of conservation of momentum.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Conservation of Linear Momentum</h3>\n<p class=\"mb-4\">For any collision, if the net external force on the two-body system is zero, the total linear momentum of the system is conserved.</p>\n$$ m_1\\mathbf{v}_{1,i} + m_2\\mathbf{v}_{2,i} = m_1\\mathbf{v}_{1,f} + m_2\\mathbf{v}_{2,f} $$\n<p class=\"mb-4\">This equation applies to all types of impacts.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Coefficient of Restitution (e)</h3>\n<p class=\"mb-4\">The coefficient of restitution is a measure of the 'elasticity' of a collision. It is the ratio of the relative velocity of separation to the relative velocity of approach.</p>\n$$ e = \\frac{v_{2,f} - v_{1,f}}{v_{1,i} - v_{2,i}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Perfectly Elastic Collision ($e=1$):</strong> Kinetic energy is conserved.</li>\n    <li><strong>Inelastic Collision ($0 < e < 1$):</strong> Some kinetic energy is lost (e.g., as heat or sound).</li>\n    <li><strong>Perfectly Plastic (or Inelastic) Collision ($e=0$):</strong> The bodies stick together after the collision ($v_{1,f} = v_{2,f}$), and the maximum possible kinetic energy is lost.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 10 kg block moving at 5 m/s collides with a 15 kg block that is at rest. The two blocks stick together after the collision. What is their final velocity?",
+      "options": [
+        { "text": "5 m/s", "isCorrect": false },
+        { "text": "3.33 m/s", "isCorrect": false },
+        { "text": "2 m/s", "isCorrect": true },
+        { "text": "2.5 m/s", "isCorrect": false }
+      ],
+      "explanation": "This is a perfectly plastic collision. Momentum is conserved. Initial momentum = $m_1v_1 = (10)(5) = 50$ kg·m/s. Final momentum = $(m_1+m_2)v_f = (10+15)v_f = 25v_f$. Setting them equal: $50 = 25v_f \\implies v_f = 2$ m/s."
+    },
+    {
+      "question": "A ball is dropped from a height and hits the floor with a speed of 10 m/s. It rebounds with a speed of 8 m/s. What is the coefficient of restitution for the collision?",
+      "options": [
+        { "text": "0.8", "isCorrect": true },
+        { "text": "1.25", "isCorrect": false },
+        { "text": "0.2", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false }
+      ],
+      "explanation": "Let the ball be object 1 and the floor be object 2. Let the downward direction be positive. The floor's velocity is always zero ($v_{2,i} = v_{2,f} = 0$). The ball's initial velocity is $v_{1,i} = 10$ m/s. Its final velocity is in the opposite direction, so $v_{1,f} = -8$ m/s. Using the restitution formula: $e = \\frac{v_{2,f} - v_{1,f}}{v_{1,i} - v_{2,i}} = \\frac{0 - (-8)}{10 - 0} = \\frac{8}{10} = 0.8$."
+    }
+  ]
+}

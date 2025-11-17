@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>air refrigeration cycle</strong> is a gas cycle used for refrigeration, most notably for air conditioning systems on aircraft (air cycle machines). It uses air as the refrigerant, which remains in the gaseous phase throughout the cycle. The ideal air refrigeration cycle is the <strong>reversed Brayton cycle</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Processes (Reversed Brayton Cycle)</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Process 1-2 (Isentropic Compression):</strong> Air from the cold space (e.g., the aircraft cabin) is compressed, increasing its temperature and pressure.</li>\n    <li><strong>Process 2-3 (Constant-Pressure Heat Rejection):</strong> The hot, high-pressure air is passed through a heat exchanger, where it rejects heat to the warmer surroundings (e.g., the ambient air outside the aircraft).</li>\n    <li><strong>Process 3-4 (Isentropic Expansion):</strong> The cooled, high-pressure air is expanded through a turbine. This expansion causes a significant drop in the air's temperature, and the turbine produces some work that can be used to help run the compressor.</li>\n    <li><strong>Process 4-1 (Constant-Pressure Heat Addition):</strong> The cold air from the turbine exit is directed into the cabin, where it absorbs heat from the cabin (the cooling effect) at constant pressure, returning to its initial state.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Coefficient of Performance (COP)</h3>\n<p class=\"mb-4\">The COP of an ideal air refrigeration cycle depends on the pressure ratio ($r_p = P_2/P_1$) and the specific heat ratio ($k$) of the air.</p>\n$$ COP_R = \\frac{1}{r_p^{(k-1)/k} - 1} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The ideal air refrigeration cycle is also known as the:",
+      "options": [
+        { "text": "Reversed Carnot cycle", "isCorrect": false },
+        { "text": "Reversed Otto cycle", "isCorrect": false },
+        { "text": "Reversed Brayton cycle", "isCorrect": true },
+        { "text": "Reversed Rankine cycle", "isCorrect": false }
+      ],
+      "explanation": "The standard Brayton cycle is a gas power cycle (used in jet engines). When the processes are reversed, it becomes a refrigeration cycle. This reversed Brayton cycle is the ideal model for air refrigeration systems."
+    },
+    {
+      "question": "In an air refrigeration cycle, the cooling effect is produced during which process?",
+      "options": [
+        { "text": "Isentropic compression", "isCorrect": false },
+        { "text": "Constant-pressure heat rejection", "isCorrect": false },
+        { "text": "Isentropic expansion", "isCorrect": true },
+        { "text": "Constant-pressure heat addition", "isCorrect": false }
+      ],
+      "explanation": "The isentropic expansion through the turbine causes the air's temperature to drop significantly. This cold air is then used for cooling. While the heat is absorbed from the cabin in the 'heat addition' step, the cold temperature itself is generated in the turbine."
+    },
+    {
+      "question": "An ideal air refrigeration cycle operates with a pressure ratio of 5. Assuming air has $k=1.4$, what is the coefficient of performance?",
+      "options": [
+        { "text": "1.58", "isCorrect": false },
+        { "text": "0.63", "isCorrect": false },
+        { "text": "1.71", "isCorrect": true },
+        { "text": "0.71", "isCorrect": false }
+      ],
+      "explanation": "Use the COP formula for the reversed Brayton cycle: $COP_R = \\frac{1}{r_p^{(k-1)/k} - 1}$.\nFirst, calculate the exponent: $(k-1)/k = (1.4-1)/1.4 = 0.4/1.4 \\approx 0.2857$.\nNext, calculate the pressure ratio term: $5^{0.2857} \\approx 1.584$.\nFinally, calculate the COP: $COP_R = \\frac{1}{1.584 - 1} = \\frac{1}{0.584} \\approx 1.71$."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definitions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Fixed Costs (FC):</strong> Costs that do not change with the level of production or activity. They are incurred even if nothing is produced. Examples include rent, insurance, administrative salaries, and equipment depreciation.</li>\n    <li><strong>Variable Costs (VC):</strong> Costs that vary directly with the level of production or activity. Examples include direct materials, direct labor, and energy consumed in production.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Total Cost</h3>\n<p class=\"mb-4\">The total cost of an operation is the sum of the fixed costs and the total variable costs.</p>\n$$ TC = FC + (VC_{unit} \\times Q) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$TC$ is the Total Cost.</li>\n    <li>$FC$ is the Total Fixed Cost.</li>\n    <li>$VC_{unit}$ is the variable cost per unit.</li>\n    <li>$Q$ is the quantity of units produced.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The rent for a factory building is an example of what type of cost?",
+      "options": [
+        { "text": "Variable cost", "isCorrect": false },
+        { "text": "Fixed cost", "isCorrect": true },
+        { "text": "Incremental cost", "isCorrect": false },
+        { "text": "Sunk cost", "isCorrect": false }
+      ],
+      "explanation": "Rent is a fixed cost because it must be paid regardless of how many units are produced in the factory. It does not vary with the level of activity."
+    },
+    {
+      "question": "A company has fixed costs of $10,000 per month. The variable cost to produce one unit is $5. If the company produces 2,000 units in a month, what is the total cost?",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$20,000", "isCorrect": true },
+        { "text": "$30,000", "isCorrect": false },
+        { "text": "$12,000", "isCorrect": false }
+      ],
+      "explanation": "Total Cost = Fixed Costs + Total Variable Costs. Total Variable Costs = (Variable cost per unit) * (Quantity) = $5 * 2,000 = $10,000. Total Cost = $10,000 (FC) + $10,000 (VC) = $20,000."
+    }
+  ]
+}

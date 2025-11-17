@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Fracture</strong> is the separation of a body into two or more pieces under the action of stress. It is the final step in many failure mechanisms.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Ductile vs. Brittle Fracture</h3>\n<p class=\"mb-4\">Fracture can be broadly classified into two modes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Ductile Fracture:</strong> Characterized by extensive plastic deformation before fracture. It is a slow, energy-absorbing process and provides a visible warning of impending failure. The fracture surface often appears dull and fibrous.</li>\n    <li><strong>Brittle Fracture:</strong> Occurs with little or no prior plastic deformation. It is a rapid, low-energy process that can happen suddenly and catastrophically, with no warning. The fracture surface often appears bright and granular.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Stress Concentration</h3>\n<p class=\"mb-4\">Fracture almost always begins at a small flaw or crack where stress is locally amplified. The presence of notches, holes, sharp corners, or internal defects creates a <strong>stress concentration</strong>, where the local stress is much higher than the nominal stress applied to the component. This is why cracks tend to initiate at these features.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Fracture Mechanics and Fracture Toughness ($K_{IC}$)</h3>\n<p class=\"mb-4\">Fracture mechanics is the field of mechanics concerned with the study of the propagation of cracks in materials.</p>\n<p class=\"mb-4\">A key property is <strong>fracture toughness ($K_{IC}$),</strong> which is a measure of a material's resistance to brittle fracture when a crack is present. A material with a high fracture toughness can tolerate larger cracks before it fails. It is a critical property for designing safe structures.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which type of fracture is generally preferred in engineering design, and why?",
+      "options": [
+        { "text": "Brittle fracture, because it is faster.", "isCorrect": false },
+        { "text": "Ductile fracture, because it provides a visible warning before failure.", "isCorrect": true },
+        { "text": "Brittle fracture, because it requires less energy.", "isCorrect": false },
+        { "text": "Ductile fracture, because it looks better.", "isCorrect": false }
+      ],
+      "explanation": "Ductile fracture is preferred because the significant plastic deformation (e.g., necking, bulging) that precedes it gives a clear visual warning that the component is about to fail, allowing for replacement or repair. Brittle fracture is dangerous because it can occur suddenly and without warning."
+    },
+    {
+      "question": "The material property that quantifies a material's resistance to crack propagation is called:",
+      "options": [
+        { "text": "Yield Strength", "isCorrect": false },
+        { "text": "Hardness", "isCorrect": false },
+        { "text": "Endurance Limit", "isCorrect": false },
+        { "text": "Fracture Toughness", "isCorrect": true }
+      ],
+      "explanation": "Fracture toughness, denoted $K_{IC}$, is a critical material property in fracture mechanics that describes the ability of a material containing a crack to resist fracture."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>sunk cost</strong> is a cost that has already been incurred and cannot be recovered. Sunk costs are in the past and are independent of any future events.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Sunk Cost Fallacy</h3>\n<p class=\"mb-4\">The most important principle regarding sunk costs is that they are <strong>irrelevant to future decisions</strong>. Rational economic decisions should be based only on future costs and benefits.</p>\n<p class=\"mb-4\">Continuing a project or investment just because you have already invested a lot of money in it is a common logical error known as the \"sunk cost fallacy\" or \"throwing good money after bad\". The decision to continue should only be based on the project's future prospects (future costs vs. future benefits), not on what has already been spent.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Examples</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The money spent last year on a special machine for a project that has now been canceled.</li>\n    <li>Research and development costs for a product that turns out to be unsuccessful.</li>\n    <li>The purchase price of a piece of equipment, when deciding whether to replace it with a new, more efficient model (the decision should be based on the future operating costs of the old vs. new machine, not the original price of the old one).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A company spent $500,000 developing a new product. Due to market changes, the project is now expected to lose an additional $100,000 if completed. What should the company do?",
+      "options": [
+        { "text": "Complete the project to recover the $500,000 already spent.", "isCorrect": false },
+        { "text": "Abandon the project.", "isCorrect": true },
+        { "text": "Invest more money to improve the product's marketability.", "isCorrect": false },
+        { "text": "Cannot be determined.", "isCorrect": false }
+      ],
+      "explanation": "The $500,000 is a sunk cost and should be ignored. The future decision is between losing an additional $100,000 or losing $0 by abandoning the project now. The rational choice is to abandon the project and avoid further losses."
+    },
+    {
+      "question": "Which of the following is an example of a sunk cost?",
+      "options": [
+        { "text": "The cost of materials for a future production run.", "isCorrect": false },
+        { "text": "The cost of a feasibility study for a project that was ultimately not pursued.", "isCorrect": true },
+        { "text": "The expected maintenance cost for a new machine.", "isCorrect": false },
+        { "text": "The salvage value of an old machine.", "isCorrect": false }
+      ],
+      "explanation": "The cost of a feasibility study is a past, irrecoverable cost. It was spent to make a decision, and whether the project goes forward or not, that money cannot be gotten back. The other options are all future costs or revenues that are relevant to decision-making."
+    }
+  ]
+}

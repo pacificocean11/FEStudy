@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Limit systems are used in engineering drawings to define the acceptable range of variation for the dimensions of a manufactured part. This ensures that parts are interchangeable and will fit together as intended.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Terminology</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Basic Size:</strong> The theoretical, exact size from which limits of size are derived. It is the size shown on the drawing (e.g., 25 mm).</li>\n    <li><strong>Actual Size:</strong> The size of the finished part as measured.</li>\n    <li><strong>Limits of Size:</strong> The maximum and minimum permissible sizes for a feature.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Maximum Limit of Size:</strong> The largest acceptable size.</li>\n            <li><strong>Minimum Limit of Size:</strong> The smallest acceptable size.</li>\n        </ul>\n    </li>\n    <li><strong>Tolerance:</strong> The total amount a specific dimension is permitted to vary. It is the difference between the maximum and minimum limits of size. Tolerance is always a positive value.</li>\n    <li><strong>Deviation:</strong> The algebraic difference between a size (actual, max, or min) and the corresponding basic size.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Upper Deviation:</strong> Maximum Limit - Basic Size.</li>\n            <li><strong>Lower Deviation:</strong> Minimum Limit - Basic Size.</li>\n        </ul>\n    </li>\n    <li><strong>Allowance:</strong> The intentional difference between the maximum material conditions of mating parts. It is the minimum clearance (for clearance fits) or maximum interference (for interference fits).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A shaft has a specified dimension of $50 \pm 0.05$ mm. What is the tolerance for this dimension?",
+      "options": [
+        { "text": "0.05 mm", "isCorrect": false },
+        { "text": "50.05 mm", "isCorrect": false },
+        { "text": "49.95 mm", "isCorrect": false },
+        { "text": "0.10 mm", "isCorrect": true }
+      ],
+      "explanation": "The maximum limit of size is $50 + 0.05 = 50.05$ mm. The minimum limit of size is $50 - 0.05 = 49.95$ mm. The tolerance is the difference between the maximum and minimum limits: $50.05 - 49.95 = 0.10$ mm."
+    },
+    {
+      "question": "For the shaft dimension of $50 \pm 0.05$ mm, what is the basic size?",
+      "options": [
+        { "text": "50.05 mm", "isCorrect": false },
+        { "text": "50.00 mm", "isCorrect": true },
+        { "text": "49.95 mm", "isCorrect": false },
+        { "text": "0.10 mm", "isCorrect": false }
+      ],
+      "explanation": "The basic size is the nominal dimension from which the variations are specified. In this case, it is 50.00 mm."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Kirchhoff's Current Law (KCL)</h3>\n<p class=\"mb-4\">KCL is based on the conservation of charge. It states that the algebraic sum of currents entering a node (or any closed boundary) is zero.</p>\n$$ \\sum I_{in} = \\sum I_{out} $$\n<p class=\"mb-4\">Essentially, this means that the total current flowing into a junction must equal the total current flowing out of it.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Kirchhoff's Voltage Law (KVL)</h3>\n<p class=\"mb-4\">KVL is based on the conservation of energy. It states that the algebraic sum of all the voltage drops and rises around any closed loop in a circuit is equal to zero.</p>\n$$ \\sum V = 0 $$\n<p class=\"mb-4\">When traversing a loop, a common convention is:\n    <ul class=\"list-disc list-inside space-y-2 mb-4\">\n        <li>Voltage sources are positive if you move from the - to + terminal (a voltage rise).</li>\n        <li>Voltage drops across resistors are negative if you move in the direction of the assumed current flow.</li>\n    </ul>\n</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Three currents enter a node: $I_1 = 3$ A, $I_2 = 5$ A, and $I_3$ leaves the node. A fourth current, $I_4$, also leaves the node. If $I_3 = 2$ A, what is $I_4$?",
+      "options": [
+        { "text": "10 A", "isCorrect": false },
+        { "text": "6 A", "isCorrect": true },
+        { "text": "0 A", "isCorrect": false },
+        { "text": "-6 A", "isCorrect": false }
+      ],
+      "explanation": "According to KCL, the sum of currents in equals the sum of currents out. $\\sum I_{in} = I_1 + I_2 = 3 + 5 = 8$ A. $\\sum I_{out} = I_3 + I_4 = 2 + I_4$. Setting them equal: $8 = 2 + I_4 \\implies I_4 = 6$ A."
+    },
+    {
+      "question": "A simple loop contains a 12 V battery and two resistors, $R_1$ and $R_2$. If the voltage drop across $R_1$ is 4 V, what is the voltage drop across $R_2$?",
+      "options": [
+        { "text": "16 V", "isCorrect": false },
+        { "text": "12 V", "isCorrect": false },
+        { "text": "8 V", "isCorrect": true },
+        { "text": "4 V", "isCorrect": false }
+      ],
+      "explanation": "According to KVL, the sum of voltages around the loop is zero. Starting from the negative terminal of the battery and going clockwise: $+12 \\text{ V} - V_1 - V_2 = 0$. We are given $V_1 = 4$ V. So, $12 - 4 - V_2 = 0 \\implies 8 - V_2 = 0 \\implies V_2 = 8$ V."
+    }
+  ]
+}

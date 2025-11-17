@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Incremental cost</strong>, also known as <strong>marginal cost</strong>, is the additional cost incurred as a result of producing one more unit of a product or service. It is the change in total cost that arises when the quantity produced is incremented by one unit.</p>\n$$ \\text{Incremental Cost} = \\frac{\\Delta C}{\\Delta Q} $$\n<p class=\"mb-4\">For many simple production scenarios, the incremental cost is simply the variable cost per unit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Application in Decision Making</h3>\n<p class=\"mb-4\">Incremental costs are crucial for making short-term economic decisions. They help answer questions like:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Should we produce one more item? (Yes, if the revenue from that item is greater than its incremental cost).</li>\n    <li>Should we accept a special order at a discounted price?</li>\n    <li>Should we make a component in-house or buy it from a supplier? (A \"make-or-buy\" decision).</li>\n</ul>\n<p class=\"mb-4\">Fixed costs are generally not included in incremental cost analysis, as they are not affected by the decision to produce one more unit (unless the decision requires a change in capacity, like buying a new machine).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A factory produces 1,000 widgets at a total cost of USD8,000. If it produces 1,001 widgets, the total cost is USD8,005. What is the incremental cost of the 1,001st widget?",
+      "options": [
+        { "text": "$8", "isCorrect": false },
+        { "text": "$5", "isCorrect": true },
+        { "text": "$8,005", "isCorrect": false },
+        { "text": "$3", "isCorrect": false }
+      ],
+      "explanation": "Incremental cost is the change in total cost for one additional unit. The change in cost is USD8,005 - USD8,000 = USD5. The change in quantity is 1. Therefore, the incremental cost is $5."
+    },
+    {
+      "question": "A company can produce a part in-house for a variable cost of USD10 per unit. A supplier offers to sell them the same part for USD12 per unit. Fixed costs associated with the in-house production line are $5,000 per month. Based on incremental cost, what should the company do?",
+      "options": [
+        { "text": "Buy from the supplier.", "isCorrect": false },
+        { "text": "Make the part in-house.", "isCorrect": true },
+        { "text": "It doesn't matter.", "isCorrect": false },
+        { "text": "Cannot be determined.", "isCorrect": false }
+      ],
+      "explanation": "When making this type of decision, we compare the incremental costs. The incremental cost to make the part is the variable cost, $10. The incremental cost to buy the part is the purchase price, $12. Since the cost to make is less than the cost to buy, the company should make the part. The fixed costs are considered sunk for this short-term decision, as they will be incurred regardless."
+    }
+  ]
+}

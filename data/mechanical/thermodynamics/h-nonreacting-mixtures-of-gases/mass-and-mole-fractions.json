@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">When analyzing mixtures of gases, it's important to describe the composition of the mixture. This can be done on a mass basis or a molar basis.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Mass Fraction ($mf_i$)</h3>\n<p class=\"mb-4\">The <strong>mass fraction</strong> of a component in a mixture is the ratio of the mass of that component ($m_i$) to the total mass of the mixture ($m_m$).</p>\n$$ mf_i = \\frac{m_i}{m_m} \\quad \\text{where} \\quad m_m = \\sum m_i$$\n<p class=\"mb-4\">The sum of the mass fractions of all components in a mixture is equal to 1: $\\sum mf_i = 1$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Mole Fraction ($y_i$)</h3>\n<p class=\"mb-4\">The <strong>mole fraction</strong> of a component is the ratio of the number of moles of that component ($N_i$) to the total number of moles in the mixture ($N_m$).</p>\n$$ y_i = \\frac{N_i}{N_m} \\quad \\text{where} \\quad N_m = \\sum N_i$$\n<p class=\"mb-4\">The sum of the mole fractions of all components is equal to 1: $\\sum y_i = 1$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Conversions</h3>\n<p class=\"mb-4\">Mass and number of moles are related by the molar mass ($M$) of the substance: $m = NM$. You can convert between mass fractions and mole fractions using the molar mass of each component ($M_i$) and the apparent (average) molar mass of the mixture ($M_m$).</p>\n$$ mf_i = y_i \\frac{M_i}{M_m} \\quad \\text{and} \\quad y_i = mf_i \\frac{M_m}{M_i} $$\n<p class=\"mb-4\">The apparent molar mass of the mixture is $M_m = \\sum y_i M_i = m_m / N_m$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A gas mixture contains 2 kg of Oxygen (O₂) and 8 kg of Nitrogen (N₂). What is the mass fraction of Oxygen?",
+      "options": [
+        { "text": "0.2", "isCorrect": true },
+        { "text": "0.25", "isCorrect": false },
+        { "text": "0.8", "isCorrect": false },
+        { "text": "0.4", "isCorrect": false }
+      ],
+      "explanation": "The total mass of the mixture is $m_m = m_{O2} + m_{N2} = 2 + 8 = 10$ kg. The mass fraction of oxygen is $mf_{O2} = m_{O2} / m_m = 2 / 10 = 0.2$."
+    },
+    {
+      "question": "A mixture of gases consists of 3 moles of Nitrogen (N₂) and 1 mole of Oxygen (O₂). What is the mole fraction of Nitrogen?",
+      "options": [
+        { "text": "0.25", "isCorrect": false },
+        { "text": "0.33", "isCorrect": false },
+        { "text": "0.75", "isCorrect": true },
+        { "text": "3.0", "isCorrect": false }
+      ],
+      "explanation": "The total number of moles in the mixture is $N_m = N_{N2} + N_{O2} = 3 + 1 = 4$ moles. The mole fraction of nitrogen is $y_{N2} = N_{N2} / N_m = 3 / 4 = 0.75$."
+    },
+    {
+      "question": "For the mixture in the previous problem (3 moles N₂, 1 mole O₂), what is the mass fraction of Oxygen? (Molar masses: N₂ ≈ 28 g/mol, O₂ ≈ 32 g/mol).",
+      "options": [
+        { "text": "0.276", "isCorrect": true },
+        { "text": "0.250", "isCorrect": false },
+        { "text": "0.533", "isCorrect": false },
+        { "text": "0.724", "isCorrect": false }
+      ],
+      "explanation": "First, find the mass of each component: $m_{N2} = N \\cdot M = 3 \\cdot 28 = 84$ g. $m_{O2} = N \\cdot M = 1 \\cdot 32 = 32$ g. The total mass is $m_m = 84 + 32 = 116$ g. The mass fraction of oxygen is $mf_{O2} = m_{O2} / m_m = 32 / 116 \\approx 0.276$."
+    }
+  ]
+}

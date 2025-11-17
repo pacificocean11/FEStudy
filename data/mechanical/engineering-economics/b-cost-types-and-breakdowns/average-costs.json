@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Average Cost</strong>, also known as unit cost, is the total cost divided by the number of units produced.</p>\n$$ AC = \\frac{TC}{Q} = \\frac{FC + (VC_{unit} \\times Q)}{Q} = \\frac{FC}{Q} + VC_{unit} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Behavior of Average Cost</h3>\n<p class=\"mb-4\">The average cost per unit is typically high at low production levels because the fixed costs are spread over a small number of units. As production quantity ($Q$) increases, the average fixed cost per unit ($FC/Q$) decreases, causing the overall average cost to go down.</p>\n<p class=\"mb-4\">This is a key concept in economies of scale.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Average vs. Incremental Cost</h3>\n<p class=\"mb-4\">It's important not to confuse average cost with incremental cost. Average cost includes a portion of the fixed costs, while incremental cost (for producing one more unit) typically does not. Decisions about pricing and production levels should be based on incremental costs, not average costs.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A company has fixed costs of $10,000 per month and a variable cost of $5 per unit. If the company produces 2,000 units in a month, what is the average cost per unit?",
+      "options": [
+        { "text": "$5", "isCorrect": false },
+        { "text": "$10", "isCorrect": true },
+        { "text": "$15", "isCorrect": false },
+        { "text": "$20,000", "isCorrect": false }
+      ],
+      "explanation": "First, find the total cost: $TC = FC + VC_{total} = $10,000 + ($5/unit \\times 2,000 units) = $10,000 + $10,000 = $20,000$. Now, find the average cost: $AC = TC / Q = $20,000 / 2,000 units = $10$ per unit."
+    },
+    {
+      "question": "For the company in the previous problem, if production increases to 5,000 units, what happens to the average cost per unit?",
+      "options": [
+        { "text": "It increases.", "isCorrect": false },
+        { "text": "It decreases.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false },
+        { "text": "It becomes equal to the variable cost.", "isCorrect": false }
+      ],
+      "explanation": "The new total cost is $TC = $10,000 + ($5 \\times 5,000) = $10,000 + $25,000 = $35,000$. The new average cost is $AC = $35,000 / 5,000 = $7$ per unit. The average cost decreased from $10 to $7 because the fixed cost is now spread over more units."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Error propagation</strong> (or propagation of uncertainty) is the study of how uncertainties in individual measurements combine to affect the uncertainty in a final calculated result. If a quantity $Z$ is calculated from several measured variables ($X, Y, ...$), each with its own uncertainty ($\delta X, \delta Y, ...$), then $Z$ will also have an uncertainty ($\delta Z$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas for Random Errors</h3>\n<p class=\"mb-4\">Assuming the uncertainties in the measured variables are independent and random, the following formulas apply:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Addition and Subtraction ($Z = X \pm Y$):</strong><br>The absolute uncertainties add in quadrature (sum of squares).\n    $$ \\delta Z = \\sqrt{(\\delta X)^2 + (\\delta Y)^2} $$\n    </li>\n    <li><strong>Multiplication and Division ($Z = XY$ or $Z = X/Y$):</strong><br>The fractional (or relative) uncertainties add in quadrature.\n    $$ \\frac{\\delta Z}{|Z|} = \\sqrt{\\left(\\frac{\\delta X}{X}\\right)^2 + \\left(\\frac{\\delta Y}{Y}\\right)^2} $$\n    </li>\n    <li><strong>Multiplication by a Constant ($Z = cX$):</strong><br>The absolute uncertainty is multiplied by the constant.\n    $$ \\delta Z = |c| \\delta X $$\n    </li>\n    <li><strong>Powers ($Z = X^n$):</strong><br>The fractional uncertainty is multiplied by the power.\n    $$ \\frac{\\delta Z}{|Z|} = |n| \\frac{\\delta X}{|X|} $$\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The length and width of a rectangle are measured to be $L = 10.0 \pm 0.1$ cm and $W = 5.0 \pm 0.1$ cm. What is the uncertainty in the perimeter of the rectangle?",
+      "options": [
+        { "text": "$\pm 0.1$ cm", "isCorrect": false },
+        { "text": "$\pm 0.2$ cm", "isCorrect": false },
+        { "text": "$\pm 0.28$ cm", "isCorrect": true },
+        { "text": "$\pm 0.4$ cm", "isCorrect": false }
+      ],
+      "explanation": "The perimeter is $P = 2L + 2W$. We use the rules for addition and multiplication by a constant. The uncertainty in $2L$ is $2 \\times 0.1 = 0.2$ cm. The uncertainty in $2W$ is $2 \\times 0.1 = 0.2$ cm. Now, add these uncertainties in quadrature: $\\delta P = \\sqrt{(\\delta(2L))^2 + (\\delta(2W))^2} = \\sqrt{(0.2)^2 + (0.2)^2} = \\sqrt{0.04 + 0.04} = \\sqrt{0.08} \\approx 0.283$ cm."
+    },
+    {
+      "question": "For the rectangle in the previous problem ($L = 10.0 \pm 0.1$ cm, $W = 5.0 \pm 0.1$ cm), what is the uncertainty in the area?",
+      "options": [
+        { "text": "$\pm 1.12 \\text{ cm}^2$", "isCorrect": true },
+        { "text": "$\pm 1.5 \\text{ cm}^2$", "isCorrect": false },
+        { "text": "$\pm 0.5 \\text{ cm}^2$", "isCorrect": false },
+        { "text": "$\pm 1.0 \\text{ cm}^2$", "isCorrect": false }
+      ],
+      "explanation": "The area is $A = LW = (10)(5) = 50 \\text{ cm}^2$. For multiplication, the fractional uncertainties add in quadrature. $\\frac{\\delta L}{L} = \\frac{0.1}{10} = 0.01$. $\\frac{\\delta W}{W} = \\frac{0.1}{5} = 0.02$. The fractional uncertainty in the area is $\\frac{\\delta A}{A} = \\sqrt{(\\frac{\\delta L}{L})^2 + (\\frac{\\delta W}{W})^2} = \\sqrt{(0.01)^2 + (0.02)^2} = \\sqrt{0.0001 + 0.0004} = \\sqrt{0.0005} \\approx 0.02236$. The absolute uncertainty is $\\delta A = A \\cdot (\\frac{\\delta A}{A}) = 50 \\cdot 0.02236 \\approx 1.118 \\text{ cm}^2$."
+    }
+  ]
+}

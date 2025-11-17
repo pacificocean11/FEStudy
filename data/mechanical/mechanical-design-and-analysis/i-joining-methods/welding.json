@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Welding</strong> is a fabrication process that joins materials, usually metals or thermoplastics, by using high heat to melt the parts together and allowing them to cool, causing fusion. Welding is distinct from lower temperature metal-joining techniques such as brazing and soldering, which do not melt the base metal.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Arc Welding Processes</h3>\n<p class=\"mb-4\">Arc welding uses an electric arc to create intense heat to melt and join the metals.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Shielded Metal Arc Welding (SMAW):</strong> Also known as 'stick welding'. Uses a consumable electrode coated in flux to lay the weld. The flux coating melts to provide a shielding gas and a layer of slag, both of which protect the weld area from atmospheric contamination.</li>\n    <li><strong>Gas Metal Arc Welding (GMAW):</strong> Also known as 'MIG' (Metal Inert Gas) welding. Uses a continuously fed wire electrode and a shielding gas (like argon or helium) that is fed through the welding gun. It is a faster process than SMAW and easier to learn.</li>\n    <li><strong>Gas Tungsten Arc Welding (GTAW):</strong> Also known as 'TIG' (Tungsten Inert Gas) welding. Uses a non-consumable tungsten electrode to produce the weld. A separate filler metal is often used. It is a more precise and clean process, used for high-quality welds on a variety of metals.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Weld Types and Symbols</h3>\n<p class=\"mb-4\">Engineering drawings use standardized symbols to specify the type, size, and location of a weld. Common weld types include fillet welds (for T-joints) and groove welds (for butt joints).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which welding process uses a non-consumable tungsten electrode and is known for producing high-quality, precise welds?",
+      "options": [
+        { "text": "SMAW (Stick)", "isCorrect": false },
+        { "text": "GMAW (MIG)", "isCorrect": false },
+        { "text": "GTAW (TIG)", "isCorrect": true },
+        { "text": "Oxy-acetylene welding", "isCorrect": false }
+      ],
+      "explanation": "Gas Tungsten Arc Welding (TIG) uses a tungsten electrode which is not consumed in the process. Its precise control over the heat and filler material makes it the preferred method for high-quality work, such as on aluminum and stainless steel."
+    },
+    {
+      "question": "What is the primary purpose of the flux coating on an SMAW (stick) electrode?",
+      "options": [
+        { "text": "To add metal to the weld pool.", "isCorrect": false },
+        { "text": "To provide a shielding gas and slag to protect the weld.", "isCorrect": true },
+        { "text": "To conduct electricity to the arc.", "isCorrect": false },
+        { "text": "To cool the weld.", "isCorrect": false }
+      ],
+      "explanation": "The flux coating decomposes in the heat of the arc to create a protective cloud of gas and a liquid slag cover. Both of these shield the molten weld pool from oxygen and nitrogen in the atmosphere, which would otherwise cause defects like porosity and embrittlement."
+    }
+  ]
+}

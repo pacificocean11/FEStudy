@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Minimum Cost Analysis</strong> is a technique used to find the optimal value of a variable that minimizes the total cost. This is often applied to situations where the total cost is a sum of two opposing cost functions: one that decreases as the variable increases, and one that increases as the variable increases.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Application: Economic Order Quantity (EOQ)</h3>\n<p class=\"mb-4\">A classic example is the Economic Order Quantity model in inventory management, which seeks to find the order quantity ($Q$) that minimizes the total inventory cost. The total cost is the sum of ordering costs and holding costs.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Ordering Cost:</strong> Decreases as order quantity increases (fewer orders are placed per year).</li>\n    <li><strong>Holding Cost:</strong> Increases as order quantity increases (higher average inventory level).</li>\n</ul>\n<p class=\"mb-4\">The total cost function has a minimum where these two costs balance.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Finding the Minimum</h3>\n<p class=\"mb-4\">To find the minimum cost, you can use calculus:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Develop an equation for the total cost, $TC(x)$, as a function of the variable $x$.</li>\n    <li>Take the first derivative of the total cost function with respect to the variable: $d(TC)/dx$.</li>\n    <li>Set the derivative equal to zero and solve for the variable $x$. This value of $x$ is the optimal value that minimizes the total cost.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The total cost of producing a batch of widgets is given by the function $C(Q) = 100/Q + 0.25Q$, where Q is the batch size. What batch size minimizes the cost?",
+      "options": [
+        { "text": "10", "isCorrect": false },
+        { "text": "20", "isCorrect": true },
+        { "text": "400", "isCorrect": false },
+        { "text": "100", "isCorrect": false }
+      ],
+      "explanation": "To find the minimum, take the first derivative of the cost function with respect to Q and set it to zero. $C(Q) = 100Q^{-1} + 0.25Q$. The derivative is $dC/dQ = -100Q^{-2} + 0.25 = -100/Q^2 + 0.25$. Set this to zero: $0.25 = 100/Q^2 \\implies Q^2 = 100/0.25 = 400 \\implies Q = \\sqrt{400} = 20$."
+    }
+  ]
+}

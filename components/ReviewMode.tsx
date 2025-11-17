@@ -8,6 +8,10 @@ interface ReviewModeProps {
 }
 
 const ReviewMode: React.FC<ReviewModeProps> = ({ history, onNavigate, onClearHistory }) => {
+    // FIX: Explicitly type the aggregated performance records to fix type inference
+    // issues with `Object.values`, which was causing properties to be of type `unknown`.
+    type WeakTopicItem = PerformanceRecord & { count: number };
+
     const weakTopics = history.reduce((acc, record) => {
         const key = `${record.discipline}::${record.subject}::${record.topic}::${record.subtopicName}`;
         if (!acc[key]) {
@@ -18,9 +22,9 @@ const ReviewMode: React.FC<ReviewModeProps> = ({ history, onNavigate, onClearHis
         }
         acc[key].count++;
         return acc;
-    }, {} as Record<string, PerformanceRecord & { count: number }>);
+    }, {} as Record<string, WeakTopicItem>);
 
-    const sortedWeakTopics = Object.values(weakTopics).sort((a, b) => b.count - a.count);
+    const sortedWeakTopics = (Object.values(weakTopics) as WeakTopicItem[]).sort((a, b) => b.count - a.count);
 
     return (
         <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md">

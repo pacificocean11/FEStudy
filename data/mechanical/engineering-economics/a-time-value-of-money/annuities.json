@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An <strong>annuity</strong> is a series of equal payments or receipts that occur at evenly spaced intervals. Examples include loan payments, mortgage payments, and regular savings deposits.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Uniform Series (Ordinary Annuity)</h3>\n<p class=\"mb-4\">This is the most common type of annuity, where a uniform amount, $A$, is paid at the end of each period for a certain number of periods, $n$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Gradient Series</h3>\n<p class=\"mb-4\">A gradient series is a cash flow that changes by a constant amount each period. The change is called the gradient, $G$.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Arithmetic Gradient:</strong> The cash flow changes by the same amount each period (e.g., a maintenance cost that increases by USD50 each year). The cash flow at period n is $A_1 + (n-1)G$.</li>\n    <li><strong>Geometric Gradient:</strong> The cash flow changes by the same percentage each period (e.g., revenue that grows by 5% each year). The cash flow at period n is $A_1(1+g)^{n-1}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Deferred Annuities</h3>\n<p class=\"mb-4\">A deferred annuity is a uniform series that begins at some time in the future. For example, a series of payments that starts at the end of year 3 and continues to year 10. To analyze these, you can calculate the present worth of the annuity at its start date and then discount that single sum back to the true present (time 0).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A series of 10 equal annual payments of $1,000, with the first payment occurring one year from now, is called a(n):",
+      "options": [
+        { "text": "Single payment", "isCorrect": false },
+        { "text": "Ordinary annuity", "isCorrect": true },
+        { "text": "Gradient series", "isCorrect": false },
+        { "text": "Perpetuity", "isCorrect": false }
+      ],
+      "explanation": "An ordinary annuity (or uniform series) is defined as a series of equal payments made at the end of each period for a finite number of periods."
+    },
+    {
+      "question": "A maintenance cost is USD500 in year 1 and increases by USD50 each year thereafter. This type of cash flow is best described as a(n):",
+      "options": [
+        { "text": "Uniform series", "isCorrect": false },
+        { "text": "Geometric gradient series", "isCorrect": false },
+        { "text": "Arithmetic gradient series", "isCorrect": true },
+        { "text": "Deferred annuity", "isCorrect": false }
+      ],
+      "explanation": "Since the cash flow changes by a constant amount (USD50) each period, it is an arithmetic gradient series. A geometric gradient would change by a constant percentage."
+    }
+  ]
+}

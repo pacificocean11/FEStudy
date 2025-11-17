@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Feature Control Frame (FCF)</strong> is the primary tool used in Geometric Dimensioning and Tolerancing (GD&T) to specify geometric tolerances for a part feature. It is a rectangular box that contains all the necessary information to control a specific feature.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Compartments of an FCF</h3>\n<p class=\"mb-4\">A feature control frame is divided into several compartments, read from left to right:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Geometric Characteristic Symbol:</strong> This first compartment contains one of the 14 standard GD&T symbols (e.g., position, perpendicularity, flatness). It defines the type of control being applied.</li>\n    <li><strong>Tolerance Zone and Value:</strong> This compartment specifies the shape and size of the tolerance zone. It always begins with the total tolerance value. It may be preceded by a diameter symbol (⌀) if the tolerance zone is cylindrical. It can be followed by material condition modifiers:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>(M) for Maximum Material Condition (MMC)</li>\n            <li>(L) for Least Material Condition (LMC)</li>\n        </ul>\n    </li>\n    <li><strong>Datum References:</strong> These compartments (up to three) indicate the datum features to which the tolerance is related. They are listed in order of precedence: Primary, Secondary, and Tertiary. Datums provide the origin and orientation for the tolerance zone.</li>\n</ol>\n<p class=\"mb-4\">Example: A position tolerance FCF might read: [⌖|⌀0.1(M)|A|B|C]. This means the position of the feature must be within a cylindrical tolerance zone of 0.1 diameter at MMC, oriented and located relative to primary datum A, secondary datum B, and tertiary datum C.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a Feature Control Frame, what information is contained in the first (leftmost) compartment?",
+      "options": [
+        { "text": "The tolerance value", "isCorrect": false },
+        { "text": "The primary datum reference", "isCorrect": false },
+        { "text": "The geometric characteristic symbol", "isCorrect": true },
+        { "text": "A material condition modifier", "isCorrect": false }
+      ],
+      "explanation": "The first compartment always holds the symbol that defines the type of geometric control being applied, such as position (⌖), flatness (—), or perpendicularity (⊥)."
+    },
+    {
+      "question": "What does the symbol (M) inside a feature control frame, following the tolerance value, signify?",
+      "options": [
+        { "text": "Metric units are used.", "isCorrect": false },
+        { "text": "The tolerance applies at Maximum Material Condition.", "isCorrect": true },
+        { "text": "The measurement must be made manually.", "isCorrect": false },
+        { "text": "The feature is a minor dimension.", "isCorrect": false }
+      ],
+      "explanation": "The circled M is the modifier for Maximum Material Condition (MMC). This means the stated geometric tolerance applies when the feature is at its largest size (for an external feature like a pin) or smallest size (for an internal feature like a hole). It allows for additional tolerance as the feature departs from MMC."
+    }
+  ]
+}

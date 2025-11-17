@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Tensile Test</h3>\n<p class=\"mb-4\">The <strong>stress-strain diagram</strong> is a fundamental plot in materials science, generated from data obtained in a tensile test. A specimen of a material is pulled apart in a testing machine, and the applied load (stress) and the elongation (strain) are recorded. The resulting curve reveals many of the material's important mechanical properties.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Regions and Points</h3>\n<p class=\"mb-4\">For a typical ductile metal like low-carbon steel, the diagram shows several distinct regions:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Elastic Region:</strong> The initial linear portion of the curve. If the load is removed in this region, the material will return to its original shape. The slope of this line is the <strong>Modulus of Elasticity (E)</strong>, or Young's Modulus.</li>\n    <li><strong>Yield Point:</strong> The point at which the material begins to deform plastically. Beyond this point, the material will not return to its original length after the load is removed. The stress at this point is the <strong>Yield Strength ($S_y$)</strong>. For materials without a clear yield point, it is often defined by the 0.2% offset method.</li>\n    <li><strong>Strain Hardening:</strong> After yielding, the material becomes stronger and harder as it deforms, and more stress is required to continue the deformation.</li>\n    <li><strong>Ultimate Tensile Strength (UTS):</strong> The maximum stress the material can withstand. It is the peak of the stress-strain curve. Beyond this point, the specimen begins to 'neck' (decrease in cross-sectional area).</li>\n    <li><strong>Fracture:</strong> The point at which the specimen breaks.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Properties from the Curve</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Stiffness:</strong> The material's resistance to elastic deformation, measured by the Modulus of Elasticity (the slope of the elastic region).</li>\n    <li><strong>Ductility:</strong> The amount of plastic deformation a material can undergo before fracture. It is measured by the percent elongation at fracture.</li>\n    <li><strong>Toughness:</strong> The ability of a material to absorb energy up to fracture. It is represented by the total area under the stress-strain curve.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The slope of the initial linear portion of the stress-strain diagram represents which material property?",
+      "options": [
+        { "text": "Yield Strength", "isCorrect": false },
+        { "text": "Ultimate Tensile Strength", "isCorrect": false },
+        { "text": "Modulus of Elasticity (Stiffness)", "isCorrect": true },
+        { "text": "Ductility", "isCorrect": false }
+      ],
+      "explanation": "The Modulus of Elasticity (or Young's Modulus) is a measure of a material's stiffness. It is defined as the ratio of stress to strain in the elastic region, which is the slope of the linear portion of the curve."
+    },
+    {
+      "question": "What is the name for the maximum stress a material can withstand on the engineering stress-strain curve?",
+      "options": [
+        { "text": "Yield Strength", "isCorrect": false },
+        { "text": "Ultimate Tensile Strength", "isCorrect": true },
+        { "text": "Fracture Strength", "isCorrect": false },
+        { "text": "Proportional Limit", "isCorrect": false }
+      ],
+      "explanation": "The Ultimate Tensile Strength (UTS) is the highest point on the engineering stress-strain curve. It represents the maximum stress the material can sustain before necking begins and the apparent stress starts to decrease."
+    },
+    {
+      "question": "The total area under the stress-strain curve up to the point of fracture is a measure of the material's:",
+      "options": [
+        { "text": "Stiffness", "isCorrect": false },
+        { "text": "Hardness", "isCorrect": false },
+        { "text": "Ductility", "isCorrect": false },
+        { "text": "Toughness", "isCorrect": true }
+      ],
+      "explanation": "Toughness is defined as the ability of a material to absorb energy and deform plastically before fracturing. The energy absorbed per unit volume is represented by the area under the stress-strain curve."
+    }
+  ]
+}

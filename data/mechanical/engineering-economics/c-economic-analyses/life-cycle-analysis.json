@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Life Cycle Cost Analysis (LCCA)</strong> is an economic analysis technique that considers all costs associated with a product, system, or facility over its entire life. It is the economic counterpart to the environmental Life Cycle Assessment (LCA).</p>\n<p class=\"mb-4\">LCCA is used to compare alternatives, especially when one alternative has a low initial cost but high future costs, while another has a high initial cost but low future costs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Costs Included in LCCA</h3>\n<p class=\"mb-4\">A complete LCCA includes costs from all stages of the life cycle:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Initial Costs:</strong> Purchase price, acquisition, installation, and design costs.</li>\n    <li><strong>Operating Costs:</strong> Energy, fuel, water, and other recurring costs.</li>\n    <li><strong>Maintenance and Repair Costs:</strong> Scheduled maintenance, repairs, and component replacements.</li>\n    <li><strong>Disposal Costs:</strong> Costs to decommission and dispose of the asset at the end of its life.</li>\n    <li><strong>Salvage Value:</strong> Any revenue received from selling the asset at the end of its life (treated as a negative cost or a benefit).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Analysis Method</h3>\n<p class=\"mb-4\">To perform an LCCA, all costs and revenues over the life cycle are converted to a common equivalent value using an appropriate interest rate. The most common methods are Present Worth (PW) or Equivalent Annual Worth (EAW). The alternative with the lowest total life cycle cost is then selected.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Life Cycle Cost Analysis is most useful for:",
+      "options": [
+        { "text": "Determining the initial purchase price of an asset.", "isCorrect": false },
+        { "text": "Calculating the profit for the first year of a project.", "isCorrect": false },
+        { "text": "Comparing alternatives with different initial and operating costs over their entire lifespans.", "isCorrect": true },
+        { "text": "Assessing the environmental impact of a product.", "isCorrect": false }
+      ],
+      "explanation": "The primary purpose of LCCA is to provide a total cost of ownership perspective, which is crucial for comparing alternatives where the trade-off is between first cost and future costs (like energy efficiency)."
+    },
+    {
+      "question": "In a Life Cycle Cost Analysis, the money received from selling an old piece of equipment at the end of its useful life is called:",
+      "options": [
+        { "text": "Sunk cost", "isCorrect": false },
+        { "text": "Salvage value", "isCorrect": true },
+        { "text": "Overhead cost", "isCorrect": false },
+        { "text": "Book value", "isCorrect": false }
+      ],
+      "explanation": "Salvage value is the estimated resale value of an asset at the end of its useful life. It is treated as a positive cash flow (or negative cost) in the economic analysis."
+    }
+  ]
+}

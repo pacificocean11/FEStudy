@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An <strong>engineering drawing</strong> is a type of technical drawing used to fully and clearly define the requirements for engineered items. It is a graphical language that communicates ideas and information from one mind to another, most importantly from the designer to the manufacturer.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Orthographic Projection</h3>\n<p class=\"mb-4\">This is the primary method for representing 3D objects on a 2D surface. It involves projecting views of the object onto different planes. The standard views are Front, Top, and Right Side.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Third-Angle Projection:</strong> Used in the United States. The top view is placed above the front view, and the right-side view is placed to the right of the front view.</li>\n    <li><strong>First-Angle Projection:</strong> Used in Europe and Asia. The top view is placed below the front view, and the right-side view is placed to the left of the front view.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Alphabet of Lines</h3>\n<p class=\"mb-4\">Different line types and thicknesses are used to convey specific information:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Visible (Object) Line:</strong> Thick, solid line representing visible edges of the object.</li>\n    <li><strong>Hidden Line:</strong> Dashed line representing edges that are hidden from view.</li>\n    <li><strong>Center Line:</strong> Thin, long-dash/short-dash line used to show the center of holes, cylinders, and symmetrical features.</li>\n    <li><strong>Dimension Line:</strong> Thin line with arrowheads at the ends, used to indicate the extent of a dimension.</li>\n    <li><strong>Section Line:</strong> Thin lines drawn in a pattern, used to show the cut surfaces in a section view.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Title Block</h3>\n<p class=\"mb-4\">The title block, usually located in the bottom-right corner of the drawing, contains all the essential information to identify and interpret the drawing. This includes the part name, part number, material, general tolerances, scale, company name, and approval signatures.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In an engineering drawing, what type of line is used to represent an edge of an object that is not visible in a particular view?",
+      "options": [
+        { "text": "Visible line", "isCorrect": false },
+        { "text": "Center line", "isCorrect": false },
+        { "text": "Hidden line", "isCorrect": true },
+        { "text": "Phantom line", "isCorrect": false }
+      ],
+      "explanation": "Hidden lines, which are medium-weight dashed lines, are used to show edges, surfaces, and corners of an object that are concealed from view."
+    },
+    {
+      "question": "The standard orthographic projection system used in the United States is:",
+      "options": [
+        { "text": "First-Angle Projection", "isCorrect": false },
+        { "text": "Second-Angle Projection", "isCorrect": false },
+        { "text": "Third-Angle Projection", "isCorrect": true },
+        { "text": "Isometric Projection", "isCorrect": false }
+      ],
+      "explanation": "Third-angle projection is the standard in the US and Canada. In this system, the views are arranged logically: the view of the top is on top, the view of the right is on the right, etc."
+    }
+  ]
+}

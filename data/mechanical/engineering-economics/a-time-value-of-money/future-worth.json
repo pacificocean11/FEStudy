@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Future Worth (FW)</strong>, also known as Future Value (FV), is the value of a present amount or a series of payments at a specified date in the future, at a given interest rate. FW analysis is used to determine the future value of an investment.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Formulas (Interest Factors)</h3>\n<p class=\"mb-4\">The formulas are often expressed using standard factor notation, where (X/Y, i, n) means \"Find X, given Y, at interest rate i for n periods\".</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Find F, given P (Single Payment Compound Amount Factor, F/P):</strong><br>This calculates the future value of a single present amount.\n    $$ F = P(1+i)^n = P(F/P, i, n)$$\n    </li>\n    <li><strong>Find F, given A (Uniform Series Compound Amount Factor, F/A):</strong><br>This calculates the future value of a uniform series of payments (annuity).\n    $$ F = A \\left[ \\frac{(1+i)^n - 1}{i} \\right] = A(F/A, i, n)$$\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "If you invest $5,000 today at an interest rate of 7% compounded annually, what will it be worth in 10 years? The (F/P, 7%, 10) factor is 1.967.",
+      "options": [
+        { "text": "$9,835", "isCorrect": true },
+        { "text": "$5,350", "isCorrect": false },
+        { "text": "$8,500", "isCorrect": false },
+        { "text": "$10,000", "isCorrect": false }
+      ],
+      "explanation": "We need to find the future worth (F) of a present sum (P). We use the F/P factor. $F = P(F/P, i, n) = $5,000(1.967) = $9,835$."
+    },
+    {
+      "question": "If you deposit $2,000 at the end of each year for 5 years into an account that pays 6% interest, how much will you have at the end of the 5 years? The (F/A, 6%, 5) factor is 5.637.",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$11,274", "isCorrect": true },
+        { "text": "$2,693", "isCorrect": false },
+        { "text": "$15,637", "isCorrect": false }
+      ],
+      "explanation": "We need to find the future worth (F) of an annual series of payments (A). We use the F/A factor. $F = A(F/A, i, n) = $2,000(5.637) = $11,274$."
+    }
+  ]
+}

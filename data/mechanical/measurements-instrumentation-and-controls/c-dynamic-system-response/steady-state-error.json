@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>steady-state error ($e_{ss}$)</strong> is the difference between the desired final output (the input, $r(t)$) and the actual final output ($y(t)$) as time approaches infinity.</p>\n$$ e_{ss} = \\lim_{t \\to \\infty} [r(t) - y(t)] $$\n<p class=\"mb-4\">It is a measure of the accuracy of a control system in tracking a given input.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Final Value Theorem</h3>\n<p class=\"mb-4\">The steady-state error can be calculated from the open-loop transfer function $G(s)$ using the Final Value Theorem, without having to find the full time response. For a unity feedback system, the error signal is $E(s) = R(s) / (1 + G(s))$.</p>\n$$ e_{ss} = \\lim_{s \\to 0} sE(s) = \\lim_{s \\to 0} \\frac{s R(s)}{1 + G(s)} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. System Type and Error Constants</h3>\n<p class=\"mb-4\">The steady-state error depends on the <strong>system type</strong>, which is the number of pure integrators (poles at $s=0$) in the open-loop transfer function $G(s)$.</p>\n<p class=\"mb-4\">The error also depends on the type of input (step, ramp, etc.). We define static error constants:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Position Error Constant: $K_p = \\lim_{s \\to 0} G(s)$</li>\n    <li>Velocity Error Constant: $K_v = \\lim_{s \\to 0} sG(s)$</li>\n    <li>Acceleration Error Constant: $K_a = \\lim_{s \\to 0} s^2G(s)$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Steady-State Error Table</h3>\n<table class=\"w-full text-left border-collapse\">\n  <thead>\n    <tr>\n      <th class=\"border p-2 font-semibold\"></th>\n      <th class=\"border p-2 font-semibold\">Step Input ($r(t)=A$)</th>\n      <th class=\"border p-2 font-semibold\">Ramp Input ($r(t)=At$)</th>\n      <th class=\"border p-2 font-semibold\">Parabolic Input ($r(t)=At^2/2$)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"border p-2 font-semibold\">Type 0 System</td>\n      <td class=\"border p-2\">$e_{ss} = \\frac{A}{1+K_p}$ (Constant error)</td>\n      <td class=\"border p-2\">$e_{ss} = \\infty$</td>\n      <td class=\"border p-2\">$e_{ss} = \\infty$</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2 font-semibold\">Type 1 System</td>\n      <td class=\"border p-2\">$e_{ss} = 0$</td>\n      <td class=\"border p-2\">$e_{ss} = \\frac{A}{K_v}$ (Constant error)</td>\n      <td class=\"border p-2\">$e_{ss} = \\infty$</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2 font-semibold\">Type 2 System</td>\n      <td class=\"border p-2\">$e_{ss} = 0$</td>\n      <td class=\"border p-2\">$e_{ss} = 0$</td>\n      <td class=\"border p-2\">$e_{ss} = \\frac{A}{K_a}$ (Constant error)</td>\n    </tr>\n  </tbody>\n</table>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A unity feedback system has an open-loop transfer function $G(s) = \\frac{10}{s(s+2)}$. What is the system type and what is the steady-state error for a unit step input?",
+      "options": [
+        { "text": "Type 1, Error = 0.1", "isCorrect": false },
+        { "text": "Type 0, Error = 1/11", "isCorrect": false },
+        { "text": "Type 1, Error = 0", "isCorrect": true },
+        { "text": "Type 0, Error = infinity", "isCorrect": false }
+      ],
+      "explanation": "The system type is the number of integrators (poles at s=0) in G(s). Here, there is one integrator ('s' in the denominator), so it is a Type 1 system. According to the table, a Type 1 system has zero steady-state error for a step input."
+    },
+    {
+      "question": "For the same system, $G(s) = \\frac{10}{s(s+2)}$, what is the steady-state error for a unit ramp input ($r(t)=t$)?",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "Infinity", "isCorrect": false },
+        { "text": "0.2", "isCorrect": true },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "For a ramp input, the steady-state error is $e_{ss} = 1/K_v$. We first need to calculate the velocity error constant: $K_v = \\lim_{s \\to 0} sG(s) = \\lim_{s \\to 0} s \\frac{10}{s(s+2)} = \\lim_{s \\to 0} \\frac{10}{s+2} = \\frac{10}{2} = 5$. Therefore, the steady-state error is $e_{ss} = 1/5 = 0.2$."
+    }
+  ]
+}

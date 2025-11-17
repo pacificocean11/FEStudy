@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Hypothesis Testing</h3>\n<p class=\"mb-4\">Hypothesis testing is a method of statistical inference used to decide whether the data at hand sufficiently support a particular hypothesis. It allows us to make decisions about a population based on sample data.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Null and Alternative Hypotheses</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Null Hypothesis ($H_0$):</strong> This is a statement of no effect, no difference, or no relationship. It is the default assumption that we seek to find evidence against. It always contains a statement of equality (e.g., =, ≤, ≥).</li>\n    <li><strong>Alternative Hypothesis ($H_a$ or $H_1$):</strong> This is the claim we want to test or find evidence for. It is the opposite of the null hypothesis and never contains a statement of equality (e.g., ≠, <, >).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. The Process and p-value</h3>\n<p class=\"mb-4\">The general process is to assume the null hypothesis is true, then determine how surprising our sample data is under this assumption. This is quantified by the <strong>p-value</strong>.</p>\n<p class=\"mb-4\">The p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. A small p-value (e.g., < 0.05) means our observed data is very unlikely if the null hypothesis were true, so we have evidence against the null hypothesis.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Significance Level and Errors</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Significance Level ($\\alpha$):</strong> A pre-determined threshold for the p-value (commonly 0.05, 0.01, or 0.10). If the p-value is less than $\\alpha$, we <strong>reject the null hypothesis</strong>.</li>\n    <li><strong>Type I Error:</strong> Rejecting the null hypothesis when it is actually true. The probability of a Type I error is equal to the significance level, $\\alpha$.</li>\n    <li><strong>Type II Error:</strong> Failing to reject the null hypothesis when it is actually false. The probability of a Type II error is denoted by $\\beta$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A manufacturer claims that the mean lifetime of their light bulbs is 1000 hours. A consumer group wants to test if the mean lifetime is actually less than this. What are the null and alternative hypotheses?",
+      "options": [
+        { "text": "$H_0: \\mu = 1000$, $H_a: \\mu \\neq 1000$", "isCorrect": false },
+        { "text": "$H_0: \\mu = 1000$, $H_a: \\mu < 1000$", "isCorrect": true },
+        { "text": "$H_0: \\mu < 1000$, $H_a: \\mu = 1000$", "isCorrect": false },
+        { "text": "$H_0: \\mu = 1000$, $H_a: \\mu > 1000$", "isCorrect": false }
+      ],
+      "explanation": "The null hypothesis is the statement of the status quo or the manufacturer's claim, which includes equality: $H_0: \\mu = 1000$. The alternative hypothesis is what the consumer group wants to test, which is that the lifetime is less than claimed: $H_a: \\mu < 1000$."
+    },
+    {
+      "question": "A statistical test is performed on a new alloy, and the resulting p-value is 0.023. If the engineers are using a significance level of $\\alpha = 0.05$, what is the correct conclusion?",
+      "options": [
+        { "text": "Fail to reject the null hypothesis.", "isCorrect": false },
+        { "text": "Accept the null hypothesis.", "isCorrect": false },
+        { "text": "Reject the null hypothesis.", "isCorrect": true },
+        { "text": "The test is inconclusive.", "isCorrect": false }
+      ],
+      "explanation": "The decision rule is: if the p-value is less than the significance level $\\alpha$, we reject the null hypothesis. Here, $0.023 < 0.05$, so there is statistically significant evidence to reject the null hypothesis."
+    },
+    {
+      "question": "In hypothesis testing, what is a Type I error?",
+      "options": [
+        { "text": "Accepting a false null hypothesis.", "isCorrect": false },
+        { "text": "Rejecting a true null hypothesis.", "isCorrect": true },
+        { "text": "Accepting a true alternative hypothesis.", "isCorrect": false },
+        { "text": "Rejecting a false alternative hypothesis.", "isCorrect": false }
+      ],
+      "explanation": "A Type I error is the mistake of rejecting the null hypothesis when it is actually true. This is often considered a 'false positive' conclusion. The probability of making this error is controlled by the chosen significance level, $\\alpha$."
+    }
+  ]
+}

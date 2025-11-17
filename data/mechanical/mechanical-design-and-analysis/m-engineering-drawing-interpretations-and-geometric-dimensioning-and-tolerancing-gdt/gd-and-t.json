@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Geometric Dimensioning and Tolerancing (GD&T)</strong> is an international symbolic language used on engineering drawings to define and communicate engineering tolerances. It specifies the allowable variation in the geometry (form, orientation, location) of a part feature.</p>\n<p class=\"mb-4\">GD&T is used to define the functional requirements of a part. It ensures that parts will fit together and function as intended, regardless of where they are manufactured.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Datums and the Feature Control Frame</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Datum:</strong> A theoretically exact point, axis, or plane from which dimensions and tolerances are referenced. Datums create a coordinate system (Datum Reference Frame) for the part.</li>\n    <li><strong>Feature Control Frame:</strong> The primary tool for applying GD&T. It is a rectangular box that specifies the geometric control, tolerance zone, and datum references for a feature.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Categories of Geometric Tolerances</h3>\n<p class=\"mb-4\">The 14 geometric symbols are organized into categories:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Form (Individual Features):</strong> Control the shape of a feature. They do not require a datum reference.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>Straightness, Flatness, Circularity, Cylindricity</li>\n        </ul>\n    </li>\n    <li><strong>Orientation (Related Features):</strong> Control the orientation of a feature relative to a datum.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>Perpendicularity, Parallelism, Angularity</li>\n        </ul>\n    </li>\n    <li><strong>Location (Related Features):</strong> Control the location of a feature relative to a datum or another feature.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>Position, Concentricity, Symmetry</li>\n        </ul>\n    </li>\n    <li><strong>Profile (Individual or Related Features):</strong> Controls the 3D shape of a surface or the 2D shape of a line element.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>Profile of a Surface, Profile of a Line</li>\n        </ul>\n    </li>\n    <li><strong>Runout (Related Features):</strong> Controls the variation of a circular feature as it is rotated about a datum axis.\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>Circular Runout, Total Runout</li>\n        </ul>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which category of GD&T control does NOT require a datum reference?",
+      "options": [
+        { "text": "Form", "isCorrect": true },
+        { "text": "Orientation", "isCorrect": false },
+        { "text": "Location", "isCorrect": false },
+        { "text": "Runout", "isCorrect": false }
+      ],
+      "explanation": "Form tolerances (Straightness, Flatness, Circularity, Cylindricity) control the shape of a feature relative to itself. Therefore, they are not related to any other feature and do not use datums."
+    },
+    {
+      "question": "What is the primary purpose of a datum in GD&T?",
+      "options": [
+        { "text": "To specify the material of the part.", "isCorrect": false },
+        { "text": "To indicate the surface finish.", "isCorrect": false },
+        { "text": "To provide a theoretical reference point, axis, or plane for other measurements.", "isCorrect": true },
+        { "text": "To set the overall size tolerance of the part.", "isCorrect": false }
+      ],
+      "explanation": "Datums are the foundation of GD&T. They create a theoretically perfect coordinate system (the Datum Reference Frame) from which the location and orientation of other features are controlled."
+    }
+  ]
+}

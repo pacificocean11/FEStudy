@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Limit gauges</strong> are inspection tools used to quickly check if a workpiece's dimension is within its specified tolerance limits. They do not provide an actual measurement value; instead, they give a simple 'pass' or 'fail' result. This method is called gauging.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. GO and NO-GO Principle</h3>\n<p class=\"mb-4\">Limit gauges work in pairs, consisting of a 'GO' gauge and a 'NO-GO' gauge.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>GO Gauge:</strong> This gauge is designed to check the <strong>Maximum Material Condition (MMC)</strong> of the feature. The MMC is the condition where the feature contains the most material (e.g., the smallest hole or the largest shaft). The GO gauge must fit into or onto the feature.</li>\n    <li><strong>NO-GO Gauge:</strong> This gauge is designed to check the <strong>Least Material Condition (LMC)</strong> of the feature. The LMC is the condition where the feature contains the least material (e.g., the largest hole or the smallest shaft). The NO-GO gauge must *not* fit into or onto the feature.</li>\n</ul>\n<p class=\"mb-4\">For a part to be acceptable, the GO gauge must fit, and the NO-GO gauge must not fit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Types of Gauges</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Plug Gauges:</strong> Used for inspecting internal features, like holes. They have a GO member on one end and a NO-GO member on the other.</li>\n    <li><strong>Ring Gauges:</strong> Used for inspecting external features, like shafts. They come as a pair of separate GO and NO-GO rings.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When inspecting a hole with a limit plug gauge, which condition indicates that the hole is within its tolerance limits?",
+      "options": [
+        { "text": "Both the GO and NO-GO ends enter the hole.", "isCorrect": false },
+        { "text": "Neither the GO nor the NO-GO end enters the hole.", "isCorrect": false },
+        { "text": "The GO end enters, but the NO-GO end does not.", "isCorrect": true },
+        { "text": "The NO-GO end enters, but the GO end does not.", "isCorrect": false }
+      ],
+      "explanation": "The GO end checks the minimum hole size (MMC). It must enter to ensure the hole is not too small. The NO-GO end checks the maximum hole size (LMC). It must not enter to ensure the hole is not too large. Therefore, 'GO enters, NO-GO does not' is the condition for an acceptable part."
+    },
+    {
+      "question": "A GO gauge is designed to check which condition of a part feature?",
+      "options": [
+        { "text": "Least Material Condition (LMC)", "isCorrect": false },
+        { "text": "Maximum Material Condition (MMC)", "isCorrect": true },
+        { "text": "The exact basic size", "isCorrect": false },
+        { "text": "The average size", "isCorrect": false }
+      ],
+      "explanation": "The GO gauge checks the condition where the feature has the most material, which corresponds to the tightest fit. For a hole, this is its minimum diameter. For a shaft, this is its maximum diameter."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Correlation Coefficient (r)</h3>\n<p class=\"mb-4\">The <strong>sample correlation coefficient</strong>, denoted by $r$, is a measure of the strength and direction of the linear relationship between two variables. It is a value between -1 and +1.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$r = +1$: Perfect positive linear correlation.</li>\n    <li>$r = -1$: Perfect negative linear correlation.</li>\n    <li>$r = 0$: No linear correlation.</li>\n    <li>A value close to +1 or -1 indicates a strong linear relationship.</li>\n    <li>A value close to 0 indicates a weak linear relationship.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula for r</h3>\n<p class=\"mb-4\">For a set of $n$ data points $(x_i, y_i)$, the correlation coefficient is calculated as:</p>\n$$ r = \\frac{n(\\sum x_i y_i) - (\\sum x_i)(\\sum y_i)}{\\sqrt{[n(\\sum x_i^2) - (\\sum x_i)^2][n(\\sum y_i^2) - (\\sum y_i)^2]}} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Coefficient of Determination (r²)</h3>\n<p class=\"mb-4\">The <strong>coefficient of determination</strong>, $r^2$, is the square of the correlation coefficient. It represents the proportion of the variance in the dependent variable ($y$) that is predictable from the independent variable ($x$).</p>\n<p class=\"mb-4\">For example, if $r=0.9$, then $r^2=0.81$. This means that 81% of the variation in the y-values can be explained by the linear relationship with the x-values. The remaining 19% is unexplained variation (error).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A researcher finds that the correlation coefficient between two variables is $r = -0.95$. How would you describe this relationship?",
+      "options": [
+        { "text": "A strong positive linear relationship.", "isCorrect": false },
+        { "text": "A weak positive linear relationship.", "isCorrect": false },
+        { "text": "A strong negative linear relationship.", "isCorrect": true },
+        { "text": "Almost no linear relationship.", "isCorrect": false }
+      ],
+      "explanation": "A correlation coefficient close to -1 indicates a strong negative linear relationship. This means that as one variable increases, the other variable tends to decrease in a highly predictable linear pattern."
+    },
+    {
+      "question": "If the correlation coefficient for a dataset is found to be $r=0.8$, what is the coefficient of determination, and what does it mean?",
+      "options": [
+        { "text": "$r^2 = 0.64$; it means 64% of the variation in y is explained by the relationship with x.", "isCorrect": true },
+        { "text": "$r^2 = 0.8$; it means 80% of the variation in y is explained by the relationship with x.", "isCorrect": false },
+        { "text": "$r^2 = 1.6$; it means the relationship is very strong.", "isCorrect": false },
+        { "text": "$r^2 = 0.64$; it means the slope of the regression line is 0.64.", "isCorrect": false }
+      ],
+      "explanation": "The coefficient of determination is $r^2 = (0.8)^2 = 0.64$. This value represents the proportion of the variance that is explained by the model. Therefore, 64% of the variability in the dependent variable can be accounted for by the linear regression model with the independent variable."
+    }
+  ]
+}

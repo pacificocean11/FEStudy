@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definitions</h3>\n<p class=\"mb-4\">There are two ways to define stress and strain, leading to two different types of stress-strain diagrams:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Engineering Stress ($\\sigma$) and Strain ($\\epsilon$):</strong> These are the most common definitions, used to generate the standard stress-strain curve. They are based on the <strong>original</strong> dimensions of the specimen.</li>\n    $$ \\sigma = \\frac{P}{A_0} \\quad \\quad \\epsilon = \\frac{\\Delta L}{L_0} = \\frac{L - L_0}{L_0} $$\n    <p class=\"text-sm\">where $P$ is the applied load, $A_0$ is the original cross-sectional area, $L_0$ is the original length, and $L$ is the current length.</p>\n    <li><strong>True Stress ($\\sigma_T$) and Strain ($\\epsilon_T$):</strong> These definitions are based on the <strong>instantaneous</strong> dimensions of the specimen at any given time.</li>\n    $$ \\sigma_T = \\frac{P}{A_i} \\quad \\quad \\epsilon_T = \\ln\\left(\\frac{L_i}{L_0}\\right) $$\n    <p class=\"text-sm\">where $A_i$ is the instantaneous area and $L_i$ is the instantaneous length.</p>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Comparing the Curves</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>In the elastic region, the difference between the two curves is negligible.</li>\n    <li>In the plastic region, as the specimen stretches, its cross-sectional area decreases. Engineering stress uses the constant original area ($A_0$), while true stress uses the smaller instantaneous area ($A_i$). Therefore, true stress is always higher than engineering stress in the plastic region.</li>\n    <li>The most significant difference occurs after the Ultimate Tensile Strength (UTS). On the engineering curve, the stress appears to decrease because the formula doesn't account for the significant area reduction during 'necking'. On the true stress curve, the stress continues to increase all the way to fracture because it accounts for the smaller area, more accurately reflecting that the material is becoming stronger due to strain hardening.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Conversion Formulas</h3>\n<p class=\"mb-4\">Assuming the volume of the material remains constant during plastic deformation, the following conversions can be used:</p>\n$$ \\sigma_T = \\sigma (1 + \\epsilon) $$\n$$ \\epsilon_T = \\ln(1 + \\epsilon) $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Why does the engineering stress-strain curve for a ductile metal show a decrease in stress after the Ultimate Tensile Strength (UTS)?",
+      "options": [
+        { "text": "The material becomes weaker.", "isCorrect": false },
+        { "text": "The testing machine slows down.", "isCorrect": false },
+        { "text": "The calculation uses the original area, which is larger than the actual area during 'necking'.", "isCorrect": true },
+        { "text": "The material's temperature increases.", "isCorrect": false }
+      ],
+      "explanation": "After the UTS, the specimen begins to 'neck', meaning its cross-sectional area starts to decrease rapidly in a localized region. Since engineering stress is calculated using the original, larger area ($A_0$), the calculated stress value decreases even though the actual stress (true stress) in the necking region is still increasing."
+    },
+    {
+      "question": "In the plastic region of a tensile test, which statement is true?",
+      "options": [
+        { "text": "True stress is equal to engineering stress.", "isCorrect": false },
+        { "text": "True stress is less than engineering stress.", "isCorrect": false },
+        { "text": "True stress is greater than engineering stress.", "isCorrect": true },
+        { "text": "True strain is equal to engineering strain.", "isCorrect": false }
+      ],
+      "explanation": "In the plastic region, the specimen's cross-sectional area is continuously decreasing. True stress is calculated with this smaller, instantaneous area, while engineering stress is calculated with the larger, original area. Since the force is the same, the true stress value will always be higher than the engineering stress value."
+    },
+    {
+      "question": "A specimen has an engineering strain of $\\epsilon = 0.5$. What is the corresponding true strain?",
+      "options": [
+        { "text": "0.5", "isCorrect": false },
+        { "text": "0.693", "isCorrect": false },
+        { "text": "0.405", "isCorrect": true },
+        { "text": "0.223", "isCorrect": false }
+      ],
+      "explanation": "The formula to convert engineering strain to true strain is $\\epsilon_T = \\ln(1 + \\epsilon)$. So, $\\epsilon_T = \\ln(1 + 0.5) = \\ln(1.5) \\approx 0.405$."
+    }
+  ]
+}

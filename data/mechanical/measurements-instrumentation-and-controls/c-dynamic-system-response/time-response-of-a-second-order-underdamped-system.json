@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Second-Order System</h3>\n<p class=\"mb-4\">A second-order system is described by a second-order differential equation. The standard form of its transfer function is:</p>\n$$ G(s) = \\frac{\\omega_n^2}{s^2 + 2\\zeta\\omega_n s + \\omega_n^2} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\omega_n$ is the <strong>undamped natural frequency</strong>.</li>\n    <li>$\\zeta$ is the <strong>damping ratio</strong>.</li>\n</ul>\n<p class=\"mb-4\">The behavior of the system is determined by the damping ratio $\\zeta$. The underdamped case ($0 < \\zeta < 1$) is characterized by an oscillatory response that overshoots the final value before settling.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Underdamped Step Response Characteristics</h3>\n<p class=\"mb-4\">For an underdamped system, the response to a step input has several key performance metrics:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Peak Time ($T_p$):</strong> The time it takes to reach the first (and highest) peak of the overshoot.</li>\n    $$ T_p = \\frac{\\pi}{\\omega_d} = \\frac{\\pi}{\\omega_n \\sqrt{1-\\zeta^2}} $$\n    <p class=\"text-sm\">where $\\omega_d$ is the damped natural frequency.</p>\n    <li><strong>Percent Overshoot (%OS):</strong> The maximum amount the response overshoots the final value, expressed as a percentage. It depends only on the damping ratio.</li>\n    $$ \\%OS = 100 \\times e^{\\frac{-\\zeta\\pi}{\\sqrt{1-\\zeta^2}}} $$\n    <li><strong>Settling Time ($T_s$):</strong> The time it takes for the response to settle within a certain percentage (usually 2%) of the final value.</li>\n    $$ T_{s (2\\%)} \\approx \\frac{4}{\\zeta\\omega_n} $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A second-order system has the transfer function $G(s) = \\frac{100}{s^2 + 10s + 100}$. What are its natural frequency ($\\omega_n$) and damping ratio ($\\zeta$)?",
+      "options": [
+        { "text": "$\\omega_n = 10$, $\\zeta = 0.5$", "isCorrect": true },
+        { "text": "$\\omega_n = 100$, $\\zeta = 10$", "isCorrect": false },
+        { "text": "$\\omega_n = 10$, $\\zeta = 1$", "isCorrect": false },
+        { "text": "$\\omega_n = 100$, $\\zeta = 0.5$", "isCorrect": false }
+      ],
+      "explanation": "Compare the given transfer function to the standard form $G(s) = \\frac{\\omega_n^2}{s^2 + 2\\zeta\\omega_n s + \\omega_n^2}$. From the denominator, we can see that $\\omega_n^2 = 100$, so $\\omega_n = 10$ rad/s. The middle term is $2\\zeta\\omega_n s = 10s$. So, $2\\zeta(10) = 10 \implies 20\\zeta = 10 \implies \\zeta = 0.5$."
+    },
+    {
+      "question": "A control system has a damping ratio of $\\zeta = 0.6$ and a natural frequency of $\\omega_n = 5$ rad/s. What is the percent overshoot?",
+      "options": [
+        { "text": "16.3%", "isCorrect": false },
+        { "text": "9.5%", "isCorrect": true },
+        { "text": "5.0%", "isCorrect": false },
+        { "text": "60%", "isCorrect": false }
+      ],
+      "explanation": "Use the percent overshoot formula: $\\%OS = 100 \\times \\exp(\\frac{-\\zeta\\pi}{\\sqrt{1-\\zeta^2}})$. $\\%OS = 100 \\times \\exp(\\frac{-0.6\\pi}{\\sqrt{1-0.6^2}}) = 100 \\times \\exp(\\frac{-1.885}{\\sqrt{0.64}}) = 100 \\times \\exp(\\frac{-1.885}{0.8}) = 100 \\times e^{-2.356} \\approx 100 \\times 0.0948 \approx 9.5\\%$."
+    },
+    {
+      "question": "For the system in the previous problem ($\\zeta = 0.6$, $\\omega_n = 5$ rad/s), what is the 2% settling time?",
+      "options": [
+        { "text": "4 s", "isCorrect": false },
+        { "text": "1.33 s", "isCorrect": true },
+        { "text": "0.8 s", "isCorrect": false },
+        { "text": "3 s", "isCorrect": false }
+      ],
+      "explanation": "Use the 2% settling time approximation: $T_s \\approx \\frac{4}{\\zeta\\omega_n} = \\frac{4}{(0.6)(5)} = \\frac{4}{3} \\approx 1.33$ seconds."
+    }
+  ]
+}

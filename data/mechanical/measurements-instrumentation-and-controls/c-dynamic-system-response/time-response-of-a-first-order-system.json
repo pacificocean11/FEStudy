@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. First-Order System</h3>\n<p class=\"mb-4\">A first-order system is one whose dynamic behavior is described by a first-order linear ordinary differential equation. The standard form of its transfer function is:</p>\n$$ G(s) = \\frac{K}{\\tau s + 1} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$K$ is the DC Gain (or static sensitivity). It is the ratio of the steady-state output to the step input magnitude.</li>\n    <li>$\\tau$ is the <strong>Time Constant</strong>. It is a measure of how quickly the system responds.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Response to a Unit Step Input</h3>\n<p class=\"mb-4\">The time response of a first-order system to a unit step input ($r(t)=1$) is given by:</p>\n$$ y(t) = K(1 - e^{-t/\\tau}) $$\n<p class=\"mb-4\">The time constant, $\\tau$, has a specific physical meaning. It is the time it takes for the system's output to reach <strong>63.2%</strong> of its final, steady-state value. ($1 - e^{-1} \\approx 0.632$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Response Characteristics</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rise Time ($T_r$):</strong> The time taken for the response to rise from 10% to 90% of its final value. For a first-order system, $T_r \\approx 2.2\\tau$.</li>\n    <li><strong>Settling Time ($T_s$):</strong> The time taken for the response to reach and stay within a certain percentage (e.g., 2% or 5%) of its final value. The 2% settling time is a common benchmark.</li>\n    $$ T_{s (2\\%)} \\approx 4\\tau $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A first-order system has the transfer function $G(s) = \\frac{5}{2s + 1}$. What is the time constant of the system?",
+      "options": [
+        { "text": "5 seconds", "isCorrect": false },
+        { "text": "1 second", "isCorrect": false },
+        { "text": "2 seconds", "isCorrect": true },
+        { "text": "0.5 seconds", "isCorrect": false }
+      ],
+      "explanation": "To find the time constant, the transfer function must be put into the standard form $G(s) = K/(\\tau s + 1)$. We can rewrite the given function as $G(s) = \\frac{5}{2s + 1}$. Comparing this to the standard form, we see that $\\tau = 2$ seconds."
+    },
+    {
+      "question": "For a system with a time constant of 5 seconds, what is the approximate 2% settling time?",
+      "options": [
+        { "text": "5 seconds", "isCorrect": false },
+        { "text": "11 seconds", "isCorrect": false },
+        { "text": "20 seconds", "isCorrect": true },
+        { "text": "4 seconds", "isCorrect": false }
+      ],
+      "explanation": "The 2% settling time for a first-order system is approximated by $T_s = 4\\tau$. Therefore, $T_s = 4 \\times 5 = 20$ seconds."
+    },
+    {
+      "question": "The step response of a first-order system is $y(t) = 10(1 - e^{-t/4})$. What is the time constant?",
+      "options": [
+        { "text": "10", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "-4", "isCorrect": false }
+      ],
+      "explanation": "The general form of the step response is $y(t) = K(1 - e^{-t/\\tau})$. By comparing this to the given equation, we can directly identify the time constant $\\tau$ in the exponent as 4."
+    }
+  ]
+}

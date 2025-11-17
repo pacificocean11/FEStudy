@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Adhesive bonding</strong> is a joining process in which a non-metallic material (the adhesive) is used to join two surfaces (adherends) together. The adhesive solidifies to produce a bond.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Types of Adhesives</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Epoxies:</strong> Two-part systems (resin and hardener) that cure to form a very strong, rigid, and durable bond. Excellent chemical and temperature resistance.</li>\n    <li><strong>Cyanoacrylates:</strong> One-part adhesives that cure rapidly in the presence of moisture. Commonly known as 'super glue'. Good for small parts and fast assembly.</li>\n    <li><strong>Anaerobics:</strong> Cure in the absence of oxygen and the presence of metal ions. Commonly used as threadlockers for fasteners and for sealing pipe threads.</li>\n    <li><strong>Polyurethanes:</strong> Can be formulated to be flexible or rigid. Offer good toughness and impact resistance.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Advantages of Adhesive Bonding</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Distributes stress more uniformly over the entire joint area, reducing stress concentrations.</li>\n    <li>Can effectively join dissimilar materials (e.g., metal to plastic).</li>\n    <li>Can simultaneously join and seal a joint against fluids.</li>\n    <li>Often provides a better aesthetic appearance than mechanical fasteners.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Disadvantages</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Thorough surface preparation is critical for a strong bond.</li>\n    <li>Limited service temperature range for many adhesives.</li>\n    <li>Cure time can be long, slowing production.</li>\n    <li>Joints are difficult to disassemble.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is a major advantage of adhesive bonding compared to using a single bolt to join two plates?",
+      "options": [
+        { "text": "The joint is easy to disassemble.", "isCorrect": false },
+        { "text": "It requires no surface preparation.", "isCorrect": false },
+        { "text": "It distributes the load over a larger area.", "isCorrect": true },
+        { "text": "It has a higher service temperature.", "isCorrect": false }
+      ],
+      "explanation": "A bolt concentrates the load around the hole, creating a high stress concentration. An adhesive bond distributes the load over the entire bonded surface, resulting in a much more uniform stress distribution and often a stronger joint in fatigue."
+    },
+    {
+      "question": "An adhesive that is commonly used as a threadlocker for bolts, curing only when air is excluded, is known as:",
+      "options": [
+        { "text": "An epoxy", "isCorrect": false },
+        { "text": "A cyanoacrylate", "isCorrect": false },
+        { "text": "An anaerobic adhesive", "isCorrect": true },
+        { "text": "A polyurethane", "isCorrect": false }
+      ],
+      "explanation": "Anaerobic adhesives are specifically designed to cure in the absence of oxygen and in the presence of metal ions, which makes them perfect for the small gaps in threaded fasteners."
+    }
+  ]
+}

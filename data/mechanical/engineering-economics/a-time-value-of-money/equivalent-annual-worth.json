@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Equivalent Annual Worth (EAW)</strong>, also known as Equivalent Uniform Annual Worth (EUAW) or just Annual Worth (AW), is an analysis technique used to compare alternatives with different lifespans. It converts all present and future cash flows into an equivalent uniform annual series of payments over the life of the project.</p>\n<p class=\"mb-4\">The alternative with the highest EAW (for revenues) or lowest Equivalent Uniform Annual Cost (EUAC) (for costs) is the most desirable.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Formulas</h3>\n<p class=\"mb-4\">To find the annual worth, you typically first find the Present Worth (PW) of all cash flows, and then convert that single present value into an annuity using the capital recovery factor (A/P).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Find A, given P (Capital Recovery Factor, A/P):</strong></li>\n    $$ A = P \\left[ \\frac{i(1+i)^n}{(1+i)^n - 1} \\right] = P(A/P, i, n)$$\n    <li><strong>Find A, given F (Sinking Fund Factor, A/F):</strong></li>\n    $$ A = F \\left[ \\frac{i}{(1+i)^n - 1} \\right] = F(A/F, i, n)$$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A machine costs $50,000 and has a 10-year life. What is its equivalent annual cost if the interest rate is 8%? The (A/P, 8%, 10) factor is 0.14903.",
+      "options": [
+        { "text": "$5,000", "isCorrect": false },
+        { "text": "$7,451.50", "isCorrect": true },
+        { "text": "$335,480", "isCorrect": false },
+        { "text": "$10,816", "isCorrect": false }
+      ],
+      "explanation": "We need to convert a present cost (P) into an equivalent annual cost (A). We use the capital recovery factor (A/P). $A = P(A/P, i, n) = $50,000(0.14903) = $7,451.50$."
+    },
+    {
+      "question": "You want to have $100,000 saved in 20 years. How much must you save each year in a savings account that earns 5% interest? The (A/F, 5%, 20) factor is 0.03024.",
+      "options": [
+        { "text": "$5,000", "isCorrect": false },
+        { "text": "$37,689", "isCorrect": false },
+        { "text": "$3,024", "isCorrect": true },
+        { "text": "$8,024", "isCorrect": false }
+      ],
+      "explanation": "We need to find the annual payment (A) that is equivalent to a future sum (F). We use the sinking fund factor (A/F). $A = F(A/F, i, n) = $100,000(0.03024) = $3,024$."
+    }
+  ]
+}

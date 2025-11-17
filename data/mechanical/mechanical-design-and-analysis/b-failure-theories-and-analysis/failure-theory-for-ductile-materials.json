@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Ductile Material Behavior</h3>\n<p class=\"mb-4\">Ductile materials, such as most metals, are capable of significant plastic deformation (yielding) before they fracture. Failure is therefore defined as the onset of yielding. Ductile materials typically have similar yield strengths in tension and compression ($S_{yt} \\approx S_{yc}$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Maximum-Shear-Stress (MSS) Theory</h3>\n<p class=\"mb-4\">Also known as the Tresca or Guest theory, this theory predicts that yielding begins when the maximum shear stress in any element equals the maximum shear stress in a tension test specimen when it begins to yield.</p>\n<p class=\"mb-4\">The maximum shear stress in a general stress state is $\\tau_{max} = (\\sigma_1 - \\sigma_3)/2$. The shear stress at yield in a tension test is $S_y/2$. The failure criterion is:</p>\n$$ \\tau_{max} \\ge \\frac{S_y}{2} \\quad \\text{or} \\quad \\sigma_1 - \\sigma_3 \\ge S_y $$\n<p class=\"mb-4\">This theory is easy to apply and is always conservative (predicts failure at a lower stress than what is actually observed).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Distortion-Energy (DE) Theory</h3>\n<p class=\"mb-4\">Also known as the von Mises theory, this theory predicts that yielding begins when the distortion energy in a unit volume of the material equals the distortion energy in the same volume when it begins to yield in a tension test. This is the most accurate theory for predicting the failure of ductile materials.</p>\n<p class=\"mb-4\">It is based on the <strong>von Mises stress ($\\sigma'$),</strong> an effective stress that combines the principal stresses. For plane stress, it is:</p>\n$$ \\sigma' = \\sqrt{\\sigma_A^2 - \\sigma_A\\sigma_B + \\sigma_B^2} $$\n<p class=\"mb-4\">where $\\sigma_A$ and $\\sigma_B$ are the two non-zero principal stresses. The failure criterion is simply:</p>\n$$ \\sigma' \\ge S_y $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which failure theory for ductile materials is the most conservative?",
+      "options": [
+        { "text": "Maximum-Normal-Stress Theory", "isCorrect": false },
+        { "text": "Distortion-Energy (von Mises) Theory", "isCorrect": false },
+        { "text": "Maximum-Shear-Stress (Tresca) Theory", "isCorrect": true },
+        { "text": "Modified-Mohr Theory", "isCorrect": false }
+      ],
+      "explanation": "The Maximum-Shear-Stress (MSS) theory is the most conservative, meaning it predicts failure will occur at a lower stress level compared to other theories. Its failure envelope lies completely inside the more accurate Distortion-Energy theory envelope."
+    },
+    {
+      "question": "A steel component ($S_y=300$ MPa) is under plane stress with principal stresses of $\\sigma_1 = 200$ MPa and $\\sigma_2 = 100$ MPa. What is the factor of safety against yielding according to the Distortion-Energy (von Mises) theory?",
+      "options": [
+        { "text": "1.50", "isCorrect": false },
+        { "text": "1.73", "isCorrect": true },
+        { "text": "2.00", "isCorrect": false },
+        { "text": "3.00", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the von Mises stress: $\\sigma' = \\sqrt{\\sigma_1^2 - \\sigma_1\\sigma_2 + \\sigma_2^2} = \\sqrt{200^2 - (200)(100) + 100^2} = \\sqrt{40000 - 20000 + 10000} = \\sqrt{30000} \\approx 173.2$ MPa. The factor of safety is $n = S_y / \\sigma' = 300 / 173.2 \\approx 1.73$."
+    },
+    {
+      "question": "For the same steel component ($S_y=300$ MPa, $\\sigma_1=200$ MPa, $\\sigma_2=100$ MPa), what is the factor of safety according to the Maximum-Shear-Stress theory? (Assume $\\sigma_3=0$)",
+      "options": [
+        { "text": "1.50", "isCorrect": true },
+        { "text": "1.73", "isCorrect": false },
+        { "text": "2.00", "isCorrect": false },
+        { "text": "3.00", "isCorrect": false }
+      ],
+      "explanation": "The principal stresses are ordered $\\sigma_1=200, \\sigma_2=100, \\sigma_3=0$. The maximum shear stress is $\\tau_{max} = (\\sigma_1 - \\sigma_3)/2 = (200 - 0)/2 = 100$ MPa. The failure criterion is $\\tau_{max} \\ge S_y/2$. The shear stress at yield is $S_y/2 = 300/2 = 150$ MPa. The factor of safety is $n = (S_y/2) / \\tau_{max} = 150 / 100 = 1.50$."
+    }
+  ]
+}

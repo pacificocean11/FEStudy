@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Break-even analysis</strong> is a financial calculation that determines the point at which total costs and total revenue are equal, meaning there is no net loss or gain. At the break-even point, the business has \"broken even\".</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Break-Even Quantity</h3>\n<p class=\"mb-4\">The analysis is often used to find the quantity of a product that must be sold to cover all costs. The break-even point occurs where:</p>\n<p class=\"text-center font-semibold mb-4\">Total Revenue = Total Cost</p>\n$$ (R_{unit} \\times Q) = FC + (VC_{unit} \\times Q) $$\n<p class=\"mb-4\">Solving for the break-even quantity, $Q_{BE}$:</p>\n$$ Q_{BE} = \\frac{FC}{R_{unit} - VC_{unit}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q_{BE}$ is the break-even quantity.</li>\n    <li>$FC$ is the Total Fixed Cost.</li>\n    <li>$R_{unit}$ is the revenue per unit (selling price).</li>\n    <li>$VC_{unit}$ is the variable cost per unit.</li>\n    <li>The term $(R_{unit} - VC_{unit})$ is called the <strong>contribution margin</strong> per unit.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A company manufactures a product with a fixed cost of $20,000 per month and a variable cost of $15 per unit. If the product sells for $25 per unit, what is the monthly break-even quantity?",
+      "options": [
+        { "text": "800 units", "isCorrect": false },
+        { "text": "1,333 units", "isCorrect": false },
+        { "text": "2,000 units", "isCorrect": true },
+        { "text": "500 units", "isCorrect": false }
+      ],
+      "explanation": "Use the break-even formula: $Q_{BE} = \\frac{FC}{R_{unit} - VC_{unit}} = \\frac{$20,000}{$25 - $15} = \\frac{$20,000}{$10} = 2,000$ units."
+    },
+    {
+      "question": "For the company in the previous problem, what is the profit or loss if they sell 2,500 units in a month?",
+      "options": [
+        { "text": "$5,000 profit", "isCorrect": true },
+        { "text": "$2,500 profit", "isCorrect": false },
+        { "text": "$5,000 loss", "isCorrect": false },
+        { "text": "Break-even", "isCorrect": false }
+      ],
+      "explanation": "Profit = Total Revenue - Total Cost. Total Revenue = $25 \\times 2,500 = $62,500. Total Cost = $20,000 + ($15 \\times 2,500) = $20,000 + $37,500 = $57,500. Profit = $62,500 - $57,500 = $5,000."
+    }
+  ]
+}

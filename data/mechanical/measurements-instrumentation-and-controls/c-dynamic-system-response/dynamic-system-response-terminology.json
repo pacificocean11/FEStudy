@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Dynamic System Response</h3>\n<p class=\"mb-4\">The <strong>dynamic response</strong> of a system is its output behavior as a function of time when subjected to a specific input. The analysis of this response is crucial for understanding how a system behaves and for designing controllers.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Standard Inputs</h3>\n<p class=\"mb-4\">To analyze and compare systems, standard test inputs are used:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Step Input:</strong> An instantaneous change in the input from one constant value to another. It is used to analyze a system's ability to respond to sudden changes. $r(t) = A u(t)$, where $u(t)$ is the unit step function.</li>\n    <li><strong>Ramp Input:</strong> An input that changes linearly with time. It is used to test a system's ability to track a moving setpoint. $r(t) = At$.</li>\n    <li><strong>Impulse Input:</strong> A very large input applied over a very short time. It is used to see how a system responds to a sudden shock.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Components of the Response</h3>\n<p class=\"mb-4\">The total response of a linear system to an input is the sum of two components:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Transient Response:</strong> The initial part of the response that depends on the system's initial conditions. This part of the response decays to zero as time progresses. It describes how the system gets from its starting state to its final state.</li>\n    <li><strong>Steady-State Response:</strong> The part of the response that remains after the transient effects have died out. It is the system's behavior as time approaches infinity.</li>\n</ul>\n$$ \\text{Total Response} = \\text{Transient Response} + \\text{Steady-State Response} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The response of a system is given by the equation $y(t) = 5 - 5e^{-2t}$. Which part represents the transient response?",
+      "options": [
+        { "text": "$5$", "isCorrect": false },
+        { "text": "$-5e^{-2t}$", "isCorrect": true },
+        { "text": "$y(t)$", "isCorrect": false },
+        { "text": "There is no transient part.", "isCorrect": false }
+      ],
+      "explanation": "The transient response is the part of the equation that decays to zero as time ($t$) approaches infinity. The term $-5e^{-2t}$ approaches zero as $t$ gets large, while the term '5' remains. Therefore, $-5e^{-2t}$ is the transient part and '5' is the steady-state part."
+    },
+    {
+      "question": "A sudden, instantaneous change in the input to a control system is called a:",
+      "options": [
+        { "text": "Ramp input", "isCorrect": false },
+        { "text": "Step input", "isCorrect": true },
+        { "text": "Impulse input", "isCorrect": false },
+        { "text": "Sinusoidal input", "isCorrect": false }
+      ],
+      "explanation": "A step input is used to model a sudden change in the desired value (setpoint) and is a standard way to test how a system reacts to such changes."
+    }
+  ]
+}

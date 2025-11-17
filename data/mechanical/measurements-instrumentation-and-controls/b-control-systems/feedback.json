@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Open-Loop vs. Closed-Loop Control</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Open-Loop Control:</strong> In an open-loop system, the control action is independent of the system's output. The system does not measure the output or use it to adjust the input. Examples include a simple toaster (runs for a set time regardless of how toasted the bread is) or a microwave oven. They are simple but cannot compensate for disturbances.</li>\n    <li><strong>Closed-Loop (Feedback) Control:</strong> In a closed-loop system, the output of the system is measured and compared to the desired setpoint. This difference, called the error signal, is then used by the controller to adjust the input and drive the output towards the setpoint.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Components of a Feedback Loop</h3>\n<p class=\"mb-4\">A typical feedback control system has several key components:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Setpoint (Reference):</strong> The desired value for the system's output.</li>\n    <li><strong>Sensor (or Transducer):</strong> Measures the actual output of the process.</li>\n    <li><strong>Controller:</strong> Compares the measured output to the setpoint to calculate an error signal. It then computes a control action based on this error.</li>\n    <li><strong>Actuator (or Final Control Element):</strong> The device that directly influences the process based on the controller's command (e.g., a valve, a motor, a heater).</li>\n    <li><strong>Process (or Plant):</strong> The system being controlled.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Advantages of Feedback Control</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Disturbance Rejection:</strong> Can automatically compensate for unexpected disturbances that affect the output.</li>\n    <li><strong>Increased Accuracy:</strong> By continuously correcting for errors, the system can maintain its output very close to the setpoint.</li>\n    <li><strong>Reduced Sensitivity to Model Inaccuracies:</strong> The system can perform well even if the mathematical model of the process is not perfectly known.</li>\n    <li><strong>Can Stabilize Unstable Processes:</strong> Feedback can be used to make an inherently unstable system stable.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A home heating system with a thermostat is an example of what type of control system?",
+      "options": [
+        { "text": "Open-loop control", "isCorrect": false },
+        { "text": "Closed-loop (feedback) control", "isCorrect": true },
+        { "text": "Manual control", "isCorrect": false },
+        { "text": "Predictive control", "isCorrect": false }
+      ],
+      "explanation": "It is a closed-loop system because the thermostat (sensor) measures the current room temperature (output) and compares it to the desired temperature (setpoint). If there is an error, the controller tells the furnace (actuator) to turn on or off."
+    },
+    {
+      "question": "What is the primary advantage of a closed-loop control system over an open-loop system?",
+      "options": [
+        { "text": "It is simpler and cheaper.", "isCorrect": false },
+        { "text": "It is always faster.", "isCorrect": false },
+        { "text": "It can compensate for disturbances and errors.", "isCorrect": true },
+        { "text": "It uses less energy.", "isCorrect": false }
+      ],
+      "explanation": "The key feature of feedback is its ability to measure the output and make corrections. This allows it to maintain the desired output despite unexpected disturbances (like a window being opened in a heated room) or changes in the system itself."
+    }
+  ]
+}

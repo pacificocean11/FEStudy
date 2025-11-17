@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definitions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Accuracy:</strong> How close a measured value is to the true or accepted value. It is related to <strong>systematic error</strong> (bias). An accurate instrument gives readings that are, on average, correct.</li>\n    <li><strong>Precision:</strong> How close repeated measurements of the same quantity are to each other. It is related to <strong>random error</strong>. A precise instrument gives readings that are consistent and have low scatter.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Target Analogy</h3>\n<p class=\"mb-4\">A common analogy is a target:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Accurate and Precise:</strong> All shots are tightly clustered in the center (bullseye).</li>\n    <li><strong>Precise but not Accurate:</strong> All shots are tightly clustered, but far from the center. (This indicates a systematic error, e.g., the sights are misaligned).</li>\n    <li><strong>Accurate but not Precise:</strong> The shots are spread out, but their average position is the center.</li>\n    <li><strong>Neither Accurate nor Precise:</strong> The shots are spread out and their average is not in the center.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Types of Error</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Systematic Error:</strong> A consistent, repeatable error that is always in the same direction. It affects the accuracy of a measurement. Examples include an incorrectly calibrated instrument or parallax error.</li>\n    <li><strong>Random Error:</strong> Unpredictable fluctuations in measurements. It affects the precision of a measurement. Examples include electronic noise in an instrument or variations in human reaction time.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer measures the length of a rod five times and gets the following readings: 10.5 cm, 10.4 cm, 10.6 cm, 10.5 cm, 10.5 cm. The true length of the rod is 12.0 cm. How would you describe these measurements?",
+      "options": [
+        { "text": "Accurate and precise", "isCorrect": false },
+        { "text": "Accurate but not precise", "isCorrect": false },
+        { "text": "Precise but not accurate", "isCorrect": true },
+        { "text": "Neither accurate nor precise", "isCorrect": false }
+      ],
+      "explanation": "The measurements are precise because they are all very close to each other (tightly clustered around 10.5 cm). However, they are not accurate because their average is far from the true value of 12.0 cm. This indicates a significant systematic error."
+    },
+    {
+      "question": "A poorly calibrated scale that always reads 0.5 kg too high introduces what type of error?",
+      "options": [
+        { "text": "Random error", "isCorrect": false },
+        { "text": "Systematic error", "isCorrect": true },
+        { "text": "Human error", "isCorrect": false },
+        { "text": "No error", "isCorrect": false }
+      ],
+      "explanation": "This is a systematic error because it is a consistent, repeatable offset from the true value. It affects the accuracy of all measurements made with that scale."
+    }
+  ]
+}
