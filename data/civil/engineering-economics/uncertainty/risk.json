@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">In project management and engineering, <strong>risk</strong> is the potential for an event or condition to occur that will have a negative impact on a project's objectives (e.g., cost, schedule, or quality). Risk involves uncertainty about the future.</p>\n<p class=\"mb-4\">Risk can be qualitatively defined as:</p>\n<p class=\"text-center font-semibold mb-4\">Risk = Probability of Occurrence × Consequence of Occurrence</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Risk Management Process</h3>\n<p class=\"mb-4\">Risk management is a proactive process for handling risk. It typically involves several steps:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Risk Identification:</strong> Identifying potential risks that could affect the project.</li>\n    <li><strong>Risk Analysis:</strong> Assessing the likelihood (probability) and potential impact (consequence) of each identified risk.</li>\n    <li><strong>Risk Response Planning:</strong> Developing strategies to deal with the risks. The main strategies are:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Avoidance:</strong> Changing the project plan to eliminate the risk.</li>\n            <li><strong>Transference:</strong> Shifting the risk to a third party (e.g., through insurance or contracts).</li>\n            <li><strong>Mitigation:</strong> Taking action to reduce the probability or impact of the risk.</li>\n            <li><strong>Acceptance:</strong> Deciding to accept the risk, either actively (by developing a contingency plan) or passively.</li>\n        </ul>\n    </li>\n    <li><strong>Risk Monitoring and Control:</strong> Tracking identified risks and implementing response plans as needed.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A construction company purchases insurance for a large project to cover potential damages from a hurricane. This is an example of which risk response strategy?",
+      "options": [
+        { "text": "Risk Avoidance", "isCorrect": false },
+        { "text": "Risk Transference", "isCorrect": true },
+        { "text": "Risk Mitigation", "isCorrect": false },
+        { "text": "Risk Acceptance", "isCorrect": false }
+      ],
+      "explanation": "By purchasing insurance, the company is transferring the financial risk associated with a hurricane to the insurance company. The company pays a premium, and in return, the insurer agrees to cover the potential losses."
+    },
+    {
+      "question": "A project team identifies a potential delay due to the long lead time for a custom piece of equipment. They decide to order the equipment much earlier than originally planned. This action is an example of:",
+      "options": [
+        { "text": "Risk Avoidance", "isCorrect": false },
+        { "text": "Risk Transference", "isCorrect": false },
+        { "text": "Risk Mitigation", "isCorrect": true },
+        { "text": "Risk Acceptance", "isCorrect": false }
+      ],
+      "explanation": "Mitigation involves taking proactive steps to reduce the probability or impact of a risk. By ordering the equipment early, the team is reducing the likelihood that a delivery delay will impact the project schedule."
+    }
+  ]
+}

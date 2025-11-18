@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Axial stress</strong> is the stress in a member that is subjected to an axial force (a force acting along its longitudinal axis). The stress is assumed to be uniform across the member's cross-section.</p>\n$$ \\sigma = \\frac{P}{A} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sigma$: Normal stress.</li>\n    <li>$P$: Applied axial load (tension or compression).</li>\n    <li>$A$: Cross-sectional area of the member.</li>\n</ul>\n<p class=\"mb-4\">A positive result indicates tensile stress, while a negative result indicates compressive stress.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Axial Strain and Hooke's Law</h3>\n<p class=\"mb-4\"><strong>Strain ($\\epsilon$)</strong> is the measure of deformation, defined as the change in length divided by the original length.</p>\n$$ \\epsilon = \\frac{\\delta}{L} $$\n<p class=\"mb-4\">Within the elastic region, stress is directly proportional to strain. This relationship is <strong>Hooke's Law</strong>.</p>\n$$ \\sigma = E\\epsilon $$\n<p class=\"mb-4\">Where $E$ is the Modulus of Elasticity, a measure of the material's stiffness.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A steel column with a cross-sectional area of 15 in² supports a compressive load of 300,000 lbs. What is the compressive stress in the column?",
+      "options": [
+        { "text": "20,000 psi", "isCorrect": true },
+        { "text": "4,500,000 psi", "isCorrect": false },
+        { "text": "2,000 psi", "isCorrect": false },
+        { "text": "30,000 psi", "isCorrect": false }
+      ],
+      "explanation": "Stress is calculated as force divided by area: $\\sigma = P/A = 300,000 \\text{ lbs} / 15 \\text{ in²} = 20,000$ psi (pounds per square inch)."
+    },
+    {
+      "question": "A 10-foot long aluminum rod elongates by 0.12 inches under a tensile load. What is the strain in the rod?",
+      "options": [
+        { "text": "0.012", "isCorrect": false },
+        { "text": "0.001", "isCorrect": true },
+        { "text": "120", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false }
+      ],
+      "explanation": "Strain is the change in length divided by the original length. The units must be consistent. Original length L = 10 ft * 12 in/ft = 120 inches. Change in length $\\delta = 0.12$ inches. Strain $\\epsilon = \\delta / L = 0.12 \\text{ in} / 120 \\text{ in} = 0.001$."
+    }
+  ]
+}

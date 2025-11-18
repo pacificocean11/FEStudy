@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Unit Load Method</strong> (or virtual work) can also be used to find the deflection and rotation at any point on a frame. Unlike trusses, where internal work is due to axial deformation, the internal work in frames is primarily due to <strong>bending deformation</strong>. The contributions from axial and shear deformation are usually negligible and are ignored.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Virtual Work Formula for Frames</h3>\n<p class=\"mb-4\">The formula equates the external virtual work to the internal virtual strain energy due to bending.</p>\n<p class=\"mb-4\"><strong>For Deflection:</strong></p>\n$$ 1 \\cdot \\Delta = \\int_L \\frac{mM}{EI} dx $$\n<p class=\"mb-4\"><strong>For Rotation:</strong></p>\n$$ 1 \\cdot \\theta = \\int_L \\frac{m_\\theta M}{EI} dx $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\Delta$ or $\\theta$: The real deflection or rotation at the point of interest.</li>\n    <li>$M$: The internal moment equation as a function of position ($x$) due to the <strong>real loads</strong>.</li>\n    <li>$m$: The internal moment equation due to a <strong>virtual unit point load</strong> applied at the point and in the direction of the desired deflection.</li>\n    <li>$m_\\theta$: The internal moment equation due to a <strong>virtual unit couple moment</strong> applied at the point of desired rotation.</li>\n    <li>$E$: Modulus of elasticity.</li>\n    <li>$I$: Moment of inertia.</li>\n    <li>The integral is performed over the length ($L$) of all members in the frame.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Real System:</strong> Analyze the frame with the actual loads to find the moment equation(s), $M(x)$, for each member.</li>\n    <li><strong>Virtual System:</strong> Remove all real loads. Apply a single virtual unit load or unit moment at the point of interest.</li>\n    <li>Analyze the frame again under this virtual load to find the virtual moment equation(s), $m(x)$ or $m_\\theta(x)$.</li>\n    <li><strong>Apply the Formula:</strong> For each member, set up and solve the integral $\\int (mM/EI) dx$. Sum the results for all members to get the total deflection or rotation.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When calculating the deflection of a frame using the unit load method, the internal virtual work is primarily due to:",
+      "options": [
+        { "text": "Axial deformation", "isCorrect": false },
+        { "text": "Shear deformation", "isCorrect": false },
+        { "text": "Torsional deformation", "isCorrect": false },
+        { "text": "Bending deformation", "isCorrect": true }
+      ],
+      "explanation": "In frames, the members are subjected to bending moments, which cause them to curve. The strain energy stored due to this bending is the dominant component of deformation. The unit load method for frames is based on the integral of the bending moments."
+    },
+    {
+      "question": "To find the horizontal deflection at the top corner of a portal frame using the virtual work method, what virtual load should be applied?",
+      "options": [
+        { "text": "A unit vertical force at the corner.", "isCorrect": false },
+        { "text": "A unit horizontal force at the corner.", "isCorrect": true },
+        { "text": "A unit couple moment at the corner.", "isCorrect": false },
+        { "text": "A unit distributed load along the beam.", "isCorrect": false }
+      ],
+      "explanation": "The virtual system must have a unit load applied at the exact point and in the exact direction of the desired displacement. To find horizontal deflection, a horizontal unit force is applied."
+    }
+  ]
+}

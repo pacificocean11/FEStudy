@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Kinematics</strong> is the branch of mechanics that describes the motion of objects without considering the forces that cause the motion. When the object is small enough to be modeled as a single point, we analyze the <strong>kinematics of a particle</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Rectilinear Motion</h3>\n<p class=\"mb-4\">This describes motion along a straight line. The key relationships are based on calculus:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Velocity is the time derivative of position: $v = ds/dt$</li>\n    <li>Acceleration is the time derivative of velocity: $a = dv/dt = d^2s/dt^2$</li>\n    <li>A third useful relation is derived from the first two: $a \\ ds = v \\ dv$</li>\n</ul>\n<p class=\"mb-4\"><strong>Constant Acceleration:</strong> If acceleration is constant, these relationships integrate to the well-known kinematic equations:</p>\n<ul class=\"list-disc list-inside ml-4 space-y-2 mb-4\">\n    <li>$v = v_0 + at$</li>\n    <li>$s = s_0 + v_0t + \\frac{1}{2}at^2$</li>\n    <li>$v^2 = v_0^2 + 2a(s - s_0)$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Curvilinear Motion (Projectile Motion)</h3>\n<p class=\"mb-4\">For motion along a curved path in 2D, we analyze the horizontal (x) and vertical (y) components of motion independently. For projectile motion (ignoring air resistance):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Horizontal Motion:</strong> Constant velocity ($a_x = 0$).</li>\n    <li><strong>Vertical Motion:</strong> Constant downward acceleration ($a_y = -g$).</li>\n</ul>\n<p class=\"mb-4\">The constant acceleration equations are applied separately to each direction.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A particle starts from rest and accelerates uniformly at 4 m/s². What is its velocity after 5 seconds?",
+      "options": [
+        { "text": "1.25 m/s", "isCorrect": false },
+        { "text": "20 m/s", "isCorrect": true },
+        { "text": "50 m/s", "isCorrect": false },
+        { "text": "9 m/s", "isCorrect": false }
+      ],
+      "explanation": "This is a constant acceleration problem. We use the kinematic equation $v = v_0 + at$. Given $v_0 = 0$ (from rest), $a = 4$ m/s², and $t = 5$ s. $v = 0 + (4)(5) = 20$ m/s."
+    },
+    {
+      "question": "A projectile is fired from the ground with an initial velocity of 100 m/s at an angle of 30° above the horizontal. What is its initial vertical velocity ($v_{0y}$)?",
+      "options": [
+        { "text": "100 m/s", "isCorrect": false },
+        { "text": "86.6 m/s", "isCorrect": false },
+        { "text": "50 m/s", "isCorrect": true },
+        { "text": "30 m/s", "isCorrect": false }
+      ],
+      "explanation": "The initial velocity vector is broken into components. The vertical component is given by $v_{0y} = v_0 \\sin(\\theta) = 100 \\sin(30^\circ) = 100(0.5) = 50$ m/s."
+    }
+  ]
+}

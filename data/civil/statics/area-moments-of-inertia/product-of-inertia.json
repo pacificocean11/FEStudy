@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Product of Inertia ($I_{xy}$)</strong> is a geometric property of a cross-section that measures its asymmetry with respect to the x-y axes. It is used in the analysis of unsymmetrical bending and in finding the orientation of the principal axes of an area.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The product of inertia is defined by the integral:</p>\n$$ I_{xy} = \\int_A xy \\ dA $$\n<p class=\"mb-4\">Unlike the area moments of inertia ($I_x, I_y$), the product of inertia can be positive, negative, or zero. It has units of length to the fourth power (e.g., in⁴ or m⁴).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Symmetry</h3>\n<p class=\"mb-4\">The product of inertia is zero for any area that has an axis of symmetry parallel to either the x or y axis. This is because for every element $dA$ with coordinates $(x, y)$, there is a corresponding element with coordinates $(-x, y)$ or $(x, -y)$, and their products $xy dA$ will cancel out in the integral.</p>\n<p class=\"mb-4\">This means that for common symmetric shapes like rectangles, circles, and I-beams, the product of inertia with respect to their centroidal axes is zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Principal Axes</h3>\n<p class=\"mb-4\">The <strong>principal axes</strong> of an area are the axes about which the product of inertia is zero. For these axes, the moments of inertia are the maximum and minimum possible for any axis passing through that point. For a symmetric shape, the axes of symmetry are the principal axes.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a rectangular cross-section, what is the product of inertia ($I_{xy}$) with respect to its centroidal axes?",
+      "options": [
+        { "text": "A positive value", "isCorrect": false },
+        { "text": "A negative value", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Depends on the aspect ratio", "isCorrect": false }
+      ],
+      "explanation": "A rectangle has two axes of symmetry (the x and y centroidal axes). If an area has at least one axis of symmetry, its product of inertia with respect to that axis and any perpendicular axis is zero."
+    },
+    {
+      "question": "The product of inertia is a measure of a shape's:",
+      "options": [
+        { "text": "Resistance to bending.", "isCorrect": false },
+        { "text": "Resistance to twisting.", "isCorrect": false },
+        { "text": "Total area.", "isCorrect": false },
+        { "text": "Asymmetry with respect to the coordinate axes.", "isCorrect": true }
+      ],
+      "explanation": "The product of inertia quantifies how far the area is distributed from the x and y axes simultaneously. A non-zero value indicates that the shape is not symmetric about the chosen axes. It is essential for finding the principal axes of unsymmetrical shapes like angles or Z-sections."
+    }
+  ]
+}

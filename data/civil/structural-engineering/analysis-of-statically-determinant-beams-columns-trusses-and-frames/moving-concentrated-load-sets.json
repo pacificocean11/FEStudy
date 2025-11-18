@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Structures like bridges are subjected to moving loads that consist of a series of concentrated forces at fixed distances from each other, such as the wheel loads of a truck. A key design task is to determine the position of this load set that will cause the absolute maximum bending moment in a simply supported beam.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Absolute Maximum Bending Moment</h3>\n<p class=\"mb-4\">For a series of moving concentrated loads on a simple beam, the absolute maximum bending moment will always occur under one of the concentrated loads. The critical question is the exact positioning of the entire load set on the beam.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Position for Absolute Maximum Moment</h3>\n<p class=\"mb-4\">The absolute maximum moment under a particular wheel load occurs when that wheel and the resultant of the entire load set are positioned equidistant from the centerline of the beam.</p>\n<p class=\"mb-4\"><strong>Procedure:</strong></p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Find the magnitude and location of the resultant force (R) of the entire load set.</li>\n    <li>Assume the maximum moment will occur under one of the loads, say Load P₁.</li>\n    <li>Position the entire load set on the beam such that the midpoint of the beam is halfway between the resultant force R and the load P₁.</li>\n    <li>Calculate the support reactions and then find the bending moment under load P₁ for this position.</li>\n    <li>Repeat this process for other heavy loads in the set (e.g., Load P₂).</li>\n    <li>The largest moment calculated from these trials is the absolute maximum bending moment.</li>\n</ol>\n<p class=\"mb-4\">Generally, the absolute maximum moment will occur under the heaviest load that is closest to the resultant of the load group.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When finding the absolute maximum bending moment in a simply supported beam due to a series of moving loads, the moment will occur:",
+      "options": [
+        { "text": "At midspan of the beam.", "isCorrect": false },
+        { "text": "At one of the supports.", "isCorrect": false },
+        { "text": "Under one of the concentrated loads.", "isCorrect": true },
+        { "text": "At the location of the resultant force.", "isCorrect": false }
+      ],
+      "explanation": "The maximum moment in a simply supported beam under concentrated loads always occurs directly beneath one of the loads. The analysis procedure is to find the specific load and its position that creates this absolute maximum value."
+    },
+    {
+      "question": "The absolute maximum moment under a specific wheel load in a moving load set occurs when:",
+      "options": [
+        { "text": "That wheel is at the center of the span.", "isCorrect": false },
+        { "text": "The resultant of the load set is at the center of the span.", "isCorrect": false },
+        { "text": "The beam's centerline is positioned halfway between that wheel and the resultant of the load set.", "isCorrect": true },
+        { "text": "The heaviest wheel is at the center of the span.", "isCorrect": false }
+      ],
+      "explanation": "This specific geometric arrangement is the rule for positioning the load set to find the maximum moment under a chosen wheel. The centerline of the beam must bisect the distance between the wheel in question and the resultant of all the loads on the span."
+    }
+  ]
+}

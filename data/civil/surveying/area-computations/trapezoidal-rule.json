@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Trapezoidal Rule</strong> is a method used in surveying to find the area of a tract of land with an irregular boundary, such as a river or a curved property line. The method involves establishing a straight baseline and then measuring a series of perpendicular offsets from the baseline to the irregular boundary at a constant interval.</p>\n<p class=\"mb-4\">This method approximates the area between each pair of offsets as a trapezoid.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Formula</h3>\n<p class=\"mb-4\">If a series of offsets ($h_1, h_2, ..., h_n$) are measured at a constant interval width ($w$), the total area is the sum of the areas of the individual trapezoids.</p>\n$$ Area = \\frac{w}{2}(h_1+h_2) + \\frac{w}{2}(h_2+h_3) + ... + \\frac{w}{2}(h_{n-1}+h_n) $$\n<p class=\"mb-4\">This simplifies to the general Trapezoidal Rule formula:</p>\n$$ Area = w \\left[ \\frac{h_1 + h_n}{2} + h_2 + h_3 + ... + h_{n-1} \\right] $$\n<p class=\"mb-4\">In words: The area is the common interval width multiplied by the sum of the average of the first and last offsets, plus all the intermediate offsets.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A tract of land is bounded by a straight road and an irregular stream. A baseline is established along the road, and perpendicular offsets to the stream are measured every 20 feet. The lengths of the offsets are 10, 12, 14, 11, and 15 feet. What is the area of the tract?",
+      "options": [
+        { "text": "1,240 sq ft", "isCorrect": false },
+        { "text": "990 sq ft", "isCorrect": true },
+        { "text": "1,040 sq ft", "isCorrect": false },
+        { "text": "967 sq ft", "isCorrect": false }
+      ],
+      "explanation": "We have $w=20$ ft and offsets $h_1=10, h_2=12, h_3=14, h_4=11, h_5=15$. Using the Trapezoidal Rule formula: $Area = w \\left[ \\frac{h_1 + h_5}{2} + h_2 + h_3 + h_4 \\right] = 20 \\left[ \\frac{10 + 15}{2} + 12 + 14 + 11 \\right] = 20 [12.5 + 37] = 20[49.5] = 990$ sq ft."
+    }
+  ]
+}

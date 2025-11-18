@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">In <strong>one-dimensional flow</strong>, it is assumed that the flow parameters (such as velocity, pressure, and density) are constant at any given cross-section perpendicular to the main flow direction, and they only vary along the direction of flow. This is a simplification used for analyzing flow in pipes and channels where the primary motion is along the length of the conduit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Flow Classification</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Steady vs. Unsteady Flow:</strong> In steady flow, the fluid properties at any point in the system do not change with time. In unsteady flow, they do.</li>\n    <li><strong>Uniform vs. Non-uniform Flow:</strong> In uniform flow, the velocity vector is identical at every point in the flow field at a given instant. This occurs in long, straight sections of pipe with a constant diameter. In non-uniform flow, the velocity changes from point to point (e.g., in a pipe bend or contraction).</li>\n    <li><strong>Laminar vs. Turbulent Flow:</strong> Determined by the Reynolds number ($Re$). Laminar flow is smooth and orderly, while turbulent flow is chaotic and characterized by eddies.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Flow in which the velocity at any given point does not vary with time is called:",
+      "options": [
+        { "text": "Uniform flow", "isCorrect": false },
+        { "text": "Steady flow", "isCorrect": true },
+        { "text": "Laminar flow", "isCorrect": false },
+        { "text": "Incompressible flow", "isCorrect": false }
+      ],
+      "explanation": "Steady flow is defined as a flow where the properties (velocity, pressure, density) at any single point in the fluid do not change over time. An example is the constant flow of water through a pipe at a constant rate."
+    }
+  ]
+}

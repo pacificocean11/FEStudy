@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Renewable energy</strong> is energy derived from natural sources that are replenished on a human timescale. It stands in contrast to fossil fuels, which are a finite resource. The integration of renewable energy sources is a key component of sustainable development and a major field within civil and environmental engineering.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Types of Renewable Energy</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Solar Power:</strong> Captures energy from the sun using photovoltaic (PV) panels to generate electricity or using concentrated solar power (CSP) systems to generate heat.</li>\n    <li><strong>Wind Power:</strong> Uses wind turbines to convert the kinetic energy of the wind into electricity.</li>\n    <li><strong>Hydropower:</strong> Generates electricity by using the gravitational force of falling or flowing water to turn a turbine. Large-scale hydropower dams are a major source of renewable energy.</li>\n    <li><strong>Geothermal Energy:</strong> Utilizes heat from the Earth's interior to generate electricity or for direct heating applications.</li>\n    <li><strong>Biomass Energy:</strong> Generates energy by burning organic materials such as wood, agricultural waste, or municipal solid waste, or by converting them into biofuels.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Economic Analysis</h3>\n<p class=\"mb-4\">The economic analysis of renewable energy projects often involves a life-cycle cost approach. While renewable energy sources have no fuel cost, they typically have a high initial capital cost. An economic analysis would compare this high initial cost against the long-term benefits of zero fuel cost and potential environmental incentives, compared to a conventional fossil fuel plant with lower initial costs but continuous fuel and carbon costs.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is NOT considered a renewable energy source?",
+      "options": [
+        { "text": "Solar", "isCorrect": false },
+        { "text": "Wind", "isCorrect": false },
+        { "text": "Natural Gas", "isCorrect": true },
+        { "text": "Hydropower", "isCorrect": false }
+      ],
+      "explanation": "Natural gas is a fossil fuel, which is a non-renewable resource formed over millions of years. Solar, wind, and hydropower are replenished naturally and are considered renewable."
+    },
+    {
+      "question": "A key economic challenge for many renewable energy projects, like solar and wind farms, compared to traditional power plants is their:",
+      "options": [
+        { "text": "High fuel costs.", "isCorrect": false },
+        { "text": "High initial capital investment.", "isCorrect": true },
+        { "text": "Low operating and maintenance costs.", "isCorrect": false },
+        { "text": "Short project lifespan.", "isCorrect": false }
+      ],
+      "explanation": "Renewable energy technologies typically have a high upfront cost for manufacturing and installation (e.g., the cost of solar panels and turbines). However, their operating costs are very low because the fuel (sun, wind) is free. This cost structure makes them well-suited for life-cycle cost analysis."
+    }
+  ]
+}

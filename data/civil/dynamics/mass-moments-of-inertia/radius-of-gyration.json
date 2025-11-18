@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>mass radius of gyration ($k$)</strong> is a geometric property that provides a measure of how the mass of a body is distributed about a specific axis of rotation. It can be imagined as the radial distance from the axis at which the entire mass of the body could be concentrated into a thin ring and still have the same moment of inertia.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The radius of gyration is defined by rearranging the moment of inertia formula. For a body with mass $m$ and moment of inertia $I$ about a given axis, the radius of gyration $k$ about that same axis is:</p>\n$$ I = mk^2 \\quad \\implies \\quad k = \\sqrt{\\frac{I}{m}} $$\n<p class=\"mb-4\">The radius of gyration has units of length (e.g., meters or feet).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application</h3>\n<p class=\"mb-4\">The radius of gyration is a convenient way to represent the moment of inertia of a complex shape. It is used in various dynamic analyses, particularly in the study of vibrations and column buckling (though buckling uses the area radius of gyration, the concept is similar).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A flywheel has a mass of 50 kg and a mass moment of inertia of 8.0 kg·m² about its axis of rotation. What is its radius of gyration?",
+      "options": [
+        { "text": "0.16 m", "isCorrect": false },
+        { "text": "6.25 m", "isCorrect": false },
+        { "text": "0.4 m", "isCorrect": true },
+        { "text": "400 m", "isCorrect": false }
+      ],
+      "explanation": "The radius of gyration is $k = \\sqrt{I/m} = \\sqrt{8.0 \\text{ kg·m²} / 50 \\text{ kg}} = \\sqrt{0.16 \\text{ m²}} = 0.4$ m."
+    },
+    {
+      "question": "If all the mass of a body were concentrated at a distance from the axis of rotation equal to its radius of gyration, the moment of inertia would:",
+      "options": [
+        { "text": "Increase", "isCorrect": false },
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Remain the same", "isCorrect": true },
+        { "text": "Become zero", "isCorrect": false }
+      ],
+      "explanation": "This is the definition of the radius of gyration. It is the equivalent radius where the entire mass could be placed to produce the same moment of inertia ($I = mk^2$)."
+    }
+  ]
+}

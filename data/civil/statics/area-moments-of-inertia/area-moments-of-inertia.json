@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Area Moment of Inertia</strong>, also known as the second moment of area, is a geometric property of a cross-section that reflects how its points are distributed with regard to an arbitrary axis. It is a crucial property in structural engineering as it directly relates to a beam's stiffness and its resistance to bending.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The moment of inertia of an area about the x-axis ($I_x$) and y-axis ($I_y$) is defined by the integrals:</p>\n$$ I_x = \\int_A y^2 dA $$$$ I_y = \\int_A x^2 dA $$\n<p class=\"mb-4\">Because of the $y^2$ and $x^2$ terms, the moment of inertia is always positive and has units of length to the fourth power (e.g., in⁴ or m⁴). The further an area is located from the axis, the more it contributes to the moment of inertia.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Shapes</h3>\n<p class=\"mb-4\">For common geometric shapes, the formulas for the moment of inertia about their centroidal axes are provided in reference handbooks.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangle (base b, height h):</strong></li>\n    $$ I_{xc} = \\frac{bh^3}{12} \\quad \\quad I_{yc} = \\frac{hb^3}{12} $$\n    <li><strong>Circle (radius r, diameter d):</strong></li>\n    $$ I_{xc} = I_{yc} = \\frac{\\pi r^4}{4} = \\frac{\\pi d^4}{64} $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the moment of inertia about the centroidal x-axis for a rectangular cross-section that is 10 inches wide and 20 inches deep?",
+      "options": [
+        { "text": "1,667 in⁴", "isCorrect": false },
+        { "text": "6,667 in⁴", "isCorrect": true },
+        { "text": "20,000 in⁴", "isCorrect": false },
+        { "text": "3,333 in⁴", "isCorrect": false }
+      ],
+      "explanation": "For a rectangle, the moment of inertia about the strong (x) axis is $I_{xc} = bh^3 / 12$. Here, the base $b = 10$ in and the height $h = 20$ in. $I_{xc} = (10)(20)^3 / 12 = (10)(8000) / 12 = 80000 / 12 \\approx 6667$ in⁴."
+    },
+    {
+      "question": "A beam's resistance to bending is directly proportional to which geometric property of its cross-section?",
+      "options": [
+        { "text": "Area", "isCorrect": false },
+        { "text": "Perimeter", "isCorrect": false },
+        { "text": "Area moment of inertia", "isCorrect": true },
+        { "text": "Centroid location", "isCorrect": false }
+      ],
+      "explanation": "The flexural rigidity of a beam is given by the term EI, where E is the material's stiffness and I is the area moment of inertia. A larger moment of inertia indicates a cross-section that is more resistant to bending, resulting in less deflection under load."
+    }
+  ]
+}

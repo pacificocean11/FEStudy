@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A rigid body can be thought of as a collection of a large number of particles. The <strong>mass moment of inertia</strong> of a rigid body is the sum of the moments of inertia of all the elemental particles that make up the body. It represents the body's total resistance to angular acceleration.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The mass moment of inertia ($I$) about a specific axis is defined by the integral:</p>\n$$ I = \\int_m r^2 dm $$\n<p class=\"mb-4\">where $r$ is the perpendicular distance from the axis of rotation to the infinitesimal mass element $dm$. The integration is performed over the entire mass of the body.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Formulas for Common Shapes</h3>\n<p class=\"mb-4\">For the FE exam, you will not be required to perform the integration. Instead, you will use standard formulas for common shapes, which are provided in the reference handbook. It is crucial to use the formula for the correct axis of rotation (e.g., about the centroid vs. about an end).</p>\n<p class=\"mb-4\">Examples of moment of inertia about the centroidal axis (G):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Slender Rod (length L):</strong> About axis perpendicular to the rod.</li>\n    $$ I_G = \\frac{1}{12}mL^2 $$\n    <li><strong>Solid Cylinder (radius R):</strong> About its longitudinal axis.</li>\n    $$ I_G = \\frac{1}{2}mR^2 $$\n    <li><strong>Solid Sphere (radius R):</strong></li>\n    $$ I_G = \\frac{2}{5}mR^2 $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following shapes, all having the same mass M and outer radius R, would have the largest mass moment of inertia about its central axis?",
+      "options": [
+        { "text": "A solid disk/cylinder", "isCorrect": false },
+        { "text": "A solid sphere", "isCorrect": false },
+        { "text": "A thin hoop/ring", "isCorrect": true },
+        { "text": "A slender rod of length R", "isCorrect": false }
+      ],
+      "explanation": "Mass moment of inertia depends on how the mass is distributed relative to the axis of rotation. For a thin hoop or ring, all the mass is concentrated at the maximum possible distance (R) from the center. Its moment of inertia is $I=MR^2$. A solid disk ($I=1/2 MR^2$) and a solid sphere ($I=2/5 MR^2$) have mass distributed closer to the center, resulting in a smaller moment of inertia."
+    },
+    {
+      "question": "What is the mass moment of inertia of a 12 kg slender rod of length 2 m about its center of mass?",
+      "options": [
+        { "text": "4 kg·m²", "isCorrect": true },
+        { "text": "16 kg·m²", "isCorrect": false },
+        { "text": "48 kg·m²", "isCorrect": false },
+        { "text": "1 kg·m²", "isCorrect": false }
+      ],
+      "explanation": "For a slender rod about its centroid, the formula is $I_G = \\frac{1}{12}mL^2$. Plugging in the values: $I_G = \\frac{1}{12}(12 \\text{ kg})(2 \\text{ m})^2 = (1)(4) = 4$ kg·m²."
+    }
+  ]
+}

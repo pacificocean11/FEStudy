@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>State Plane Coordinate System (SPCS)</strong> is a set of 124 geographic zones or coordinate systems designed for specific regions of the United States. Each state has one or more zones. The purpose of the system is to provide a local plane (flat grid) coordinate system that is highly accurate over a small area, minimizing the distortion caused by projecting the curved surface of the Earth onto a flat map.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Map Projections Used</h3>\n<p class=\"mb-4\">To minimize distortion, the SPCS uses two types of map projections:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lambert Conformal Conic Projection:</strong> This projection is used for states that are long in the east-west direction (e.g., Tennessee, Kentucky). It uses a cone as the developable surface, which is conceptually placed over the Earth.</li>\n    <li><strong>Transverse Mercator Projection:</strong> This projection is used for states that are long in the north-south direction (e.g., California, Illinois). It uses a cylinder that is tangent to the Earth along a meridian of longitude.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Coordinates</h3>\n<p class=\"mb-4\">Within each zone, coordinates are given as a pair of Cartesian coordinates: a <strong>northing</strong> (y-coordinate) and an <strong>easting</strong> (x-coordinate). These coordinates are typically in feet or meters. A false origin is established for each zone so that all coordinate values within the zone are positive.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the primary purpose of the State Plane Coordinate System?",
+      "options": [
+        { "text": "To create a single map of the entire United States.", "isCorrect": false },
+        { "text": "To provide a highly accurate plane coordinate system for local surveying and engineering work by minimizing projection distortion.", "isCorrect": true },
+        { "text": "To define international boundaries.", "isCorrect": false },
+        { "text": "To replace the latitude and longitude system.", "isCorrect": false }
+      ],
+      "explanation": "The State Plane system's main advantage is its accuracy over small regions. By dividing the country into numerous small zones, it allows surveyors and engineers to work with simple plane geometry and Cartesian coordinates while maintaining a very high degree of accuracy relative to the true curved surface of the Earth."
+    },
+    {
+      "question": "The State Plane Coordinate System would use a Transverse Mercator projection for a state that is long in which direction?",
+      "options": [
+        { "text": "East-West", "isCorrect": false },
+        { "text": "North-South", "isCorrect": true },
+        { "text": "Diagonally", "isCorrect": false },
+        { "text": "It does not depend on the state's shape.", "isCorrect": false }
+      ],
+      "explanation": "The Transverse Mercator projection uses a cylinder wrapped around the Earth tangent along a meridian (a north-south line). This makes it ideal for minimizing distortion in zones that are longer in the north-south direction."
+    }
+  ]
+}

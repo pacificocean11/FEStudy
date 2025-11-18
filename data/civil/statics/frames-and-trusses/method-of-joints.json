@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Method of Joints</strong> is a procedure for analyzing a truss by considering the equilibrium of each of its joints. Since all members in an ideal truss are two-force members and all external loads are applied at the joints, each joint is a system of concurrent forces that must be in equilibrium.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Assumptions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Truss members are connected by frictionless pins.</li>\n    <li>All loads and support reactions are applied only at the joints.</li>\n    <li>The weight of the members is negligible.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Determine the support reactions for the entire truss by treating it as a single rigid body.</li>\n    <li>Draw a free-body diagram (FBD) of a starting joint. This joint must have at most two unknown member forces.</li>\n    <li>By convention, assume all unknown member forces are in <strong>tension</strong> (pulling away from the joint). If the solution for a force is positive, the member is in tension. If the solution is negative, the member is in compression.</li>\n    <li>Apply the two equations of equilibrium for a concurrent force system to the joint's FBD:</li>\n    $$ \\sum F_x = 0 \\quad \\quad \\sum F_y = 0 $$\n    <li>Solve for the unknown forces.</li>\n    <li>Move to an adjacent joint that now has no more than two unknowns, and repeat the process until all desired member forces are found.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "When using the Method of Joints to analyze a truss, each joint is treated as a particle in equilibrium under a system of what type of forces?",
+      "options": [
+        { "text": "Parallel forces", "isCorrect": false },
+        { "text": "Concurrent forces", "isCorrect": true },
+        { "text": "Non-concurrent forces", "isCorrect": false },
+        { "text": "Couples", "isCorrect": false }
+      ],
+      "explanation": "Since all member forces and external loads at a joint act through the same point (the pin), the system is a concurrent force system. This is why only the force equilibrium equations ($\\sum F_x=0, \\sum F_y=0$) are needed, and the moment equation is not used."
+    },
+    {
+      "question": "When drawing the free-body diagram of a joint and solving for an unknown member force, a negative result indicates that the member is in:",
+      "options": [
+        { "text": "Tension", "isCorrect": false },
+        { "text": "Compression", "isCorrect": true },
+        { "text": "Bending", "isCorrect": false },
+        { "text": "A zero-force state", "isCorrect": false }
+      ],
+      "explanation": "The standard convention is to assume all unknown forces are in tension (pulling on the joint). If the math results in a negative value, it means the initial assumption was wrong, and the force is actually acting in the opposite direction (pushing on the joint), which corresponds to compression."
+    }
+  ]
+}

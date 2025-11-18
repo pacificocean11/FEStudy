@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Euler's Equation of Motion</strong> is a fundamental equation in fluid dynamics that describes the motion of a fluid. It is essentially Newton's Second Law ($F=ma$) applied to an infinitesimal fluid element, assuming the fluid is inviscid (frictionless).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equation</h3>\n<p class=\"mb-4\">The equation relates the change in pressure, velocity, and elevation along a streamline. In its differential form, it is written as:</p>\n$$ \\frac{dP}{\\rho} + v\\ dv + g\\ dz = 0 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$dP$: change in pressure</li>\n    <li>$\\rho$: density of the fluid</li>\n    <li>$v\\ dv$: change in kinetic energy term</li>\n    <li>$g\\ dz$: change in potential energy term</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Relationship to Bernoulli's Equation</h3>\n<p class=\"mb-4\">The Bernoulli equation is a direct result of integrating Euler's equation along a streamline, with the additional assumption that the fluid is incompressible (density $\\rho$ is constant).</p>\n<p class=\"mb-4\">Integrating Euler's equation term by term:</p>\n$$ \\int \\frac{dP}{\\rho} + \\int v\\ dv + \\int g\\ dz = \\text{Constant} $$$$ \\frac{P}{\\rho} + \\frac{v^2}{2} + gz = \\text{Constant} $$\n<p class=\"mb-4\">Dividing by $g$ gives the familiar 'head' form of the Bernoulli equation:</p>\n$$ \\frac{P}{\\rho g} + \\frac{v^2}{2g} + z = \\text{Constant Head} $$\n<p class=\"mb-4\">Therefore, Euler's equation can be considered the more fundamental, differential form of the Bernoulli energy principle for ideal fluids.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Integrating Euler's equation along a streamline for an incompressible, inviscid fluid results in which of the following?",
+      "options": [
+        { "text": "The continuity equation", "isCorrect": false },
+        { "text": "The momentum equation", "isCorrect": false },
+        { "text": "The Bernoulli equation", "isCorrect": true },
+        { "text": "The Navier-Stokes equation", "isCorrect": false }
+      ],
+      "explanation": "Euler's equation is Newton's second law for a fluid element. When integrated for an incompressible fluid (constant density), it yields the Bernoulli equation, which is a statement of the conservation of energy along a streamline."
+    }
+  ]
+}

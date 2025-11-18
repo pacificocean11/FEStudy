@@ -46,9 +46,33 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Rate of Return', content: null },
           ],
         },
-        { name: 'B. Cost', subtopics: [{ name: 'B. Cost', content: null }] },
-        { name: 'C. Analyses', subtopics: [{ name: 'C. Analyses', content: null }] },
-        { name: 'D. Uncertainty', subtopics: [{ name: 'D. Uncertainty', content: null }] },
+        {
+          name: 'B. Cost',
+          subtopics: [
+            { name: 'Fixed and Variable Costs', content: null },
+            { name: 'Direct and Indirect Labor Costs', content: null },
+            { name: 'Incremental Costs', content: null },
+            { name: 'Average Costs', content: null },
+            { name: 'Sunk Costs', content: null },
+          ],
+        },
+        {
+          name: 'C. Analyses',
+          subtopics: [
+            { name: 'Break-Even Analysis', content: null },
+            { name: 'Benefit-Cost Analysis', content: null },
+            { name: 'Life Cycle Analysis', content: null },
+            { name: 'Sustainability', content: null },
+            { name: 'Renewable Energy', content: null },
+          ],
+        },
+        {
+          name: 'D. Uncertainty',
+          subtopics: [
+            { name: 'Expected Value', content: null },
+            { name: 'Risk', content: null },
+          ],
+        },
       ],
     },
     {
@@ -57,26 +81,79 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'A. Resultants of force systems', subtopics: [{ name: 'A. Resultants of force systems', content: null }] },
         { name: 'B. Equivalent force systems', subtopics: [{ name: 'B. Equivalent force systems', content: null }] },
         { name: 'C. Equilibrium of rigid bodies', subtopics: [{ name: 'C. Equilibrium of rigid bodies', content: null }] },
-        { name: 'D. Frames and trusses', subtopics: [{ name: 'D. Frames and trusses', content: null }] },
-        { name: 'E. Centroid of area', subtopics: [{ name: 'E. Centroid of area', content: null }] },
-        { name: 'F. Area moments of inertia', subtopics: [{ name: 'F. Area moments of inertia', content: null }] },
+        {
+          name: 'D. Frames and trusses',
+          subtopics: [
+            { name: 'Method of Joints', content: null },
+            { name: 'Method of Section', content: null },
+            { name: 'Zero Force Members', content: null },
+          ],
+        },
+        {
+          name: 'E. Centroid of area',
+          subtopics: [
+            { name: 'Centroids of Masses, Areas, Lengths, and Volumes', content: null },
+          ],
+        },
+        {
+          name: 'F. Area moments of inertia',
+          subtopics: [
+            { name: 'Area Moments of Inertia', content: null },
+            { name: 'Polar Moment of Inertia', content: null },
+            { name: 'Perpendicular Axis Theorem', content: null },
+            { name: 'Parallel Axis Theorem', content: null },
+            { name: 'Radius of Gyration', content: null },
+            { name: 'Product of Inertia', content: null },
+          ],
+        },
         { name: 'G. Static friction', subtopics: [{ name: 'G. Static friction', content: null }] },
       ],
     },
     {
       name: '5. Dynamics',
       topics: [
-        { name: 'A. Kinematics', subtopics: [{ name: 'A. Kinematics', content: null }] },
-        { name: 'B. Mass moments of inertia', subtopics: [{ name: 'B. Mass moments of inertia', content: null }] },
+        {
+          name: 'A. Kinematics',
+          subtopics: [
+            { name: 'Kinematics of Particles', content: null },
+            { name: 'Kinematics of Rigid Bodies', content: null },
+          ],
+        },
+        {
+          name: 'B. Mass moments of inertia',
+          subtopics: [
+            { name: 'One-Dimensional Motion of a Rigid Body', content: null },
+            { name: 'Mass Moments of Inertia of a Point Mass', content: null },
+            { name: 'Mass Moments of Inertia of a Rigid Body', content: null },
+            { name: 'Radius of Gyration', content: null },
+            { name: 'Parallel Axis Theorem', content: null },
+          ],
+        },
         { name: 'C. Force acceleration', subtopics: [{ name: 'C. Force acceleration', content: null }] },
-        { name: 'D. Work, energy, and power', subtopics: [{ name: 'D. Work, energy, and power', content: null }] },
+        {
+          name: 'D. Work, energy, and power',
+          subtopics: [
+            { name: 'Work, Energy, and Power for Particles', content: null },
+            { name: 'Work, Energy, and Power for Rigid Bodies', content: null },
+          ],
+        },
       ],
     },
     {
       name: '6. Mechanics of Materials',
       topics: [
         { name: 'A. Shear and moment diagrams', subtopics: [{ name: 'A. Shear and moment diagrams', content: null }] },
-        { name: 'B. Stresses and strains', subtopics: [{ name: 'B. Stresses and strains', content: null }] },
+        {
+          name: 'B. Stresses and strains',
+          subtopics: [
+            { name: 'Stress-Strain Diagrams', content: null },
+            { name: 'Axial Stresses', content: null },
+            { name: 'Torsional Stresses', content: null },
+            { name: 'Bending Stresses', content: null },
+            { name: 'Shear Stresses', content: null },
+            { name: 'Thermal Stresses', content: null },
+          ],
+        },
         {
           name: 'C. Deformations',
           subtopics: [
@@ -86,7 +163,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Thermal', content: null },
           ],
         },
-        { name: "D. Combined stresses, principal stresses, and Mohr's circle", subtopics: [{ name: "D. Combined stresses, principal stresses, and Mohr's circle", content: null }] },
+        {
+          name: "D. Combined stresses, principal stresses, and Mohr's circle",
+          subtopics: [
+            { name: 'Principal Stresses', content: null },
+            { name: "Mohr's Circle", content: null },
+            { name: 'Combined Loading- Axial with Shear', content: null },
+            { name: 'Combined Loading- Axial with Bending', content: null },
+            { name: 'Composite Sections', content: null },
+          ],
+        },
       ],
     },
     {
@@ -100,19 +186,71 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '8. Fluid Mechanics',
       topics: [
-        { name: 'A. Flow measurement', subtopics: [{ name: 'A. Flow measurement', content: null }] },
-        { name: 'B. Fluid properties', subtopics: [{ name: 'B. Fluid properties', content: null }] },
-        { name: 'C. Fluid statics', subtopics: [{ name: 'C. Fluid statics', content: null }] },
-        { name: 'D. Energy, impulse, and momentum of fluids', subtopics: [{ name: 'D. Energy, impulse, and momentum of fluids', content: null }] },
+        {
+          name: 'A. Flow measurement',
+          subtopics: [
+            { name: 'Pitot Tube', content: null },
+            { name: 'Venturi Meter', content: null },
+          ],
+        },
+        {
+          name: 'B. Fluid properties',
+          subtopics: [
+            { name: 'Fluid Properties', content: null },
+            { name: 'Stress, Pressure, Viscosity', content: null },
+            { name: 'Surface Tension, Capillarity', content: null },
+          ],
+        },
+        {
+          name: 'C. Fluid statics',
+          subtopics: [
+            { name: 'Pressure in Static Liquid', content: null },
+            { name: 'Manometers', content: null },
+            { name: 'Hydrostatic Forces', content: null },
+            { name: 'Archimedes Principle and Buoyancy', content: null },
+          ],
+        },
+        {
+          name: 'D. Energy, impulse, and momentum of fluids',
+          subtopics: [
+            { name: 'One-Dimensional Fluid Flow', content: null },
+            { name: 'Continuity Equation', content: null },
+            { name: 'Bernoulli/Energy Equation', content: null },
+            { name: "Euler's Equation", content: null },
+            { name: 'Impulse-Momentum Principle', content: null },
+            { name: 'Momentum Equation', content: null },
+            { name: 'Pipes, Bends and Contractions', content: null },
+          ],
+        },
       ],
     },
     {
       name: '9. Surveying',
       topics: [
-        { name: 'A. Angles, distances, and trigonometry', subtopics: [{ name: 'A. Angles, distances, and trigonometry', content: null }] },
-        { name: 'B. Area computations', subtopics: [{ name: 'B. Area computations', content: null }] },
+        { 
+          name: 'A. Angles, distances, and trigonometry', 
+          subtopics: [
+            { name: 'Angles and Distances', content: null },
+            { name: 'Trigonometry', content: null },
+          ] 
+        },
+        {
+          name: 'B. Area computations',
+          subtopics: [
+            { name: 'Traversing Coordinates', content: null },
+            { name: 'Triangle Method', content: null },
+            { name: 'Trapezoidal Rule', content: null },
+            { name: "Simpson's Rule", content: null },
+          ],
+        },
         { name: 'C. Earthwork and volume computations', subtopics: [{ name: 'C. Earthwork and volume computations', content: null }] },
-        { name: 'D. Coordinate systems', subtopics: [{ name: 'D. Coordinate systems', content: null }] },
+        {
+          name: 'D. Coordinate systems',
+          subtopics: [
+            { name: 'State Plane', content: null },
+            { name: 'Latitude/Longitude', content: null },
+          ],
+        },
         {
           name: 'E. Leveling',
           subtopics: [
@@ -143,8 +281,20 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Open-Channel Flow', content: null },
           ],
         },
-        { name: 'C. Pumps', subtopics: [{ name: 'C. Pumps', content: null }] },
-        { name: 'D. Water distribution systems', subtopics: [{ name: 'D. Water distribution systems', content: null }] },
+        { 
+          name: 'C. Pumps', 
+          subtopics: [
+            { name: 'Pumps', content: null },
+            { name: 'NPSH and Cavitation', content: null },
+            { name: 'Pump Performance Curves', content: null },
+          ] 
+        },
+        { 
+          name: 'D. Water distribution systems', 
+          subtopics: [
+            { name: 'Distribution Systems', content: null },
+          ]
+        },
         {
           name: 'E. Flood control',
           subtopics: [
@@ -205,11 +355,38 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '11. Structural Engineering',
       topics: [
-        { name: 'A. Analysis of statically determinant beams, columns, trusses, and frames', subtopics: [{ name: 'A. Analysis of statically determinant beams, columns, trusses, and frames', content: null }] },
-        { name: 'B. Deflection of statically determinant beams, trusses, and frames', subtopics: [{ name: 'B. Deflection of statically determinant beams, trusses, and frames', content: null }] },
-        { name: 'C. Column analysis', subtopics: [{ name: 'C. Column analysis', content: null }] },
+        { 
+          name: 'A. Analysis of statically determinant beams, columns, trusses, and frames', 
+          subtopics: [
+            { name: 'Influence Lines', content: null },
+            { name: 'Moving Concentrated Load Sets', content: null },
+            { name: 'Beam Stiffness and Moment Carryover', content: null },
+            { name: 'Truss Deflection by Unit Load Method', content: null },
+            { name: 'Frame Deflection by Unit Load Method', content: null },
+          ] 
+        },
+        { 
+          name: 'B. Deflection of statically determinant beams, trusses, and frames', 
+          subtopics: [
+            { name: 'Deflection of Beams', content: null },
+            { name: 'Beam Deflection Formulae', content: null },
+          ]
+        },
+        { 
+          name: 'C. Column analysis', 
+          subtopics: [
+            { name: 'Buckling', content: null },
+            { name: 'Boundary Conditions', content: null },
+          ] 
+        },
         { name: 'D. Structural determinacy and stability analysis of beams, trusses, and frames', subtopics: [{ name: 'D. Structural determinacy and stability analysis of beams, trusses, and frames', content: null }] },
-        { name: 'E. Elementary statically indeterminate structures', subtopics: [{ name: 'E. Elementary statically indeterminate structures', content: null }] },
+        { 
+          name: 'E. Elementary statically indeterminate structures', 
+          subtopics: [
+            { name: 'Force Method of Analysis', content: null },
+            { name: 'Member Fixed-End Moments', content: null },
+          ]
+        },
         {
           name: 'F. Loads, load combinations, and load paths',
           subtopics: [

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Parallel Axis Theorem</strong> is a fundamental principle used to determine the mass moment of inertia of a rigid body about any axis, given the moment of inertia about a parallel axis that passes through the body's center of mass (G).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Theorem</h3>\n<p class=\"mb-4\">The moment of inertia ($I$) about any axis is equal to the moment of inertia about a parallel centroidal axis ($I_G$), plus the product of the body's total mass ($m$) and the square of the perpendicular distance ($d$) between the two axes.</p>\n$$ I = I_G + md^2 $$\n<p class=\"mb-4\">This theorem is essential for two main reasons:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It allows us to find the moment of inertia for an object rotating about a point other than its center of mass (e.g., a rod rotating about its end).</li>\n    <li>It is used to calculate the moment of inertia of composite bodies by summing the moments of inertia of their individual parts about a common axis.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A uniform slender rod of mass $m$ and length $L$ has a moment of inertia about its center of mass of $I_G = \\frac{1}{12}mL^2$. What is the moment of inertia about an axis at one end of the rod?",
+      "options": [
+        { "text": "$\\frac{1}{12}mL^2$", "isCorrect": false },
+        { "text": "$\\frac{1}{3}mL^2$", "isCorrect": true },
+        { "text": "$\\frac{1}{2}mL^2$", "isCorrect": false },
+        { "text": "$mL^2$", "isCorrect": false }
+      ],
+      "explanation": "Use the Parallel Axis Theorem: $I_{end} = I_G + md^2$. The distance from the center of mass to the end of the rod is $d = L/2$. So, $I_{end} = \\frac{1}{12}mL^2 + m(L/2)^2 = \\frac{1}{12}mL^2 + \\frac{1}{4}mL^2 = (\\frac{1}{12} + \\frac{3}{12})mL^2 = \\frac{4}{12}mL^2 = \\frac{1}{3}mL^2$."
+    },
+    {
+      "question": "The moment of inertia of a body about its center of mass G is $I_G = 20$ kg·m². The body has a mass of 5 kg. What is its moment of inertia about a parallel axis located 2 m from G?",
+      "options": [
+        { "text": "20 kg·m²", "isCorrect": false },
+        { "text": "30 kg·m²", "isCorrect": false },
+        { "text": "40 kg·m²", "isCorrect": true },
+        { "text": "120 kg·m²", "isCorrect": false }
+      ],
+      "explanation": "Apply the Parallel Axis Theorem: $I = I_G + md^2$. Here, $I_G=20$, $m=5$, and $d=2$. $I = 20 + (5)(2^2) = 20 + (5)(4) = 20 + 20 = 40$ kg·m²."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Sustainable development</strong> is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. It is about finding a balance between environmental protection, social equity, and economic viability.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Three Pillars of Sustainability</h3>\n<p class=\"mb-4\">Sustainability is often represented as having three interconnected dimensions or pillars:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Environmental (Planet):</strong> The ability to maintain rates of renewable resource harvest, pollution creation, and non-renewable resource depletion that can be continued indefinitely. It involves protecting ecosystems and biodiversity.</li>\n    <li><strong>Social (People):</strong> The ability of a social system, such as a community, to function at a defined level of social well-being indefinitely. It includes issues of equity, public health, community development, and human rights.</li>\n    <li><strong>Economic (Profit):</strong> The ability to support a defined level of economic production indefinitely. A sustainable economy must be able to produce goods and services on a continuing basis while being efficient and responsible.</li>\n</ul>\n<p class=\"mb-4\">Civil engineers play a key role in sustainability by designing infrastructure that is resilient, efficient, and has minimal environmental impact.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following best describes the concept of sustainable engineering design?",
+      "options": [
+        { "text": "Designing a project that has the lowest possible initial cost.", "isCorrect": false },
+        { "text": "Designing a project that uses only the most advanced technology.", "isCorrect": false },
+        { "text": "Designing a project that balances environmental, social, and economic impacts throughout its life cycle.", "isCorrect": true },
+        { "text": "Designing a project that meets all current government environmental regulations.", "isCorrect": false }
+      ],
+      "explanation": "Sustainability is a holistic concept. While cost, technology, and regulations are all part of it, the core idea is the integration and balancing of the three pillars: environmental, social, and economic."
+    },
+    {
+      "question": "The 'Three Pillars' of sustainability are commonly referred to as:",
+      "options": [
+        { "text": "Reduce, Reuse, Recycle", "isCorrect": false },
+        { "text": "Air, Water, Soil", "isCorrect": false },
+        { "text": "Environmental, Social, and Economic", "isCorrect": true },
+        { "text": "Past, Present, and Future", "isCorrect": false }
+      ],
+      "explanation": "The globally recognized model for sustainability is based on balancing three interconnected dimensions: environmental stewardship (planet), social responsibility (people), and economic viability (profit)."
+    }
+  ]
+}

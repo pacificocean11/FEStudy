@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definitions</h3>\n<p class=\"mb-4\">Total labor costs on a project can be broken down into direct and indirect costs.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Direct Labor Costs:</strong> These are the wages and benefits paid to workers who are directly involved in the physical construction of the project. Their work can be easily and directly traced to a specific work item. Examples include carpenters, concrete finishers, and equipment operators.</li>\n    <li><strong>Indirect Labor Costs:</strong> These are the wages and benefits for employees who are necessary for the project but do not work directly on the physical installation. Their time is not easily attributable to a single work item. Examples include project managers, superintendents, safety officers, and administrative staff. These costs are typically part of the project's overhead.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The salary of a project superintendent who oversees all operations on a construction site is classified as:",
+      "options": [
+        { "text": "A direct labor cost.", "isCorrect": false },
+        { "text": "An indirect labor cost.", "isCorrect": true },
+        { "text": "A direct material cost.", "isCorrect": false },
+        { "text": "A capital cost.", "isCorrect": false }
+      ],
+      "explanation": "The superintendent's work is essential for the project, but they are managing the overall process rather than physically building a specific component. Therefore, their salary is an indirect labor cost, part of the project overhead."
+    },
+    {
+      "question": "Which of the following is an example of a direct labor cost on a road construction project?",
+      "options": [
+        { "text": "The salary of the company's CEO.", "isCorrect": false },
+        { "text": "The wages of the asphalt paver operator.", "isCorrect": true },
+        { "text": "The cost of fuel for the equipment.", "isCorrect": false },
+        { "text": "The salary of the project's safety manager.", "isCorrect": false }
+      ],
+      "explanation": "The asphalt paver operator is a craft worker directly performing the physical work of placing the asphalt. Their wages are a direct labor cost. The CEO and safety manager are indirect costs, and fuel is a variable cost but not a labor cost."
+    }
+  ]
+}

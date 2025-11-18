@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">When a surface is submerged in a fluid, the fluid pressure exerts a force on the surface. Since pressure increases with depth, the force is not uniform. The analysis involves finding the magnitude of the resultant hydrostatic force and the point where it acts, known as the center of pressure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Resultant Force on a Plane Surface</h3>\n<p class=\"mb-4\">The magnitude of the resultant hydrostatic force ($F_R$) on a submerged plane surface is equal to the pressure at the centroid of the surface multiplied by the area of the surface.</p>\n$$ F_R = P_c A = (\\gamma h_c) A = (\\rho g h_c) A $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$P_c$ is the pressure at the centroid of the area.</li>\n    <li>$A$ is the total area of the submerged surface.</li>\n    <li>$h_c$ is the vertical depth from the free surface to the centroid of the area.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Center of Pressure ($y_p$)</h3>\n<p class=\"mb-4\">The center of pressure is the point on the surface where the resultant force $F_R$ can be considered to act. It is always located below the centroid of the area. The location of the center of pressure ($y_p$) measured along the incline of the surface from the free surface is:</p>\n$$ y_p = y_c + \\frac{I_{xc}}{y_c A} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$y_c$ is the slant distance from the free surface to the centroid.</li>\n    <li>$I_{xc}$ is the area moment of inertia of the surface about its own centroidal axis.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A vertical rectangular gate in a dam is 2 m wide and 3 m high, with its top edge at the water surface. What is the magnitude of the resultant hydrostatic force on the gate? (Use $\\rho_{water} = 1000$ kg/m³ and $g=9.81$ m/s²).",
+      "options": [
+        { "text": "29.4 kN", "isCorrect": false },
+        { "text": "58.9 kN", "isCorrect": false },
+        { "text": "88.3 kN", "isCorrect": true },
+        { "text": "176.6 kN", "isCorrect": false }
+      ],
+      "explanation": "The centroid of the rectangle is at its geometric center, which is $h_c = 3/2 = 1.5$ m below the surface. The area of the gate is $A = 2 \\text{ m} \\times 3 \\text{ m} = 6$ m². The resultant force is $F_R = \\rho g h_c A = (1000)(9.81)(1.5)(6) = 88,290$ N, or 88.3 kN."
+    },
+    {
+      "question": "For the gate in the previous problem, where is the center of pressure located vertically from the water surface?",
+      "options": [
+        { "text": "1.5 m", "isCorrect": false },
+        { "text": "2.0 m", "isCorrect": true },
+        { "text": "2.25 m", "isCorrect": false },
+        { "text": "2.5 m", "isCorrect": false }
+      ],
+      "explanation": "The center of pressure is always below the centroid. For a vertical surface, $y_p = y_c = h_c = 1.5$ m. The moment of inertia of a rectangle about its centroid is $I_{xc} = bh^3/12 = (2)(3^3)/12 = 4.5 \\text{ m}^4$. The area is $A=6 \\text{ m}^2$. Using the formula: $y_p = y_c + I_{xc}/(y_c A) = 1.5 + \\frac{4.5}{(1.5)(6)} = 1.5 + \\frac{4.5}{9} = 1.5 + 0.5 = 2.0$ m."
+    }
+  ]
+}

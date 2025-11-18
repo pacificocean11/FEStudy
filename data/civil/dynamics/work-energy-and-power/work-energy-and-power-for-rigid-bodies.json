@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Kinetic Energy of a Rigid Body</h3>\n<p class=\"mb-4\">A rigid body in general plane motion can have both translational and rotational motion. Its total kinetic energy ($T$) is the sum of the translational kinetic energy of its center of mass and the rotational kinetic energy about its center of mass.</p>\n$$ T = \\frac{1}{2}m\\bar{v}^2 + \\frac{1}{2}I_G\\omega^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$m$ is the total mass of the body.</li>\n    <li>$\\bar{v}$ is the speed of the body's center of mass (G).</li>\n    <li>$I_G$ is the mass moment of inertia about the center of mass.</li>\n    <li>$\\omega$ is the angular velocity of the body.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Work and Energy for a Rigid Body</h3>\n<p class=\"mb-4\">The principle of work and energy for a rigid body is the same as for a particle, but it must account for both translational and rotational work and energy.</p>\n$$ T_1 + \\sum U_{1-2} = T_2 $$\n<p class=\"mb-4\">Work can be done by external forces and also by external couple moments ($U_M = M\\Delta\\theta$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Conservation of Energy</h3>\n<p class=\"mb-4\">As with particles, we can define potential energy for conservative forces (gravity, springs). The conservation of energy equation for a rigid body is:</p>\n$$ T_1 + V_1 = T_2 + V_2 $$\n<p class=\"mb-4\">This is a powerful tool for solving problems involving changes in velocity and position for rolling or rotating objects.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A solid cylinder of mass 10 kg and radius 0.2 m rolls without slipping. Its center of mass is moving at 5 m/s. What is its total kinetic energy? (For a solid cylinder, $I_G = \\frac{1}{2}mr^2$).",
+      "options": [
+        { "text": "125 J", "isCorrect": false },
+        { "text": "250 J", "isCorrect": false },
+        { "text": "187.5 J", "isCorrect": true },
+        { "text": "62.5 J", "isCorrect": false }
+      ],
+      "explanation": "The total KE is the sum of translational and rotational KE. Translational KE = $\\frac{1}{2}m\\bar{v}^2 = \\frac{1}{2}(10)(5^2) = 125$ J. For rolling without slipping, $v = r\\omega$, so $\\omega = v/r = 5/0.2 = 25$ rad/s. The moment of inertia is $I_G = \\frac{1}{2}(10)(0.2)^2 = 0.2$ kg·m². Rotational KE = $\\frac{1}{2}I_G\\omega^2 = \\frac{1}{2}(0.2)(25^2) = 0.1(625) = 62.5$ J. Total KE = $125 + 62.5 = 187.5$ J."
+    },
+    {
+      "question": "A solid sphere is released from rest at the top of a 5 m high incline and rolls without slipping to the bottom. What is its final velocity? (For a solid sphere, $I_G = \\frac{2}{5}mr^2$).",
+      "options": [
+        { "text": "9.9 m/s", "isCorrect": false },
+        { "text": "8.4 m/s", "isCorrect": true },
+        { "text": "7.0 m/s", "isCorrect": false },
+        { "text": "10.8 m/s", "isCorrect": false }
+      ],
+      "explanation": "Use conservation of energy. $T_1+V_1 = T_2+V_2$. Initial state: $T_1=0, V_1=mgh$. Final state: $T_2 = \\frac{1}{2}m\\bar{v}^2 + \\frac{1}{2}I_G\\omega^2$, $V_2=0$. Substitute $I_G$ and $\\omega=v/r$: $mgh = \\frac{1}{2}mv^2 + \\frac{1}{2}(\\frac{2}{5}mr^2)(v/r)^2 = \\frac{1}{2}mv^2 + \\frac{1}{5}mv^2 = \\frac{7}{10}mv^2$. Mass cancels. $gh = 0.7v^2 \\implies v = \\sqrt{gh/0.7} = \\sqrt{10gh/7} = \\sqrt{10(9.81)(5)/7} \\approx 8.4$ m/s."
+    }
+  ]
+}

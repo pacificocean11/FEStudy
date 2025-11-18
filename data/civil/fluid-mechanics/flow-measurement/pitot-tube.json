@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Pitot tube</strong> is a simple device used to measure the velocity of a fluid. It is widely used in aircraft to measure airspeed and in industrial applications to measure flow velocity in pipes and ducts.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Operation</h3>\n<p class=\"mb-4\">The Pitot tube works by applying the Bernoulli equation. It consists of two tubes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>An inner tube that faces directly into the flow. The fluid is brought to a stop (stagnates) at the tip of this tube. This opening measures the <strong>stagnation pressure ($P_0$)</strong>, which is the sum of the static pressure and the dynamic pressure.</li>\n    <li>An outer tube with holes on the side, perpendicular to the flow. These holes measure the <strong>static pressure ($P_s$)</strong> of the surrounding fluid stream.</li>\n</ul>\n<p class=\"mb-4\">By applying the Bernoulli equation between a point in the free stream and the stagnation point, we can relate the velocity to the pressure difference:</p>\n$$ \\frac{P_s}{\\gamma} + \\frac{v^2}{2g} = \\frac{P_0}{\\gamma} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Velocity Formula</h3>\n<p class=\"mb-4\">Rearranging the Bernoulli equation gives the formula for the fluid velocity:</p>\n$$ v = \\sqrt{\\frac{2(P_0 - P_s)}{\\rho}} $$\n<p class=\"mb-4\">Where ($P_0 - P_s$) is the dynamic pressure, which is the pressure difference measured by the instrument (often with a manometer or pressure transducer), and $\\rho$ is the density of the fluid.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A Pitot tube is used to measure the velocity of water ($\\rho = 1000$ kg/m³). The measured pressure difference between the stagnation point and the static port is 10 kPa. What is the velocity of the water?",
+      "options": [
+        { "text": "10.0 m/s", "isCorrect": false },
+        { "text": "4.47 m/s", "isCorrect": true },
+        { "text": "20.0 m/s", "isCorrect": false },
+        { "text": "14.1 m/s", "isCorrect": false }
+      ],
+      "explanation": "Use the Pitot tube velocity formula. First, convert the pressure to Pascals: $10 \\text{ kPa} = 10,000$ Pa. $v = \\sqrt{\\frac{2(P_0 - P_s)}{\\rho}} = \\sqrt{\\frac{2(10,000 \\text{ Pa})}{1000 \\text{ kg/m³}}} = \\sqrt{20} \\approx 4.47$ m/s."
+    }
+  ]
+}

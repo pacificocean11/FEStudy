@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Surface Tension ($\\sigma_s$)</h3>\n<p class=\"mb-4\">Surface tension is the tendency of liquid surfaces to shrink into the minimum surface area possible. It is a result of the cohesive forces between liquid molecules. At the surface, molecules are pulled inwards by their neighbors, creating an effect like a thin, stretched membrane.</p>\n<p class=\"mb-4\">It is defined as the force per unit length (N/m).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Capillarity (Capillary Action)</h3>\n<p class=\"mb-4\">Capillary action is the ability of a liquid to flow in narrow spaces without the assistance of, or even in opposition to, external forces like gravity. The effect is a result of the interplay between the liquid's cohesive forces (surface tension) and the adhesive forces between the liquid and the tube walls.</p>\n<p class=\"mb-4\">The height ($h$) to which a liquid will rise or fall in a capillary tube is given by:</p>\n$$ h = \\frac{2\\sigma_s \\cos\\theta}{\\gamma r} = \\frac{2\\sigma_s \\cos\\theta}{\\rho g r} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h$ is the height of the liquid column.</li>\n    <li>$\\sigma_s$ is the surface tension.</li>\n    <li>$\\theta$ is the contact angle between the liquid and the tube wall.</li>\n    <li>$\\gamma$ is the specific weight of the liquid ($\\rho g$).</li>\n    <li>$r$ is the radius of the tube.</li>\n</ul>\n<p class=\"mb-4\">If the adhesive forces are stronger than the cohesive forces (e.g., water in glass), the liquid 'wets' the surface, the contact angle $\\theta < 90^\\circ$, and the liquid rises. If cohesive forces are stronger (e.g., mercury in glass), $\\theta > 90^\\circ$, and the liquid is depressed.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Water has a contact angle of nearly 0° with clean glass. What will happen if a thin glass tube is placed in a beaker of water?",
+      "options": [
+        { "text": "The water level in the tube will be lower than in the beaker.", "isCorrect": false },
+        { "text": "The water level in the tube will be the same as in the beaker.", "isCorrect": false },
+        { "text": "The water level in the tube will be higher than in the beaker.", "isCorrect": true },
+        { "text": "The water will be repelled from the tube.", "isCorrect": false }
+      ],
+      "explanation": "A contact angle less than 90° indicates that the adhesive forces (water to glass) are stronger than the cohesive forces (water to water). This causes the water to 'wet' the glass and be drawn up into the tube, a phenomenon known as capillary rise."
+    },
+    {
+      "question": "A liquid rises to a height $h$ in a capillary tube of radius $r$. If the radius of the tube is halved, what will be the new height of the liquid? (Assume all other properties are constant).",
+      "options": [
+        { "text": "$h/2$", "isCorrect": false },
+        { "text": "$2h$", "isCorrect": true },
+        { "text": "$h/4$", "isCorrect": false },
+        { "text": "$4h$", "isCorrect": false }
+      ],
+      "explanation": "From the capillary height formula, $h$ is inversely proportional to the radius $r$ ($h \\propto 1/r$). Therefore, if the radius is halved ($r_{new} = r/2$), the new height will be doubled ($h_{new} = 2h$)."
+    }
+  ]
+}

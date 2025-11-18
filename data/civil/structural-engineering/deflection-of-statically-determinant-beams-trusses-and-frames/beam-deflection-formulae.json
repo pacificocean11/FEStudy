@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Standard Formulas</h3>\n<p class=\"mb-4\">For many common beam loading and support conditions, the equations for maximum deflection and slope have been derived and are available in tables in engineering handbooks (including the NCEES FE Reference Handbook). For the FE exam, you are expected to be able to find and apply the correct formula for a given situation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Cases</h3>\n<p class=\"mb-4\">Below are some of the most common beam deflection formulas:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Cantilever Beam with Point Load P at the End:</strong></li>\n    $$ \\delta_{max} = \\frac{PL^3}{3EI} \\quad \\text{(at the free end)} $$$$ \\theta_{max} = \\frac{PL^2}{2EI} \\quad \\text{(at the free end)} $$\n    <li><strong>Cantilever Beam with Uniform Load w:</strong></li>\n    $$ \\delta_{max} = \\frac{wL^4}{8EI} \\quad \\text{(at the free end)} $$$$ \\theta_{max} = \\frac{wL^3}{6EI} \\quad \\text{(at the free end)} $$\n    <li><strong>Simply Supported Beam with Point Load P at Midspan:</strong></li>\n    $$ \\delta_{max} = \\frac{PL^3}{48EI} \\quad \\text{(at midspan)} $$\n    <li><strong>Simply Supported Beam with Uniform Load w:</strong></li>\n    $$ \\delta_{max} = \\frac{5wL^4}{384EI} \\quad \\text{(at midspan)} $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Superposition</h3>\n<p class=\"mb-4\">The <strong>principle of superposition</strong> is a powerful tool used for beams with multiple loads. It states that the total deflection or slope at any point on a beam is the algebraic sum of the deflections or slopes at that point caused by each load acting individually. This allows you to combine the results from standard formula cases to solve more complex loading scenarios.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported beam of length L carries a uniform load w. The maximum deflection occurs at the center of the beam. If the length of the beam is doubled, by what factor will the maximum deflection increase?",
+      "options": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "16", "isCorrect": true }
+      ],
+      "explanation": "The formula for maximum deflection in this case is $\\delta_{max} = \\frac{5wL^4}{384EI}$. The deflection is proportional to the fourth power of the length ($L^4$). Therefore, if the length is doubled, the deflection will increase by a factor of $2^4 = 16$."
+    },
+    {
+      "question": "A simply supported beam of length L has a concentrated load P at midspan and a uniform load w over its entire length. What is the formula for the maximum deflection at midspan?",
+      "options": [
+        { "text": "$\\frac{PL^3}{48EI} \\times \\frac{5wL^4}{384EI}$", "isCorrect": false },
+        { "text": "$\\frac{PL^3}{48EI} + \\frac{5wL^4}{384EI}$", "isCorrect": true },
+        { "text": "$\\frac{wL^4}{8EI} + \\frac{PL^3}{3EI}$", "isCorrect": false },
+        { "text": "The larger of the two individual deflections.", "isCorrect": false }
+      ],
+      "explanation": "By the principle of superposition, the total deflection is the sum of the deflections caused by each load acting alone. The deflection from the point load at midspan is $PL^3/(48EI)$, and the deflection from the uniform load is $5wL^4/(384EI)$. The total maximum deflection is the sum of these two values."
+    }
+  ]
+}

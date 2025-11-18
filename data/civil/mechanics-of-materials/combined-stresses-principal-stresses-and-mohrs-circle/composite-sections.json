@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>composite section</strong> is a structural member composed of two or more different materials that are bonded together to act as a single unit. Common examples include reinforced concrete beams (concrete and steel) or flitched beams (wood and steel plates).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Transformed Section Method</h3>\n<p class=\"mb-4\">To analyze the stresses in a composite section, the <strong>transformed section method</strong> is used. This method involves creating an equivalent, imaginary cross-section made of a single material that has the same properties as the composite section.</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Choose one of the materials as the base material (usually the softer one).</li>\n    <li>Calculate the <strong>modular ratio ($n$)</strong>, which is the ratio of the moduli of elasticity of the two materials.</li>\n    $$ n = \\frac{E_{stiffer}}{E_{softer}} $$\n    <li>Create the transformed section by replacing the stiffer material with an equivalent area of the softer material. The width of the stiffer material is multiplied by the modular ratio, while its height remains the same.</li>\n    <li>Analyze the transformed section as if it were a normal, homogeneous member to find its centroid and moment of inertia.</li>\n    <li>Calculate the stress in the transformed section using the standard flexure formula, $\\sigma = My/I$.</li>\n    <li>To find the actual stress in the stiffer material, multiply the stress calculated in the transformed section by the modular ratio: $\\sigma_{stiffer} = n \\cdot \\sigma_{transformed}$.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A composite beam is made of wood ($E_w = 2 \\times 10^6$ psi) and steel ($E_s = 30 \\times 10^6$ psi). What is the modular ratio, n, to be used when transforming the steel into an equivalent amount of wood?",
+      "options": [
+        { "text": "15", "isCorrect": true },
+        { "text": "0.067", "isCorrect": false },
+        { "text": "28", "isCorrect": false },
+        { "text": "60", "isCorrect": false }
+      ],
+      "explanation": "The modular ratio is the ratio of the stiffer material's modulus to the softer material's modulus. $n = E_s / E_w = (30 \\times 10^6 \\text{ psi}) / (2 \\times 10^6 \\text{ psi}) = 15$."
+    },
+    {
+      "question": "In the transformed section method for a wood beam reinforced with steel plates, the steel area is replaced by an equivalent wood area that is:",
+      "options": [
+        { "text": "Narrower and taller.", "isCorrect": false },
+        { "text": "Wider but the same height.", "isCorrect": true },
+        { "text": "Smaller in total area.", "isCorrect": false },
+        { "text": "The same size.", "isCorrect": false }
+      ],
+      "explanation": "To transform the stiffer material (steel) into the softer material (wood), you multiply its width by the modular ratio, n. This creates a wider, imaginary wood section that has the same stiffness as the original steel plate."
+    }
+  ]
+}

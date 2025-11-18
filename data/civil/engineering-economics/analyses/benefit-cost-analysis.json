@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Cost-Benefit Analysis</strong> is a systematic process for calculating and comparing the benefits and costs of a project, especially public projects where benefits may not be direct revenues. The primary goal is to determine if the benefits to society outweigh the costs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Benefit-Cost (B/C) Ratio</h3>\n<p class=\"mb-4\">The most common metric used is the Benefit-Cost (B/C) Ratio. All benefits (B), costs (C), and disbenefits (D) must be converted to a common equivalent monetary unit, such as Present Worth (PW) or Equivalent Annual Worth (EAW).</p>\n$$ B/C = \\frac{B - D}{C} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Decision Rule</h3>\n<p class=\"mb-4\">The decision rule for a single project is:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $B/C \\ge 1.0$, the project is economically justified, as the benefits are greater than or equal to the costs.</li>\n    <li>If $B/C < 1.0$, the project is not economically justified.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Comparing Alternatives</h3>\n<p class=\"mb-4\">When comparing two mutually exclusive alternatives (A and B, where B has a higher initial cost), an incremental B/C analysis should be performed.</p>\n$$ \\Delta (B/C) = \\frac{B_B - B_A}{C_B - C_A} = \\frac{\\Delta B}{\\Delta C}$$\n<p class=\"mb-4\">If $\\Delta (B/C) \\ge 1$, then the additional investment in alternative B is justified, so choose B. Otherwise, choose A (assuming A is already justified with a B/C > 1).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A proposed public project to build a new bridge has a present worth of benefits of $2.5 million and a present worth of costs of $2.0 million. What is the B/C ratio?",
+      "options": [
+        { "text": "0.8", "isCorrect": false },
+        { "text": "1.25", "isCorrect": true },
+        { "text": "1.0", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false }
+      ],
+      "explanation": "The B/C ratio is the ratio of the equivalent worth of benefits to costs. B/C = $2,500,000 / $2,000,000 = 1.25."
+    },
+    {
+      "question": "Based on the B/C ratio of 1.25 in the previous problem, is the bridge project economically justified?",
+      "options": [
+        { "text": "No, because the costs are too high.", "isCorrect": false },
+        { "text": "Yes, because the B/C ratio is greater than or equal to 1.0.", "isCorrect": true },
+        { "text": "No, because the ratio is not high enough for a public project.", "isCorrect": false },
+        { "text": "Cannot be determined from the B/C ratio alone.", "isCorrect": false }
+      ],
+      "explanation": "The decision rule for a single project is that if the B/C ratio is 1.0 or greater, the project's benefits outweigh its costs, and it is considered economically acceptable."
+    }
+  ]
+}

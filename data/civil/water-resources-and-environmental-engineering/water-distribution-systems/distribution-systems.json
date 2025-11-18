@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A <strong>water distribution system</strong> is a network of infrastructure that delivers potable water from a treatment plant or source to the end users (homes, businesses, etc.). The system must be able to provide an adequate quantity of water at a sufficient pressure for all domestic, commercial, and fire-fighting needs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Components</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pipes (Water Mains):</strong> The network of underground pipes that transport the water. They are typically made of materials like ductile iron, PVC, or HDPE.</li>\n    <li><strong>Pumps:</strong> Used to provide the energy (pressure) to move the water through the system, especially to areas of higher elevation.</li>\n    <li><strong>Storage Tanks (Reservoirs):</strong> Most commonly elevated storage tanks. They serve several critical functions: they provide storage to meet fluctuations in demand (e.g., peak morning use), they stabilize pressures in the system, and they provide an emergency supply of water for fire fighting.</li>\n    <li><strong>Valves:</strong> Used to control the flow of water in the system. Isolation valves are used to shut off sections of the system for repair, and control valves are used to regulate pressure or flow.</li>\n    <li><strong>Fire Hydrants:</strong> Provide connection points for firefighters to access large quantities of water.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Network Layouts</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Branched (or Tree) System:</strong> A layout where pipes branch out from a main trunk line, with many dead-ends. It is simple and inexpensive but has poor reliability (a break in a main pipe can cut off service to a large area) and can have water quality issues at the dead-ends.</li>\n    <li><strong>Grid (or Looped) System:</strong> A layout where the pipes are interconnected to form a grid. This is the preferred layout for modern systems. It provides high reliability (water can reach a location from multiple directions), improves water quality by keeping water circulating, and provides better pressure and fire flow.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is a primary function of elevated water storage tanks in a municipal distribution system?",
+      "options": [
+        { "text": "To filter the water before it is distributed.", "isCorrect": false },
+        { "text": "To stabilize system pressures and provide water to meet peak demands.", "isCorrect": true },
+        { "text": "To add chlorine to the water.", "isCorrect": false },
+        { "text": "To generate electricity.", "isCorrect": false }
+      ],
+      "explanation": "Elevated tanks 'float' on the system. They are filled by pumps during periods of low demand (e.g., at night) and then supply water back into the system by gravity during periods of high demand (e.g., in the morning). This helps to maintain consistent pressures and allows the pumps at the treatment plant to run at a more constant, efficient rate."
+    },
+    {
+      "question": "Which type of water distribution network layout offers the greatest reliability and is preferred for modern cities?",
+      "options": [
+        { "text": "Branched system", "isCorrect": false },
+        { "text": "Grid/Looped system", "isCorrect": true },
+        { "text": "Series system", "isCorrect": false },
+        { "text": "Radial system", "isCorrect": false }
+      ],
+      "explanation": "A grid or looped system is much more reliable than a branched system. If there is a break in one pipe, that section can be isolated with valves, and most customers will still receive water from other directions through the interconnected grid."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Expected Value (EV)</strong>, or Expected Monetary Value (EMV), is a concept used to aid decision-making under uncertainty. It is a weighted average of all possible outcomes of a decision, where the weighting factor for each outcome is its probability of occurrence. It represents the long-run average outcome if a decision were to be repeated many times.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Calculation</h3>\n<p class=\"mb-4\">For a set of discrete, mutually exclusive outcomes, the expected value is calculated by multiplying the value (payoff) of each outcome by its probability and summing the results.</p>\n$$ E[X] = \\sum_{i=1}^{n} x_i P(x_i) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$E[X]$ is the expected value.</li>\n    <li>$x_i$ is the value of the $i$-th outcome.</li>\n    <li>$P(x_i)$ is the probability of the $i$-th outcome occurring.</li>\n    <li>The sum of all probabilities must equal 1 ($\\sum P(x_i) = 1$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Decision Rule</h3>\n<p class=\"mb-4\">When comparing alternatives, the one with the most favorable expected value (e.g., highest expected profit or lowest expected cost) is the preferred choice.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A contractor is bidding on a project. They estimate a 40% chance of winning the bid, which would result in a profit of $100,000. There is a 60% chance of losing the bid, which would result in a loss of $10,000 (the cost of preparing the bid). What is the expected monetary value of bidding on this project?",
+      "options": [
+        { "text": "$40,000", "isCorrect": false },
+        { "text": "$34,000", "isCorrect": true },
+        { "text": "$90,000", "isCorrect": false },
+        { "text": "$46,000", "isCorrect": false }
+      ],
+      "explanation": "The expected value is the sum of (outcome * probability) for all outcomes. EV = ($100,000 * 0.40) + (-$10,000 * 0.60) = $40,000 - $6,000 = $34,000."
+    },
+    {
+      "question": "An investment has two possible outcomes: a 70% chance of earning $5,000 and a 30% chance of losing $2,000. What is the expected value of the investment?",
+      "options": [
+        { "text": "$3,500", "isCorrect": false },
+        { "text": "$3,000", "isCorrect": false },
+        { "text": "$2,900", "isCorrect": true },
+        { "text": "$4,100", "isCorrect": false }
+      ],
+      "explanation": "Calculate the weighted average of the outcomes. EV = (0.70 * $5,000) + (0.30 * -$2,000) = $3,500 - $600 = $2,900."
+    }
+  ]
+}

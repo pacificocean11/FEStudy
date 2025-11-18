@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Radius of Gyration ($k$)</strong> is a geometric property of a cross-section that provides a measure of how the area is distributed about a given axis. It can be imagined as the distance from the axis at which the entire area could be concentrated into a thin strip and still have the same moment of inertia.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The radius of gyration is defined as the square root of the moment of inertia ($I$) divided by the total area ($A$).</p>\n$$ k = \\sqrt{\\frac{I}{A}} $$\n<p class=\"mb-4\">Since it is derived from $I$ (length⁴) and $A$ (length²), the radius of gyration has units of length.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application in Column Buckling</h3>\n<p class=\"mb-4\">The radius of gyration is a critical parameter in the analysis of column buckling. The slenderness ratio of a column, which determines whether it will fail by buckling or crushing, is given by $KL/k$, where $k$ is the least radius of gyration of the cross-section. A smaller radius of gyration means the column is more susceptible to buckling about that axis.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A cross-section has an area of 20 in² and a moment of inertia about its x-axis of 500 in⁴. What is the radius of gyration about the x-axis?",
+      "options": [
+        { "text": "25 in", "isCorrect": false },
+        { "text": "5 in", "isCorrect": true },
+        { "text": "10 in", "isCorrect": false },
+        { "text": "625 in", "isCorrect": false }
+      ],
+      "explanation": "The radius of gyration is $k_x = \\sqrt{I_x / A} = \\sqrt{500 \\text{ in}^4 / 20 \\text{ in}^2} = \\sqrt{25} = 5$ in."
+    },
+    {
+      "question": "A column will buckle about the axis that has the:",
+      "options": [
+        { "text": "Maximum moment of inertia", "isCorrect": false },
+        { "text": "Minimum radius of gyration", "isCorrect": true },
+        { "text": "Maximum area", "isCorrect": false },
+        { "text": "Largest cross-sectional dimension", "isCorrect": false }
+      ],
+      "explanation": "Buckling is a stability failure. A column is least stable and will buckle about its 'weak' axis. This corresponds to the axis with the minimum moment of inertia, and therefore the minimum radius of gyration."
+    }
+  ]
+}

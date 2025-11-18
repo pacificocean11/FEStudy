@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Kinetics of a Rigid Body</h3>\n<p class=\"mb-4\">Kinetics is the study of the relationship between forces and the motion they cause. For a rigid body, the motion can be broken down into the translation of its center of mass and the rotation about its center of mass.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equations of Motion</h3>\n<p class=\"mb-4\">The motion of a rigid body in one dimension can be described by two fundamental equations:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Equation for Translation:</strong> This is Newton's Second Law applied to the center of mass (G) of the body. It states that the sum of all external forces acting on the body is equal to the body's mass times the acceleration of its center of mass.</li>\n    $$ \\sum \\mathbf{F} = m\\mathbf{a}_G $$\n    <li><strong>Equation for Rotation:</strong> The sum of the moments of all external forces about the center of mass (G) is equal to the mass moment of inertia about G times the body's angular acceleration.</li>\n    $$ \\sum M_G = I_G \\alpha $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Special Cases</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pure Translation:</strong> If the body is only translating, its angular acceleration $\\alpha$ is zero. Therefore, the sum of moments about the center of mass must be zero ($\sum M_G = 0$).</li>\n    <li><strong>Pure Rotation about a Fixed Axis:</strong> If the body is rotating about a fixed point O, it is often easier to sum the moments about that point. The equation becomes $\sum M_O = I_O \\alpha$, where $I_O$ is the mass moment of inertia about the fixed point O.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A uniform slender rod of mass 10 kg is pinned at one end. A force is applied, causing an angular acceleration of 5 rad/s². What is the net moment about the pin?",
+      "options": [
+        { "text": "50 N·m", "isCorrect": false },
+        { "text": "It depends on the length of the rod.", "isCorrect": true },
+        { "text": "2 N·m", "isCorrect": false },
+        { "text": "Cannot be determined.", "isCorrect": false }
+      ],
+      "explanation": "For pure rotation about a fixed axis (the pin, O), the equation of motion is $\\sum M_O = I_O \\alpha$. We know $\\alpha=5$, but we need the mass moment of inertia about the end of the rod ($I_O$), which depends on the rod's mass and length ($I_O = \\frac{1}{3}mL^2$). Since the length is not given, the moment cannot be determined."
+    },
+    {
+      "question": "A force is applied to the center of mass of a rigid body, and no other forces create a moment about the center of mass. The body will undergo:",
+      "options": [
+        { "text": "Pure rotation", "isCorrect": false },
+        { "text": "Pure translation", "isCorrect": true },
+        { "text": "General plane motion", "isCorrect": false },
+        { "text": "No motion", "isCorrect": false }
+      ],
+      "explanation": "If the resultant force acts through the center of mass, the net moment about the center of mass is zero ($\sum M_G = 0$). This means the angular acceleration is zero ($\alpha=0$). Therefore, the body will only translate and not rotate."
+    }
+  ]
+}

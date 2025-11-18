@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Statically Indeterminate Structures</h3>\n<p class=\"mb-4\">A structure is <strong>statically indeterminate</strong> if the number of unknown reactions or internal forces is greater than the number of available static equilibrium equations. To solve these structures, the equilibrium equations must be supplemented with additional equations based on the geometry of deformation. The <strong>Force Method</strong> (or method of consistent deformations) is a classical approach for this.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Concept of the Force Method</h3>\n<p class=\"mb-4\">The force method involves transforming an indeterminate structure into a stable, determinate one by removing the 'redundant' reactions or members.</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Choose Redundants:</strong> Identify and remove enough reactions or internal forces to make the structure determinate. This determinate structure is called the <strong>primary structure</strong>.</li>\n    <li><strong>Analyze Primary Structure:</strong> Calculate the displacement (or rotation) at the location of the removed redundant, caused by the original external loads. Let's call this $\\Delta_0$.</li>\n    <li><strong>Apply Redundant as a Load:</strong> Apply the redundant force (e.g., $R_B$) back onto the primary structure as an unknown load. Calculate the displacement at the same point caused by this redundant load. This displacement will be proportional to the redundant, e.g., $\\delta_{BB} = f_{BB} R_B$, where $f_{BB}$ is the flexibility coefficient (deflection due to a unit load).</li>\n    <li><strong>Write Compatibility Equation:</strong> The key step is to enforce geometric compatibility. The total displacement at the location of the removed redundant in the original structure must be consistent with its boundary condition. For example, if the redundant was a roller support, the final vertical displacement at that point must be zero.</li>\n    $$ \\Delta_0 + f_{BB} R_B = 0 $$\n    <li><strong>Solve for Redundant:</strong> Solve the compatibility equation for the unknown redundant force, $R_B$. Once the redundant is known, all other reactions and internal forces can be found using the equations of static equilibrium.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A propped cantilever beam (fixed at one end, roller at the other) is statically indeterminate to what degree?",
+      "options": [
+        { "text": "It is determinate.", "isCorrect": false },
+        { "text": "First degree", "isCorrect": true },
+        { "text": "Second degree", "isCorrect": false },
+        { "text": "Third degree", "isCorrect": false }
+      ],
+      "explanation": "A fixed support has 3 unknown reactions (force in x, force in y, moment). A roller support has 1 unknown reaction (force in y). This gives a total of 4 unknown reactions. For a 2D problem, there are only 3 equations of static equilibrium ($\\sum F_x=0, \\sum F_y=0, \\sum M=0$). The degree of indeterminacy is the number of unknowns minus the number of equations: $4 - 3 = 1$. The structure is indeterminate to the first degree."
+    },
+    {
+      "question": "When using the force method to analyze a propped cantilever beam, a common choice for the redundant force is:",
+      "options": [
+        { "text": "The horizontal reaction at the fixed end.", "isCorrect": false },
+        { "text": "The moment reaction at the fixed end.", "isCorrect": false },
+        { "text": "The vertical reaction at the roller support.", "isCorrect": true },
+        { "text": "The shear force at midspan.", "isCorrect": false }
+      ],
+      "explanation": "A simple way to make the structure determinate is to remove the roller support. The primary structure becomes a simple cantilever beam. The vertical reaction at the roller is then treated as the unknown 'redundant' force, which is solved for using a compatibility equation (setting the total vertical deflection at the roller's location to zero)."
+    }
+  ]
+}

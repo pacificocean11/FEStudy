@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A <strong>pump performance curve</strong> (or pump characteristic curve) is a graph provided by the pump manufacturer that shows how a pump will perform under different operating conditions. It is essential for selecting the right pump for a specific application and for predicting its performance in a given system.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Information on the Curve</h3>\n<p class=\"mb-4\">A typical performance curve for a centrifugal pump plots several parameters against the flow rate (Q) on the x-axis:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Head (H):</strong> The total head the pump can produce. This curve typically slopes downward; the pump produces the highest head at zero flow (shutoff head), and the head decreases as the flow rate increases.</li>\n    <li><strong>Efficiency ($\\eta$):</strong> The pump's efficiency. This curve is typically parabolic, starting at zero, rising to a maximum at the <strong>Best Efficiency Point (BEP)</strong>, and then decreasing.</li>\n    <li><strong>Brake Horsepower (BHP):</strong> The power required at the pump shaft. This curve generally increases with flow rate.</li>\n    <li><strong>NPSH Required ($NPSH_R$):</strong> The minimum net positive suction head required by the pump to avoid cavitation. This curve also generally increases with flow rate.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. System Curve and Operating Point</h3>\n<p class=\"mb-4\">A <strong>system curve</strong> is a graph that shows the total head required by the piping system to move a certain flow rate. It is the sum of the static head (elevation difference) and the head losses due to friction, which increase approximately with the square of the flow rate ($h_L \\propto Q^2$).</p>\n<p class=\"mb-4\">The <strong>operating point</strong> of the pump is the point where the pump's performance curve intersects the system's head curve. This intersection defines the actual flow rate and head at which the pump will operate in that specific system.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The point on a pump's performance curve that corresponds to the highest efficiency is known as the:",
+      "options": [
+        { "text": "Shutoff head", "isCorrect": false },
+        { "text": "Operating point", "isCorrect": false },
+        { "text": "Best Efficiency Point (BEP)", "isCorrect": true },
+        { "text": "Runout point", "isCorrect": false }
+      ],
+      "explanation": "The Best Efficiency Point (BEP) is the flow rate and head at which the pump operates most efficiently. It is desirable to select a pump such that its operating point in the system is as close to the BEP as possible."
+    },
+    {
+      "question": "How is the actual operating point (flow rate and head) of a pump in a piping system determined?",
+      "options": [
+        { "text": "It is always the Best Efficiency Point.", "isCorrect": false },
+        { "text": "It is determined by the pump's shutoff head.", "isCorrect": false },
+        { "text": "It is the intersection of the pump performance curve and the system curve.", "isCorrect": true },
+        { "text": "It is determined by the motor speed only.", "isCorrect": false }
+      ],
+      "explanation": "A pump will operate at the point that satisfies both its own performance characteristics and the requirements of the system it is connected to. The system curve shows the head the system requires to pass a given flow, and the pump curve shows the head the pump can produce at that flow. The point where these two are equal is the operating point."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Perpendicular Axis Theorem</strong> relates the polar moment of inertia of a planar lamina (a 2D shape) about an axis perpendicular to its plane to the area moments of inertia about two perpendicular axes lying within its plane.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Theorem</h3>\n<p class=\"mb-4\">For any planar area lying in the x-y plane, the polar moment of inertia ($J_O$) about an axis z passing through a point O (perpendicular to the plane) is equal to the sum of the area moments of inertia about the x and y axes passing through the same point O.</p>\n$$ J_O = I_x + I_y $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application</h3>\n<p class=\"mb-4\">This theorem provides a convenient way to calculate the polar moment of inertia if the area moments of inertia are known, or vice versa. It is particularly useful for symmetrical shapes like circles and rectangles.</p>\n<p class=\"mb-4\">For a circle, we know that due to symmetry, $I_x = I_y$. We also know $J_c = \\pi r^4 / 2$. Using the theorem, $J_c = I_{xc} + I_{yc} = 2I_{xc}$. Therefore, we can find the area moment of inertia: $I_{xc} = J_c / 2 = (\\pi r^4 / 2) / 2 = \\pi r^4 / 4$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a planar shape, the moment of inertia about the x-axis is $I_x = 200$ in⁴ and the moment of inertia about the y-axis is $I_y = 50$ in⁴. What is the polar moment of inertia about the origin?",
+      "options": [
+        { "text": "150 in⁴", "isCorrect": false },
+        { "text": "100 in⁴", "isCorrect": false },
+        { "text": "250 in⁴", "isCorrect": true },
+        { "text": "4.0 in⁴", "isCorrect": false }
+      ],
+      "explanation": "According to the Perpendicular Axis Theorem, the polar moment of inertia is the sum of the two area moments of inertia in the plane: $J_O = I_x + I_y = 200 + 50 = 250$ in⁴."
+    },
+    {
+      "question": "The perpendicular axis theorem is valid for:",
+      "options": [
+        { "text": "Any 3D object.", "isCorrect": false },
+        { "text": "Only for circular and rectangular shapes.", "isCorrect": false },
+        { "text": "Any 2D (planar) shape.", "isCorrect": true },
+        { "text": "Only for calculating mass moments of inertia.", "isCorrect": false }
+      ],
+      "explanation": "The perpendicular axis theorem applies specifically to planar laminas (2D shapes) and relates the two in-plane area moments of inertia to the out-of-plane polar moment of inertia."
+    }
+  ]
+}

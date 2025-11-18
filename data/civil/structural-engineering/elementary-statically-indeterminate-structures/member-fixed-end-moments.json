@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Fixed-End Moments (FEMs)</strong> are the reaction moments induced at the ends of a beam when both ends are fixed against rotation, and a load is applied between the supports. These moments are a cornerstone of indeterminate structural analysis methods like the Moment Distribution Method and the Slope-Deflection Method.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Purpose</h3>\n<p class=\"mb-4\">In the Moment Distribution Method, the analysis begins by assuming all joints are temporarily locked (fixed). The FEMs are the initial moments at each joint caused by the loads on the members. These initial moments create an 'unbalanced' state at the joints, which is then systematically balanced and distributed through the structure to arrive at the final member end moments.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common FEM Formulas</h3>\n<p class=\"mb-4\">The formulas for FEMs for common loading cases are found in structural analysis textbooks and the NCEES FE Reference Handbook. The sign convention is typically that counter-clockwise moments are positive.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Uniformly Distributed Load (w):</strong></li>\n    <p class=\"text-center font-semibold\">$FEM_{AB} = +\\frac{wL^2}{12} \\quad \\quad FEM_{BA} = -\\frac{wL^2}{12}$</p>\n    <li><strong>Concentrated Load (P) at Midspan:</strong></li>\n    <p class=\"text-center font-semibold\">$FEM_{AB} = +\\frac{PL}{8} \\quad \\quad FEM_{BA} = -\\frac{PL}{8}$</p>\n    <li><strong>Concentrated Load (P) at any point (distance 'a' from left, 'b' from right):</strong></li>\n    <p class=\"text-center font-semibold\">$FEM_{AB} = +\\frac{Pab^2}{L^2} \\quad \\quad FEM_{BA} = -\\frac{Pa^2b}{L^2}$</p>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 20-foot long fixed-end beam is subjected to a uniform load of 2 kips/ft. What is the magnitude of the fixed-end moment at each end?",
+      "options": [
+        { "text": "800 k-ft", "isCorrect": false },
+        { "text": "100 k-ft", "isCorrect": false },
+        { "text": "66.7 k-ft", "isCorrect": true },
+        { "text": "33.3 k-ft", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for the fixed-end moment due to a uniform load: $FEM = wL^2 / 12$. $FEM = (2 \\text{ k/ft})(20 \\text{ ft})^2 / 12 = (2)(400) / 12 = 800 / 12 \\approx 66.7$ k-ft."
+    },
+    {
+      "question": "A fixed-end beam of length L has a single concentrated load P applied at its center. What is the magnitude of the fixed-end moment at one of the supports?",
+      "options": [
+        { "text": "$PL$", "isCorrect": false },
+        { "text": "$PL/2$", "isCorrect": false },
+        { "text": "$PL/4$", "isCorrect": false },
+        { "text": "$PL/8$", "isCorrect": true }
+      ],
+      "explanation": "This is a standard fixed-end moment formula. For a concentrated load P at the midspan of a fixed-fixed beam, the moment induced at each end is $PL/8$."
+    }
+  ]
+}

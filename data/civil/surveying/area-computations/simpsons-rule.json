@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Simpson's 1/3 Rule</strong> is another method for finding the area of a tract with an irregular boundary. It is generally more accurate than the Trapezoidal Rule because it assumes that the boundary is formed by a series of parabolic arcs passing through adjacent sets of three offsets, rather than straight lines.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Requirement</h3>\n<p class=\"mb-4\">A key requirement for applying Simpson's 1/3 Rule is that there must be an <strong>odd number of offsets</strong>, which corresponds to an <strong>even number of equal intervals</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. The Formula</h3>\n<p class=\"mb-4\">If there are $n$ offsets ($h_1, h_2, ..., h_n$) at a constant interval width ($w$), where $n$ is odd, the area is calculated as:</p>\n$$ Area = \\frac{w}{3} \\left[ h_1 + h_n + 4(\\sum h_{even}) + 2(\\sum h_{remaining\\ odd}) \\right] $$\n<p class=\"mb-4\">In words: The area is one-third of the common interval width multiplied by the sum of: the first offset, the last offset, four times the sum of the even-numbered offsets, and two times the sum of the remaining odd-numbered offsets.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A tract of land is bounded by a straight road and an irregular stream. Perpendicular offsets are measured every 20 feet. The lengths of the offsets are 10, 12, 14, 11, and 15 feet. What is the area of the tract using Simpson's Rule?",
+      "options": [
+        { "text": "990 sq ft", "isCorrect": false },
+        { "text": "967 sq ft", "isCorrect": true },
+        { "text": "1,040 sq ft", "isCorrect": false },
+        { "text": "1,240 sq ft", "isCorrect": false }
+      ],
+      "explanation": "We have an odd number of offsets (5), so Simpson's rule applies. The interval width is $w=20$ ft. The offsets are $h_1=10, h_2=12, h_3=14, h_4=11, h_5=15$. Using the formula: $Area = \\frac{w}{3} [ h_1 + h_5 + 4(h_2 + h_4) + 2(h_3) ] = \\frac{20}{3} [ 10 + 15 + 4(12 + 11) + 2(14) ] = \\frac{20}{3} [ 25 + 4(23) + 28 ] = \\frac{20}{3} [ 25 + 92 + 28 ] = \\frac{20}{3} [145] = 966.67$ sq ft."
+    },
+    {
+      "question": "To use Simpson's 1/3 Rule for area computation, the number of intervals must be:",
+      "options": [
+        { "text": "Odd", "isCorrect": false },
+        { "text": "Even", "isCorrect": true },
+        { "text": "A multiple of 3", "isCorrect": false },
+        { "text": "Any number", "isCorrect": false }
+      ],
+      "explanation": "Simpson's rule works by fitting parabolas to pairs of intervals. Therefore, it requires the total number of intervals to be an even number, which means there must be an odd number of offsets."
+    }
+  ]
+}

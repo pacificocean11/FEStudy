@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A simple method for finding the area of an irregular polygon is to divide it into a series of triangles. The total area is then the sum of the areas of the individual triangles.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas for the Area of a Triangle</h3>\n<p class=\"mb-4\">Once the land is divided into triangles, the area of each triangle can be found using one of several formulas, depending on the available survey data.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>\n        <strong>Base and Height:</strong> If the base and perpendicular height are known.\n        $$ Area = \\frac{1}{2} \\times \\text{base} \\times \\text{height} $$\n    </li>\n    <li>\n        <strong>Two Sides and Included Angle (SAS):</strong> If two sides ($a, b$) and the angle between them ($C$) are known.\n        $$ Area = \\frac{1}{2} ab \\sin(C) $$\n    </li>\n    <li>\n        <strong>Three Sides (Heron's Formula):</strong> If the lengths of all three sides ($a, b, c$) are known.\n        $$ Area = \\sqrt{s(s-a)(s-b)(s-c)} $$\n        <p class=\"text-sm\">where $s$ is the semi-perimeter: $s = \\frac{a+b+c}{2}$.</p>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A triangular parcel of land has sides measuring 300 ft, 400 ft, and 500 ft. What is the area of the parcel?",
+      "options": [
+        { "text": "120,000 sq ft", "isCorrect": false },
+        { "text": "75,000 sq ft", "isCorrect": false },
+        { "text": "60,000 sq ft", "isCorrect": true },
+        { "text": "50,000 sq ft", "isCorrect": false }
+      ],
+      "explanation": "Since all three sides are known, use Heron's formula. First, calculate the semi-perimeter, s: $s = (300+400+500)/2 = 1200/2 = 600$. Now, calculate the area: $Area = \\sqrt{600(600-300)(600-400)(600-500)} = \\sqrt{600(300)(200)(100)} = \\sqrt{3,600,000,000} = 60,000$ sq ft. (Alternatively, recognize this is a 3-4-5 right triangle, so the area is $1/2 \\times base \\times height = 1/2 \\times 300 \\times 400 = 60,000$ sq ft)."
+    },
+    {
+      "question": "Two sides of a triangular lot are 150 ft and 200 ft, and the angle between them is 45 degrees. What is the area of the lot?",
+      "options": [
+        { "text": "15,000 sq ft", "isCorrect": false },
+        { "text": "30,000 sq ft", "isCorrect": false },
+        { "text": "21,213 sq ft", "isCorrect": false },
+        { "text": "10,607 sq ft", "isCorrect": true }
+      ],
+      "explanation": "Use the formula for two sides and an included angle: $Area = 1/2 ab \\sin(C)$. $Area = 1/2 (150)(200) \\sin(45^\\circ) = (15000) (0.7071) \\approx 10,607$ sq ft."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Bernoulli Equation (Ideal Flow)</h3>\n<p class=\"mb-4\">The <strong>Bernoulli Equation</strong> is a statement of the conservation of energy for an ideal fluid flow (steady, incompressible, and frictionless). It states that the total energy along a streamline is constant. In its 'head' form, each term represents a height of fluid:</p>\n$$ \\frac{P_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 = \\frac{P_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\frac{P}{\\gamma}$ is the <strong>Pressure Head</strong>.</li>\n    <li>$\\frac{v^2}{2g}$ is the <strong>Velocity Head</strong> (kinetic energy).</li>\n    <li>$z$ is the <strong>Elevation Head</strong> (potential energy).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Energy Equation (Real Flow)</h3>\n<p class=\"mb-4\">For real flows with friction, and with energy added by a pump or removed by a turbine, the Bernoulli equation is extended to become the general <strong>Energy Equation</strong>:</p>\n$$ \\frac{P_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 + h_p = \\frac{P_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 + h_t + h_L $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h_p$ is the head added by a pump.</li>\n    <li>$h_t$ is the head removed by a turbine.</li>\n    <li>$h_L$ is the total head loss due to friction (major and minor losses).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Water flows from a large open reservoir through a pipe and exits to the atmosphere. Point 1 is the surface of the reservoir, and Point 2 is the pipe exit. What terms in the Energy Equation can be set to zero?",
+      "options": [
+        { "text": "$P_1$, $v_1$, and $P_2$ (gage pressures).", "isCorrect": true },
+        { "text": "$z_1$ and $z_2$.", "isCorrect": false },
+        { "text": "$v_1$ and $v_2$.", "isCorrect": false },
+        { "text": "$h_L$ only.", "isCorrect": false }
+      ],
+      "explanation": "Point 1 (reservoir surface) is open to the atmosphere, so its gage pressure $P_1$ is zero. The reservoir is large, so the velocity of the surface $v_1$ is assumed to be negligible (zero). Point 2 (pipe exit) is also open to the atmosphere, so its gage pressure $P_2$ is zero. The energy equation simplifies to $z_1 = v_2^2/2g + z_2 + h_L$."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The concepts of beam stiffness and moment carryover are fundamental to the <strong>Moment Distribution Method</strong>, a classical method for analyzing statically indeterminate beams and frames. They describe how a member resists rotation and how moments are distributed through a structure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Flexural Stiffness (K)</h3>\n<p class=\"mb-4\">The <strong>flexural stiffness</strong> of a beam member is defined as the moment required to produce a unit rotation at one end of the member, while the other end is held fixed or pinned. It is a measure of the member's resistance to bending rotation.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Far End Fixed:</strong> If the far end of the member is fixed against rotation, the stiffness is:</li>\n    $$ K = \\frac{4EI}{L} $$\n    <li><strong>Far End Pinned (or Roller):</strong> If the far end of the member is pinned (free to rotate), the stiffness is reduced. This is known as the modified stiffness.</li>\n    $$ K = \\frac{3EI}{L} $$\n</ul>\n<p class=\"mb-4\">The <strong>relative stiffness</strong> is often used, where the term $EI/L$ is used and the constants (4 or 3) are applied as needed.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Distribution Factor (DF)</h3>\n<p class=\"mb-4\">At a rigid joint where multiple members meet, an unbalanced moment is distributed among the members in proportion to their stiffness. The distribution factor for a member is its stiffness divided by the sum of the stiffnesses of all members meeting at the joint.</p>\n$$ DF_i = \\frac{K_i}{\\sum K_j} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Carry-Over Factor (COF)</h3>\n<p class=\"mb-4\">When a moment is applied to one end of a member (the 'near' end), it induces a moment at the other end (the 'far' end). The <strong>carry-over factor</strong> is the ratio of the induced moment at the far end to the applied moment at the near end.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If the far end is <strong>fixed</strong>, a moment of $M$ applied at the near end induces a moment of $+M/2$ at the far end. The carry-over factor is <strong>+0.5</strong>.</li>\n    <li>If the far end is <strong>pinned</strong>, it cannot resist a moment. The carry-over factor is <strong>0</strong>.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A moment is applied to the end of a beam that is fixed at its far end. What is the carry-over factor to the fixed end?",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "0.5", "isCorrect": true },
+        { "text": "1.0", "isCorrect": false },
+        { "text": "-1.0", "isCorrect": false }
+      ],
+      "explanation": "For a prismatic beam, when a moment is applied to one end, it induces a moment at the fixed far end that is one-half the magnitude and in the same direction. Therefore, the carry-over factor is +0.5."
+    },
+    {
+      "question": "Two beams meet at a joint. Beam 1 has a stiffness K, and Beam 2 has a stiffness of 2K. If an unbalanced moment of 90 k-ft is applied to the joint, how much moment is distributed to Beam 2?",
+      "options": [
+        { "text": "30 k-ft", "isCorrect": false },
+        { "text": "45 k-ft", "isCorrect": false },
+        { "text": "60 k-ft", "isCorrect": true },
+        { "text": "90 k-ft", "isCorrect": false }
+      ],
+      "explanation": "First, find the distribution factor for Beam 2. The sum of stiffnesses is $K + 2K = 3K$. The distribution factor for Beam 2 is $DF_2 = K_2 / \\sum K = 2K / 3K = 2/3$. The moment distributed to Beam 2 is the unbalanced moment multiplied by its distribution factor: $M_2 = 90 \\times (2/3) = 60$ k-ft."
+    }
+  ]
+}

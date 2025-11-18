@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">A pump is a mechanical device that adds energy to a fluid to move it from one point to another. In water and wastewater systems, pumps are used to lift water to higher elevations, move water through treatment processes, and provide pressure in distribution systems.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Pump Head ($h_p$)</h3>\n<p class=\"mb-4\">The energy added to the fluid by a pump is expressed as 'head' in the energy equation (extended Bernoulli equation). The required pump head is the total energy needed to overcome the change in elevation, the change in pressure, and the head losses due to friction.</p>\n$$ h_p = (z_2 - z_1) + \\frac{P_2 - P_1}{\\gamma} + h_L $$\n<p class=\"mb-4\">Where $z$ is elevation, $P$ is pressure, and $h_L$ is the total system head loss.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Power Calculations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Water Horsepower ($P_w$):</strong> The theoretical power that is transferred from the pump to the fluid.</li>\n    $$ P_w = \\gamma Q h_p = \\rho g Q h_p $$\n    <li><strong>Brake Horsepower ($P_b$):</strong> The actual power that must be supplied to the pump shaft from the motor. This is always greater than the water horsepower due to inefficiencies.</li>\n    <li><strong>Pump Efficiency ($\\eta_p$):</strong> The ratio of the water horsepower to the brake horsepower.</li>\n    $$ \\eta_p = \\frac{P_w}{P_b} $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A pump is used to move water at a flow rate of 0.1 m³/s. The total head that the pump must provide is 20 m. What is the water horsepower? (Use $\\gamma_{water} = 9810$ N/m³).",
+      "options": [
+        { "text": "19.62 kW", "isCorrect": true },
+        { "text": "2.0 kW", "isCorrect": false },
+        { "text": "200 W", "isCorrect": false },
+        { "text": "196.2 W", "isCorrect": false }
+      ],
+      "explanation": "Water horsepower is calculated as $P_w = \\gamma Q h_p$. $P_w = (9810 \\text{ N/m³})(0.1 \\text{ m³/s})(20 \\text{ m}) = 19620$ N·m/s = 19620 W, or 19.62 kW."
+    },
+    {
+      "question": "For the pump in the previous problem, if the pump has an efficiency of 75%, what is the required brake horsepower?",
+      "options": [
+        { "text": "14.7 kW", "isCorrect": false },
+        { "text": "26.2 kW", "isCorrect": true },
+        { "text": "22.5 kW", "isCorrect": false },
+        { "text": "19.6 kW", "isCorrect": false }
+      ],
+      "explanation": "Pump efficiency is $\\eta_p = P_w / P_b$. Rearranging gives $P_b = P_w / \\eta_p = 19.62 \\text{ kW} / 0.75 \\approx 26.16$ kW."
+    }
+  ]
+}

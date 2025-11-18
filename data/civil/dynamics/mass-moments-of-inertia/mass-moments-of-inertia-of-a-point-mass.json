@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>mass moment of inertia</strong> is a measure of an object's resistance to angular acceleration (a change in its rate of rotation). It is the rotational analog of mass. While mass is a measure of resistance to linear acceleration, the mass moment of inertia is a measure of resistance to angular acceleration.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Moment of Inertia of a Single Point Mass</h3>\n<p class=\"mb-4\">The simplest case is that of a single particle or point mass ($m$) rotating at a fixed distance ($r$) from an axis of rotation. Its mass moment of inertia ($I$) about that axis is defined as:</p>\n$$ I = mr^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$I$ is the mass moment of inertia.</li>\n    <li>$m$ is the mass of the particle.</li>\n    <li>$r$ is the perpendicular distance from the particle to the axis of rotation.</li>\n</ul>\n<p class=\"mb-4\">The units of mass moment of inertia are mass times length squared (e.g., kg·m² or slug·ft²).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 2 kg mass is attached to a massless rod and is rotating in a circle with a radius of 0.5 meters. What is the mass moment of inertia of the mass about the center of rotation?",
+      "options": [
+        { "text": "1.0 kg·m²", "isCorrect": false },
+        { "text": "2.0 kg·m²", "isCorrect": false },
+        { "text": "0.5 kg·m²", "isCorrect": true },
+        { "text": "4.0 kg·m²", "isCorrect": false }
+      ],
+      "explanation": "For a single point mass, the moment of inertia is $I = mr^2$. Plugging in the values: $I = (2 \\text{ kg})(0.5 \\text{ m})^2 = 2 \\times 0.25 = 0.5$ kg·m²."
+    },
+    {
+      "question": "If the distance of a point mass from its axis of rotation is doubled, by what factor does its mass moment of inertia change?",
+      "options": [
+        { "text": "It is halved.", "isCorrect": false },
+        { "text": "It doubles.", "isCorrect": false },
+        { "text": "It quadruples.", "isCorrect": true },
+        { "text": "It does not change.", "isCorrect": false }
+      ],
+      "explanation": "The mass moment of inertia is proportional to the square of the distance from the axis of rotation ($I \\propto r^2$). If the distance is doubled ($r \\rightarrow 2r$), the new moment of inertia will be proportional to $(2r)^2 = 4r^2$. Therefore, it increases by a factor of 4."
+    }
+  ]
+}

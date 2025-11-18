@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Right-Angle Trigonometry (SOHCAHTOA)</h3>\n<p class=\"mb-4\">For a right triangle with angle $\\theta$:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sin(\\theta) = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$</li>\n    <li>$\\cos(\\theta) = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$</li>\n    <li>$\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Law of Sines</h3>\n<p class=\"mb-4\">For any triangle with angles A, B, C and opposite sides a, b, c, respectively:</p>\n$$ \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} $$\n<p class=\"mb-4\">The Law of Sines is used when you know either two angles and one side (AAS or ASA) or two sides and a non-included angle (SSA).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Law of Cosines</h3>\n<p class=\"mb-4\">For any triangle:</p>\n$$ c^2 = a^2 + b^2 - 2ab \\cos(C) $$\n<p class=\"mb-4\">The Law of Cosines is used when you know either two sides and the included angle (SAS) or all three sides (SSS).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a triangle, side a = 100 ft, side b = 150 ft, and the included angle C = 60°. What is the length of side c?",
+      "options": [
+        { "text": "132.3 ft", "isCorrect": true },
+        { "text": "125.0 ft", "isCorrect": false },
+        { "text": "217.9 ft", "isCorrect": false },
+        { "text": "180.3 ft", "isCorrect": false }
+      ],
+      "explanation": "Since we have two sides and the included angle (SAS), we use the Law of Cosines. $c^2 = a^2 + b^2 - 2ab \\cos(C) = 100^2 + 150^2 - 2(100)(150)\\cos(60°) = 10000 + 22500 - 30000(0.5) = 32500 - 15000 = 17500$. So, $c = \\sqrt{17500} \\approx 132.3$ ft."
+    },
+    {
+      "question": "In triangle ABC, angle A = 40°, angle B = 60°, and the side opposite angle A (side a) is 50 m. What is the length of the side opposite angle B (side b)?",
+      "options": [
+        { "text": "37.5 m", "isCorrect": false },
+        { "text": "67.4 m", "isCorrect": true },
+        { "text": "76.6 m", "isCorrect": false },
+        { "text": "50.0 m", "isCorrect": false }
+      ],
+      "explanation": "Since we have two angles and a side (AAS), we use the Law of Sines. $\\frac{a}{\\sin A} = \\frac{b}{\\sin B} \\implies \\frac{50}{\\sin(40°)} = \\frac{b}{\\sin(60°)}$. Solving for b: $b = 50 \\frac{\\sin(60°)}{\\sin(40°)} = 50 \\frac{0.866}{0.643} \\approx 67.4$ m."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Linear Momentum Equation</h3>\n<p class=\"mb-4\">The linear momentum equation for a control volume with one inlet and one outlet in steady flow is a vector equation:</p>\n$$ \\sum \\mathbf{F} = \\dot{m}(\\mathbf{v}_{out} - \\mathbf{v}_{in}) $$\n<p class=\"mb-4\">To solve problems, this is typically broken down into its scalar components in the x and y directions:</p>\n$$ \\sum F_x = \\dot{m}(v_{x,out} - v_{x,in}) $$$$ \\sum F_y = \\dot{m}(v_{y,out} - v_{y,in}) $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Forces Acting on the Control Volume</h3>\n<p class=\"mb-4\">The term $\\sum \\mathbf{F}$ includes all external forces acting on the fluid inside the control volume. These are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pressure Forces:</strong> Pressure from the fluid outside the control volume acts on the inlet and outlet areas ($P \cdot A$).</li>\n    <li><strong>Body Forces:</strong> The weight of the fluid in the control volume ($mg$). This is often negligible for gases or horizontal pipes.</li>\n    <li><strong>Reaction Forces:</strong> The forces exerted by solid surfaces (like pipe walls or bends) on the fluid. These are often the unknown forces we want to find. For a pipe bend, these are the anchoring forces ($R_x$ and $R_y$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Solving a Problem</h3>\n<p class=\"mb-4\">The typical procedure is:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Select a control volume that encloses the feature of interest (e.g., a pipe bend).</li>\n    <li>Draw a free-body diagram showing all the forces acting on the fluid within the control volume.</li>\n    <li>Determine the velocities and mass flow rate.</li>\n    <li>Apply the momentum equation in the x and y directions to solve for the unknown reaction forces.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A jet of water strikes a stationary flat plate perpendicularly. The momentum equation is used to find the force on the plate. What is the final velocity of the water in the direction of the jet?",
+      "options": [
+        { "text": "Equal to the initial velocity.", "isCorrect": false },
+        { "text": "Zero.", "isCorrect": true },
+        { "text": "Twice the initial velocity.", "isCorrect": false },
+        { "text": "Half the initial velocity.", "isCorrect": false }
+      ],
+      "explanation": "When the jet strikes the plate, its momentum in the original direction of flow (let's say the x-direction) is completely destroyed. The water spreads out along the plate, so its final velocity component in the x-direction is zero. The change in momentum is then used to calculate the force."
+    }
+  ]
+}

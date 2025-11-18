@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>boundary conditions</strong>, or end conditions, of a column describe how it is supported at its ends. These conditions significantly affect the column's stability and its critical buckling load. The effect of the boundary conditions is captured in the Euler buckling formula by the <strong>effective length factor, K</strong>.</p>\n<p class=\"mb-4\">The term $L_e = KL$ is the <strong>effective length</strong> of the column. It represents the length of an equivalent pinned-end column that has the same buckling load.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Idealized Boundary Conditions and K-Factors</h3>\n<p class=\"mb-4\">There are four idealized cases for the effective length factor, K:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pinned-Pinned:</strong> The column is free to rotate at both ends but is prevented from translating. This is the baseline case.</li>\n    <p class=\"text-center font-semibold\">$K = 1.0$</p>\n    <li><strong>Fixed-Fixed:</strong> The column is restrained against both rotation and translation at both ends. This is the most stable configuration.</li>\n    <p class=\"text-center font-semibold\">$K = 0.5$</p>\n    <li><strong>Fixed-Pinned:</strong> The column is fixed at one end and pinned at the other.</li>\n    <p class=\"text-center font-semibold\">$K = 0.7$</p>\n    <li><strong>Fixed-Free (Cantilever):</strong> The column is fixed at one end and is completely free to move at the other end. This is the least stable configuration.</li>\n    <p class=\"text-center font-semibold\">$K = 2.0$</p>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a slender column, which set of end conditions is the most resistant to buckling?",
+      "options": [
+        { "text": "Pinned at both ends (K=1.0)", "isCorrect": false },
+        { "text": "Fixed at one end, free at the other (K=2.0)", "isCorrect": false },
+        { "text": "Fixed at both ends (K=0.5)", "isCorrect": true },
+        { "text": "Fixed at one end, pinned at the other (K=0.7)", "isCorrect": false }
+      ],
+      "explanation": "The critical buckling load is inversely proportional to the square of the K-factor ($P_{cr} \\propto 1/K^2$). The lowest K-factor will give the highest critical load. The fixed-fixed condition has the lowest K-factor (K=0.5), making it the strongest against buckling."
+    },
+    {
+      "question": "A 20-foot tall steel column is fixed at its base and free at its top. What is its effective length for buckling calculations?",
+      "options": [
+        { "text": "10 ft", "isCorrect": false },
+        { "text": "14 ft", "isCorrect": false },
+        { "text": "20 ft", "isCorrect": false },
+        { "text": "40 ft", "isCorrect": true }
+      ],
+      "explanation": "A fixed-free (cantilever) column is the least stable configuration. Its effective length factor is K=2.0. The effective length is $L_e = KL = 2.0 \\times 20 \\text{ ft} = 40$ ft."
+    }
+  ]
+}

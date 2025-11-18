@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Geographic Coordinate System</h3>\n<p class=\"mb-4\">The latitude and longitude system is a <strong>geographic coordinate system</strong> used to specify the position of any point on the Earth's surface. It is a spherical or ellipsoidal coordinate system that is based on angles measured from the Earth's center.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Latitude</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Definition:</strong> Latitude is the angular distance of a point north or south of the Earth's equator.</li>\n    <li><strong>Lines:</strong> Lines of equal latitude are called <strong>parallels</strong>. They are parallel to the equator and run east-west.</li>\n    <li><strong>Measurement:</strong> Latitude is measured in degrees, from 0° at the equator to 90° North at the North Pole and 90° South at the South Pole.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Longitude</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Definition:</strong> Longitude is the angular distance of a point east or west of a reference meridian.</li>\n    <li><strong>Lines:</strong> Lines of equal longitude are called <strong>meridians</strong>. They run from the North Pole to the South Pole.</li>\n    <li><strong>Measurement:</strong> The reference meridian is the <strong>Prime Meridian</strong>, which passes through Greenwich, England, and is defined as 0° longitude. Longitude is measured in degrees, from 0° to 180° East and 180° West.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Units</h3>\n<p class=\"mb-4\">Coordinates are traditionally expressed in degrees, minutes, and seconds (DMS). There are 60 minutes (') in a degree and 60 seconds (\") in a minute. They can also be expressed in decimal degrees.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Lines that run east-west on the Earth's surface and are parallel to the equator are known as lines of equal:",
+      "options": [
+        { "text": "Longitude", "isCorrect": false },
+        { "text": "Latitude", "isCorrect": true },
+        { "text": "Elevation", "isCorrect": false },
+        { "text": "Declination", "isCorrect": false }
+      ],
+      "explanation": "Lines of equal latitude are called parallels. They measure the angular distance north or south of the equator."
+    },
+    {
+      "question": "What is the reference line for 0° longitude?",
+      "options": [
+        { "text": "The Equator", "isCorrect": false },
+        { "text": "The International Date Line", "isCorrect": false },
+        { "text": "The Prime Meridian", "isCorrect": true },
+        { "text": "The Tropic of Cancer", "isCorrect": false }
+      ],
+      "explanation": "The Prime Meridian, which passes through the Royal Observatory in Greenwich, London, is the internationally agreed-upon line of 0° longitude. All other longitudes are measured east or west from this line."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Impulse-Momentum Principle</h3>\n<p class=\"mb-4\">The impulse-momentum principle is a direct application of Newton's Second Law. It states that the impulse applied to a body is equal to the change in the body's momentum.</p>\n$$ \\text{Impulse} = \\text{Change in Momentum} $$$$ \\int_{t_1}^{t_2} \\mathbf{F} dt = m\\mathbf{v}_2 - m\\mathbf{v}_1 $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Application to Fluids</h3>\n<p class=\"mb-4\">For fluid flow, it is more convenient to analyze a control volume rather than a single particle. The principle is adapted to relate the net force on a control volume to the net rate of momentum flow through the control surface.</p>\n<p class=\"mb-4\">For steady flow, the impulse-momentum principle leads to the <strong>linear momentum equation</strong>:</p>\n$$ \\sum \\mathbf{F} = \\dot{m}(\\mathbf{v}_{out} - \\mathbf{v}_{in}) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sum \\mathbf{F}$ is the vector sum of all external forces acting on the fluid within the control volume.</li>\n    <li>$\\dot{m}$ is the mass flow rate ($\rho Q$).</li>\n    <li>$\\mathbf{v}_{out}$ is the velocity vector of the fluid leaving the control volume.</li>\n    <li>$\\mathbf{v}_{in}$ is the velocity vector of the fluid entering the control volume.</li>\n</ul>\n<p class=\"mb-4\">This equation is fundamental for calculating the forces exerted by flowing fluids on solid objects, such as pipe bends or turbine blades.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The linear momentum equation for fluids is a direct application of which fundamental law?",
+      "options": [
+        { "text": "Conservation of Mass", "isCorrect": false },
+        { "text": "Newton's Second Law of Motion", "isCorrect": true },
+        { "text": "Conservation of Energy", "isCorrect": false },
+        { "text": "The Ideal Gas Law", "isCorrect": false }
+      ],
+      "explanation": "The impulse-momentum principle, and by extension the linear momentum equation, is a restatement of Newton's Second Law ($F=ma$). It relates the net force on a control volume to the rate of change of momentum of the fluid flowing through it."
+    }
+  ]
+}

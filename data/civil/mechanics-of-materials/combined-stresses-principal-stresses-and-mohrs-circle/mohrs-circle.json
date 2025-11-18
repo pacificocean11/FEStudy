@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Mohr's circle is a graphical technique that provides a convenient way to visualize the relationship between normal and shear stresses on any plane at a point in a stressed body. It is a graphical representation of the stress transformation equations.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Construction for Plane Stress</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Set up Axes:</strong> Draw a horizontal axis for normal stress ($\\sigma$) and a vertical axis for shear stress ($\\tau$). Conventionally, tension is positive (right) and compression is negative (left). Clockwise shear stress is often plotted upwards, and counter-clockwise downwards.</li>\n    <li><strong>Plot Center Point (C):</strong> The center of the circle is located on the $\\sigma$-axis at the average normal stress: $C = \\sigma_{avg} = \\frac{\\sigma_x + \\sigma_y}{2}$.</li>\n    <li><strong>Plot Reference Point (A):</strong> Plot a point A that corresponds to the stresses on the x-face of the stress element: $A = (\\sigma_x, \\tau_{xy})$.</li>\n    <li><strong>Draw the Circle:</strong> The line from the center C to the point A is the radius of the circle. Draw the circle with center C and radius R, where $R = \\sqrt{(\\sigma_x - C)^2 + \\tau_{xy}^2} = \\sqrt{(\\frac{\\sigma_x - \\sigma_y}{2})^2 + \\tau_{xy}^2}$.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Interpretation</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Principal Stresses ($\\sigma_1, \\sigma_2$):</strong> The points where the circle intersects the horizontal $\\sigma$-axis. These are the maximum and minimum normal stresses, and the shear stress is zero at these points. $\\sigma_1 = C + R$ and $\\sigma_2 = C - R$.</li>\n    <li><strong>Maximum Shear Stress ($\\tau_{max}$):</strong> The radius of the circle, R. This corresponds to the highest and lowest points on the circle.</li>\n    <li><strong>Stress Transformation:</strong> To find the stresses on a plane rotated by an angle $\\theta$ from the x-face, rotate by an angle $2\\theta$ on Mohr's circle in the same direction from the reference line CA. The coordinates of the new point on the circle give the new stresses $(\\sigma', \\tau')$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On Mohr's circle, the radius of the circle represents what quantity?",
+      "options": [
+        { "text": "The average normal stress.", "isCorrect": false },
+        { "text": "The maximum principal stress.", "isCorrect": false },
+        { "text": "The maximum in-plane shear stress.", "isCorrect": true },
+        { "text": "The angle of the principal plane.", "isCorrect": false }
+      ],
+      "explanation": "The radius of Mohr's circle is equal to the maximum in-plane shear stress, $\\tau_{max}$. It is also used to find the principal stresses, as they are located at the center plus or minus the radius."
+    },
+    {
+      "question": "A stress element is in a state of pure shear, with $\\tau_{xy} = 50$ MPa and $\\sigma_x = \\sigma_y = 0$. What are the principal stresses?",
+      "options": [
+        { "text": "$\\sigma_1 = 50$ MPa, $\\sigma_2 = -50$ MPa", "isCorrect": true },
+        { "text": "$\\sigma_1 = 50$ MPa, $\\sigma_2 = 0$ MPa", "isCorrect": false },
+        { "text": "$\\sigma_1 = 0$ MPa, $\\sigma_2 = 0$ MPa", "isCorrect": false },
+        { "text": "$\\sigma_1 = 100$ MPa, $\\sigma_2 = -100$ MPa", "isCorrect": false }
+      ],
+      "explanation": "For this state, the center of Mohr's circle is at $\\sigma_{avg} = (0+0)/2 = 0$. The radius is $R = \\sqrt{((0-0)/2)^2 + 50^2} = 50$ MPa. The principal stresses are $\\sigma_1 = C + R = 0 + 50 = 50$ MPa and $\\sigma_2 = C - R = 0 - 50 = -50$ MPa. This shows that a state of pure shear is equivalent to a state of tension and compression on planes rotated 45°."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Method of Sections</strong> is a procedure for finding the forces in specific members of a truss without having to solve for all the forces in the entire truss. It is particularly efficient for finding forces in members near the middle of a large truss.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Determine the support reactions for the entire truss if necessary.</li>\n    <li>Imagine making a 'cut' or 'section' that passes through the members whose forces you want to find. The cut should generally pass through no more than <strong>three</strong> members with unknown forces.</li>\n    <li>Isolate one of the two segments of the truss and draw its free-body diagram (FBD). This FBD will include the external loads on that segment, the support reactions on that segment, and the unknown forces from the cut members.</li>\n    <li>Assume the forces in the cut members are in tension (pulling away from the section).</li>\n    <li>Apply the three equations of equilibrium for a rigid body to the FBD:</li>\n    $$ \\sum F_x = 0 \\quad \\quad \\sum F_y = 0 \\quad \\quad \\sum M_O = 0 $$\n    <li>By carefully choosing where to sum moments, you can often solve for a desired force directly. For example, to find the force in one member, sum the moments about the point where the other two cut members intersect. This eliminates the other two unknowns from the moment equation.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Method of Sections is based on the principle that:",
+      "options": [
+        { "text": "Every joint in a truss must be in equilibrium.", "isCorrect": false },
+        { "text": "If the entire truss is in equilibrium, then any portion or section of it must also be in equilibrium.", "isCorrect": true },
+        { "text": "All truss members are two-force members.", "isCorrect": false },
+        { "text": "The sum of all member lengths must be minimized.", "isCorrect": false }
+      ],
+      "explanation": "The method works by 'cutting' the truss and isolating a section. Since the whole truss is in equilibrium, any part of it must also be in equilibrium under the action of the external forces and the internal forces from the cut members."
+    },
+    {
+      "question": "When using the Method of Sections, why is it advantageous to sum moments about the intersection point of two unknown forces?",
+      "options": [
+        { "text": "It simplifies the force calculations.", "isCorrect": false },
+        { "text": "It allows you to solve for the third unknown force directly.", "isCorrect": true },
+        { "text": "It confirms that the section is in equilibrium.", "isCorrect": false },
+        { "text": "It is required by the rules of statics.", "isCorrect": false }
+      ],
+      "explanation": "By summing moments about a point where the lines of action of two unknown forces intersect, the moments of those two forces become zero. This leaves an equation with only one unknown (the force in the third cut member), which can then be solved directly."
+    }
+  ]
+}

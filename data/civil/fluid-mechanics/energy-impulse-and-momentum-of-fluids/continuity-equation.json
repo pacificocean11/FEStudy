@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Principle: Conservation of Mass</h3>\n<p class=\"mb-4\">The <strong>continuity equation</strong> is the mathematical statement of the principle of conservation of mass for a fluid in motion. It states that for a steady flow, the mass flow rate entering a control volume must equal the mass flow rate leaving it.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. General Form</h3>\n<p class=\"mb-4\">The mass flow rate ($\dot{m}$) is the product of the fluid density ($\\rho$), the cross-sectional area of flow ($A$), and the average velocity ($v$).</p>\n<p class=\"text-center font-semibold mb-4\">$\\dot{m}_{in} = \\dot{m}_{out}$</p>\n$$ \\rho_1 A_1 v_1 = \\rho_2 A_2 v_2 $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Incompressible Flow</h3>\n<p class=\"mb-4\">For liquids, the density is essentially constant (incompressible flow, $\\rho_1 = \\rho_2$). In this case, the continuity equation simplifies to an equation for the conservation of volume flow rate ($Q$).</p>\n<p class=\"text-center font-semibold mb-4\">$Q_{in} = Q_{out}$</p>\n$$ A_1 v_1 = A_2 v_2 $$\n<p class=\"mb-4\">This simple equation is extremely useful. It shows that in a pipe of varying diameter, the velocity is inversely proportional to the cross-sectional area. Where the pipe is narrower, the velocity is higher.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Water flows through a pipe that narrows from a diameter of 10 cm to 5 cm. If the velocity in the 10 cm section is 2 m/s, what is the velocity in the 5 cm section?",
+      "options": [
+        { "text": "1 m/s", "isCorrect": false },
+        { "text": "2 m/s", "isCorrect": false },
+        { "text": "4 m/s", "isCorrect": false },
+        { "text": "8 m/s", "isCorrect": true }
+      ],
+      "explanation": "Use the continuity equation for incompressible flow: $A_1 v_1 = A_2 v_2$. The area is proportional to the diameter squared ($A = \\pi D^2 / 4$). So, $D_1^2 v_1 = D_2^2 v_2$. Solving for $v_2$: $v_2 = v_1 (D_1/D_2)^2 = (2 \\text{ m/s})(10/5)^2 = 2 \\times (2)^2 = 2 \\times 4 = 8$ m/s."
+    }
+  ]
+}

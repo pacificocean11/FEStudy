@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Rigid body kinematics</strong> describes the motion of a body where the distance between any two points on the body remains constant. It considers the body's rotation as well as its translation.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Planar Motion</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Translation:</strong> All points on the body move along parallel paths. The body does not rotate.</li>\n    <li><strong>Rotation about a Fixed Axis:</strong> All points on the body travel in circles about the axis of rotation.</li>\n    <li><strong>General Plane Motion:</strong> A combination of translation and rotation (e.g., a wheel rolling without slipping).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Rotation about a Fixed Axis</h3>\n<p class=\"mb-4\">For a point P at a distance r from the axis of rotation:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Velocity:</strong> The velocity is tangential to the circular path. Its magnitude is $v = r\\omega$.</li>\n    <li><strong>Acceleration:</strong> The acceleration has two components:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li><strong>Tangential acceleration:</strong> $a_t = r\\alpha$, where $\\alpha$ is the angular acceleration. This component changes the speed.</li>\n            <li><strong>Normal (centripetal) acceleration:</strong> $a_n = r\\omega^2 = v^2/r$. This component changes the direction of the velocity vector.</li>\n        </ul>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. General Plane Motion: Relative Velocity</h3>\n<p class=\"mb-4\">The velocity of any point B on a rigid body can be found relative to another point A on the same body using the relative velocity equation:</p>\n$$ \\mathbf{v}_B = \\mathbf{v}_A + \\mathbf{v}_{B/A} $$\n<p class=\"mb-4\">Where $\\mathbf{v}_{B/A}$ is the velocity of B *relative to* A. Since the body is rigid, this relative motion is a pure rotation of B about A. The magnitude of $\\mathbf{v}_{B/A}$ is $r_{B/A}\\omega$, and its direction is perpendicular to the line connecting A and B.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A wheel of radius 0.5 m is rotating about a fixed axis at an angular velocity of 10 rad/s. What is the linear speed of a point on the rim of the wheel?",
+      "options": [
+        { "text": "10 m/s", "isCorrect": false },
+        { "text": "20 m/s", "isCorrect": false },
+        { "text": "5 m/s", "isCorrect": true },
+        { "text": "2.5 m/s", "isCorrect": false }
+      ],
+      "explanation": "The linear speed of a point in pure rotation is given by $v = r\\omega$. So, $v = (0.5 \\text{ m})(10 \\text{ rad/s}) = 5$ m/s."
+    },
+    {
+      "question": "A car's wheel (radius = 0.4 m) is rolling without slipping at a forward velocity of 20 m/s. What is the angular velocity of the wheel?",
+      "options": [
+        { "text": "8 rad/s", "isCorrect": false },
+        { "text": "20 rad/s", "isCorrect": false },
+        { "text": "50 rad/s", "isCorrect": true },
+        { "text": "0.02 rad/s", "isCorrect": false }
+      ],
+      "explanation": "For the condition of rolling without slipping, the linear velocity of the center of the wheel is related to its angular velocity by $v = r\\omega$. Rearranging gives $\\omega = v/r = (20 \\text{ m/s}) / (0.4 \\text{ m}) = 50$ rad/s."
+    }
+  ]
+}

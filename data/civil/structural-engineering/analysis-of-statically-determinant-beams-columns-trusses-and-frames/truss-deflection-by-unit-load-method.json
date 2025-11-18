@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Unit Load Method</strong>, also known as the method of virtual work, is a versatile method for finding the deflection or rotation at any point on a structure (beam, truss, or frame). It is based on the principle of conservation of energy.</p>\n<p class=\"mb-4\">The principle states that the external work done by a virtual (unit) force acting through a real displacement is equal to the internal work (strain energy) done by the virtual member forces undergoing real elongations.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula for Truss Deflection</h3>\n<p class=\"mb-4\">The deflection at a joint in a specific direction is given by:</p>\n$$ 1 \\cdot \\Delta = \\sum \\frac{nNL}{AE} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\Delta$: The real deflection at the joint in the direction of the unit load.</li>\n    <li>$n$: The internal axial force in each truss member due to the <strong>virtual unit load</strong> applied at the point and in the direction of the desired deflection.</li>\n    <li>$N$: The internal axial force in each truss member due to the <strong>real loads</strong>.</li>\n    <li>$L$: The length of each member.</li>\n    <li>$A$: The cross-sectional area of each member.</li>\n    <li>$E$: The modulus of elasticity of each member.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Real System:</strong> Analyze the truss with the actual loads applied. Use the Method of Joints or Method of Sections to find the force, $N$, in every member.</li>\n    <li><strong>Virtual System:</strong> Remove all real loads from the truss. Apply a single unit load (e.g., 1 kip or 1 kN) at the joint where you want to find the deflection, acting in the direction of the desired deflection.</li>\n    <li>Analyze the truss again under this virtual unit load to find the force, $n$, in every member.</li>\n    <li><strong>Apply the Formula:</strong> For each member, calculate the term $nNL/AE$. Sum these values for all members of the truss to find the total deflection. A positive result means the deflection is in the same direction as the applied unit load; a negative result means it's in the opposite direction.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Unit Load Method for finding truss deflections is an application of what fundamental principle?",
+      "options": [
+        { "text": "Newton's Second Law", "isCorrect": false },
+        { "text": "The principle of virtual work (conservation of energy)", "isCorrect": true },
+        { "text": "The Müller-Breslau Principle", "isCorrect": false },
+        { "text": "The principle of superposition", "isCorrect": false }
+      ],
+      "explanation": "The method equates the external work done by a fictitious 'virtual' unit load with the internal virtual strain energy stored in the members as they deform under the real loads. This is an application of the principle of conservation of energy, more specifically known as virtual work."
+    },
+    {
+      "question": "In the virtual work formula for truss deflection, $\\Delta = \\sum nNL/AE$, what does the term 'n' represent?",
+      "options": [
+        { "text": "The force in a member due to the real loads.", "isCorrect": false },
+        { "text": "The force in a member due to a virtual unit load.", "isCorrect": true },
+        { "text": "The number of nodes in the truss.", "isCorrect": false },
+        { "text": "The length of the member.", "isCorrect": false }
+      ],
+      "explanation": "The formula involves two separate analyses. 'N' represents the forces from the real loading condition, which cause the actual elongations. 'n' represents the forces from a separate, imaginary analysis with only a single unit load applied, which is used to calculate the internal virtual work."
+    }
+  ]
+}

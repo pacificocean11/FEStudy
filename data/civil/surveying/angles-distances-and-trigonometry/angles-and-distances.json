@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Angles</h3>\n<p class=\"mb-4\">Angles in surveying are measured in degrees, minutes, and seconds (DMS).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>1 Circle = 360 degrees (°)</li>\n    <li>1 Degree = 60 minutes (')</li>\n    <li>1 Minute = 60 seconds (\")</li>\n</ul>\n<p class=\"mb-4\">Angles are typically measured with a <strong>theodolite</strong> or a <strong>total station</strong>.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Bearings and Azimuths</h3>\n<p class=\"mb-4\">The direction of a line is expressed as a bearing or an azimuth.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Azimuth:</strong> The horizontal angle measured clockwise from a reference meridian (usually North). Azimuths range from 0° to 360°.</li>\n    <li><strong>Bearing:</strong> The acute horizontal angle between a reference meridian (North or South) and the line. The angle is observed to the East or West. For example, N 30° E, or S 45° W. Bearing angles are always between 0° and 90°.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Distances</h3>\n<p class=\"mb-4\">Distances are measured horizontally. In modern surveying, distances are measured with an <strong>Electronic Distance Measurement (EDM)</strong> instrument, which is typically integrated into a total station. It works by sending out an infrared or laser beam to a reflector at the other end of the line and measuring the time it takes for the beam to return.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An angle is measured as 45° 30' 30\". What is this angle in decimal degrees?",
+      "options": [
+        { "text": "45.3030°", "isCorrect": false },
+        { "text": "45.5083°", "isCorrect": true },
+        { "text": "45.5500°", "isCorrect": false },
+        { "text": "45.6000°", "isCorrect": false }
+      ],
+      "explanation": "To convert from DMS to decimal degrees: Degrees + (Minutes / 60) + (Seconds / 3600). So, $45 + (30 / 60) + (30 / 3600) = 45 + 0.5 + 0.00833 \\approx 45.5083°$."
+    },
+    {
+      "question": "A line has an azimuth of 210°. What is its equivalent bearing?",
+      "options": [
+        { "text": "N 30° W", "isCorrect": false },
+        { "text": "S 30° W", "isCorrect": true },
+        { "text": "W 30° S", "isCorrect": false },
+        { "text": "S 60° W", "isCorrect": false }
+      ],
+      "explanation": "An azimuth of 210° is in the third quadrant (between 180° South and 270° West). The angle is measured from the South line towards the West. The difference from South (180°) is $210° - 180° = 30°$. So, the bearing is S 30° W."
+    }
+  ]
+}

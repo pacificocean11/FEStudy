@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Work of a Force</h3>\n<p class=\"mb-4\">Work ($U$) is the energy transferred by a force acting over a displacement. For a constant force, $U = Fd\\cos(\\theta)$. For a variable force, $U = \\int \\mathbf{F} \\cdot d\\mathbf{s}$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Kinetic Energy</h3>\n<p class=\"mb-4\">Kinetic energy ($T$) is the energy of motion. For a particle of mass $m$ and speed $v$:</p>\n$$ T = \\frac{1}{2}mv^2 $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Work and Energy</h3>\n<p class=\"mb-4\">This is a fundamental principle relating work and energy. It states that the work done by all forces (both external and internal) acting on a particle as it moves from position 1 to position 2 is equal to the change in the particle's kinetic energy.</p>\n$$ \\sum U_{1-2} = T_2 - T_1 = \\Delta T $$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Potential Energy and Conservation of Energy</h3>\n<p class=\"mb-4\">If the work is done by conservative forces (like gravity or an ideal spring), it can be expressed as a change in potential energy ($V$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Gravitational Potential Energy:</strong> $V_g = Wh = mgh$</li>\n    <li><strong>Elastic Potential Energy:</strong> $V_e = \\frac{1}{2}ks^2$</li>\n</ul>\n<p class=\"mb-4\">The principle of work and energy can be rewritten as the <strong>Conservation of Energy</strong> equation:</p>\n$$ T_1 + V_1 + U_{1-2, nc} = T_2 + V_2 $$\n<p class=\"mb-4\">Where $U_{1-2, nc}$ is the work done by non-conservative forces like friction. If there are no non-conservative forces, total mechanical energy is conserved ($T_1 + V_1 = T_2 + V_2$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">5. Power</h3>\n<p class=\"mb-4\">Power is the rate at which work is done. $P = dU/dt = \\mathbf{F} \\cdot \\mathbf{v}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 5 kg block starts from rest and slides 10 m down a frictionless ramp that is inclined at 30°. What is its speed at the bottom?",
+      "options": [
+        { "text": "9.9 m/s", "isCorrect": true },
+        { "text": "7.0 m/s", "isCorrect": false },
+        { "text": "14.0 m/s", "isCorrect": false },
+        { "text": "5.0 m/s", "isCorrect": false }
+      ],
+      "explanation": "Use conservation of energy. Let the bottom of the ramp be the datum ($h=0$). The initial height is $h_1 = L \\sin(\\theta) = 10 \\sin(30^\circ) = 5$ m. Initial state: $T_1=0, V_1=mgh_1$. Final state: $T_2 = \\frac{1}{2}mv_2^2, V_2=0$. $T_1 + V_1 = T_2 + V_2 \\implies 0 + mgh_1 = \\frac{1}{2}mv_2^2 + 0$. Mass cancels out. $v_2 = \\sqrt{2gh_1} = \\sqrt{2(9.81)(5)} = \\sqrt{98.1} \\approx 9.9$ m/s."
+    },
+    {
+      "question": "A 1000 kg car accelerates from 10 m/s to 20 m/s. What is the net work done on the car?",
+      "options": [
+        { "text": "10 kJ", "isCorrect": false },
+        { "text": "150 kJ", "isCorrect": true },
+        { "text": "300 kJ", "isCorrect": false },
+        { "text": "100 kJ", "isCorrect": false }
+      ],
+      "explanation": "Use the Principle of Work and Energy. The net work is equal to the change in kinetic energy. $T_1 = \\frac{1}{2}(1000)(10^2) = 50,000$ J. $T_2 = \\frac{1}{2}(1000)(20^2) = 200,000$ J. $\\sum U = T_2 - T_1 = 200,000 - 50,000 = 150,000$ J, or 150 kJ."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Break-even analysis</strong> is a financial calculation that determines the point at which total costs and total revenue are equal, meaning there is no net loss or gain. At the break-even point, a project or business has \"broken even\". It's a key analysis for determining the economic viability of a project or product.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Break-Even Quantity</h3>\n<p class=\"mb-4\">The analysis is often used to find the quantity of a product that must be sold to cover all costs. The break-even point occurs where:</p>\n<p class=\"text-center font-semibold mb-4\">Total Revenue = Total Cost</p>\n$$ (R_{unit} \\times Q) = FC + (VC_{unit} \\times Q) $$\n<p class=\"mb-4\">Solving for the break-even quantity, $Q_{BE}$:</p>\n$$ Q_{BE} = \\frac{FC}{R_{unit} - VC_{unit}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q_{BE}$ is the break-even quantity.</li>\n    <li>$FC$ is the Total Fixed Cost.</li>\n    <li>$R_{unit}$ is the revenue per unit (selling price).</li>\n    <li>$VC_{unit}$ is the variable cost per unit.</li>\n    <li>The term $(R_{unit} - VC_{unit})$ is called the <strong>contribution margin</strong> per unit.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A precast concrete manufacturer has fixed costs of $100,000 per month. The variable cost to produce one precast panel is $400, and the panel sells for $600. What is the monthly break-even quantity?",
+      "options": [
+        { "text": "167 panels", "isCorrect": false },
+        { "text": "250 panels", "isCorrect": false },
+        { "text": "500 panels", "isCorrect": true },
+        { "text": "100 panels", "isCorrect": false }
+      ],
+      "explanation": "Use the break-even formula: $Q_{BE} = \\frac{FC}{R_{unit} - VC_{unit}} = \\frac{$100,000}{$600 - $400} = \\frac{$100,000}{$200} = 500$ panels."
+    },
+    {
+      "question": "For the manufacturer in the previous problem, what is the profit or loss if they sell 600 panels in a month?",
+      "options": [
+        { "text": "$20,000 profit", "isCorrect": true },
+        { "text": "$10,000 profit", "isCorrect": false },
+        { "text": "$20,000 loss", "isCorrect": false },
+        { "text": "Break-even", "isCorrect": false }
+      ],
+      "explanation": "Profit = Total Revenue - Total Cost. Total Revenue = $600 \\times 600 = $360,000. Total Cost = $100,000 + ($400 \\times 600) = $100,000 + $240,000 = $340,000. Profit = $360,000 - $340,000 = $20,000."
+    }
+  ]
+}

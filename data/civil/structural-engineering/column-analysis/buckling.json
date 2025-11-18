@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Buckling</strong> is a failure mode characterized by a sudden sideways deflection of a long, slender structural member subjected to a high compressive axial load. This can occur even if the average compressive stress on the cross-section is less than the material's yield strength. It is a failure due to instability, not material strength.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Euler's Column Formula</h3>\n<p class=\"mb-4\">The <strong>Euler formula</strong> calculates the theoretical critical load ($P_{cr}$), which is the maximum axial load that a long, slender, ideal column can carry without buckling. The formula assumes the column is perfectly straight, the load is perfectly concentric, and the material is perfectly elastic.</p>\n$$ P_{cr} = \\frac{\\pi^2 EI}{(KL)^2} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$P_{cr}$ is the critical buckling load.</li>\n    <li>$E$ is the modulus of elasticity of the material.</li>\n    <li>$I$ is the minimum area moment of inertia of the column's cross-section.</li>\n    <li>$L$ is the unsupported length of the column.</li>\n    <li>$K$ is the column effective length factor, which depends on the end support conditions. The term $KL$ is the 'effective length'.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Critical Stress and Slenderness Ratio</h3>\n<p class=\"mb-4\">The critical stress is the average stress at buckling: $\\sigma_{cr} = P_{cr}/A$. The formula can be rewritten using the radius of gyration, $k = \\sqrt{I/A}$:</p>\n$$ \\sigma_{cr} = \\frac{\\pi^2 E}{(KL/k)^2} $$\n<p class=\"mb-4\">The term $KL/k$ is the <strong>slenderness ratio</strong>. This ratio determines the column's susceptibility to buckling. A high slenderness ratio means the column is long and thin and is likely to buckle.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The critical buckling load of a long, slender column is:",
+      "options": [
+        { "text": "Directly proportional to its length.", "isCorrect": false },
+        { "text": "Inversely proportional to the square of its length.", "isCorrect": true },
+        { "text": "Directly proportional to its slenderness ratio.", "isCorrect": false },
+        { "text": "Independent of the material's modulus of elasticity.", "isCorrect": false }
+      ],
+      "explanation": "According to the Euler formula, $P_{cr} = \\frac{\\pi^2 EI}{(KL)^2}$, the critical load is inversely proportional to the square of the effective length. This means that doubling the length of a column reduces its buckling capacity by a factor of four."
+    },
+    {
+      "question": "A column will buckle about the axis of its cross-section that has the:",
+      "options": [
+        { "text": "Maximum moment of inertia.", "isCorrect": false },
+        { "text": "Minimum moment of inertia.", "isCorrect": true },
+        { "text": "Maximum area.", "isCorrect": false },
+        { "text": "Maximum section modulus.", "isCorrect": false }
+      ],
+      "explanation": "Buckling is an instability failure, and the column will buckle in its weakest direction. The weakness in bending is determined by the moment of inertia. Therefore, buckling will occur about the principal axis with the minimum area moment of inertia."
+    }
+  ]
+}

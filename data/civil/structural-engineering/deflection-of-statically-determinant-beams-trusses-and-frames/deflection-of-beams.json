@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Beam deflection</strong> is the transverse displacement of a beam from its original position when subjected to bending loads. The deformed shape of the beam's neutral axis is called the <strong>elastic curve</strong>. The amount of deflection is a critical serviceability criterion in structural design; excessive deflection can cause damage to non-structural elements (like cracking drywall) or be aesthetically displeasing.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Moment-Curvature Relationship</h3>\n<p class=\"mb-4\">The governing differential equation for the elastic curve relates the bending moment in the beam to its curvature. For a linear elastic material, the curvature ($\\kappa$) is:</p>\n$$ \\kappa = \\frac{1}{\\rho} = \\frac{M}{EI} $$\n<p class=\"mb-4\">where $\\rho$ is the radius of curvature, $M$ is the internal bending moment, $E$ is the modulus of elasticity, and $I$ is the moment of inertia. The term $EI$ is called the <strong>flexural rigidity</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Methods for Calculating Deflection</h3>\n<p class=\"mb-4\">Several methods exist to calculate the deflection and slope of a beam:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Double Integration Method:</strong> This method involves integrating the moment equation ($EIy'' = M(x)$) twice to obtain equations for the slope ($y'$) and deflection ($y$). Constants of integration are solved for using the boundary conditions at the supports.</li>\n    <li><strong>Moment-Area Method:</strong> A semi-graphical method that uses the properties of the M/EI diagram to find the slope and deflection between two points on the beam.</li>\n    <li><strong>Conjugate Beam Method:</strong> An analytical method that uses the analogy between the real beam and an imaginary 'conjugate' beam, where the M/EI diagram of the real beam is the load on the conjugate beam.</li>\n    <li><strong>Virtual Work (Unit Load) Method:</strong> An energy-based method that is very versatile and can be used for beams, frames, and trusses.</li>\n    <li><strong>Standard Formulas:</strong> For common beam types and loading conditions, the maximum deflections have been pre-calculated and are available in standard formulas (the most common approach for the FE exam).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The flexural rigidity of a beam, which is a measure of its resistance to bending, is represented by the term:",
+      "options": [
+        { "text": "AE", "isCorrect": false },
+        { "text": "EI", "isCorrect": true },
+        { "text": "JG", "isCorrect": false },
+        { "text": "PL/A", "isCorrect": false }
+      ],
+      "explanation": "Flexural rigidity is the product of the material's stiffness (Modulus of Elasticity, E) and the cross-section's geometric stiffness (Area Moment of Inertia, I). A higher EI value means the beam is more resistant to bending and will deflect less."
+    },
+    {
+      "question": "In the differential equation of the elastic curve, $EIy'' = M(x)$, what does $y''$ represent?",
+      "options": [
+        { "text": "The deflection of the beam.", "isCorrect": false },
+        { "text": "The slope of the beam.", "isCorrect": false },
+        { "text": "The curvature of the beam.", "isCorrect": true },
+        { "text": "The shear force in the beam.", "isCorrect": false }
+      ],
+      "explanation": "In calculus, the second derivative of a function ($y''$) gives its curvature. The equation $y'' = M/EI$ is the moment-curvature relationship, which is the foundation for calculating beam deflections by integration."
+    }
+  ]
+}

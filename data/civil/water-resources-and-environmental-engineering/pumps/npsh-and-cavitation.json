@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Cavitation</h3>\n<p class=\"mb-4\"><strong>Cavitation</strong> is the formation and subsequent collapse of vapor bubbles (cavities) in a liquid. In a pump, this occurs when the absolute pressure of the liquid at the pump inlet (the 'suction side') drops below the liquid's vapor pressure. At this low pressure, the liquid boils and forms vapor bubbles. As these bubbles are carried into the higher-pressure region of the pump impeller, they rapidly collapse (implode). This collapse creates intense shockwaves that can cause severe damage to the impeller, produce noise and vibration, and significantly reduce pump performance.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Net Positive Suction Head (NPSH)</h3>\n<p class=\"mb-4\">NPSH is a measure of the pressure at the suction side of a pump, used to determine if cavitation will occur.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>NPSH Available ($NPSH_A$):</strong> This is a property of the system. It is the absolute pressure head at the pump inlet minus the vapor pressure head of the liquid. It represents the pressure available to prevent the liquid from boiling.</li>\n    $$ NPSH_A = H_{abs} - H_{vap} = \\frac{P_{inlet}}{\\gamma} - \\frac{P_{vap}}{\\gamma} $$\n    <li><strong>NPSH Required ($NPSH_R$):</strong> This is a property of the pump. It is the minimum pressure head required at the pump inlet to keep the pump from cavitating. This value is determined by the pump manufacturer through testing and is provided on the pump performance curve.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Condition to Prevent Cavitation</h3>\n<p class=\"mb-4\">To prevent cavitation, the available NPSH must be greater than the required NPSH, usually with a safety margin.</p>\n<p class=\"text-center font-semibold mb-4\">$NPSH_A > NPSH_R$</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Cavitation in a pump is caused by:",
+      "options": [
+        { "text": "The fluid velocity being too high.", "isCorrect": false },
+        { "text": "The absolute pressure at the pump inlet dropping below the fluid's vapor pressure.", "isCorrect": true },
+        { "text": "The pump running too slowly.", "isCorrect": false },
+        { "text": "Air leaking into the suction line.", "isCorrect": false }
+      ],
+      "explanation": "Cavitation is essentially the boiling of a liquid due to low pressure, not high temperature. If the pressure at the pump's suction side falls below the liquid's vapor pressure, vapor bubbles will form, leading to cavitation when they collapse in the high-pressure zone of the impeller."
+    },
+    {
+      "question": "To avoid cavitation, which of the following conditions must be met?",
+      "options": [
+        { "text": "NPSH Available must be less than NPSH Required.", "isCorrect": false },
+        { "text": "NPSH Available must be greater than NPSH Required.", "isCorrect": true },
+        { "text": "The pump efficiency must be greater than 80%.", "isCorrect": false },
+        { "text": "The pump must be installed below the water source.", "isCorrect": false }
+      ],
+      "explanation": "The Net Positive Suction Head Available ($NPSH_A$) is the pressure margin that the system provides to prevent cavitation. The Net Positive Suction Head Required ($NPSH_R$) is the minimum margin the pump needs to operate without cavitating. To ensure safe operation, the available head must exceed the required head."
+    }
+  ]
+}

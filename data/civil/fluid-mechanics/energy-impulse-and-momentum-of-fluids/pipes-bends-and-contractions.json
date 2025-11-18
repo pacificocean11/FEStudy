@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Application of the Momentum Equation</h3>\n<p class=\"mb-4\">The linear momentum equation is used to calculate the forces required to anchor pipe bends, nozzles, and contractions. The flow of fluid through these fittings causes a change in momentum (due to a change in direction, speed, or both), and this change in momentum results in a force being exerted by the fluid on the fitting.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Example: A 90-Degree Reducing Bend</h3>\n<p class=\"mb-4\">Consider a horizontal 90-degree bend where the pipe diameter also reduces. To find the anchoring forces ($R_x, R_y$):</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Control Volume:</strong> Choose a control volume that encloses the bend and the fluid within it.</li>\n    <li><strong>Forces:</strong> The external forces on the fluid are the pressure forces at the inlet and outlet ($P_1A_1, P_2A_2$) and the reaction forces from the bend ($R_x, R_y$).</li>\n    <li><strong>Momentum Equation (x-direction):</strong>\n    $$ P_1A_1 - R_x = \\dot{m}(v_{x,out} - v_{x,in}) $$\n    <p>Since the flow turns 90 degrees, $v_{x,out} = 0$. The equation becomes:</p>\n    $$ P_1A_1 - R_x = \\dot{m}(0 - v_1) = -\\dot{m}v_1$$\n    </li>\n    <li><strong>Momentum Equation (y-direction):</strong>\n    $$ -P_2A_2 + R_y = \\dot{m}(v_{y,out} - v_{y,in}) $$\n    <p>The initial flow is all in the x-direction, so $v_{y,in} = 0$. The equation becomes:</p>\n    $$ -P_2A_2 + R_y = \\dot{m}(v_2 - 0) = \\dot{m}v_2 $$\n    </li>\n    <li>Solve the two equations for the reaction forces $R_x$ and $R_y$. The force of the fluid on the bend is equal and opposite to these reaction forces.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Water flowing through a horizontal 180-degree bend exits at the same velocity it entered, but in the opposite direction. If frictional losses are ignored, the force required to hold the bend in place is primarily due to:",
+      "options": [
+        { "text": "The weight of the water.", "isCorrect": false },
+        { "text": "The change in fluid momentum.", "isCorrect": true },
+        { "text": "The change in fluid pressure only.", "isCorrect": false },
+        { "text": "The change in fluid elevation.", "isCorrect": false }
+      ],
+      "explanation": "The fluid enters with momentum in one direction (e.g., $+mv$) and leaves with momentum in the opposite direction ($-mv$). The change in momentum is large, and according to the momentum principle, a large force must be applied by the bend to the fluid to cause this change. The anchoring force is the equal and opposite reaction to this force."
+    }
+  ]
+}

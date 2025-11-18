@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Polar Moment of Inertia ($J$)</strong> is a geometric property of a cross-section that reflects its resistance to torsion (twisting). It is analogous to how the area moment of inertia relates to bending, but it concerns rotation about an axis perpendicular to the cross-section.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The polar moment of inertia about an axis passing through a point O, perpendicular to the cross-section, is defined by the integral:</p>\n$$ J_O = \\int_A r^2 dA $$\n<p class=\"mb-4\">where $r$ is the radial distance from the point O to the elemental area $dA$. It has units of length to the fourth power (e.g., in⁴ or m⁴).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Shapes</h3>\n<p class=\"mb-4\">The formulas for the polar moment of inertia about the centroid are important for torsion problems involving circular shafts.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Solid Circular Shaft (radius r, diameter d):</strong></li>\n    $$ J_c = \\frac{\\pi r^4}{2} = \\frac{\\pi d^4}{32} $$\n    <li><strong>Hollow Circular Shaft (outer radius $r_o$, inner radius $r_i$):</strong></li>\n    $$ J_c = \\frac{\\pi}{2}(r_o^4 - r_i^4) $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The polar moment of inertia is a measure of a cross-section's resistance to what type of loading?",
+      "options": [
+        { "text": "Axial tension", "isCorrect": false },
+        { "text": "Bending", "isCorrect": false },
+        { "text": "Torsion", "isCorrect": true },
+        { "text": "Shear", "isCorrect": false }
+      ],
+      "explanation": "The polar moment of inertia, J, is the geometric property used in the fundamental torsion equations for stress ($\\tau = Tr/J$) and angle of twist ($\\phi = TL/JG$). A larger J indicates a greater resistance to twisting."
+    },
+    {
+      "question": "What is the polar moment of inertia for a solid circular shaft with a diameter of 4 inches?",
+      "options": [
+        { "text": "8$\\pi$ in⁴", "isCorrect": true },
+        { "text": "4$\\pi$ in⁴", "isCorrect": false },
+        { "text": "16$\\pi$ in⁴", "isCorrect": false },
+        { "text": "32$\\pi$ in⁴", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for a solid circular shaft: $J_c = \\frac{\\pi d^4}{32} = \\frac{\\pi (4)^4}{32} = \\frac{256\\pi}{32} = 8\\pi$ in⁴."
+    }
+  ]
+}
