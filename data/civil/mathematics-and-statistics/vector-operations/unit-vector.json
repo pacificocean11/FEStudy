@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of a Vector</h3>\n<p class=\"mb-4\">A vector is a mathematical object that has both magnitude (or length) and direction. It can be represented as a directed line segment or in terms of its components, e.g., $\\mathbf{v} = \\langle v_x, v_y, v_z \\rangle$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Magnitude of a Vector</h3>\n<p class=\"mb-4\">The magnitude (or norm) of a vector $\\mathbf{v} = \\langle v_x, v_y, v_z \\rangle$, denoted by $||\\mathbf{v}||$, is its length. It is calculated using the Pythagorean theorem:</p>\n$$||\\mathbf{v}|| = \\sqrt{v_x^2 + v_y^2 + v_z^2}$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Unit Vector</h3>\n<p class=\"mb-4\">A <strong>unit vector</strong> is a vector with a magnitude of exactly 1. Unit vectors are used to specify a direction.</p>\n<p class=\"mb-4\">To find the unit vector $\\mathbf{u}$ in the same direction as a given vector $\\mathbf{v}$, you divide the vector by its own magnitude:</p>\n$$\\mathbf{u} = \\frac{\\mathbf{v}}{||\\mathbf{v}||} = \\frac{\\langle v_x, v_y, v_z \\rangle}{\\sqrt{v_x^2 + v_y^2 + v_z^2}}$$\n<p class=\"mb-4\">This process is called <strong>normalizing</strong> the vector.</p>\n<h3 class=\"text-lg font-semibold mb-2\">4. Standard Unit Vectors</h3>\n<p class=\"mb-4\">In three-dimensional space, the standard unit vectors are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\mathbf{i} = \\langle 1, 0, 0 \\rangle$ (direction of the positive x-axis)</li>\n    <li>$\\mathbf{j} = \\langle 0, 1, 0 \\rangle$ (direction of the positive y-axis)</li>\n    <li>$\\mathbf{k} = \\langle 0, 0, 1 \\rangle$ (direction of the positive z-axis)</li>\n</ul>\n<p class=\"mb-4\">Any vector $\\mathbf{v} = \\langle v_x, v_y, v_z \\rangle$ can be written as a linear combination of these standard unit vectors: $\\mathbf{v} = v_x\\mathbf{i} + v_y\\mathbf{j} + v_z\\mathbf{k}$.</p>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the magnitude of the vector $\\mathbf{v} = \\langle 3, 4 \\rangle$?",
+      "options": [
+        { "text": "5", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "25", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "The magnitude is found using the formula $||\\mathbf{v}|| = \\sqrt{v_x^2 + v_y^2}$. So, $||\\mathbf{v}|| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$."
+    },
+    {
+      "question": "Find the unit vector in the direction of $\\mathbf{v} = \\langle 3, 4 \\rangle$.",
+      "options": [
+        { "text": "$\\langle 3/5, 4/5 \\rangle$", "isCorrect": true },
+        { "text": "$\\langle 3/7, 4/7 \\rangle$", "isCorrect": false },
+        { "text": "$\\langle 3, 4 \\rangle$", "isCorrect": false },
+        { "text": "$\\langle 1, 1 \\rangle$", "isCorrect": false }
+      ],
+      "explanation": "First, find the magnitude of $\\mathbf{v}$, which is $||\\mathbf{v}|| = \\sqrt{3^2 + 4^2} = 5$. Then, divide the vector by its magnitude: $\\mathbf{u} = \\mathbf{v}/||\\mathbf{v}|| = \\langle 3, 4 \\rangle / 5 = \\langle 3/5, 4/5 \\rangle$."
+    },
+    {
+      "question": "Normalize the vector $\\mathbf{w} = \\langle 1, -2, 2 \\rangle$.",
+      "options": [
+        { "text": "$\\langle 1, -1, 1 \\rangle$", "isCorrect": false },
+        { "text": "$\\langle 1/9, -2/9, 2/9 \\rangle$", "isCorrect": false },
+        { "text": "$\\langle 1/3, -2/3, 2/3 \\rangle$", "isCorrect": true },
+        { "text": "$\\langle 1, 0, 0 \\rangle$", "isCorrect": false }
+      ],
+      "explanation": "Normalizing a vector means finding the unit vector in its direction. First, find the magnitude: $||\\mathbf{w}|| = \\sqrt{1^2 + (-2)^2 + 2^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3$. Then, divide the vector by its magnitude: $\\mathbf{u} = \\langle 1, -2, 2 \\rangle / 3 = \\langle 1/3, -2/3, 2/3 \\rangle$."
+    }
+  ]
+}

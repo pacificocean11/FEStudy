@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Metals (Structural Steel)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Isotropic:</strong> Properties are the same in all directions.</li>\n    <li><strong>Stress-Strain Behavior:</strong> Linear elastic region followed by a distinct yield point, a plastic plateau, strain hardening, and finally necking and rupture.</li>\n    <li><strong>Key Properties:</strong> High Modulus of Elasticity ($E \\approx 29,000$ ksi), defined Yield Strength ($F_y$) and Ultimate Tensile Strength ($F_u$). Steel is a <strong>ductile</strong> material, meaning it deforms significantly before failure.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Concrete</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Compressive Strength ($f'_c$):</strong> The most important property, typically 3,000 to 6,000 psi for normal strength concrete. It is determined by the 28-day cylinder test.</li>\n    <li><strong>Tensile Strength:</strong> Very low, approximately 10% of its compressive strength. Concrete is assumed to have zero tensile strength in design (cracked section).</li>\n    <li><strong>Modulus of Elasticity ($E_c$):</strong> Related to compressive strength and density. $E_c = 57,000\\sqrt{f'_c}$ for normal weight concrete (in psi).</li>\n    <li><strong>Brittle:</strong> Concrete fails suddenly in tension or compression without significant deformation.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Wood</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Orthotropic:</strong> Wood has unique independent mechanical properties in the directions of three mutually perpendicular axes: longitudinal (parallel to grain), radial, and tangential.</li>\n    <li><strong>Directionality:</strong> Strength is much higher parallel to the grain than perpendicular to the grain. For example, wood is strong in compression parallel to grain (column action) but relatively weak in compression perpendicular to grain (bearing).</li>\n    <li><strong>Factors Affecting Strength:</strong> Moisture content (strength decreases as MC increases), duration of load (wood can carry higher loads for short durations), and natural defects (knots, splits).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Asphalt and Aggregates</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Asphalt Binder:</strong> A viscoelastic material, meaning its properties depend on temperature and loading time. It is stiff and elastic at low temperatures/fast loading, and soft and viscous at high temperatures/slow loading.</li>\n    <li><strong>Aggregates:</strong> Hardness, toughness (resistance to abrasion/impact), and soundness (resistance to weathering) are key mechanical properties for durability in pavement and concrete.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following best describes the mechanical behavior of plain concrete?",
+      "options": [
+        { "text": "High tensile strength and ductile failure.", "isCorrect": false },
+        { "text": "High compressive strength and ductile failure.", "isCorrect": false },
+        { "text": "High compressive strength and brittle failure.", "isCorrect": true },
+        { "text": "Isotropic with equal strength in tension and compression.", "isCorrect": false }
+      ],
+      "explanation": "Concrete is a ceramic-like material. It is excellent in compression but has very low tensile strength. Unlike steel, it does not yield plastically; it fails suddenly when its strength limit is reached, which is the definition of brittle behavior."
+    },
+    {
+      "question": "Wood is classified as an orthotropic material because:",
+      "options": [
+        { "text": "Its properties change with moisture content.", "isCorrect": false },
+        { "text": "It has distinct mechanical properties in three mutually perpendicular directions.", "isCorrect": true },
+        { "text": "It is stronger than steel.", "isCorrect": false },
+        { "text": "It is a composite material.", "isCorrect": false }
+      ],
+      "explanation": "The cellular structure of wood (grain) gives it different properties depending on the direction of loading relative to the grain (longitudinal, radial, tangential). This direction-dependent behavior is called orthotropy."
+    },
+    {
+      "question": "For normal weight concrete, the Modulus of Elasticity ($E_c$) is estimated using which formula (where $f'_c$ is in psi)?",
+      "options": [
+        { "text": "$29,000,000$ psi", "isCorrect": false },
+        { "text": "$57,000 \\sqrt{f'_c}$", "isCorrect": true },
+        { "text": "$33 w_c^{1.5} \\sqrt{f'_c}$", "isCorrect": false },
+        { "text": "$0.85 f'_c$", "isCorrect": false }
+      ],
+      "explanation": "The ACI code provides the empirical formula $E_c = 57,000 \\sqrt{f'_c}$ for normal weight concrete. The formula $33 w_c^{1.5} \\sqrt{f'_c}$ is the more general form that accounts for unit weight ($w_c$)."
+    }
+  ]
+}

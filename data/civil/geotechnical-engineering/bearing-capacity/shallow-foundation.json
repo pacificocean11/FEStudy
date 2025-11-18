@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Bearing capacity is the ability of the soil to support the loads applied to the ground. The <strong>ultimate bearing capacity ($q_{ult}$)</strong> is the maximum pressure the soil can support before shear failure occurs.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Terzaghi's Bearing Capacity Equation</h3>\n<p class=\"mb-4\">Terzaghi developed a general equation for $q_{ult}$ for a strip footing, which is often modified for other shapes. For a general footing:</p>\n$$ q_{ult} = c N_c + q N_q + 0.5 \\gamma B N_{\\gamma} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$c$: Cohesion of the soil.</li>\n    <li>$q$: Effective overburden pressure at the base of the footing ($q = \\gamma D_f$).</li>\n    <li>$\\gamma$: Unit weight of the soil below the footing.</li>\n    <li>$B$: Width of the footing (smallest dimension).</li>\n    <li>$N_c, N_q, N_{\\gamma}$: Bearing capacity factors, which are functions of the soil's friction angle ($\\phi$).</li>\n</ul>\n<p class=\"mb-4\"><strong>Shape Factors:</strong> The equation is modified for square ($1.3c N_c + ... + 0.4\\gamma B N_\\gamma$) and circular footings.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Effect of Water Table</h3>\n<p class=\"mb-4\">The position of the groundwater table affects the unit weight used in the equation. If the water table is at or above the footing base, the submerged unit weight ($\\gamma' = \\gamma_{sat} - \\gamma_w$) must be used for the soil below the footing. If it is above the footing, it also reduces the effective overburden pressure ($q$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Allowable Bearing Capacity</h3>\n<p class=\"mb-4\">For design, a Factor of Safety (FS) is applied, typically FS = 3.0.</p>\n$$ q_{all} = \\frac{q_{ult}}{FS} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A square footing (2m x 2m) rests on the surface of a dense sand (c=0). The unit weight of the sand is 18 kN/m³. The bearing capacity factors are $N_q = 20$ and $N_\\gamma = 25$. What is the ultimate bearing capacity?",
+      "options": [
+        { "text": "900 kPa", "isCorrect": false },
+        { "text": "360 kPa", "isCorrect": true },
+        { "text": "450 kPa", "isCorrect": false },
+        { "text": "225 kPa", "isCorrect": false }
+      ],
+      "explanation": "For a surface footing, the depth $D_f = 0$, so the surcharge term $q N_q = 0$. Since it is sand, cohesion $c=0$, so the first term is 0. The equation for a square footing simplifies to $q_{ult} = 0.4 \\gamma B N_\\gamma$. Plugging in the values: $q_{ult} = 0.4 (18 \\text{ kN/m³}) (2 \\text{ m}) (25) = 0.4 \\times 18 \\times 50 = 360$ kPa."
+    },
+    {
+      "question": "If the water table rises to the level of the base of the footing in the previous problem, what happens to the ultimate bearing capacity?",
+      "options": [
+        { "text": "It increases.", "isCorrect": false },
+        { "text": "It decreases significantly (approx 50%).", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false },
+        { "text": "It becomes zero.", "isCorrect": false }
+      ],
+      "explanation": "When the water table is at the base of the footing, the soil below is submerged. We must replace the total unit weight ($\\gamma$) with the submerged unit weight ($\\gamma' \\approx \\gamma / 2$). Since the bearing capacity of a surface footing on sand is directly proportional to the unit weight, the capacity will be roughly halved."
+    }
+  ]
+}

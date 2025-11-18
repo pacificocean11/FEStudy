@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Euler Buckling and Slenderness</h3>\n<p class=\"mb-4\">The strength of a steel column is governed by its slenderness ratio, $KL/r$.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$K$: Effective length factor.</li>\n    <li>$L$: Unbraced length.</li>\n    <li>$r$: Radius of gyration.</li>\n</ul>\n<p class=\"mb-4\">As $KL/r$ increases, the compressive strength decreases.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Column Strength Curves (AISC)</h3>\n<p class=\"mb-4\">The AISC specification defines two regions for column strength based on slenderness:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Inelastic Buckling:</strong> For short and intermediate columns ($KL/r \u2264 4.71\u221A(E/F_y)$). The failure involves partial yielding of the cross-section.</li>\n    <li><strong>Elastic Buckling:</strong> For long, slender columns ($KL/r > 4.71\u221A(E/F_y)$). The failure is purely elastic buckling (Euler buckling). The critical stress is $0.877 F_e$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Nominal Compressive Strength</h3>\n<p class=\"mb-4\">The nominal strength is:</p>\n$$ P_n = F_{cr} A_g $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$F_{cr}$: Critical buckling stress determined from AISC equations.</li>\n    <li>$A_g$: Gross cross-sectional area.</li>\n</ul>\n<p class=\"mb-4\">For LRFD, the resistance factor for compression is $\u03D5_c = 0.90$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which parameter primarily determines the critical buckling stress of a steel column?",
+      "options": [
+        { "text": "Tensile Strength", "isCorrect": false },
+        { "text": "Slenderness Ratio (KL/r)", "isCorrect": true },
+        { "text": "Plastic Modulus (Z)", "isCorrect": false },
+        { "text": "Shear Modulus (G)", "isCorrect": false }
+      ],
+      "explanation": "The slenderness ratio ($KL/r$) is the key geometric parameter. It defines whether the column is short (yield-governed) or long (buckling-governed) and directly determines the critical stress $F_{cr}$."
+    },
+    {
+      "question": "For a very slender steel column (elastic buckling), the critical stress is proportional to:",
+      "options": [
+        { "text": "Yield Stress ($F_y$)", "isCorrect": false },
+        { "text": "Modulus of Elasticity ($E$)", "isCorrect": true },
+        { "text": "Ultimate Stress ($F_u$)", "isCorrect": false },
+        { "text": "Shear Stress", "isCorrect": false }
+      ],
+      "explanation": "In the elastic buckling range, the column behaves according to the Euler formula ($P_{cr} = \u03C0^2 EI / (KL)^2$). The strength depends on the stiffness of the material ($E$), not its yield strength."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Unified Soil Classification System (USCS)</h3>\n<p class=\"mb-4\">The USCS is the most common system used by geotechnical engineers. It classifies soils into two main categories based on the percentage passing the No. 200 sieve (0.075 mm):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Coarse-Grained Soils:</strong> More than 50% retained on the No. 200 sieve. Subdivided into Gravels (G) and Sands (S). Further classified by gradation (Well-graded W, Poorly-graded P) or fines content (Silty M, Clayey C).</li>\n    <li><strong>Fine-Grained Soils:</strong> 50% or more passes the No. 200 sieve. Subdivided into Silts (M) and Clays (C) based on the Atterberg limits. Further classified by compressibility (Low Liquid Limit L, High Liquid Limit H).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Plasticity Chart</h3>\n<p class=\"mb-4\">Fine-grained soils are classified using the Plasticity Chart, which plots Plasticity Index (PI) vs. Liquid Limit (LL). The <strong>A-line</strong> separates clays from silts.</p>\n<p class=\"mb-4\"><strong>Equation of the A-line:</strong> $PI = 0.73(LL - 20)$</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Above the A-line: <strong>Clay (C)</strong></li>\n    <li>Below the A-line: <strong>Silt (M)</strong> or Organic (O)</li>\n    <li>LL < 50: <strong>Low Plasticity (L)</strong></li>\n    <li>LL $\\ge$ 50: <strong>High Plasticity (H)</strong></li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. AASHTO Classification System</h3>\n<p class=\"mb-4\">Used primarily for highway construction. Soils are classified into seven groups, A-1 through A-7, based on grain size and Atterberg limits. A-1 is the best subgrade material (gravel/sand), while A-7 is the poorest (clay).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A fine-grained soil has a Liquid Limit of 50 and a Plastic Limit of 20. Using the USCS, what is its classification?",
+      "options": [
+        { "text": "CH", "isCorrect": true },
+        { "text": "CL", "isCorrect": false },
+        { "text": "MH", "isCorrect": false },
+        { "text": "ML", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the Plasticity Index: $PI = LL - PL = 50 - 20 = 30$. Since $LL \\ge 50$, it is a high plasticity soil (H). Next, check the A-line: $PI_{A-line} = 0.73(LL - 20) = 0.73(50 - 20) = 0.73(30) = 21.9$. The soil's PI (30) is greater than the A-line PI (21.9), so it plots above the A-line, making it a Clay (C). Therefore, the classification is CH (Fat Clay)."
+    },
+    {
+      "question": "In the USCS, a soil is classified as a sand (S) if:",
+      "options": [
+        { "text": "More than 50% passes the No. 200 sieve.", "isCorrect": false },
+        { "text": "More than 50% is retained on the No. 200 sieve, and the coarse fraction is mostly smaller than the No. 4 sieve.", "isCorrect": true },
+        { "text": "More than 50% is retained on the No. 200 sieve, and the coarse fraction is mostly larger than the No. 4 sieve.", "isCorrect": false },
+        { "text": "It has a PI < 4.", "isCorrect": false }
+      ],
+      "explanation": "First, the soil must be coarse-grained (>50% retained on No. 200). Then, to be a sand, the sand fraction (passing No. 4 but retained on No. 200) must be greater than the gravel fraction (retained on No. 4)."
+    }
+  ]
+}

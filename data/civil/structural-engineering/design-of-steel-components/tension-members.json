@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Limit States</h3>\n<p class=\"mb-4\">Steel tension members are designed for two primary limit states:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Yielding on the Gross Area:</strong> Extensive elongation of the member along its entire length.\n    $$ P_n = F_y A_g $$ \n    (LRFD $\u03D5 = 0.90$)</li>\n    <li><strong>Rupture on the Net Area:</strong> Fracture at the connection (bolt holes) where the cross-section is reduced.\n    $$ P_n = F_u A_e $$ \n    (LRFD $\u03D5 = 0.75$)</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Net Area ($A_n$)</h3>\n<p class=\"mb-4\">The net area is the gross area minus the projected area of the bolt holes. Holes are typically assumed to be 1/8\" larger than the nominal bolt diameter (1/16\" for the hole size + 1/16\" for damage).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Effective Net Area ($A_e$) and Shear Lag</h3>\n<p class=\"mb-4\">If tension is transmitted through some but not all cross-sectional elements (e.g., an angle connected by only one leg), the stress is not uniform. This phenomenon is called <strong>shear lag</strong>. The effective net area accounts for this:</p>\n$$ A_e = A_n U $$\n<p class=\"mb-4\">Where $U$ is the shear lag factor ($U = 1 - \\bar{x}/L$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Block Shear</h3>\n<p class=\"mb-4\">Block shear is a tearing failure mode at a connection that involves a combination of tension rupture and shear yielding/rupture along a specific path.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a steel tension member with bolted connections, why is the rupture limit state checked on the effective net area ($A_e$) rather than the gross area?",
+      "options": [
+        { "text": "Because the bolts add strength.", "isCorrect": false },
+        { "text": "Because the holes reduce the cross-sectional area, creating a weak point for fracture.", "isCorrect": true },
+        { "text": "Because yielding always occurs before rupture.", "isCorrect": false },
+        { "text": "Because the gross area is used for compression.", "isCorrect": false }
+      ],
+      "explanation": "The presence of bolt holes reduces the area available to carry the load. Rupture (fracture) will occur at the smallest cross-section, which is the net area through the holes."
+    },
+    {
+      "question": "The shear lag factor, U, is used to reduce the net area when:",
+      "options": [
+        { "text": "The member is very long.", "isCorrect": false },
+        { "text": "The load is not transferred to all elements of the cross-section (e.g., only one leg of an angle is connected).", "isCorrect": true },
+        { "text": "The bolts are staggered.", "isCorrect": false },
+        { "text": "The steel is high-strength.", "isCorrect": false }
+      ],
+      "explanation": "Shear lag occurs when the tension load has to 'flow' from the connected part of the member to the unconnected part. This creates a non-uniform stress distribution, making the member less efficient. The U factor accounts for this reduced efficiency."
+    }
+  ]
+}

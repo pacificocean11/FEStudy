@@ -71,11 +71,11 @@ const App: React.FC = () => {
     setSelectedSubtopic(subtopic); 
 
     const slugify = (text: string) => text.toString().toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]+/g, '')
-      .replace(/--+/g, '-')
-      .replace(/^-+/, '')
-      .replace(/-+$/, '');
+      .replace(/\s+/g, '-')        // Replace spaces with -
+      .replace(/[^\w-]+/g, '-')    // Replace all non-word chars with -
+      .replace(/--+/g, '-')         // Replace multiple - with single -
+      .replace(/^-+/, '')           // Trim - from start of text
+      .replace(/-+$/, '');          // Trim - from end of text
 
     const slugifySubject = (text: string) => slugify(text.replace(/^\d+\.\s*/, ''));
     

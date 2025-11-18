@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Capacity</h3>\n<p class=\"mb-4\"><strong>Capacity</strong> is the maximum hourly rate at which persons or vehicles can reasonably be expected to traverse a point or a uniform section of a lane or roadway during a given time period under prevailing roadway, traffic, and control conditions.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Level of Service (LOS)</h3>\n<p class=\"mb-4\"><strong>Level of Service (LOS)</strong> is a qualitative measure used to describe the quality of traffic service. It describes conditions such as speed, travel time, freedom to maneuver, traffic interruptions, and comfort/convenience. The Highway Capacity Manual (HCM) defines six levels, designated A through F:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>LOS A:</strong> Free flow. Users are virtually unaffected by the presence of others.</li>\n    <li><strong>LOS B:</strong> Reasonably free flow. Freedom to maneuver is slightly restricted.</li>\n    <li><strong>LOS C:</strong> Stable flow, but the operation of individual users is significantly affected by others.</li>\n    <li><strong>LOS D:</strong> Approaching unstable flow. Freedom to maneuver is severely restricted.</li>\n    <li><strong>LOS E:</strong> Unstable flow. Operating conditions at or near capacity.</li>\n    <li><strong>LOS F:</strong> Forced or breakdown flow. Amount of traffic approaching a point exceeds the amount that can traverse it. Queues form.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Highway Capacity Manual (HCM)</h3>\n<p class=\"mb-4\">The HCM is the standard reference for capacity analysis. It provides methodologies to calculate the LOS for various facilities (freeways, two-lane highways, intersections) based on their geometric and traffic characteristics. The key performance measure for determining LOS varies by facility type (e.g., density for freeways, delay for intersections).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which Level of Service (LOS) represents forced or breakdown flow, where demand exceeds capacity?",
+      "options": [
+        { "text": "LOS C", "isCorrect": false },
+        { "text": "LOS D", "isCorrect": false },
+        { "text": "LOS E", "isCorrect": false },
+        { "text": "LOS F", "isCorrect": true }
+      ],
+      "explanation": "LOS F describes breakdown conditions. This occurs when the number of vehicles arriving at a point exceeds the number of vehicles that can pass through it, resulting in stop-and-go waves and queuing."
+    },
+    {
+      "question": "For a basic freeway segment, the primary measure of effectiveness used to determine the Level of Service is:",
+      "options": [
+        { "text": "Average speed", "isCorrect": false },
+        { "text": "Traffic volume", "isCorrect": false },
+        { "text": "Density", "isCorrect": true },
+        { "text": "Volume-to-capacity ratio", "isCorrect": false }
+      ],
+      "explanation": "According to the Highway Capacity Manual (HCM), density (in passenger cars per mile per lane) is the parameter that best defines the quality of traffic flow on a freeway segment. Speed remains relatively constant until LOS E, so it is not a sensitive indicator of service quality."
+    }
+  ]
+}

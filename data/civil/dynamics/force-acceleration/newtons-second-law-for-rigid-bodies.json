@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">For a rigid body, the motion can be described as a combination of the translation of its center of mass (G) and the rotation of the body about its center of mass. Newton's Second Law is extended to cover both translational and rotational motion.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equations of Motion</h3>\n<p class=\"mb-4\">Two vector equations govern the planar motion of a rigid body:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Translational Motion:</strong> The sum of all external forces equals the product of the body's mass and the acceleration of its center of mass ($\mathbf{a}_G$).\n    $$ \\sum \\mathbf{F} = m\\mathbf{a}_G $$\n    In scalar components:\n    $$ \\sum F_x = m(a_G)_x \\quad \\quad \\sum F_y = m(a_G)_y $$\n    </li>\n    <li><strong>Rotational Motion:</strong> The sum of the moments of all external forces about the center of mass (G) is equal to the product of the body's mass moment of inertia about G ($I_G$) and its angular acceleration ($\\alpha$).\n    $$ \\sum M_G = I_G \\alpha $$\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Special Cases</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rotation about a Fixed Axis (Point O):</strong> If the body rotates about a fixed point O (which may or may not be G), it is often convenient to sum moments about O. The equation becomes:\n    $$ \\sum M_O = I_O \\alpha $$\n    where $I_O$ is the mass moment of inertia about the fixed point O. This avoids calculating the support reactions at O. Note that $I_O$ can be found using the Parallel Axis Theorem: $I_O = I_G + md^2$.</li>\n    <li><strong>Translation Only:</strong> If the body is translating but not rotating, $\\alpha = 0$. Thus, $\\sum M_G = 0$. Note that $\\sum M_P$ about any other point P is not necessarily zero; it is equal to the moment of the kinetic vector $m\\mathbf{a}_G$ about P.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Free-Body Diagram (FBD):</strong> Draw the body showing all external forces and moments (including gravity and reactions).</li>\n    <li><strong>Kinetic Diagram (KD):</strong> Draw the body showing the inertial force vector ($m\\mathbf{a}_G$) acting at the center of mass and the inertial moment vector ($I_G\\alpha$).</li>\n    <li><strong>Equations of Motion:</strong> Equate the forces and moments from the FBD to the inertial terms from the KD.</li>\n    <li><strong>Kinematics:</strong> If needed, use kinematic relationships (like $a_t = r\\alpha$, $a_n = r\\omega^2$) to relate linear and angular accelerations.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A uniform slender rod of mass 12 kg and length 2 m is pinned at one end (Point O) and released from rest in a horizontal position. What is the initial angular acceleration of the rod?",
+      "options": [
+        { "text": "7.36 rad/s²", "isCorrect": true },
+        { "text": "4.91 rad/s²", "isCorrect": false },
+        { "text": "9.81 rad/s²", "isCorrect": false },
+        { "text": "14.7 rad/s²", "isCorrect": false }
+      ],
+      "explanation": "This is rotation about a fixed axis O. Use $\\sum M_O = I_O \\alpha$. The only force creating a moment about O is gravity ($mg$) acting at the center of mass (G), which is at $L/2 = 1$ m from the pin. $\\sum M_O = mg(L/2) = (12)(9.81)(1) = 117.72$ N·m. The moment of inertia of a rod about its end is $I_O = \\frac{1}{3}mL^2 = \\frac{1}{3}(12)(2^2) = 16$ kg·m². Now solve for $\\alpha$: $117.72 = 16 \\alpha \\implies \\alpha = 117.72 / 16 = 7.3575$ rad/s²."
+    },
+    {
+      "question": "A disk of mass m and radius r rolls without slipping down an incline. Which equation correctly describes the rotational motion about the center of mass G?",
+      "options": [
+        { "text": "$\\sum M_G = 0$", "isCorrect": false },
+        { "text": "$\\sum M_G = I_G \\alpha$", "isCorrect": true },
+        { "text": "$\\sum F_x = m a_x$", "isCorrect": false },
+        { "text": "$\\sum M_G = I_O \\alpha$", "isCorrect": false }
+      ],
+      "explanation": "For general plane motion (which includes rolling), the sum of moments about the center of mass G is always equal to the product of the moment of inertia about G and the angular acceleration. The other options are either incorrect (moment is not zero because friction creates a torque) or describe translation."
+    },
+    {
+      "question": "If a rigid body is in pure translation, what can be said about the sum of moments about its center of mass G?",
+      "options": [
+        { "text": "$\\sum M_G = m a_G$", "isCorrect": false },
+        { "text": "$\\sum M_G = I_G \\alpha$", "isCorrect": false },
+        { "text": "$\\sum M_G = 0$", "isCorrect": true },
+        { "text": "$\\sum M_G$ can be any value.", "isCorrect": false }
+      ],
+      "explanation": "For pure translation, the angular acceleration $\\alpha$ is zero. The rotational equation of motion is $\\sum M_G = I_G \\alpha$. If $\\alpha = 0$, then $\\sum M_G = 0$. The resultant force must pass through the center of mass."
+    }
+  ]
+}

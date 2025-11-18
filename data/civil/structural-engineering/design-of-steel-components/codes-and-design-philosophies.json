@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Governing Code</h3>\n<p class=\"mb-4\">The design of structural steel in the United States is governed by the <strong>AISC Steel Construction Manual</strong>, published by the American Institute of Steel Construction. It includes the 'Specification for Structural Steel Buildings' (AISC 360).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Design Philosophies</h3>\n<p class=\"mb-4\">AISC 360 permits two design methods:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Load and Resistance Factor Design (LRFD):</strong> A limit states design method. It uses load factors ($\u03B3 > 1.0$) to increase service loads and resistance factors ($\u03D5 < 1.0$) to reduce nominal strength.\n    <br>Requirement: $\u03D5 R_n \u2265 \u03A3 \u03B3_i Q_i$</li>\n    <li><strong>Allowable Strength Design (ASD):</strong> A method where service loads are compared to the nominal strength divided by a safety factor ($\u03A9 > 1.0$).\n    <br>Requirement: $R_n / \u03A9 \u2265 \u03A3 Q_i$</li>\n</ul>\n<p class=\"mb-4\">LRFD is the more modern approach and is conceptually consistent with concrete design codes (ACI 318).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Limit States</h3>\n<p class=\"mb-4\">Design must satisfy two types of limit states:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Strength Limit States:</strong> Relate to safety and load-carrying capacity (e.g., yielding, buckling, fracture).</li>\n    <li><strong>Serviceability Limit States:</strong> Relate to performance under normal service conditions (e.g., deflection, vibration, drift).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In LRFD for steel design, the resistance factor ($\u03D5$) is typically:",
+      "options": [
+        { "text": "Greater than 1.0", "isCorrect": false },
+        { "text": "Less than 1.0", "isCorrect": true },
+        { "text": "Equal to 1.0", "isCorrect": false },
+        { "text": "Variable depending on the load", "isCorrect": false }
+      ],
+      "explanation": "The resistance factor ($\u03D5$) accounts for unavoidable inaccuracies in theory, variations in material properties and dimensions, and uncertainties in strength. It is always less than or equal to 1.0 to provide a margin of safety."
+    },
+    {
+      "question": "Which limit state is concerned with the deflection of a beam under normal usage?",
+      "options": [
+        { "text": "Strength Limit State", "isCorrect": false },
+        { "text": "Serviceability Limit State", "isCorrect": true },
+        { "text": "Fatigue Limit State", "isCorrect": false },
+        { "text": "Ultimate Limit State", "isCorrect": false }
+      ],
+      "explanation": "Serviceability limit states deal with the functional performance and comfort of the structure during everyday use, rather than its collapse capacity. Excessive deflection is a primary serviceability concern."
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 
-
 import { Discipline, Subject } from './types';
 
 export const DISCIPLINES: Discipline[] = ['Civil', 'Mechanical', 'Other'];
@@ -9,9 +8,33 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '1. Mathematics and Statistics',
       topics: [
-        { name: 'A. Analytic geometry', subtopics: [{ name: 'A. Analytic geometry', content: null }] },
-        { name: 'B. Single-variable calculus', subtopics: [{ name: 'B. Single-variable calculus', content: null }] },
-        { name: 'C. Vector operations', subtopics: [{ name: 'C. Vector operations', content: null }] },
+        { 
+          name: 'A. Analytic geometry', 
+          subtopics: [
+            { name: 'Straight Line', content: null },
+            { name: 'Conics', content: null },
+            { name: 'Circle', content: null },
+            { name: 'Ellipse', content: null },
+            { name: 'Parabola', content: null },
+            { name: 'Hyperbola', content: null },
+          ] 
+        },
+        { 
+          name: 'B. Single-variable calculus', 
+          subtopics: [
+            { name: 'Limits', content: null },
+            { name: 'Derivatives', content: null },
+            { name: 'Applications', content: null },
+            { name: 'Indefinite Integrals', content: null },
+          ] 
+        },
+        { 
+          name: 'C. Vector operations', 
+          subtopics: [
+            { name: 'Unit Vector', content: null },
+            { name: 'Dot/Cross Products', content: null },
+          ] 
+        },
         {
           name: 'D. Statistics',
           subtopics: [
@@ -27,7 +50,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '2. Ethics and Professional Practice',
       topics: [
-        { name: 'A. Codes of ethics', subtopics: [{ name: 'A. Codes of ethics', content: null }] },
+        { 
+          name: 'A. Codes of ethics', 
+          subtopics: [
+            { name: 'NCEES Model Law', content: null },
+            { name: 'Technical Societies', content: null },
+            { name: 'Ethical and Legal Considerations', content: null },
+          ] 
+        },
         { name: 'B. Professional liability', subtopics: [{ name: 'B. Professional liability', content: null }] },
         { name: 'C. Licensure', subtopics: [{ name: 'C. Licensure', content: null }] },
         { name: 'D. Contracts and contract law', subtopics: [{ name: 'D. Contracts and contract law', content: null }] },
@@ -80,7 +110,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       topics: [
         { name: 'A. Resultants of force systems', subtopics: [{ name: 'A. Resultants of force systems', content: null }] },
         { name: 'B. Equivalent force systems', subtopics: [{ name: 'B. Equivalent force systems', content: null }] },
-        { name: 'C. Equilibrium of rigid bodies', subtopics: [{ name: 'C. Equilibrium of rigid bodies', content: null }] },
+        { 
+          name: 'C. Equilibrium of rigid bodies', 
+          subtopics: [
+            { name: 'Equilibrium of Rigid Bodies', content: null },
+            { name: "Lami's Theorem", content: null }
+          ] 
+        },
         {
           name: 'D. Frames and trusses',
           subtopics: [
@@ -129,7 +165,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Parallel Axis Theorem', content: null },
           ],
         },
-        { name: 'C. Force acceleration', subtopics: [{ name: 'C. Force acceleration', content: null }] },
+        { 
+          name: 'C. Force acceleration', 
+          subtopics: [
+            { name: "Newton's Second Law for Particles", content: null },
+            { name: "Newton's Second Law for Rigid Bodies", content: null },
+          ] 
+        },
         {
           name: 'D. Work, energy, and power',
           subtopics: [
@@ -180,7 +222,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       topics: [
         { name: 'A. Mix design of concrete and asphalt', subtopics: [{ name: 'A. Mix design of concrete and asphalt', content: null }] },
         { name: 'B. Test methods and specifications of metals, concrete, aggregates, asphalt, and wood', subtopics: [{ name: 'B. Test methods and specifications of metals, concrete, aggregates, asphalt, and wood', content: null }] },
-        { name: 'C. Physical and mechanical properties of metals, concrete, aggregates, asphalt, and wood', subtopics: [{ name: 'C. Physical and mechanical properties of metals, concrete, aggregates, asphalt, and wood', content: null }] },
+        { 
+          name: 'C. Physical and mechanical properties of metals, concrete, aggregates, asphalt, and wood', 
+          subtopics: [
+            { name: 'Physical Properties', content: null },
+            { name: 'Mechanical Properties', content: null },
+          ] 
+        },
       ],
     },
     {
@@ -243,7 +291,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: "Simpson's Rule", content: null },
           ],
         },
-        { name: 'C. Earthwork and volume computations', subtopics: [{ name: 'C. Earthwork and volume computations', content: null }] },
+        { 
+          name: 'C. Earthwork and volume computations', 
+          subtopics: [
+            { name: 'Earthwork Computations', content: null },
+            { name: 'Volume Computations', content: null },
+          ]
+        },
         {
           name: 'D. Coordinate systems',
           subtopics: [
@@ -397,7 +451,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Tributary Areas', content: null },
           ],
         },
-        { name: 'G. Design of steel components', subtopics: [{ name: 'G. Design of steel components', content: null }] },
+        { 
+          name: 'G. Design of steel components', 
+          subtopics: [
+            { name: 'Codes and Design Philosophies', content: null },
+            { name: 'Beams', content: null },
+            { name: 'Columns', content: null },
+            { name: 'Tension Members', content: null },
+            { name: 'Connections', content: null },
+          ]
+        },
         {
           name: 'H. Design of reinforced concrete components',
           subtopics: [
@@ -411,7 +474,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '12. Geotechnical Engineering',
       topics: [
-        { name: 'A. Index properties and soil classifications', subtopics: [{ name: 'A. Index properties and soil classifications', content: null }] },
+        { 
+          name: 'A. Index properties and soil classifications', 
+          subtopics: [
+            { name: 'Index Properties', content: null },
+            { name: 'Soil Classification', content: null },
+          ] 
+        },
         {
           name: 'B. Phase relations',
           subtopics: [
@@ -423,7 +492,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'D. Effective stress', subtopics: [{ name: 'D. Effective stress', content: null }] },
         { name: 'E. Stability of retaining structures', subtopics: [{ name: 'E. Stability of retaining structures', content: null }] },
         { name: 'F. Shear strength', subtopics: [{ name: 'F. Shear strength', content: null }] },
-        { name: 'G. Bearing capacity', subtopics: [{ name: 'G. Bearing capacity', content: null }] },
+        { 
+          name: 'G. Bearing capacity', 
+          subtopics: [
+            { name: 'Shallow Foundation', content: null },
+            { name: 'Deep Foundation', content: null },
+          ] 
+        },
         {
           name: 'H. Foundation types',
           subtopics: [
@@ -472,7 +547,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Rehabilitation', content: null },
           ],
         },
-        { name: 'C. Traffic capacity and flow theory', subtopics: [{ name: 'C. Traffic capacity and flow theory', content: null }] },
+        { 
+          name: 'C. Traffic capacity and flow theory', 
+          subtopics: [
+            { name: 'Flow Characteristics Studies', content: null },
+            { name: 'Capacity Studies', content: null },
+          ] 
+        },
         {
           name: 'D. Traffic control devices',
           subtopics: [
@@ -519,7 +600,13 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Activity Relationships', content: null },
           ],
         },
-        { name: 'D. Construction estimating', subtopics: [{ name: 'D. Construction estimating', content: null }] },
+        { 
+          name: 'D. Construction estimating', 
+          subtopics: [
+            { name: 'Requirements', content: null },
+            { name: 'Methods', content: null },
+          ] 
+        },
         { name: 'E. Interpretation of engineering drawings', subtopics: [{ name: 'E. Interpretation of engineering drawings', content: null }] },
       ],
     },

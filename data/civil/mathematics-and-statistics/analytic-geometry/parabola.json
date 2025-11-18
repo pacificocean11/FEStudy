@@ -1,0 +1,58 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of a Parabola</h3>\n<p class=\"mb-4\">A parabola is the set of all points in a plane that are equidistant from a fixed point (the focus) and a fixed line (the directrix).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Standard Form Equations</h3>\n<p class=\"mb-4\">The standard form of the equation of a parabola with vertex $(h, k)$ depends on its orientation:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Opens Vertically (Up or Down):</strong> $$(x - h)^2 = 4p(y - k)$$\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>If $p > 0$, the parabola opens upward.</li>\n            <li>If $p < 0$, the parabola opens downward.</li>\n        </ul>\n    </li>\n    <li><strong>Opens Horizontally (Left or Right):</strong> $$(y - k)^2 = 4p(x - h)$$\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>If $p > 0$, the parabola opens to the right.</li>\n            <li>If $p < 0$, the parabola opens to the left.</li>\n        </ul>\n    </li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Vertex:</strong> The point $(h, k)$, which is the turning point of the parabola.</li>\n    <li><strong>Axis of Symmetry:</strong> The line that passes through the vertex and focus, dividing the parabola into two symmetric halves. For a vertical parabola, it is $x=h$. For a horizontal parabola, it is $y=k$.</li>\n    <li><strong>Focus:</strong> A point located a distance of $|p|$ from the vertex along the axis of symmetry, inside the parabola.</li>\n    <li><strong>Directrix:</strong> A line located a distance of $|p|$ from the vertex on the other side from the focus. It is perpendicular to the axis of symmetry.</li>\n    <li><strong>The value $p$:</strong> Represents the directed distance from the vertex to the focus.</li>\n</ul>\n                ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the vertex of the parabola given by the equation $(x - 3)^2 = 12(y + 1)$?",
+      "options": [
+        { "text": "$(-3, 1)$", "isCorrect": false },
+        { "text": "$(3, -1)$", "isCorrect": true },
+        { "text": "$(12, 1)$", "isCorrect": false },
+        { "text": "$(3, 1)$", "isCorrect": false }
+      ],
+      "explanation": "The standard form for a vertical parabola is $(x - h)^2 = 4p(y - k)$. Comparing this to the given equation, we have $h=3$ and $k=-1$. The vertex is $(h, k) = (3, -1)$."
+    },
+    {
+      "question": "A parabola is described by the equation $(y + 2)^2 = -8(x - 5)$. In which direction does this parabola open?",
+      "options": [
+        { "text": "Up", "isCorrect": false },
+        { "text": "Down", "isCorrect": false },
+        { "text": "Left", "isCorrect": true },
+        { "text": "Right", "isCorrect": false }
+      ],
+      "explanation": "The equation is of the form $(y - k)^2 = 4p(x - h)$, which is a horizontal parabola. Here, $4p = -8$, which means $p = -2$. Since $p$ is negative, the parabola opens to the left."
+    },
+    {
+      "question": "Find the coordinates of the focus of the parabola $x^2 = 16y$.",
+      "options": [
+        { "text": "$(0, 4)$", "isCorrect": true },
+        { "text": "$(4, 0)$", "isCorrect": false },
+        { "text": "$(0, 16)$", "isCorrect": false },
+        { "text": "$(0, 8)$", "isCorrect": false }
+      ],
+      "explanation": "The equation is in the form $x^2 = 4py$, which is a simplified version of $(x-0)^2 = 4p(y-0)$. The vertex is at the origin $(0,0)$. We have $4p = 16$, so $p=4$. Since the parabola is of the $x^2$ form, it opens vertically. Because $p>0$, it opens upward. The focus is located a distance $p$ from the vertex along the axis of symmetry (the y-axis). Therefore, the focus is at $(0, 0+p)$, which is $(0, 4)$."
+    },
+    {
+      "question": "What is the equation of the directrix for the parabola $(y - 1)^2 = 20(x + 4)$?",
+      "options": [
+        { "text": "$y = -4$", "isCorrect": false },
+        { "text": "$x = 1$", "isCorrect": false },
+        { "text": "$x = -9$", "isCorrect": true },
+        { "text": "$x = -4$", "isCorrect": false }
+      ],
+      "explanation": "The vertex is $(h,k) = (-4, 1)$. The equation is for a horizontal parabola opening to the right, since $4p=20$ is positive. We find $p=5$. The focus is $p$ units to the right of the vertex, and the directrix is a vertical line $p$ units to the left of the vertex. The vertex x-coordinate is -4. The directrix is at $x = h - p = -4 - 5 = -9$."
+    },
+    {
+      "question": "Write the equation of a parabola with a vertex at $(2, 3)$ and a focus at $(2, 5)$.",
+      "options": [
+        { "text": "$(y-3)^2 = 8(x-2)$", "isCorrect": false },
+        { "text": "$(x-2)^2 = 2(y-3)$", "isCorrect": false },
+        { "text": "$(x-2)^2 = 8(y-3)$", "isCorrect": true },
+        { "text": "$(y-3)^2 = 2(x-2)$", "isCorrect": false }
+      ],
+      "explanation": "The vertex is $(h,k) = (2,3)$. The focus is at $(2,5)$. Since the x-coordinates are the same, the parabola opens vertically. The focus is above the vertex, so it opens upward, and $p$ will be positive. The distance from the vertex to the focus is $p = 5 - 3 = 2$. The standard equation for a vertical parabola is $(x-h)^2 = 4p(y-k)$. Plugging in the values, we get $(x-2)^2 = 4(2)(y-3)$, which simplifies to $(x-2)^2 = 8(y-3)$."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Newton's Second Law of Motion is the fundamental equation of kinetics. It states that if a particle is subjected to an unbalanced force, it will experience an acceleration that has the same direction as the force and a magnitude that is directly proportional to the force.</p>\n$$ \\mathbf{F} = m\\mathbf{a} $$\n<p class=\"mb-4\">This is a vector equation, meaning it applies to the components of force and acceleration in any coordinate system. The sum of all external forces acting on the particle is equal to the mass of the particle times its acceleration.</p>\n$$ \\sum \\mathbf{F} = m\\mathbf{a} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equations of Motion in Rectangular Coordinates (x, y, z)</h3>\n<p class=\"mb-4\">When using a fixed rectangular coordinate system, the vector equation is resolved into three scalar component equations:</p>\n$$ \\sum F_x = m a_x $$\n$$ \\sum F_y = m a_y $$\n$$ \\sum F_z = m a_z $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Equations of Motion in Normal and Tangential Coordinates (n, t)</h3>\n<p class=\"mb-4\">For curvilinear motion, it is often convenient to use normal and tangential components.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Tangential Direction (t):</strong> Along the path of motion.\n    $$ \\sum F_t = m a_t = m \\frac{dv}{dt} $$\n    This component changes the magnitude of the velocity (speed).</li>\n    <li><strong>Normal Direction (n):</strong> Perpendicular to the path, pointing towards the center of curvature.\n    $$ \\sum F_n = m a_n = m \\frac{v^2}{\\rho} $$\n    This component changes the direction of the velocity vector. Note that the normal force always acts towards the inside of the curve.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Procedure for Analysis</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Free-Body Diagram (FBD):</strong> Isolate the particle and show all external forces acting on it (gravity, contact forces, applied forces, friction, etc.).</li>\n    <li><strong>Kinetic Diagram (KD):</strong> Draw a diagram showing the inertial force vector ($m\\mathbf{a}$) acting on the particle.</li>\n    <li><strong>Equations of Motion:</strong> Set the sum of forces from the FBD equal to the inertial force from the KD for each coordinate direction.</li>\n    <li><strong>Solve:</strong> Solve the equations for the unknown accelerations or forces.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 10 kg block rests on a smooth (frictionless) horizontal surface. A horizontal force of 50 N is applied to the block. What is the acceleration of the block?",
+      "options": [
+        { "text": "500 m/s²", "isCorrect": false },
+        { "text": "5 m/s²", "isCorrect": true },
+        { "text": "0.2 m/s²", "isCorrect": false },
+        { "text": "9.81 m/s²", "isCorrect": false }
+      ],
+      "explanation": "Apply Newton's Second Law in the horizontal (x) direction: $\\sum F_x = m a_x$. The only horizontal force is the applied force. $50 \\text{ N} = (10 \\text{ kg}) a_x$. Solving for acceleration: $a_x = 50 / 10 = 5$ m/s²."
+    },
+    {
+      "question": "A 2000 kg car travels around a curve with a radius of 100 m at a constant speed of 20 m/s. What is the magnitude of the net force acting on the car?",
+      "options": [
+        { "text": "800 N", "isCorrect": false },
+        { "text": "4000 N", "isCorrect": false },
+        { "text": "8000 N", "isCorrect": true },
+        { "text": "0 N", "isCorrect": false }
+      ],
+      "explanation": "Since the speed is constant, the tangential acceleration is zero. The only acceleration is the normal (centripetal) acceleration directed towards the center of the curve. $a_n = v^2 / \\rho = (20)^2 / 100 = 400 / 100 = 4$ m/s². The net force required to produce this acceleration is $F_n = m a_n = (2000 \\text{ kg})(4 \\text{ m/s²}) = 8000$ N."
+    },
+    {
+      "question": "An object is acted upon by two perpendicular forces: 30 N in the x-direction and 40 N in the y-direction. If the mass of the object is 10 kg, what is the magnitude of its acceleration?",
+      "options": [
+        { "text": "3 m/s²", "isCorrect": false },
+        { "text": "4 m/s²", "isCorrect": false },
+        { "text": "5 m/s²", "isCorrect": true },
+        { "text": "7 m/s²", "isCorrect": false }
+      ],
+      "explanation": "First, find the magnitude of the resultant force: $F_{net} = \\sqrt{30^2 + 40^2} = \\sqrt{900 + 1600} = \\sqrt{2500} = 50$ N. Then use Newton's Second Law: $F_{net} = m a$. $50 \\text{ N} = (10 \\text{ kg}) a \\implies a = 5$ m/s²."
+    }
+  ]
+}

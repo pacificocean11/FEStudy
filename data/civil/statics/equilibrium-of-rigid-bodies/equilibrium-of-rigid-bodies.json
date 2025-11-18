@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Conditions for Equilibrium</h3>\n<p class=\"mb-4\">A rigid body is in a state of <strong>static equilibrium</strong> if it is not accelerating linearly or rotationally. According to Newton's laws, this requires two conditions:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The vector sum of all external forces acting on the body must be zero: $\\sum \\mathbf{F} = 0$.</li>\n    <li>The vector sum of all external moments (torques) acting on the body about any point must be zero: $\\sum \\mathbf{M}_O = 0$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. 2D Equilibrium Equations</h3>\n<p class=\"mb-4\">For coplanar (2D) force systems, these vector conditions simplify to three scalar equations:</p>\n$$ \\sum F_x = 0 \\quad \\quad \\sum F_y = 0 \\quad \\quad \\sum M_O = 0 $$\n<p class=\"mb-4\">These three independent equations allow us to solve for up to three unknown support reactions or internal forces.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Support Reactions</h3>\n<p class=\"mb-4\">To analyze equilibrium, we must replace supports with their corresponding reaction forces/moments on a Free Body Diagram (FBD):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Roller/Rocker:</strong> Exerts a force perpendicular to the supporting surface (1 unknown).</li>\n    <li><strong>Pin/Hinge:</strong> Exerts a force with unknown magnitude and direction, typically represented by x and y components (2 unknowns).</li>\n    <li><strong>Fixed Support:</strong> Exerts both a force (x and y components) and a moment, preventing all motion (3 unknowns).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported beam is pinned at one end and has a roller support at the other. What is the total number of unknown support reactions available to be solved?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "A pin support provides 2 reaction components (horizontal and vertical). A roller support provides 1 reaction component (vertical). The total number of unknowns is $2 + 1 = 3$."
+    },
+    {
+      "question": "For a rigid body in 2D equilibrium, how many independent equations of equilibrium can be written?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "The three available equations are the sum of forces in the x-direction, the sum of forces in the y-direction, and the sum of moments about a point ($Z$-axis rotation)."
+    }
+  ]
+}

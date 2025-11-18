@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose</h3>\n<p class=\"mb-4\">The <strong>NCEES (National Council of Examiners for Engineering and Surveying)</strong> provides a set of <strong>Model Rules of Professional Conduct</strong> that state licensing boards can adopt. These rules outline the ethical obligations of professional engineers.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Obligations (The Engineer's Creed)</h3>\n<p class=\"mb-4\">The NCEES Model Rules are built upon a hierarchy of responsibilities. The primary obligations are:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Protect the Public:</strong> The engineer's foremost responsibility is to the public welfare. This means holding paramount the safety, health, and welfare of the public in the performance of their professional duties. If an engineer's judgment is overruled in a way that endangers public safety, they must notify their employer and/or the appropriate authorities.</li>\n    <li><strong>Practice in Areas of Competence:</strong> Engineers shall perform services only in the areas of their competence. They should not accept projects for which they are not qualified by education or experience.</li>\n    <li><strong>Be Truthful:</strong> Engineers shall issue public statements only in an objective and truthful manner. They must be honest in all their professional reports, statements, and testimony.</li>\n    <li><strong>Act as a Faithful Agent:</strong> Engineers shall act for each employer or client as faithful agents or trustees. This includes avoiding conflicts of interest and not disclosing confidential information.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "According to the NCEES Model Rules, what is the engineer's highest priority?",
+      "options": [
+        { "text": "The interests of their client.", "isCorrect": false },
+        { "text": "The safety, health, and welfare of the public.", "isCorrect": true },
+        { "text": "Their own professional reputation.", "isCorrect": false },
+        { "text": "The profitability of the project.", "isCorrect": false }
+      ],
+      "explanation": "The first and most important canon of engineering ethics is to hold paramount the safety, health, and welfare of the public. All other obligations are secondary to this."
+    },
+    {
+      "question": "An engineer is asked by their manager to sign off on a design that the engineer believes is unsafe. What is the engineer's ethical obligation?",
+      "options": [
+        { "text": "Sign off on the design to avoid conflict with the manager.", "isCorrect": false },
+        { "text": "Refuse to sign off and report their concerns to the manager and, if necessary, to higher authorities.", "isCorrect": true },
+        { "text": "Modify the design slightly to make it look different, then sign off.", "isCorrect": false },
+        { "text": "Quit the job without informing anyone of the safety concerns.", "isCorrect": false }
+      ],
+      "explanation": "The obligation to protect the public is paramount. The engineer must not approve unsafe designs and has a duty to report the danger to their employer. If the employer does not address the issue, the engineer may be obligated to report it to the client or a relevant government authority."
+    }
+  ]
+}
