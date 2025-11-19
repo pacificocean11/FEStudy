@@ -1,5 +1,5 @@
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An isobaric process is a thermodynamic process in which the pressure remains constant: $\\Delta P = 0$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Work Done</h3>\n<p class=\"mb-4\">Since the pressure is constant, the calculation of boundary work simplifies:</p>\n$$W = \\int_{V_1}^{V_2} P dV = P \\int_{V_1}^{V_2} dV = P(V_2 - V_1) = P\\Delta V$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. First Law of Thermodynamics</h3>\n<p class=\"mb-4\">The first law is $\\Delta U = Q - W$. Substituting the expression for work:</p>\n$$\\Delta U = Q - P\\Delta V$$\n<p class=\"mb-4\">For an isobaric process, the heat transferred to the system is equal to the change in enthalpy ($\Delta H$).</p>\n$$Q = \\Delta H$$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. P-V Diagram</h3>\n<p class=\"mb-4\">On a Pressure-Volume (P-V) diagram, an isobaric process appears as a horizontal straight line. The area under this line represents the work done.</p>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An isobaric process is a thermodynamic process in which the pressure remains constant: $\\Delta P = 0$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Work Done</h3>\n<p class=\"mb-4\">Since the pressure is constant, the calculation of boundary work simplifies:</p>\n$$W = \\int_{V_1}^{V_2} P dV = P \\int_{V_1}^{V_2} dV = P(V_2 - V_1) = P\\Delta V$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. First Law of Thermodynamics</h3>\n<p class=\"mb-4\">The first law is $\\Delta U = Q - W$. Substituting the expression for work:</p>\n$$\\Delta U = Q - P\\Delta V$$\n<p class=\"mb-4\">For an isobaric process, the heat transferred to the system is equal to the change in enthalpy ($\\Delta H$).</p>\n$$Q = \\Delta H$$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. P-V Diagram</h3>\n<p class=\"mb-4\">On a Pressure-Volume (P-V) diagram, an isobaric process appears as a horizontal straight line. The area under this line represents the work done.</p>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
@@ -31,7 +31,7 @@
         { "text": "Entropy", "isCorrect": false },
         { "text": "Work", "isCorrect": false }
       ],
-      "explanation": "A key relationship for an isobaric process is that the heat transferred ($Q$) is equal to the change in enthalpy ($\Delta H$). This is because $Q = \Delta U + P\Delta V$, and enthalpy is defined as $H = U + PV$, so $\Delta H = \Delta U + \Delta(PV) = \Delta U + P\Delta V$ for constant pressure."
+      "explanation": "A key relationship for an isobaric process is that the heat transferred ($Q$) is equal to the change in enthalpy ($\\Delta H$). This is because $Q = \\Delta U + P\\Delta V$, and enthalpy is defined as $H = U + PV$, so $\\Delta H = \\Delta U + \\Delta(PV) = \\Delta U + P\\Delta V$ for constant pressure."
     }
   ]
 }

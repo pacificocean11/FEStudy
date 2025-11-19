@@ -1,0 +1,37 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Fourier's Law of Conduction</strong> is the fundamental law for heat transfer by conduction. It states that the rate of heat transfer through a material is proportional to the negative temperature gradient and to the area, at right angles to that gradient, through which the heat flows.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equation</h3>\n<p class=\"mb-4\">The one-dimensional form of Fourier's Law is:</p>\n$$ q_x = -kA \\frac{dT}{dx} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$q_x$ is the rate of heat transfer in the x-direction (in Watts).</li>\n    <li>$k$ is the <strong>thermal conductivity</strong> of the material (in W/m·K), a measure of its ability to conduct heat.</li>\n    <li>$A$ is the cross-sectional area perpendicular to the direction of heat flow (in m²).</li>\n    <li>$\\frac{dT}{dx}$ is the temperature gradient, the rate of change of temperature with respect to position (in K/m).</li>\n</ul>\n<p class=\"mb-4\">The negative sign indicates that heat flows from a higher temperature to a lower temperature, i.e., in the direction of decreasing temperature.</p>\n<p class=\"mb-4\">For steady-state conduction through a plane wall of thickness L, the temperature gradient is constant, and the equation simplifies to:</p>\n$$ q_x = kA \\frac{T_1 - T_2}{L} $$\n<p class=\"mb-4\">where $T_1$ and $T_2$ are the temperatures of the two surfaces.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A concrete wall ($k=1.0$ W/m·K) is 0.2 m thick and has an area of 10 m². The inner surface is at 20°C and the outer surface is at 5°C. What is the rate of heat loss through the wall?",
+      "options": [
+        { "text": "75 W", "isCorrect": false },
+        { "text": "150 W", "isCorrect": false },
+        { "text": "750 W", "isCorrect": true },
+        { "text": "300 W", "isCorrect": false }
+      ],
+      "explanation": "Use the simplified Fourier's Law for a plane wall: $q = kA(T_1 - T_2)/L$. Note that a temperature difference in °C is equal to a temperature difference in Kelvin. $q = (1.0 \\text{ W/m·K})(10 \\text{ m²})(20°C - 5°C) / (0.2 \\text{ m}) = (10)(15) / 0.2 = 150 / 0.2 = 750$ W."
+    },
+    {
+      "question": "For a plane wall with a constant temperature difference across it, if the thickness of the wall is doubled, the rate of heat conduction will:",
+      "options": [
+        { "text": "Double", "isCorrect": false },
+        { "text": "Be halved", "isCorrect": true },
+        { "text": "Quadruple", "isCorrect": false },
+        { "text": "Not change", "isCorrect": false }
+      ],
+      "explanation": "According to the formula $q = kA(T_1 - T_2)/L$, the heat transfer rate ($q$) is inversely proportional to the thickness ($L$). Therefore, if the thickness is doubled, the rate of heat transfer will be cut in half."
+    },
+    {
+      "question": "The negative sign in the differential form of Fourier's Law, $q_x = -kA \\frac{dT}{dx}$, signifies that:",
+      "options": [
+        { "text": "Heat transfer is a negative quantity.", "isCorrect": false },
+        { "text": "Heat flows in the direction of decreasing temperature.", "isCorrect": true },
+        { "text": "Thermal conductivity can be negative.", "isCorrect": false },
+        { "text": "The temperature is always below zero.", "isCorrect": false }
+      ],
+      "explanation": "Heat always flows from a region of higher temperature to a region of lower temperature. This means it flows 'downhill' along the temperature gradient. The negative sign ensures that if the temperature decreases with x (a negative gradient), the heat flow in the positive x-direction is positive."
+    }
+  ]
+}

@@ -50,6 +50,11 @@
 </head>
   <body class="bg-slate-50 dark:bg-slate-900">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script>
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = `/index.tsx?v=${Date.now()}`;
+      document.body.appendChild(script);
+    </script>
   </body>
 </html>
