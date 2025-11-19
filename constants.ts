@@ -9,7 +9,17 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '1. Mathematics and Statistics',
       topics: [
-        { name: 'A. Analytic geometry', subtopics: [{ name: 'A. Analytic geometry', content: null }] },
+        {
+          name: 'A. Analytic geometry',
+          subtopics: [
+            { name: 'Straight Line', content: null },
+            { name: 'Conics', content: null },
+            { name: 'Circle', content: null },
+            { name: 'Ellipse', content: null },
+            { name: 'Parabola', content: null },
+            { name: 'Hyperbola', content: null },
+          ],
+        },
         { name: 'B. Single-variable calculus', subtopics: [{ name: 'B. Single-variable calculus', content: null }] },
         { name: 'C. Vector operations', subtopics: [{ name: 'C. Vector operations', content: null }] },
         {
