@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. AC Waveforms and Phasors</h3>\n<p class=\"mb-4\">Alternating Current (AC) circuits deal with sinusoidal voltages and currents. These time-varying signals can be represented mathematically using complex numbers, a technique known as <strong>phasor analysis</strong>.</p>\n<p class=\"mb-4\">A sinusoidal function $v(t) = V_m \\cos(\\omega t + \\phi)$ can be represented by a complex number (phasor) $\\mathbf{V}$:</p>\n$$ \\mathbf{V} = V_m e^{j\\phi} = V_m (\\cos \\phi + j \\sin \\phi) $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Real and Imaginary Parts</h3>\n<p class=\"mb-4\">A complex number $z$ can be written in rectangular form as:</p>\n$$ z = x + jy $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Real Component ($x$):</strong> Represents the resistance ($R$) in impedance, or the real power ($P$) in complex power. It is the component aligned with the real axis on the complex plane.</li>\n    <li><strong>Imaginary Component ($y$):</strong> Represents the reactance ($X$) in impedance, or the reactive power ($Q$) in complex power. It is the component aligned with the imaginary axis (j-axis) on the complex plane. The symbol $j$ is used in electrical engineering for $\\sqrt{-1}$ to avoid confusion with current $i$.</li>\n</ul>\n<p class=\"mb-4\">In a circuit diagram, resistors contribute to the real part of impedance, while inductors and capacitors contribute to the imaginary part.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the complex impedance $Z = R + jX$, what does the real component $R$ represent?",
+      "options": [
+        { "text": "Reactance", "isCorrect": false },
+        { "text": "Inductance", "isCorrect": false },
+        { "text": "Resistance", "isCorrect": true },
+        { "text": "Admittance", "isCorrect": false }
+      ],
+      "explanation": "The real part of the complex impedance is the resistance, which dissipates energy as heat. The imaginary part is the reactance, which stores energy."
+    },
+    {
+      "question": "A circuit has an impedance of $Z = 3 + j4 \\; \\Omega$. What is the magnitude of the imaginary component?",
+      "options": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "The impedance is given in the rectangular form $R + jX$. The real component is $R=3$ and the imaginary component is $X=4$."
+    }
+  ]
+}

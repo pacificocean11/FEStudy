@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Incremental cost</strong>, also known as <strong>marginal cost</strong>, is the additional cost incurred as a result of a specific management decision, such as producing one more unit of a product or undertaking a new project activity.</p>\n$$ \\text{Incremental Cost} = \\frac{\\Delta C}{\\Delta Q} $$\n<p class=\"mb-4\">It represents the difference in costs between two alternatives.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Application in Decision Making</h3>\n<p class=\"mb-4\">Incremental costs are crucial for making economic decisions between alternatives. Only the costs that differ between the alternatives are relevant to the decision. Costs that are the same for both alternatives (including sunk costs and fixed costs that do not change) are irrelevant and should be ignored in the analysis.</p>\n<p class=\"mb-4\">This principle is used in:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Make-or-Buy Decisions:</strong> Comparing the incremental cost of manufacturing a component versus purchasing it from an outside supplier.</li>\n    <li><strong>Alternative Selection:</strong> When comparing two machines, only the costs that differ (purchase price, operating costs, etc.) are included in the incremental analysis.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A precast concrete plant produces 100 beams at a total cost of $40,000. The total cost to produce 101 beams is $40,350. What is the incremental cost of the 101st beam?",
+      "options": [
+        { "text": "$400", "isCorrect": false },
+        { "text": "$350", "isCorrect": true },
+        { "text": "$40,350", "isCorrect": false },
+        { "text": "$399.50", "isCorrect": false }
+      ],
+      "explanation": "Incremental cost is the change in total cost for one additional unit. The change in cost is $40,350 - $40,000 = $350. The change in quantity is 1. Therefore, the incremental cost is $350."
+    },
+    {
+      "question": "When making a decision between two mutually exclusive alternatives, which costs should be considered?",
+      "options": [
+        { "text": "All costs associated with both alternatives.", "isCorrect": false },
+        { "text": "Only the costs that are different between the alternatives.", "isCorrect": true },
+        { "text": "Only the fixed costs.", "isCorrect": false },
+        { "text": "Only the sunk costs.", "isCorrect": false }
+      ],
+      "explanation": "The principle of incremental cost analysis states that only the costs that differ between the alternatives are relevant to the decision. Costs that would be incurred regardless of the choice are not considered."
+    }
+  ]
+}

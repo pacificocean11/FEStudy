@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Bending deformation</strong>, or deflection, is the transverse displacement of a beam when it is subjected to bending loads. The deformed shape of the beam's neutral axis is called the <strong>elastic curve</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Moment-Curvature Relationship</h3>\n<p class=\"mb-4\">The fundamental relationship in beam bending is that the curvature ($\\kappa$) of the elastic curve at any point is directly proportional to the bending moment ($M$) at that point and inversely proportional to the flexural rigidity ($EI$) of the beam.</p>\n$$ \\kappa = \\frac{1}{\\rho} = \\frac{M}{EI} $$\n<p class=\"mb-4\">where $\\rho$ is the radius of curvature, $E$ is the modulus of elasticity, and $I$ is the moment of inertia of the cross-section.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Calculating Deflections</h3>\n<p class=\"mb-4\">Several methods can be used to calculate beam deflections. For the FE exam, the most common approach is to use standard deflection formulas provided in the reference handbook. These formulas give the maximum deflection and slope for various common beam types and loading conditions.</p>\n<p class=\"mb-4\"><strong>Example Formulas:</strong></p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Cantilever Beam with Point Load P at the End:</strong></li>\n    $$ \\delta_{max} = \\frac{PL^3}{3EI} \\quad \\text{(at the free end)} $$\n    <li><strong>Simply Supported Beam with Uniform Load w:</strong></li>\n    $$ \\delta_{max} = \\frac{5wL^4}{384EI} \\quad \\text{(at the center)} $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported beam of length L carries a uniform load w. The maximum deflection occurs at the center of the beam. If the length of the beam is doubled, by what factor will the maximum deflection increase?",
+      "options": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "16", "isCorrect": true }
+      ],
+      "explanation": "The formula for maximum deflection in this case is $\\delta_{max} = \\frac{5wL^4}{384EI}$. The deflection is proportional to the fourth power of the length ($L^4$). Therefore, if the length is doubled, the deflection will increase by a factor of $2^4 = 16$."
+    },
+    {
+      "question": "A cantilever beam has a point load P at its free end. To reduce the maximum deflection by half, a new beam is designed with a moment of inertia that is:",
+      "options": [
+        { "text": "Half the original.", "isCorrect": false },
+        { "text": "Twice the original.", "isCorrect": true },
+        { "text": "Four times the original.", "isCorrect": false },
+        { "text": "The same as the original.", "isCorrect": false }
+      ],
+      "explanation": "The formula for maximum deflection is $\\delta_{max} = \\frac{PL^3}{3EI}$. The deflection is inversely proportional to the moment of inertia, I. To halve the deflection, you must double the moment of inertia."
+    }
+  ]
+}

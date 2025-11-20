@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Series Circuits</h3>\n<p class=\"mb-4\">In a series circuit, components are arranged in a single path. The same current flows through all components.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Resistance/Impedance:</strong> Total impedance is the sum of individual impedances. $Z_{eq} = Z_1 + Z_2 + ...$</li>\n    <li><strong>Voltage:</strong> Total voltage is the sum of the voltage drops across each component (Kirchhoff's Voltage Law).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Parallel Circuits</h3>\n<p class=\"mb-4\">In a parallel circuit, components are connected across the same two nodes. The voltage across each component is the same.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Resistance/Impedance:</strong> The reciprocal of the total impedance is the sum of the reciprocals of individual impedances. $\\frac{1}{Z_{eq}} = \\frac{1}{Z_1} + \\frac{1}{Z_2} + ...$</li>\n    <li><strong>Current:</strong> Total current is the sum of the currents through each branch (Kirchhoff's Current Law).</li>\n</ul>\n<p class=\"mb-4\">For two impedances in parallel, the equivalent impedance is: $Z_{eq} = \\frac{Z_1 Z_2}{Z_1 + Z_2}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Two resistors, $R_1 = 10 \\; \\Omega$ and $R_2 = 40 \\; \\Omega$, are connected in parallel. What is the equivalent resistance?",
+      "options": [
+        { "text": "50 \u03A9", "isCorrect": false },
+        { "text": "8 \u03A9", "isCorrect": true },
+        { "text": "25 \u03A9", "isCorrect": false },
+        { "text": "4 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "For two parallel resistors, $R_{eq} = \\frac{R_1 R_2}{R_1 + R_2} = \\frac{10 \\times 40}{10 + 40} = \\frac{400}{50} = 8 \\; \\Omega$."
+    },
+    {
+      "question": "Three impedances $Z_1$, $Z_2$, and $Z_3$ are in series. If $Z_1 = 2+j3$, $Z_2 = 4-j1$, and $Z_3 = 1+j2$, what is the total impedance?",
+      "options": [
+        { "text": "$7 + j6 \\; \\Omega$", "isCorrect": false },
+        { "text": "$7 + j4 \\; \\Omega$", "isCorrect": true },
+        { "text": "$6 + j4 \\; \\Omega$", "isCorrect": false },
+        { "text": "$7 + j0 \\; \\Omega$", "isCorrect": false }
+      ],
+      "explanation": "For series components, simply sum the real parts and sum the imaginary parts.\nReal: $2 + 4 + 1 = 7 \\; \\Omega$.\nImaginary: $j3 - j1 + j2 = j(3 - 1 + 2) = j4 \\; \\Omega$.\nTotal impedance $Z_{total} = 7 + j4 \\; \\Omega$."
+    }
+  ]
+}

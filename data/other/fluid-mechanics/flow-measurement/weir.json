@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>weir</strong> is an overflow structure built across an open channel (like a river or canal) to measure the volumetric flow rate of water. The water level upstream of the weir (the head, $H$) is related to the flow rate ($Q$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Rectangular Weir</h3>\n<p class=\"mb-4\">A rectangular weir has a horizontal crest. The flow rate is typically given by:</p>\n$$ Q = C L H^{1.5} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q$: Flow rate.</li>\n    <li>$C$: Weir coefficient (depends on geometry and units).</li>\n    <li>$L$: Length of the weir crest.</li>\n    <li>$H$: Head (height) of water above the crest, measured upstream.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Triangular (V-Notch) Weir</h3>\n<p class=\"mb-4\">A V-notch weir has a V-shaped opening. It is better suited for measuring low flow rates because the head $H$ is more sensitive to changes in flow. The flow rate is proportional to $H^{2.5}$:</p>\n$$ Q = C H^{2.5} $$\n<p class=\"mb-4\">For a 90-degree V-notch weir, the formula is often simplified.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which type of weir is best suited for measuring small flow rates with high accuracy?",
+      "options": [
+        { "text": "Rectangular weir", "isCorrect": false },
+        { "text": "Triangular (V-notch) weir", "isCorrect": true },
+        { "text": "Broad-crested weir", "isCorrect": false },
+        { "text": "Submerged weir", "isCorrect": false }
+      ],
+      "explanation": "A V-notch weir forces small flows to pass through the narrow bottom of the 'V', creating a measurable head even for low discharges. The flow rate varies with $H^{2.5}$, providing good sensitivity."
+    },
+    {
+      "question": "For a rectangular weir, the flow rate ($Q$) is proportional to the head ($H$) raised to what power?",
+      "options": [
+        { "text": "1.0", "isCorrect": false },
+        { "text": "1.5", "isCorrect": true },
+        { "text": "2.0", "isCorrect": false },
+        { "text": "2.5", "isCorrect": false }
+      ],
+      "explanation": "The general flow equation for a rectangular weir is derived from integration and results in $Q \\propto L H^{3/2}$ or $H^{1.5}$."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Torsion</strong> refers to the twisting of a member when it is loaded by a torque (a moment acting about the member's longitudinal axis). This twisting action induces shear stress within the member.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Torsion Formula for Circular Shafts</h3>\n<p class=\"mb-4\">For a member with a circular cross-section, the shear stress ($\\tau$) at any distance $r$ from the center is given by:</p>\n$$ \\tau = \\frac{Tr}{J} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\tau$: Shear stress.</li>\n    <li>$T$: Applied internal torque.</li>\n    <li>$r$: Radial distance from the center of the shaft.</li>\n    <li>$J$: Polar moment of inertia of the cross-section.</li>\n</ul>\n<p class=\"mb-4\">The shear stress is zero at the center of the shaft ($r=0$) and reaches its maximum value at the outer surface ($r=R$, the radius of the shaft).</p>\n$$ \\tau_{max} = \\frac{TR}{J} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Polar Moment of Inertia (J)</h3>\n<p class=\"mb-4\">$J$ is a geometric property that measures a cross-section's resistance to torsion.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Solid Circular Shaft:</strong> $J = \\frac{\\pi}{2}R^4 = \\frac{\\pi}{32}D^4$</li>\n    <li><strong>Hollow Circular Shaft:</strong> $J = \\frac{\\pi}{2}(R_o^4 - R_i^4)$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A solid circular steel shaft with a 2-inch diameter is subjected to a torque of 10,000 in-lb. What is the maximum shear stress in the shaft?",
+      "options": [
+        { "text": "3,183 psi", "isCorrect": false },
+        { "text": "6,366 psi", "isCorrect": true },
+        { "text": "10,000 psi", "isCorrect": false },
+        { "text": "5,000 psi", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the polar moment of inertia: $J = \\frac{\\pi}{32}D^4 = \\frac{\\pi}{32}(2\\text{ in})^4 = \\frac{16\\pi}{32} = \\frac{\\pi}{2} \\approx 1.571$ in⁴. The maximum stress occurs at the outer radius, $R = 1$ in. Use the torsion formula: $\\tau_{max} = \\frac{TR}{J} = \\frac{(10,000 \\text{ in-lb})(1 \\text{ in})}{1.571 \\text{ in}^4} \\approx 6366$ psi."
+    }
+  ]
+}

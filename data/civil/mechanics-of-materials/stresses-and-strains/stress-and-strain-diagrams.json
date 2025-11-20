@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Tensile Test</h3>\n<p class=\"mb-4\">The <strong>stress-strain diagram</strong> is a fundamental plot in mechanics of materials, generated from data obtained in a tensile test. A specimen of a material is pulled apart, and the applied load (stress) and the elongation (strain) are recorded. The resulting curve reveals many of the material's important mechanical properties.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Regions and Points for Steel</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Elastic Region:</strong> The initial linear portion of the curve. If the load is removed in this region, the material will return to its original shape. The slope of this line is the <strong>Modulus of Elasticity (E)</strong>, or Young's Modulus.</li>\n    <li><strong>Yield Point:</strong> The point at which the material begins to deform plastically (permanently). The stress at this point is the <strong>Yield Strength ($F_y$)</strong>.</li>\n    <li><strong>Strain Hardening:</strong> After yielding, the material becomes stronger and more stress is required to continue the deformation.</li>\n    <li><strong>Ultimate Tensile Strength ($F_u$):</strong> The maximum stress the material can withstand. It is the peak of the stress-strain curve.</li>\n    <li><strong>Fracture:</strong> The point at which the specimen breaks.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Ductility</h3>\n<p class=\"mb-4\"><strong>Ductility</strong> is the amount of plastic deformation a material can undergo before fracture. It is measured by the percent elongation at fracture. Ductile materials, like steel, provide a warning of failure by deforming visibly. Brittle materials, like concrete in tension, fail suddenly.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The slope of the initial linear portion of the stress-strain diagram for steel represents which material property?",
+      "options": [
+        { "text": "Yield Strength", "isCorrect": false },
+        { "text": "Ultimate Tensile Strength", "isCorrect": false },
+        { "text": "Modulus of Elasticity (Stiffness)", "isCorrect": true },
+        { "text": "Ductility", "isCorrect": false }
+      ],
+      "explanation": "The Modulus of Elasticity (or Young's Modulus, E) is a measure of a material's stiffness. It is defined as the ratio of stress to strain in the elastic region, which corresponds to the slope of the linear portion of the curve."
+    },
+    {
+      "question": "What is the name for the maximum stress a material can withstand on the engineering stress-strain curve?",
+      "options": [
+        { "text": "Yield Strength", "isCorrect": false },
+        { "text": "Ultimate Tensile Strength", "isCorrect": true },
+        { "text": "Fracture Strength", "isCorrect": false },
+        { "text": "Proportional Limit", "isCorrect": false }
+      ],
+      "explanation": "The Ultimate Tensile Strength (UTS or Fu) is the highest point on the engineering stress-strain curve. It represents the maximum stress the material can sustain before necking begins."
+    }
+  ]
+}

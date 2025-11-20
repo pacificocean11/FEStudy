@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Reactance (X)</h3>\n<p class=\"mb-4\">Reactance is the opposition to current flow caused by inductors and capacitors in an AC circuit. It depends on the frequency ($\\omega = 2\\pi f$) of the signal. Ideally, reactance stores and releases energy rather than dissipating it.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Inductive Reactance ($X_L$):</strong> Increases with frequency. $X_L = \\omega L = 2\\pi f L$.</li>\n    <li><strong>Capacitive Reactance ($X_C$):</strong> Decreases with frequency. $X_C = \\frac{1}{\\omega C} = \\frac{1}{2\\pi f C}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Impedance (Z)</h3>\n<p class=\"mb-4\">Impedance is the total opposition to current flow, combining both resistance ($R$) and reactance ($X$). It is a complex quantity.</p>\n$$ Z = R + jX $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>For an inductor: $Z_L = jX_L = j\\omega L$.</li>\n    <li>For a capacitor: $Z_C = -jX_C = \\frac{1}{j\\omega C}$.</li>\n</ul>\n<p class=\"mb-4\">The magnitude of impedance is $|Z| = \\sqrt{R^2 + X^2}$, and the phase angle is $\\theta = \\arctan(X/R)$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the inductive reactance of a 0.5 H inductor at a frequency of 60 Hz?",
+      "options": [
+        { "text": "30 \u03A9", "isCorrect": false },
+        { "text": "188.5 \u03A9", "isCorrect": true },
+        { "text": "377 \u03A9", "isCorrect": false },
+        { "text": "0.005 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "Inductive reactance is $X_L = 2\\pi f L$. Here, $f = 60 \\text{ Hz}$ and $L = 0.5 \\text{ H}$.\n$X_L = 2\\pi(60)(0.5) = 60\\pi \\approx 188.5 \\; \\Omega$."
+    },
+    {
+      "question": "A resistor $R=100 \\; \\Omega$ is in series with a capacitor with reactance $X_C = 100 \\; \\Omega$. What is the total impedance in polar form?",
+      "options": [
+        { "text": "$200 \\angle 0^\\circ \\; \\Omega$", "isCorrect": false },
+        { "text": "$141.4 \\angle 45^\\circ \\; \\Omega$", "isCorrect": false },
+        { "text": "$141.4 \\angle -45^\\circ \\; \\Omega$", "isCorrect": true },
+        { "text": "$100 \\angle -90^\\circ \\; \\Omega$", "isCorrect": false }
+      ],
+      "explanation": "The complex impedance is $Z = R - jX_C = 100 - j100 \\; \\Omega$. To convert to polar:\nMagnitude $|Z| = \\sqrt{100^2 + (-100)^2} = \\sqrt{20000} \\approx 141.4 \\; \\Omega$.\nAngle $\\theta = \\arctan(-100/100) = \\arctan(-1) = -45^\\circ$.\nSo, $Z = 141.4 \\angle -45^\\circ \\; \\Omega$."
+    }
+  ]
+}

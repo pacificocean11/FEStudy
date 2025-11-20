@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definitions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Fixed Costs (FC):</strong> Costs that do not change with the level of production or activity over a certain period. They are incurred even if nothing is produced. Examples in construction include job site overhead (office trailers, administrative salaries), insurance, and equipment rental on a monthly basis.</li>\n    <li><strong>Variable Costs (VC):</strong> Costs that vary directly with the level of production or activity. Examples in construction include direct materials (concrete, steel), direct labor wages, and fuel for equipment.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Total Cost</h3>\n<p class=\"mb-4\">The total cost of an operation is the sum of the fixed costs and the total variable costs.</p>\n$$ TC = FC + (VC_{unit} \\times Q) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$TC$ is the Total Cost.</li>\n    <li>$FC$ is the Total Fixed Cost.</li>\n    <li>$VC_{unit}$ is the variable cost per unit (e.g., cost per cubic yard of concrete placed).</li>\n    <li>$Q$ is the quantity of units produced or work completed.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The monthly rental fee for a project office trailer is an example of what type of cost?",
+      "options": [
+        { "text": "Variable cost", "isCorrect": false },
+        { "text": "Fixed cost", "isCorrect": true },
+        { "text": "Direct material cost", "isCorrect": false },
+        { "text": "Sunk cost", "isCorrect": false }
+      ],
+      "explanation": "The rental fee is a fixed cost because it must be paid each month regardless of how much construction work is performed during that month."
+    },
+    {
+      "question": "A construction company has fixed costs of $50,000 per month for a project. The variable cost to place one cubic yard of concrete is $120. If the company places 1,000 cubic yards in a month, what is the total cost?",
+      "options": [
+        { "text": "$120,000", "isCorrect": false },
+        { "text": "$170,000", "isCorrect": true },
+        { "text": "$70,000", "isCorrect": false },
+        { "text": "$50,000", "isCorrect": false }
+      ],
+      "explanation": "Total Cost = Fixed Costs + Total Variable Costs. Total Variable Costs = (Variable cost per unit) * (Quantity) = $120 * 1,000 = $120,000. Total Cost = $50,000 (FC) + $120,000 (VC) = $170,000."
+    }
+  ]
+}

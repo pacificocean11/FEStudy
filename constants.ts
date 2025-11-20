@@ -1,5 +1,4 @@
 
-
 import { Discipline, Subject } from './types';
 
 export const DISCIPLINES: Discipline[] = ['Civil', 'Mechanical', 'Other'];
@@ -20,8 +19,22 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Hyperbola', content: null },
           ],
         },
-        { name: 'B. Single-variable calculus', subtopics: [{ name: 'B. Single-variable calculus', content: null }] },
-        { name: 'C. Vector operations', subtopics: [{ name: 'C. Vector operations', content: null }] },
+        { 
+          name: 'B. Single-variable calculus', 
+          subtopics: [
+            { name: 'Limits', content: null },
+            { name: 'Derivatives', content: null },
+            { name: 'Applications', content: null },
+            { name: 'Indefinite Integrals', content: null },
+          ] 
+        },
+        { 
+          name: 'C. Vector operations', 
+          subtopics: [
+            { name: 'Unit Vector', content: null },
+            { name: 'Dot and Cross Products', content: null },
+          ] 
+        },
         {
           name: 'D. Statistics',
           subtopics: [
@@ -59,11 +72,11 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         {
           name: 'B. Cost',
           subtopics: [
-            { name: 'Fixed and Variable Costs', content: null },
-            { name: 'Direct and Indirect Labor Costs', content: null },
-            { name: 'Incremental Costs', content: null },
-            { name: 'Average Costs', content: null },
-            { name: 'Sunk Costs', content: null },
+            { name: 'Fixed and Variable Cost', content: null },
+            { name: 'Direct and Indirect Labor Cost', content: null },
+            { name: 'Incremental Cost', content: null },
+            { name: 'Average Cost', content: null },
+            { name: 'Sunk Cost', content: null },
           ],
         },
         {
@@ -156,21 +169,21 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         {
           name: 'B. Stresses and strains',
           subtopics: [
-            { name: 'Stress-Strain Diagrams', content: null },
-            { name: 'Axial Stresses', content: null },
-            { name: 'Torsional Stresses', content: null },
-            { name: 'Bending Stresses', content: null },
-            { name: 'Shear Stresses', content: null },
-            { name: 'Thermal Stresses', content: null },
+            { name: 'Stress and strain diagrams', content: null },
+            { name: 'Axial Stresses and Strains', content: null },
+            { name: 'Torsion Stresses and Strains', content: null },
+            { name: 'Bending Stresses and Strains', content: null },
+            { name: 'Shear Stresses and Strains', content: null },
+            { name: 'Thermal Stresses and Strains', content: null },
           ],
         },
         {
           name: 'C. Deformations',
           subtopics: [
-            { name: 'Axial', content: null },
-            { name: 'Torsion', content: null },
-            { name: 'Bending', content: null },
-            { name: 'Thermal', content: null },
+            { name: 'Axial Deformations', content: null },
+            { name: 'Torsional Deformations', content: null },
+            { name: 'Deformations by Bending', content: null },
+            { name: 'Thermal Deformations', content: null },
           ],
         },
         {
@@ -1437,14 +1450,28 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       name: '12. Fluid Mechanics',
       topics: [
         { name: 'A. Fluid properties', subtopics: [{ name: 'A. Fluid properties', content: null }] },
-        { name: 'B. Dimensionless numbers', subtopics: [{ name: 'B. Dimensionless numbers', content: null }] },
+        { 
+          name: 'B. Dimensionless numbers', 
+          subtopics: [
+            { name: 'Reynolds Number', content: null },
+            { name: 'Froude Number', content: null },
+            { name: 'Mach Number', content: null },
+          ] 
+        },
         { name: 'C. Laminar and turbulent flow', subtopics: [{ name: 'C. Laminar and turbulent flow', content: null }] },
         { name: 'D. Fluid statics', subtopics: [{ name: 'D. Fluid statics', content: null }] },
         { name: 'E. Energy, impulse, and momentum equations', subtopics: [{ name: 'E. Energy, impulse, and momentum equations', content: null }] },
         { name: 'F. Pipe and duct flow and friction losses', subtopics: [{ name: 'F. Pipe and duct flow and friction losses', content: null }] },
         { name: 'G. Open-channel flow', subtopics: [{ name: 'G. Open-channel flow', content: null }] },
         { name: 'H. Fluid transport systems', subtopics: [{ name: 'H. Fluid transport systems', content: null }] },
-        { name: 'I. Flow measurement', subtopics: [{ name: 'I. Flow measurement', content: null }] },
+        { 
+          name: 'I. Flow measurement', 
+          subtopics: [
+            { name: 'Pitot Tube', content: null },
+            { name: 'Venturi Meter', content: null },
+            { name: 'Weir', content: null },
+          ] 
+        },
         { name: 'J. Turbomachinery', subtopics: [{ name: 'J. Turbomachinery', content: null }] },
         { name: 'K. Ideal gas law', subtopics: [{ name: 'K. Ideal gas law', content: null }] },
         { name: 'L. Real gas law', subtopics: [{ name: 'L. Real gas law', content: null }] },
@@ -1465,7 +1492,18 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           ] 
         },
         { name: 'B. Current and voltage laws', subtopics: [{ name: 'B. Current and voltage laws', content: null }] },
-        { name: 'C. AC and DC circuits', subtopics: [{ name: 'C. AC and DC circuits', content: null }] },
+        { 
+          name: 'C. AC and DC circuits', 
+          subtopics: [
+            { name: 'Real and Imaginary Components', content: null },
+            { name: 'Complex numbers', content: null },
+            { name: 'Power factor', content: null },
+            { name: 'Reactance and Impedance', content: null },
+            { name: 'Series, Parallel', content: null },
+            { name: 'Capacitance and Inductance', content: null },
+            { name: 'RLC Circuits', content: null },
+          ] 
+        },
         { 
           name: 'D. Measuring devices', 
           subtopics: [

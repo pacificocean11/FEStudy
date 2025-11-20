@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Venturi meter</strong> is a device used to measure the flow rate of a fluid in a pipe. It consists of a converging section, a constricted section called the 'throat', and a diverging section.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Operation</h3>\n<p class=\"mb-4\">The operation of a Venturi meter is based on the combination of the continuity equation and the Bernoulli equation.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Continuity Equation ($A_1v_1 = A_2v_2$):</strong> As the fluid passes from the wider section (1) to the narrow throat (2), its velocity must increase.</li>\n    <li><strong>Bernoulli's Equation:</strong> As the velocity increases in the throat, the pressure must decrease.</li>\n</ul>\n<p class=\"mb-4\">By measuring this pressure difference between the main pipe and the throat, the flow rate can be calculated.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Flow Rate Formula</h3>\n<p class=\"mb-4\">The theoretical volumetric flow rate ($Q$) is given by:</p>\n$$ Q = A_2 \\sqrt{\\frac{2(P_1 - P_2)}{\\rho(1 - (A_2/A_1)^2)}} $$\n<p class=\"mb-4\">In practice, a discharge coefficient ($C_d$) is introduced to account for frictional losses, which makes the actual flow rate slightly lower than the theoretical one.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "As fluid flows from the main section of a Venturi meter into the throat, what happens to its velocity and pressure?",
+      "options": [
+        { "text": "Velocity increases, pressure increases.", "isCorrect": false },
+        { "text": "Velocity decreases, pressure increases.", "isCorrect": false },
+        { "text": "Velocity increases, pressure decreases.", "isCorrect": true },
+        { "text": "Velocity decreases, pressure decreases.", "isCorrect": false }
+      ],
+      "explanation": "The continuity equation dictates that velocity must increase as the area decreases. The Bernoulli equation dictates that as the velocity increases, the pressure must decrease to conserve energy. This pressure drop is what the meter measures."
+    }
+  ]
+}

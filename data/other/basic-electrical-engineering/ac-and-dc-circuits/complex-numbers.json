@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Representation Forms</h3>\n<p class=\"mb-4\">Complex numbers are essential for analyzing AC circuits. They can be expressed in two primary forms:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangular Form:</strong> $z = x + jy$, where $x$ is the real part, $y$ is the imaginary part, and $j = \\sqrt{-1}$.</li>\n    <li><strong>Polar Form:</strong> $z = r \\angle \\theta$, where $r$ is the magnitude (modulus) and $\\theta$ is the angle (phase or argument).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Conversions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangular to Polar:</strong>\n        $$ r = \\sqrt{x^2 + y^2} $$\n        $$ \\theta = \\arctan(\\frac{y}{x}) $$\n    </li>\n    <li><strong>Polar to Rectangular:</strong>\n        $$ x = r \\cos(\\theta) $$\n        $$ y = r \\sin(\\theta) $$\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Mathematical Operations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Addition/Subtraction:</strong> Easiest in rectangular form. Add/subtract real parts together and imaginary parts together. $(a+jb) + (c+jd) = (a+c) + j(b+d)$.</li>\n    <li><strong>Multiplication:</strong> Easiest in polar form. Multiply magnitudes and add angles. $(r_1 \\angle \\theta_1) \\cdot (r_2 \\angle \\theta_2) = (r_1 r_2) \\angle (\\theta_1 + \\theta_2)$.</li>\n    <li><strong>Division:</strong> Easiest in polar form. Divide magnitudes and subtract angles. $(r_1 \\angle \\theta_1) / (r_2 \\angle \\theta_2) = (r_1 / r_2) \\angle (\\theta_1 - \\theta_2)$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Convert the complex number $3 + j4$ to polar form.",
+      "options": [
+        { "text": "$5 \\angle 36.9^\\circ$", "isCorrect": false },
+        { "text": "$5 \\angle 53.1^\\circ$", "isCorrect": true },
+        { "text": "$7 \\angle 45^\\circ$", "isCorrect": false },
+        { "text": "$5 \\angle 45^\\circ$", "isCorrect": false }
+      ],
+      "explanation": "Magnitude $r = \\sqrt{3^2 + 4^2} = \\sqrt{9+16} = \\sqrt{25} = 5$. Angle $\\theta = \\arctan(4/3) \\approx 53.13^\\circ$. So, the polar form is $5 \\angle 53.1^\\circ$."
+    },
+    {
+      "question": "Perform the multiplication: $(10 \\angle 30^\\circ) \\times (2 \\angle 15^\\circ)$.",
+      "options": [
+        { "text": "$20 \\angle 45^\\circ$", "isCorrect": true },
+        { "text": "$12 \\angle 45^\\circ$", "isCorrect": false },
+        { "text": "$20 \\angle 15^\\circ$", "isCorrect": false },
+        { "text": "$12 \\angle 2^\\circ$", "isCorrect": false }
+      ],
+      "explanation": "To multiply complex numbers in polar form, multiply the magnitudes and add the angles. $10 \\times 2 = 20$. $30^\\circ + 15^\\circ = 45^\\circ$. The result is $20 \\angle 45^\\circ$."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">In addition to bending stresses, an internal shear force ($V$) in a beam also creates <strong>shear stresses ($\\tau$)</strong>. These stresses act parallel to the cross-section of the beam and are responsible for resisting the tendency of adjacent layers of the beam to slide past one another.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. General Shear Formula</h3>\n<p class=\"mb-4\">The shear stress at any point on a beam's cross-section is given by the general shear formula:</p>\n$$ \\tau = \\frac{VQ}{Ib} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\tau$: Shear stress at the point of interest.</li>\n    <li>$V$: The internal shear force at that section of the beam.</li>\n    <li>$Q$: The first moment of the area *above* (or below) the point where the stress is being calculated, taken about the neutral axis. $Q = A'\\bar{y}'$.</li>\n    <li>$I$: The moment of inertia of the entire cross-section about the neutral axis.</li>\n    <li>$b$: The width of the cross-section at the point of interest.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Shear Stress in Rectangular Beams</h3>\n<p class=\"mb-4\">For a rectangular cross-section, the shear stress distribution is parabolic. It is zero at the top and bottom fibers and reaches its maximum value at the neutral axis.</p>\n$$ \\tau_{max} = \\frac{3}{2} \\frac{V}{A} = 1.5 \\tau_{avg} $$\n<p class=\"mb-4\">Where $A$ is the total cross-sectional area of the rectangle.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a beam with a rectangular cross-section, where does the maximum transverse shear stress occur?",
+      "options": [
+        { "text": "At the top fiber.", "isCorrect": false },
+        { "text": "At the bottom fiber.", "isCorrect": false },
+        { "text": "At the neutral axis.", "isCorrect": true },
+        { "text": "The stress is uniform throughout the cross-section.", "isCorrect": false }
+      ],
+      "explanation": "Unlike bending stress, which is maximum at the outer fibers, transverse shear stress in a rectangular beam is zero at the outer fibers and reaches its maximum value at the neutral axis."
+    },
+    {
+      "question": "A rectangular wood beam is 4 inches wide and 10 inches deep. If it is subjected to a shear force of 3,000 lbs, what is the maximum shear stress in the beam?",
+      "options": [
+        { "text": "75 psi", "isCorrect": false },
+        { "text": "112.5 psi", "isCorrect": true },
+        { "text": "150 psi", "isCorrect": false },
+        { "text": "50 psi", "isCorrect": false }
+      ],
+      "explanation": "For a rectangular section, use the simplified formula $\\tau_{max} = 1.5 (V/A)$. The area is $A = 4 \\text{ in} \\times 10 \\text{ in} = 40$ in². $\\tau_{max} = 1.5 \\times (3,000 \\text{ lbs} / 40 \\text{ in²}) = 1.5 \\times 75 \\text{ psi} = 112.5$ psi."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Froude Number (Fr)</strong> is a dimensionless number defined as the ratio of the flow inertia to the external field (usually gravity). It is a critical parameter in open-channel flow (like rivers and canals) and wave mechanics.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">For a rectangular channel, the Froude number is given by:</p>\n$$ Fr = \\frac{v}{\\sqrt{gy}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$v$: Flow velocity.</li>\n    <li>$g$: Acceleration due to gravity.</li>\n    <li>$y$: Hydraulic depth (cross-sectional area / top width).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Flow Regimes</h3>\n<p class=\"mb-4\">The Froude number determines the flow regime in open channels:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Subcritical Flow ($Fr < 1$):</strong> Also called 'tranquil' flow. The flow velocity is lower than the wave velocity ($v < \\sqrt{gy}$). Disturbances can travel upstream.</li>\n    <li><strong>Critical Flow ($Fr = 1$):</strong> The specific energy is at a minimum for a given discharge. $v = \\sqrt{gy}$.</li>\n    <li><strong>Supercritical Flow ($Fr > 1$):</strong> Also called 'rapid' or 'shooting' flow. The flow velocity is higher than the wave velocity. Disturbances cannot travel upstream.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Water flows in a rectangular channel with a velocity of 5 m/s and a depth of 2 m. What is the Froude number? (Use $g=9.81$ m/s²)",
+      "options": [
+        { "text": "0.5", "isCorrect": false },
+        { "text": "1.13", "isCorrect": true },
+        { "text": "2.26", "isCorrect": false },
+        { "text": "0.25", "isCorrect": false }
+      ],
+      "explanation": "Use the formula $Fr = \\frac{v}{\\sqrt{gy}}$. $Fr = \\frac{5}{\\sqrt{9.81 \\times 2}} = \\frac{5}{\\sqrt{19.62}} = \\frac{5}{4.43} \\approx 1.13$."
+    },
+    {
+      "question": "A Froude number of 1.13 indicates what type of flow?",
+      "options": [
+        { "text": "Subcritical", "isCorrect": false },
+        { "text": "Critical", "isCorrect": false },
+        { "text": "Supercritical", "isCorrect": true },
+        { "text": "Laminar", "isCorrect": false }
+      ],
+      "explanation": "Since $Fr > 1$, the flow is supercritical (rapid)."
+    }
+  ]
+}

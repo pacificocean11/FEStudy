@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Capacitance (C)</h3>\n<p class=\"mb-4\">A capacitor stores energy in an electric field. The defining relationship between current and voltage for a capacitor is:</p>\n$$ i(t) = C \\frac{dv(t)}{dt} $$\n<p class=\"mb-4\">This means current only flows when the voltage is changing. In DC steady state (constant voltage), a capacitor acts as an <strong>open circuit</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Inductance (L)</h3>\n<p class=\"mb-4\">An inductor stores energy in a magnetic field. The defining relationship between voltage and current for an inductor is:</p>\n$$ v(t) = L \\frac{di(t)}{dt} $$\n<p class=\"mb-4\">This means voltage is only induced when the current is changing. In DC steady state (constant current), an ideal inductor acts as a <strong>short circuit</strong> (zero voltage drop).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Energy Storage</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Capacitor Energy:</strong> $E = \\frac{1}{2} C V^2$</li>\n    <li><strong>Inductor Energy:</strong> $E = \\frac{1}{2} L I^2$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a DC circuit operating at steady state, how does an ideal capacitor behave?",
+      "options": [
+        { "text": "As a short circuit.", "isCorrect": false },
+        { "text": "As a resistor.", "isCorrect": false },
+        { "text": "As an open circuit.", "isCorrect": true },
+        { "text": "As a voltage source.", "isCorrect": false }
+      ],
+      "explanation": "In DC steady state, the voltage is constant ($dv/dt = 0$). Since current $i = C(dv/dt)$, the current through the capacitor is zero, which is the definition of an open circuit."
+    },
+    {
+      "question": "If the current through a 2 H inductor changes from 1 A to 4 A in 0.5 seconds, what is the average voltage induced across the inductor?",
+      "options": [
+        { "text": "6 V", "isCorrect": false },
+        { "text": "12 V", "isCorrect": true },
+        { "text": "3 V", "isCorrect": false },
+        { "text": "1.5 V", "isCorrect": false }
+      ],
+      "explanation": "Use the formula $v = L \\frac{di}{dt}$. Assuming a constant rate of change, $\\frac{di}{dt} = \\frac{\\Delta i}{\\Delta t} = \\frac{4-1}{0.5} = \\frac{3}{0.5} = 6$ A/s.\nThe voltage is $v = (2 \\text{ H})(6 \\text{ A/s}) = 12$ V."
+    }
+  ]
+}

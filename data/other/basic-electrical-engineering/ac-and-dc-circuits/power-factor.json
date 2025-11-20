@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Power Components in AC Circuits</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Real Power (P):</strong> The power actually consumed or dissipated by the resistive part of the load. Measured in Watts (W). $P = VI \\cos \\theta$.</li>\n    <li><strong>Reactive Power (Q):</strong> The power that oscillates back and forth between the source and the reactive components (inductors and capacitors). Measured in Volt-Amperes Reactive (VAR). $Q = VI \\sin \\theta$.</li>\n    <li><strong>Apparent Power (S):</strong> The product of the RMS voltage and current. It represents the total capacity required of the source. Measured in Volt-Amperes (VA). $S = VI = \\sqrt{P^2 + Q^2}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Power Factor (PF)</h3>\n<p class=\"mb-4\">The <strong>power factor</strong> is the ratio of the real power to the apparent power. It measures how effectively electrical power is being converted into useful work.</p>\n$$ PF = \\cos \\theta = \\frac{P}{S} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\theta$ is the phase angle between the voltage and current waveforms.</li>\n    <li>$0 \\le PF \\le 1$.</li>\n    <li><strong>Lagging PF:</strong> Current lags voltage (inductive load).</li>\n    <li><strong>Leading PF:</strong> Current leads voltage (capacitive load).</li>\n</ul>\n<p class=\"mb-4\">A low power factor indicates inefficient power usage and can lead to higher utility charges.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An AC motor draws 10 A at 240 V. The real power measured is 1.8 kW. What is the power factor?",
+      "options": [
+        { "text": "0.90", "isCorrect": false },
+        { "text": "0.75", "isCorrect": true },
+        { "text": "1.33", "isCorrect": false },
+        { "text": "0.60", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the apparent power: $S = VI = 240 \\text{ V} \\times 10 \\text{ A} = 2400 \\text{ VA} = 2.4 \\text{ kVA}$.\nThen calculate the power factor: $PF = P/S = 1.8 \\text{ kW} / 2.4 \\text{ kVA} = 0.75$."
+    },
+    {
+      "question": "What does a power factor of 1.0 indicate?",
+      "options": [
+        { "text": "The circuit is purely reactive.", "isCorrect": false },
+        { "text": "The circuit consumes zero power.", "isCorrect": false },
+        { "text": "The voltage and current are perfectly in phase.", "isCorrect": true },
+        { "text": "The apparent power is zero.", "isCorrect": false }
+      ],
+      "explanation": "A power factor of 1.0 (unity power factor) occurs when the phase angle $\\theta = 0$. This means the voltage and current waveforms are perfectly synchronized (in phase), which happens in purely resistive circuits or circuits tuned to resonance. In this state, all apparent power is real power ($S=P$)."
+    }
+  ]
+}
