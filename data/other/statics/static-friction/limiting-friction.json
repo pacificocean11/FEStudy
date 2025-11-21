@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Static Friction</h3>\n<p class=\"mb-4\">Static friction acts between surfaces that are not sliding relative to each other. It opposes the tendency of motion. The magnitude of static friction ($f_s$) adjusts to match the applied force up to a maximum limit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Limiting Friction</h3>\n<p class=\"mb-4\">The maximum possible static friction force is called <strong>limiting friction</strong>. It occurs when motion is impending (about to start).</p>\n$$ f_{s,max} = \\mu_s N $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\mu_s$: Coefficient of static friction.</li>\n    <li>$N$: Normal force perpendicular to the contact surface.</li>\n</ul>\n<p class=\"mb-4\">Before this limit is reached, $f_s < \\mu_s N$ and $f_s$ equals the component of the applied force parallel to the surface.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Angle of Friction</h3>\n<p class=\"mb-4\">The angle of static friction, $\\phi_s$, is the angle between the resultant contact force and the normal direction when motion is impending.</p>\n$$ \\tan \\phi_s = \\mu_s $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A block of weight W rests on a horizontal plane. A horizontal force P is applied. If the block does not move, the friction force is:",
+      "options": [
+        { "text": "Equal to $\\mu_s W$", "isCorrect": false },
+        { "text": "Equal to P", "isCorrect": true },
+        { "text": "Zero", "isCorrect": false },
+        { "text": "Greater than P", "isCorrect": false }
+      ],
+      "explanation": "As long as the block is static and not at the point of slipping, the friction force exactly balances the applied horizontal force to maintain equilibrium ($f_s = P$). It is only at the point of impending motion that $f_s = \\mu_s N$."
+    },
+    {
+      "question": "What happens if the applied horizontal force exceeds $\\mu_s N$?",
+      "options": [
+        { "text": "The object remains stationary.", "isCorrect": false },
+        { "text": "The friction force increases to match the applied force.", "isCorrect": false },
+        { "text": "The object begins to move, and kinetic friction takes over.", "isCorrect": true },
+        { "text": "The normal force increases.", "isCorrect": false }
+      ],
+      "explanation": "Once the applied force exceeds the maximum static friction (limiting friction), the static bond breaks, the object starts to slide, and the resisting force drops to the kinetic friction value ($f_k = \\mu_k N$)."
+    }
+  ]
+}

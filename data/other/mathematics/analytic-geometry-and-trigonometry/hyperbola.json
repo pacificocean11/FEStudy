@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of a Hyperbola</h3>\n<p class=\"mb-4\">A hyperbola is the set of all points in a plane, the absolute difference of whose distances from two fixed points (the foci) is a constant.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Standard Form Equations</h3>\n<p class=\"mb-4\">The standard form of the equation of a hyperbola with center $(h, k)$ is:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Opens Horizontally (Left and Right):</strong> $$\\frac{(x - h)^2}{a^2} - \\frac{(y - k)^2}{b^2} = 1$$ The term with the positive coefficient is the $x$ term.</li>\n    <li><strong>Opens Vertically (Up and Down):</strong> $$\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1$$ The term with the positive coefficient is the $y$ term.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Center:</strong> $(h, k)$</li>\n    <li><strong>Transverse Axis:</strong> The axis that connects the two vertices. Its length is $2a$.</li>\n    <li><strong>Vertices:</strong> The two turning points of the hyperbola, located on the transverse axis.</li>\n    <li><strong>Conjugate Axis:</strong> The axis perpendicular to the transverse axis. Its length is $2b$.</li>\n    <li><strong>Foci:</strong> The two fixed points used to define the hyperbola. They lie on the same line as the transverse axis.</li>\n    <li><strong>Relationship between a, b, and c:</strong> The distance from the center to each focus is $c$. These values are related by the equation: $$c^2 = a^2 + b^2$$ Note the plus sign, which is different from the ellipse.</li>\n    <li><strong>Asymptotes:</strong> Two lines that the branches of the hyperbola approach. They intersect at the center $(h, k)$. Their equations are:\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>For a horizontal hyperbola: $y - k = \\pm \\frac{b}{a}(x - h)$</li>\n            <li>For a vertical hyperbola: $y - k = \\pm \\frac{a}{b}(x - h)$</li>\n        </ul>\n    </li>\n</ul>\n                ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which direction does the hyperbola $\\frac{(y+1)^2}{9} - \\frac{(x-4)^2}{25} = 1$ open?",
+      "options": [
+        { "text": "Left and Right", "isCorrect": false },
+        { "text": "Up and Down", "isCorrect": true },
+        { "text": "It is a circle", "isCorrect": false },
+        { "text": "It is an ellipse", "isCorrect": false }
+      ],
+      "explanation": "The standard form of a hyperbola has one positive term and one negative term. The direction of opening is determined by the positive term. Since the $y^2$ term is positive, the hyperbola opens vertically (up and down)."
+    },
+    {
+      "question": "What are the coordinates of the center of the hyperbola $4x^2 - 9y^2 - 16x + 18y - 29 = 0$?",
+      "options": [
+        { "text": "$(-2, -1)$", "isCorrect": false },
+        { "text": "$(4, 9)$", "isCorrect": false },
+        { "text": "$(2, 1)$", "isCorrect": true },
+        { "text": "$(-4, -9)$", "isCorrect": false }
+      ],
+      "explanation": "We need to complete the square. Group terms: $(4x^2 - 16x) - (9y^2 - 18y) = 29$. Factor out coefficients: $4(x^2 - 4x) - 9(y^2 - 2y) = 29$. Complete the square: $4(x^2 - 4x + 4) - 9(y^2 - 2y + 1) = 29 + 4(4) - 9(1)$. This becomes $4(x - 2)^2 - 9(y - 1)^2 = 29 + 16 - 9 = 36$. Divide by 36: $\\frac{(x-2)^2}{9} - \\frac{(y-1)^2}{4} = 1$. The center $(h,k)$ is $(2,1)$."
+    },
+    {
+      "question": "For the hyperbola $\\frac{x^2}{16} - \\frac{y^2}{9} = 1$, what is the distance from the center to a focus (the value of $c$)?",
+      "options": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "From the equation, $a^2 = 16$ and $b^2 = 9$. For a hyperbola, the relationship is $c^2 = a^2 + b^2$. So, $c^2 = 16 + 9 = 25$. Therefore, $c = \\sqrt{25} = 5$."
+    }
+  ]
+}

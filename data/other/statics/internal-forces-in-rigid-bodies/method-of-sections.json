@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Method of Sections</strong> determines forces in specific truss members by cutting the truss into two parts and analyzing the equilibrium of one part. It is efficient for finding forces in members far from supports without solving every joint.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Determine support reactions for the whole truss.</li>\n    <li>Cut the truss through the members of interest (usually cutting no more than three members with unknown forces).</li>\n    <li>Draw the FBD of one of the separated sections.</li>\n    <li>Apply the three equations of equilibrium to the section: $\\sum F_x = 0$, $\\sum F_y = 0$, and $\\sum M_O = 0$.</li>\n    <li>Solve for the unknown member forces. Summing moments about a point where two unknown forces intersect eliminates them, allowing direct solution for the third.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Ideally, how many unknown member forces should a section cut through in the Method of Sections?",
+      "options": [
+        { "text": "One", "isCorrect": false },
+        { "text": "No more than three", "isCorrect": true },
+        { "text": "At least four", "isCorrect": false },
+        { "text": "It does not matter", "isCorrect": false }
+      ],
+      "explanation": "Since there are three available equations of equilibrium for a rigid body in 2D ($\\sum F_x, \\sum F_y, \\sum M$), cutting more than three unknowns usually leads to an indeterminate problem for that specific section."
+    },
+    {
+      "question": "Which equation is often most useful in the Method of Sections to find a specific member force directly?",
+      "options": [
+        { "text": "Sum of forces in X", "isCorrect": false },
+        { "text": "Sum of forces in Y", "isCorrect": false },
+        { "text": "Sum of moments", "isCorrect": true },
+        { "text": "None of the above", "isCorrect": false }
+      ],
+      "explanation": "Summing moments about a point where the lines of action of the other unknown forces intersect eliminates those unknowns from the equation, allowing the target force to be solved for directly."
+    }
+  ]
+}

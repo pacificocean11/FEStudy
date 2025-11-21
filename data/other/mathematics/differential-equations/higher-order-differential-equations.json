@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Homogeneous Linear DEs with Constant Coefficients</h3>\n<p class=\"mb-4\">This type of DE has the form: </p>\n$$ay'' + by' + cy = 0$$\n<p class=\"mb-4\">To solve it, we assume a solution of the form $y = e^{rx}$ and substitute it into the equation. This leads to the <strong>characteristic (or auxiliary) equation</strong>:</p>\n$$ar^2 + br + c = 0$$\n<p class=\"mb-4\">The general solution depends on the roots of this quadratic equation:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Case 1: Two distinct real roots, $r_1$ and $r_2$.</strong> The general solution is $y = C_1e^{r_1x} + C_2e^{r_2x}$.</li>\n    <li><strong>Case 2: One repeated real root, $r$.</strong> The general solution is $y = C_1e^{rx} + C_2xe^{rx}$.</li>\n    <li><strong>Case 3: Two complex conjugate roots, $r = \\alpha \\pm i\\beta$.</strong> The general solution is $y = e^{\\alpha x}(C_1\\cos(\\beta x) + C_2\\sin(\\beta x))$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Nonhomogeneous Linear DEs</h3>\n<p class=\"mb-4\">For an equation like $ay'' + by' + cy = G(x)$, the general solution is the sum of the complementary solution ($y_c$) and a particular solution ($y_p$):</p>\n$$y(x) = y_c(x) + y_p(x)$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$y_c$ is the general solution to the corresponding homogeneous equation ($ay'' + by' + cy = 0$).</li>\n    <li>$y_p$ is any particular solution to the nonhomogeneous equation. It is often found using the <strong>Method of Undetermined Coefficients</strong>, where you make an educated guess for the form of $y_p$ based on the form of $G(x)$.</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Find the general solution of the differential equation $y'' - y' - 6y = 0$.",
+      "options": [
+        { "text": "$y = C_1e^{3x} + C_2e^{-2x}$", "isCorrect": true },
+        { "text": "$y = C_1e^{-3x} + C_2e^{2x}$", "isCorrect": false },
+        { "text": "$y = C_1e^{6x} + C_2e^{-x}$", "isCorrect": false },
+        { "text": "$y = (C_1 + C_2x)e^{3x}$", "isCorrect": false }
+      ],
+      "explanation": "The characteristic equation is $r^2 - r - 6 = 0$. Factoring gives $(r-3)(r+2) = 0$. The roots are $r_1 = 3$ and $r_2 = -2$. Since we have two distinct real roots, the general solution is of the form $y = C_1e^{r_1x} + C_2e^{r_2x}$, which is $y = C_1e^{3x} + C_2e^{-2x}$."
+    },
+    {
+      "question": "What is the general solution to $y'' + 4y' + 4y = 0$?",
+      "options": [
+        { "text": "$y = C_1e^{2x} + C_2e^{-2x}$", "isCorrect": false },
+        { "text": "$y = (C_1 + C_2x)e^{-2x}$", "isCorrect": true },
+        { "text": "$y = e^{-2x}(C_1\\cos(2x) + C_2\\sin(2x))$", "isCorrect": false },
+        { "text": "$y = C_1e^{-2x} + C_2xe^{-2x}$", "isCorrect": true }
+      ],
+      "explanation": "The characteristic equation is $r^2 + 4r + 4 = 0$. This factors as $(r+2)^2 = 0$. We have one repeated real root, $r = -2$. For a repeated root, the general solution is of the form $y = C_1e^{rx} + C_2xe^{rx}$. So, $y = C_1e^{-2x} + C_2xe^{-2x}$, which can also be written as $y = (C_1 + C_2x)e^{-2x}$."
+    },
+    {
+      "question": "The complementary solution to $y'' - 4y = 8x^2$ is $y_c = C_1e^{2x} + C_2e^{-2x}$. What is the appropriate form of the particular solution, $y_p$, to try?",
+      "options": [
+        { "text": "$y_p = Ax^2$", "isCorrect": false },
+        { "text": "$y_p = Ae^{2x}$", "isCorrect": false },
+        { "text": "$y_p = Ax^2 + Bx + C$", "isCorrect": true },
+        { "text": "$y_p = A\\cos(2x) + B\\sin(2x)$", "isCorrect": false }
+      ],
+      "explanation": "The nonhomogeneous term is $G(x) = 8x^2$, which is a second-degree polynomial. For the Method of Undetermined Coefficients, the guess for the particular solution should be a general polynomial of the same degree. Therefore, the appropriate form to try is $y_p = Ax^2 + Bx + C$."
+    }
+  ]
+}

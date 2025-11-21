@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Enthalpy of Formation ($h_f^\\circ$)</h3>\n<p class=\"mb-4\">The <strong>enthalpy of formation</strong> is the change in enthalpy during the formation of 1 mole of a substance from its constituent elements in their standard state. The standard state is typically 25°C (298 K) and 1 atm.</p>\n<p class=\"mb-4\">By convention, the enthalpy of formation of stable elements in their standard state (like O₂, N₂, H₂, C(solid)) is defined as zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. First Law for Reacting Systems</h3>\n<p class=\"mb-4\">For a steady-flow reacting system (like a combustion chamber), the first law of thermodynamics is:</p>\n$$Q_{net} - W_{net} = H_{prod} - H_{react}$$\n<p class=\"mb-4\">where $H_{prod}$ is the total enthalpy of the products leaving the system, and $H_{react}$ is the total enthalpy of the reactants entering the system.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Enthalpy of Reaction and Combustion</h3>\n<p class=\"mb-4\">The <strong>enthalpy of reaction</strong> is the difference between the enthalpy of the products and the enthalpy of the reactants at the same state. For a combustion process, this is called the <strong>enthalpy of combustion</strong>.</p>\n$$H_R = H_{prod} - H_{react} = \\sum_{prod} N_p (\\bar{h}_f^\\circ + \\Delta \\bar{h})_p - \\sum_{react} N_r (\\bar{h}_f^\\circ + \\Delta \\bar{h})_r$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$N$ is the number of moles of each component.</li>\n    <li>$\\bar{h}_f^\\circ$ is the molar enthalpy of formation at the standard state.</li>\n    <li>$\\Delta \\bar{h}$ is the change in enthalpy from the standard state to the actual state of the component. If reactants and products are at 25°C, this term is zero.</li>\n</ul>\n<p class=\"mb-4\">A negative enthalpy of reaction indicates an exothermic reaction (heat is released), which is the case for combustion.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Heating Value</h3>\n<p class=\"mb-4\">The <strong>heating value</strong> of a fuel is the magnitude of the enthalpy of combustion. It is the amount of heat released when a fuel is burned completely at a constant pressure.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Higher Heating Value (HHV):</strong> The heat released when the water in the products is in the liquid phase.</li>\n    <li><strong>Lower Heating Value (LHV):</strong> The heat released when the water in the products is in the vapor phase.</li>\n</ul>\n$$HHV = LHV + (N_{H_2O} \\cdot h_{fg})$$\n<p class=\"mb-4\">where $h_{fg}$ is the enthalpy of vaporization of water.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the enthalpy of formation ($h_f^\\circ$) for stable elements like O₂ and N₂ in their standard state?",
+      "options": [
+        { "text": "A large positive value", "isCorrect": false },
+        { "text": "A large negative value", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "It depends on the temperature", "isCorrect": false }
+      ],
+      "explanation": "By definition, the standard enthalpy of formation of an element in its most stable form at the standard state (25°C, 1 atm) is zero. This provides a baseline for calculating the enthalpies of compounds."
+    },
+    {
+      "question": "If the enthalpy of combustion for a reaction is a negative value, the reaction is:",
+      "options": [
+        { "text": "Endothermic (absorbs heat)", "isCorrect": false },
+        { "text": "Exothermic (releases heat)", "isCorrect": true },
+        { "text": "Isentropic (constant entropy)", "isCorrect": false },
+        { "text": "Isothermal (constant temperature)", "isCorrect": false }
+      ],
+      "explanation": "A negative enthalpy of reaction ($H_{prod} < H_{react}$) means that the products have less energy than the reactants. The difference in energy is released from the system, typically as heat, so the reaction is exothermic."
+    }
+  ]
+}

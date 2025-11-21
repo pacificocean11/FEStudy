@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The Darcy-Weisbach equation and the Reynolds number formula were developed for flow in circular pipes. To apply these concepts to flow in non-circular ducts (e.g., rectangular or annular ducts), we introduce the concept of the <strong>hydraulic diameter ($D_h$)</strong>.</p>\n<p class=\"mb-4\">The hydraulic diameter is an equivalent diameter used to characterize flow in non-circular conduits. It is chosen such that the friction factor relationships developed for circular pipes can be used with reasonable accuracy for the non-circular conduit.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">The hydraulic diameter is defined as four times the cross-sectional flow area ($A_c$) divided by the wetted perimeter ($P_w$).</p>\n$$ D_h = \\frac{4 A_c}{P_w} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Cross-sectional Area ($A_c$):</strong> The area of the duct through which the fluid flows.</li>\n    <li><strong>Wetted Perimeter ($P_w$):</strong> The portion of the perimeter of the cross-section that is in contact with the fluid. For a duct flowing full, this is the entire perimeter of the duct wall.</li>\n</ul>\n<p class=\"mb-4\">Once the hydraulic diameter is calculated, it is used in place of the diameter $D$ in the Reynolds number and Darcy-Weisbach equations.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Example: Rectangular Duct</h3>\n<p class=\"mb-4\">For a rectangular duct with side lengths $a$ and $b$ flowing full:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$A_c = ab$</li>\n    <li>$P_w = 2(a+b)$</li>\n    <li>$D_h = \\frac{4ab}{2(a+b)} = \\frac{2ab}{a+b}$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the hydraulic diameter of a circular pipe of diameter D?",
+      "options": [
+        { "text": "D/4", "isCorrect": false },
+        { "text": "D/2", "isCorrect": false },
+        { "text": "D", "isCorrect": true },
+        { "text": "4D", "isCorrect": false }
+      ],
+      "explanation": "For a circular pipe, the cross-sectional area is $A_c = \\pi D^2 / 4$ and the wetted perimeter is $P_w = \\pi D$. Using the formula for hydraulic diameter: $D_h = \\frac{4 A_c}{P_w} = \\frac{4 (\\pi D^2 / 4)}{\\pi D} = \\frac{\\pi D^2}{\\pi D} = D$. This shows that the hydraulic diameter correctly simplifies to the actual diameter for a circular pipe."
+    },
+    {
+      "question": "Calculate the hydraulic diameter for a rectangular duct with dimensions 10 cm by 20 cm.",
+      "options": [
+        { "text": "15 cm", "isCorrect": false },
+        { "text": "13.33 cm", "isCorrect": true },
+        { "text": "30 cm", "isCorrect": false },
+        { "text": "6.67 cm", "isCorrect": false }
+      ],
+      "explanation": "For a rectangular duct of sides $a$ and $b$, the hydraulic diameter is $D_h = \\frac{2ab}{a+b}$.\n$D_h = \\frac{2(10 \\text{ cm})(20 \\text{ cm})}{10 \\text{ cm} + 20 \\text{ cm}} = \\frac{400}{30} \\approx 13.33$ cm."
+    }
+  ]
+}

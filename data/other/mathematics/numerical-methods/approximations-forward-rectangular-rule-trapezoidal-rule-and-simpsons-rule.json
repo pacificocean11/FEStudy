@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Numerical Integration</h3>\n<p class=\"mb-4\">Numerical integration approximates the value of a definite integral $\\int_a^b f(x) dx$ using a sum of function values at discrete points.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Forward Rectangular Rule</h3>\n<p class=\"mb-4\">Approximates the area using rectangles where the height is determined by the function value at the <strong>left</strong> endpoint of each subinterval.</p>\n$$ \\int_a^b f(x) dx \\approx \\Delta x \\sum_{i=0}^{n-1} f(x_i) $$\n<p class=\"mb-4\">where $\\Delta x = (b-a)/n$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Trapezoidal Rule</h3>\n<p class=\"mb-4\">Approximates the area using trapezoids connecting the function values at both endpoints of each subinterval. It is generally more accurate than the rectangular rule.</p>\n$$ \\int_a^b f(x) dx \\approx \\frac{\\Delta x}{2} [f(x_0) + 2f(x_1) + \\dots + 2f(x_{n-1}) + f(x_n)] $$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Simpson's 1/3 Rule</h3>\n<p class=\"mb-4\">Approximates the function using parabolas over pairs of subintervals. It requires an <strong>even number of subintervals (n)</strong>.</p>\n$$ \\int_a^b f(x) dx \\approx \\frac{\\Delta x}{3} [f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \\dots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)] $$\n<p class=\"mb-4\">The pattern of coefficients is 1, 4, 2, 4, ..., 2, 4, 1.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which numerical integration method approximates the function using parabolas?",
+      "options": [
+        { "text": "Forward Rectangular Rule", "isCorrect": false },
+        { "text": "Trapezoidal Rule", "isCorrect": false },
+        { "text": "Simpson's 1/3 Rule", "isCorrect": true },
+        { "text": "Midpoint Rule", "isCorrect": false }
+      ],
+      "explanation": "Simpson's 1/3 Rule fits a second-degree polynomial (a parabola) through sets of three points to approximate the area under the curve."
+    },
+    {
+      "question": "To use Simpson's 1/3 Rule, the number of subintervals (n) must be:",
+      "options": [
+        { "text": "Odd", "isCorrect": false },
+        { "text": "Even", "isCorrect": true },
+        { "text": "Any integer", "isCorrect": false },
+        { "text": "A multiple of 3", "isCorrect": false }
+      ],
+      "explanation": "Because Simpson's Rule fits parabolas over *pairs* of intervals, the total number of subintervals must be even (which corresponds to an odd number of data points)."
+    },
+    {
+      "question": "Approximate $\\int_0^2 x^2 dx$ using the Trapezoidal Rule with 2 subintervals ($n=2$).",
+      "options": [
+        { "text": "2.67", "isCorrect": false },
+        { "text": "3.0", "isCorrect": true },
+        { "text": "2.0", "isCorrect": false },
+        { "text": "4.0", "isCorrect": false }
+      ],
+      "explanation": "$\u0394x = (2-0)/2 = 1$. Points are $x_0=0, x_1=1, x_2=2$. Function values are $f(0)=0, f(1)=1, f(2)=4$. Formula: $\\frac{1}{2}[f(0) + 2f(1) + f(2)] = 0.5[0 + 2(1) + 4] = 0.5[6] = 3.0$."
+    }
+  ]
+}

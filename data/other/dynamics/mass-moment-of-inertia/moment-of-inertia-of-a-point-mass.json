@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>mass moment of inertia ($I$)</strong> is a measure of an object's resistance to changes in its rotation rate. It plays the same role in rotational motion that mass plays in linear motion.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula for a Point Mass</h3>\n<p class=\"mb-4\">For a single particle of mass $m$ located at a distance $r$ from the axis of rotation, the moment of inertia is defined as:</p>\n$$ I = mr^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$I$: Mass moment of inertia (kg·m² or slug·ft²).</li>\n    <li>$m$: Mass of the particle.</li>\n    <li>$r$: Perpendicular distance from the axis of rotation to the particle.</li>\n</ul>\n<p class=\"mb-4\">For a system of discrete particles, the total moment of inertia is the sum of the individual moments of inertia: $I = \\sum m_i r_i^2$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 2 kg ball is swung on the end of a 3 meter light rope. Treating the ball as a point mass, what is its moment of inertia about the center of rotation?",
+      "options": [
+        { "text": "6 kg·m²", "isCorrect": false },
+        { "text": "18 kg·m²", "isCorrect": true },
+        { "text": "12 kg·m²", "isCorrect": false },
+        { "text": "36 kg·m²", "isCorrect": false }
+      ],
+      "explanation": "For a point mass, $I = mr^2$. Here, $m = 2$ kg and $r = 3$ m. $I = 2(3^2) = 2(9) = 18$ kg·m²."
+    },
+    {
+      "question": "If the distance of a point mass from the axis of rotation is tripled, how does its moment of inertia change?",
+      "options": [
+        { "text": "It triples.", "isCorrect": false },
+        { "text": "It increases by a factor of 9.", "isCorrect": true },
+        { "text": "It increases by a factor of 6.", "isCorrect": false },
+        { "text": "It stays the same.", "isCorrect": false }
+      ],
+      "explanation": "The moment of inertia is proportional to the square of the distance ($I \\propto r^2$). If $r$ becomes $3r$, then $I$ becomes proportional to $(3r)^2 = 9r^2$. Therefore, it increases by a factor of 9."
+    }
+  ]
+}

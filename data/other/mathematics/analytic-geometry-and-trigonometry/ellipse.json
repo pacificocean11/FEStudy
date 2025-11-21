@@ -1,0 +1,48 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of an Ellipse</h3>\n<p class=\"mb-4\">An ellipse is the set of all points in a plane, the sum of whose distances from two fixed points (the foci) is a constant.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Standard Form Equation</h3>\n<p class=\"mb-4\">The standard form of the equation of an ellipse with center $(h, k)$ is:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Horizontal Major Axis:</strong> $$\\frac{(x - h)^2}{a^2} + \\frac{(y - k)^2}{b^2} = 1$$ where $a > b > 0$.</li>\n    <li><strong>Vertical Major Axis:</strong> $$\\frac{(x - h)^2}{b^2} + \\frac{(y - k)^2}{a^2} = 1$$ where $a > b > 0$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Center:</strong> $(h, k)$</li>\n    <li><strong>Major Axis:</strong> The longer axis of the ellipse, with length $2a$. The endpoints are called vertices.</li>\n    <li><strong>Minor Axis:</strong> The shorter axis of the ellipse, with length $2b$. The endpoints are called co-vertices.</li>\n    <li><strong>Foci (plural of focus):</strong> The two fixed points used to define the ellipse. They lie on the major axis.</li>\n    <li><strong>Relationship between a, b, and c:</strong> The distance from the center to each focus is $c$. These values are related by the equation: $$c^2 = a^2 - b^2$$</li>\n    <li><strong>Eccentricity ($e$):</strong> A measure of how \"oval\" an ellipse is. It is defined as the ratio $e = c/a$. For an ellipse, $0 < e < 1$. An eccentricity near 0 means the ellipse is almost a circle, while an eccentricity near 1 means it is very elongated.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">4. Area</h3>\n<p class=\"mb-4\">The area of an ellipse is given by the formula:</p>\n$$A = \\pi a b$$\n                ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What are the coordinates of the center of the ellipse given by the equation $\\frac{(x-2)^2}{16} + \\frac{(y+5)^2}{9} = 1$?",
+      "options": [
+        { "text": "$(-2, 5)$", "isCorrect": false },
+        { "text": "$(2, -5)$", "isCorrect": true },
+        { "text": "$(16, 9)$", "isCorrect": false },
+        { "text": "$(4, 3)$", "isCorrect": false }
+      ],
+      "explanation": "The standard form is $\\frac{(x - h)^2}{a^2} + \\frac{(y - k)^2}{b^2} = 1$. Comparing this to the given equation, we can see that $h=2$ and $k=-5$. Thus, the center $(h, k)$ is $(2, -5)$."
+    },
+    {
+      "question": "For the ellipse $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$, what is the length of the major axis?",
+      "options": [
+        { "text": "5", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "16", "isCorrect": false }
+      ],
+      "explanation": "In this equation, $a^2 = 25$ and $b^2 = 16$, so $a=5$ and $b=4$. Since $a^2$ is under the $x^2$ term, the major axis is horizontal. The length of the major axis is $2a = 2(5) = 10$."
+    },
+    {
+      "question": "Find the distance from the center to a focus (the value of $c$) for the ellipse $\\frac{(x-1)^2}{169} + \\frac{(y-3)^2}{144} = 1$.",
+      "options": [
+        { "text": "5", "isCorrect": true },
+        { "text": "12", "isCorrect": false },
+        { "text": "13", "isCorrect": false },
+        { "text": "25", "isCorrect": false }
+      ],
+      "explanation": "We have $a^2 = 169$ and $b^2 = 144$. The relationship between $a, b,$ and $c$ is $c^2 = a^2 - b^2$. So, $c^2 = 169 - 144 = 25$. Therefore, $c = \\sqrt{25} = 5$."
+    },
+    {
+      "question": "An ellipse has a vertical major axis of length 20 and a minor axis of length 12. What is the equation of the ellipse if its center is at the origin?",
+      "options": [
+        { "text": "$\\frac{x^2}{144} + \\frac{y^2}{400} = 1$", "isCorrect": false },
+        { "text": "$\\frac{x^2}{36} + \\frac{y^2}{100} = 1$", "isCorrect": true },
+        { "text": "$\\frac{x^2}{100} + \\frac{y^2}{36} = 1$", "isCorrect": false },
+        { "text": "$\\frac{x^2}{20} + \\frac{y^2}{12} = 1$", "isCorrect": false }
+      ],
+      "explanation": "The major axis length is $2a = 20$, so $a = 10$. The minor axis length is $2b = 12$, so $b = 6$. Since the major axis is vertical, $a^2$ goes under the $y^2$ term and $b^2$ goes under the $x^2$ term. The equation is $\\frac{x^2}{b^2} + \\frac{y^2}{a^2} = 1$, which is $\\frac{x^2}{6^2} + \\frac{y^2}{10^2} = 1$, or $\\frac{x^2}{36} + \\frac{y^2}{100} = 1$."
+    }
+  ]
+}

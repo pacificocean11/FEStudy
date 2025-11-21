@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>root</strong> (or zero) of a function $f(x)$ is a value of $x$ for which $f(x) = 0$. Graphically, this corresponds to the x-intercept of the function.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Newton-Raphson Method</h3>\n<p class=\"mb-4\">Newton's method is a powerful iterative technique for finding approximations to the roots of a real-valued function. It requires an initial guess $x_0$. The formula for the next approximation is:</p>\n$$ x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} $$\n<p class=\"mb-4\">This method converges very quickly (quadratically) if the initial guess is close enough to the root, but it requires the derivative of the function.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Bisection Method</h3>\n<p class=\"mb-4\">The Bisection method is a simpler, robust bracketing method. It starts with two points $a$ and $b$ such that $f(a)$ and $f(b)$ have opposite signs (meaning a root exists between them). At each step, the interval is halved. If the midpoint has the same sign as $a$, the new interval becomes $[midpoint, b]$, otherwise $[a, midpoint]$. It converges slowly but is guaranteed to find a root.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Using Newton's Method to find the root of $f(x) = x^2 - 4$, with an initial guess of $x_0 = 1$, what is the next approximation $x_1$?",
+      "options": [
+        { "text": "2.0", "isCorrect": false },
+        { "text": "2.5", "isCorrect": true },
+        { "text": "1.5", "isCorrect": false },
+        { "text": "-2.0", "isCorrect": false }
+      ],
+      "explanation": "Here, $f(x) = x^2 - 4$ and $f'(x) = 2x$. Using the formula: $x_1 = x_0 - \\frac{f(x_0)}{f'(x_0)} = 1 - \\frac{1^2 - 4}{2(1)} = 1 - \\frac{-3}{2} = 1 + 1.5 = 2.5$."
+    },
+    {
+      "question": "The Bisection method requires two initial points, a and b, such that:",
+      "options": [
+        { "text": "$f(a)$ and $f(b)$ are both positive.", "isCorrect": false },
+        { "text": "$f(a)$ and $f(b)$ have opposite signs.", "isCorrect": true },
+        { "text": "The derivative is zero between a and b.", "isCorrect": false },
+        { "text": "The function is linear between a and b.", "isCorrect": false }
+      ],
+      "explanation": "The Bisection method relies on the Intermediate Value Theorem, which states that if a continuous function changes sign over an interval $[a, b]$, there must be at least one root within that interval."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A manometer is a device used to measure pressure differences by balancing a column of liquid. It is a simple and accurate application of the principles of hydrostatics.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. U-Tube Manometer</h3>\n<p class=\"mb-4\">The most common type is the U-tube manometer. It consists of a U-shaped tube containing a liquid (the 'manometer fluid'), often mercury or water. One end is connected to the pressure to be measured, and the other end is open to a reference pressure (often the atmosphere).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Operation</h3>\n<p class=\"mb-4\">The principle is based on the fact that the pressure at any two points at the same horizontal level in a continuous fluid at rest is equal. To solve a manometer problem:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Start at a point of known pressure (or the point to be found, $P_1$).</li>\n    <li>Move through the manometer fluid. Add pressure ($\u03B3h = \u03C1gh$) when moving down, and subtract pressure when moving up.</li>\n    <li>Set the resulting expression equal to the pressure at the other end ($P_2$).</li>\n</ol>\n<p class=\"mb-4\">For a simple U-tube measuring gage pressure, with point 1 connected to a tank and point 2 open to the atmosphere ($P_{atm}$), the gage pressure is simply the pressure exerted by the height difference of the manometer fluid: $P_{gage} = \u03B3_{mano} h$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A U-tube manometer is used to measure the pressure in a tank of air. The manometer fluid is mercury (SG = 13.6). The difference in the mercury levels in the two arms is 15 cm. What is the gage pressure of the air in the tank? (Use $\\gamma_{water} = 9810$ N/m³).",
+      "options": [
+        { "text": "13.3 kPa", "isCorrect": false },
+        { "text": "20.0 kPa", "isCorrect": true },
+        { "text": "33.4 kPa", "isCorrect": false },
+        { "text": "6.6 kPa", "isCorrect": false }
+      ],
+      "explanation": "The specific weight of mercury is $\\gamma_{Hg} = SG_{Hg} \\cdot \\gamma_{water} = 13.6 \\times 9810 = 133,416$ N/m³. The height difference is $h = 15 \\text{ cm} = 0.15$ m. The gage pressure is the pressure exerted by this column of mercury: $P_{gage} = \\gamma_{Hg} h = (133,416 \\text{ N/m³})(0.15 \\text{ m}) = 20,012 \\text{ Pa} \\approx 20.0$ kPa."
+    }
+  ]
+}

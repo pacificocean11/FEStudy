@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Minor Losses</h3>\n<p class=\"mb-4\">Losses due to components like valves are called <strong>minor losses</strong>. They cause energy dissipation due to flow separation and turbulence.</p>\n<p class=\"mb-4\">The head loss is calculated using a loss coefficient, $K$:</p>\n$$ h_L = K \\frac{v^2}{2g} $$\n<p class=\"mb-4\">Values for $K$ are determined experimentally. A higher $K$ value means more flow resistance.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Valve Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Gate Valve:</strong> Designed for on/off control. Low $K$ when fully open (minimal obstruction).</li>\n    <li><strong>Globe Valve:</strong> Designed for throttling/regulating flow. High $K$ due to complex flow path.</li>\n    <li><strong>Ball Valve:</strong> Quarter-turn valve. Very low $K$ when fully open.</li>\n    <li><strong>Check Valve:</strong> Allows flow in only one direction.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which type of valve generally has the highest head loss coefficient (K) when fully open?",
+      "options": [
+        { "text": "Gate valve", "isCorrect": false },
+        { "text": "Ball valve", "isCorrect": false },
+        { "text": "Globe valve", "isCorrect": true },
+        { "text": "Butterfly valve", "isCorrect": false }
+      ],
+      "explanation": "Globe valves force the fluid to change direction significantly as it passes through the valve body (Z-pattern flow), resulting in high turbulence and high head loss compared to straight-through valves like gate or ball valves."
+    },
+    {
+      "question": "Water flows at 4 m/s through a fully open valve with a loss coefficient $K = 2.5$. What is the head loss? ($g=9.81$ m/s²)",
+      "options": [
+        { "text": "1.0 m", "isCorrect": false },
+        { "text": "2.04 m", "isCorrect": true },
+        { "text": "5.1 m", "isCorrect": false },
+        { "text": "0.51 m", "isCorrect": false }
+      ],
+      "explanation": "$h_L = K \\frac{v^2}{2g} = 2.5 \\frac{4^2}{2(9.81)} = 2.5 \\frac{16}{19.62} \\approx 2.04$ m."
+    }
+  ]
+}

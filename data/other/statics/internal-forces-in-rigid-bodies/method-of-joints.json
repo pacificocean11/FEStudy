@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Method of Joints</strong> is a procedure for analyzing trusses by considering the equilibrium of each joint. Since truss members are two-force members, the forces at each joint form a concurrent force system.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Assumptions</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Members are connected by frictionless pins.</li>\n    <li>Loads are applied only at joints.</li>\n    <li>Member weight is negligible (or applied as point loads at joints).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Procedure</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Determine external reactions for the whole truss.</li>\n    <li>Select a joint with at most two unknown member forces.</li>\n    <li>Draw the Free Body Diagram (FBD) of the joint. Assume unknown forces are in tension (pulling away from the joint).</li>\n    <li>Apply equilibrium equations: $\\sum F_x = 0$ and $\\sum F_y = 0$.</li>\n    <li>Solve for unknowns. A positive result means tension; negative means compression.</li>\n    <li>Proceed to the next joint.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the Method of Joints, why are moment equations ($\\sum M = 0$) generally not used for individual joints?",
+      "options": [
+        { "text": "Because trusses do not experience moments.", "isCorrect": false },
+        { "text": "Because the forces at a joint are concurrent, so they create no moment about the joint.", "isCorrect": true },
+        { "text": "Because moment equations are too complex.", "isCorrect": false },
+        { "text": "They are used, but only for 3D trusses.", "isCorrect": false }
+      ],
+      "explanation": "Since all member forces pass through the pin at the joint, the moment arm for each force is zero. Thus, the moment equation is trivially satisfied ($0=0$) and provides no new information."
+    },
+    {
+      "question": "If a calculation using the Method of Joints yields a negative value for a member force, what does it imply?",
+      "options": [
+        { "text": "The calculation is incorrect.", "isCorrect": false },
+        { "text": "The member is in tension.", "isCorrect": false },
+        { "text": "The member is in compression.", "isCorrect": true },
+        { "text": "The member is a zero-force member.", "isCorrect": false }
+      ],
+      "explanation": "The standard convention assumes unknown forces are tensile (pulling away). A negative result indicates the force acts in the opposite direction, meaning it pushes towards the joint (compression)."
+    }
+  ]
+}

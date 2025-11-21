@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>mass radius of gyration ($k$)</strong> is a geometric property that describes the distribution of mass about an axis of rotation. It represents the radial distance from the axis at which the entire mass of the body could be concentrated to produce the same moment of inertia as the actual body.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">The radius of gyration is defined by the relationship:</p>\n$$ I = mk^2 $$\n<p class=\"mb-4\">Rearranging for $k$:</p>\n$$ k = \\sqrt{\\frac{I}{m}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k$: Mass radius of gyration (units of length, m or ft).</li>\n    <li>$I$: Mass moment of inertia.</li>\n    <li>$m$: Total mass.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A flywheel has a mass of 50 kg and a mass moment of inertia of 8 kg·m². What is its radius of gyration?",
+      "options": [
+        { "text": "0.16 m", "isCorrect": false },
+        { "text": "0.40 m", "isCorrect": true },
+        { "text": "2.5 m", "isCorrect": false },
+        { "text": "6.25 m", "isCorrect": false }
+      ],
+      "explanation": "Use the formula $k = \\sqrt{I/m}$. $k = \\sqrt{8 / 50} = \\sqrt{0.16} = 0.4$ m."
+    },
+    {
+      "question": "If you know the mass ($m$) and the radius of gyration ($k$) of a body, how do you calculate its moment of inertia?",
+      "options": [
+        { "text": "$I = mk$", "isCorrect": false },
+        { "text": "$I = m/k^2$", "isCorrect": false },
+        { "text": "$I = mk^2$", "isCorrect": true },
+        { "text": "$I = k/m$", "isCorrect": false }
+      ],
+      "explanation": "The definition of the radius of gyration allows the moment of inertia to be expressed as if the entire mass were a single point at distance k. Thus, $I = mk^2$."
+    }
+  ]
+}

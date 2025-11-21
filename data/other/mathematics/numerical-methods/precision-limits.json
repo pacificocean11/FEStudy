@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Sources of Error</h3>\n<p class=\"mb-4\">In numerical methods, errors are unavoidable. There are two primary types:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Round-off Error:</strong> Caused by the finite precision of computers. Computers cannot represent all real numbers exactly (e.g., 1/3 or $\\pi$), leading to small errors that can accumulate over many calculations.</li>\n    <li><strong>Truncation Error:</strong> Caused by approximating an exact mathematical procedure with a finite one. For example, using a finite number of terms in a Taylor series or using finite steps in numerical integration.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Precision vs. Accuracy</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Accuracy:</strong> How close a computed or measured value is to the true value. It is related to the magnitude of the systematic error or bias.</li>\n    <li><strong>Precision:</strong> How close repeated computations or measurements are to each other. It is related to the magnitude of the random error or the number of significant digits.</li>\n</ul>\n<p class=\"mb-4\">In numerical algorithms, we often iterate until the change between successive approximations falls below a specified precision limit (tolerance), assuming this implies the result is accurate.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Significant Figures</h3>\n<p class=\"mb-4\">The number of significant figures provides an indication of the precision of a number. When performing numerical calculations, retaining too few digits can lead to significant round-off errors, while retaining too many does not necessarily imply greater accuracy.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The error that results from using a finite number of terms in an infinite series approximation is known as:",
+      "options": [
+        { "text": "Round-off error", "isCorrect": false },
+        { "text": "Truncation error", "isCorrect": true },
+        { "text": "Human error", "isCorrect": false },
+        { "text": "Measurement error", "isCorrect": false }
+      ],
+      "explanation": "Truncation error arises from truncating an infinite process to a finite number of steps, such as cutting off a Taylor series expansion after the first few terms."
+    },
+    {
+      "question": "Which type of error is caused by the computer's inability to store numbers with infinite precision?",
+      "options": [
+        { "text": "Truncation error", "isCorrect": false },
+        { "text": "Round-off error", "isCorrect": true },
+        { "text": "Modeling error", "isCorrect": false },
+        { "text": "Blunder", "isCorrect": false }
+      ],
+      "explanation": "Round-off error occurs because computers use a fixed number of bits to represent floating-point numbers. Values that cannot be represented exactly are rounded to the nearest representable value."
+    }
+  ]
+}

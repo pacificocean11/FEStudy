@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Separable Equations</h3>\n<p class=\"mb-4\">A first-order DE is separable if it can be written in the form:</p>\n$$M(x)dx + N(y)dy = 0$$\n<p class=\"mb-4\">To solve, separate the variables so that all $x$ terms are on one side and all $y$ terms are on the other, then integrate both sides: $\\int M(x)dx = -\\int N(y)dy$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Linear Equations</h3>\n<p class=\"mb-4\">A first-order linear DE has the standard form:</p>\n$$\\frac{dy}{dx} + P(x)y = Q(x)$$\n<p class=\"mb-4\">To solve, first calculate the integrating factor, $I(x)$: </p>\n$$I(x) = e^{\\int P(x)dx}$$\n<p class=\"mb-4\">Then multiply the entire standard form equation by $I(x)$. The left side will become the derivative of the product $I(x)y$. The solution is then found by integrating both sides:</p>\n$$I(x)y = \\int I(x)Q(x)dx$$\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Find the general solution to the separable differential equation $\\frac{dy}{dx} = \\frac{x^2}{y}$.",
+      "options": [
+        { "text": "$y^2 = \\frac{2}{3}x^3 + C$", "isCorrect": true },
+        { "text": "$y = x^3 + C$", "isCorrect": false },
+        { "text": "$2y = 3x^3 + C$", "isCorrect": false },
+        { "text": "$y^2 = x^2 + C$", "isCorrect": false }
+      ],
+      "explanation": "This is a separable equation. Separate the variables: $y dy = x^2 dx$. Integrate both sides: $\\int y dy = \\int x^2 dx$. This gives $\\frac{y^2}{2} = \\frac{x^3}{3} + C_1$. Multiplying by 2 gives $y^2 = \\frac{2}{3}x^3 + 2C_1$. Since $2C_1$ is just an arbitrary constant, we can call it $C$. The solution is $y^2 = \\frac{2}{3}x^3 + C$."
+    },
+    {
+      "question": "Solve the initial value problem $y' = 2y$ with $y(0) = 3$.",
+      "options": [
+        { "text": "$y = 3e^{2x}$", "isCorrect": true },
+        { "text": "$y = e^{2x} + 2$", "isCorrect": false },
+        { "text": "$y = 2e^{3x}$", "isCorrect": false },
+        { "text": "$y = 3e^x$", "isCorrect": false }
+      ],
+      "explanation": "Separate the variables: $\\frac{dy}{y} = 2dx$. Integrate both sides: $\\int \\frac{dy}{y} = \\int 2dx$, which gives $\\ln|y| = 2x + C_1$. Exponentiate both sides: $y = e^{2x+C_1} = e^{C_1}e^{2x}$. Let $C = e^{C_1}$, so the general solution is $y = Ce^{2x}$. Now use the initial condition $y(0)=3$: $3 = Ce^{2(0)} = C(1)$, so $C=3$. The particular solution is $y = 3e^{2x}$."
+    },
+    {
+      "question": "What is the integrating factor for the linear differential equation $y' + 2xy = x$?",
+      "options": [
+        { "text": "$e^{x^2}$", "isCorrect": true },
+        { "text": "$x^2$", "isCorrect": false },
+        { "text": "$e^{2x}$", "isCorrect": false },
+        { "text": "$2x$", "isCorrect": false }
+      ],
+      "explanation": "The equation is in the standard form $y' + P(x)y = Q(x)$ with $P(x) = 2x$. The integrating factor is $I(x) = e^{\\int P(x)dx} = e^{\\int 2x dx} = e^{x^2}$."
+    }
+  ]
+}

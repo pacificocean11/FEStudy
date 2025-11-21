@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Scope</h3>\n<p class=\"mb-4\">The <strong>Perpendicular Axes Theorem</strong> applies specifically to <strong>planar bodies</strong> (laminas) or flat plates of uniform thickness. It relates the moments of inertia about three mutually perpendicular axes meeting at a point.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Theorem</h3>\n<p class=\"mb-4\">For a flat body lying in the x-y plane:</p>\n$$ I_z = I_x + I_y $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$I_z$: Moment of inertia about the z-axis (perpendicular to the plane of the body). Also called the polar moment of inertia for area.</li>\n    <li>$I_x$: Moment of inertia about the x-axis (in the plane).</li>\n    <li>$I_y$: Moment of inertia about the y-axis (in the plane).</li>\n</ul>\n<p class=\"mb-4\">This theorem is useful for calculating the moment of inertia of symmetrical planar objects like disks or square plates.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Consider a thin circular disk of mass $m$ and radius $R$ lying in the x-y plane. By symmetry, $I_x = I_y$. We know the moment of inertia about the z-axis (perpendicular to the disk) is $I_z = \\frac{1}{2}mR^2$. What is the moment of inertia about the diameter ($I_x$)?",
+      "options": [
+        { "text": "$\\frac{1}{2}mR^2$", "isCorrect": false },
+        { "text": "$\\frac{1}{4}mR^2$", "isCorrect": true },
+        { "text": "$mR^2$", "isCorrect": false },
+        { "text": "$\\frac{1}{8}mR^2$", "isCorrect": false }
+      ],
+      "explanation": "Using the Perpendicular Axes Theorem: $I_z = I_x + I_y$. Since $I_x = I_y$ due to symmetry, $I_z = 2I_x$. Therefore, $I_x = I_z / 2 = (\\frac{1}{2}mR^2) / 2 = \\frac{1}{4}mR^2$."
+    },
+    {
+      "question": "The Perpendicular Axes Theorem applies to:",
+      "options": [
+        { "text": "Any 3D rigid body.", "isCorrect": false },
+        { "text": "Only spherical bodies.", "isCorrect": false },
+        { "text": "Planar bodies (laminas) only.", "isCorrect": true },
+        { "text": "Only bodies rotating about their center of mass.", "isCorrect": false }
+      ],
+      "explanation": "This specific theorem ($I_z = I_x + I_y$) is valid only for objects that are flat, effectively 2-dimensional (lying entirely in a single plane)."
+    }
+  ]
+}

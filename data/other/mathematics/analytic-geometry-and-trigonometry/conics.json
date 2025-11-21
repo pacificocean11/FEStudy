@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Introduction to Conic Sections</h3>\n<p class=\"mb-4\">Conic sections are curves obtained by intersecting a plane with a double-napped cone. Depending on the angle of the plane relative to the cone, four types of curves can be created: circles, ellipses, parabolas, and hyperbolas.</p>\n<img src=\"https://i.imgur.com/7sYa7L7.png\" alt=\"Conic Sections Diagram\" class=\"mx-auto my-4 rounded-lg bg-white\">\n<h3 class=\"text-lg font-semibold mb-2\">2. General Equation of a Conic Section</h3>\n<p class=\"mb-4\">Every conic section can be described by a second-degree equation in two variables:</p>\n$$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$\n<p class=\"mb-4\">where A, B, C, D, E, and F are constants. The term $Bxy$ represents a rotation of the conic. For the FE exam, you will typically deal with conics aligned with the coordinate axes, meaning $B=0$.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. The Discriminant</h3>\n<p class=\"mb-4\">When $B=0$, the type of conic can be identified by looking at the coefficients A and C.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $A = C$ (and not zero), the conic is a <strong>Circle</strong>.</li>\n    <li>If $A \\cdot C > 0$ and $A \\neq C$, the conic is an <strong>Ellipse</strong>.</li>\n    <li>If $A \\cdot C = 0$ (i.e., either A or C is zero, but not both), the conic is a <strong>Parabola</strong>.</li>\n    <li>If $A \\cdot C < 0$ (i.e., A and C have opposite signs), the conic is a <strong>Hyperbola</strong>.</li>\n</ul>\n<p class=\"mb-4\">If the $Bxy$ term is present, a value called the discriminant ($B^2 - 4AC$) is used:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $B^2 - 4AC < 0$, it is an Ellipse (or a circle if B=0 and A=C).</li>\n    <li>If $B^2 - 4AC = 0$, it is a Parabola.</li>\n    <li>If $B^2 - 4AC > 0$, it is a Hyperbola.</li>\n</ul>\n                ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Identify the type of conic section represented by the equation $3x^2 - 3y^2 + 6x - 12y + 1 = 0$.",
+      "options": [
+        { "text": "Circle", "isCorrect": false },
+        { "text": "Ellipse", "isCorrect": false },
+        { "text": "Parabola", "isCorrect": false },
+        { "text": "Hyperbola", "isCorrect": true }
+      ],
+      "explanation": "The general form is $Ax^2 + Cy^2 + Dx + Ey + F = 0$. Here, $A=3$ and $C=-3$. Since $A \\cdot C = (3)(-3) = -9 < 0$, the coefficients have opposite signs. Therefore, the conic section is a hyperbola."
+    },
+    {
+      "question": "The equation $x^2 + 4y^2 - 2x - 16y + 13 = 0$ represents which conic section?",
+      "options": [
+        { "text": "Circle", "isCorrect": false },
+        { "text": "Ellipse", "isCorrect": true },
+        { "text": "Parabola", "isCorrect": false },
+        { "text": "Hyperbola", "isCorrect": false }
+      ],
+      "explanation": "In the equation, $A=1$ and $C=4$. Since $A \\cdot C = (1)(4) = 4 > 0$ and $A \\neq C$, the conic section is an ellipse."
+    },
+    {
+      "question": "What conic is described by the equation $y^2 - 8x + 4y - 4 = 0$?",
+      "options": [
+        { "text": "Circle", "isCorrect": false },
+        { "text": "Ellipse", "isCorrect": false },
+        { "text": "Parabola", "isCorrect": true },
+        { "text": "Hyperbola", "isCorrect": false }
+      ],
+      "explanation": "The general form is $Ax^2 + Cy^2 + Dx + Ey + F = 0$. In this equation, there is no $x^2$ term, so $A=0$. The $y^2$ term has a coefficient $C=1$. Since $A \\cdot C = (0)(1) = 0$, the conic section is a parabola."
+    }
+  ]
+}

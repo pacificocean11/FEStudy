@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Power screws (like square threads) are used to transmit power or motion. The mechanics are analyzed by \"unwrapping\" the thread into an inclined plane.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lead ($L$):</strong> Distance the screw advances in one revolution ($L = np$, where $n$ is number of starts, $p$ is pitch).</li>\n    <li><strong>Mean Radius ($r_m$):</strong> Average radius of the thread.</li>\n    <li><strong>Lead Angle ($\\lambda$):</strong> $\\tan \\lambda = L / (2\\pi r_m)$.</li>\n    <li><strong>Friction Angle ($\\phi$):</strong> $\\tan \\phi = \\mu$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Torque Equations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Torque to Raise Load ($T_R$):</strong> (Motion against load direction)\n    $$ T_R = W r_m \\tan(\\phi + \\lambda) $$</li>\n    <li><strong>Torque to Lower Load ($T_L$):</strong> (Motion with load direction)\n    $$ T_L = W r_m \\tan(\\phi - \\lambda) $$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Self-Locking</h3>\n<p class=\"mb-4\">A screw is <strong>self-locking</strong> if it stays in place under load without external torque. This occurs if the friction angle is greater than or equal to the lead angle ($\\phi \\ge \\lambda$). If $\\phi < \\lambda$, the screw will overhaul (unwind) under the load.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A power screw is self-locking if:",
+      "options": [
+        { "text": "The lead angle is greater than the friction angle.", "isCorrect": false },
+        { "text": "The friction angle is greater than the lead angle.", "isCorrect": true },
+        { "text": "The efficiency is 100%.", "isCorrect": false },
+        { "text": "It has zero friction.", "isCorrect": false }
+      ],
+      "explanation": "Self-locking means friction is sufficient to prevent the load from causing the screw to turn backwards. Mathematically, this requires $\\tan \\phi \\ge \\tan \\lambda$, or $\\phi \\ge \\lambda$."
+    },
+    {
+      "question": "If the torque required to lower a load is calculated to be negative, what does this imply?",
+      "options": [
+        { "text": "The calculation is wrong.", "isCorrect": false },
+        { "text": "The screw is broken.", "isCorrect": false },
+        { "text": "The screw is not self-locking (it will overhaul).", "isCorrect": true },
+        { "text": "The load is zero.", "isCorrect": false }
+      ],
+      "explanation": "A negative lowering torque means you must apply torque *against* the direction of lowering to prevent the load from accelerating downwards. The load turns the screw by itself; this is the definition of overhauling."
+    }
+  ]
+}

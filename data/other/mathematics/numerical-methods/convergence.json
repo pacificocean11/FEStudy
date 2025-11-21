@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Convergence</strong> refers to the property of an iterative numerical method to approach the true solution as the number of iterations increases. A method is said to converge if the error approaches zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Rate of Convergence</h3>\n<p class=\"mb-4\">The rate of convergence describes how quickly the error decreases. Common rates include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Linear Convergence:</strong> The error in the next step is proportional to the error in the current step ($E_{n+1} \\approx C E_n$). Example: Bisection method.</li>\n    <li><strong>Quadratic Convergence:</strong> The error in the next step is proportional to the square of the error in the current step ($E_{n+1} \\approx C E_n^2$). This is much faster. Example: Newton-Raphson method (near the root).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Conditions for Convergence</h3>\n<p class=\"mb-4\">Not all iterative methods converge for all functions or initial guesses. </p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Newton-Raphson:</strong> Converges if the initial guess is 'close enough' to the root and the derivative is not zero. It may diverge if the initial guess is far away or near a local maximum/minimum.</li>\n    <li><strong>Fixed-Point Iteration ($x = g(x)$):</strong> Converges if the magnitude of the derivative of $g(x)$ is less than 1 in the interval of interest ($|g'(x)| < 1$).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Newton-Raphson method is generally preferred over the Bisection method because:",
+      "options": [
+        { "text": "It always converges.", "isCorrect": false },
+        { "text": "It has a quadratic rate of convergence (converges faster).", "isCorrect": true },
+        { "text": "It does not require calculating a derivative.", "isCorrect": false },
+        { "text": "It is simpler to program.", "isCorrect": false }
+      ],
+      "explanation": "When it converges, Newton's method does so quadratically, meaning the number of correct digits roughly doubles with each iteration. The Bisection method converges linearly, which is much slower."
+    },
+    {
+      "question": "Under what condition might the Newton-Raphson method fail to converge?",
+      "options": [
+        { "text": "If the initial guess is too close to the root.", "isCorrect": false },
+        { "text": "If the derivative of the function is zero at the current estimate.", "isCorrect": true },
+        { "text": "If the function is a polynomial.", "isCorrect": false },
+        { "text": "If the root is positive.", "isCorrect": false }
+      ],
+      "explanation": "The formula involves dividing by $f'(x_n)$. If the derivative is zero (a horizontal tangent), the method attempts to divide by zero and fails. Graphically, the tangent line never intersects the x-axis."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Psychrometric Chart</strong> is a graphical representation of the physical and thermal properties of moist air at a constant pressure (usually standard atmospheric pressure). It is an essential tool for analyzing HVAC processes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties on the Chart</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Dry-Bulb Temperature ($T_{db}$):</strong> The true air temperature measured by a standard thermometer. Plotted on the horizontal axis (abscissa).</li>\n    <li><strong>Humidity Ratio ($\\omega$):</strong> The mass of water vapor per unit mass of dry air (kg/kg or lb/lb). Plotted on the vertical axis (ordinate). Also called specific humidity.</li>\n    <li><strong>Relative Humidity ($\\phi$ or RH):</strong> The ratio of the partial pressure of water vapor to the saturation pressure at the same temperature. Curves sweep from lower-left to upper-right. The saturation curve is 100% RH.</li>\n    <li><strong>Wet-Bulb Temperature ($T_{wb}$):</strong> The temperature measured by a thermometer with a wetted wick. Lines slope diagonally downward from left to right.</li>\n    <li><strong>Enthalpy ($h$):</strong> The total energy content of the moist air per unit mass of dry air. Lines are nearly parallel to the wet-bulb lines.</li>\n    <li><strong>Specific Volume ($v$):</strong> The volume of moist air per unit mass of dry air. Lines are steeply inclined.</li>\n    <li><strong>Dew Point Temperature ($T_{dp}$):</strong> The temperature at which moisture begins to condense from the air. Found by moving horizontally from the state point to the saturation curve.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. State Point</h3>\n<p class=\"mb-4\">Ideally, knowing any two independent properties allows you to fix the state point on the chart and determine all other properties.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a standard psychrometric chart, moving horizontally to the left from a state point until reaching the saturation curve (100% RH) determines the:",
+      "options": [
+        { "text": "Wet-bulb temperature", "isCorrect": false },
+        { "text": "Dew point temperature", "isCorrect": true },
+        { "text": "Enthalpy", "isCorrect": false },
+        { "text": "Specific volume", "isCorrect": false }
+      ],
+      "explanation": "The dew point is the temperature at which water vapor in the air begins to condense. It is defined by the amount of moisture (humidity ratio) in the air. Since horizontal lines on the chart represent constant humidity ratio, moving horizontally to the saturation line gives the temperature at which that specific moisture content would cause saturation."
+    },
+    {
+      "question": "Which lines on a psychrometric chart are approximately parallel to each other?",
+      "options": [
+        { "text": "Dry-bulb temperature and Wet-bulb temperature", "isCorrect": false },
+        { "text": "Relative humidity and Specific volume", "isCorrect": false },
+        { "text": "Wet-bulb temperature and Enthalpy", "isCorrect": true },
+        { "text": "Humidity ratio and Dry-bulb temperature", "isCorrect": false }
+      ],
+      "explanation": "Lines of constant wet-bulb temperature and lines of constant enthalpy are nearly parallel on a standard psychrometric chart. In fact, for many practical calculations, they are often treated as the same line."
+    }
+  ]
+}

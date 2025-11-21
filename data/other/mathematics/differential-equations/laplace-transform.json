@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The Laplace transform is an integral transform that converts a function of a real variable $t$ (often time) to a function of a complex variable $s$ (frequency). It is a powerful tool for solving linear differential equations.</p>\n<p class=\"mb-4\">The Laplace transform of a function $f(t)$, denoted as $\\mathcal{L}\\{f(t)\\}$ or $F(s)$, is defined as:</p>\n$$F(s) = \\mathcal{L}\\{f(t)\\} = \\int_0^\\infty e^{-st}f(t)dt$$\n<h3 class=\"text-lg font-semibold mb-2\">2. Transforms of Derivatives</h3>\n<p class=\"mb-4\">The key property that makes the Laplace transform useful for solving DEs is its effect on derivatives:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\mathcal{L}\\{f'(t)\\} = sF(s) - f(0)$</li>\n    <li>$\\mathcal{L}\\{f''(t)\\} = s^2F(s) - sf(0) - f'(0)$</li>\n</ul>\n<p class=\"mb-4\">This property transforms differentiation in the time domain into multiplication by $s$ in the frequency domain, effectively converting a differential equation into an algebraic equation.</p>\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Laplace Transforms</h3>\n<p class=\"mb-4\">You will typically use a table of Laplace transforms rather than computing them from the definition. Here are a few common ones:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\mathcal{L}\\{1\\} = \\frac{1}{s}$</li>\n    <li>$\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}$</li>\n    <li>$\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}$</li>\n    <li>$\\mathcal{L}\\{\\sin(bt)\\} = \\frac{b}{s^2+b^2}$</li>\n    <li>$\\mathcal{L}\\{\\cos(bt)\\} = \\frac{s}{s^2+b^2}$</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Find the Laplace transform of $f(t) = 5$.",
+      "options": [
+        { "text": "$\\frac{5}{s}$", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "$\\frac{1}{s-5}$", "isCorrect": false },
+        { "text": "$5s$", "isCorrect": false }
+      ],
+      "explanation": "Using the linearity property and the transform of a constant: $\\mathcal{L}\\{5\\} = 5 \\cdot \\mathcal{L}\\{1\\} = 5 \\cdot \\frac{1}{s} = \\frac{5}{s}$."
+    },
+    {
+      "question": "What is the Laplace transform of $f(t) = e^{-3t}$?",
+      "options": [
+        { "text": "$\\frac{1}{s-3}$", "isCorrect": false },
+        { "text": "$\\frac{1}{s+3}$", "isCorrect": true },
+        { "text": "$\\frac{s}{s^2+9}$", "isCorrect": false },
+        { "text": "$\\frac{3}{s^2+9}$", "isCorrect": false }
+      ],
+      "explanation": "Using the standard transform formula $\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}$, with $a = -3$. So, $\\mathcal{L}\\{e^{-3t}\\} = \\frac{1}{s-(-3)} = \\frac{1}{s+3}$."
+    },
+    {
+      "question": "Given a function $y(t)$ with Laplace transform $Y(s)$, what is the transform of its derivative, $y'(t)$, if $y(0) = 2$?",
+      "options": [
+        { "text": "$sY(s)$", "isCorrect": false },
+        { "text": "$sY(s) - 2$", "isCorrect": true },
+        { "text": "$s^2Y(s) - 2$", "isCorrect": false },
+        { "text": "$Y(s) - 2$", "isCorrect": false }
+      ],
+      "explanation": "The formula for the Laplace transform of a first derivative is $\\mathcal{L}\\{y'(t)\\} = sY(s) - y(0)$. Given that $y(0) = 2$, the transform is $sY(s) - 2$."
+    }
+  ]
+}

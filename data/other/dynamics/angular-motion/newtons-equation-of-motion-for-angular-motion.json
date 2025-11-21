@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Newton's Second Law for Rotation</h3>\n<p class=\"mb-4\">Newton's Second Law for linear motion ($F = ma$) has a direct analog for rotational motion. It relates the net external torque (or moment) acting on a body to its angular acceleration.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equation</h3>\n<p class=\"mb-4\">For a rigid body rotating about a fixed axis passing through its center of mass (G):</p>\n$$ \\sum M_G = I_G \\alpha $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sum M_G$: The sum of all external moments (torques) about the center of mass.</li>\n    <li>$I_G$: The mass moment of inertia of the body about the center of mass.</li>\n    <li>$\\alpha$: The angular acceleration of the body (in radians/s²).</li>\n</ul>\n<p class=\"mb-4\">If the body is rotating about a fixed axis (O) that does not pass through the center of mass, it is often convenient to sum moments about the fixed axis:</p>\n$$ \\sum M_O = I_O \\alpha $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A constant torque of 20 N·m acts on a flywheel with a mass moment of inertia of 4 kg·m². What is the angular acceleration of the flywheel?",
+      "options": [
+        { "text": "5 rad/s²", "isCorrect": true },
+        { "text": "80 rad/s²", "isCorrect": false },
+        { "text": "0.2 rad/s²", "isCorrect": false },
+        { "text": "16 rad/s²", "isCorrect": false }
+      ],
+      "explanation": "Use the rotational analog of Newton's Second Law: $\\tau = I\\alpha$ (or $\\sum M = I\\alpha$). Rearranging for angular acceleration: $\\alpha = \\tau / I = 20 \\text{ N·m} / 4 \\text{ kg·m²} = 5 \\text{ rad/s²}$."
+    },
+    {
+      "question": "If the moment of inertia of a rotating body is doubled while the applied torque remains constant, what happens to the angular acceleration?",
+      "options": [
+        { "text": "It doubles.", "isCorrect": false },
+        { "text": "It remains the same.", "isCorrect": false },
+        { "text": "It is halved.", "isCorrect": true },
+        { "text": "It quadruples.", "isCorrect": false }
+      ],
+      "explanation": "From the equation $\\alpha = \\tau / I$, angular acceleration is inversely proportional to the moment of inertia. If $I$ doubles, $\\alpha$ becomes half of its original value."
+    }
+  ]
+}

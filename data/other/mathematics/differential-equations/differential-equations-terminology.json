@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>differential equation (DE)</strong> is an equation that contains an unknown function and one or more of its derivatives.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Classification of DEs</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Order:</strong> The order of a DE is the order of the highest derivative that appears in the equation. For example, $y'' + 3y' - 2y = x$ is a second-order DE.</li>\n    <li><strong>Linearity:</strong> A DE is <strong>linear</strong> if the dependent variable (e.g., $y$) and its derivatives appear only to the first power and are not multiplied together. Otherwise, it is <strong>nonlinear</strong>. The equation $y' + 2y = x^2$ is linear, while $(y')^2 + y = 0$ is nonlinear.</li>\n    <li><strong>Homogeneity:</strong> A linear DE is <strong>homogeneous</strong> if every term contains the dependent variable or one of its derivatives. If there is a term that is a function of only the independent variable (or a constant), the equation is <strong>nonhomogeneous</strong>. For example, $y'' - 4y = 0$ is homogeneous, while $y'' - 4y = \\sin(x)$ is nonhomogeneous.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Solutions to DEs</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>A <strong>solution</strong> to a DE is a function that satisfies the equation.</li>\n    <li>A <strong>general solution</strong> contains arbitrary constants (e.g., $C_1, C_2$) and represents the entire family of solutions.</li>\n    <li>A <strong>particular solution</strong> is a solution where the constants have been determined by using initial or boundary conditions.</li>\n    <li>An <strong>initial value problem (IVP)</strong> is a DE combined with initial conditions that specify the value of the solution and its derivatives at a particular point.</li>\n</ul>\n              ",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the order of the differential equation $\\frac{d^3y}{dx^3} + 4\\left(\\frac{dy}{dx}\\right)^2 - 5y = e^x$?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "The order of a differential equation is the order of the highest derivative present. In this equation, the highest derivative is $\\frac{d^3y}{dx^3}$, which is a third derivative. Therefore, the order is 3."
+    },
+    {
+      "question": "Which of the following differential equations is linear?",
+      "options": [
+        { "text": "$y'' + \\sin(y) = 0$", "isCorrect": false },
+        { "text": "$y' + xy^2 = 1$", "isCorrect": false },
+        { "text": "$y''' + 2y' + 3y = x^2$", "isCorrect": true },
+        { "text": "$yy' = x$", "isCorrect": false }
+      ],
+      "explanation": "A linear DE has the dependent variable ($y$) and its derivatives ($y', y'', ...$) appearing only to the first power. In option C, $y'''$, $y'$, and $y$ are all to the first power. Options A, B, and D are nonlinear because of the terms $\\sin(y)$, $y^2$, and $yy'$, respectively."
+    },
+    {
+      "question": "Is the differential equation $t^2\\frac{d^2x}{dt^2} + t\\frac{dx}{dt} + 2x = \\sin(t)$ homogeneous or nonhomogeneous?",
+      "options": [
+        { "text": "Homogeneous", "isCorrect": false },
+        { "text": "Nonhomogeneous", "isCorrect": true },
+        { "text": "Both", "isCorrect": false },
+        { "text": "Neither", "isCorrect": false }
+      ],
+      "explanation": "The equation is nonhomogeneous because there is a term, $\\sin(t)$, that is a function of the independent variable ($t$) only. For the equation to be homogeneous, all terms must involve the dependent variable ($x$) or its derivatives."
+    }
+  ]
+}

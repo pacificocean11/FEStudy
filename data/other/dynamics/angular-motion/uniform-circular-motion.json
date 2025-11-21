@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Uniform Circular Motion</strong> describes the motion of a particle traveling in a circular path at a <strong>constant speed</strong>. Although the speed is constant, the velocity vector is continuously changing direction, which means the particle is accelerating.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Kinematics</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Angular Velocity ($\\omega$):</strong> The rate of rotation is constant. $\\omega = \\frac{d\\theta}{dt}$.</li>\n    <li><strong>Angular Acceleration ($\\alpha$):</strong> Since $\\omega$ is constant, $\\alpha = \\frac{d\\omega}{dt} = 0$.</li>\n    <li><strong>Tangential Velocity ($v_t$):</strong> The linear speed of the particle tangent to the path. $v_t = r\\omega$.</li>\n    <li><strong>Tangential Acceleration ($a_t$):</strong> The rate of change of speed. Since speed is constant, $a_t = \\frac{dv_t}{dt} = r\\alpha = 0$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Normal (Centripetal) Acceleration</h3>\n<p class=\"mb-4\">Even though tangential acceleration is zero, there is always an acceleration directed toward the center of the circle, responsible for changing the direction of the velocity.</p>\n$$ a_n = \\frac{v_t^2}{r} = r\\omega^2 $$\n<p class=\"mb-4\">This is called the <strong>normal</strong> or <strong>centripetal acceleration</strong>.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a particle in uniform circular motion, which of the following statements is true?",
+      "options": [
+        { "text": "Velocity is constant.", "isCorrect": false },
+        { "text": "Acceleration is zero.", "isCorrect": false },
+        { "text": "Speed is constant.", "isCorrect": true },
+        { "text": "Tangential acceleration is non-zero.", "isCorrect": false }
+      ],
+      "explanation": "In uniform circular motion, the magnitude of the velocity (speed) is constant. However, the velocity vector changes direction, so velocity is not constant. This change in direction requires a non-zero normal acceleration."
+    },
+    {
+      "question": "A car travels around a circular track of radius 50 m at a constant speed of 20 m/s. What is the magnitude of its acceleration?",
+      "options": [
+        { "text": "0 m/s²", "isCorrect": false },
+        { "text": "2.5 m/s²", "isCorrect": false },
+        { "text": "8 m/s²", "isCorrect": true },
+        { "text": "0.4 m/s²", "isCorrect": false }
+      ],
+      "explanation": "Since the speed is constant, the tangential acceleration is zero. The only acceleration is the normal (centripetal) acceleration. $a_n = v^2 / r = (20 \\text{ m/s})^2 / 50 \\text{ m} = 400 / 50 = 8 \\text{ m/s²}$."
+    }
+  ]
+}

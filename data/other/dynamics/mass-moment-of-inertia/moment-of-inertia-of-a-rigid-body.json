@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">For a continuous rigid body, the mass moment of inertia is calculated by integrating the moments of infinitesimal mass elements ($dm$) over the entire volume of the body.</p>\n$$ I = \\int r^2 dm $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Formulas</h3>\n<p class=\"mb-4\">Formulas for common uniform shapes are standard reference material. Most are given about the centroidal axis ($I_G$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Slender Rod (length L, mass m):</strong>\n        <ul>\n            <li>About center: $I_G = \\frac{1}{12}mL^2$</li>\n            <li>About end: $I = \\frac{1}{3}mL^2$</li>\n        </ul>\n    </li>\n    <li><strong>Thin Disk or Solid Cylinder (radius R, mass m):</strong>\n        <ul>\n            <li>About central axis: $I_G = \\frac{1}{2}mR^2$</li>\n        </ul>\n    </li>\n    <li><strong>Solid Sphere (radius R, mass m):</strong>\n        <ul>\n            <li>About diameter: $I_G = \\frac{2}{5}mR^2$</li>\n        </ul>\n    </li>\n    <li><strong>Thin Rectangular Plate (sides a, b, mass m):</strong>\n        <ul>\n            <li>About axis perpendicular to plate at center: $I_G = \\frac{1}{12}m(a^2 + b^2)$</li>\n        </ul>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which geometric shape has a mass moment of inertia of $I = \\frac{1}{2}mR^2$ about its central axis?",
+      "options": [
+        { "text": "Solid Sphere", "isCorrect": false },
+        { "text": "Thin Hoop (Ring)", "isCorrect": false },
+        { "text": "Solid Cylinder (or Disk)", "isCorrect": true },
+        { "text": "Slender Rod", "isCorrect": false }
+      ],
+      "explanation": "The formula $\\frac{1}{2}mR^2$ corresponds to a solid cylinder or disk rotating about its longitudinal axis. A thin hoop is $mR^2$, and a solid sphere is $\\frac{2}{5}mR^2$."
+    },
+    {
+      "question": "Calculate the moment of inertia of a 12 kg slender rod of length 2 m rotating about an axis through its center and perpendicular to its length.",
+      "options": [
+        { "text": "4 kg·m²", "isCorrect": true },
+        { "text": "16 kg·m²", "isCorrect": false },
+        { "text": "48 kg·m²", "isCorrect": false },
+        { "text": "2 kg·m²", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for a slender rod about its center: $I = \\frac{1}{12}mL^2$. $I = \\frac{1}{12}(12)(2^2) = 1(4) = 4$ kg·m²."
+    }
+  ]
+}

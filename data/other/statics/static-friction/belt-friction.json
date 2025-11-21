@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Belt friction describes the force transfer between a flexible belt (or rope) and a curved surface (like a pulley or drum) due to friction.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Belt Friction Equation</h3>\n<p class=\"mb-4\">For a flat belt in impending motion (about to slip), the relationship between the tight side tension ($T_2$) and the slack side tension ($T_1$) is:</p>\n$$ \\frac{T_2}{T_1} = e^{\\mu \\beta} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$T_2$: Larger tension (pulling direction).</li>\n    <li>$T_1$: Smaller tension (resisting direction).</li>\n    <li>$\\mu$: Coefficient of static friction between belt and surface.</li>\n    <li>$\\beta$: Angle of contact (wrap angle) in <strong>radians</strong>.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Torque Transmission</h3>\n<p class=\"mb-4\">The net torque transmitted to the pulley is the difference in tensions times the radius:</p>\n$$ \\tau = (T_2 - T_1) r $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the belt friction equation $T_2/T_1 = e^{\\mu \\beta}$, the angle $\\beta$ must be measured in:",
+      "options": [
+        { "text": "Degrees", "isCorrect": false },
+        { "text": "Gradians", "isCorrect": false },
+        { "text": "Radians", "isCorrect": true },
+        { "text": "Revolutions", "isCorrect": false }
+      ],
+      "explanation": "The derivation of the belt friction formula relies on calculus where angles are inherently in radians. Using degrees will result in an incorrect calculation."
+    },
+    {
+      "question": "To increase the maximum torque a belt drive can transmit without slipping, one could:",
+      "options": [
+        { "text": "Decrease the wrap angle.", "isCorrect": false },
+        { "text": "Use a smoother pulley (lower $\\mu$).", "isCorrect": false },
+        { "text": "Increase the initial tension or wrap angle.", "isCorrect": true },
+        { "text": "Decrease the belt tension.", "isCorrect": false }
+      ],
+      "explanation": "Torque depends on $(T_2 - T_1)$. The ratio $T_2/T_1$ is limited by $e^{\\mu \\beta}$. Increasing $\\mu$ or the wrap angle $\\beta$ allows a larger ratio. Increasing initial tension scales up both $T_1$ and $T_2$."
+    }
+  ]
+}

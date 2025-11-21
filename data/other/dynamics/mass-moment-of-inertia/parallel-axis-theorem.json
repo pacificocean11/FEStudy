@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Parallel Axis Theorem</strong> allows you to calculate the mass moment of inertia of a body about any axis, provided you know the moment of inertia about a parallel axis passing through the body's center of mass.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Theorem</h3>\n$$ I = I_G + md^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$I$: Moment of inertia about the new, arbitrary axis.</li>\n    <li>$I_G$: Moment of inertia about the centroidal axis (center of mass) parallel to the new axis.</li>\n    <li>$m$: Total mass of the body.</li>\n    <li>$d$: Perpendicular distance between the two parallel axes.</li>\n</ul>\n<p class=\"mb-4\">This theorem is extremely useful for finding the moment of inertia of complex assemblies or for axes not at the centroid (e.g., a rod pivoting at its end).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A thin rod of mass $m$ and length $L$ has a moment of inertia $I_G = \\frac{1}{12}mL^2$ about its center. What is its moment of inertia about an axis at one end of the rod?",
+      "options": [
+        { "text": "$\\frac{1}{12}mL^2$", "isCorrect": false },
+        { "text": "$\\frac{1}{4}mL^2$", "isCorrect": false },
+        { "text": "$\\frac{1}{3}mL^2$", "isCorrect": true },
+        { "text": "$\\frac{1}{2}mL^2$", "isCorrect": false }
+      ],
+      "explanation": "Use the parallel axis theorem: $I = I_G + md^2$. The distance from the center to the end is $d = L/2$. So, $I = \\frac{1}{12}mL^2 + m(\\frac{L}{2})^2 = \\frac{1}{12}mL^2 + \\frac{1}{4}mL^2 = \\frac{1}{12}mL^2 + \\frac{3}{12}mL^2 = \\frac{4}{12}mL^2 = \\frac{1}{3}mL^2$."
+    },
+    {
+      "question": "Why is the moment of inertia about the center of mass ($I_G$) always the minimum moment of inertia among all parallel axes?",
+      "options": [
+        { "text": "Because the mass is smallest there.", "isCorrect": false },
+        { "text": "Because the Parallel Axis Theorem adds a positive term ($md^2$) for any other axis.", "isCorrect": true },
+        { "text": "It isn't always the minimum.", "isCorrect": false },
+        { "text": "Because $d$ is negative for other axes.", "isCorrect": false }
+      ],
+      "explanation": "The term $md^2$ is always positive (since mass is positive and distance squared is positive). Therefore, $I = I_G + \\text{positive number}$, meaning $I$ will always be greater than $I_G$ for any distance $d > 0$."
+    }
+  ]
+}

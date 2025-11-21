@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Common Processes</h3>\n<p class=\"mb-4\">HVAC systems condition air by moving it through various processes on the psychrometric chart:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Sensible Heating:</strong> Moving horizontally to the right. Temperature increases, humidity ratio stays constant, relative humidity decreases.</li>\n    <li><strong>Sensible Cooling:</strong> Moving horizontally to the left. Temperature decreases, humidity ratio stays constant, relative humidity increases.</li>\n    <li><strong>Cooling and Dehumidification:</strong> Moving diagonally down and to the left. Air is cooled below its dew point, causing moisture to condense. Both temperature and humidity ratio decrease.</li>\n    <li><strong>Heating and Humidification:</strong> Moving diagonally up and to the right. Typical for winter conditioning.</li>\n    <li><strong>Adiabatic Mixing:</strong> When two airstreams mix adiabatically, the state point of the mixture lies on the straight line connecting the two initial state points. The location depends on the ratio of the mass flow rates.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Sensible Heat Rate:</strong> $\\dot{Q}_s = \\dot{m}_{da} c_p \\Delta T$</li>\n    <li><strong>Latent Heat Rate:</strong> $\\dot{Q}_l = \\dot{m}_{da} h_{fg} \\Delta \\omega$</li>\n    <li><strong>Total Heat Rate:</strong> $\\dot{Q}_{total} = \\dot{m}_{da} \\Delta h = \\dot{Q}_s + \\dot{Q}_l$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which HVAC process is represented by a horizontal line moving to the left on a psychrometric chart?",
+      "options": [
+        { "text": "Sensible Heating", "isCorrect": false },
+        { "text": "Sensible Cooling", "isCorrect": true },
+        { "text": "Humidification", "isCorrect": false },
+        { "text": "Dehumidification", "isCorrect": false }
+      ],
+      "explanation": "A horizontal line indicates a constant humidity ratio (no moisture added or removed). Moving to the left means decreasing dry-bulb temperature. This is the definition of sensible cooling."
+    },
+    {
+      "question": "When two air streams are mixed adiabatically, the state point of the resulting mixture lies:",
+      "options": [
+        { "text": "On the saturation curve.", "isCorrect": false },
+        { "text": "Midway between the two original points.", "isCorrect": false },
+        { "text": "On the straight line connecting the two original state points.", "isCorrect": true },
+        { "text": "At the intersection of their enthalpy lines.", "isCorrect": false }
+      ],
+      "explanation": "The principle of conservation of mass and energy dictates that the properties of the mixture (temperature, enthalpy, humidity ratio) will be a weighted average of the two incoming streams. Graphically, this places the mixture point on the straight line segment connecting the two source points."
+    }
+  ]
+}

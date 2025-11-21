@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Combustion is a rapid chemical reaction between a substance with an oxidant, usually oxygen, to produce heat and light. Complete combustion of a hydrocarbon fuel (a compound containing only carbon and hydrogen, C$_x$H$_y$) in pure oxygen produces carbon dioxide (CO₂) and water (H₂O).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stoichiometric (Theoretical) Combustion</h3>\n<p class=\"mb-4\">Stoichiometric or theoretical combustion is the complete combustion of a fuel with the exact amount of oxygen required to convert all carbon to CO₂ and all hydrogen to H₂O.</p>\n<p class=\"mb-4\">The general balanced chemical equation is:</p>\n$$C_xH_y + (x + \\frac{y}{4})O_2 \\rightarrow xCO_2 + \\frac{y}{2}H_2O$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Balancing the Equation</h3>\n<p class=\"mb-4\">To balance a combustion equation, you must conserve the number of atoms of each element on both the reactant and product sides.</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Balance Carbon (C):</strong> The number of CO₂ molecules on the product side must equal the number of carbon atoms ($x$) in the fuel.</li>\n    <li><strong>Balance Hydrogen (H):</strong> The number of H₂O molecules on the product side must be half the number of hydrogen atoms ($y$) in the fuel, since each water molecule has two hydrogen atoms.</li>\n    <li><strong>Balance Oxygen (O):</strong> Sum the oxygen atoms on the product side ($2x$ from CO₂ and $y/2$ from H₂O). This total number of oxygen atoms must be supplied on the reactant side. Since oxygen comes in O₂ molecules, divide the total number of atoms by 2 to get the number of O₂ molecules.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What are the products of the complete combustion of any hydrocarbon fuel?",
+      "options": [
+        { "text": "Carbon (C) and Hydrogen (H₂)", "isCorrect": false },
+        { "text": "Carbon Monoxide (CO) and Water (H₂O)", "isCorrect": false },
+        { "text": "Carbon Dioxide (CO₂) and Water (H₂O)", "isCorrect": true },
+        { "text": "Oxygen (O₂) and Carbon (C)", "isCorrect": false }
+      ],
+      "explanation": "By definition, complete combustion means all the carbon in the fuel reacts to form carbon dioxide (CO₂) and all the hydrogen reacts to form water (H₂O)."
+    },
+    {
+      "question": "What is the balanced equation for the complete combustion of methane (CH₄) in pure oxygen?",
+      "options": [
+        { "text": "CH₄ + O₂ → CO₂ + 2H₂O", "isCorrect": false },
+        { "text": "CH₄ + 2O₂ → CO₂ + 2H₂O", "isCorrect": true },
+        { "text": "2CH₄ + 3O₂ → 2CO₂ + 4H₂O", "isCorrect": false },
+        { "text": "CH₄ + O₂ → CO + 2H₂O", "isCorrect": false }
+      ],
+      "explanation": "The fuel is CH₄, so $x=1, y=4$. The products are $xCO_2 = 1CO_2$ and $(y/2)H_2O = (4/2)H_2O = 2H_2O$. Total oxygen atoms in products: 2 from CO₂ + 2 from 2H₂O = 4 atoms. We need 4 oxygen atoms on the reactant side, which is 2 molecules of O₂. The balanced equation is CH₄ + 2O₂ → CO₂ + 2H₂O."
+    },
+    {
+      "question": "How many moles of oxygen are required for the stoichiometric combustion of one mole of propane (C₃H₈)?",
+      "options": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "For propane, $x=3, y=8$. The number of moles of O₂ required is $(x + y/4) = (3 + 8/4) = 3 + 2 = 5$. The full balanced equation is C₃H₈ + 5O₂ → 3CO₂ + 4H₂O."
+    }
+  ]
+}
