@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Entropy (S)</strong> is a measure of the molecular disorder or randomness of a system. From a statistical perspective, it is a measure of the number of microscopic configurations that correspond to a thermodynamic system's macroscopic state.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Entropy Change ($\\Delta S$)</h3>\n<p class=\"mb-4\">For any process, the change in entropy is defined by:</p>\n$$ dS \\ge \\frac{dQ}{T} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Reversible Process:</strong> $dS = \\frac{dQ_{rev}}{T}$. The change in entropy is equal to the heat transfer divided by the absolute temperature at the boundary where the heat transfer occurs.</li>\n    <li><strong>Irreversible Process:</strong> $dS > \\frac{dQ}{T}$. Real processes generate entropy due to irreversibilities like friction or unrestrained expansion.</li>\n</ul>\n<p class=\"mb-4\"><strong>Isentropic Process:</strong> A process that is both adiabatic ($dQ=0$) and reversible is isentropic, meaning entropy remains constant ($dS=0$, or $s_1 = s_2$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Increase of Entropy</h3>\n<p class=\"mb-4\">For an isolated system (or the universe as a whole), the total entropy can never decrease. It increases for irreversible processes and remains constant for reversible processes.</p>\n$$ \\Delta S_{gen} \\ge 0 $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An isentropic process is defined as a process that is:",
+      "options": [
+        { "text": "Isothermal and reversible", "isCorrect": false },
+        { "text": "Adiabatic and reversible", "isCorrect": true },
+        { "text": "Isobaric and adiabatic", "isCorrect": false },
+        { "text": "Isochoric and isothermal", "isCorrect": false }
+      ],
+      "explanation": "Entropy change is defined as $dS = dQ_{rev}/T$. For entropy to remain constant ($dS=0$), the heat transfer must be zero ($dQ=0$, adiabatic) and the process must be reversible. Therefore, an isentropic process is a reversible adiabatic process."
+    },
+    {
+      "question": "500 J of heat is transferred to a system at a constant temperature of 300 K in a reversible process. What is the change in entropy of the system?",
+      "options": [
+        { "text": "1.67 J/K", "isCorrect": true },
+        { "text": "0 J/K", "isCorrect": false },
+        { "text": "150,000 J/K", "isCorrect": false },
+        { "text": "-1.67 J/K", "isCorrect": false }
+      ],
+      "explanation": "For a reversible process at constant temperature, $\\Delta S = Q/T = 500 \\text{ J} / 300 \\text{ K} \\approx 1.67 \\text{ J/K}$."
+    }
+  ]
+}

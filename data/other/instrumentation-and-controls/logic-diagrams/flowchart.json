@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>flowchart</strong> is a type of diagram that represents a workflow, algorithm, or process. It uses standard symbols connected by arrows to show the sequence of steps and decisions needed to perform a task.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Symbols</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Oval (Terminal):</strong> Indicates the Start or End of a process.</li>\n    <li><strong>Rectangle (Process):</strong> Represents a process step, action, or calculation (e.g., \"Calculate Area\").</li>\n    <li><strong>Parallelogram (Input/Output):</strong> Represents data entering or leaving the system (e.g., \"Read Temperature\", \"Print Alarm\").</li>\n    <li><strong>Diamond (Decision):</strong> Represents a decision point that usually has two outputs: Yes/No or True/False (e.g., \"Is Temp > 100?\").</li>\n    <li><strong>Arrow (Flowline):</strong> Indicates the direction of the process flow.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application in Control Systems</h3>\n<p class=\"mb-4\">Flowcharts are widely used in control systems engineering to design and document the logic for PLC programs, safety interlocks, and operational sequences.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a standard flowchart, which shape is used to represent a decision point where the path branches?",
+      "options": [
+        { "text": "Rectangle", "isCorrect": false },
+        { "text": "Oval", "isCorrect": false },
+        { "text": "Diamond", "isCorrect": true },
+        { "text": "Parallelogram", "isCorrect": false }
+      ],
+      "explanation": "A diamond shape is the standard symbol for a decision. It typically has one input and two or more outputs labeled with the possible outcomes of the decision (e.g., Yes/No)."
+    },
+    {
+      "question": "A parallelogram in a flowchart indicates which type of operation?",
+      "options": [
+        { "text": "Start or End", "isCorrect": false },
+        { "text": "Input or Output", "isCorrect": true },
+        { "text": "Calculation", "isCorrect": false },
+        { "text": "Comparison", "isCorrect": false }
+      ],
+      "explanation": "Parallelograms are used to denote Input/Output operations, such as reading data from a sensor or sending a signal to a display."
+    }
+  ]
+}

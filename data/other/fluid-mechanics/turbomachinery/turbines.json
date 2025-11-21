@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>turbine</strong> is a turbomachine that extracts energy from a fluid flow and converts it into useful work (usually shaft power). Turbines are the reverse of pumps.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Classification</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Impulse Turbines (e.g., Pelton Wheel):</strong> The fluid jet strikes the turbine blades (buckets) at high velocity. The pressure drop occurs entirely in the nozzle before the fluid hits the turbine. The wheel operates at atmospheric pressure.</li>\n    <li><strong>Reaction Turbines (e.g., Francis, Kaplan):</strong> The fluid fills the turbine casing and blades. Pressure drops continuously as the fluid passes through both the stationary guide vanes and the moving rotor blades.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Power Output</h3>\n<p class=\"mb-4\">The power output of a turbine is given by:</p>\n$$ P = \\eta \\gamma Q H $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\eta$: Turbine efficiency.</li>\n    <li>$\\gamma$: Specific weight of the fluid.</li>\n    <li>$Q$: Volumetric flow rate.</li>\n    <li>$H$: Net head available across the turbine.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In which type of turbine does the pressure drop occur entirely within the nozzle?",
+      "options": [
+        { "text": "Reaction turbine", "isCorrect": false },
+        { "text": "Impulse turbine", "isCorrect": true },
+        { "text": "Gas turbine", "isCorrect": false },
+        { "text": "Wind turbine", "isCorrect": false }
+      ],
+      "explanation": "In an impulse turbine (like a Pelton wheel), the potential energy of the fluid is converted to kinetic energy (a high-speed jet) in a nozzle. The jet then strikes the buckets at atmospheric pressure, so there is no pressure drop across the moving blades."
+    },
+    {
+      "question": "A hydroelectric turbine operates with a head of 50 m and a flow rate of 10 m³/s. If the overall efficiency is 90%, what is the power output? ($\\gamma = 9.81$ kN/m³)",
+      "options": [
+        { "text": "4414 kW", "isCorrect": true },
+        { "text": "4905 kW", "isCorrect": false },
+        { "text": "5450 kW", "isCorrect": false },
+        { "text": "4500 kW", "isCorrect": false }
+      ],
+      "explanation": "Power $P = \\eta \\gamma Q H = 0.90 \\times 9.81 \\text{ kN/m}^3 \\times 10 \\text{ m}^3/\\text{s} \\times 50 \\text{ m} = 4414.5 \\text{ kW}$."
+    }
+  ]
+}

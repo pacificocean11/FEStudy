@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Logic gates</strong> are the fundamental building blocks of digital circuits and control systems. They perform basic logical functions that are fundamental to digital circuits. Logic gates take one or more binary inputs (0 or 1, low or high) and produce a single binary output.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Basic Logic Gates</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>AND Gate:</strong> Output is High (1) only if all inputs are High (1).</li>\n    <li><strong>OR Gate:</strong> Output is High (1) if at least one input is High (1).</li>\n    <li><strong>NOT Gate (Inverter):</strong> Output is the inverse of the input (0 becomes 1, 1 becomes 0).</li>\n    <li><strong>NAND Gate (NOT-AND):</strong> Output is Low (0) only if all inputs are High (1). It is the inverse of an AND gate.</li>\n    <li><strong>NOR Gate (NOT-OR):</strong> Output is High (1) only if all inputs are Low (0). It is the inverse of an OR gate.</li>\n    <li><strong>XOR Gate (Exclusive-OR):</strong> Output is High (1) if the inputs are different (one is 1 and the other is 0).</li>\n    <li><strong>XNOR Gate (Exclusive-NOR):</strong> Output is High (1) if the inputs are the same.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Truth Tables</h3>\n<p class=\"mb-4\">A truth table is a mathematical table used in logic to compute the functional values of logical expressions. It lists all possible combinations of inputs and the corresponding output.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An AND gate has inputs A and B. If A=1 and B=0, what is the output?",
+      "options": [
+        { "text": "0", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "High", "isCorrect": false },
+        { "text": "Undefined", "isCorrect": false }
+      ],
+      "explanation": "For an AND gate, the output is High (1) only if ALL inputs are High (1). Since one input is 0, the output is 0."
+    },
+    {
+      "question": "Which logic gate produces a High (1) output only when both inputs are Low (0)?",
+      "options": [
+        { "text": "NAND", "isCorrect": false },
+        { "text": "NOR", "isCorrect": true },
+        { "text": "XOR", "isCorrect": false },
+        { "text": "OR", "isCorrect": false }
+      ],
+      "explanation": "An OR gate produces a Low output only when both inputs are Low. A NOR gate is the inverse of an OR gate, so it produces a High output only when both inputs are Low."
+    }
+  ]
+}

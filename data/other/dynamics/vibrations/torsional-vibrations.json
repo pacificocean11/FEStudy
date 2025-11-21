@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Torsional vibration is the angular oscillation of a body, such as a shaft or disk, about its axis. It is analogous to linear vibration, but the variables are angular instead of linear.</p>\n<table class=\"w-full text-left border-collapse mb-4\">\n  <thead>\n    <tr>\n      <th class=\"border p-2 font-semibold\">Linear Vibration</th>\n      <th class=\"border p-2 font-semibold\">Torsional Vibration</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"border p-2\">Position ($x$)</td>\n      <td class=\"border p-2\">Angular Position ($\\theta$)</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2\">Mass ($m$)</td>\n      <td class=\"border p-2\">Mass Moment of Inertia ($J$ or $I$)</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2\">Spring Stiffness ($k$)</td>\n      <td class=\"border p-2\">Torsional Stiffness ($k_t$)</td>\n    </tr>\n    <tr>\n      <td class=\"border p-2\">Force ($F$)</td>\n      <td class=\"border p-2\">Torque ($T$)</td>\n    </tr>\n  </tbody>\n</table>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equation of Motion</h3>\n<p class=\"mb-4\">For an undamped free torsional system (e.g., a disk on a shaft), the equation of motion is:</p>\n$$J\\ddot{\\theta} + k_t\\theta = 0$$\n<p class=\"mb-4\">This is analogous to $m\\ddot{x} + kx = 0$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Natural Frequency</h3>\n<p class=\"mb-4\">The natural frequency of torsional vibration is given by a formula similar to the linear case:</p>\n$$\\omega_n = \\sqrt{\\frac{k_t}{J}}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$J$ is the mass moment of inertia of the oscillating body (kg·m²).</li>\n    <li>$k_t$ is the torsional stiffness of the shaft (N·m/rad). For a solid circular shaft, $k_t = \\frac{GJ_{shaft}}{L}$, where $G$ is the shear modulus, $J_{shaft}$ is the polar moment of inertia of the shaft's cross-section, and $L$ is the length.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A solid disk with a mass moment of inertia of 2 kg·m² is attached to a shaft with a torsional stiffness of 800 N·m/rad. What is the natural frequency of torsional vibration?",
+      "options": [
+        { "text": "400 rad/s", "isCorrect": false },
+        { "text": "20 rad/s", "isCorrect": true },
+        { "text": "10 rad/s", "isCorrect": false },
+        { "text": "40 rad/s", "isCorrect": false }
+      ],
+      "explanation": "The natural frequency is $\\omega_n = \\sqrt{\\frac{k_t}{J}} = \\sqrt{\\frac{800 \\text{ N·m/rad}}{2 \\text{ kg·m²}}} = \\sqrt{400} = 20$ rad/s."
+    },
+    {
+      "question": "If the moment of inertia of the disk in a torsional system is quadrupled, how does the natural frequency change?",
+      "options": [
+        { "text": "It is halved.", "isCorrect": true },
+        { "text": "It is doubled.", "isCorrect": false },
+        { "text": "It is quadrupled.", "isCorrect": false },
+        { "text": "It decreases by a factor of 4.", "isCorrect": false }
+      ],
+      "explanation": "The natural frequency $\\omega_n$ is proportional to $\\frac{1}{\\sqrt{J}}$. If $J$ becomes $4J$, the new frequency will be proportional to $\\frac{1}{\\sqrt{4J}} = \\frac{1}{2\\sqrt{J}}$, which is half of the original frequency."
+    }
+  ]
+}

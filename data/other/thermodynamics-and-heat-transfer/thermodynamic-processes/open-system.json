@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An <strong>open system</strong> (or control volume) is a thermodynamic system where both mass and energy can cross the boundary. This is in contrast to a closed system, where only energy can cross the boundary.</p>\n<p class=\"mb-4\">Common examples of open systems include pumps, turbines, nozzles, diffusers, heat exchangers, and pipes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Conservation of Mass</h3>\n<p class=\"mb-4\">For an open system, the principle of conservation of mass states that the rate of change of mass within the control volume is equal to the net rate of mass flow into the system.</p>\n$$ \\frac{dm_{CV}}{dt} = \\sum \\dot{m}_{in} - \\sum \\dot{m}_{out} $$\n<p class=\"mb-4\">For a <strong>steady-flow process</strong> (where conditions within the control volume do not change with time), the mass within the control volume is constant ($dm_{CV}/dt = 0$). Therefore, the total mass entering equals the total mass leaving.</p>\n$$ \\sum \\dot{m}_{in} = \\sum \\dot{m}_{out} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Mass Flow Rate</h3>\n<p class=\"mb-4\">The mass flow rate ($\dot{m}$) is calculated as:</p>\n$$ \\dot{m} = \\rho A V = \\frac{AV}{v} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\rho$: Density of the fluid.</li>\n    <li>$A$: Cross-sectional area of flow.</li>\n    <li>$V$: Average flow velocity.</li>\n    <li>$v$: Specific volume ($1/\\rho$).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is a defining characteristic of an open thermodynamic system?",
+      "options": [
+        { "text": "No heat transfer occurs.", "isCorrect": false },
+        { "text": "Mass can cross the system boundary.", "isCorrect": true },
+        { "text": "Volume must remain constant.", "isCorrect": false },
+        { "text": "Only work can cross the system boundary.", "isCorrect": false }
+      ],
+      "explanation": "An open system, or control volume, allows both mass and energy to transfer across its boundary. A closed system allows energy transfer but not mass transfer."
+    },
+    {
+      "question": "Water flows steadily through a pipe. At the inlet, the mass flow rate is 10 kg/s. What is the mass flow rate at the outlet?",
+      "options": [
+        { "text": "10 kg/s", "isCorrect": true },
+        { "text": "Less than 10 kg/s", "isCorrect": false },
+        { "text": "Greater than 10 kg/s", "isCorrect": false },
+        { "text": "It depends on the pressure change.", "isCorrect": false }
+      ],
+      "explanation": "For a steady-flow process, mass is conserved. The total mass entering the system must equal the total mass leaving the system. Therefore, $\\dot{m}_{in} = \\dot{m}_{out} = 10$ kg/s."
+    }
+  ]
+}

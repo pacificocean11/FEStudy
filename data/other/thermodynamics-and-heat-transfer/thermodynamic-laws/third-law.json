@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Third Law of Thermodynamics</strong> relates to the behavior of systems as their temperature approaches absolute zero. It provides a definitive baseline for the determination of entropy.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Statement of the Third Law</h3>\n<p class=\"mb-4\">The law states:</p>\n<blockquote class=\"border-l-4 border-slate-300 pl-4 italic my-4\">\n    The entropy of a perfect crystal at absolute zero (0 Kelvin) is exactly equal to zero.\n</blockquote>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Explanation</h3>\n<p class=\"mb-4\">Entropy is a measure of disorder or randomness. At absolute zero, a perfect crystal has a perfectly ordered, unique ground state. All the atoms are in a fixed, regular lattice and have minimal vibrational energy. Since there is only one possible microscopic arrangement for the system, the disorder is zero, and thus the entropy is zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Implication: Unattainability of Absolute Zero</h3>\n<p class=\"mb-4\">An important consequence of the Third Law is that it is impossible for any process, no matter how idealized, to reduce the temperature of a system to absolute zero in a finite number of finite steps. As a system approaches absolute zero, the amount of work required to extract a given amount of heat becomes infinitely large.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "According to the Third Law of Thermodynamics, the entropy of a perfect crystal at 0 Kelvin is:",
+      "options": [
+        { "text": "Infinite", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "A negative value", "isCorrect": false },
+        { "text": "Dependent on the material", "isCorrect": false }
+      ],
+      "explanation": "The Third Law provides an absolute reference point for entropy, stating that a perfectly ordered crystal at the minimum possible temperature (absolute zero) has zero entropy."
+    },
+    {
+      "question": "Which of the following statements is a direct consequence of the Third Law of Thermodynamics?",
+      "options": [
+        { "text": "Energy cannot be created or destroyed.", "isCorrect": false },
+        { "text": "Heat flows spontaneously from hot to cold.", "isCorrect": false },
+        { "text": "The efficiency of a heat engine cannot be 100%.", "isCorrect": false },
+        { "text": "It is impossible to reach a temperature of absolute zero.", "isCorrect": true }
+      ],
+      "explanation": "The unattainability of absolute zero is a key corollary of the Third Law. As a system's temperature approaches 0 K, its entropy approaches zero, and the process of removing further heat to cool it down becomes progressively, and ultimately infinitely, difficult."
+    }
+  ]
+}

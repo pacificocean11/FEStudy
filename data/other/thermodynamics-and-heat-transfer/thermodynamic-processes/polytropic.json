@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A polytropic process is a generalized thermodynamic process that follows the relation:</p>\n$$PV^n = \\text{constant}$$\n<p class=\"mb-4\">where $n$ is the polytropic index, which can be any real number. This single equation can be used to describe a wide range of processes by changing the value of $n$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Special Cases</h3>\n<p class=\"mb-4\">The polytropic process includes other common processes as special cases:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$n = 0$: $PV^0 = P = \\text{constant}$ (<strong>Isobaric</strong> process)</li>\n    <li>$n = 1$: $PV^1 = PV = \\text{constant}$ (<strong>Isothermal</strong> process for an ideal gas)</li>\n    <li>$n = k$: $PV^k = \\text{constant}$ (<strong>Adiabatic</strong> process for an ideal gas, where $k=c_p/c_v$)</li>\n    <li>$n \\to \\infty$: (<strong>Isochoric</strong> process)</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Work Done</h3>\n<p class=\"mb-4\">The work done during a polytropic process is given by:</p>\n$$W = \\frac{P_2V_2 - P_1V_1}{1-n} \\quad \\text{(for } n \\neq 1\\text{)}$$\n<p class=\"mb-4\">For the case where $n=1$ (isothermal), the work formula is $W = P_1V_1 \\ln(V_2/V_1)$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A polytropic process with an index $n=0$ is also known as what type of process?",
+      "options": [
+        { "text": "Isothermal", "isCorrect": false },
+        { "text": "Isobaric", "isCorrect": true },
+        { "text": "Isochoric", "isCorrect": false },
+        { "text": "Adiabatic", "isCorrect": false }
+      ],
+      "explanation": "If $n=0$, the polytropic relation $PV^n = C$ becomes $PV^0 = P(1) = P = C$. This means the pressure is constant, which is the definition of an isobaric process."
+    },
+    {
+      "question": "For an ideal gas, an adiabatic process is a polytropic process with the index $n$ equal to what?",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "infinity", "isCorrect": false },
+        { "text": "$k$ (the specific heat ratio)", "isCorrect": true }
+      ],
+      "explanation": "A reversible adiabatic process for an ideal gas is described by the relation $PV^k = C$, where $k=c_p/c_v$. This is a special case of the polytropic relation $PV^n = C$ with $n=k$."
+    }
+  ]
+}

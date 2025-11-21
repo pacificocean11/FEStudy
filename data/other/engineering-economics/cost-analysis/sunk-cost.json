@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>sunk cost</strong> is a cost that has already been incurred and cannot be recovered. Sunk costs are in the past and are independent of any future events.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Sunk Cost Fallacy</h3>\n<p class=\"mb-4\">The most important principle regarding sunk costs is that they are <strong>irrelevant to future decisions</strong>. Rational economic decisions should be based only on future costs and benefits.</p>\n<p class=\"mb-4\">Continuing a project or investment just because you have already invested a lot of money in it is a common logical error known as the \"sunk cost fallacy\" or \"throwing good money after bad\". The decision to continue should only be based on the project's future prospects (future costs vs. future benefits), not on what has already been spent.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Examples</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The money spent on a geotechnical investigation for a site where a project is later canceled.</li>\n    <li>The cost of formwork that was built for a concrete pour that has already been completed.</li>\n    <li>The purchase price of an old piece of equipment when deciding whether to replace it with a new, more efficient model.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A construction company spent $100,000 on the foundation for a new building. Due to a sudden economic downturn, they now project that completing the building will result in a net loss of $500,000. What is the economically rational decision?",
+      "options": [
+        { "text": "Complete the building to avoid wasting the $100,000 already spent.", "isCorrect": false },
+        { "text": "Abandon the project to avoid further losses.", "isCorrect": true },
+        { "text": "Invest more money in marketing for the building.", "isCorrect": false },
+        { "text": "Complete the building because the foundation is a valuable asset.", "isCorrect": false }
+      ],
+      "explanation": "The $100,000 spent on the foundation is a sunk cost and should be ignored when making the future decision. The choice is now between losing an additional $500,000 or losing $0 more. The rational choice is to abandon the project to cut future losses."
+    },
+    {
+      "question": "When evaluating whether to repair an old piece of construction equipment or buy a new one, which of the following is a sunk cost and should be ignored in the analysis?",
+      "options": [
+        { "text": "The future maintenance cost of the old equipment.", "isCorrect": false },
+        { "text": "The purchase price of the new equipment.", "isCorrect": false },
+        { "text": "The original purchase price of the old equipment.", "isCorrect": true },
+        { "text": "The trade-in value of the old equipment.", "isCorrect": false }
+      ],
+      "explanation": "The original purchase price of the old equipment is a past, irrecoverable cost and is therefore a sunk cost. The decision to repair or replace should only be based on future costs and benefits, such as the repair cost, future operating costs, the new purchase price, and the trade-in (salvage) value of the old machine."
+    }
+  ]
+}

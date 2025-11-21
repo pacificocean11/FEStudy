@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Fittings</h3>\n<p class=\"mb-4\">Fittings such as elbows, tees, unions, and reducers allow for changes in pipe direction, size, or branching. Like valves, they introduce <strong>minor losses</strong> into the system.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Loss Calculation</h3>\n<p class=\"mb-4\">The head loss is calculated using the same formula as for valves:</p>\n$$ h_L = K \\frac{v^2}{2g} $$\n<p class=\"mb-4\">Common $K$ values (approximate):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Standard 90° Elbow: $K \\approx 0.9$</li>\n    <li>Long Radius 90° Elbow: $K \\approx 0.6$</li>\n    <li>45° Elbow: $K \\approx 0.4$</li>\n    <li>Tee (flow through run): $K \\approx 0.2$</li>\n    <li>Tee (flow through branch): $K \\approx 1.8$</li>\n</ul>\n<p class=\"mb-4\">Alternatively, losses can be calculated using the <strong>Equivalent Length ($L_{eq}$)</strong> method, where the fitting is treated as an equivalent length of straight pipe: $h_L = f \\frac{L_{eq}}{D} \\frac{v^2}{2g}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a piping system, flow through the branch of a tee fitting typically results in:",
+      "options": [
+        { "text": "Lower head loss than flow straight through the run.", "isCorrect": false },
+        { "text": "Higher head loss than flow straight through the run.", "isCorrect": true },
+        { "text": "The same head loss as flow straight through the run.", "isCorrect": false },
+        { "text": "Zero head loss.", "isCorrect": false }
+      ],
+      "explanation": "Making a 90-degree turn to exit through the branch of a tee causes significant turbulence and separation, resulting in a much higher loss coefficient (K) compared to flow continuing straight through the run of the tee."
+    },
+    {
+      "question": "The 'Equivalent Length' of a fitting represents:",
+      "options": [
+        { "text": "The physical length of the fitting.", "isCorrect": false },
+        { "text": "The length of straight pipe that would produce the same head loss as the fitting.", "isCorrect": true },
+        { "text": "The diameter of the fitting.", "isCorrect": false },
+        { "text": "The length of the system minus the fitting.", "isCorrect": false }
+      ],
+      "explanation": "The equivalent length method simplifies calculations by replacing a fitting with a length of pipe that generates an identical pressure drop due to friction."
+    }
+  ]
+}

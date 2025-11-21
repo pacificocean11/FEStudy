@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Parallel Axis Theorem</strong> allows you to calculate the moment of inertia of an area about *any* axis, as long as you know the moment of inertia about a parallel axis passing through the centroid.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n$$ I = \\bar{I} + Ad^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$I$: Moment of inertia about the new, arbitrary axis.</li>\n    <li>$\\bar{I}$ (or $I_c$): Moment of inertia about the centroidal axis.</li>\n    <li>$A$: Total area of the shape.</li>\n    <li>$d$: Perpendicular distance between the centroidal axis and the new axis.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Important Note</h3>\n<p class=\"mb-4\">You cannot transfer inertia directly between two non-centroidal axes. You must transfer from axis 1 to the centroid, and then from the centroid to axis 2.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The centroidal moment of inertia of a circle is $\\bar{I} = 100$ in^4. The area is 10 in^2. What is the moment of inertia about a parallel axis located 5 inches away from the centroid?",
+      "options": [
+        { "text": "150 in^4", "isCorrect": false },
+        { "text": "350 in^4", "isCorrect": true },
+        { "text": "125 in^4", "isCorrect": false },
+        { "text": "600 in^4", "isCorrect": false }
+      ],
+      "explanation": "Use the parallel axis theorem: $I = \\bar{I} + Ad^2$. Here, $\\bar{I}=100$, $A=10$, $d=5$. $I = 100 + 10(5^2) = 100 + 10(25) = 100 + 250 = 350$ in^4."
+    },
+    {
+      "question": "Why is the moment of inertia about the centroidal axis always the minimum moment of inertia?",
+      "options": [
+        { "text": "Because the Parallel Axis Theorem adds a positive term ($Ad^2$) to the centroidal inertia.", "isCorrect": true },
+        { "text": "It isn't; inertia can be smaller about an edge.", "isCorrect": false },
+        { "text": "Because the area is smallest at the centroid.", "isCorrect": false },
+        { "text": "Because $d$ is zero only at the centroid.", "isCorrect": false }
+      ],
+      "explanation": "The formula $I = \\bar{I} + Ad^2$ shows that any shift away from the centroid ($d > 0$) adds the positive quantity $Ad^2$ to the centroidal inertia. Thus, $\\bar{I}$ is the minimum possible value."
+    }
+  ]
+}

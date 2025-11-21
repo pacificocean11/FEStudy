@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Temperature-Entropy (T-s) diagram</strong> is a fundamental tool in thermodynamics for visualizing and analyzing energy transfer during processes and cycles. The vertical axis represents Absolute Temperature ($T$) and the horizontal axis represents Specific Entropy ($s$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Feature: Heat Transfer</h3>\n<p class=\"mb-4\">The most significant feature of a T-s diagram is that for any <strong>internally reversible process</strong>, the area under the process curve represents the heat transferred per unit mass.</p>\n$$ q_{rev} = \\int_{1}^{2} T ds $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If the process moves to the right (increasing $s$), heat is added to the system ($q > 0$).</li>\n    <li>If the process moves to the left (decreasing $s$), heat is rejected from the system ($q < 0$).</li>\n</ul>\n<p class=\"mb-4\">For a reversible <strong>cycle</strong>, the area enclosed by the cycle path represents the net heat transfer, which is also equal to the net work done ($q_{net} = w_{net}$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Processes on T-s Diagram</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Isentropic Process ($\\Delta s = 0$):</strong> A reversible adiabatic process appears as a vertical line.</li>\n    <li><strong>Isothermal Process ($\\Delta T = 0$):</strong> A constant temperature process appears as a horizontal line.</li>\n</ul>\n<p class=\"mb-4\">The T-s diagram also typically includes the saturation dome (liquid-vapor region). The peak of the dome is the critical point. To the left is the saturated liquid line, and to the right is the saturated vapor line.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a T-s diagram, what does the area under the curve of a reversible process represent?",
+      "options": [
+        { "text": "Work done", "isCorrect": false },
+        { "text": "Change in enthalpy", "isCorrect": false },
+        { "text": "Heat transfer", "isCorrect": true },
+        { "text": "Change in internal energy", "isCorrect": false }
+      ],
+      "explanation": "For a reversible process, $dQ = T ds$. Therefore, the integral $\\int T ds$, which corresponds to the area under the curve on a T-s plot, represents the total heat transfer $Q$."
+    },
+    {
+      "question": "An isentropic expansion of steam in a turbine would appear as what kind of line on a T-s diagram?",
+      "options": [
+        { "text": "Horizontal line", "isCorrect": false },
+        { "text": "Vertical line moving down", "isCorrect": true },
+        { "text": "Vertical line moving up", "isCorrect": false },
+        { "text": "Curved line", "isCorrect": false }
+      ],
+      "explanation": "Isentropic means constant entropy ($s_1 = s_2$). On a T-s diagram, this is a vertical line. Since it is an expansion, the temperature and pressure typically drop, so the line goes downwards."
+    }
+  ]
+}

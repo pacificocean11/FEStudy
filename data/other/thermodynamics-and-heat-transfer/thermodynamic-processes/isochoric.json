@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An isochoric process (also called a constant-volume process, isometric process, or isovolumetric process) is a thermodynamic process during which the volume of the closed system undergoing such a process remains constant.</p>\n<p class=\"mb-4\">Since the volume does not change, $\\Delta V = 0$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Work Done</h3>\n<p class=\"mb-4\">The work done by the system is given by $W = \\int P dV$. Since the volume is constant, $dV=0$, and therefore the work done during an isochoric process is zero.</p>\n$$W = 0$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. First Law of Thermodynamics</h3>\n<p class=\"mb-4\">The first law is $\\Delta U = Q - W$. Since work is zero for an isochoric process, the equation simplifies:</p>\n$$\\Delta U = Q$$\n<p class=\"mb-4\">This means that all the heat transferred to the system ($Q$) goes into increasing its internal energy ($\\Delta U$). For an ideal gas, the change in internal energy is given by $\\Delta U = m c_v \\Delta T$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. P-V Diagram</h3>\n<p class=\"mb-4\">On a Pressure-Volume (P-V) diagram, an isochoric process appears as a vertical straight line.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "During an isochoric process, which property of the system remains constant?",
+      "options": [
+        { "text": "Pressure", "isCorrect": false },
+        { "text": "Temperature", "isCorrect": false },
+        { "text": "Volume", "isCorrect": true },
+        { "text": "Enthalpy", "isCorrect": false }
+      ],
+      "explanation": "The definition of an isochoric process is one that occurs at constant volume."
+    },
+    {
+      "question": "A closed, rigid container is heated. How much work is done by the gas inside the container?",
+      "options": [
+        { "text": "It is positive.", "isCorrect": false },
+        { "text": "It is negative.", "isCorrect": false },
+        { "text": "It is zero.", "isCorrect": true },
+        { "text": "It depends on the temperature change.", "isCorrect": false }
+      ],
+      "explanation": "A rigid container implies that the volume cannot change. Work done is calculated as the integral of P dV. Since the change in volume (dV) is zero, no work is done."
+    },
+    {
+      "question": "In an isochoric process, 500 J of heat is added to a system. What is the change in the system's internal energy?",
+      "options": [
+        { "text": "500 J", "isCorrect": true },
+        { "text": "-500 J", "isCorrect": false },
+        { "text": "0 J", "isCorrect": false },
+        { "text": "Cannot be determined", "isCorrect": false }
+      ],
+      "explanation": "For an isochoric process, the First Law of Thermodynamics simplifies to $\\Delta U = Q$. Therefore, the change in internal energy is equal to the heat added, which is 500 J."
+    }
+  ]
+}

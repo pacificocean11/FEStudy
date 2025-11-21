@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Steady Flow Energy Equation (SFEE)</h3>\n<p class=\"mb-4\">The <strong>Steady Flow Energy Equation</strong> is the statement of the First Law of Thermodynamics for an open system undergoing a steady-flow process. In a steady-flow process, the properties of the fluid at any point within the control volume do not change with time.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Equation</h3>\n<p class=\"mb-4\">The SFEE states that the rate of energy transfer into the system (by heat, work, and mass) is equal to the rate of energy transfer out of the system.</p>\n$$ \\dot{Q} - \\dot{W} = \\sum \\dot{m}_{out} \\left( h_{out} + \\frac{V_{out}^2}{2} + g z_{out} \\right) - \\sum \\dot{m}_{in} \\left( h_{in} + \\frac{V_{in}^2}{2} + g z_{in} \\right) $$\n<p class=\"mb-4\">For a system with a single inlet (1) and single outlet (2):</p>\n$$ \\dot{Q} - \\dot{W} = \\dot{m} \\left[ (h_2 - h_1) + \\frac{V_2^2 - V_1^2}{2} + g(z_2 - z_1) \\right] $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\dot{Q}$: Net heat transfer rate <em>into</em> the system.</li>\n    <li>$\\dot{W}$: Net work rate (power) done <em>by</em> the system (shaft work).</li>\n    <li>$h$: Enthalpy per unit mass.</li>\n    <li>$V^2/2$: Kinetic energy per unit mass.</li>\n    <li>$gz$: Potential energy per unit mass.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Applications</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Nozzles and Diffusers:</strong> $\\dot{Q} \\approx 0$, $\\dot{W} = 0$, $\\Delta PE \\approx 0$. The equation simplifies to $\\Delta h + \\Delta KE = 0$.</li>\n    <li><strong>Turbines:</strong> $\\dot{Q} \\approx 0$ (adiabatic), $\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$. Work output is derived from the enthalpy drop: $\\dot{W} = \\dot{m}(h_1 - h_2)$.</li>\n    <li><strong>Pumps and Compressors:</strong> Similar to turbines but work is input. $\\dot{W}_{in} = \\dot{m}(h_2 - h_1)$.</li>\n    <li><strong>Throttling Valves:</strong> $\\dot{Q} \\approx 0$, $\\dot{W} = 0$, $\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$. This is an isenthalpic process: $h_1 = h_2$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Steam enters an adiabatic turbine with an enthalpy of 3200 kJ/kg and leaves with an enthalpy of 2100 kJ/kg. If the mass flow rate is 2 kg/s, what is the power output of the turbine? (Neglect kinetic and potential energy changes).",
+      "options": [
+        { "text": "1100 kW", "isCorrect": false },
+        { "text": "2200 kW", "isCorrect": true },
+        { "text": "550 kW", "isCorrect": false },
+        { "text": "6400 kW", "isCorrect": false }
+      ],
+      "explanation": "For an adiabatic turbine ($\\dot{Q}=0$) with negligible KE and PE changes, the SFEE simplifies to $\\dot{W} = \\dot{m}(h_{in} - h_{out})$.\n$\\dot{W} = (2 \\text{ kg/s})(3200 \\text{ kJ/kg} - 2100 \\text{ kJ/kg}) = 2(1100) = 2200$ kW."
+    },
+    {
+      "question": "For a throttling valve (like an expansion valve in a refrigeration cycle), which property remains approximately constant across the device?",
+      "options": [
+        { "text": "Pressure", "isCorrect": false },
+        { "text": "Temperature", "isCorrect": false },
+        { "text": "Entropy", "isCorrect": false },
+        { "text": "Enthalpy", "isCorrect": true }
+      ],
+      "explanation": "A throttling process involves no work ($\u1E87 = 0$), is adiabatic ($\u1E46 \\approx 0$), and has negligible changes in KE and PE. The SFEE reduces to $h_1 = h_2$. Thus, it is an isenthalpic (constant enthalpy) process."
+    }
+  ]
+}

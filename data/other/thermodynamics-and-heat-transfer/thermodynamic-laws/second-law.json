@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Second Law of Thermodynamics</strong> is a fundamental law of nature that deals with the direction of natural processes. It asserts that processes occur in a certain direction and that energy has quality as well as quantity. The First Law places no restriction on the direction of a process, but the Second Law provides the necessary constraint.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Statements of the Second Law</h3>\n<p class=\"mb-4\">There are two classic statements of the Second Law, which are equivalent:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Kelvin-Planck Statement:</strong> 'It is impossible for any device that operates on a cycle to receive heat from a single reservoir and produce a net amount of work.' This statement is the basis for concluding that no heat engine can have a thermal efficiency of 100%.</li>\n    <li><strong>Clausius Statement:</strong> 'It is impossible to construct a device that operates in a cycle and produces no effect other than the transfer of heat from a lower-temperature body to a higher-temperature body.' This means that heat does not spontaneously flow from a cold object to a hot object; work is required to make this happen (as in a refrigerator).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Entropy</h3>\n<p class=\"mb-4\">The Second Law also introduces the property of <strong>entropy (S)</strong>, which is a measure of the disorder or randomness of a system. A more general statement of the Second Law is the <strong>principle of increasing entropy</strong>:</p>\n<blockquote class=\"border-l-4 border-slate-300 pl-4 italic my-4\">\n    The entropy of an isolated system always increases over time, or remains constant in ideal cases where the process is reversible.\n</blockquote>\n$$ \\Delta S_{isolated} \\ge 0 $$\n<p class=\"mb-4\">This law dictates that natural processes always tend to move towards a state of greater disorder.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Second Law of Thermodynamics states that the efficiency of a heat engine can never be:",
+      "options": [
+        { "text": "Greater than 50%", "isCorrect": false },
+        { "text": "Equal to 100%", "isCorrect": true },
+        { "text": "Less than the Carnot efficiency", "isCorrect": false },
+        { "text": "Negative", "isCorrect": false }
+      ],
+      "explanation": "The Kelvin-Planck statement of the Second Law implies that a heat engine must reject some heat to a low-temperature reservoir. It cannot convert all of the heat it receives into work. Therefore, its efficiency must be less than 100%."
+    },
+    {
+      "question": "According to the Second Law of Thermodynamics, what happens to the total entropy of an isolated system?",
+      "options": [
+        { "text": "It always decreases.", "isCorrect": false },
+        { "text": "It always remains constant.", "isCorrect": false },
+        { "text": "It can never decrease.", "isCorrect": true },
+        { "text": "It is not defined.", "isCorrect": false }
+      ],
+      "explanation": "The principle of increasing entropy states that for any process occurring in an isolated system, the change in entropy is greater than or equal to zero. It can only remain constant for an idealized reversible process; for all real (irreversible) processes, it increases."
+    }
+  ]
+}

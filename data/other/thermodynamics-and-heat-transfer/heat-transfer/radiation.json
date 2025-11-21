@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Radiation</strong> is the energy emitted by matter in the form of electromagnetic waves (or photons) as a result of the changes in the electronic configurations of the atoms or molecules. Unlike conduction and convection, radiation does not require a medium; it can occur in a vacuum.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Stefan-Boltzmann Law</h3>\n<p class=\"mb-4\">The maximum rate of radiation that can be emitted from a surface at a thermodynamic temperature $T$ (in Kelvin) is given by the Stefan-Boltzmann law for a <strong>black body</strong> (an idealized perfect emitter):</p>\n$$ E_b = \\sigma A T^4 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sigma$: Stefan-Boltzmann constant ($5.67 \\times 10^{-8} \\text{ W/m}^2\\text{K}^4$).</li>\n    <li>$A$: Surface area.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Emissivity and Gray Bodies</h3>\n<p class=\"mb-4\">Real surfaces emit less radiation than a black body at the same temperature. The ratio of the actual emission to the black body emission is called the <strong>emissivity ($\\epsilon$)</strong>.</p>\n$$ E = \\epsilon \\sigma A T^4 $$\n<p class=\"mb-4\">Emissivity ranges from 0 to 1. A \"gray body\" has an emissivity that is constant regardless of wavelength.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Net Radiation Heat Transfer</h3>\n<p class=\"mb-4\">The net rate of radiation heat transfer between a surface of emissivity $\\epsilon$ and area $A$ at temperature $T_s$, and a much larger surrounding surface at temperature $T_{surr}$, is:</p>\n$$ q_{rad} = \\epsilon \\sigma A (T_s^4 - T_{surr}^4) $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Radiation heat transfer is proportional to the temperature raised to what power?",
+      "options": [
+        { "text": "First power ($T$)", "isCorrect": false },
+        { "text": "Second power ($T^2$)", "isCorrect": false },
+        { "text": "Third power ($T^3$)", "isCorrect": false },
+        { "text": "Fourth power ($T^4$)", "isCorrect": true }
+      ],
+      "explanation": "According to the Stefan-Boltzmann law ($E = \\epsilon \\sigma A T^4$), the emissive power of a surface is proportional to the fourth power of its absolute temperature."
+    },
+    {
+      "question": "Calculate the net radiation heat transfer from a person with a surface area of 1.8 m², surface temperature of 30°C, and emissivity of 0.95, standing in a room where the surrounding surfaces are at 20°C. ($\\sigma = 5.67 \\times 10^{-8}$ W/m²K⁴)",
+      "options": [
+        { "text": "105 W", "isCorrect": true },
+        { "text": "50 W", "isCorrect": false },
+        { "text": "200 W", "isCorrect": false },
+        { "text": "10 W", "isCorrect": false }
+      ],
+      "explanation": "First, convert temperatures to Kelvin: $T_s = 30+273 = 303$ K, $T_{surr} = 20+273 = 293$ K.\nUse the formula: $q = \\epsilon \\sigma A (T_s^4 - T_{surr}^4)$.\n$q = (0.95)(5.67 \\times 10^{-8})(1.8)(303^4 - 293^4)$\n$q = (9.6957 \\times 10^{-8}) (8.428 \\times 10^9 - 7.370 \\times 10^9)$\n$q = (9.6957 \\times 10^{-8}) (1.058 \\times 10^9) \\approx 102.6$ W. Closest answer is 105 W."
+    }
+  ]
+}

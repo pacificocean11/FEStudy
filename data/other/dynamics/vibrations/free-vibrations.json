@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Undamped Free Vibration</h3>\n<p class=\"mb-4\">This is the simplest form of vibration, representing a system that oscillates indefinitely without any energy loss once set in motion. It's modeled as a mass-spring system.</p>\n<p class=\"mb-4\">The equation of motion is:</p>\n$$m\\ddot{x} + kx = 0$$\n<p class=\"mb-4\">The solution describes simple harmonic motion, $x(t) = A\\sin(\\omega_n t + \\phi)$, where:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Natural Frequency ($\\omega_n$):</strong> The frequency at which the system oscillates without damping.</li>\n    $$\\omega_n = \\sqrt{\\frac{k}{m}}$$\n    <li>$k$ is the spring stiffness (N/m), and $m$ is the mass (kg).</li>\n    <li>The period of oscillation is $T = 2\\pi/\\omega_n$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Damped Free Vibration</h3>\n<p class=\"mb-4\">In real systems, energy is dissipated by forces like friction. This is modeled by adding a viscous damper (dashpot) with damping coefficient $c$.</p>\n<p class=\"mb-4\">The equation of motion is:</p>\n$$m\\ddot{x} + c\\dot{x} + kx = 0$$\n<p class=\"mb-4\">The behavior depends on the <strong>damping ratio ($\\zeta$)</strong>, which compares the actual damping to the critical damping value:</p>\n$$\\zeta = \\frac{c}{c_{cr}} = \\frac{c}{2\\sqrt{km}} = \\frac{c}{2m\\omega_n}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Underdamped ($\\zeta < 1$):</strong> The system oscillates with a decaying amplitude. This is the most common case of vibration. The damped natural frequency is $\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}$.</li>\n    <li><strong>Critically Damped ($\\zeta = 1$):</strong> The system returns to equilibrium as quickly as possible without oscillating.</li>\n    <li><strong>Overdamped ($\\zeta > 1$):</strong> The system returns to equilibrium slowly without oscillating.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 10 kg mass is attached to a spring with a stiffness of 1000 N/m. What is the natural frequency of the system?",
+      "options": [
+        { "text": "10 rad/s", "isCorrect": true },
+        { "text": "100 rad/s", "isCorrect": false },
+        { "text": "0.1 rad/s", "isCorrect": false },
+        { "text": "31.6 rad/s", "isCorrect": false }
+      ],
+      "explanation": "The natural frequency is given by $\\omega_n = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{1000 \\text{ N/m}}{10 \\text{ kg}}} = \\sqrt{100} = 10$ rad/s."
+    },
+    {
+      "question": "A system has a mass of 2 kg, a spring constant of 200 N/m, and a damping coefficient of 40 N·s/m. What is the damping ratio ($\\zeta$)?",
+      "options": [
+        { "text": "0.5", "isCorrect": false },
+        { "text": "1.0", "isCorrect": true },
+        { "text": "2.0", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "First, find the critical damping coefficient: $c_{cr} = 2\\sqrt{km} = 2\\sqrt{(200)(2)} = 2\\sqrt{400} = 2(20) = 40$ N·s/m. The damping ratio is $\\zeta = \\frac{c}{c_{cr}} = \\frac{40}{40} = 1.0$."
+    },
+    {
+      "question": "Based on the damping ratio of 1.0 from the previous question, how would you classify the system's behavior?",
+      "options": [
+        { "text": "Underdamped", "isCorrect": false },
+        { "text": "Overdamped", "isCorrect": false },
+        { "text": "Critically Damped", "isCorrect": true },
+        { "text": "Undamped", "isCorrect": false }
+      ],
+      "explanation": "A damping ratio of $\\zeta = 1$ means the system is critically damped. It will return to equilibrium in the fastest possible time without any oscillation."
+    }
+  ]
+}

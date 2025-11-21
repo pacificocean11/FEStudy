@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Linear Impulse</h3>\n<p class=\"mb-4\">Linear impulse is the effect of a force acting over time. It is defined as the integral of force with respect to time:</p>\n$$ \\mathbf{J} = \\int_{t_1}^{t_2} \\mathbf{F} dt $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Linear Impulse and Momentum</h3>\n<p class=\"mb-4\">This principle states that the linear impulse applied to a particle (or system) is equal to the change in its linear momentum.</p>\n$$ m\\mathbf{v}_1 + \\int_{t_1}^{t_2} \\mathbf{F} dt = m\\mathbf{v}_2 $$\n<p class=\"mb-4\">Initial Momentum + Impulse = Final Momentum</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Angular Impulse and Momentum</h3>\n<p class=\"mb-4\">Similarly, the angular impulse (moment integrated over time) is equal to the change in angular momentum.</p>\n$$ I\\omega_1 + \\int_{t_1}^{t_2} M dt = I\\omega_2 $$\n<p class=\"mb-4\">This principle is very useful for solving problems involving forces acting over a time interval, impact, and fluid flow.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 5 kg block is initially at rest. A constant horizontal force of 20 N is applied to it for 3 seconds. What is the block's final velocity, ignoring friction?",
+      "options": [
+        { "text": "4 m/s", "isCorrect": false },
+        { "text": "60 m/s", "isCorrect": false },
+        { "text": "12 m/s", "isCorrect": true },
+        { "text": "3.33 m/s", "isCorrect": false }
+      ],
+      "explanation": "Use the principle of linear impulse and momentum. Initial momentum is 0 since it starts at rest. The impulse is $J = F \\Delta t = (20 \\text{ N})(3 \\text{ s}) = 60$ N·s. The final momentum is $mv_2$. So, $0 + 60 = 5 \\cdot v_2$. Solving for $v_2$ gives $v_2 = 60/5 = 12$ m/s."
+    },
+    {
+      "question": "A 0.15 kg baseball moving at 40 m/s is hit by a bat, causing it to move in the opposite direction at 50 m/s. If the bat was in contact with the ball for 0.005 seconds, what was the average force exerted by the bat?",
+      "options": [
+        { "text": "300 N", "isCorrect": false },
+        { "text": "2700 N", "isCorrect": true },
+        { "text": "1500 N", "isCorrect": false },
+        { "text": "1200 N", "isCorrect": false }
+      ],
+      "explanation": "Let the initial direction be positive. Then $v_1 = 40$ m/s and $v_2 = -50$ m/s. The change in momentum is $\\Delta p = m(v_2 - v_1) = 0.15(-50 - 40) = 0.15(-90) = -13.5$ kg·m/s. The impulse is equal to the change in momentum: $J = F_{avg} \\Delta t = -13.5$. So, $F_{avg} = -13.5 / 0.005 = -2700$ N. The magnitude of the force is 2700 N."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>thermistor</strong> is a type of resistor whose resistance is strongly dependent on temperature. The name is a portmanteau of \"thermal resistor\". They are made from semiconductor materials.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Thermistors</h3>\n<p class=\"mb-4\">There are two main types:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>NTC (Negative Temperature Coefficient):</strong> Resistance decreases as temperature increases. This is the most common type.</li>\n    <li><strong>PTC (Positive Temperature Coefficient):</strong> Resistance increases as temperature increases. These are often used as self-regulating heaters or resettable fuses.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Resistance-Temperature Relationship</h3>\n<p class=\"mb-4\">The relationship between resistance and temperature for a thermistor is highly non-linear. The Steinhart-Hart equation is a common third-order approximation, but a simpler equation often used is:</p>\n$$\\frac{1}{T} = \\frac{1}{T_0} + \\frac{1}{B} \\ln\\left(\\frac{R}{R_0}\\right)$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$T$ is the absolute temperature (in Kelvin).</li>\n    <li>$T_0$ is a reference temperature (e.g., 298.15 K for 25°C).</li>\n    <li>$R$ is the resistance at temperature T.</li>\n    <li>$R_0$ is the resistance at temperature $T_0$.</li>\n    <li>$B$ is the B-value or beta coefficient, a material constant.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Comparison to RTDs</h3>\n<p class=\"mb-4\">Compared to RTDs, thermistors have much higher sensitivity (larger change in resistance for a given temperature change) but are less linear and have a smaller operating temperature range.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a common NTC thermistor, what happens to its resistance as the temperature increases?",
+      "options": [
+        { "text": "It increases linearly.", "isCorrect": false },
+        { "text": "It decreases.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false },
+        { "text": "It increases non-linearly.", "isCorrect": false }
+      ],
+      "explanation": "NTC stands for Negative Temperature Coefficient. This means there is an inverse relationship between resistance and temperature; as temperature goes up, resistance goes down."
+    },
+    {
+      "question": "Which temperature sensor generally offers the highest sensitivity (largest change in resistance per degree Celsius)?",
+      "options": [
+        { "text": "RTD", "isCorrect": false },
+        { "text": "Thermocouple", "isCorrect": false },
+        { "text": "Thermistor", "isCorrect": true },
+        { "text": "Bimetallic strip", "isCorrect": false }
+      ],
+      "explanation": "Thermistors are known for their very high sensitivity. A small change in temperature can produce a very large change in their resistance, making them ideal for precise temperature measurement over a limited range."
+    }
+  ]
+}

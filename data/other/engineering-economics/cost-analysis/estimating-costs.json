@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Cost Estimation</h3>\n<p class=\"mb-4\">Cost estimation is the process of predicting the cost of a project or product. Estimates are made at various stages of a project, with increasing levels of accuracy as more information becomes available.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Estimation Methods</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Unit Method (Per Unit):</strong> The most common preliminary method. The total cost is estimated by multiplying the number of units by an average cost per unit based on historical data. (e.g., Cost = Square Footage × Cost per Sq Ft).</li>\n    <li><strong>Cost Indices:</strong> Used to adjust costs for changes in time (inflation) or location. A cost index is a dimensionless number that tracks the change in cost of a market basket of goods.\n        $$ C_2 = C_1 \\left( \\frac{I_2}{I_1} \\right) $$\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>$C_2$: Estimated cost at time/location 2.</li>\n            <li>$C_1$: Known cost at time/location 1.</li>\n            <li>$I_2, I_1$: Index values for time/location 2 and 1.</li>\n        </ul>\n    </li>\n    <li><strong>Power-Sizing Model (Capacity Factor):</strong> Used to estimate the cost of industrial equipment or plants based on a known cost of a similar item with a different capacity.\n        $$ \\frac{C_A}{C_B} = \\left( \\frac{S_A}{S_B} \\right)^x $$\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>$C_A, C_B$: Cost of plant A and B.</li>\n            <li>$S_A, S_B$: Size (capacity) of plant A and B.</li>\n            <li>$x$: Power-sizing exponent (typically between 0.6 and 0.7, often called the 'six-tenths rule').</li>\n        </ul>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A warehouse constructed in 2010 cost $500,000. The cost index in 2010 was 200, and the current cost index is 300. What is the estimated cost to build the same warehouse today?",
+      "options": [
+        { "text": "$500,000", "isCorrect": false },
+        { "text": "$750,000", "isCorrect": true },
+        { "text": "$1,000,000", "isCorrect": false },
+        { "text": "$600,000", "isCorrect": false }
+      ],
+      "explanation": "Use the cost index formula: $C_{current} = C_{past} (I_{current} / I_{past})$. $C_{current} = $500,000 (300 / 200) = $500,000 (1.5) = $750,000$."
+    },
+    {
+      "question": "A 100-gallon tank costs $2,000. Estimate the cost of a 200-gallon tank using the power-sizing model with an exponent of x = 0.6.",
+      "options": [
+        { "text": "$4,000", "isCorrect": false },
+        { "text": "$3,031", "isCorrect": true },
+        { "text": "$2,000", "isCorrect": false },
+        { "text": "$2,400", "isCorrect": false }
+      ],
+      "explanation": "Use the power-sizing formula: $C_2 = C_1 (S_2 / S_1)^x$. $C_2 = $2,000 (200 / 100)^{0.6} = $2,000 (2)^{0.6} \\approx $2,000 (1.5157) \\approx $3,031$."
+    }
+  ]
+}

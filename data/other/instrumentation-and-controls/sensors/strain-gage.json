@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>strain gage</strong> (or strain gauge) is a sensor whose resistance varies with applied mechanical strain. It is the fundamental sensor used for measuring strain, and by extension, stress, force, and pressure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Operation</h3>\n<p class=\"mb-4\">The most common type is the metallic foil strain gage. It consists of a very fine wire or metallic foil arranged in a grid pattern. This grid is bonded to the surface of the object being tested. When the object is deformed (strained), the foil deforms along with it.</p>\n<p class=\"mb-4\">This deformation changes the wire's resistance. When the wire is stretched (tensile strain), it becomes longer and thinner, increasing its resistance. When it is compressed, it becomes shorter and thicker, decreasing its resistance.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Gage Factor (GF)</h3>\n<p class=\"mb-4\">The sensitivity of a strain gage is described by its <strong>gage factor</strong>. It relates the change in electrical resistance to the mechanical strain.</p>\n$$GF = \\frac{\\Delta R / R_0}{\\Delta L / L_0} = \\frac{\\Delta R / R_0}{\\epsilon}$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\Delta R$ is the change in resistance.</li>\n    <li>$R_0$ is the initial, unstrained resistance.</li>\n    <li>$\\epsilon = \\Delta L / L_0$ is the strain.</li>\n</ul>\n<p class=\"mb-4\">For most metallic strain gages, the gage factor is typically around 2.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A strain gage is bonded to a beam. When the beam is put under tension, what happens to the resistance of the strain gage?",
+      "options": [
+        { "text": "It increases.", "isCorrect": true },
+        { "text": "It decreases.", "isCorrect": false },
+        { "text": "It remains the same.", "isCorrect": false },
+        { "text": "It becomes zero.", "isCorrect": false }
+      ],
+      "explanation": "Tension causes the beam and the strain gage wire to stretch. A longer, thinner wire has a higher electrical resistance."
+    },
+    {
+      "question": "A strain gage with an initial resistance of 120 \u03A9 and a gage factor of 2.0 is subjected to a strain of 1000 microstrain ($1000 \\times 10^{-6}$). What is the change in resistance?",
+      "options": [
+        { "text": "0.12 \u03A9", "isCorrect": false },
+        { "text": "0.24 \u03A9", "isCorrect": true },
+        { "text": "2.4 \u03A9", "isCorrect": false },
+        { "text": "1.2 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "Rearrange the gage factor formula to solve for $\\Delta R$: $\\Delta R = GF \\cdot \\epsilon \\cdot R_0$.\n$\\Delta R = (2.0) \\cdot (1000 \\times 10^{-6}) \\cdot (120 \\; \u03A9) = (2.0) \\cdot (0.001) \\cdot (120) = 0.24 \\; \u03A9$."
+    }
+  ]
+}

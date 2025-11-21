@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Convection</strong> is the mode of heat transfer between a solid surface and the adjacent liquid or gas that is in motion. It involves the combined effects of conduction and fluid motion.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Natural (Free) Convection:</strong> Fluid motion is caused by buoyancy forces that result from density differences due to temperature variations in the fluid.</li>\n    <li><strong>Forced Convection:</strong> Fluid is forced to flow over the surface by an external source such as a fan, pump, or the wind.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Newton's Law of Cooling</h3>\n<p class=\"mb-4\">The rate of convection heat transfer is expressed by Newton's Law of Cooling:</p>\n$$ q = h A_s (T_s - T_\\infty) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$q$: Heat transfer rate (W).</li>\n    <li>$h$: <strong>Convection Heat Transfer Coefficient</strong> (W/m²·K). This is not a property of the fluid alone but depends on the fluid properties, flow velocity, and surface geometry.</li>\n    <li>$A_s$: Surface area (m²).</li>\n    <li>$T_s$: Surface temperature.</li>\n    <li>$T_\\infty$: Fluid temperature far from the surface.</li>\n</ul>\n<p class=\"mb-4\">Thermal resistance for convection is defined as $R_{conv} = \\frac{1}{h A_s}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Newton's Law of Cooling describes which mode of heat transfer?",
+      "options": [
+        { "text": "Conduction", "isCorrect": false },
+        { "text": "Radiation", "isCorrect": false },
+        { "text": "Convection", "isCorrect": true },
+        { "text": "Evaporation", "isCorrect": false }
+      ],
+      "explanation": "Newton's Law of Cooling, $q = hA(T_s - T_\\infty)$, is the fundamental equation used to calculate the rate of heat transfer by convection."
+    },
+    {
+      "question": "Air at 20°C flows over a hot plate of area 2 m² maintained at 120°C. The convection heat transfer coefficient is 25 W/m²·K. What is the rate of heat transfer from the plate?",
+      "options": [
+        { "text": "2500 W", "isCorrect": false },
+        { "text": "5000 W", "isCorrect": true },
+        { "text": "1000 W", "isCorrect": false },
+        { "text": "6000 W", "isCorrect": false }
+      ],
+      "explanation": "Use Newton's Law of Cooling: $q = h A_s (T_s - T_\\infty)$.\n$q = (25 \\text{ W/m²·K})(2 \\text{ m²})(120 - 20 \\text{ °C}) = 50(100) = 5000$ W."
+    }
+  ]
+}

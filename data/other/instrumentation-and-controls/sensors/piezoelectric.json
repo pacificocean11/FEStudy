@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>piezoelectric transducer</strong> is a device that uses the piezoelectric effect to measure changes in pressure, acceleration, temperature, strain, or force by converting them to an electrical charge.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Piezoelectric Effect</h3>\n<p class=\"mb-4\">The piezoelectric effect is the ability of certain crystalline materials (like quartz or specific ceramics) to generate an electric charge in response to applied mechanical stress. This is the <strong>direct piezoelectric effect</strong> and is how the sensor works.</p>\n<p class=\"mb-4\">Conversely, when an electric field is applied to these materials, they deform. This is the <strong>inverse piezoelectric effect</strong>, which is used in actuators, speakers, and inkjet printers.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Operation and Characteristics</h3>\n<p class=\"mb-4\">When a force is applied to a piezoelectric crystal, it deforms, causing a displacement of charge within the crystal lattice. This creates a voltage across the material.</p>\n$$Q = d \\cdot F$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q$ is the charge generated.</li>\n    <li>$d$ is the piezoelectric coefficient of the material.</li>\n    <li>$F$ is the applied force.</li>\n</ul>\n<p class=\"mb-4\">Key characteristics include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Dynamic Measurements:</strong> They are excellent for measuring dynamic events (changes in force, pressure, vibration) but cannot measure static quantities because the generated charge leaks away over time.</li>\n    <li><strong>High Frequency Response:</strong> They can respond to very rapid changes.</li>\n    <li><strong>Self-Generating:</strong> They do not require an external power source to operate.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Piezoelectric transducers are best suited for measuring what type of phenomena?",
+      "options": [
+        { "text": "Static, unchanging pressure.", "isCorrect": false },
+        { "text": "Dynamic phenomena like vibration and impact.", "isCorrect": true },
+        { "text": "Slowly changing temperature.", "isCorrect": false },
+        { "text": "Absolute humidity.", "isCorrect": false }
+      ],
+      "explanation": "Piezoelectric sensors generate a charge in response to a change in mechanical stress. The charge dissipates over time, making them unable to measure static (unchanging) conditions. They excel at measuring dynamic events like impacts, pressure fluctuations, and vibrations."
+    },
+    {
+      "question": "The operating principle of a piezoelectric accelerometer is based on a material that generates ________ when subjected to ________.",
+      "options": [
+        { "text": "resistance ... a temperature change", "isCorrect": false },
+        { "text": "a voltage ... a magnetic field", "isCorrect": false },
+        { "text": "a charge ... mechanical stress", "isCorrect": true },
+        { "text": "light ... an electric current", "isCorrect": false }
+      ],
+      "explanation": "The piezoelectric effect is the generation of an electric charge (which leads to a measurable voltage) in response to applied mechanical stress or strain."
+    }
+  ]
+}

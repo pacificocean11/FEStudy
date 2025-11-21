@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Present Worth (PW)</strong>, also known as Present Value (PV), is the current worth of a future sum of money or stream of cash flows given a specified rate of return. It is the standard method for comparing mutually exclusive alternatives with the same useful life.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Time Value of Money Factors</h3>\n<p class=\"mb-4\">The conversion of future cash flows to present worth uses interest factors derived from the compound interest formula.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>(P/F, i, n) - Single Payment Present Worth Factor:</strong> Finds the present value ($P$) of a single future amount ($F$).\n    $$ P = F(1+i)^{-n} $$</li>\n    <li><strong>(P/A, i, n) - Uniform Series Present Worth Factor:</strong> Finds the present value ($P$) of a uniform series of equal payments ($A$, annuity).\n    $$ P = A \\left[ \\frac{(1+i)^n - 1}{i(1+i)^n} \\right] $$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Net Present Worth (NPW)</h3>\n<p class=\"mb-4\">For a project with multiple cash inflows and outflows, the Net Present Worth is the sum of the present worths of all cash flows.</p>\n$$ NPW = \\sum_{t=0}^{n} \\frac{CF_t}{(1+i)^t} $$\n<p class=\"mb-4\">Decision Rule: Accept a project if $NPW \\ge 0$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the present worth of receiving $10,000 five years from now, assuming an interest rate of 8% compounded annually? (P/F, 8%, 5) = 0.6806",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$6,806", "isCorrect": true },
+        { "text": "$14,693", "isCorrect": false },
+        { "text": "$8,000", "isCorrect": false }
+      ],
+      "explanation": "We need to discount a single future value to the present. $P = F(P/F, i, n) = 10,000(0.6806) = $6,806."
+    },
+    {
+      "question": "A machine costs $20,000 today and will save $5,000 per year for 5 years. If the interest rate is 10%, what is the Net Present Worth of the investment? (P/A, 10%, 5) = 3.7908",
+      "options": [
+        { "text": "$5,000", "isCorrect": false },
+        { "text": "-$1,046", "isCorrect": true },
+        { "text": "$18,954", "isCorrect": false },
+        { "text": "$25,000", "isCorrect": false }
+      ],
+      "explanation": "The cost is a cash outflow at time 0: -$20,000. The savings are a uniform series of inflows. The present worth of the savings is $5,000(3.7908) = $18,954. The Net Present Worth is $NPW = -20,000 + 18,954 = -$1,046. Since the NPW is negative, the investment is not justified at 10%."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>fan</strong> is a machine used to create flow within a fluid, typically a gas such as air. Fans operate at relatively low pressure ratios compared to compressors.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Centrifugal Fans:</strong> Air enters axially and is discharged radially. Good for higher pressures.</li>\n    <li><strong>Axial Fans:</strong> Air flows parallel to the shaft. Good for high flow rates at low pressures.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Fan Laws</h3>\n<p class=\"mb-4\">The Fan Laws (or Affinity Laws) describe the relationship between variables like speed ($N$), flow rate ($Q$), pressure ($P$), and power ($W$) for a given fan:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Flow is proportional to speed: $Q_2/Q_1 = N_2/N_1$</li>\n    <li>Pressure is proportional to the square of speed: $P_2/P_1 = (N_2/N_1)^2$</li>\n    <li>Power is proportional to the cube of speed: $W_2/W_1 = (N_2/N_1)^3$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "If the speed of a fan is doubled, how does the power consumption change, according to the fan laws?",
+      "options": [
+        { "text": "It doubles.", "isCorrect": false },
+        { "text": "It quadruples.", "isCorrect": false },
+        { "text": "It increases by a factor of 8.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false }
+      ],
+      "explanation": "Power is proportional to the cube of the speed ($W \\propto N^3$). If speed doubles ($2N$), power becomes $(2)^3 = 8$ times the original power."
+    },
+    {
+      "question": "A fan delivers 1000 cfm at 500 rpm. What flow rate will it deliver at 1000 rpm?",
+      "options": [
+        { "text": "1000 cfm", "isCorrect": false },
+        { "text": "2000 cfm", "isCorrect": true },
+        { "text": "4000 cfm", "isCorrect": false },
+        { "text": "8000 cfm", "isCorrect": false }
+      ],
+      "explanation": "Flow rate is directly proportional to speed ($Q \\propto N$). Doubling the speed will double the flow rate. $Q_2 = Q_1(N_2/N_1) = 1000(1000/500) = 2000$ cfm."
+    }
+  ]
+}

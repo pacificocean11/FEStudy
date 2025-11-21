@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>First Law of Thermodynamics</strong> is a version of the law of conservation of energy, adapted for thermodynamic systems. It states that the change in the internal energy of a closed system is equal to the amount of heat supplied to the system, minus the amount of work done by the system on its surroundings.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equation for a Closed System</h3>\n<p class=\"mb-4\">The most common form of the First Law is:</p>\n$$ \\Delta U = Q - W $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>$\\Delta U$</strong> is the change in the internal energy of the system.</li>\n    <li><strong>$Q$</strong> is the net heat transferred <strong>into</strong> the system.</li>\n    <li><strong>$W$</strong> is the net work done <strong>by</strong> the system.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Sign Conventions</h3>\n<p class=\"mb-4\">The sign convention is critical:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Heat (Q):</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>$Q > 0$: Heat is added to the system.</li>\n            <li>$Q < 0$: Heat is removed from the system.</li>\n        </ul>\n    </li>\n    <li><strong>Work (W):</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>$W > 0$: Work is done by the system (e.g., expansion).</li>\n            <li>$W < 0$: Work is done on the system (e.g., compression).</li>\n        </ul>\n    </li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A closed system undergoes a process in which 100 J of heat is added to it, and the system does 40 J of work on its surroundings. What is the change in the internal energy of the system?",
+      "options": [
+        { "text": "140 J", "isCorrect": false },
+        { "text": "-60 J", "isCorrect": false },
+        { "text": "60 J", "isCorrect": true },
+        { "text": "-140 J", "isCorrect": false }
+      ],
+      "explanation": "Use the First Law of Thermodynamics: $\\Delta U = Q - W$. Heat is added, so $Q = +100$ J. Work is done by the system, so $W = +40$ J. Therefore, $\\Delta U = 100 - 40 = 60$ J."
+    },
+    {
+      "question": "During a process, the internal energy of a system decreases by 200 J. If 50 J of work is done on the system, how much heat was transferred?",
+      "options": [
+        { "text": "250 J of heat was removed.", "isCorrect": true },
+        { "text": "150 J of heat was removed.", "isCorrect": false },
+        { "text": "250 J of heat was added.", "isCorrect": false },
+        { "text": "150 J of heat was added.", "isCorrect": false }
+      ],
+      "explanation": "We are given $\\Delta U = -200$ J (decrease). Work is done on the system, so $W = -50$ J. Rearranging the First Law to solve for Q: $Q = \\Delta U + W$. $Q = (-200) + (-50) = -250$ J. A negative value for Q means that 250 J of heat was removed from the system."
+    }
+  ]
+}

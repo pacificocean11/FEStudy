@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Equivalent Annual Worth (EAW)</strong>, or Annual Worth (AW), converts all cash flows of a project into a single, equivalent uniform annual series over the project life. It is particularly useful for comparing alternatives with <strong>different useful lives</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Factors</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>(A/P, i, n) - Capital Recovery Factor:</strong> Converts a present amount ($P$) into an equivalent uniform annual series ($A$). Ideally used to annualize the initial cost.\n    $$ A = P \\left[ \\frac{i(1+i)^n}{(1+i)^n - 1} \\right] $$</li>\n    <li><strong>(A/F, i, n) - Sinking Fund Factor:</strong> Converts a future amount ($F$) into an equivalent uniform annual series ($A$). Used for salvage values.\n    $$ A = F \\left[ \\frac{i}{(1+i)^n - 1} \\right] $$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Comparing Unequal Lives</h3>\n<p class=\"mb-4\">When comparing projects with different lifespans (e.g., Machine A lasts 5 years, Machine B lasts 10 years), you can simply calculate the Annual Worth of each machine over its own life. The assumption is that the asset will be replaced with an identical one at the end of its life (repeatability assumption). The machine with the lowest Equivalent Uniform Annual Cost (EUAC) or highest Annual Worth is selected.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An asset has an initial cost of $50,000 and a salvage value of $10,000 after 10 years. If the interest rate is 10%, what is the Equivalent Uniform Annual Cost (EUAC)? (A/P, 10%, 10) = 0.16275; (A/F, 10%, 10) = 0.06275",
+      "options": [
+        { "text": "$8,138", "isCorrect": false },
+        { "text": "$7,510", "isCorrect": true },
+        { "text": "$6,275", "isCorrect": false },
+        { "text": "$5,000", "isCorrect": false }
+      ],
+      "explanation": "EUAC = (Annualized Initial Cost) - (Annualized Salvage Value). $EUAC = 50,000(A/P, 10\\%, 10) - 10,000(A/F, 10\\%, 10)$. $EUAC = 50,000(0.16275) - 10,000(0.06275) = 8,137.50 - 627.50 = 7,510$."
+    },
+    {
+      "question": "When comparing two alternatives with different useful lives (e.g., 5 years vs 8 years), which method allows for a direct comparison without using a common multiple of years?",
+      "options": [
+        { "text": "Present Worth", "isCorrect": false },
+        { "text": "Future Worth", "isCorrect": false },
+        { "text": "Annual Worth", "isCorrect": true },
+        { "text": "Benefit-Cost Ratio", "isCorrect": false }
+      ],
+      "explanation": "The Annual Worth method calculates the equivalent annual cost/benefit for one lifecycle of each asset. Under the assumption of repeatability, this annual value is the same for any number of cycles, allowing direct comparison of unequal life projects."
+    }
+  ]
+}

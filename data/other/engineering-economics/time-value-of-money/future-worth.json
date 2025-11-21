@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Future Worth (FW)</strong> or Future Value (FV) is the value of an asset or cash flow at a specified date in the future that is equivalent in value to a specified sum today.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Factors</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>(F/P, i, n) - Single Payment Compound Amount Factor:</strong> Finds the future value ($F$) of a single present sum ($P$).\n    $$ F = P(1+i)^n $$</li>\n    <li><strong>(F/A, i, n) - Uniform Series Compound Amount Factor:</strong> Finds the future value ($F$) of an annuity ($A$). This is used to calculate the accumulated value of a series of savings deposits.\n    $$ F = A \\left[ \\frac{(1+i)^n - 1}{i} \\right] $$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "If you deposit $2,000 annually into an account paying 6% interest, how much will be in the account immediately after the 5th deposit? (F/A, 6%, 5) = 5.6371",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$11,274", "isCorrect": true },
+        { "text": "$12,000", "isCorrect": false },
+        { "text": "$2,676", "isCorrect": false }
+      ],
+      "explanation": "We need the future worth of a uniform series. $F = A(F/A, 6\\%, 5) = 2,000(5.6371) = 11,274.20$."
+    },
+    {
+      "question": "What is the future worth of $5,000 invested today for 10 years at 8% interest compounded annually? (F/P, 8%, 10) = 2.1589",
+      "options": [
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$9,000", "isCorrect": false },
+        { "text": "$10,795", "isCorrect": true },
+        { "text": "$5,400", "isCorrect": false }
+      ],
+      "explanation": "Use the single payment compound amount factor. $F = P(F/P, 8\\%, 10) = 5,000(2.1589) = 10,794.50$."
+    }
+  ]
+}

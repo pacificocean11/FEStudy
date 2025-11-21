@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Linear Momentum</h3>\n<p class=\"mb-4\">Linear momentum ($\b L$ or $\b p$) of a particle is the product of its mass ($m$) and velocity ($\b v$). It is a vector quantity, having the same direction as the velocity.</p>\n$$ \\mathbf{L} = m\\mathbf{v} $$\n<p class=\"mb-4\">For a rigid body, the linear momentum is the product of the body's total mass and the velocity of its center of mass ($\bar{\b v}$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Conservation of Linear Momentum</h3>\n<p class=\"mb-4\">The principle of conservation of linear momentum states that if the net external force acting on a system of particles is zero, the total linear momentum of the system remains constant.</p>\n$$ \\sum \\mathbf{F}_{ext} = \\frac{d\\mathbf{L}}{dt} = 0 \\implies \\mathbf{L}_{initial} = \\mathbf{L}_{final} $$\n<p class=\"mb-4\">This principle is particularly useful for analyzing collisions and explosions where internal forces are large but external forces are negligible or zero.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 1200 kg car is moving at 25 m/s. What is the magnitude of its linear momentum?",
+      "options": [
+        { "text": "48 kg·m/s", "isCorrect": false },
+        { "text": "30,000 kg·m/s", "isCorrect": true },
+        { "text": "750,000 kg·m/s", "isCorrect": false },
+        { "text": "30 kg·m/s", "isCorrect": false }
+      ],
+      "explanation": "Linear momentum is mass times velocity: $L = mv = (1200 \\text{ kg})(25 \\text{ m/s}) = 30,000$ kg·m/s."
+    },
+    {
+      "question": "Two ice skaters push off from each other. Skater A has a mass of 60 kg and Skater B has a mass of 80 kg. If Skater A moves away at 4 m/s, what is the speed of Skater B?",
+      "options": [
+        { "text": "3 m/s", "isCorrect": true },
+        { "text": "4 m/s", "isCorrect": false },
+        { "text": "5.33 m/s", "isCorrect": false },
+        { "text": "0 m/s", "isCorrect": false }
+      ],
+      "explanation": "Ideally, there are no external horizontal forces, so momentum is conserved. Initial momentum is zero. Final momentum must be zero: $m_A v_A + m_B v_B = 0$. Let right be positive. $60(4) + 80(v_B) = 0 \\implies 240 = -80 v_B \\implies v_B = -3$ m/s. The speed is 3 m/s."
+    }
+  ]
+}

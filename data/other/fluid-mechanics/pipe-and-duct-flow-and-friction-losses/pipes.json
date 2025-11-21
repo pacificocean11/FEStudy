@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Major Head Loss</h3>\n<p class=\"mb-4\">Energy loss due to friction in long straight sections of pipe is called <strong>major loss</strong>. It is calculated using the Darcy-Weisbach equation.</p>\n$$ h_f = f \\frac{L}{D} \\frac{v^2}{2g} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h_f$: Head loss due to friction.</li>\n    <li>$f$: Darcy friction factor (dimensionless).</li>\n    <li>$L$: Length of pipe.</li>\n    <li>$D$: Pipe diameter.</li>\n    <li>$v$: Average flow velocity.</li>\n    <li>$g$: Acceleration due to gravity.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Friction Factor (f)</h3>\n<p class=\"mb-4\">The friction factor depends on the Reynolds number ($Re$) and relative roughness ($\\epsilon/D$).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Laminar Flow ($Re < 2300$):</strong> $f = 64/Re$.</li>\n    <li><strong>Turbulent Flow ($Re > 4000$):</strong> Determine $f$ using the Moody Chart or the Colebrook equation.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For laminar flow in a circular pipe, the Darcy friction factor $f$ depends on:",
+      "options": [
+        { "text": "Reynolds number only.", "isCorrect": true },
+        { "text": "Relative roughness only.", "isCorrect": false },
+        { "text": "Both Reynolds number and relative roughness.", "isCorrect": false },
+        { "text": "Neither.", "isCorrect": false }
+      ],
+      "explanation": "In the laminar regime, the friction factor is defined analytically as $f = 64/Re$. It is independent of the pipe's surface roughness."
+    },
+    {
+      "question": "Water flows through a 100 m long, 0.1 m diameter pipe at 2 m/s. The friction factor is 0.02. What is the head loss due to friction? ($g=9.81$ m/s²)",
+      "options": [
+        { "text": "2.0 m", "isCorrect": false },
+        { "text": "4.08 m", "isCorrect": true },
+        { "text": "8.16 m", "isCorrect": false },
+        { "text": "0.4 m", "isCorrect": false }
+      ],
+      "explanation": "$h_f = f \\frac{L}{D} \\frac{v^2}{2g} = 0.02 \\left(\\frac{100}{0.1}\\right) \\frac{2^2}{2(9.81)} = 0.02(1000)(0.204) \\approx 4.08$ m."
+    }
+  ]
+}

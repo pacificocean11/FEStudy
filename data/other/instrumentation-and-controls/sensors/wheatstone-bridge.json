@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Wheatstone bridge</strong> is an electrical circuit used to measure an unknown electrical resistance by balancing two legs of a bridge circuit, one leg of which includes the unknown component. Its primary application in instrumentation is to measure the very small resistance changes produced by sensors like strain gages.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Circuit Diagram and Balancing</h3>\n<p class=\"mb-4\">The bridge consists of four resistors ($R_1, R_2, R_3, R_x$) arranged in a diamond shape, with a voltage source ($V_{in}$) applied across two opposite corners and a voltmeter ($V_{out}$) across the other two corners.</p>\n<p class=\"mb-4\">The bridge is said to be <strong>balanced</strong> when the output voltage $V_{out}$ is zero. This occurs when the ratio of resistances in the two legs is equal:</p>\n$$\\frac{R_2}{R_1} = \\frac{R_x}{R_3}$$\n<p class=\"mb-4\">If three of the resistances are known, this equation can be used to find the value of the unknown resistor $R_x$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application with Strain Gages</h3>\n<p class=\"mb-4\">In sensor applications, one or more of the resistors are replaced by a sensor. For example, $R_x$ could be a strain gage. Initially, the bridge is balanced so $V_{out} = 0$. When the strain gage is subjected to strain, its resistance changes slightly, causing the bridge to become unbalanced and producing a small, non-zero output voltage $V_{out}$. This output voltage is proportional to the change in resistance, and therefore proportional to the strain.</p>\n<p class=\"mb-4\">Using multiple active strain gages in the bridge (e.g., a full-bridge configuration) can increase sensitivity and cancel out temperature effects.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A Wheatstone bridge is most commonly used in instrumentation for what purpose?",
+      "options": [
+        { "text": "To generate high voltages.", "isCorrect": false },
+        { "text": "To measure large currents.", "isCorrect": false },
+        { "text": "To measure small changes in resistance.", "isCorrect": true },
+        { "text": "To function as a power amplifier.", "isCorrect": false }
+      ],
+      "explanation": "The Wheatstone bridge circuit is extremely sensitive to small changes in resistance in one of its legs. This makes it ideal for converting the small resistance changes from sensors like strain gages into a measurable output voltage."
+    },
+    {
+      "question": "In a balanced Wheatstone bridge, $R_1=100$ \u03A9, $R_2=200$ \u03A9, and $R_3=150$ \u03A9. What is the value of the unknown resistance $R_x$?",
+      "options": [
+        { "text": "75 \u03A9", "isCorrect": false },
+        { "text": "150 \u03A9", "isCorrect": false },
+        { "text": "300 \u03A9", "isCorrect": true },
+        { "text": "250 \u03A9", "isCorrect": false }
+      ],
+      "explanation": "The balance condition is $\\frac{R_2}{R_1} = \\frac{R_x}{R_3}$. Solving for $R_x$ gives $R_x = R_3 \\cdot \\frac{R_2}{R_1} = (150 \\; \u03A9) \\cdot \\frac{200 \\; \u03A9}{100 \\; \u03A9} = 150 \\cdot 2 = 300 \\; \u03A9$."
+    }
+  ]
+}

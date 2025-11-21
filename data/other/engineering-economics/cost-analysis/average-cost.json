@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Average Cost (AC)</strong>, also known as unit cost, is the total cost divided by the number of units produced or the quantity of work completed.</p>\n$$ AC = \\frac{TC}{Q} = \\frac{FC + (VC_{unit} \\times Q)}{Q} = \\frac{FC}{Q} + VC_{unit} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Behavior of Average Cost</h3>\n<p class=\"mb-4\">The average cost per unit is typically high at low production levels because the fixed costs are spread over a small number of units. As production quantity ($Q$) increases, the average fixed cost per unit ($FC/Q$) decreases, causing the overall average cost to go down.</p>\n<p class=\"mb-4\">This phenomenon, where increasing production leads to a lower average cost per unit, is a key concept in <strong>economies of scale</strong>.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A construction company has fixed costs of $50,000 per month for a project. The variable cost to place one cubic yard of concrete is $120. If the company places 1,000 cubic yards in a month, what is the average cost per cubic yard?",
+      "options": [
+        { "text": "$120", "isCorrect": false },
+        { "text": "$170", "isCorrect": true },
+        { "text": "$50", "isCorrect": false },
+        { "text": "$150", "isCorrect": false }
+      ],
+      "explanation": "First, find the total cost: $TC = FC + VC_{total} = $50,000 + ($120/cy \\times 1,000 cy) = $50,000 + $120,000 = $170,000$. Now, find the average cost: $AC = TC / Q = $170,000 / 1,000 cy = $170$ per cubic yard."
+    },
+    {
+      "question": "For the company in the previous problem, if production increases to 2,000 cubic yards, what happens to the average cost per cubic yard?",
+      "options": [
+        { "text": "It increases.", "isCorrect": false },
+        { "text": "It decreases.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false },
+        { "text": "It becomes equal to the variable cost.", "isCorrect": false }
+      ],
+      "explanation": "The new total cost is $TC = $50,000 + ($120 \\times 2,000) = $50,000 + $240,000 = $290,000$. The new average cost is $AC = $290,000 / 2,000 = $145$ per cubic yard. The average cost decreased from $170 to $145 because the fixed cost is now spread over more units."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Pseudocode</strong> is a method of describing a computer algorithm or control logic using structured English (or another human language) that resembles a programming language but ignores specific syntax rules. It allows engineers to focus on the logic of the algorithm without worrying about punctuation or specific command names.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Structures</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Sequence:</strong> Steps are executed one after another.<br><em>Example:</em> Set Valve = Open; Wait 5 seconds.</li>\n    <li><strong>Selection (Conditional):</strong> Making a choice based on a condition.<br><em>Example:</em> IF (Temp > 100) THEN Alarm = ON; ELSE Alarm = OFF; ENDIF</li>\n    <li><strong>Iteration (Loops):</strong> Repeating a set of steps.<br><em>Example:</em> WHILE (Level < 90) DO Pump = ON; ENDWHILE</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Benefits</h3>\n<p class=\"mb-4\">Pseudocode bridges the gap between a flowchart and the final code. It is easier to read and write than actual code, making it an excellent tool for planning and documenting complex logic before implementation.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the output of the following pseudocode if X = 5?<br>IF (X > 10) THEN<br>&nbsp;&nbsp;Y = 1<br>ELSE<br>&nbsp;&nbsp;Y = 2<br>ENDIF",
+      "options": [
+        { "text": "Y = 1", "isCorrect": false },
+        { "text": "Y = 2", "isCorrect": true },
+        { "text": "Y = 5", "isCorrect": false },
+        { "text": "Error", "isCorrect": false }
+      ],
+      "explanation": "The condition 'X > 10' is checked. Since X is 5, the condition (5 > 10) is FALSE. The code executes the ELSE block, setting Y = 2."
+    },
+    {
+      "question": "Pseudocode is primarily used for:",
+      "options": [
+        { "text": "Compiling directly into machine code.", "isCorrect": false },
+        { "text": "Designing and documenting algorithms in a human-readable format.", "isCorrect": true },
+        { "text": "Visualizing data structures.", "isCorrect": false },
+        { "text": "Optimizing database queries.", "isCorrect": false }
+      ],
+      "explanation": "Pseudocode is a tool for logic design and documentation. It is not a real programming language and cannot be compiled or executed by a computer."
+    }
+  ]
+}

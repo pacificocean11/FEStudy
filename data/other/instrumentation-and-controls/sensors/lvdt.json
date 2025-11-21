@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>Linear Variable Differential Transformer (LVDT)</strong> is a common type of electromechanical transducer that can convert the rectilinear motion of an object to which it is coupled into a corresponding electrical signal.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Operation</h3>\n<p class=\"mb-4\">An LVDT consists of a primary coil and two secondary coils, symmetrically wound on a hollow tube. A movable ferromagnetic core is placed inside this tube. An AC excitation voltage is applied to the primary coil.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>When the core is at the center (null position), the magnetic flux from the primary coil links equally with both secondary coils. The voltages induced in the secondaries ($V_{S1}$ and $V_{S2}$) are equal but 180° out of phase. The differential output voltage ($V_{out} = V_{S1} - V_{S2}$) is zero.</li>\n    <li>When the core is displaced from the center, more flux links with one secondary coil than the other. This creates a non-zero differential output voltage.</li>\n    <li>The magnitude of the output voltage is proportional to the magnitude of the displacement. The phase of the output voltage indicates the direction of the displacement.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Advantages</h3>\n<p class=\"mb-4\">LVDTs are widely used due to their high accuracy, high resolution, frictionless operation (no physical contact between core and coils), and robustness.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What physical quantity does an LVDT primarily measure?",
+      "options": [
+        { "text": "Temperature", "isCorrect": false },
+        { "text": "Pressure", "isCorrect": false },
+        { "text": "Linear Displacement", "isCorrect": true },
+        { "text": "Force", "isCorrect": false }
+      ],
+      "explanation": "LVDT stands for Linear Variable Differential Transformer. Its primary function is to measure linear displacement (position)."
+    },
+    {
+      "question": "In an LVDT, what is the output voltage when the core is at its central (null) position?",
+      "options": [
+        { "text": "Maximum", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Equal to the input voltage", "isCorrect": false },
+        { "text": "A constant non-zero value", "isCorrect": false }
+      ],
+      "explanation": "At the null position, the magnetic coupling to both secondary coils is equal and opposite. This results in a differential output voltage of zero."
+    }
+  ]
+}

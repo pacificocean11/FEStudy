@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Flow Regimes</h3>\n<p class=\"mb-4\">The nature of fluid flow depends on the ratio of inertial forces to viscous forces, quantified by the Reynolds number ($Re = \\rho v D / \\mu$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Laminar Flow</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Occurs at low Reynolds numbers ($Re < 2300$ in pipes).</li>\n    <li>Fluid moves in smooth, parallel layers (laminae) with no cross-mixing.</li>\n    <li>Viscous forces dominate.</li>\n    <li>Velocity profile is parabolic ($v_{max} = 2v_{avg}$).</li>\n    <li>Friction factor $f = 64/Re$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Turbulent Flow</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Occurs at high Reynolds numbers ($Re > 4000$ in pipes).</li>\n    <li>Fluid motion is chaotic with eddies and significant mixing.</li>\n    <li>Inertial forces dominate.</li>\n    <li>Velocity profile is flatter ('plug' flow).</li>\n    <li>Friction factor depends on both $Re$ and wall roughness (Moody Chart).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Transitional Flow</h3>\n<p class=\"mb-4\">Occurs between laminar and turbulent regimes ($2300 < Re < 4000$). The flow is unstable and may switch between laminar and turbulent.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For flow in a circular pipe, the critical Reynolds number below which flow is always laminar is approximately:",
+      "options": [
+        { "text": "2300", "isCorrect": true },
+        { "text": "4000", "isCorrect": false },
+        { "text": "100,000", "isCorrect": false },
+        { "text": "500", "isCorrect": false }
+      ],
+      "explanation": "The generally accepted transition point is Re = 2300. Below this value, disturbances in the flow tend to die out, maintaining laminar conditions."
+    },
+    {
+      "question": "Which flow regime is characterized by a parabolic velocity profile?",
+      "options": [
+        { "text": "Turbulent flow", "isCorrect": false },
+        { "text": "Transitional flow", "isCorrect": false },
+        { "text": "Laminar flow", "isCorrect": true },
+        { "text": "Supersonic flow", "isCorrect": false }
+      ],
+      "explanation": "In fully developed laminar flow in a pipe, the velocity varies parabolically from zero at the wall to a maximum at the center."
+    }
+  ]
+}

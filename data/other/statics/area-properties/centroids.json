@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>centroid</strong> is the geometric center of an area. It is the point at which the area could be balanced if it were a thin plate of uniform thickness and density.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas</h3>\n<p class=\"mb-4\">The coordinates of the centroid ($\\bar{x}, \\bar{y}$) are determined by the first moment of area:</p>\n$$ \\bar{x} = \\frac{\\int x dA}{\\int dA} = \\frac{Q_y}{A} \\quad \\quad \\bar{y} = \\frac{\\int y dA}{\\int dA} = \\frac{Q_x}{A} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Composite Areas</h3>\n<p class=\"mb-4\">For complex shapes made of simple geometric parts (rectangles, triangles, circles), the centroid is found using the method of composite areas:</p>\n$$ \\bar{X} = \\frac{\\sum \\bar{x}_i A_i}{\\sum A_i} \\quad \\quad \\bar{Y} = \\frac{\\sum \\bar{y}_i A_i}{\\sum A_i} $$\n<p class=\"mb-4\">Where $(\\bar{x}_i, \\bar{y}_i)$ is the centroid of each part and $A_i$ is its area. Holes are treated as negative areas.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Common Centroids</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangle:</strong> $(\\frac{b}{2}, \\frac{h}{2})$</li>\n    <li><strong>Right Triangle:</strong> $(\\frac{b}{3}, \\frac{h}{3})$ measured from the 90° angle.</li>\n    <li><strong>Semicircle:</strong> $\\bar{y} = \\frac{4r}{3\\pi}$ from the flat base.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Where is the centroid of a right triangle with base $b=12$ in and height $h=9$ in, measured from the right angle corner?",
+      "options": [
+        { "text": "x=6, y=4.5", "isCorrect": false },
+        { "text": "x=4, y=3", "isCorrect": true },
+        { "text": "x=3, y=4", "isCorrect": false },
+        { "text": "x=8, y=6", "isCorrect": false }
+      ],
+      "explanation": "The centroid of a right triangle is at a distance of 1/3 the base and 1/3 the height from the right angle. $\\bar{x} = b/3 = 12/3 = 4$ in. $\\bar{y} = h/3 = 9/3 = 3$ in."
+    },
+    {
+      "question": "A 10x10 square has a circular hole of area 20 cut out of it. The center of the square is at (5,5) and the center of the hole is at (5,5). Where is the centroid of the remaining shape?",
+      "options": [
+        { "text": "(5, 5)", "isCorrect": true },
+        { "text": "(4, 4)", "isCorrect": false },
+        { "text": "(6, 6)", "isCorrect": false },
+        { "text": "It depends on the radius", "isCorrect": false }
+      ],
+      "explanation": "Due to symmetry, removing a centered shape from another centered shape leaves the centroid at the same geometric center. Calculating it: $\\bar{X} = \\frac{(5)(100) - (5)(20)}{100 - 20} = \\frac{500-100}{80} = \\frac{400}{80} = 5$. The centroid remains at (5,5)."
+    }
+  ]
+}

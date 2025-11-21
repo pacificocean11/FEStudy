@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>compressor</strong> is a mechanical device that increases the pressure of a gas by reducing its volume. Compressors are similar to pumps but handle compressible fluids (gases) and typically achieve significant pressure ratios.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Positive Displacement (e.g., Reciprocating, Rotary Screw):</strong> Traps a fixed volume of gas and compresses it. Best for high pressure, low to medium flow.</li>\n    <li><strong>Dynamic (e.g., Centrifugal, Axial):</strong> Uses rotating blades to impart velocity to the gas, which is then converted to pressure. Best for continuous, high flow rates.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Thermodynamic Processes</h3>\n<p class=\"mb-4\">Compression typically follows a polytropic process $PV^n = C$. Ideally, compression is isentropic (adiabatic and reversible) or isothermal.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Isothermal compression ($n=1$) requires the least work but is difficult to achieve.</li>\n    <li>Adiabatic compression ($n=k$, specific heat ratio) requires more work.</li>\n    <li>Multistage compression with intercooling is used to approximate isothermal compression and reduce work input.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which thermodynamic process requires the minimum theoretical work to compress a gas between two specific pressures?",
+      "options": [
+        { "text": "Isentropic (Adiabatic)", "isCorrect": false },
+        { "text": "Isobaric", "isCorrect": false },
+        { "text": "Isothermal", "isCorrect": true },
+        { "text": "Isochoric", "isCorrect": false }
+      ],
+      "explanation": "Isothermal compression (constant temperature) minimizes the work input required for compression. In practice, this is approached by cooling the compressor or using intercoolers between stages."
+    },
+    {
+      "question": "What is the primary difference between a pump and a compressor?",
+      "options": [
+        { "text": "Pumps move liquids (incompressible), while compressors move gases (compressible).", "isCorrect": true },
+        { "text": "Pumps increase pressure, compressors decrease pressure.", "isCorrect": false },
+        { "text": "Pumps use rotational motion, compressors use linear motion.", "isCorrect": false },
+        { "text": "There is no difference.", "isCorrect": false }
+      ],
+      "explanation": "The fundamental difference lies in the fluid handled. Pumps handle liquids which are essentially incompressible, while compressors handle gases which are compressible and undergo significant density changes."
+    }
+  ]
+}

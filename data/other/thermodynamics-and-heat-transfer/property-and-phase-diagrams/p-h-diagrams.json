@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Pressure-Enthalpy (P-h) diagram</strong> is widely used in the analysis of vapor-compression refrigeration cycles and heat pump systems. The vertical axis represents Pressure ($P$) (often on a logarithmic scale) and the horizontal axis represents Specific Enthalpy ($h$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Features</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Saturation Dome:</strong> Similar to other diagrams, there is a dome separating the liquid, two-phase, and vapor regions. The region inside the dome represents a mixture of liquid and vapor.</li>\n    <li><strong>Isenthalpic Process:</strong> A vertical line represents a process at constant enthalpy. This is the ideal path for a <strong>throttling process</strong>, such as flow through an expansion valve or capillary tube.</li>\n    <li><strong>Isobaric Process:</strong> A horizontal line represents a process at constant pressure. This describes the ideal heat addition (evaporation) and heat rejection (condensation) processes in a refrigeration cycle.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Utility for Cycles</h3>\n<p class=\"mb-4\">The P-h diagram is particularly useful because the changes in enthalpy directly correspond to energy transfers:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Horizontal distance in the evaporator = Cooling effect ($q_{in} = \\Delta h$).</li>\n    <li>Horizontal distance in the condenser = Heat rejected ($q_{out} = \\Delta h$).</li>\n    <li>Change in enthalpy across the compressor = Work input ($w_{in} = \\Delta h$) (assuming adiabatic).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which thermodynamic process appears as a vertical line on a Pressure-Enthalpy (P-h) diagram?",
+      "options": [
+        { "text": "Isobaric", "isCorrect": false },
+        { "text": "Isothermal", "isCorrect": false },
+        { "text": "Isenthalpic", "isCorrect": true },
+        { "text": "Isentropic", "isCorrect": false }
+      ],
+      "explanation": "The x-axis of a P-h diagram represents enthalpy ($h$). Therefore, a process where enthalpy remains constant (isenthalpic), such as throttling through an expansion valve, is represented by a vertical line."
+    },
+    {
+      "question": "In a standard vapor-compression refrigeration cycle plotted on a P-h diagram, the condensation process is represented by:",
+      "options": [
+        { "text": "A vertical line moving down.", "isCorrect": false },
+        { "text": "A horizontal line moving to the left.", "isCorrect": true },
+        { "text": "A curved line following the saturation dome.", "isCorrect": false },
+        { "text": "A horizontal line moving to the right.", "isCorrect": false }
+      ],
+      "explanation": "Condensation occurs at essentially constant pressure (horizontal line). Heat is rejected, so the enthalpy decreases, meaning the process moves from right (higher $h$) to left (lower $h$). Ideally, it starts in the superheated region and ends in the subcooled liquid region."
+    }
+  ]
+}

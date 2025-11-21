@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">Kinetic energy is the energy that an object possesses due to its motion. It is a scalar quantity, meaning it has magnitude but no direction.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">The kinetic energy (KE or T) of a particle of mass $m$ moving with a speed $v$ is given by:</p>\n$$KE = \\frac{1}{2}mv^2$$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$m$ is the mass of the object in kilograms (kg).</li>\n    <li>$v$ is the speed of the object in meters per second (m/s).</li>\n    <li>The unit of kinetic energy is the Joule (J). $1 \\text{ J} = 1 \\text{ kg} \\cdot (\\text{m/s})^2$.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Kinetic energy is always non-negative (zero or positive).</li>\n    <li>It depends on the square of the speed. This means that doubling the speed of an object quadruples its kinetic energy.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 1000 kg car is traveling at a speed of 20 m/s. What is its kinetic energy?",
+      "options": [
+        { "text": "20,000 J", "isCorrect": false },
+        { "text": "400,000 J", "isCorrect": false },
+        { "text": "200,000 J", "isCorrect": true },
+        { "text": "10,000 J", "isCorrect": false }
+      ],
+      "explanation": "Using the kinetic energy formula $KE = \\frac{1}{2}mv^2$.\n$KE = \\frac{1}{2}(1000 \\text{ kg})(20 \\text{ m/s})^2 = \\frac{1}{2}(1000)(400) = 500(400) = 200,000 \\text{ J}$ or 200 kJ."
+    },
+    {
+      "question": "A 5 kg ball has a kinetic energy of 40 J. What is its speed?",
+      "options": [
+        { "text": "16 m/s", "isCorrect": false },
+        { "text": "8 m/s", "isCorrect": false },
+        { "text": "4 m/s", "isCorrect": true },
+        { "text": "2 m/s", "isCorrect": false }
+      ],
+      "explanation": "Rearrange the kinetic energy formula to solve for speed $v$: $KE = \\frac{1}{2}mv^2 \\implies v^2 = \\frac{2KE}{m} \\implies v = \\sqrt{\\frac{2KE}{m}}$.\n$v = \\sqrt{\\frac{2(40 \\text{ J})}{5 \\text{ kg}}} = \\sqrt{\\frac{80}{5}} = \\sqrt{16} = 4 \\text{ m/s}$."
+    },
+    {
+      "question": "If the speed of a particle is tripled, by what factor does its kinetic energy increase?",
+      "options": [
+        { "text": "3", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "9", "isCorrect": true },
+        { "text": "$\\sqrt{3}$", "isCorrect": false }
+      ],
+      "explanation": "Kinetic energy is proportional to the square of the speed ($KE \\propto v^2$). If the new speed is $v_{new} = 3v_{old}$, then the new kinetic energy is $KE_{new} = \\frac{1}{2}m(3v_{old})^2 = \\frac{1}{2}m(9v_{old}^2) = 9(\\frac{1}{2}mv_{old}^2) = 9 \\cdot KE_{old}$. The kinetic energy increases by a factor of 9."
+    }
+  ]
+}

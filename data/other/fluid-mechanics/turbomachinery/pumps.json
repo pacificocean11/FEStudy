@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>pump</strong> is a device used to move fluids, such as liquids or slurries. A mechanical action typically converts electrical energy into hydraulic energy. The most common type is the centrifugal pump.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Parameters</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flow Rate (Q):</strong> The volume of fluid moved per unit of time.</li>\n    <li><strong>Head (H):</strong> The energy per unit weight added to the fluid, typically expressed as a height (meters or feet) of the liquid column. Total head includes static lift and friction losses.</li>\n    <li><strong>Power (P):</strong> The rate at which work is done. $P = \\gamma QH / \\eta$, where $\\eta$ is efficiency.</li>\n    <li><strong>Net Positive Suction Head (NPSH):</strong> The margin of pressure over vapor pressure at the pump suction nozzle. $NPSH_A$ (available) must be greater than $NPSH_R$ (required) to avoid cavitation.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Pump Performance Curve</h3>\n<p class=\"mb-4\">A graphical representation of a pump's performance, showing the relationship between Head and Flow Rate. The intersection of the pump curve and the system curve (head required by the piping system) determines the <strong>operating point</strong>.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Ideally, to prevent cavitation in a pump, the Net Positive Suction Head Available ($NPSH_A$) must be:",
+      "options": [
+        { "text": "Equal to the vapor pressure head.", "isCorrect": false },
+        { "text": "Greater than the Net Positive Suction Head Required ($NPSH_R$).", "isCorrect": true },
+        { "text": "Less than the Net Positive Suction Head Required ($NPSH_R$).", "isCorrect": false },
+        { "text": "Zero.", "isCorrect": false }
+      ],
+      "explanation": "To prevent cavitation (the formation of vapor bubbles due to low pressure), the absolute pressure at the pump inlet must remain above the vapor pressure of the liquid. The margin provided by the system ($NPSH_A$) must exceed the margin required by the pump design ($NPSH_R$)."
+    },
+    {
+      "question": "A pump delivers 0.1 m³/s of water against a total head of 20 m. If the pump efficiency is 75%, what is the required shaft power? (Use $\\gamma = 9.81$ kN/m³)",
+      "options": [
+        { "text": "19.6 kW", "isCorrect": false },
+        { "text": "26.16 kW", "isCorrect": true },
+        { "text": "14.7 kW", "isCorrect": false },
+        { "text": "2.6 kW", "isCorrect": false }
+      ],
+      "explanation": "Fluid power is $P_f = \\gamma QH = (9.81 \\text{ kN/m}^3)(0.1 \\text{ m}^3/\\text{s})(20 \\text{ m}) = 19.62 \\text{ kW}$. Shaft power is $P_s = P_f / \\eta = 19.62 / 0.75 = 26.16 \\text{ kW}$."
+    }
+  ]
+}

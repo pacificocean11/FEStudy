@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Angular Momentum of a Particle</h3>\n<p class=\"mb-4\">Angular momentum is the rotational equivalent of linear momentum. For a particle, the angular momentum ($\b H_O$) about a point O is the 'moment' of the particle's linear momentum about that point. It is calculated using the cross product:</p>\n$$ \\mathbf{H}_O = \\mathbf{r} \\times (m\\mathbf{v}) $$\n<p class=\"mb-4\">where $\b r$ is the position vector from point O to the particle.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Angular Momentum of a Rigid Body</h3>\n<p class=\"mb-4\">For a rigid body in planar motion rotating with angular velocity $\\omega$ about its mass center G, the angular momentum about G is:</p>\n$$ H_G = I_G \\omega $$\n<p class=\"mb-4\">where $I_G$ is the mass moment of inertia about the center of mass.</p>\n<p class=\"mb-4\">If the body rotates about a fixed axis O, the angular momentum about O is $H_O = I_O \\omega$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Conservation of Angular Momentum</h3>\n<p class=\"mb-4\">If the net external moment about a point is zero, the angular momentum about that point is conserved. This explains why an ice skater spins faster when they pull their arms in (reducing their moment of inertia, so angular velocity must increase).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A solid disk with a mass moment of inertia $I_G = 0.4$ kg·m² is rotating at an angular velocity of 15 rad/s. What is the magnitude of its angular momentum about its center of mass?",
+      "options": [
+        { "text": "6 kg·m²/s", "isCorrect": true },
+        { "text": "37.5 kg·m²/s", "isCorrect": false },
+        { "text": "0.027 kg·m²/s", "isCorrect": false },
+        { "text": "90 kg·m²/s", "isCorrect": false }
+      ],
+      "explanation": "For a rigid body in rotation, the angular momentum about its mass center is $H_G = I_G \\omega = (0.4 \\text{ kg·m²})(15 \\text{ rad/s}) = 6$ kg·m²/s."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of a Confined Space</h3>\n<p class=\"mb-4\">According to OSHA, a confined space has three specific characteristics:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Size and Shape:</strong> It is large enough for an employee to enter fully and perform assigned work.</li>\n    <li><strong>Access:</strong> It has limited or restricted means for entry or exit (e.g., tanks, vessels, silos, storage bins, hoppers, vaults, and pits).</li>\n    <li><strong>Occupancy:</strong> It is not designed for continuous employee occupancy.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Permit-Required Confined Space</h3>\n<p class=\"mb-4\">A permit-required confined space is a confined space that has one or more of the following hazardous characteristics:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Contains or has the potential to contain a hazardous atmosphere.</li>\n    <li>Contains a material that has the potential to engulf an entrant (e.g., grain, sand).</li>\n    <li>Has an internal configuration such that an entrant could be trapped or asphyxiated by inwardly converging walls or by a floor which slopes downward and tapers to a smaller cross-section.</li>\n    <li>Contains any other recognized serious safety or health hazard.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Entry Procedures</h3>\n<p class=\"mb-4\">Entry into a permit-required confined space requires a written program that includes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Permit System:</strong> A written permit authorizing entry and detailing the work to be done, hazards, and safety measures.</li>\n    <li><strong>Atmospheric Testing:</strong> Testing the air for oxygen content, combustible gases, and toxic fumes <em>before</em> entry.</li>\n    <li><strong>Ventilation:</strong> Continuous forced air ventilation to remove hazardous atmospheres.</li>\n    <li><strong>Attendant:</strong> A person stationed outside the space who monitors the entrants and the conditions.</li>\n    <li><strong>Rescue Plan:</strong> Procedures and equipment for rescuing entrants in an emergency.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is NOT a characteristic of a 'confined space' as defined by OSHA?",
+      "options": [
+        { "text": "It is large enough for an employee to enter.", "isCorrect": false },
+        { "text": "It has limited means of entry or exit.", "isCorrect": false },
+        { "text": "It is designed for continuous human occupancy.", "isCorrect": true },
+        { "text": "It is not designed for continuous human occupancy.", "isCorrect": false }
+      ],
+      "explanation": "By definition, a confined space is NOT designed for continuous employee occupancy. If a space is designed for people to work in continuously (like an office or a control room), it is not a confined space, even if it is small."
+    },
+    {
+      "question": "Before entering a permit-required confined space, what is the first thing that must be tested in the atmosphere?",
+      "options": [
+        { "text": "Toxic gases", "isCorrect": false },
+        { "text": "Flammable gases", "isCorrect": false },
+        { "text": "Oxygen content", "isCorrect": true },
+        { "text": "Dust levels", "isCorrect": false }
+      ],
+      "explanation": "The order of testing is critical. 1) Oxygen content must be tested first because many gas detectors require oxygen to function correctly, and oxygen deficiency is an immediate life threat. 2) Flammable gases/vapors. 3) Toxic gases/vapors."
+    }
+  ]
+}

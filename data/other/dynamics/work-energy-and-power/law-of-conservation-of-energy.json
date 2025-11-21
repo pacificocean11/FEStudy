@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Conservative and Non-conservative Forces</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>A <strong>conservative force</strong> is a force for which the work done in moving a particle between two points is independent of the path taken. Examples include gravity and the force from an ideal spring. Potential energy can only be defined for conservative forces.</li>\n    <li>A <strong>non-conservative force</strong> is a force for which the work done depends on the path taken. Friction is the most common example. Work done by non-conservative forces dissipates energy from the system, usually as heat.</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">2. Conservation of Mechanical Energy</h3>\n<p class=\"mb-4\">The total mechanical energy ($E$) of a system is the sum of its kinetic energy ($KE$) and potential energy ($PE$).</p>\n$$E = KE + PE$$\n<p class=\"mb-4\">The law of conservation of mechanical energy states that if <strong>only conservative forces</strong> do work within an isolated system, the total mechanical energy of the system remains constant.</p>\n$$E_{initial} = E_{final}$$\n$$KE_i + PE_i = KE_f + PE_f$$\n$$\\frac{1}{2}mv_i^2 + mgh_i + \\frac{1}{2}kx_i^2 = \\frac{1}{2}mv_f^2 + mgh_f + \\frac{1}{2}kx_f^2$$\n<h3 class=\"text-lg font-semibold mb-2\">3. Work Done by Non-conservative Forces</h3>\n<p class=\"mb-4\">If non-conservative forces (like friction or air resistance) are present, mechanical energy is not conserved. The work done by these non-conservative forces ($W_{nc}$) is equal to the change in the total mechanical energy of the system.</p>\n$$W_{nc} = \\Delta E = E_f - E_i = (KE_f + PE_f) - (KE_i + PE_i)$$\n<p class=\"mb-4\">Since friction always opposes motion, the work it does is negative, leading to a decrease in the system's mechanical energy.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 2 kg pendulum is released from rest at a height of 0.5 m above its lowest point. Ignoring air resistance, what is its speed at the lowest point of its swing? (Use $g=9.8$ m/s²).",
+      "options": [
+        { "text": "9.8 m/s", "isCorrect": false },
+        { "text": "3.13 m/s", "isCorrect": true },
+        { "text": "4.43 m/s", "isCorrect": false },
+        { "text": "2.21 m/s", "isCorrect": false }
+      ],
+      "explanation": "We can use conservation of energy. Let the initial state (i) be at the top and the final state (f) be at the bottom. At the top, $v_i = 0$ and $h_i = 0.5$ m. At the bottom, we set the reference height $h_f = 0$. $KE_i + PE_i = KE_f + PE_f \\implies 0 + mgh_i = \\frac{1}{2}mv_f^2 + 0$. The mass cancels out: $gh_i = \\frac{1}{2}v_f^2$. Solving for $v_f$: $v_f = \\sqrt{2gh_i} = \\sqrt{2(9.8)(0.5)} = \\sqrt{9.8} \\approx 3.13 \\text{ m/s}$."
+    },
+    {
+      "question": "A 10 kg block slides down a ramp. It starts from rest at a height of 5 m and has a speed of 8 m/s at the bottom. How much energy was lost due to friction?",
+      "options": [
+        { "text": "490 J", "isCorrect": false },
+        { "text": "320 J", "isCorrect": false },
+        { "text": "170 J", "isCorrect": true },
+        { "text": "810 J", "isCorrect": false }
+      ],
+      "explanation": "Since there is friction, mechanical energy is not conserved. We use $W_{nc} = E_f - E_i$. The work done by friction is the energy lost. Initial energy: $E_i = KE_i + PE_i = 0 + mgh = (10)(9.8)(5) = 490$ J. Final energy: $E_f = KE_f + PE_f = \\frac{1}{2}mv^2 + 0 = \\frac{1}{2}(10)(8)^2 = 5(64) = 320$ J. The work done by friction is $W_{friction} = E_f - E_i = 320 - 490 = -170$ J. The energy lost is the magnitude of this work, 170 J."
+    },
+    {
+      "question": "Which of the following forces is non-conservative?",
+      "options": [
+        { "text": "Gravity", "isCorrect": false },
+        { "text": "Friction", "isCorrect": true },
+        { "text": "Elastic spring force", "isCorrect": false },
+        { "text": "Electrostatic force", "isCorrect": false }
+      ],
+      "explanation": "Friction is a dissipative force; the work it does depends on the total path length traveled, not just the start and end points. Gravity, ideal spring forces, and electrostatic forces are all conservative, meaning they have an associated potential energy."
+    }
+  ]
+}

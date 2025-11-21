@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Heat Capacity (C)</strong> is the amount of heat energy required to raise the temperature of a substance by one degree. <strong>Specific Heat (c)</strong> is the heat capacity per unit mass.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Specific Heats</h3>\n<p class=\"mb-4\">There are two main specific heats used in thermodynamics:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Specific Heat at Constant Volume ($c_v$):</strong> The energy required to raise the temperature of a unit mass by one degree while the volume is held constant. It relates to the change in internal energy.\n    $$ c_v = \\left(\\frac{\\partial u}{\\partial T}\\right)_v $$</li>\n    <li><strong>Specific Heat at Constant Pressure ($c_p$):</strong> The energy required to raise the temperature of a unit mass by one degree while the pressure is held constant. It relates to the change in enthalpy.\n    $$ c_p = \\left(\\frac{\\partial h}{\\partial T}\\right)_p $$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Relations for Ideal Gases</h3>\n<p class=\"mb-4\">For an ideal gas, the specific heats are related by the gas constant ($R$):</p>\n$$ c_p - c_v = R $$\n<p class=\"mb-4\">The <strong>Specific Heat Ratio ($k$ or $\\gamma$)</strong> is defined as:</p>\n$$ k = \\frac{c_p}{c_v} $$\n<p class=\"mb-4\">Since $c_p > c_v$, the ratio $k$ is always greater than 1. For air at room temperature, $k \\approx 1.4$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which relationship correctly relates the specific heats $c_p$ and $c_v$ for an ideal gas?",
+      "options": [
+        { "text": "$c_p + c_v = R$", "isCorrect": false },
+        { "text": "$c_p = c_v$", "isCorrect": false },
+        { "text": "$c_p - c_v = R$", "isCorrect": true },
+        { "text": "$c_v - c_p = R$", "isCorrect": false }
+      ],
+      "explanation": "For an ideal gas, the specific heat at constant pressure ($c_p$) is always greater than the specific heat at constant volume ($c_v$) by an amount equal to the specific gas constant ($R$). This difference accounts for the work done during expansion at constant pressure."
+    },
+    {
+      "question": "The specific heat ratio, k, is defined as:",
+      "options": [
+        { "text": "$c_v / c_p$", "isCorrect": false },
+        { "text": "$c_p / c_v$", "isCorrect": true },
+        { "text": "$c_p - c_v$", "isCorrect": false },
+        { "text": "$c_p \\times c_v$", "isCorrect": false }
+      ],
+      "explanation": "The specific heat ratio is the ratio of the specific heat at constant pressure to the specific heat at constant volume ($k = c_p/c_v$). It is a dimensionless parameter used in isentropic flow and adiabatic process calculations."
+    }
+  ]
+}

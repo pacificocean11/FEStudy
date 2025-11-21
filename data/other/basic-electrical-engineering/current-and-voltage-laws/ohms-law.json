@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Ohm's Law</h3>\n<p class=\"mb-4\">Ohm's Law is a fundamental relationship in electrical circuits. It states that the voltage ($V$) across a resistor is directly proportional to the current ($I$) flowing through it. The constant of proportionality is the resistance ($R$).</p>\n$$ V = IR $$\n<p class=\"mb-4\">This equation can be rearranged to solve for any of the three variables:\n    <br>$I = V/R$\n    <br>$R = V/I$\n</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Conductance (G)</h3>\n<p class=\"mb-4\">Conductance is the reciprocal of resistance. It is a measure of how easily current flows through a material.</p>\n$$ G = \\frac{1}{R} $$\n<p class=\"mb-4\">The unit of conductance is the <strong>Siemens (S)</strong>. In terms of conductance, Ohm's law can be written as $I = GV$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 12 V battery is connected to a 4 \u03A9 resistor. How much current flows through the resistor?",
+      "options": [
+        { "text": "48 A", "isCorrect": false },
+        { "text": "3 A", "isCorrect": true },
+        { "text": "0.33 A", "isCorrect": false },
+        { "text": "16 A", "isCorrect": false }
+      ],
+      "explanation": "Using Ohm's Law, $I = V/R = 12 \\text{ V} / 4 \\; \u03A9 = 3$ A."
+    },
+    {
+      "question": "If a current of 2.5 A flows through a 10 \u03A9 resistor, what is the voltage drop across the resistor?",
+      "options": [
+        { "text": "4 V", "isCorrect": false },
+        { "text": "12.5 V", "isCorrect": false },
+        { "text": "25 V", "isCorrect": true },
+        { "text": "0.25 V", "isCorrect": false }
+      ],
+      "explanation": "Using Ohm's Law, $V = IR = (2.5 \\text{ A})(10 \\; \u03A9) = 25$ V."
+    }
+  ]
+}

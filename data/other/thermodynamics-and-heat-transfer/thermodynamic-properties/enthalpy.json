@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Enthalpy (H)</strong> is a thermodynamic property representing the total heat content of a system. It is a composite property defined as the sum of the internal energy ($U$) and the product of pressure ($P$) and volume ($V$).</p>\n$$ H = U + PV $$\n<p class=\"mb-4\">Specific enthalpy ($h$) is enthalpy per unit mass: $h = u + Pv$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Significance</h3>\n<p class=\"mb-4\">Enthalpy is particularly useful for analyzing open systems (flow processes) like turbines, pumps, and heat exchangers. The term $PV$ represents the <strong>flow work</strong> required to push mass into or out of a control volume.</p>\n<p class=\"mb-4\">For a constant pressure process (isobaric) in a closed system, the heat transfer is equal to the change in enthalpy ($Q = \\Delta H$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Enthalpy Change for Ideal Gases</h3>\n<p class=\"mb-4\">For an ideal gas, enthalpy depends only on temperature. The change in enthalpy is related to the specific heat at constant pressure ($c_p$).</p>\n$$ \\Delta h = \\int c_p dT $$\n<p class=\"mb-4\">If $c_p$ is assumed constant: $\\Delta h = c_p(T_2 - T_1)$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Enthalpy is defined as:",
+      "options": [
+        { "text": "$H = U - PV$", "isCorrect": false },
+        { "text": "$H = U + PV$", "isCorrect": true },
+        { "text": "$H = U + TS$", "isCorrect": false },
+        { "text": "$H = U - TS$", "isCorrect": false }
+      ],
+      "explanation": "Enthalpy is a combination property defined as the sum of internal energy and the flow work term (pressure times volume)."
+    },
+    {
+      "question": "Air ($c_p = 1.005$ kJ/kg·K) is heated from 300 K to 400 K. What is the change in specific enthalpy?",
+      "options": [
+        { "text": "100.5 kJ/kg", "isCorrect": true },
+        { "text": "71.8 kJ/kg", "isCorrect": false },
+        { "text": "100 kJ/kg", "isCorrect": false },
+        { "text": "10.05 kJ/kg", "isCorrect": false }
+      ],
+      "explanation": "For an ideal gas with constant specific heat, $\\Delta h = c_p \\Delta T = 1.005 \\text{ kJ/kg·K} \\times (400 - 300) \\text{ K} = 1.005 \\times 100 = 100.5 \\text{ kJ/kg}$."
+    }
+  ]
+}

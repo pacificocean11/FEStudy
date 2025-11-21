@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Work</h3>\n<p class=\"mb-4\">In physics, work is the energy transferred to or from an object by applying a force along a displacement. It is a scalar quantity, measured in Joules (J).</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas for Work</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Work by a Constant Force:</strong> If a constant force $\\b F$ acts on an object that undergoes a displacement $\\b d$, the work done by the force is the dot product of the force and displacement vectors.</li>\n    $$W = \\b F \\cdot \\b d = ||\\b F|| ||\\b d|| \\cos(\\theta)$$\n    where $\\theta$ is the angle between the force and displacement vectors.\n    <li><strong>Work by a Variable Force:</strong> If the force varies as the object moves, the work is calculated by integrating the force component along the path of displacement.</li>\n    $$W = \\int_{s_1}^{s_2} F \\cos(\\theta) ds$$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Power</h3>\n<p class=\"mb-4\">Power is the rate at which work is done or energy is transferred. It is a measure of how quickly work can be performed. Power is a scalar quantity.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Average Power:</strong> The total work done divided by the total time taken.\n    $$\\bar{P} = \\frac{W}{\\Delta t}$$</li>\n    <li><strong>Instantaneous Power:</strong> The rate of doing work at a specific moment. It is the derivative of work with respect to time.\n    $$P = \\frac{dW}{dt} = \\b F \\cdot \\b v = Fv\\cos(\\theta)$$</li>\n</ul>\n<p class=\"mb-4\">The SI unit of power is the <strong>watt (W)</strong>, where $1 \\text{ W} = 1 \\text{ Joule/second}$. Another common unit is <strong>horsepower (hp)</strong>, where $1 \\text{ hp} \\approx 746 \\text{ W}$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Efficiency ($\eta$)</h3>\n<p class=\"mb-4\">The efficiency of a machine or process is the ratio of the useful power output to the total power input. It is a dimensionless quantity, often expressed as a percentage.</p>\n$$\\eta = \\frac{\\text{Power out}}{\\text{Power in}} = \\frac{P_{out}}{P_{in}} = \\frac{W_{out}}{W_{in}}$$\n<p class=\"mb-4\">Due to energy losses (e.g., from friction, heat), the efficiency is always less than 1 (or 100%). The power lost is $P_{loss} = P_{in} - P_{out}$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A force of 50 N is applied to a box at an angle of 30° to the horizontal. The box is pushed 10 m along the ground. How much work is done by the applied force?",
+      "options": [
+        { "text": "500 J", "isCorrect": false },
+        { "text": "250 J", "isCorrect": false },
+        { "text": "433 J", "isCorrect": true },
+        { "text": "86.6 J", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for work done by a constant force: $W = Fd\\cos(\\theta)$.\n$W = (50 \\text{ N})(10 \\text{ m})\\cos(30^\\circ) = 500 \\cdot (\\frac{\\sqrt{3}}{2}) \\approx 500 \\cdot 0.866 = 433 \\text{ J}$."
+    },
+    {
+      "question": "A crane lifts a 500 kg mass to a height of 20 m in 10 seconds at a constant velocity. What is the average power output of the crane? (Use $g=9.8$ m/s²).",
+      "options": [
+        { "text": "9800 W", "isCorrect": true },
+        { "text": "1000 W", "isCorrect": false },
+        { "text": "980 W", "isCorrect": false },
+        { "text": "4900 W", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the work done against gravity: $W = Fd = (mg)d = (500 \\text{ kg})(9.8 \\text{ m/s²})(20 \\text{ m}) = 98,000 \\text{ J}$. Then, calculate the average power: $\\bar{P} = \\frac{W}{\\Delta t} = \\frac{98,000 \\text{ J}}{10 \\text{ s}} = 9800 \\text{ W}$ or 9.8 kW."
+    },
+    {
+      "question": "An electric motor has a power input of 5 kW and a useful power output of 4 kW. What is its efficiency?",
+      "options": [
+        { "text": "80%", "isCorrect": true },
+        { "text": "125%", "isCorrect": false },
+        { "text": "20%", "isCorrect": false },
+        { "text": "90%", "isCorrect": false }
+      ],
+      "explanation": "Efficiency is the ratio of power out to power in: $\\eta = \\frac{P_{out}}{P_{in}} = \\frac{4 \\text{ kW}}{5 \\text{ kW}} = 0.8$. To express this as a percentage, multiply by 100: $0.8 \\times 100\\% = 80\\%$."
+    }
+  ]
+}

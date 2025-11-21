@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>thermocouple</strong> is a sensor for measuring temperature. It consists of two wires of dissimilar metals joined together at one end, called the measuring junction or \"hot\" junction. The other end, where the wires connect to the measurement device, is the reference junction or \"cold\" junction.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Seebeck Effect</h3>\n<p class=\"mb-4\">Thermocouples work based on the <strong>Seebeck effect</strong>. This effect states that when a temperature difference exists between the measuring junction and the reference junction, a small, predictable voltage (electromotive force or EMF) is produced. This voltage is approximately proportional to the temperature difference.</p>\n$$V \\approx \\alpha (T_{hot} - T_{ref})$$\n<p class=\"mb-4\">The relationship is actually non-linear, and standardized tables or polynomial functions are used for accurate temperature conversion.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Cold Junction Compensation</h3>\n<p class=\"mb-4\">Since the output voltage depends on the temperature difference, the temperature of the reference (\"cold\") junction must be known to accurately determine the temperature of the measuring junction. Modern instruments have a built-in sensor to measure the reference junction temperature and automatically correct the reading. This is called <strong>cold junction compensation</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Types and Characteristics</h3>\n<p class=\"mb-4\">Different combinations of metals produce different thermocouple \"types\" (e.g., Type K, J, T, S), each with its own characteristic voltage-temperature curve, range, and cost. They are widely used because they are inexpensive, durable, and have a very wide temperature range.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A thermocouple's operation is based on which physical principle?",
+      "options": [
+        { "text": "Peltier effect", "isCorrect": false },
+        { "text": "Seebeck effect", "isCorrect": true },
+        { "text": "Thomson effect", "isCorrect": false },
+        { "text": "Piezoelectric effect", "isCorrect": false }
+      ],
+      "explanation": "The Seebeck effect is the phenomenon where a voltage is produced across a junction of two different conductors when there is a temperature difference between the junctions. This is the fundamental principle of a thermocouple."
+    },
+    {
+      "question": "What does a thermocouple directly measure or produce?",
+      "options": [
+        { "text": "A change in resistance", "isCorrect": false },
+        { "text": "A small voltage", "isCorrect": true },
+        { "text": "A change in capacitance", "isCorrect": false },
+        { "text": "A current proportional to heat flow", "isCorrect": false }
+      ],
+      "explanation": "A thermocouple is an active sensor that generates its own signal. The temperature difference between its junctions produces a small electromotive force (voltage)."
+    }
+  ]
+}

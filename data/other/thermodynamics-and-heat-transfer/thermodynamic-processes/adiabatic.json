@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">An adiabatic process is a thermodynamic process in which there is no heat transfer into or out of the system ($Q = 0$). This can be achieved by either thermally insulating the system or by carrying out the process so rapidly that there is no time for significant heat transfer to occur.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. First Law of Thermodynamics</h3>\n<p class=\"mb-4\">The first law is $\\Delta U = Q - W$. Since $Q = 0$ for an adiabatic process, the equation simplifies to:</p>\n$$\\Delta U = -W$$\n<p class=\"mb-4\">This means that the work done by the system comes entirely from its internal energy. If a gas expands adiabatically, its internal energy and temperature decrease. If it is compressed adiabatically, its internal energy and temperature increase.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Process Relationships for an Ideal Gas</h3>\n<p class=\"mb-4\">For a reversible adiabatic process involving an ideal gas, the following relationships hold:</p>\n$$PV^k = \\text{constant}$$\n$$TV^{k-1} = \\text{constant}$$\n$$T P^{(1-k)/k} = \\text{constant}$$\n<p class=\"mb-4\">where $k = c_p/c_v$ is the specific heat ratio (or isentropic exponent).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. P-V Diagram</h3>\n<p class=\"mb-4\">On a P-V diagram, an adiabatic curve is steeper than an isothermal curve. For an expansion, the temperature drops, so the final pressure is lower than it would be for an isothermal expansion to the same volume.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An ideal gas expands adiabatically. What happens to its temperature?",
+      "options": [
+        { "text": "Increases", "isCorrect": false },
+        { "text": "Decreases", "isCorrect": true },
+        { "text": "Stays the same", "isCorrect": false },
+        { "text": "Depends on the gas", "isCorrect": false }
+      ],
+      "explanation": "In an adiabatic process, $\\Delta U = -W$. When the gas expands, it does positive work ($W > 0$). Therefore, the change in internal energy $\\Delta U$ is negative. Since internal energy is proportional to temperature for an ideal gas, the temperature must decrease."
+    },
+    {
+      "question": "A gas undergoes a reversible adiabatic compression from an initial state of 100 kPa and 1 m³ to a final volume of 0.2 m³. If the gas has a specific heat ratio $k=1.4$, what is the final pressure?",
+      "options": [
+        { "text": "500 kPa", "isCorrect": false },
+        { "text": "952 kPa", "isCorrect": true },
+        { "text": "20 kPa", "isCorrect": false },
+        { "text": "700 kPa", "isCorrect": false }
+      ],
+      "explanation": "For a reversible adiabatic process, $P_1V_1^k = P_2V_2^k$. We can solve for $P_2$: $P_2 = P_1 \\left(\\frac{V_1}{V_2}\\right)^k = (100 \\text{ kPa}) \\left(\\frac{1 \\text{ m³}}{0.2 \\text{ m³}}\\right)^{1.4} = 100 \\cdot (5)^{1.4} \\approx 100 \\cdot 9.518 = 951.8$ kPa."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Pressure-Volume (P-v) diagram</strong> is a graph that plots Pressure ($P$) on the vertical axis versus Specific Volume ($v$) on the horizontal axis. It is one of the most common diagrams used to visualize thermodynamic processes, especially for piston-cylinder systems.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Feature: Work Done</h3>\n<p class=\"mb-4\">The most important property of a P-v diagram is that for a quasi-equilibrium process, the area under the process curve represents the boundary work ($W_b$) done by or on the system.</p>\n$$ W_b = \\int_{1}^{2} P dv $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Expansion ($dv > 0$):</strong> The area is positive, meaning work is done <em>by</em> the system (e.g., power stroke in an engine).</li>\n    <li><strong>Compression ($dv < 0$):</strong> The area is negative (conceptually), meaning work is done <em>on</em> the system.</li>\n    <li><strong>Cycle:</strong> The net work done during a cycle is equal to the area enclosed by the cycle path. A clockwise cycle produces net work output (heat engine).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Processes on P-v Diagram</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Isobaric ($P=C$):</strong> A horizontal line. Work is simply $P(v_2 - v_1)$.</li>\n    <li><strong>Isochoric ($v=C$):</strong> A vertical line. The area under the curve is zero, so no boundary work is done.</li>\n    <li><strong>Isothermal/Adiabatic:</strong> Both are curves sloping downwards ($P$ decreases as $v$ increases). An adiabatic curve is steeper than an isothermal curve for the same gas.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "On a P-v diagram, the area under the process curve represents:",
+      "options": [
+        { "text": "Heat transfer", "isCorrect": false },
+        { "text": "Boundary work", "isCorrect": true },
+        { "text": "Enthalpy change", "isCorrect": false },
+        { "text": "Entropy change", "isCorrect": false }
+      ],
+      "explanation": "Boundary work for a quasi-equilibrium process is defined as $W = \\int P dv$. This integral corresponds geometrically to the area under the curve plotted on a Pressure-Volume diagram."
+    },
+    {
+      "question": "An isochoric (constant volume) process appears on a P-v diagram as:",
+      "options": [
+        { "text": "A horizontal line", "isCorrect": false },
+        { "text": "A vertical line", "isCorrect": true },
+        { "text": "A parabola", "isCorrect": false },
+        { "text": "A hyperbola", "isCorrect": false }
+      ],
+      "explanation": "Since the specific volume $v$ is constant, the process moves vertically up or down at a fixed x-coordinate value. Since there is no change in volume ($dv=0$), the area under this vertical line is zero, confirming that no boundary work is done."
+    }
+  ]
+}

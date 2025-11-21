@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Area Moment of Inertia ($I$)</strong>, or second moment of area, measures a cross-section's resistance to bending. It depends on the distribution of area relative to an axis.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas</h3>\n<p class=\"mb-4\">Defined by integration:</p>\n$$ I_x = \\int y^2 dA $$\n<p class=\"mb-4\">Common formulas for centroidal axes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangle:</strong> $I_x = \\frac{bh^3}{12}$ (where $b$ is parallel to the axis, $h$ is perpendicular)</li>\n    <li><strong>Triangle:</strong> $I_x = \\frac{bh^3}{36}$ (about centroidal axis)</li>\n    <li><strong>Circle:</strong> $I_x = \\frac{\\pi r^4}{4}$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Polar Moment of Inertia ($J$)</h3>\n<p class=\"mb-4\">Measures resistance to torsion. $J = \\int r^2 dA = I_x + I_y$.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Circle:</strong> $J = \\frac{\\pi r^4}{2}$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "What is the area moment of inertia about the centroidal x-axis of a rectangle with width $b=4$ in and height $h=6$ in?",
+      "options": [
+        { "text": "288 in^4", "isCorrect": false },
+        { "text": "72 in^4", "isCorrect": true },
+        { "text": "48 in^4", "isCorrect": false },
+        { "text": "144 in^4", "isCorrect": false }
+      ],
+      "explanation": "For a rectangle, $I_x = \\frac{bh^3}{12}$. $I_x = \\frac{4(6)^3}{12} = \\frac{4(216)}{12} = \\frac{864}{12} = 72$ in^4."
+    },
+    {
+      "question": "If the height of a rectangular beam is doubled, how does its moment of inertia change?",
+      "options": [
+        { "text": "It doubles.", "isCorrect": false },
+        { "text": "It quadruples.", "isCorrect": false },
+        { "text": "It increases by a factor of 8.", "isCorrect": true },
+        { "text": "It stays the same.", "isCorrect": false }
+      ],
+      "explanation": "Moment of inertia depends on $h^3$. If height doubles ($2h$), the new inertia is proportional to $(2h)^3 = 8h^3$. It increases by a factor of 8."
+    }
+  ]
+}

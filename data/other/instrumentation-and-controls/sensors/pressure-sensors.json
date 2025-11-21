@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">A <strong>pressure sensor</strong> (or pressure transducer) is a device that converts pressure into an electrical signal. Pressure is defined as force per unit area.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Common Sensing Principles</h3>\n<p class=\"mb-4\">Many pressure sensors work by using a flexible diaphragm that deforms when pressure is applied. The method of detecting this deformation determines the type of sensor:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Piezoresistive (Strain Gage):</strong> This is the most common type. Strain gages are bonded to a diaphragm. When pressure deflects the diaphragm, the strain gages are stretched or compressed, changing their resistance. This resistance change is typically measured with a Wheatstone bridge.</li>\n    <li><strong>Capacitive:</strong> The diaphragm acts as one plate of a capacitor. As pressure deflects the diaphragm, the distance between it and a fixed plate changes, which alters the capacitance.</li>\n    <li><strong>Piezoelectric:</strong> A piezoelectric crystal is used to convert the dynamic pressure (stress) directly into an electrical charge. These are only suitable for measuring rapidly changing pressures, not static pressures.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Types of Pressure Measurement</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Absolute Pressure:</strong> Measured relative to a perfect vacuum.</li>\n    <li><strong>Gage Pressure:</strong> Measured relative to the local atmospheric pressure. This is the most common type of pressure measurement. $P_{gage} = P_{abs} - P_{atm}$.</li>\n    <li><strong>Differential Pressure:</strong> The difference in pressure between two points.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Most modern electronic pressure transducers use a flexible diaphragm combined with what other type of sensor to detect its deflection?",
+      "options": [
+        { "text": "Thermocouple", "isCorrect": false },
+        { "text": "Strain gage", "isCorrect": true },
+        { "text": "LVDT", "isCorrect": false },
+        { "text": "RTD", "isCorrect": false }
+      ],
+      "explanation": "Piezoresistive pressure sensors, which are the most common type, use strain gages mounted on a diaphragm. The pressure deforms the diaphragm, which in turn strains the gages, causing a change in resistance that is converted to a voltage signal."
+    },
+    {
+      "question": "The pressure reading on a standard car tire gauge measures:",
+      "options": [
+        { "text": "Absolute pressure", "isCorrect": false },
+        { "text": "Gage pressure", "isCorrect": true },
+        { "text": "Differential pressure", "isCorrect": false },
+        { "text": "Vacuum pressure", "isCorrect": false }
+      ],
+      "explanation": "A tire pressure gauge measures the pressure inside the tire relative to the atmospheric pressure outside. This is the definition of gage pressure. An uninflated tire would read 0 psi on the gauge, but its absolute pressure is equal to atmospheric pressure (approx 14.7 psi)."
+    }
+  ]
+}
