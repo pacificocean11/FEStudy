@@ -1,3 +1,4 @@
+
 export type Discipline = 'Civil' | 'Mechanical' | 'Other';
 
 export interface SolvedExampleOption {
@@ -13,8 +14,8 @@ export interface SolvedExample {
 
 export interface SubtopicContent {
   notes: string;
-  video: string; // URL
-  aiVideo: string; // URL
+  video: string;
+  aiVideo: string;
   solvedExamples: SolvedExample[];
 }
 
@@ -33,7 +34,7 @@ export interface Subject {
   topics: Topic[];
 }
 
-export type PracticeMode = 'study' | 'timed' | 'review';
+export type PracticeMode = 'study' | 'dashboard' | 'timed' | 'review' | 'profile';
 
 export interface PerformanceRecord {
   discipline: Discipline;

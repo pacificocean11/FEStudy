@@ -1226,8 +1226,8 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '2. Probability and Statistics',
       topics: [
-        { name: 'A. Probability distributions', subtopics: [{ name: 'A. Probability distributions', content: null }] },
-        { name: 'B. Measures of central tendency and dispersion', subtopics: [{ name: 'B. Measures of central tendency and dispersion', content: null }] },
+        { name: 'A. Estimation', subtopics: [{ name: 'Estimation', content: null }] },
+        { name: 'B. Expected value and expected error in decision making', subtopics: [{ name: 'Expected value and expected error in decision making', content: null }] },
         { 
           name: 'C. Sample distributions and sizes', 
           subtopics: [

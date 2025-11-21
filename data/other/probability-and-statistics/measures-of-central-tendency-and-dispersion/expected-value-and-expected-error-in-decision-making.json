@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Expected Value ($E[X]$)</h3>\n<p class=\"mb-4\">The expected value, also known as the expectation or mean, is a fundamental concept in probability and decision making. It represents the long-run average outcome of a random variable if the process is repeated many times.</p>\n<p class=\"mb-4\">For a discrete random variable $X$ with possible outcomes $x_i$ and associated probabilities $P(x_i)$:</p>\n$$ E[X] = \\mu = \\sum_{i=1}^n x_i P(x_i) $$\n<p class=\"mb-4\">In decision analysis, this is often called the <strong>Expected Monetary Value (EMV)</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Decision Making Under Risk</h3>\n<p class=\"mb-4\">When making decisions where outcomes are uncertain but their probabilities are known, the rational choice is typically the one with the highest expected value (for profit) or lowest expected value (for cost).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Expected Error in Hypothesis Testing</h3>\n<p class=\"mb-4\">In statistical decision making (hypothesis testing), there is always a risk of making an incorrect conclusion. Two types of errors are defined:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Type I Error ($\\alpha$):</strong> Rejecting a true null hypothesis (False Positive). The probability of this error is the significance level, $\\alpha$.</li>\n    <li><strong>Type II Error ($\\beta$):</strong> Failing to reject a false null hypothesis (False Negative). The probability of this error depends on the sample size and the true value of the parameter.</li>\n</ul>\n<p class=\"mb-4\"><strong>Power of the Test ($1-\\beta$):</strong> The probability of correctly rejecting a false null hypothesis.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A project has a 70% chance of yielding a profit of $50,000 and a 30% chance of resulting in a loss of $20,000. What is the expected monetary value of the project?",
+      "options": [
+        { "text": "$35,000", "isCorrect": false },
+        { "text": "$29,000", "isCorrect": true },
+        { "text": "$41,000", "isCorrect": false },
+        { "text": "$15,000", "isCorrect": false }
+      ],
+      "explanation": "The expected value is the weighted sum of the outcomes: $E[X] = (0.70 \\times 50,000) + (0.30 \\times -20,000) = 35,000 - 6,000 = 29,000$."
+    },
+    {
+      "question": "In a statistical test, a Type I error occurs when:",
+      "options": [
+        { "text": "The null hypothesis is false and we reject it.", "isCorrect": false },
+        { "text": "The null hypothesis is true and we fail to reject it.", "isCorrect": false },
+        { "text": "The null hypothesis is true and we reject it.", "isCorrect": true },
+        { "text": "The null hypothesis is false and we fail to reject it.", "isCorrect": false }
+      ],
+      "explanation": "A Type I error is a 'false positive', meaning we incorrectly conclude that there is an effect (rejecting the null) when in reality there is none (the null is true)."
+    }
+  ]
+}

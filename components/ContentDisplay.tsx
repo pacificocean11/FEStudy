@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { SubtopicContent } from '../types';
 import { BookOpenIcon, PlayCircleIcon, ListChecksIcon } from './icons';
@@ -5,12 +6,12 @@ import SolvedExampleCard from './SolvedExampleCard';
 
 interface ContentDisplayProps {
   content: SubtopicContent;
-  onIncorrectAnswer: (question: string) => void;
+  onAnswer: (question: string, isCorrect: boolean) => void;
 }
 
 type Tab = 'Notes' | 'Video' | 'AI Video' | 'Solved Examples';
 
-const ContentDisplay: React.FC<ContentDisplayProps> = ({ content, onIncorrectAnswer }) => {
+const ContentDisplay: React.FC<ContentDisplayProps> = ({ content, onAnswer }) => {
   const [activeTab, setActiveTab] = useState<Tab>('Notes');
   const notesRef = useRef<HTMLDivElement>(null);
 
@@ -97,11 +98,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ content, onIncorrectAns
                 key={index} 
                 example={example} 
                 index={index + 1} 
-                onAnswer={(isCorrect) => {
-                  if (!isCorrect) {
-                    onIncorrectAnswer(example.question);
-                  }
-                }}
+                onAnswer={(isCorrect) => onAnswer(example.question, isCorrect)}
               />
             ))}
           </div>
