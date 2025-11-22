@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Student's t-Distribution</h3>\n<p class=\"mb-4\">The t-distribution is used when estimating the mean of a normally distributed population in situations where the sample size is small ($n < 30$) and the population standard deviation ($\\sigma$) is unknown.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It is bell-shaped and symmetric like the Normal distribution but has <strong>heavier tails</strong> (more probability of extreme values).</li>\n    <li>Its shape is defined by the <strong>degrees of freedom (df = n - 1)</strong>. As $n$ increases, the t-distribution approaches the standard Normal (Z) distribution.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Chi-Square ($\\chi^2$) Distribution</h3>\n<p class=\"mb-4\">The Chi-Square distribution is a sum of the squares of $k$ independent standard normal random variables.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It is skewed to the right and is defined only for positive values.</li>\n    <li>It is primarily used in tests of <strong>goodness of fit</strong> (checking if data matches a distribution) and tests of <strong>independence</strong> in contingency tables.</li>\n    <li>It is also used to construct confidence intervals for the population <strong>variance</strong>.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. F-Distribution</h3>\n<p class=\"mb-4\">The F-distribution is the ratio of two independent Chi-Square variables, each divided by its degrees of freedom.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>It is used in <strong>Analysis of Variance (ANOVA)</strong> to compare means of multiple groups.</li>\n    <li>It is also used to compare the variances of two populations ($F = s_1^2 / s_2^2$).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Under which condition should the t-distribution be used instead of the standard normal (Z) distribution?",
+      "options": [
+        { "text": "When the population variance is known.", "isCorrect": false },
+        { "text": "When the sample size is large (n > 30).", "isCorrect": false },
+        { "text": "When the population variance is unknown and the sample size is small.", "isCorrect": true },
+        { "text": "When the data is not normally distributed.", "isCorrect": false }
+      ],
+      "explanation": "The t-distribution accounts for the extra uncertainty introduced by estimating the population standard deviation ($\\sigma$) with the sample standard deviation ($s$) when the sample size is small."
+    },
+    {
+      "question": "Which probability distribution is typically used to test if the variance of a population equals a specific value?",
+      "options": [
+        { "text": "Normal Distribution", "isCorrect": false },
+        { "text": "t-Distribution", "isCorrect": false },
+        { "text": "Chi-Square Distribution", "isCorrect": true },
+        { "text": "F-Distribution", "isCorrect": false }
+      ],
+      "explanation": "Inferences about a single population variance are based on the Chi-Square distribution ($\\chi^2 = (n-1)s^2 / \\sigma^2$). The F-distribution is used to compare two variances."
+    }
+  ]
+}

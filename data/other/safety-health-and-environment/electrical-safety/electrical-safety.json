@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Electric Shock</h3>\n<p class=\"mb-4\">Electric shock occurs when current passes through the body. The severity of the injury depends primarily on the <strong>amount of current (Amps)</strong>, the path through the body, and the duration of exposure. While high voltage is dangerous because it can drive more current, it is the current that kills.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>1 mA:</strong> Perception threshold (tingling).</li>\n    <li><strong>10-20 mA:</strong> \"Let-go\" threshold. Muscle contraction makes it impossible to release the grip.</li>\n    <li><strong>50-100 mA:</strong> Ventricular fibrillation (heart stops pumping effectively), likely fatal.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Protective Measures</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Grounding (Earthing):</strong> Connecting the non-current-carrying metal parts of equipment to earth ground. This ensures that if a fault occurs (e.g., a live wire touches the case), the current has a low-resistance path to ground, tripping the circuit breaker.</li>\n    <li><strong>GFCI (Ground Fault Circuit Interrupter):</strong> A device that protects people from shock. It monitors the current flowing out on the hot wire and returning on the neutral wire. If there is an imbalance (as small as 5 mA) — indicating current is leaking to ground, potentially through a person — it cuts the power in a fraction of a second.</li>\n    <li><strong>Bonding:</strong> Connecting all metal parts together to ensure they are at the same electrical potential, preventing shocks between equipment.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Lockout/Tagout (LOTO)</h3>\n<p class=\"mb-4\">LOTO procedures are critical for ensuring equipment is de-energized before maintenance. It involves isolating energy sources (electrical, hydraulic, pneumatic, etc.), locking the isolation device in the safe position, and placing a tag warning not to operate it.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Arc Flash</h3>\n<p class=\"mb-4\">An arc flash is a type of electrical explosion that results from a low-impedance connection to ground or another voltage phase in an electrical system. It releases tremendous energy in the form of heat (up to 35,000°F), light, and pressure (arc blast). Protection involves maintaining safe approach boundaries and wearing appropriate Arc Rated (AR) clothing.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which electrical safety device is specifically designed to protect people from electric shock by detecting small imbalances in current flow?",
+      "options": [
+        { "text": "Circuit Breaker", "isCorrect": false },
+        { "text": "Fuse", "isCorrect": false },
+        { "text": "GFCI (Ground Fault Circuit Interrupter)", "isCorrect": true },
+        { "text": "Surge Protector", "isCorrect": false }
+      ],
+      "explanation": "Standard circuit breakers and fuses protect equipment and wiring from overcurrent (fire hazards). A GFCI protects people by detecting very small currents (4-6 mA) leaking to ground and shutting off power almost instantly."
+    },
+    {
+      "question": "In the context of electrical safety, the 'Let-go' threshold refers to:",
+      "options": [
+        { "text": "The voltage at which a wire can be safely touched.", "isCorrect": false },
+        { "text": "The current level at which a person loses muscle control and cannot release their grip on an electrified object.", "isCorrect": true },
+        { "text": "The time it takes for a breaker to trip.", "isCorrect": false },
+        { "text": "The maximum safe current for a copper wire.", "isCorrect": false }
+      ],
+      "explanation": "The let-go threshold is the current level (typically 10-20 mA for AC) where involuntary muscle contractions prevent a person from letting go of the shock source, increasing the duration of exposure and the risk of severe injury."
+    },
+    {
+      "question": "What is the primary purpose of Lockout/Tagout (LOTO) procedures?",
+      "options": [
+        { "text": "To secure the facility from intruders.", "isCorrect": false },
+        { "text": "To identify broken equipment.", "isCorrect": false },
+        { "text": "To prevent the accidental release of hazardous energy during equipment maintenance.", "isCorrect": true },
+        { "text": "To save energy when machines are not in use.", "isCorrect": false }
+      ],
+      "explanation": "LOTO is a safety procedure used to ensure that dangerous machines are properly shut off and not able to be started up again prior to the completion of maintenance or repair work."
+    }
+  ]
+}

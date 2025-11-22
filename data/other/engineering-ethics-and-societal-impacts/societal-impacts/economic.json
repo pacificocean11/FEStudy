@@ -1,17 +1,27 @@
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Engineering projects can have profound economic impacts on society, both positive and negative. Engineers have a responsibility to consider these impacts in their work.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Positive Economic Impacts</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Job Creation:</strong> Large infrastructure projects (roads, bridges, power plants) create jobs during construction and can support long-term employment through operation and maintenance.</li>\n    <li><strong>Economic Growth:</strong> Improved infrastructure can increase efficiency, reduce transportation costs, and facilitate trade, leading to broader economic growth.</li>\n    <li><strong>Technological Advancement:</strong> Engineering innovation leads to new products, services, and industries, driving economic development.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Negative Economic Impacts</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Displacement:</strong> A new highway or dam may require the acquisition of land, displacing homes and businesses and causing economic hardship.</li>\n    <li><strong>Externalities:</strong> Projects can have unintended negative economic side effects (externalities), such as pollution that harms a local fishing industry.</li>\n    <li><strong>Cost Overruns:</strong> Poorly managed projects that go significantly over budget can strain public finances or bankrupt companies.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Engineer's Role</h3>\n<p class=\"mb-4\">Engineers contribute to positive economic outcomes by designing efficient, reliable, and cost-effective solutions. They also have an ethical responsibility to perform thorough economic analyses (like cost-benefit analysis) and to be transparent about the potential costs and economic risks of a project.</p>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Economic Impact of Engineering</h3>\n<p class=\"mb-4\">Engineering projects often drive economic growth but also carry significant costs. Engineers must evaluate projects not just on technical feasibility, but on economic viability and their broader impact on the economy.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Direct vs. Indirect Costs and Benefits</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Direct Costs:</strong> Materials, labor, land acquisition, operation, and maintenance.</li>\n    <li><strong>Direct Benefits:</strong> Revenue generation, reduced travel time, energy savings.</li>\n    <li><strong>Indirect (External) Costs:</strong> Pollution, traffic congestion during construction, noise, disruption to local businesses.</li>\n    <li><strong>Indirect (External) Benefits:</strong> Increased property values, job creation in supporting industries, improved public health.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Cost-Benefit Analysis</h3>\n<p class=\"mb-4\">A systematic approach to estimating the strengths and weaknesses of alternatives. It is used to determine if a project is worthwhile ($B/C > 1$). Ethical considerations involve accurately valuing non-monetary factors (like safety or environmental quality) and not ignoring negative externalities.</p>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
     {
-      "question": "The construction of a new high-speed rail line is expected to reduce travel times and shipping costs between two major cities. This is an example of what kind of societal impact?",
+      "question": "In an engineering economic analysis, an 'externality' refers to:",
       "options": [
-        { "text": "A negative environmental impact", "isCorrect": false },
-        { "text": "A positive economic impact", "isCorrect": true },
-        { "text": "A public safety risk", "isCorrect": false },
-        { "text": "A social sustainability issue", "isCorrect": false }
+        { "text": "A cost or benefit that affects a third party who chose to incur that cost or benefit.", "isCorrect": false },
+        { "text": "A cost or benefit that affects a third party who did not choose to incur that cost or benefit.", "isCorrect": true },
+        { "text": "The external appearance of a structure.", "isCorrect": false },
+        { "text": "Costs associated with exterior construction.", "isCorrect": false }
       ],
-      "explanation": "Improving infrastructure to make commerce and transportation more efficient is a direct positive economic impact. It lowers the cost of doing business and can spur economic growth."
+      "explanation": "Externalities are consequences of an industrial or commercial activity that affect other parties without this being reflected in the cost of the goods or services involved, such as pollution affecting the health of nearby residents."
+    },
+    {
+      "question": "When performing a cost-benefit analysis for a public project, how should potential negative impacts on the local community be handled?",
+      "options": [
+        { "text": "They should be ignored if they are not strictly monetary.", "isCorrect": false },
+        { "text": "They should be quantified financially as much as possible and included as costs.", "isCorrect": true },
+        { "text": "They should be listed as benefits.", "isCorrect": false },
+        { "text": "They are irrelevant to the engineering design.", "isCorrect": false }
+      ],
+      "explanation": "Ethical engineering practice requires considering the full impact of a project. Negative societal impacts should be quantified (e.g., cost of noise mitigation, loss of property value) and included in the analysis to ensure the true cost to society is understood."
     }
   ]
 }

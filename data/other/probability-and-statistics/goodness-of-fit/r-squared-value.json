@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Coefficient of Determination</strong>, denoted as $R^2$, is a statistical measure used in regression analysis to assess the goodness of fit of a model. It represents the proportion of the variance for the dependent variable ($y$) that's explained by the independent variable ($x$) in the model.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Relationship to Correlation ($r$)</h3>\n<p class=\"mb-4\">For simple linear regression, $R^2$ is simply the square of the Pearson correlation coefficient ($r$).</p>\n$$ R^2 = (r)^2 $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Interpretation</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Range:</strong> $0 \\le R^2 \\le 1$.</li>\n    <li><strong>$R^2 = 1$:</strong> The regression line fits the data perfectly (all points lie on the line). 100% of the variation in y is explained by x.</li>\n    <li><strong>$R^2 = 0$:</strong> The model explains none of the variability of the response data around its mean.</li>\n    <li><strong>$R^2 = 0.80$:</strong> Means that 80% of the variation in the dependent variable is predictable from the independent variable, while 20% is due to error or other factors.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Calculation</h3>\n$$ R^2 = 1 - \\frac{SS_{res}}{SS_{tot}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$SS_{res}$: Sum of squares of residuals (error). $\\sum (y_i - \\hat{y}_i)^2$.</li>\n    <li>$SS_{tot}$: Total sum of squares (variance proportional). $\\sum (y_i - \\bar{y})^2$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "If the correlation coefficient between two variables is $r = 0.5$, what is the coefficient of determination ($R^2$)?",
+      "options": [
+        { "text": "0.50", "isCorrect": false },
+        { "text": "0.25", "isCorrect": true },
+        { "text": "0.71", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false }
+      ],
+      "explanation": "The coefficient of determination is the square of the correlation coefficient. $R^2 = (0.5)^2 = 0.25$. This means only 25% of the variance is explained by the model."
+    },
+    {
+      "question": "An $R^2$ value of 0.95 in a linear regression indicates that:",
+      "options": [
+        { "text": "There is a 95% probability the hypothesis is true.", "isCorrect": false },
+        { "text": "95% of the data points lie exactly on the regression line.", "isCorrect": false },
+        { "text": "95% of the variability in the dependent variable is explained by the independent variable.", "isCorrect": true },
+        { "text": "The slope of the line is 0.95.", "isCorrect": false }
+      ],
+      "explanation": "$R^2$ measures the 'goodness of fit'. A value of 0.95 is very high, indicating that the regression model accounts for 95% of the observed variation in the data."
+    }
+  ]
+}

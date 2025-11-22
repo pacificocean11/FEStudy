@@ -1,17 +1,27 @@
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Life Cycle Assessment (LCA)</strong> is a systematic analysis of the potential environmental impacts of a product, process, or service throughout its entire life cycle. This is often referred to as a \"cradle-to-grave\" or \"cradle-to-cradle\" analysis.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Stages of a Life Cycle</h3>\n<p class=\"mb-4\">An LCA considers environmental impacts at all stages, including:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Raw Material Extraction:</strong> Acquiring raw materials from the earth (e.g., mining ore, harvesting timber).</li>\n    <li><strong>Manufacturing and Processing:</strong> Converting raw materials into a finished product.</li>\n    <li><strong>Transportation and Distribution:</strong> Moving materials and products between stages.</li>\n    <li><strong>Product Use:</strong> The operational life of the product, including energy consumption and maintenance.</li>\n    <li><strong>End-of-Life:</strong> Disposal, recycling, or reuse of the product after it is no longer useful.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Purpose</h3>\n<p class=\"mb-4\">The goal of an LCA is to identify and quantify the energy and materials used and the wastes released into the environment. This helps engineers and designers to:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Identify opportunities for environmental improvements.</li>\n    <li>Compare different products or design choices.</li>\n    <li>Avoid \"burden shifting,\" where solving one environmental problem creates another one elsewhere in the life cycle.</li>\n</ul>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Life-Cycle Analysis (LCA)</strong>, also known as Life-Cycle Assessment, is a technique to assess the environmental impacts associated with all the stages of a product's life from raw material extraction through materials processing, manufacture, distribution, use, repair and maintenance, and disposal or recycling (Cradle-to-Grave).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Four Phases of LCA</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Goal and Scope Definition:</strong> Defining the product system, system boundaries, and the purpose of the study.</li>\n    <li><strong>Inventory Analysis (LCI):</strong> Compiling a list of inputs (energy, raw materials) and outputs (emissions, waste) for all processes in the life cycle.</li>\n    <li><strong>Impact Assessment (LCIA):</strong> Evaluating the significance of potential environmental impacts based on the inventory results (e.g., global warming potential, toxicity, acidification).</li>\n    <li><strong>Interpretation:</strong> Summarizing the results to make decisions and recommendations.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Importance</h3>\n<p class=\"mb-4\">LCA prevents \"problem shifting\"—for example, creating a product that is energy-efficient during use but creates massive toxic waste during manufacturing. It provides a holistic view of environmental impact.</p>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
     {
-      "question": "A Life Cycle Assessment (LCA) of a plastic water bottle would typically include all of the following stages EXCEPT:",
+      "question": "What is the primary objective of a 'Cradle-to-Grave' Life Cycle Analysis?",
       "options": [
-        { "text": "The environmental impact of oil extraction to produce the plastic.", "isCorrect": false },
-        { "text": "The energy used to manufacture and transport the bottle.", "isCorrect": false },
-        { "text": "The environmental impact of the product being advertised on television.", "isCorrect": true },
-        { "text": "The fate of the bottle after it is thrown away (landfill or recycling).", "isCorrect": false }
+        { "text": "To determine the marketing strategy for a product.", "isCorrect": false },
+        { "text": "To minimize the initial manufacturing cost only.", "isCorrect": false },
+        { "text": "To assess the environmental impacts of a product from raw material extraction to disposal.", "isCorrect": true },
+        { "text": "To analyze the product's safety features.", "isCorrect": false }
       ],
-      "explanation": "LCA focuses on the physical life cycle of a product, from raw material extraction to end-of-life disposal. While advertising has its own resource use, it is generally considered outside the scope of the product's direct environmental impact assessment."
+      "explanation": "LCA considers the entire life of the product, ensuring that environmental impacts are not simply shifted from one stage (like use) to another (like disposal)."
+    },
+    {
+      "question": "In an LCA, the phase where energy and raw material requirements and emissions are quantified is called:",
+      "options": [
+        { "text": "Goal Definition", "isCorrect": false },
+        { "text": "Inventory Analysis (LCI)", "isCorrect": true },
+        { "text": "Impact Assessment (LCIA)", "isCorrect": false },
+        { "text": "Interpretation", "isCorrect": false }
+      ],
+      "explanation": "The Life Cycle Inventory (LCI) analysis involves creating a detailed inventory of flows from and to nature for a product system. Inventory flows include inputs of water, energy, and raw materials, and releases to air, land, and water."
     }
   ]
 }

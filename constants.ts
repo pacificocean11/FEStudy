@@ -1317,9 +1317,8 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '5. Engineering Ethics and Societal Impacts',
       topics: [
-        { name: 'A. Codes of ethics', subtopics: [{ name: 'A. Codes of ethics', content: null }] },
-        { name: 'B. Professional liability', subtopics: [{ name: 'B. Professional liability', content: null }] },
-        { name: 'C. Public protection', subtopics: [{ name: 'C. Public protection', content: null }] },
+        { name: 'A. Codes of ethics', subtopics: [{ name: 'Identifying and Solving Ethical Dilemmas', content: null }] },
+        { name: 'C. Public protection', subtopics: [{ name: 'Licensing Boards', content: null }] },
         {
           name: 'D. Societal impacts',
           subtopics: [
@@ -1351,21 +1350,22 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Personal Protective Equipment', content: null },
           ]
         },
-        { name: 'C. Hazard communications', subtopics: [
-            { name: 'SDS', content: null },
-            { name: 'Proper Labeling', content: null },
-            { name: 'Concentrations', content: null },
-            { name: 'Fire Ratings', content: null },
-            { name: 'Safety Equipment', content: null },
-          ]
-        },
-        { name: 'D. Safety Management', subtopics: [{ name: 'D. Safety Management', content: null }] },
+        { name: 'C. Gas detection and monitoring', subtopics: [{ name: 'Gas detection and monitoring', content: null }] },
+        { name: 'D. Electrical safety', subtopics: [{ name: 'Electrical safety', content: null }] },
         { 
           name: 'E. Confined space entry and ventilation rates', 
           subtopics: [
             { name: 'Confined Space Entry', content: null },
             { name: 'Ventilation Rates', content: null },
           ] 
+        },
+        { name: 'F. Hazard communications', subtopics: [
+            { name: 'SDS', content: null },
+            { name: 'Proper Labeling', content: null },
+            { name: 'Concentrations', content: null },
+            { name: 'Fire Ratings', content: null },
+            { name: 'Safety Equipment', content: null },
+          ]
         },
       ],
     },
@@ -1567,7 +1567,7 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Pressure in Static Liquid', content: null },
             { name: 'Manometers', content: null },
             { name: 'Hydrostatic Forces', content: null },
-            { name: 'Archimedes Principle/Buoyancy', content: null },
+            { name: 'Archimedes Principle Buoyancy', content: null },
           ] 
         },
         { name: 'E. Energy, impulse, and momentum', subtopics: [{ name: 'E. Energy, impulse, and momentum', content: null }] },

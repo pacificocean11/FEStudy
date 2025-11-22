@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Standard Error of the Mean (SEM)</h3>\n<p class=\"mb-4\">The <strong>Standard Error of the Mean</strong> quantifies how much the sample mean ($\\bar{x}$) is expected to vary from the true population mean ($\\mu$) if we were to take multiple samples. It is the standard deviation of the sampling distribution of the mean.</p>\n$$ SE_{\\bar{x}} = \\frac{s}{\\sqrt{n}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$s$: Sample standard deviation.</li>\n    <li>$n$: Sample size.</li>\n    <li>As sample size ($n$) increases, the SEM decreases, meaning the sample mean becomes a more precise estimator of the population mean.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Standard Error of the Estimate ($S_{est}$ or $S_{yx}$)</h3>\n<p class=\"mb-4\">In regression analysis, the <strong>Standard Error of the Estimate</strong> measures the accuracy of the regression model's predictions. It represents the average distance (residual) between the observed data points and the regression line.</p>\n$$ S_{yx} = \\sqrt{\\frac{\\sum (y_i - \\hat{y}_i)^2}{n - 2}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$y_i$: Observed value.</li>\n    <li>$\\hat{y}_i$: Predicted value from the regression equation.</li>\n    <li>$n-2$: Degrees of freedom for simple linear regression.</li>\n</ul>\n<p class=\"mb-4\">A lower $S_{yx}$ indicates a better fit of the model to the data.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A sample of 100 items has a standard deviation of 20. What is the Standard Error of the Mean (SEM)?",
+      "options": [
+        { "text": "0.2", "isCorrect": false },
+        { "text": "2.0", "isCorrect": true },
+        { "text": "5.0", "isCorrect": false },
+        { "text": "200", "isCorrect": false }
+      ],
+      "explanation": "The formula for SEM is $SE = s / \\sqrt{n}$. Here, $s=20$ and $n=100$. So, $SE = 20 / \\sqrt{100} = 20 / 10 = 2.0$."
+    },
+    {
+      "question": "How does quadrupling the sample size affect the Standard Error of the Mean?",
+      "options": [
+        { "text": "It reduces it by half.", "isCorrect": true },
+        { "text": "It reduces it by a factor of 4.", "isCorrect": false },
+        { "text": "It doubles it.", "isCorrect": false },
+        { "text": "It does not change.", "isCorrect": false }
+      ],
+      "explanation": "Since $SE \\propto 1/\\sqrt{n}$, if $n$ becomes $4n$, the new error is $1/\\sqrt{4n} = 1/(2\\sqrt{n}) = 0.5 \\times$ the original error. Quadrupling the sample size cuts the uncertainty in half."
+    }
+  ]
+}

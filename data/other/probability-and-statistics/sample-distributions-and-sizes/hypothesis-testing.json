@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Framework</h3>\n<p class=\"mb-4\">Hypothesis testing is a statistical method used to make inferences about a population parameter based on sample data. It involves comparing two competing hypotheses.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Null and Alternative Hypotheses</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Null Hypothesis ($H_0$):</strong> The assumption of \"no effect\" or \"no difference\". It represents the status quo. Examples: $\\mu = 10$, $\\mu_1 = \\mu_2$. It always involves an equality ($=, \\le, \\ge$).</li>\n    <li><strong>Alternative Hypothesis ($H_a$ or $H_1$):</strong> The claim we are testing for; the \"new\" theory. Examples: $\\mu \\ne 10$, $\\mu_1 < \\mu_2$. It never involves an equality ($<, >, \\ne$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Test Statistics</h3>\n<p class=\"mb-4\">To decide between $H_0$ and $H_a$, we calculate a test statistic (like a z-score or t-score) from the sample data. This statistic measures how far our sample estimate deviates from the hypothesized null parameter, in units of standard error.</p>\n$$ z = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}} \\quad \\text{or} \\quad t = \\frac{\\bar{x} - \\mu_0}{s / \\sqrt{n}} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Errors in Decision Making</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Type I Error ($\\alpha$):</strong> Rejecting $H_0$ when it is actually true (False Positive).</li>\n    <li><strong>Type II Error ($\\beta$):</strong> Failing to reject $H_0$ when it is actually false (False Negative).</li>\n    <li><strong>Power ($1-\\beta$):</strong> The probability of correctly rejecting a false null hypothesis.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is a valid statement for a Null Hypothesis ($H_0$)?",
+      "options": [
+        { "text": "$\\mu < 50$", "isCorrect": false },
+        { "text": "$\\mu \\ne 50$", "isCorrect": false },
+        { "text": "$\\mu = 50$", "isCorrect": true },
+        { "text": "$\\bar{x} = 50$", "isCorrect": false }
+      ],
+      "explanation": "Hypotheses are always statements about population parameters (like $\\mu$), not sample statistics (like $\\bar{x}$). Furthermore, the Null Hypothesis must always contain a condition of equality ($=, \\le, \\ge$). The Alternative Hypothesis contains the inequality."
+    },
+    {
+      "question": "Failing to reject the null hypothesis when the alternative hypothesis is actually true is known as a:",
+      "options": [
+        { "text": "Type I Error", "isCorrect": false },
+        { "text": "Type II Error", "isCorrect": true },
+        { "text": "Standard Error", "isCorrect": false },
+        { "text": "Significance Error", "isCorrect": false }
+      ],
+      "explanation": "A Type II error (beta) is a 'miss' or a false negative. It occurs when there really is an effect (the null is false), but the test fails to detect it."
+    }
+  ]
+}

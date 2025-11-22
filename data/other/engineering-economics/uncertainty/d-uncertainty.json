@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Risk vs. Uncertainty</h3>\n<p class=\"mb-4\">In engineering economics, distinctions are often made between risk and uncertainty:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Risk:</strong> A situation where the possible outcomes are known, and the probability of occurrence for each outcome can be estimated (e.g., rolling a die, historical weather data).</li>\n    <li><strong>Uncertainty:</strong> A situation where the possible outcomes may or may not be known, but the probabilities of occurrence are unknown or cannot be reasonably estimated.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Expected Value (EV)</h3>\n<p class=\"mb-4\">When probabilities are known (risk), the <strong>Expected Value</strong> (or Expected Monetary Value, EMV) is used to compare alternatives. It is the probability-weighted average of all possible outcomes.</p>\n$$ E[X] = \\sum_{i=1}^{n} x_i P(x_i) $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$x_i$: The value of outcome $i$ (e.g., profit or cost).</li>\n    <li>$P(x_i)$: The probability of outcome $i$ occurring.</li>\n    <li>$\\sum P(x_i) = 1$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Sensitivity Analysis</h3>\n<p class=\"mb-4\"><strong>Sensitivity Analysis</strong> determines how sensitive a decision or economic measure (like NPW or IRR) is to changes in key parameters (e.g., initial cost, interest rate, salvage value). It involves changing one variable at a time while holding others constant to see the effect on the outcome.</p>\n<p class=\"mb-4\"><strong>Breakeven Analysis</strong> is a form of sensitivity analysis that finds the value of a parameter that causes the project to just break even ($NPW=0$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Decision Trees</h3>\n<p class=\"mb-4\">A graphical tool used to analyze sequential decisions under risk. Square nodes represent decisions, and circular nodes represent chance events. The tree is analyzed backwards (from right to left) by calculating the expected value at each chance node.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A project has a 60% probability of making a profit of $100,000 and a 40% probability of losing $20,000. What is the expected monetary value (EMV) of the project?",
+      "options": [
+        { "text": "$80,000", "isCorrect": false },
+        { "text": "$52,000", "isCorrect": true },
+        { "text": "$40,000", "isCorrect": false },
+        { "text": "$60,000", "isCorrect": false }
+      ],
+      "explanation": "EMV is the weighted sum of the outcomes. $EMV = (0.60 \\times 100,000) + (0.40 \\times -20,000) = 60,000 - 8,000 = $52,000."
+    },
+    {
+      "question": "Sensitivity analysis is primarily used to:",
+      "options": [
+        { "text": "Calculate the exact future worth of a project.", "isCorrect": false },
+        { "text": "Determine how changes in estimation variables affect the project's economic measure.", "isCorrect": true },
+        { "text": "Eliminate all risk from a project.", "isCorrect": false },
+        { "text": "Determine the sunk costs.", "isCorrect": false }
+      ],
+      "explanation": "Sensitivity analysis identifies which variables (e.g., cost estimates, sales volume) have the biggest impact on the project's success. It answers 'what-if' questions."
+    },
+    {
+      "question": "In a decision tree, a square node represents:",
+      "options": [
+        { "text": "A chance event where nature determines the outcome.", "isCorrect": false },
+        { "text": "The end of the decision process.", "isCorrect": false },
+        { "text": "A decision point where the decision-maker chooses an alternative.", "isCorrect": true },
+        { "text": "A calculation of expected value.", "isCorrect": false }
+      ],
+      "explanation": "Square nodes are decision nodes where the path is chosen by the decision-maker. Circular nodes are chance nodes where the path is determined by probabilities."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Atmospheric Hazards</h3>\n<p class=\"mb-4\">The primary goal of gas detection is to alert personnel to atmospheric hazards before they become dangerous. The main types of hazards are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Oxygen Deficiency/Enrichment:</strong> Normal air contains ~20.9% oxygen. OSHA defines an oxygen-deficient atmosphere as less than 19.5% O2 (risk of asphyxiation). Oxygen-enriched atmospheres (>23.5%) increase flammability risk.</li>\n    <li><strong>Combustible Gases:</strong> Gases capable of igniting and burning (e.g., methane, propane, hydrogen).</li>\n    <li><strong>Toxic Gases:</strong> Gases that are poisonous or harmful to health (e.g., Carbon Monoxide (CO), Hydrogen Sulfide (H2S)).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Flammability Limits</h3>\n<p class=\"mb-4\">Combustible gases will only burn within a specific range of concentrations in air.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Lower Explosive Limit (LEL) or Lower Flammable Limit (LFL):</strong> The minimum concentration of gas in air needed for the mixture to be flammable. Below this, the mixture is too lean.</li>\n    <li><strong>Upper Explosive Limit (UEL) or Upper Flammable Limit (UFL):</strong> The maximum concentration above which the mixture is too rich to burn.</li>\n</ul>\n<p class=\"mb-4\">Gas detectors typically display combustible gas readings as a <strong>percentage of LEL</strong>. An alarm is usually set at 10% LEL.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Sensor Technologies</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Catalytic Bead:</strong> The most common sensor for combustible gases (LEL). It works by burning the gas on a heated coil, changing its resistance. It requires oxygen to work.</li>\n    <li><strong>Infrared (IR):</strong> Detects hydrocarbon gases by measuring the absorption of IR light. It works in inert atmospheres (no oxygen needed) and is immune to sensor poisoning.</li>\n    <li><strong>Electrochemical:</strong> Used for toxic gases (CO, H2S) and oxygen. A chemical reaction generates a current proportional to the gas concentration.</li>\n    <li><strong>Photoionization Detector (PID):</strong> Used for Volatile Organic Compounds (VOCs) at very low (ppm) levels.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The Lower Explosive Limit (LEL) of methane is 5% by volume. If a gas detector reads '50% LEL', what is the actual concentration of methane in the air?",
+      "options": [
+        { "text": "50%", "isCorrect": false },
+        { "text": "2.5%", "isCorrect": true },
+        { "text": "10%", "isCorrect": false },
+        { "text": "0.5%", "isCorrect": false }
+      ],
+      "explanation": "The reading is a percentage of the LEL, not the volume percentage. 50% of the LEL means the concentration is half of the LEL value. Since the LEL is 5%, half of that is 2.5% methane by volume."
+    },
+    {
+      "question": "Which type of sensor is commonly used to detect toxic gases like Carbon Monoxide (CO) and Hydrogen Sulfide (H2S)?",
+      "options": [
+        { "text": "Catalytic bead", "isCorrect": false },
+        { "text": "Infrared", "isCorrect": false },
+        { "text": "Electrochemical", "isCorrect": true },
+        { "text": "Thermal conductivity", "isCorrect": false }
+      ],
+      "explanation": "Electrochemical sensors are the standard for detecting toxic gases at parts-per-million (ppm) levels. Catalytic bead sensors are used for combustible gases (LEL levels)."
+    },
+    {
+      "question": "An atmosphere is considered oxygen-deficient by OSHA standards if the oxygen concentration falls below:",
+      "options": [
+        { "text": "20.9%", "isCorrect": false },
+        { "text": "19.5%", "isCorrect": true },
+        { "text": "16.0%", "isCorrect": false },
+        { "text": "23.5%", "isCorrect": false }
+      ],
+      "explanation": "OSHA defines an oxygen-deficient atmosphere as one containing less than 19.5% oxygen by volume. Normal air is 20.9%. Below 19.5%, cognitive and physical impairments can begin."
+    }
+  ]
+}

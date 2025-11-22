@@ -1,27 +1,27 @@
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\"><strong>Sustainable development</strong> is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. It is about finding a balance between environmental protection, social equity, and economic viability.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. The Three Pillars of Sustainability</h3>\n<p class=\"mb-4\">Sustainability is often represented as having three interconnected dimensions or pillars:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Environmental Sustainability:</strong> The ability to maintain rates of renewable resource harvest, pollution creation, and non-renewable resource depletion that can be continued indefinitely. It involves protecting ecosystems and biodiversity.</li>\n    <li><strong>Social Sustainability:</strong> The ability of a social system, such as a community, to function at a defined level of social well-being indefinitely. It includes issues of equity, public health, community development, and human rights.</li>\n    <li><strong>Economic Sustainability:</strong> The ability to support a defined level of economic production indefinitely. A sustainable economy must be able to produce goods and services on a continuing basis, to maintain manageable levels of government and external debt, and to avoid extreme sectoral imbalances which damage agricultural or industrial production.</li>\n</ul>\n<p class=\"mb-4\">True sustainability is achieved when all three pillars are in balance.</p>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition of Sustainability</h3>\n<p class=\"mb-4\">The most widely accepted definition is from the Brundtland Report (1987): \"Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.\"</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Triple Bottom Line</h3>\n<p class=\"mb-4\">Sustainability is often evaluated using the \"Triple Bottom Line\" framework, balancing three pillars:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Environmental (Planet):</strong> Minimizing waste, reducing pollution, conserving resources, and protecting ecosystems.</li>\n    <li><strong>Social (People):</strong> Ensuring fair labor practices, community engagement, health and safety, and social equity.</li>\n    <li><strong>Economic (Profit):</strong> Creating economic value and ensuring financial viability without harming the other two pillars.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Sustainable Engineering Principles</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Use of renewable energy and materials.</li>\n    <li>Designing for durability and reuse (Circular Economy).</li>\n    <li>Minimizing energy and material consumption (Efficiency).</li>\n    <li>Preventing pollution at the source rather than treating it afterwards.</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
     {
-      "question": "Which of the following best describes the concept of sustainable engineering design?",
+      "question": "The 'Triple Bottom Line' of sustainability consists of:",
       "options": [
-        { "text": "Designing a product that has the lowest possible manufacturing cost.", "isCorrect": false },
-        { "text": "Designing a product that uses only recycled materials.", "isCorrect": false },
-        { "text": "Designing a product that balances environmental, social, and economic impacts throughout its life cycle.", "isCorrect": true },
-        { "text": "Designing a product that meets all current government environmental regulations.", "isCorrect": false }
+        { "text": "Profit, Loss, and Revenue.", "isCorrect": false },
+        { "text": "Design, Manufacture, and Disposal.", "isCorrect": false },
+        { "text": "Environmental, Social, and Economic factors.", "isCorrect": true },
+        { "text": "Planning, Execution, and Monitoring.", "isCorrect": false }
       ],
-      "explanation": "Sustainability is a holistic concept. While cost, recycled materials, and regulations are all part of it, the core idea is the integration and balancing of the three pillars: environmental (planet), social (people), and economic (profit)."
+      "explanation": "Sustainability is fundamentally about balancing these three competing interests, often referred to as People, Planet, and Profit."
     },
     {
-      "question": "The 'Three Pillars' of sustainability are commonly referred to as:",
+      "question": "Which of the following is a core principle of sustainable engineering?",
       "options": [
-        { "text": "Reduce, Reuse, Recycle", "isCorrect": false },
-        { "text": "Air, Water, Soil", "isCorrect": false },
-        { "text": "Environmental, Social, and Economic", "isCorrect": true },
-        { "text": "Past, Present, and Future", "isCorrect": false }
+        { "text": "Designing products for a single use to maximize sales.", "isCorrect": false },
+        { "text": "Designing processes that rely on non-renewable resources.", "isCorrect": false },
+        { "text": "Designing to minimize waste and energy consumption throughout a product's lifecycle.", "isCorrect": true },
+        { "text": "Prioritizing short-term economic gain over long-term impacts.", "isCorrect": false }
       ],
-      "explanation": "The globally recognized model for sustainability is based on balancing three interconnected dimensions: environmental stewardship, social responsibility, and economic viability."
+      "explanation": "Sustainable engineering focuses on efficiency, waste reduction, and considering the long-term impacts of design decisions on future generations."
     }
   ]
 }

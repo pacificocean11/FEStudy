@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Basis of Engineering Ethics</h3>\n<p class=\"mb-4\">Engineering ethics are based on the principle that engineers have a special responsibility to society due to their technical expertise. This responsibility is codified in the <strong>NCEES Model Rules of Professional Conduct</strong> and the codes of ethics of various professional societies (ASME, ASCE, IEEE, NSPE).</p>\n<p class=\"mb-4\">The fundamental canon is:</p>\n<blockquote class=\"border-l-4 border-slate-300 pl-4 italic my-4\">\n    Engineers shall hold paramount the safety, health, and welfare of the public.\n</blockquote>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Identifying Ethical Dilemmas</h3>\n<p class=\"mb-4\">An ethical dilemma arises when an engineer faces a situation where professional obligations conflict. Common sources of conflict include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Public Safety vs. Cost/Schedule:</strong> Pressure to cut corners or ignore safety standards to meet deadlines or budgets.</li>\n    <li><strong>Duty to Client vs. Duty to Public:</strong> Keeping client information confidential vs. revealing a public hazard.</li>\n    <li><strong>Conflict of Interest:</strong> Personal interests interfering with professional judgment.</li>\n    <li><strong>Bribery and Gifts:</strong> Accepting valuable items that could influence decisions.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. A Framework for Solving Dilemmas</h3>\n<p class=\"mb-4\">When faced with an ethical issue, follow a systematic approach:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Identify the Issue:</strong> Clearly define the ethical problem. Is it a safety issue? A conflict of interest?</li>\n    <li><strong>Clarify the Facts:</strong> Gather all relevant information. What are the laws and regulations? What does the code of ethics say?</li>\n    <li><strong>Identify Stakeholders:</strong> Who will be affected by the decision? (Public, client, employer, self, profession).</li>\n    <li><strong>Evaluate Options:</strong> Analyze possible courses of action against the ethical hierarchy. The hierarchy of duty is generally: <strong>Public > Law > Client/Employer > Profession > Self</strong>.</li>\n    <li><strong>Decide and Act:</strong> Choose the action that best aligns with the paramount duty to the public and professional integrity. Document the decision process.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Whistleblowing</h3>\n<p class=\"mb-4\">Whistleblowing is the act of reporting unethical or illegal conduct to an external authority. It is a measure of last resort when internal resolution fails and public safety is at risk. Before whistleblowing, an engineer should typically:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Verify the facts and the potential danger.</li>\n    <li>exhaust internal channels (notify supervisors and upper management).</li>\n    <li>Believe that disclosure will actually prevent the harm.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An engineer discovers that a chemical plant is discharging toxic waste into a river, violating environmental regulations. The plant manager refuses to stop the discharge because it would require an expensive shutdown. According to the NCEES Model Rules, what is the engineer's primary obligation?",
+      "options": [
+        { "text": "To obey the manager to protect their job.", "isCorrect": false },
+        { "text": "To maintain the confidentiality of the employer's business operations.", "isCorrect": false },
+        { "text": "To report the violation to the appropriate authorities to protect the public health and welfare.", "isCorrect": true },
+        { "text": "To quit the job quietly.", "isCorrect": false }
+      ],
+      "explanation": "The obligation to hold paramount the safety, health, and welfare of the public supersedes the duty to the employer. If an employer's action endangers the public (toxic discharge), the engineer must report it."
+    },
+    {
+      "question": "An engineer is selecting a vendor for a project. One of the bidding companies is owned by the engineer's spouse. What is the most ethical course of action?",
+      "options": [
+        { "text": "Select the spouse's company if they offer the lowest price.", "isCorrect": false },
+        { "text": "Disclose the relationship to the employer and recuse oneself from the selection process.", "isCorrect": true },
+        { "text": "Select the spouse's company but keep the relationship secret.", "isCorrect": false },
+        { "text": "Reject the spouse's company immediately without informing the employer.", "isCorrect": false }
+      ],
+      "explanation": "This is a clear conflict of interest. The engineer's personal interest (spouse's business) conflicts with the duty to the employer (unbiased selection). The ethical requirement is to fully disclose the conflict and withdraw from the decision-making process."
+    }
+  ]
+}

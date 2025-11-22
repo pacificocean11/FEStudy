@@ -1,17 +1,27 @@
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Paramount Duty</h3>\n<p class=\"mb-4\">The most fundamental principle of engineering ethics, as stated in the NCEES Model Rules and all major engineering codes of ethics, is that engineers shall <strong>hold paramount the safety, health, and welfare of the public</strong>.</p>\n<p class=\"mb-4\">This means that an engineer's duty to protect the public is their highest professional obligation, overriding all other duties, including those to clients, employers, colleagues, or the profession.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Aspects of Public Safety</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Risk Assessment and Management:</strong> Identifying potential hazards in a design or project, assessing their likelihood and consequences, and implementing measures to eliminate or mitigate them to an acceptable level.</li>\n    <li><strong>Fail-Safe Design:</strong> Designing systems so that if a component fails, the system defaults to a safe state. For example, a railway signal that shows red if the power fails.</li>\n    <li><strong>Adherence to Codes and Standards:</strong> Following established design codes, standards, and regulations that are developed to ensure a minimum level of safety.</li>\n    <li><strong>Duty to Report:</strong> If an engineer's professional judgment is overruled in a way that endangers public safety, they have an ethical obligation to inform their employer or client. If the issue is not corrected, they may be obligated to report the situation to the appropriate authorities (whistleblowing).</li>\n</ul>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Paramount Obligation</h3>\n<p class=\"mb-4\">The first Fundamental Canon of the NSPE Code of Ethics states: \"Engineers shall hold paramount the safety, health, and welfare of the public.\" This obligation overrides duties to clients or employers.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Risk Management and Safety Factors</h3>\n<p class=\"mb-4\">Engineers ensure public safety through:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Factors of Safety:</strong> Designing structures to withstand loads significantly higher than expected service loads.</li>\n    <li><strong>Redundancy:</strong> Designing systems so that if one component fails, others can take over (fail-safe design).</li>\n    <li><strong>Compliance:</strong> Strictly adhering to building codes and standards (e.g., ASME, IEEE, IBC).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Informed Consent</h3>\n<p class=\"mb-4\">Engineers must inform the public and clients of the risks associated with engineering projects. If a client overrules an engineer's judgment in a way that endangers public safety, the engineer is ethically obligated to warn the client and, if necessary, report the situation to appropriate authorities.</p>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
     {
-      "question": "An engineer discovers a critical design flaw in a consumer product that is already on the market. The flaw could potentially cause serious injury. The engineer's manager instructs them to ignore the issue to avoid a costly recall. What is the engineer's primary ethical responsibility?",
+      "question": "An engineer identifies a design flaw that poses a significant risk to public safety, but fixing it will delay the project and cost the client money. The client insists on proceeding with the original design. What is the engineer's ethical obligation?",
       "options": [
-        { "text": "To obey the manager's instructions to maintain company loyalty.", "isCorrect": false },
-        { "text": "To inform the appropriate regulatory agency and/or the public of the danger.", "isCorrect": true },
-        { "text": "To wait and see if any injuries are reported before taking action.", "isCorrect": false },
-        { "text": "To quietly fix the flaw in future versions of the product.", "isCorrect": false }
+        { "text": "Follow the client's instructions as they are paying for the project.", "isCorrect": false },
+        { "text": "Document the flaw to protect themselves from liability but proceed.", "isCorrect": false },
+        { "text": "Refuse to sign the documents and report the issue to the appropriate authorities if the client persists.", "isCorrect": true },
+        { "text": "Quit the project quietly.", "isCorrect": false }
       ],
-      "explanation": "The engineer's paramount duty is to the public's safety. When there is a direct conflict between this duty and the interests of an employer, the duty to the public must prevail. The engineer must take steps to ensure the danger is addressed, which includes reporting it to authorities if the company refuses to act."
+      "explanation": "The duty to public safety is paramount. An engineer cannot ethically proceed with a design that endangers the public, regardless of the client's wishes or financial implications."
+    },
+    {
+      "question": "A 'fail-safe' design implies that:",
+      "options": [
+        { "text": "The system can never fail.", "isCorrect": false },
+        { "text": "If the system fails, it does so in a mode that minimizes harm to people and equipment.", "isCorrect": true },
+        { "text": "The system requires no maintenance.", "isCorrect": false },
+        { "text": "The system has a factor of safety of 1.0.", "isCorrect": false }
+      ],
+      "explanation": "Fail-safe design acknowledges that failure can happen but ensures the consequences are mitigated. For example, a train's air brakes are applied if pressure is lost, stopping the train rather than letting it run away."
     }
   ]
 }

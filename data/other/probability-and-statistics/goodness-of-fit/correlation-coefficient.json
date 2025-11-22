@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Pearson sample correlation coefficient ($r$)</strong> measures the strength and direction of the <strong>linear</strong> relationship between two continuous variables, $x$ and $y$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Properties of $r$</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Range:</strong> The value of $r$ is always between -1 and +1 ($-1 \\le r \\le 1$).</li>\n    <li><strong>Magnitude:</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>$|r| = 1$: Perfect linear relationship. All points lie on a straight line.</li>\n            <li>$|r| \\approx 0$: No linear relationship (uncorrelated).</li>\n            <li>$|r| > 0.7$: Strong correlation.</li>\n        </ul>\n    </li>\n    <li><strong>Direction:</strong>\n        <ul class=\"list-circle list-inside ml-6\">\n            <li>$r > 0$ (Positive): As $x$ increases, $y$ tends to increase.</li>\n            <li>$r < 0$ (Negative): As $x$ increases, $y$ tends to decrease.</li>\n        </ul>\n    </li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Calculation</h3>\n<p class=\"mb-4\">The formula for $r$ is the ratio of the covariance of $x$ and $y$ to the product of their standard deviations:</p>\n$$ r = \\frac{\\sum (x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\sum (x_i - \\bar{x})^2 \\sum (y_i - \\bar{y})^2}} $$\n<p class=\"mb-4\"><strong>Important:</strong> Correlation does not imply causation. A high correlation between A and B does not mean A causes B.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A correlation coefficient of $r = -0.90$ indicates:",
+      "options": [
+        { "text": "A weak negative linear relationship.", "isCorrect": false },
+        { "text": "A strong positive linear relationship.", "isCorrect": false },
+        { "text": "A strong negative linear relationship.", "isCorrect": true },
+        { "text": "No linear relationship.", "isCorrect": false }
+      ],
+      "explanation": "The sign is negative, indicating an inverse relationship (as one goes up, the other goes down). The magnitude (0.90) is close to 1, indicating a very strong linear association."
+    },
+    {
+      "question": "If the correlation coefficient between variables X and Y is zero ($r=0$), this means:",
+      "options": [
+        { "text": "X causes Y.", "isCorrect": false },
+        { "text": "There is no linear relationship between X and Y.", "isCorrect": true },
+        { "text": "There is no relationship of any kind between X and Y.", "isCorrect": false },
+        { "text": "The variables are normally distributed.", "isCorrect": false }
+      ],
+      "explanation": "A correlation of zero means there is no *linear* trend. However, the variables could still be related in a non-linear way (e.g., a parabolic relationship $y=x^2$ over a symmetric interval might yield $r=0$)."
+    }
+  ]
+}

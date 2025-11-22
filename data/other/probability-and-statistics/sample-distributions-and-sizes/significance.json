@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Statistical Significance</h3>\n<p class=\"mb-4\">In statistics, a result is considered <strong>statistically significant</strong> if it is unlikely to have occurred by chance or random fluctuation alone. It implies that there is a genuine effect or relationship in the population being studied.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Significance Level ($\\alpha$)</h3>\n<p class=\"mb-4\">The significance level, denoted by $\\alpha$ (alpha), is a threshold set by the researcher before conducting a test. It represents the probability of rejecting the null hypothesis when it is actually true (Type I error). Common values are:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>0.05 (5%):</strong> The standard level for most scientific research.</li>\n    <li><strong>0.01 (1%):</strong> Used when high confidence is required (e.g., medical trials).</li>\n    <li><strong>0.10 (10%):</strong> Used in exploratory studies.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. The P-Value</h3>\n<p class=\"mb-4\">The <strong>p-value</strong> is the calculated probability of obtaining a test statistic at least as extreme as the one observed, assuming the null hypothesis is true.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $p \\le \\alpha$: The result is statistically significant. We reject the null hypothesis.</li>\n    <li>If $p > \\alpha$: The result is not statistically significant. We fail to reject the null hypothesis.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A researcher sets a significance level of $\\alpha = 0.05$. After analyzing the data, the calculated p-value is 0.03. What is the correct conclusion?",
+      "options": [
+        { "text": "The result is not significant; accept the null hypothesis.", "isCorrect": false },
+        { "text": "The result is significant; reject the null hypothesis.", "isCorrect": true },
+        { "text": "The result is significant; accept the null hypothesis.", "isCorrect": false },
+        { "text": "The result is inconclusive.", "isCorrect": false }
+      ],
+      "explanation": "Compare the p-value to $\\alpha$. Since $0.03 < 0.05$, the probability of observing this data by chance is low enough that we reject the null hypothesis and deem the result statistically significant."
+    },
+    {
+      "question": "What does a significance level of 0.05 imply regarding Type I errors?",
+      "options": [
+        { "text": "There is a 5% chance of failing to reject a false null hypothesis.", "isCorrect": false },
+        { "text": "There is a 95% chance of making a Type I error.", "isCorrect": false },
+        { "text": "There is a 5% risk of concluding an effect exists when it actually does not.", "isCorrect": true },
+        { "text": "The power of the test is 5%.", "isCorrect": false }
+      ],
+      "explanation": "The significance level $\\alpha$ is exactly the probability of committing a Type I error (False Positive). Setting $\\alpha = 0.05$ means accepting a 5% risk of rejecting the null hypothesis when it is actually true."
+    }
+  ]
+}

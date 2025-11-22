@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Purpose of Licensure</h3>\n<p class=\"mb-4\">The primary purpose of professional engineering licensure is to <strong>protect the public health, safety, and welfare</strong>. By regulating the practice of engineering, the state ensures that only qualified individuals are entrusted with designing structures and systems that affect public safety.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. State Licensing Boards</h3>\n<p class=\"mb-4\">In the United States, the authority to license engineers lies with individual states, not the federal government. Each state (and territory) has a <strong>Licensing Board</strong> (or Board of Registration) established by state statute.</p>\n<p class=\"mb-4\">The responsibilities of a State Board include:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Evaluating Candidates:</strong> Reviewing education, experience, and examination results to determine if an applicant meets the requirements for licensure.</li>\n    <li><strong>Issuing Licenses:</strong> Granting the title of Professional Engineer (PE) to qualified individuals.</li>\n    <li><strong>Enforcement and Discipline:</strong> Investigating complaints against PEs and taking disciplinary action (reprimand, fine, suspension, or revocation of license) for violations of state laws or board rules (e.g., negligence, incompetence, misconduct).</li>\n    <li><strong>Regulation of Practice:</strong> Defining what constitutes the \"practice of engineering\" and preventing unlicensed individuals from practicing.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. NCEES</h3>\n<p class=\"mb-4\">The <strong>National Council of Examiners for Engineering and Surveying (NCEES)</strong> is a non-profit organization composed of the engineering and surveying boards of all U.S. states and territories. While NCEES does not issue licenses, it facilitates mobility and uniformity by:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Developing and administering the standard exams (FE and PE).</li>\n    <li>Maintaining records (NCEES Records) to help engineers get licensed in multiple states (comity/reciprocity).</li>\n    <li>Publishing Model Laws and Rules as guidelines for states.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Requirements for Licensure</h3>\n<p class=\"mb-4\">Typically, the requirements to become a PE involve the \"three E's\":</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Education:</strong> Graduation from an ABET-accredited engineering program.</li>\n    <li><strong>Exams:</strong> Passing the Fundamentals of Engineering (FE) exam and the Principles and Practice of Engineering (PE) exam.</li>\n    <li><strong>Experience:</strong> Gaining a specific amount of progressive engineering experience (usually 4 years) under the supervision of a licensed PE.</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">5. Continuing Education</h3>\n<p class=\"mb-4\">Most states require PEs to earn <strong>Continuing Professional Competency (CPC)</strong> credits, often called Professional Development Hours (PDHs), to renew their license. This ensures engineers stay current with technology and code changes.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">6. Sealing Documents</h3>\n<p class=\"mb-4\">A PE must affix their seal (stamp) and signature to final engineering documents (plans, reports, specifications) that they have prepared or that were prepared under their <strong>responsible charge</strong> (direct supervision and control). Sealing work indicates that the engineer takes professional responsibility for it.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Who has the legal authority to issue a license to practice engineering in the United States?",
+      "options": [
+        { "text": "The National Society of Professional Engineers (NSPE)", "isCorrect": false },
+        { "text": "The National Council of Examiners for Engineering and Surveying (NCEES)", "isCorrect": false },
+        { "text": "The State Licensing Board", "isCorrect": true },
+        { "text": "The ABET accreditation board", "isCorrect": false }
+      ],
+      "explanation": "Licensure is a state function. While NCEES administers the exams, only the individual state boards have the statutory authority to grant the license to practice within their jurisdiction."
+    },
+    {
+      "question": "A Professional Engineer (PE) is asked to review and seal a set of design drawings prepared by an unlicensed engineer in another firm. The PE did not supervise the work. Is it ethical for the PE to seal the drawings?",
+      "options": [
+        { "text": "Yes, if the PE reviews them thoroughly and finds no errors.", "isCorrect": false },
+        { "text": "Yes, if the unlicensed engineer pays a review fee.", "isCorrect": false },
+        { "text": "No, because the work was not performed under the PE's responsible charge.", "isCorrect": true },
+        { "text": "No, unless the PE redraws the plans entirely.", "isCorrect": false }
+      ],
+      "explanation": "It is a violation of state laws and ethical codes for a PE to seal documents that were not prepared under their 'responsible charge' (direct supervision and control). This practice is often called 'plan stamping' and is illegal."
+    }
+  ]
+}
