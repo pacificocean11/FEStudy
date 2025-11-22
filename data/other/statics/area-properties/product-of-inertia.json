@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Product of Inertia ($I_{xy}$)</strong> is a geometric property of a cross-section that measures its asymmetry with respect to the x and y axes. Unlike the area moments of inertia ($I_x, I_y$), which are always positive, the product of inertia can be positive, negative, or zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The product of inertia is defined by the integral:</p>\n$$ I_{xy} = \\int_A xy \\ dA $$\n<p class=\"mb-4\">It has units of length to the fourth power (e.g., in⁴ or m⁴).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Symmetry Property</h3>\n<p class=\"mb-4\">If an area has <strong>at least one axis of symmetry</strong>, the product of inertia $I_{xy}$ with respect to any set of axes that includes the axis of symmetry is <strong>zero</strong>.</p>\n<p class=\"mb-4\">For example, for a rectangle, circle, I-beam, or T-beam, the product of inertia about the centroidal axes is zero.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Principal Axes</h3>\n<p class=\"mb-4\">For any area, there exists a set of perpendicular axes (rotated by some angle $\\theta_p$) about which the product of inertia is zero ($I_{xy} = 0$). These are called the <strong>Principal Axes</strong>. About these axes, the area moments of inertia ($I_u, I_v$) are at their maximum and minimum values.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a rectangular cross-section, what is the product of inertia ($I_{xy}$) with respect to its centroidal x and y axes?",
+      "options": [
+        { "text": "A positive value", "isCorrect": false },
+        { "text": "A negative value", "isCorrect": false },
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Depends on the dimensions", "isCorrect": false }
+      ],
+      "explanation": "A rectangle is symmetric about both its centroidal x and y axes. Since it has at least one axis of symmetry, the product of inertia $I_{xy}$ with respect to these axes is zero."
+    },
+    {
+      "question": "The principal axes of a cross-section are defined as the axes about which:",
+      "options": [
+        { "text": "The moment of inertia is zero.", "isCorrect": false },
+        { "text": "The product of inertia is zero.", "isCorrect": true },
+        { "text": "The area is equally divided.", "isCorrect": false },
+        { "text": "The centroid is located.", "isCorrect": false }
+      ],
+      "explanation": "By definition, the principal axes are the specific set of orthogonal axes for which the product of inertia ($I_{xy}$) vanishes (is zero). The moments of inertia about these axes are the principal moments of inertia (maximum and minimum)."
+    }
+  ]
+}

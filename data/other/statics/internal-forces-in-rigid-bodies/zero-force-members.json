@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">A <strong>zero-force member</strong> is a member in a truss that carries no load under a specific loading condition. These members do not contribute to the strength of the truss for that particular load case.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Purpose</h3>\n<p class=\"mb-4\">While they carry no load in a given static analysis, zero-force members are important for:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Providing stability to the truss and preventing buckling of longer members under compression.</li>\n    <li>Carrying loads when the loading condition on the truss changes (e.g., moving loads on a bridge).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Rules for Identification</h3>\n<p class=\"mb-4\">Zero-force members can often be identified by inspection of the truss without any calculation. There are two primary rules:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Rule 1: The Two-Member Joint</strong><br>If a joint has only <strong>two</strong> non-collinear members connected to it, and there are <strong>no</strong> external loads or support reactions at that joint, then both members are zero-force members.</li>\n    <li><strong>Rule 2: The Three-Member Joint</strong><br>If a joint has <strong>three</strong> members connected to it, and <strong>two</strong> of those members are collinear, and there are <strong>no</strong> external loads or support reactions at that joint, then the third (non-collinear) member is a zero-force member.</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A truss joint connects three members. Two of the members form a straight line, and the third member is at an angle. If there is no external load at this joint, what can be concluded?",
+      "options": [
+        { "text": "All three members are zero-force members.", "isCorrect": false },
+        { "text": "The two collinear members are zero-force members.", "isCorrect": false },
+        { "text": "The non-collinear member is a zero-force member.", "isCorrect": true },
+        { "text": "None of the members can be identified as zero-force.", "isCorrect": false }
+      ],
+      "explanation": "This is a direct application of Rule 2. The forces from the two collinear members balance each other. For the sum of forces perpendicular to the collinear members to be zero, the perpendicular component of the third member's force must be zero. Since the member is not perpendicular, its total force must be zero."
+    },
+    {
+      "question": "Even though a member is identified as a zero-force member under a given static load, why might it still be included in the truss design?",
+      "options": [
+        { "text": "For aesthetic purposes only.", "isCorrect": false },
+        { "text": "To provide stability and carry load under different loading conditions.", "isCorrect": true },
+        { "text": "Because it is required by building codes for all trusses.", "isCorrect": false },
+        { "text": "To make the analysis more difficult.", "isCorrect": false }
+      ],
+      "explanation": "A member might be a zero-force member for one static load case, but it could be subjected to significant loads if the loading changes (e.g., wind from a different direction, or a truck moving across a bridge). It also can serve to brace a long compression member and prevent it from buckling."
+    }
+  ]
+}

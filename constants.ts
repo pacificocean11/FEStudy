@@ -1217,7 +1217,6 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Limits', content: null },
             { name: 'Derivatives', content: null },
             { name: 'Applications', content: null },
-            { name: 'Partial Derivatives', content: null },
             { name: 'Indefinite Integrals', content: null },
           ] 
         },
@@ -1415,41 +1414,33 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '8. Statics',
       topics: [
-        { name: 'A. Resultants of force systems', subtopics: [
-            { name: 'Vector Addition', content: null },
-            { name: 'Moment of a Force', content: null },
-            { name: 'Couples', content: null },
-          ]
-        },
-        { name: 'B. Concurrent force systems', subtopics: [{ name: 'B. Concurrent force systems', content: null }] },
-        { name: 'C. Equilibrium of rigid bodies', subtopics: [{ name: 'C. Equilibrium of rigid bodies', content: null }] },
+        { name: 'A. Vector Analysis', subtopics: [{ name: 'A. Vector Analysis', content: null }] },
+        { name: 'B. Force Systems', subtopics: [{ name: 'B. Force Systems', content: null }] },
+        { name: 'C. Force Couple Systems', subtopics: [{ name: 'C. Force Couple Systems', content: null }] },
+        { name: 'D. Equilibrium of Rigid Bodies', subtopics: [{ name: 'D. Equilibrium of Rigid Bodies', content: null }] },
         { 
-          name: 'D. Internal forces in rigid bodies', 
+          name: 'E. Internal Forces in Rigid Bodies', 
           subtopics: [
             { name: 'Method of Joints', content: null },
-            { name: 'Method of Sections', content: null },
+            { name: 'Method of Section', content: null },
+            { name: 'Zero Force Members', content: null },
           ] 
         },
-        { name: 'E. Centroid of area', subtopics: [
-          { name: 'Centroids of Masses, Areas, Lengths, and Volumes', content: null },
-        ] },
         { 
-          name: 'F. Area properties', 
+          name: 'F. Area Properties', 
           subtopics: [
-            { name: 'Centroids', content: null },
+            { name: 'Centroids of Masses, Areas, Lengths, and Volumes', content: null },
             { name: 'Area Moments of Inertia', content: null },
-            { name: 'Radius of Gyration', content: null },
+            { name: 'Polar Moment of Inertia', content: null },
+            { name: 'Perpendicular Axis Theorem', content: null },
             { name: 'Parallel Axis Theorem', content: null },
+            { name: 'Radius of Gyration', content: null },
+            { name: 'Product of Inertia', content: null },
           ] 
         },
-        { 
-          name: 'G. Static friction', 
-          subtopics: [
-            { name: 'Limiting Friction', content: null },
-            { name: 'Screw Threads', content: null },
-            { name: 'Belt Friction', content: null },
-          ] 
-        },
+        { name: 'G. Static Friction', subtopics: [{ name: 'G. Static Friction', content: null }] },
+        { name: 'H. Free-Body Diagrams', subtopics: [{ name: 'H. Free-Body Diagrams', content: null }] },
+        { name: 'I. Weight and Mass Computations', subtopics: [{ name: 'I. Weight and Mass Computations', content: null }] },
       ],
     },
     {

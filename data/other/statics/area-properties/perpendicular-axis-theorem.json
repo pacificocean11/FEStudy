@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Perpendicular Axis Theorem</strong> relates the polar moment of inertia of a planar lamina (a 2D shape) about an axis perpendicular to its plane to the area moments of inertia about two perpendicular axes lying within its plane.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Theorem</h3>\n<p class=\"mb-4\">For any planar area lying in the x-y plane, the polar moment of inertia ($J_z$) about the z-axis (perpendicular to the plane and passing through the origin) is equal to the sum of the area moments of inertia about the x and y axes.</p>\n$$ J_z = I_x + I_y $$\n<p class=\"mb-4\">This theorem assumes that the axes x, y, and z are mutually perpendicular and intersect at a common origin.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application</h3>\n<p class=\"mb-4\">This theorem provides a convenient way to calculate the polar moment of inertia if the area moments of inertia are known, or vice versa. It applies only to flat, 2D areas or laminas, not to 3D bodies.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For a planar shape, the moment of inertia about the x-axis is $I_x = 200$ in⁴ and the moment of inertia about the y-axis is $I_y = 50$ in⁴. What is the polar moment of inertia about the origin ($J_z$)?",
+      "options": [
+        { "text": "150 in⁴", "isCorrect": false },
+        { "text": "100 in⁴", "isCorrect": false },
+        { "text": "250 in⁴", "isCorrect": true },
+        { "text": "4.0 in⁴", "isCorrect": false }
+      ],
+      "explanation": "According to the Perpendicular Axis Theorem, the polar moment of inertia is the sum of the two area moments of inertia in the plane: $J_z = I_x + I_y = 200 + 50 = 250$ in⁴."
+    },
+    {
+      "question": "The perpendicular axis theorem is strictly valid for:",
+      "options": [
+        { "text": "Any 3D object.", "isCorrect": false },
+        { "text": "Any 2D (planar) area or lamina.", "isCorrect": true },
+        { "text": "Only circular shapes.", "isCorrect": false },
+        { "text": "Only objects with an axis of symmetry.", "isCorrect": false }
+      ],
+      "explanation": "The theorem is derived based on the geometry of a flat plane ($r^2 = x^2 + y^2$). It does not apply to 3-dimensional volumetric objects."
+    }
+  ]
+}

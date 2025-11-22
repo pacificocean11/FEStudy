@@ -1,18 +1,28 @@
 
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>radius of gyration ($k$)</strong> describes the distribution of cross-sectional area around an axis. It represents the distance from the axis at which the entire area could be concentrated and still yield the same moment of inertia.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">The radius of gyration is derived from the area moment of inertia ($I$) and the area ($A$).</p>\n$$ I = k^2 A \\implies k = \\sqrt{\\frac{I}{A}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k_x = \\sqrt{\\frac{I_x}{A}}$</li>\n    <li>$k_y = \\sqrt{\\frac{I_y}{A}}$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application</h3>\n<p class=\"mb-4\">Radius of gyration is primarily used in column stability analysis (buckling) to determine the slenderness ratio ($L/k$). A column tends to buckle about the axis with the smallest radius of gyration.</p>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>radius of gyration ($k$)</strong> is a geometric property that describes how the area of a cross-section is distributed around an axis. It represents the distance from the axis at which the entire area could be concentrated into a thin strip and still yield the same moment of inertia as the original shape.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formula</h3>\n<p class=\"mb-4\">The radius of gyration is derived from the relationship $I = k^2 A$. Rearranging for $k$:</p>\n$$ k = \\sqrt{\\frac{I}{A}} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k_x = \\sqrt{\\frac{I_x}{A}}$ (about the x-axis)</li>\n    <li>$k_y = \\sqrt{\\frac{I_y}{A}}$ (about the y-axis)</li>\n</ul>\n<p class=\"mb-4\">It has units of length (e.g., inches, mm, meters).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Application</h3>\n<p class=\"mb-4\">The radius of gyration is a critical parameter in the design of columns. It is used to calculate the <strong>slenderness ratio ($L/k$)</strong>, which determines a column's susceptibility to buckling. A column will buckle about the axis with the <strong>minimum</strong> radius of gyration ($k_{min}$).</p>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
     {
-      "question": "A square cross-section has a side length of 4 inches. What is its radius of gyration?",
+      "question": "A square cross-section has a side length of 4 inches. What is its radius of gyration about a centroidal axis?",
       "options": [
         { "text": "1.15 in", "isCorrect": true },
         { "text": "2.0 in", "isCorrect": false },
         { "text": "4.0 in", "isCorrect": false },
         { "text": "0.58 in", "isCorrect": false }
       ],
-      "explanation": "First find Area $A = 16$. Then find Inertia $I = bh^3/12 = 4(4)^3/12 = 256/12 = 21.33$. Radius of gyration $k = \\sqrt{I/A} = \\sqrt{21.33/16} = \\sqrt{1.333} = 1.15$ in. Alternatively for a rectangle $k = h/\\sqrt{12} = 4/3.464 = 1.15$."
+      "explanation": "First find Area $A = 4 \\times 4 = 16$ in². Then find Inertia $I = bh^3/12 = 4(4)^3/12 = 256/12 = 21.33$ in⁴. Radius of gyration $k = \\sqrt{I/A} = \\sqrt{21.33/16} = \\sqrt{1.333} \\approx 1.15$ in. Alternatively for a rectangle, $k = h/\\sqrt{12} = 4/3.464 \\approx 1.15$ in."
+    },
+    {
+      "question": "In column design, the axis about which buckling is most likely to occur corresponds to:",
+      "options": [
+        { "text": "The maximum moment of inertia.", "isCorrect": false },
+        { "text": "The maximum radius of gyration.", "isCorrect": false },
+        { "text": "The minimum radius of gyration.", "isCorrect": true },
+        { "text": "The axis with the largest dimension.", "isCorrect": false }
+      ],
+      "explanation": "Buckling occurs about the 'weak' axis, which is the axis with the least resistance to bending. This corresponds to the minimum moment of inertia and, consequently, the minimum radius of gyration ($k_{min}$)."
     }
   ]
 }

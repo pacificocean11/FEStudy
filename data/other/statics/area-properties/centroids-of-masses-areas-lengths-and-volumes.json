@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>centroid</strong> is the geometric center of a shape (area, length, or volume). The <strong>center of mass</strong> is the point where the entire mass of an object can be considered to be concentrated. If the material has a uniform density, the centroid and the center of mass coincide.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Centroid Formulas</h3>\n<p class=\"mb-4\">The coordinates of the centroid ($\\bar{x}, \\bar{y}$) of an area are found by taking the first moment of the area about an axis and dividing by the total area.</p>\n$$ \\bar{x} = \\frac{\\int x dA}{A} \\quad \\quad \\bar{y} = \\frac{\\int y dA}{A} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Centroids of Common Shapes</h3>\n<p class=\"mb-4\">For common shapes, the centroid locations are well-known and can be found in reference tables. For example:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangle (base b, height h):</strong> The centroid is at its geometric center, $(\\frac{b}{2}, \\frac{h}{2})$.</li>\n    <li><strong>Right Triangle (base b, height h):</strong> The centroid is at $(\\frac{b}{3}, \\frac{h}{3})$ from the right angle corner.</li>\n    <li><strong>Semicircle (radius r):</strong> The centroid is on the axis of symmetry at a distance of $\\frac{4r}{3\\pi}$ from the diameter.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Method of Composite Bodies</h3>\n<p class=\"mb-4\">To find the centroid of a complex shape, it can be divided into simpler, common shapes. The centroid of the composite shape is then the weighted average of the centroids of the individual parts.</p>\n$$ \\bar{X} = \\frac{\\sum \\bar{x}_i A_i}{\\sum A_i} \\quad \\quad \\bar{Y} = \\frac{\\sum \\bar{y}_i A_i}{\\sum A_i} $$\n<p class=\"mb-4\">Where $\\bar{x}_i$ and $\\bar{y}_i$ are the centroid coordinates of each simple shape $i$, and $A_i$ is the area of that shape. If a shape is a hole, its area is treated as negative.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Where is the centroid of a right triangle with base $b=12$ in and height $h=9$ in located, measured from the right angle corner?",
+      "options": [
+        { "text": "x=6, y=4.5", "isCorrect": false },
+        { "text": "x=4, y=3", "isCorrect": true },
+        { "text": "x=3, y=4", "isCorrect": false },
+        { "text": "x=8, y=6", "isCorrect": false }
+      ],
+      "explanation": "The centroid of a right triangle is located at one-third of the base and one-third of the height from the 90-degree corner. $\\bar{x} = b/3 = 12/3 = 4$ inches. $\\bar{y} = h/3 = 9/3 = 3$ inches. The location is (4, 3)."
+    },
+    {
+      "question": "A T-shaped cross-section consists of a 10\"x2\" top flange and a 10\"x2\" web (total height 12\"). Where is the vertical centroid ($\\bar{Y}$) located, measured from the bottom edge?",
+      "options": [
+        { "text": "7.0 in", "isCorrect": false },
+        { "text": "8.0 in", "isCorrect": true },
+        { "text": "8.5 in", "isCorrect": false },
+        { "text": "10.0 in", "isCorrect": false }
+      ],
+      "explanation": "Divide the T-shape into two rectangles: the web (part 1) and the flange (part 2). Area 1 (web) = $10 \\times 2 = 20$ in². Centroid 1 (from bottom) = $y_1 = 10/2 = 5$ in. Area 2 (flange) = $10 \\times 2 = 20$ in². Centroid 2 (from bottom) = $10 + 2/2 = 11$ in. Total Area $A_T = 20 + 20 = 40$ in². Now use the composite formula: $\\bar{Y} = \\frac{\\sum y_i A_i}{A_T} = \\frac{(5)(20) + (11)(20)}{40} = \\frac{100 + 220}{40} = \\frac{320}{40} = 8.0$ inches."
+    }
+  ]
+}

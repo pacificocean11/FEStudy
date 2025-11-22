@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Polar Moment of Inertia ($J$)</strong> is a geometric property of a cross-section that reflects its resistance to torsion (twisting). It is defined about an axis perpendicular to the plane of the area (the z-axis or polar axis).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The polar moment of inertia about an axis passing through a point O is defined by the integral:</p>\n$$ J_O = \\int_A r^2 dA $$\n<p class=\"mb-4\">where $r$ is the radial distance from the point O to the elemental area $dA$. Since $r^2 = x^2 + y^2$, it follows that:</p>\n$$ J_O = \\int (x^2 + y^2) dA = \\int x^2 dA + \\int y^2 dA = I_y + I_x $$\n<p class=\"mb-4\">This relationship ($J_z = I_x + I_y$) is the Perpendicular Axis Theorem for planar areas.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Formulas</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Solid Circular Shaft (radius R, diameter D):</strong>\n    $$ J = \\frac{\\pi R^4}{2} = \\frac{\\pi D^4}{32} $$</li>\n    <li><strong>Hollow Circular Shaft (outer radius $R_o$, inner radius $R_i$):</strong>\n    $$ J = \\frac{\\pi}{2}(R_o^4 - R_i^4) $$</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The polar moment of inertia is primarily used in the analysis of which type of stress?",
+      "options": [
+        { "text": "Bending stress", "isCorrect": false },
+        { "text": "Axial stress", "isCorrect": false },
+        { "text": "Torsional shear stress", "isCorrect": true },
+        { "text": "Thermal stress", "isCorrect": false }
+      ],
+      "explanation": "The polar moment of inertia ($J$) measures resistance to twisting. It appears in the torsion formula $\\tau = Tr/J$, which calculates the shear stress in a shaft due to an applied torque."
+    },
+    {
+      "question": "What is the polar moment of inertia for a solid circular shaft with a diameter of 4 inches?",
+      "options": [
+        { "text": "8$\\pi$ in⁴", "isCorrect": true },
+        { "text": "4$\\pi$ in⁴", "isCorrect": false },
+        { "text": "16$\\pi$ in⁴", "isCorrect": false },
+        { "text": "32$\\pi$ in⁴", "isCorrect": false }
+      ],
+      "explanation": "Use the formula for a solid circular shaft: $J = \\frac{\\pi d^4}{32}$. Substituting $d=4$: $J = \\frac{\\pi (4)^4}{32} = \\frac{256\\pi}{32} = 8\\pi$ in⁴."
+    }
+  ]
+}

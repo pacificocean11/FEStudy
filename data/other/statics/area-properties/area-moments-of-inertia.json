@@ -1,6 +1,6 @@
 
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Area Moment of Inertia ($I$)</strong>, or second moment of area, measures a cross-section's resistance to bending. It depends on the distribution of area relative to an axis.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Formulas</h3>\n<p class=\"mb-4\">Defined by integration:</p>\n$$ I_x = \\int y^2 dA $$\n<p class=\"mb-4\">Common formulas for centroidal axes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangle:</strong> $I_x = \\frac{bh^3}{12}$ (where $b$ is parallel to the axis, $h$ is perpendicular)</li>\n    <li><strong>Triangle:</strong> $I_x = \\frac{bh^3}{36}$ (about centroidal axis)</li>\n    <li><strong>Circle:</strong> $I_x = \\frac{\\pi r^4}{4}$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Polar Moment of Inertia ($J$)</h3>\n<p class=\"mb-4\">Measures resistance to torsion. $J = \\int r^2 dA = I_x + I_y$.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Circle:</strong> $J = \\frac{\\pi r^4}{2}$</li>\n</ul>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">The <strong>Area Moment of Inertia ($I$)</strong>, also known as the second moment of area, measures a cross-section's resistance to bending. It depends on the distribution of area relative to an axis. The further the area is distributed from the axis, the larger the moment of inertia.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Definition</h3>\n<p class=\"mb-4\">The moment of inertia of an area about the x-axis ($I_x$) and y-axis ($I_y$) is defined by the integrals:</p>\n$$ I_x = \\int_A y^2 dA $$$$ I_y = \\int_A x^2 dA $$\n<p class=\"mb-4\">Because of the $y^2$ and $x^2$ terms, the moment of inertia is always positive and has units of length to the fourth power (e.g., in⁴ or m⁴).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Shapes</h3>\n<p class=\"mb-4\">Formulas for the moment of inertia about centroidal axes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangle (base b, height h):</strong>\n    $$ I_{xc} = \\frac{bh^3}{12} \\quad \\quad I_{yc} = \\frac{hb^3}{12} $$</li>\n    <li><strong>Triangle (base b, height h):</strong>\n    $$ I_{xc} = \\frac{bh^3}{36} $$</li>\n    <li><strong>Circle (radius r, diameter d):</strong>\n    $$ I_{xc} = I_{yc} = \\frac{\\pi r^4}{4} = \\frac{\\pi d^4}{64} $$</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
@@ -12,17 +12,17 @@
         { "text": "48 in^4", "isCorrect": false },
         { "text": "144 in^4", "isCorrect": false }
       ],
-      "explanation": "For a rectangle, $I_x = \\frac{bh^3}{12}$. $I_x = \\frac{4(6)^3}{12} = \\frac{4(216)}{12} = \\frac{864}{12} = 72$ in^4."
+      "explanation": "For a rectangle, the moment of inertia about the centroidal axis parallel to the base is $I_x = \\frac{bh^3}{12}$. $I_x = \\frac{4(6)^3}{12} = \\frac{4(216)}{12} = \\frac{864}{12} = 72$ in^4."
     },
     {
-      "question": "If the height of a rectangular beam is doubled, how does its moment of inertia change?",
+      "question": "If the height of a rectangular beam is doubled, how does its moment of inertia about the horizontal centroidal axis change?",
       "options": [
         { "text": "It doubles.", "isCorrect": false },
         { "text": "It quadruples.", "isCorrect": false },
         { "text": "It increases by a factor of 8.", "isCorrect": true },
         { "text": "It stays the same.", "isCorrect": false }
       ],
-      "explanation": "Moment of inertia depends on $h^3$. If height doubles ($2h$), the new inertia is proportional to $(2h)^3 = 8h^3$. It increases by a factor of 8."
+      "explanation": "Moment of inertia depends on the cube of the height ($h^3$). If the height doubles ($2h$), the new inertia is proportional to $(2h)^3 = 8h^3$. Therefore, it increases by a factor of 8."
     }
   ]
 }
