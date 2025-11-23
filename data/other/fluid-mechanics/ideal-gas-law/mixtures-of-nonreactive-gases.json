@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Dalton's Law of Partial Pressures</h3>\n<p class=\"mb-4\">Dalton's Law states that for a mixture of ideal gases, the total pressure exerted by the mixture is equal to the sum of the partial pressures of individual component gases.</p>\n$$ P_{total} = \\sum P_i = P_1 + P_2 + ... + P_n $$\n<p class=\"mb-4\">The partial pressure ($P_i$) is the pressure a component would exert if it occupied the entire volume alone at the mixture temperature.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Amagat's Law of Partial Volumes</h3>\n<p class=\"mb-4\">Amagat's Law states that the total volume of a gas mixture is equal to the sum of the partial volumes of the individual components.</p>\n$$ V_{total} = \\sum V_i $$\n<p class=\"mb-4\">The partial volume ($V_i$) is the volume a component would occupy if it were alone at the mixture temperature and total pressure.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Composition of Mixtures</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Mole Fraction ($y_i$):</strong> The ratio of the number of moles of a component ($n_i$) to the total number of moles ($n_{total}$).\n    $$ y_i = \\frac{n_i}{n_{total}} $$</li>\n    <li><strong>Mass Fraction ($mf_i$):</strong> The ratio of the mass of a component ($m_i$) to the total mass ($m_{total}$).\n    $$ mf_i = \\frac{m_i}{m_{total}} $$</li>\n</ul>\n<p class=\"mb-4\">For ideal gases, the mole fraction is equal to the volume fraction and the pressure fraction:</p>\n$$ y_i = \\frac{V_i}{V_{total}} = \\frac{P_i}{P_{total}} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A tank contains a mixture of helium (He) and neon (Ne). The mole fraction of helium is 0.3. If the total pressure in the tank is 500 kPa, what is the partial pressure of helium?",
+      "options": [
+        { "text": "500 kPa", "isCorrect": false },
+        { "text": "350 kPa", "isCorrect": false },
+        { "text": "150 kPa", "isCorrect": true },
+        { "text": "1500 kPa", "isCorrect": false }
+      ],
+      "explanation": "According to Dalton's Law, the partial pressure of a component is equal to its mole fraction multiplied by the total pressure. $P_{He} = y_{He} \\times P_{total} = 0.3 \\times 500 \\text{ kPa} = 150$ kPa."
+    },
+    {
+      "question": "A gas mixture consists of 2 moles of oxygen and 8 moles of nitrogen. What is the mole fraction of oxygen?",
+      "options": [
+        { "text": "0.25", "isCorrect": false },
+        { "text": "0.20", "isCorrect": true },
+        { "text": "0.80", "isCorrect": false },
+        { "text": "2.0", "isCorrect": false }
+      ],
+      "explanation": "The total number of moles is $n_{total} = 2 + 8 = 10$ moles. The mole fraction of oxygen is $y_{O2} = n_{O2} / n_{total} = 2 / 10 = 0.2$."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pipe Systems</h3>\n<p class=\"mb-4\">Fluid transport systems consist of networks of pipes, fittings, valves, and pumps used to move fluids. The analysis involves determining flow rates, pressure drops, and pumping requirements.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Pipes in Series</h3>\n<p class=\"mb-4\">For pipes connected end-to-end:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flow Rate:</strong> The flow rate is the same through each pipe segment ($Q_1 = Q_2 = Q_3 = \\dots$).</li>\n    <li><strong>Head Loss:</strong> The total head loss is the sum of the head losses in each segment ($h_{L,total} = h_{L1} + h_{L2} + \\dots$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Pipes in Parallel</h3>\n<p class=\"mb-4\">For pipes that branch from a common node and rejoin at another common node:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flow Rate:</strong> The total flow rate is the sum of the flow rates in each branch ($Q_{total} = Q_1 + Q_2 + \\dots$).</li>\n    <li><strong>Head Loss:</strong> The head loss is the same across each parallel branch ($h_{L1} = h_{L2} = \\dots$). This is because the pressure drop between the two common nodes must be unique.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. System Curve</h3>\n<p class=\"mb-4\">A <strong>system curve</strong> plots the required head ($H_{req}$) to drive a fluid through a piping system as a function of the flow rate ($Q$). It is typically parabolic:</p>\n$$ H_{req} = H_{static} + K_{sys} Q^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$H_{static}$: The static elevation difference the fluid must be lifted (independent of flow rate).</li>\n    <li>$K_{sys} Q^2$: The dynamic head loss due to friction and minor losses (proportional to $Q^2$).</li>\n</ul>\n<p class=\"mb-4\">The intersection of the system curve with a pump's performance curve determines the operating point.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Two pipes are connected in parallel. Pipe A has a diameter of 10 cm and Pipe B has a diameter of 20 cm. If the head loss in Pipe A is 5 m, what is the head loss in Pipe B?",
+      "options": [
+        { "text": "10 m", "isCorrect": false },
+        { "text": "2.5 m", "isCorrect": false },
+        { "text": "5 m", "isCorrect": true },
+        { "text": "It depends on the lengths.", "isCorrect": false }
+      ],
+      "explanation": "For pipes connected in parallel, the head loss across each branch must be identical. This is a fundamental principle of parallel flow networks."
+    },
+    {
+      "question": "A piping system requires a static lift of 15 m. The friction losses at a flow of 0.05 m³/s are 2 m. If the flow rate is doubled to 0.1 m³/s, what is the new total head required?",
+      "options": [
+        { "text": "19 m", "isCorrect": false },
+        { "text": "17 m", "isCorrect": false },
+        { "text": "30 m", "isCorrect": false },
+        { "text": "23 m", "isCorrect": true }
+      ],
+      "explanation": "Head loss due to friction is proportional to $Q^2$. If flow doubles ($2Q$), friction loss quadruples ($4h_f$). New friction loss = $4 \\times 2 \\text{ m} = 8$ m. Total head = Static Head + Friction Head = $15 \\text{ m} + 8 \\text{ m} = 23$ m."
+    }
+  ]
+}

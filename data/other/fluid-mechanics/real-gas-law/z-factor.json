@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Compressibility Factor ($Z$)</h3>\n<p class=\"mb-4\">The ideal gas law ($Pv=RT$) is simple but not always accurate, especially at high pressures or low temperatures. To account for the deviation from ideal behavior in real gases, a correction factor called the <strong>compressibility factor ($Z$)</strong> is used.</p>\n$$ Z = \\frac{Pv}{RT} $$\n<p class=\"mb-4\">The modified equation of state for real gases is:</p>\n$$ Pv = ZRT $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>For an ideal gas, $Z = 1$.</li>\n    <li>For real gases, $Z$ can be greater than or less than 1.</li>\n    <li>If $Z < 1$, attractive forces dominate, and the gas is more compressible than an ideal gas.</li>\n    <li>If $Z > 1$, repulsive forces (molecular volume) dominate, and the gas is less compressible than an ideal gas.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Corresponding States</h3>\n<p class=\"mb-4\">The compressibility factor $Z$ is approximately the same for all gases when they are at the same <strong>reduced temperature ($T_r$)</strong> and <strong>reduced pressure ($P_r$)</strong>.</p>\n$$ P_r = \\frac{P}{P_{cr}} \\quad \\quad T_r = \\frac{T}{T_{cr}} $$\n<p class=\"mb-4\">where $P_{cr}$ and $T_{cr}$ are the critical pressure and critical temperature of the specific gas (found in property tables). This principle allows the use of a single <strong>Generalized Compressibility Chart</strong> to find $Z$ for any gas.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Under what condition does the compressibility factor $Z$ approach 1 for any gas?",
+      "options": [
+        { "text": "As pressure approaches infinity ($P \\to \\infty$)", "isCorrect": false },
+        { "text": "As pressure approaches zero ($P \\to 0$)", "isCorrect": true },
+        { "text": "As temperature approaches zero ($T \\to 0$)", "isCorrect": false },
+        { "text": "As volume approaches zero ($v \\to 0$)", "isCorrect": false }
+      ],
+      "explanation": "As pressure approaches zero (or as specific volume approaches infinity), the distance between molecules increases, making intermolecular forces negligible. Under these conditions, all real gases behave like ideal gases, and $Z$ approaches 1."
+    },
+    {
+      "question": "A gas is at a pressure equal to its critical pressure ($P = P_{cr}$) and a temperature equal to its critical temperature ($T = T_{cr}$). What are the reduced pressure and reduced temperature?",
+      "options": [
+        { "text": "$P_r = 0, T_r = 0$", "isCorrect": false },
+        { "text": "$P_r = 1, T_r = 1$", "isCorrect": true },
+        { "text": "$P_r > 1, T_r > 1$", "isCorrect": false },
+        { "text": "$P_r < 1, T_r < 1$", "isCorrect": false }
+      ],
+      "explanation": "Reduced pressure is defined as $P_r = P/P_{cr}$, and reduced temperature is $T_r = T/T_{cr}$. If the current conditions equal the critical values, then $P_r = 1$ and $T_r = 1$."
+    }
+  ]
+}

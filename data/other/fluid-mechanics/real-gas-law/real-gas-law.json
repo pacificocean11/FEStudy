@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Deviation from Ideal Behavior</h3>\n<p class=\"mb-4\">At high pressures (where molecules are packed closely together) or low temperatures (where intermolecular forces become significant), real gases deviate from the ideal gas law. To account for this, a correction factor is introduced.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Compressibility Factor ($Z$)</h3>\n<p class=\"mb-4\">The <strong>compressibility factor</strong>, $Z$, is a dimensionless parameter that modifies the ideal gas law for real gases.</p>\n$$ Pv = ZRT $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>If $Z = 1$, the gas behaves ideally.</li>\n    <li>If $Z < 1$, the gas is more compressible than an ideal gas (intermolecular attraction dominates).</li>\n    <li>If $Z > 1$, the gas is less compressible than an ideal gas (intermolecular repulsion/volume dominates).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Principle of Corresponding States</h3>\n<p class=\"mb-4\">The value of $Z$ is approximately the same for all gases at the same <strong>reduced temperature ($T_R$)</strong> and <strong>reduced pressure ($P_R$)</strong>.</p>\n$$ P_R = \\frac{P}{P_{cr}} \\quad \\quad T_R = \\frac{T}{T_{cr}} $$\n<p class=\"mb-4\">where $P_{cr}$ and $T_{cr}$ are the critical pressure and critical temperature of the specific gas. Generalized compressibility charts plot $Z$ as a function of $P_R$ and $T_R$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Van der Waals Equation</h3>\n<p class=\"mb-4\">Another model for real gases is the Van der Waals equation of state, which adds terms to account for intermolecular forces ($a$) and molecular volume ($b$).</p>\n$$ \\left(P + \\frac{a}{v^2}\\right)(v - b) = RT $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For an ideal gas, the compressibility factor $Z$ is always equal to:",
+      "options": [
+        { "text": "0", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "Infinity", "isCorrect": false },
+        { "text": "R", "isCorrect": false }
+      ],
+      "explanation": "The definition of the ideal gas law is $Pv = RT$. Comparing this to the real gas equation $Pv = ZRT$, it is clear that for an ideal gas, $Z$ must be 1."
+    },
+    {
+      "question": "The reduced pressure ($P_R$) used in generalized compressibility charts is defined as:",
+      "options": [
+        { "text": "The pressure divided by atmospheric pressure.", "isCorrect": false },
+        { "text": "The pressure divided by the gas constant.", "isCorrect": false },
+        { "text": "The pressure divided by the critical pressure of the gas.", "isCorrect": true },
+        { "text": "The critical pressure divided by the actual pressure.", "isCorrect": false }
+      ],
+      "explanation": "The principle of corresponding states normalizes properties against the critical point. $P_R = P / P_{critical}$."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Ideal Gas Assumptions</h3>\n<p class=\"mb-4\">An ideal gas is a theoretical gas composed of a set of randomly moving point particles that obey the following assumptions:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The volume of the gas molecules themselves is negligible compared to the volume of the container.</li>\n    <li>There are no intermolecular forces (attraction or repulsion) between the gas molecules.</li>\n    <li>Collisions between molecules and the container walls are perfectly elastic.</li>\n</ul>\n<p class=\"mb-4\">Real gases behave like ideal gases at <strong>high temperatures</strong> and <strong>low pressures</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Equation of State</h3>\n<p class=\"mb-4\">The Ideal Gas Law relates the absolute pressure ($P$), volume ($V$), and absolute temperature ($T$) of a gas.</p>\n$$ Pv = RT $$\n<p class=\"mb-4\">where:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$P$ = Absolute pressure (Pa or psfa)</li>\n    <li>$v$ = Specific volume ($1/\\rho$) (m³/kg or ft³/lb)</li>\n    <li>$T$ = Absolute temperature (K or °R)</li>\n    <li>$R$ = Specific gas constant = $R_u / M$</li>\n</ul>\n<p class=\"mb-4\">Alternative forms:</p>\n$$ P = \\rho RT $$\n$$ PV = mRT $$\n$$ PV = nR_u T $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$R_u$ = Universal Gas Constant $\\approx 8.314$ kJ/kmol·K</li>\n    <li>$n$ = Number of moles</li>\n    <li>$M$ = Molar mass</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Under what conditions does a real gas behave most like an ideal gas?",
+      "options": [
+        { "text": "High pressure and low temperature", "isCorrect": false },
+        { "text": "High pressure and high temperature", "isCorrect": false },
+        { "text": "Low pressure and low temperature", "isCorrect": false },
+        { "text": "Low pressure and high temperature", "isCorrect": true }
+      ],
+      "explanation": "At low pressures, gas molecules are far apart, making their volume negligible. At high temperatures, they have high kinetic energy, making intermolecular forces negligible. These conditions satisfy the ideal gas assumptions."
+    },
+    {
+      "question": "Calculate the specific volume of air at a pressure of 200 kPa and a temperature of 300 K. The specific gas constant for air is $R = 0.287$ kJ/kg·K.",
+      "options": [
+        { "text": "0.43 m³/kg", "isCorrect": true },
+        { "text": "2.32 m³/kg", "isCorrect": false },
+        { "text": "0.86 m³/kg", "isCorrect": false },
+        { "text": "1.50 m³/kg", "isCorrect": false }
+      ],
+      "explanation": "Use the ideal gas law: $Pv = RT \\implies v = RT/P$. Ensure consistent units (kPa and kJ match). $v = (0.287 \\text{ kJ/kg·K})(300 \\text{ K}) / 200 \\text{ kPa} = 86.1 / 200 = 0.4305$ m³/kg."
+    }
+  ]
+}

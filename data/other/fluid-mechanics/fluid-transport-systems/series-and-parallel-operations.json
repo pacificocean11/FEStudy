@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pipe Systems</h3>\n<p class=\"mb-4\">Fluid transport systems consist of networks of pipes, fittings, valves, and pumps. Analyzing these systems often involves simplifying complex networks into series and parallel combinations.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Pipes in Series</h3>\n<p class=\"mb-4\">Pipes are in series when they are connected end-to-end, so the fluid flows through one after the other.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flow Rate:</strong> The flow rate is constant throughout the system ($Q_1 = Q_2 = Q_{total}$).</li>\n    <li><strong>Head Loss:</strong> The total head loss is the sum of the head losses in each pipe segment ($h_{L,total} = h_{L1} + h_{L2} + \\dots$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Pipes in Parallel</h3>\n<p class=\"mb-4\">Pipes are in parallel when the flow splits into multiple branches at a junction and rejoins at another junction.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Head Loss:</strong> The head loss across each parallel branch is the same ($h_{L1} = h_{L2} = h_{L,total}$). This is analogous to voltage in parallel electrical circuits.</li>\n    <li><strong>Flow Rate:</strong> The total flow rate is the sum of the flow rates in each branch ($Q_{total} = Q_1 + Q_2 + \\dots$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Pumps in Series and Parallel</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Series Pumps:</strong> Used to increase the total head (pressure). The combined head is the sum of individual heads at a given flow rate ($H_{total} = H_1 + H_2$). The flow rate is the same through each pump.</li>\n    <li><strong>Parallel Pumps:</strong> Used to increase the total flow rate. The combined flow rate is the sum of individual flow rates at a given head ($Q_{total} = Q_1 + Q_2$). The head across each pump is the same.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Two pipes, A and B, are connected in parallel. Pipe A has a diameter of 10 cm and Pipe B has a diameter of 20 cm. If the head loss in Pipe A is 5 m, what is the head loss in Pipe B?",
+      "options": [
+        { "text": "10 m", "isCorrect": false },
+        { "text": "2.5 m", "isCorrect": false },
+        { "text": "5 m", "isCorrect": true },
+        { "text": "It depends on the lengths.", "isCorrect": false }
+      ],
+      "explanation": "A fundamental principle of parallel pipe networks is that the head loss (energy drop per unit weight) between the two junction nodes must be the same regardless of which path the fluid takes. Therefore, $h_{L,A} = h_{L,B} = 5$ m."
+    },
+    {
+      "question": "Connecting two identical pumps in series will primarily increase the system's:",
+      "options": [
+        { "text": "Flow rate capacity", "isCorrect": false },
+        { "text": "Head (pressure) capacity", "isCorrect": true },
+        { "text": "Efficiency", "isCorrect": false },
+        { "text": "NPSH requirement", "isCorrect": false }
+      ],
+      "explanation": "Pumps in series act like a multi-stage pump. The discharge of the first pump enters the suction of the second. Each pump adds energy to the fluid, so the total head produced is the sum of the heads of the individual pumps. This is useful for high-pressure applications."
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+
 import { Discipline, Subject } from './types';
 
 export const DISCIPLINES: Discipline[] = ['Civil', 'Mechanical', 'Other'];
@@ -1082,7 +1083,7 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Piezoelectric Transducers', content: null },
             { name: 'Pressure Sensors', content: null },
             { name: 'pH Sensor', content: null },
-          ] 
+          ]
         },
         { 
           name: 'B. Control systems', 
@@ -1614,7 +1615,7 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           ] 
         },
         { name: 'G. Open-channel flow', subtopics: [{ name: 'G. Open-channel flow', content: null }] },
-        { name: 'H. Fluid measurement', subtopics: [{ name: 'H. Fluid measurement', content: null }] },
+        { name: 'H. Fluid transport systems', subtopics: [{ name: 'Series and Parallel Operations', content: null }] },
         { 
           name: 'I. Flow measurement', 
           subtopics: [
@@ -1631,6 +1632,18 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Fans', content: null },
             { name: 'Compressors', content: null },
           ] 
+        },
+        {
+          name: 'K. Ideal Gas Law',
+          subtopics: [
+            { name: 'Mixtures of Nonreactive Gases', content: null },
+          ]
+        },
+        {
+          name: 'L. Real Gas Law',
+          subtopics: [
+            { name: 'z-factor', content: null },
+          ]
         },
       ],
     },
