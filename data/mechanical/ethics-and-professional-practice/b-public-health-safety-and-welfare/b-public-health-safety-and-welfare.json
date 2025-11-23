@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Paramount Rule</h3>\n<p class=\"mb-4\">The fundamental canon of all engineering codes of ethics (including NCEES, NSPE, and ASME) is that <strong>engineers shall hold paramount the safety, health, and welfare of the public</strong>. This obligation supersedes all duties to clients, employers, or the profession itself.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Determining \"The Public\"</h3>\n<p class=\"mb-4\">The \"public\" includes anyone who may be affected by an engineer's work. This includes:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Users of the product or structure.</li>\n    <li>People living or working nearby.</li>\n    <li>Future generations (sustainability).</li>\n    <li>The environment (often considered part of public welfare).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Obligations and Whistleblowing</h3>\n<p class=\"mb-4\">If an engineer's professional judgment is overruled under circumstances that endanger life, health, property, or public welfare, they have specific ethical obligations:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Notify:</strong> They must notify their employer, client, and such other authority as may be appropriate.</li>\n    <li><strong>Refuse:</strong> They must typically refuse to sign or seal documents that violate safe engineering standards.</li>\n    <li><strong>Whistleblowing:</strong> Determining when to report safety violations to external authorities involves weighing the severity of the harm, the immediacy of the threat, and whether internal channels have been exhausted.</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "An engineer is designing a pressure vessel. The client demands the use of a cheaper material that does not meet the safety requirements of the ASME Boiler and Pressure Vessel Code. The client is willing to sign a waiver releasing the engineer from liability. What should the engineer do?",
+      "options": [
+        { "text": "Proceed with the design, as the waiver protects them legally.", "isCorrect": false },
+        { "text": "Refuse to complete the design and explain that code requirements regarding safety cannot be waived.", "isCorrect": true },
+        { "text": "Use the cheaper material but lower the rated pressure of the vessel to a safe level without telling the client.", "isCorrect": false },
+        { "text": "Report the client to the police immediately.", "isCorrect": false }
+      ],
+      "explanation": "The engineer's obligation to public safety is paramount and cannot be waived by a client. Designing a vessel that violates safety codes is unethical and likely illegal, regardless of any liability waivers."
+    },
+    {
+      "question": "Which of the following represents the highest priority for a professional engineer?",
+      "options": [
+        { "text": "Maximizing profit for their employer.", "isCorrect": false },
+        { "text": "Meeting the project schedule.", "isCorrect": false },
+        { "text": "Protecting the safety, health, and welfare of the public.", "isCorrect": true },
+        { "text": "Following the specific instructions of the client.", "isCorrect": false }
+      ],
+      "explanation": "While engineers have duties to their employers and clients, the NCEES Model Rules and professional codes of ethics explicitly state that the safety, health, and welfare of the public must be held paramount."
+    }
+  ]
 }

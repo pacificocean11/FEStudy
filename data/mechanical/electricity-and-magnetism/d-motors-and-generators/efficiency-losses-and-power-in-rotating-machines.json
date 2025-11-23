@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Power Flow</h3>\n<p class=\"mb-4\">In rotating machines (motors and generators), energy is converted between electrical and mechanical forms. This process is not 100% efficient due to various losses. The power flow diagram visualizes this:</p>\n<p class=\"mb-4\"><strong>Motor:</strong> Electrical Input $\\rightarrow$ (Losses) $\\rightarrow$ Mechanical Output (Shaft Power)</p>\n<p class=\"mb-4\"><strong>Generator:</strong> Mechanical Input $\\rightarrow$ (Losses) $\\rightarrow$ Electrical Output</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Types of Losses</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Copper Losses ($I^2R$):</strong> Heat generated in the windings (stator and rotor) due to electrical resistance.</li>\n    <li><strong>Core (Iron) Losses:</strong> Occur in the magnetic core due to hysteresis and eddy currents.</li>\n    <li><strong>Mechanical Losses:</strong> Friction in bearings and windage (air resistance) on the rotating parts.</li>\n    <li><strong>Stray Load Losses:</strong> Minor losses not accounted for by the above categories.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Efficiency ($\\eta$)</h3>\n<p class=\"mb-4\">Efficiency is the ratio of useful output power to total input power.</p>\n$$ \\eta = \\frac{P_{out}}{P_{in}} = \\frac{P_{out}}{P_{out} + P_{losses}} = \\frac{P_{in} - P_{losses}}{P_{in}} $$\n<p class=\"mb-4\">Mechanical power is related to torque ($T$) and angular velocity ($\\omega$): $P_{mech} = T\\omega$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A DC motor has an electrical input power of 5 kW. The copper losses are 300 W, core losses are 200 W, and mechanical losses are 100 W. What is the efficiency of the motor?",
+      "options": [
+        { "text": "88%", "isCorrect": true },
+        { "text": "90%", "isCorrect": false },
+        { "text": "94%", "isCorrect": false },
+        { "text": "80%", "isCorrect": false }
+      ],
+      "explanation": "Total losses = $300 + 200 + 100 = 600$ W = 0.6 kW. Output power = Input - Losses = $5 - 0.6 = 4.4$ kW. Efficiency $\\eta = P_{out} / P_{in} = 4.4 / 5 = 0.88$ or 88%."
+    },
+    {
+      "question": "A motor delivers 10 hp at the shaft with an efficiency of 85%. What is the electrical power input required in kW? (1 hp = 0.746 kW)",
+      "options": [
+        { "text": "6.34 kW", "isCorrect": false },
+        { "text": "8.78 kW", "isCorrect": true },
+        { "text": "7.46 kW", "isCorrect": false },
+        { "text": "11.76 kW", "isCorrect": false }
+      ],
+      "explanation": "First convert output power to kW: $P_{out} = 10 \\text{ hp} \\times 0.746 = 7.46$ kW. Then use the efficiency formula: $P_{in} = P_{out} / \\eta = 7.46 / 0.85 \\approx 8.776$ kW."
+    }
+  ]
+}

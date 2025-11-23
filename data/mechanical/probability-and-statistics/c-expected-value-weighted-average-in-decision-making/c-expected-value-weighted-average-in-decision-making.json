@@ -1,6 +1,27 @@
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Expected Value ($E[X]$)</strong>, also known as the expectation, mathematical expectation, or weighted average, is a fundamental concept in probability and statistics. It represents the long-run average value of repetitions of the experiment it represents.</p>\n<p class=\"mb-4\">For a discrete random variable $X$ having outcomes $x_1, x_2, ..., x_n$ with respective probabilities $p_1, p_2, ..., p_n$, the expected value is calculated as:</p>\n$$ E[X] = \\mu = \\sum_{i=1}^{n} x_i p_i = x_1p_1 + x_2p_2 + ... + x_n p_n $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Decision Making Under Risk</h3>\n<p class=\"mb-4\">In engineering and business, decisions often have to be made when the consequences are uncertain but the probabilities of different outcomes can be estimated. This is known as decision making under risk.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Expected Monetary Value (EMV):</strong> When the outcomes are financial (profits or costs), the expected value is often called the EMV.</li>\n    <li><strong>Decision Rule:</strong> A rational decision-maker typically selects the alternative with the <strong>highest expected profit</strong> or the <strong>lowest expected cost</strong>.</li>\n</ul>\n<p class=\"mb-4\">While the expected value might not correspond to any single actual outcome, it provides an objective basis for comparing alternatives with different risk profiles.</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "An engineering firm is bidding on a contract. They estimate a 30% probability of winning the contract, which would yield a profit of $50,000. There is a 70% probability of losing the bid, which would result in a loss of $2,000 (the cost of preparing the bid). What is the expected monetary value (EMV) of bidding?",
+      "options": [
+        { "text": "$13,600", "isCorrect": true },
+        { "text": "$15,000", "isCorrect": false },
+        { "text": "$48,000", "isCorrect": false },
+        { "text": "$14,400", "isCorrect": false }
+      ],
+      "explanation": "Calculate the weighted sum of the outcomes: $EMV = (0.30 \\times 50,000) + (0.70 \\times -2,000) = 15,000 - 1,400 = 13,600$. The expected value of bidding is a profit of $13,600."
+    },
+    {
+      "question": "A manufacturer is deciding whether to replace a machine part now for $500 or wait. If they wait, there is a 10% probability the part will fail, causing $8,000 in damages. There is a 90% probability it will last until the scheduled maintenance (costing $0 extra). Which option minimizes the expected cost?",
+      "options": [
+        { "text": "Replace now (Expected Cost: $500)", "isCorrect": true },
+        { "text": "Wait (Expected Cost: $800)", "isCorrect": false },
+        { "text": "Wait (Expected Cost: $8000)", "isCorrect": false },
+        { "text": "It doesn't matter, the costs are equal.", "isCorrect": false }
+      ],
+      "explanation": "Compare the cost of replacing now vs. the expected cost of waiting.\nCost to Replace Now = $500 (certainty).\nExpected Cost to Wait = (Probability of Failure $\\times$ Cost of Failure) + (Probability of No Failure $\\times$ Cost) = $(0.10 \\times 8,000) + (0.90 \\times 0) = 800$.\nSince $500 < 800$, replacing the part now minimizes the expected cost."
+    }
+  ]
 }

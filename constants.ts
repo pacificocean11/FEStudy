@@ -721,16 +721,11 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { 
           name: 'B. DC circuit analysis', 
           subtopics: [
+            { name: "Ohm's Law", content: null },
+            { name: "Kirchhoff's Laws", content: null },
             { name: 'Series Circuits', content: null },
             { name: 'Parallel Circuits', content: null }
           ] 
-        },
-        {
-          name: 'Electrical Circuits',
-          subtopics: [
-            { name: "Ohm's Law", content: null },
-            { name: "Kirchhoff's Laws", content: null },
-          ]
         },
         { 
           name: 'C. AC circuit analysis', 

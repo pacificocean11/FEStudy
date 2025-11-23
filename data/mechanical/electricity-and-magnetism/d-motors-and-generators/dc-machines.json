@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Construction and Principle</h3>\n<p class=\"mb-4\">DC machines consist of a stationary part (stator) that provides the magnetic field and a rotating part (rotor or armature). A <strong>commutator</strong> and brushes are used to reverse the current direction in the armature coils to maintain unidirectional torque.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Equations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Back EMF ($E_b$):</strong> Voltage induced in the armature opposing the supply voltage. $E_b = k \\phi \\omega$, where $\\phi$ is flux and $\\omega$ is speed.</li>\n    <li><strong>Terminal Voltage ($V_t$):</strong> For a motor, $V_t = E_b + I_a R_a$, where $I_a$ is armature current and $R_a$ is armature resistance.</li>\n    <li><strong>Torque ($T$):</strong> The torque produced is proportional to the flux and the armature current. $T = k \\phi I_a$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Types of DC Motors</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Shunt Motor:</strong> Field winding is in parallel with the armature. Good speed regulation (speed stays fairly constant with load).</li>\n    <li><strong>Series Motor:</strong> Field winding is in series with the armature. Very high starting torque but poor speed regulation (speed can become dangerously high at no load).</li>\n    <li><strong>Compound Motor:</strong> Has both series and shunt field windings to combine characteristics.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A DC shunt motor runs at 1200 rpm with a back EMF of 110 V. If the load increases such that the back EMF drops to 100 V (assuming constant flux), what is the new speed?",
+      "options": [
+        { "text": "1000 rpm", "isCorrect": false },
+        { "text": "1090 rpm", "isCorrect": true },
+        { "text": "1320 rpm", "isCorrect": false },
+        { "text": "1100 rpm", "isCorrect": false }
+      ],
+      "explanation": "Back EMF is directly proportional to speed ($E_b \\propto \\omega$) if flux is constant. Therefore, $E_{b1}/E_{b2} = n_1/n_2$. Solving for $n_2$: $n_2 = n_1 (E_{b2}/E_{b1}) = 1200 (100/110) \\approx 1090.9$ rpm."
+    },
+    {
+      "question": "Which type of DC motor is preferred for applications requiring very high starting torque, such as cranes or starter motors?",
+      "options": [
+        { "text": "Shunt motor", "isCorrect": false },
+        { "text": "Series motor", "isCorrect": true },
+        { "text": "Differentially compounded motor", "isCorrect": false },
+        { "text": "Permanent magnet motor", "isCorrect": false }
+      ],
+      "explanation": "In a series motor, the field current is the same as the armature current ($I_f = I_a$). Since torque $T \\propto \\phi I_a$ and $\\phi \\propto I_f$, torque becomes proportional to the square of the current ($T \\propto I_a^2$). This results in very high torque at low speeds/high currents."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Generators</h3>\n<p class=\"mb-4\">Generators convert mechanical energy into electrical energy using the principle of electromagnetic induction (Faraday's Law). </p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>AC Generators (Alternators):</strong> A rotating magnetic field induces an AC voltage in the stationary stator coils. The frequency depends on the rotation speed. Most of the world's power is generated this way.</li>\n    <li><strong>DC Generators:</strong> Similar to DC motors but driven mechanically. They use a commutator to mechanically rectify the generated AC voltage into DC.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Servomotors</h3>\n<p class=\"mb-4\">A <strong>servomotor</strong> is a rotary or linear actuator that allows for precise control of angular or linear position, velocity, and acceleration. It consists of a suitable motor coupled to a sensor for position feedback.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Feedback Loop:</strong> The key characteristic is the closed-loop control system. The controller compares the actual position (from the encoder/sensor) to the desired position and adjusts the motor input to correct the error.</li>\n    <li><strong>Applications:</strong> Robotics, CNC machinery, automated manufacturing.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Stepper Motors</h3>\n<p class=\"mb-4\">Unlike servos, stepper motors are typically open-loop. They move in discrete steps. While simple and good for holding position, they can lose steps under high load if not sized correctly.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which component is essential for a motor to function as a 'servomotor'?",
+      "options": [
+        { "text": "A commutator", "isCorrect": false },
+        { "text": "A position feedback sensor (encoder/resolver)", "isCorrect": true },
+        { "text": "A high voltage power supply", "isCorrect": false },
+        { "text": "A gearbox", "isCorrect": false }
+      ],
+      "explanation": "The defining feature of a servo system is closed-loop control. A feedback device, such as an encoder or potentiometer, is required to tell the controller the actual position of the motor shaft so it can be corrected to match the desired position."
+    },
+    {
+      "question": "How does the output frequency of a synchronous AC generator (alternator) relate to its rotational speed?",
+      "options": [
+        { "text": "Frequency is independent of speed.", "isCorrect": false },
+        { "text": "Frequency is inversely proportional to speed.", "isCorrect": false },
+        { "text": "Frequency is directly proportional to speed.", "isCorrect": true },
+        { "text": "Frequency varies exponentially with speed.", "isCorrect": false }
+      ],
+      "explanation": "For a synchronous generator, the frequency is given by $f = \\frac{P n}{120}$. This shows a linear, direct relationship: doubling the speed ($n$) doubles the output frequency ($f$)."
+    }
+  ]
+}

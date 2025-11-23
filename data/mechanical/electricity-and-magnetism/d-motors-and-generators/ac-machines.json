@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Synchronous Speed ($n_s$)</h3>\n<p class=\"mb-4\">The magnetic field in the stator of an AC machine rotates at a speed determined by the frequency ($f$) of the power supply and the number of magnetic poles ($P$) in the machine.</p>\n$$ n_s = \\frac{120 f}{P} \\quad (\\text{in RPM}) $$\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Induction Motors</h3>\n<p class=\"mb-4\">The most common type of AC motor. The rotor spins slower than the rotating magnetic field. This difference in speed is necessary to induce the current in the rotor that generates torque.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Slip ($s$):</strong> The difference between synchronous speed and rotor speed ($n$), expressed as a fraction or percentage.\n    $$ s = \\frac{n_s - n}{n_s} $$\n    </li>\n    <li><strong>Rotor Speed:</strong> $n = n_s (1 - s)$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Synchronous Motors</h3>\n<p class=\"mb-4\">In a synchronous motor, the rotor spins at exactly the synchronous speed ($n = n_s$). There is no slip. These motors are used where constant speed is required or for power factor correction.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 4-pole induction motor operates on a 60 Hz power supply. What is the synchronous speed of the magnetic field?",
+      "options": [
+        { "text": "1200 rpm", "isCorrect": false },
+        { "text": "1800 rpm", "isCorrect": true },
+        { "text": "3600 rpm", "isCorrect": false },
+        { "text": "900 rpm", "isCorrect": false }
+      ],
+      "explanation": "Use the formula $n_s = 120f / P$. Here $f=60$ Hz and $P=4$. $n_s = (120 \\times 60) / 4 = 7200 / 4 = 1800$ rpm."
+    },
+    {
+      "question": "If the motor in the previous example is running at 1710 rpm, what is the slip?",
+      "options": [
+        { "text": "0.05 (5%)", "isCorrect": true },
+        { "text": "0.10 (10%)", "isCorrect": false },
+        { "text": "0.02 (2%)", "isCorrect": false },
+        { "text": "0.95 (95%)", "isCorrect": false }
+      ],
+      "explanation": "Slip is calculated as $s = (n_s - n) / n_s$. With $n_s = 1800$ rpm and $n = 1710$ rpm: $s = (1800 - 1710) / 1800 = 90 / 1800 = 0.05$."
+    },
+    {
+      "question": "Which type of AC motor operates at a speed that is strictly locked to the frequency of the power supply?",
+      "options": [
+        { "text": "Induction motor", "isCorrect": false },
+        { "text": "Universal motor", "isCorrect": false },
+        { "text": "Synchronous motor", "isCorrect": true },
+        { "text": "Shaded-pole motor", "isCorrect": false }
+      ],
+      "explanation": "A synchronous motor rotates at exactly the synchronous speed, which is determined solely by the frequency and the number of poles ($n_s = 120f/P$). It has zero slip."
+    }
+  ]
+}
