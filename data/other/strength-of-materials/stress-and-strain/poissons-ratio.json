@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">When a body is subjected to an axial tensile force, it elongates in the direction of the load (longitudinal strain, $\\epsilon_{long}$) and contracts in the transverse or lateral directions (lateral strain, $\\epsilon_{lat}$). <strong>Poisson's Ratio ($\\nu$)</strong> is the ratio of the negative transverse strain to the longitudinal strain.</p>\n$$ \\nu = -\\frac{\\epsilon_{lat}}{\\epsilon_{long}} $$\n<p class=\"mb-4\">The negative sign ensures that Poisson's ratio is a positive value for most materials, since $\\epsilon_{lat}$ and $\\epsilon_{long}$ typically have opposite signs (elongation in one direction causes contraction in the other).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Typical Values</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Metals:</strong> Typically around 0.25 to 0.35. (Steel $\\approx 0.3$, Aluminum $\\approx 0.33$).</li>\n    <li><strong>Cork:</strong> Nearly 0 (little to no lateral expansion when compressed).</li>\n    <li><strong>Rubber:</strong> Nearly 0.5 (incompressible material).</li>\n    <li><strong>Theoretical Limit:</strong> For isotropic materials, $0 \\le \\nu \\le 0.5$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Relationship between Elastic Constants</h3>\n<p class=\"mb-4\">For isotropic materials, the Shear Modulus ($G$) is related to the Modulus of Elasticity ($E$) and Poisson's ratio ($v$) by:</p>\n$$ G = \\frac{E}{2(1+\\nu)} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A cylindrical bar with a diameter of 10 mm is subjected to a tensile load. The longitudinal strain is measured to be 0.002. If Poisson's ratio for the material is 0.3, what is the change in diameter?",
+      "options": [
+        { "text": "-0.006 mm", "isCorrect": true },
+        { "text": "0.006 mm", "isCorrect": false },
+        { "text": "-0.002 mm", "isCorrect": false },
+        { "text": "-0.0006 mm", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the lateral strain: $\\epsilon_{lat} = -\\nu \\epsilon_{long} = -0.3(0.002) = -0.0006$. The change in diameter is $\\Delta d = \\epsilon_{lat} d = -0.0006(10 \\text{ mm}) = -0.006$ mm. The negative sign indicates a decrease in diameter."
+    },
+    {
+      "question": "If a material has a Poisson's ratio of 0.5, what does this imply about its volume change under elastic deformation?",
+      "options": [
+        { "text": "The volume increases significantly.", "isCorrect": false },
+        { "text": "The volume decreases significantly.", "isCorrect": false },
+        { "text": "The volume remains constant (incompressible).", "isCorrect": true },
+        { "text": "The material expands in all directions.", "isCorrect": false }
+      ],
+      "explanation": "A Poisson's ratio of 0.5 is the theoretical upper limit for isotropic materials and corresponds to a perfectly incompressible material (like ideal rubber), where the volume remains constant during elastic deformation."
+    }
+  ]
+}

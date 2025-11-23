@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Strain as Percentage Change</h3>\n<p class=\"mb-4\">Engineering strain ($\\epsilon$) is a dimensionless quantity representing fractional change. It is often useful to express deformation as a <strong>percentage change</strong>.</p>\n$$ \\% \\text{ Change in Length} = \\epsilon \\times 100\\% = \\frac{\\Delta L}{L_0} \\times 100\\% $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Positive % change indicates elongation (tension).</li>\n    <li>Negative % change indicates contraction (compression).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Percentage Reduction in Area</h3>\n<p class=\"mb-4\">In a tensile test, ductility is often measured by the <strong>percent reduction in area (%RA)</strong> at the point of fracture.</p>\n$$ \\%RA = \\frac{A_0 - A_f}{A_0} \\times 100\\% $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$A_0$: Original cross-sectional area.</li>\n    <li>$A_f$: Final cross-sectional area at the fracture neck.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Volume Change (Volumetric Strain)</h3>\n<p class=\"mb-4\">The <strong>volumetric strain ($\\epsilon_v$)</strong> represents the percentage change in volume per unit volume. For small strains in an isotropic material:</p>\n$$ \\epsilon_v = \\frac{\\Delta V}{V_0} \\approx \\epsilon_x + \\epsilon_y + \\epsilon_z $$\n<p class=\"mb-4\">Under uniaxial tension (load in x-direction): $\\epsilon_x = \\epsilon$, $\\epsilon_y = -\\nu\\epsilon$, $\\epsilon_z = -\\nu\\epsilon$.</p>\n$$ \\epsilon_v = \\epsilon (1 - 2\\nu) $$\n<p class=\"mb-4\">This formula shows that if $\\nu = 0.5$, the volumetric strain is zero (constant volume).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 50 inch bar elongates by 0.1 inches. What is the percentage increase in length?",
+      "options": [
+        { "text": "0.1%", "isCorrect": false },
+        { "text": "0.2%", "isCorrect": true },
+        { "text": "0.5%", "isCorrect": false },
+        { "text": "2.0%", "isCorrect": false }
+      ],
+      "explanation": "Strain $\\epsilon = \\Delta L / L_0 = 0.1 / 50 = 0.002$. Percentage change = $0.002 \\times 100\\% = 0.2\\%$."
+    },
+    {
+      "question": "A cylindrical specimen has an initial diameter of 0.50 in. After fracture, the diameter at the neck is 0.40 in. What is the percent reduction in area?",
+      "options": [
+        { "text": "20%", "isCorrect": false },
+        { "text": "36%", "isCorrect": true },
+        { "text": "64%", "isCorrect": false },
+        { "text": "10%", "isCorrect": false }
+      ],
+      "explanation": "Area is proportional to diameter squared ($A = \\pi d^2/4$). Since $\\pi/4$ cancels out, the ratio of areas is the ratio of diameters squared. $A_0 \\propto 0.50^2 = 0.25$. $A_f \\propto 0.40^2 = 0.16$. Percent Reduction = $(0.25 - 0.16) / 0.25 \\times 100\\% = 0.09 / 0.25 \\times 100\\% = 36\\%$."
+    }
+  ]
+}

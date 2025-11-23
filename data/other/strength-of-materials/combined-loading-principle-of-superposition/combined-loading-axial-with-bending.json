@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Combined loading occurs when a structural member is subjected to multiple types of loads simultaneously, such as an axial force and a bending moment. The <strong>Principle of Superposition</strong> states that if the material remains linear elastic and deformations are small, the total stress at any point is the algebraic sum of the stresses caused by each load acting individually.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Axial Load with Bending</h3>\n<p class=\"mb-4\">Consider a member subjected to an axial force ($P$) and a bending moment ($M$). The total normal stress ($\\sigma$) at any distance $y$ from the neutral axis is:</p>\n$$ \\sigma = \\sigma_{axial} + \\sigma_{bending} = \\pm \\frac{P}{A} \\pm \\frac{My}{I} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\frac{P}{A}$: Uniform axial stress (positive for tension, negative for compression).</li>\n    <li>$\\frac{My}{I}$: Linearly varying bending stress (tension on one side of the neutral axis, compression on the other).</li>\n</ul>\n<p class=\"mb-4\">The maximum stress occurs at the outer fibers where the axial and bending stresses add up (same sign).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Eccentric Axial Loading</h3>\n<p class=\"mb-4\">A common case of combined loading is an eccentric axial load. If an axial load $P$ is applied at a distance $e$ (eccentricity) from the centroidal axis, it is equivalent to a centroidal axial load $P$ plus a bending moment $M = Pe$.</p>\n$$ \\sigma = \\pm \\frac{P}{A} \\pm \\frac{(Pe)y}{I} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A short rectangular column (10 in x 10 in) carries a compressive load of 100 kips applied with an eccentricity of 2 inches from the centroidal axis. What is the maximum compressive stress in the column?",
+      "options": [
+        { "text": "1000 psi", "isCorrect": false },
+        { "text": "2200 psi", "isCorrect": true },
+        { "text": "1200 psi", "isCorrect": false },
+        { "text": "2000 psi", "isCorrect": false }
+      ],
+      "explanation": "Area $A = 100$ in². Moment of Inertia $I = bh^3/12 = 10(10)^3/12 = 833.3$ in⁴. Axial load $P = 100$ kips = 100,000 lbs. Moment $M = Pe = 100,000(2) = 200,000$ in-lb. Distance to outer fiber $c = 5$ in.\nAxial stress $\\sigma_a = P/A = 100,000/100 = 1000$ psi (compression).\nBending stress $\\sigma_b = Mc/I = 200,000(5)/833.3 = 1200$ psi.\nMax compressive stress = $\\sigma_a + \\sigma_b = 1000 + 1200 = 2200$ psi."
+    },
+    {
+      "question": "In a member subjected to combined axial tension and bending, the neutral axis (where stress is zero):",
+      "options": [
+        { "text": "Passes through the centroid of the cross-section.", "isCorrect": false },
+        { "text": "Is located where the tensile axial stress equals the compressive bending stress.", "isCorrect": true },
+        { "text": "Is always at the bottom surface.", "isCorrect": false },
+        { "text": "Does not exist.", "isCorrect": false }
+      ],
+      "explanation": "The neutral axis is defined as the line where the total normal stress is zero. With combined loading, the uniform axial stress shifts the stress distribution. The zero stress point shifts away from the centroid to the location where the axial stress component is exactly canceled out by an equal and opposite bending stress component ($P/A = My/I$)."
+    }
+  ]
+}

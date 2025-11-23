@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Importance</h3>\n<p class=\"mb-4\">A <strong>Free-Body Diagram (FBD)</strong> is the most important tool in mechanics. It is a sketch of the body of interest, isolated from its surroundings (hence \"free\"), showing all the external forces and moments acting on it.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Steps to Draw an FBD</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Isolate the Body:</strong> Draw the outline of the body. Remove all supports and contacting bodies.</li>\n    <li><strong>Apply Active Forces:</strong> Draw vectors for all known external loads (gravity/weight, applied pushes/pulls). Weight acts through the center of gravity.</li>\n    <li><strong>Apply Reactive Forces:</strong> Replace supports and contacts with the appropriate reaction forces. (e.g., a cable becomes a tension force, a floor becomes a normal force and friction force).</li>\n    <li><strong>Label and Dimension:</strong> Add magnitudes, directions/angles, and relevant dimensions. Define a coordinate system (x, y).</li>\n</ol>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Common Mistakes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Including internal forces (forces that parts of the body exert on each other).</li>\n    <li>Including forces exerted *by* the body on the surroundings (Newton's 3rd Law). Only forces *on* the body belong on the FBD.</li>\n    <li>Forgetting weight.</li>\n    <li>Incorrect support reactions (e.g., adding a moment at a pin support).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In a free-body diagram of a ladder leaning against a frictionless wall, the force exerted by the wall on the ladder is represented as:",
+      "options": [
+        { "text": "A vertical force", "isCorrect": false },
+        { "text": "A force parallel to the ladder", "isCorrect": false },
+        { "text": "A horizontal normal force", "isCorrect": true },
+        { "text": "Both a horizontal and vertical force", "isCorrect": false }
+      ],
+      "explanation": "A frictionless surface can only exert a normal force (perpendicular to the surface). Since the wall is vertical, the normal force is horizontal."
+    },
+    {
+      "question": "Which forces should NOT be included in a free-body diagram of a specific body?",
+      "options": [
+        { "text": "Weight of the body", "isCorrect": false },
+        { "text": "Reaction forces from supports", "isCorrect": false },
+        { "text": "Forces exerted BY the body on other objects", "isCorrect": true },
+        { "text": "External applied loads", "isCorrect": false }
+      ],
+      "explanation": "An FBD shows forces acting *on* the body. Forces exerted *by* the body are relevant to the FBDs of the *other* objects, not the body itself, according to Newton's 3rd Law."
+    }
+  ]
+}

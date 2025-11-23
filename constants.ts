@@ -1,4 +1,3 @@
-
 import { Discipline, Subject } from './types';
 
 export const DISCIPLINES: Discipline[] = ['Civil', 'Mechanical', 'Other'];
@@ -1083,7 +1082,7 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Piezoelectric Transducers', content: null },
             { name: 'Pressure Sensors', content: null },
             { name: 'pH Sensor', content: null },
-          ]
+          ] 
         },
         { 
           name: 'B. Control systems', 
@@ -1453,11 +1452,17 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Rigid-Body Kinematics', content: null },
           ] 
         },
-        { name: 'B. Linear motion', subtopics: [{ name: 'B. Linear motion', content: null }] },
+        { 
+          name: 'B. Linear motion', 
+          subtopics: [
+            { name: 'Force, Mass, Acceleration', content: null },
+            { name: "Newton's Equation of Motion for Linear Motion", content: null },
+          ] 
+        },
         { 
           name: 'C. Angular motion', 
           subtopics: [
-            { name: 'Newton\'s Equation of Motion for Angular Motion', content: null },
+            { name: "Newton's Equation of Motion for Angular Motion", content: null },
             { name: 'Uniform Circular Motion', content: null },
           ] 
         },
@@ -1477,6 +1482,7 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Linear Momentum', content: null },
             { name: 'Angular Momentum', content: null },
             { name: 'Impulse-Momentum Principle', content: null },
+            { name: 'Impact', content: null },
           ] 
         },
         { 
@@ -1484,8 +1490,10 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           subtopics: [
             { name: 'Kinetic Energy', content: null },
             { name: 'Potential Energy', content: null },
-            { name: 'Work Power and Efficiency', content: null },
+            { name: 'Work, Power, and Efficiency', content: null },
             { name: 'Law of Conservation of Energy', content: null },
+            { name: 'Work-Energy and Power for Particles', content: null },
+            { name: 'Work-Energy and Power for Rigid Bodies', content: null },
           ] 
         },
         { name: 'G. Dynamic friction', subtopics: [{ name: 'G. Dynamic friction', content: null }] },
@@ -1502,18 +1510,40 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
     {
       name: '10. Strength of Materials',
       topics: [
-        { name: 'A. Stress and strain', subtopics: [{ name: 'A. Stress and strain', content: null }] },
-        { name: 'B. Axial loadings', subtopics: [{ name: 'B. Axial loadings', content: null }] },
-        { name: 'C. Bending loads', subtopics: [{ name: 'C. Bending loads', content: null }] },
-        { name: 'D. Torsion', subtopics: [{ name: 'D. Torsion', content: null }] },
-        { name: 'E. Shear', subtopics: [{ name: 'E. Shear', content: null }] },
-        { name: 'F. Combined loads', subtopics: [{ name: 'F. Combined loads', content: null }] },
-        { name: 'G. Deformations', subtopics: [{ name: 'G. Deformations', content: null }] },
-        { name: 'H. Thermal stresses', subtopics: [{ name: 'H. Thermal stresses', content: null }] },
-        { name: 'I. Principal stresses', subtopics: [{ name: 'I. Principal stresses', content: null }] },
-        { name: 'J. Statically indeterminate systems', subtopics: [{ name: 'J. Statically indeterminate systems', content: null }] },
         { 
-          name: 'K. Material failure', 
+          name: 'A. Stress and strain', 
+          subtopics: [
+            { name: 'Stress and Strain', content: null },
+            { name: "Poisson's Ratio", content: null },
+            { name: 'Percentage Changes', content: null }
+          ] 
+        },
+        { name: 'B. Combined loading-principle of superposition', 
+          subtopics: [
+            { name: 'Combined Loading - Axial with Bending', content: null }
+          ] 
+        },
+        { 
+          name: 'C. Stress and strain caused by axial loads, bending loads, torsion, or transverse shear forces', 
+          subtopics: [
+            { name: 'Stress and Strain Caused by Axial loads', content: null },
+            { name: 'Stress and Strain Caused by Bending loads', content: null },
+            { name: 'Stress and Strain Caused by Torsion', content: null },
+            { name: 'Stress and Strain Caused by Transverse shear forces', content: null }
+          ] 
+        },
+        {
+          name: 'D. Shear and moment diagrams',
+          subtopics: [
+            { name: 'SFD and BMD', content: null },
+            { name: 'SFD and BMD for Simply Supported Beam with point, UDL and triangular loads', content: null },
+          ]
+        },
+        { name: 'E. Analysis of beams, trusses, frames, and columns', subtopics: [{ name: 'E. Analysis of beams, trusses, frames, and columns', content: null }] },
+        { name: 'F. Loads and deformations', subtopics: [{ name: 'F. Loads and deformations', content: null }] },
+        { name: 'G. Stress transformation and principal stresses, including stress-based yielding and fracture criteria', subtopics: [{ name: 'G. Stress transformation and principal stresses, including stress-based yielding and fracture criteria', content: null }] },
+        {
+          name: 'H. Material failure',
           subtopics: [
             { name: 'Euler Buckling', content: null },
             { name: 'Creep', content: null },
@@ -1527,11 +1557,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
       ],
     },
     {
-      name: '11. Material Properties',
+      name: '11. Materials',
       topics: [
         { name: 'A. Physical properties', subtopics: [{ name: 'A. Physical properties', content: null }] },
         { name: 'B. Chemical properties', subtopics: [{ name: 'B. Chemical properties', content: null }] },
         { name: 'C. Mechanical properties', subtopics: [{ name: 'C. Mechanical properties', content: null }] },
+        { name: 'D. Thermal properties of materials', subtopics: [{ name: 'Thermal properties of materials', content: null }] },
+        { name: 'E. Electrical properties of materials', subtopics: [{ name: 'Electrical properties of materials', content: null }] },
+        { name: 'F. Material selection', subtopics: [{ name: 'Material selection', content: null }] },
       ],
     },
     {
@@ -1626,8 +1659,8 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           name: 'C. AC and DC circuits', 
           subtopics: [
             { name: 'Real and Imaginary Components', content: null },
-            { name: 'Complex numbers', content: null },
-            { name: 'Power factor', content: null },
+            { name: 'Complex Numbers', content: null },
+            { name: 'Power Factor', content: null },
             { name: 'Reactance and Impedance', content: null },
             { name: 'Series, Parallel', content: null },
             { name: 'Capacitance and Inductance', content: null },
@@ -1642,6 +1675,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Wattmeter', content: null },
           ] 
         },
+        {
+          name: 'E. Three-phase power',
+          subtopics: [
+            { name: 'Motor Efficiency', content: null },
+            { name: 'Balanced Loads', content: null },
+            { name: 'Power Equation', content: null },
+          ]
+        }
       ],
     },
     {
@@ -1656,17 +1697,16 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
             { name: 'Third Law', content: null },
           ] 
         },
-        { name: 'B. Thermodynamic properties', subtopics: [{ name: 'B. Thermodynamic properties', content: null }] },
         { 
-          name: 'C. Thermodynamic properties', 
+          name: 'B. Thermodynamic properties', 
           subtopics: [
             { name: 'Entropy', content: null },
             { name: 'Enthalpy', content: null },
-            { name: 'Heat capacity', content: null },
-          ]
+            { name: 'Heat Capacity', content: null },
+          ] 
         },
         { 
-          name: 'D. Thermodynamic processes', 
+          name: 'C. Thermodynamic processes', 
           subtopics: [
             { name: 'Isochoric', content: null },
             { name: 'Isobaric', content: null },
@@ -1679,16 +1719,15 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           ] 
         },
         { 
-          name: 'E. Heat transfer', 
+          name: 'D. Heat transfer', 
           subtopics: [
             { name: 'Conduction', content: null },
             { name: 'Convection', content: null },
             { name: 'Radiation', content: null },
           ] 
         },
-        { name: 'F. Heat exchangers', subtopics: [{ name: 'F. Heat exchangers', content: null }] },
         { 
-          name: 'G. Property and phase diagrams', 
+          name: 'E. Property and phase diagrams', 
           subtopics: [
             { name: 'T-s Diagrams', content: null },
             { name: 'P-h Diagrams', content: null },
@@ -1696,17 +1735,17 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
           ] 
         },
         { 
-          name: 'H. Combustion and combustion products', 
+          name: 'F. Combustion and combustion products', 
           subtopics: [
             { name: 'Heats of Reaction', content: null },
-            { name: 'Combustion in O2', content: null },
+            { name: 'Combustion of Hydrocarbon in Pure O2', content: null },
             { name: 'Combustion in Air', content: null },
             { name: 'Incomplete Combustion', content: null },
             { name: 'Combustion Products (CO, CO2, NOX, ash, particulates)', content: null },
           ] 
         },
         { 
-          name: 'I. Psychrometrics', 
+          name: 'G. Psychrometrics', 
           subtopics: [
             { name: 'Psychrometric Chart', content: null },
             { name: 'HVAC Processes', content: null },

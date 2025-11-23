@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Chemical properties describe a material's ability to undergo a chemical change or reaction. Observing a chemical property involves changing the material's chemical identity.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Corrosion Resistance:</strong> A material's ability to resist degradation due to chemical reactions with its environment, such as oxidation (rusting) or reaction with acids. Stainless steel has high corrosion resistance due to its chromium content.</li>\n    <li><strong>Flammability:</strong> The ability of a substance to burn or ignite, causing fire or combustion.</li>\n    <li><strong>Reactivity:</strong> The tendency of a substance to undergo a chemical reaction, either by itself or with other materials, and to release energy. For example, alkali metals are highly reactive with water.</li>\n    <li><strong>Oxidation State:</strong> The degree of oxidation (loss of electrons) of an atom in a chemical compound.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The formation of rust on an iron bolt is related to which chemical property of iron?",
+      "options": [
+        { "text": "Flammability", "isCorrect": false },
+        { "text": "Reactivity with acids", "isCorrect": false },
+        { "text": "Corrosion resistance (or lack thereof)", "isCorrect": true },
+        { "text": "Hardness", "isCorrect": false }
+      ],
+      "explanation": "Rusting is a form of corrosion, specifically the oxidation of iron in the presence of oxygen and water. Therefore, the tendency to rust is a measure of a material's corrosion resistance."
+    }
+  ]
+}

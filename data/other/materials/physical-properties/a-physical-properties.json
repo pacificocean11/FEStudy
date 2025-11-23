@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Physical properties are characteristics of a material that can be observed or measured without changing the material's chemical composition.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Density ($\\rho$):</strong> The mass of a material per unit volume. It is a measure of how compact the material is. Units are kg/m³.</li>\n    <li><strong>Melting Point:</strong> The temperature at which a material changes from a solid to a liquid state at a given pressure.</li>\n    <li><strong>Boiling Point:</strong> The temperature at which a liquid changes to a gas (vapor) at a given pressure.</li>\n    <li><strong>Color, Luster, Odor:</strong> Qualitative properties that can be used to identify a substance.</li>\n    <li><strong>Specific Gravity:</strong> The ratio of the density of a substance to the density of a reference substance (usually water).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following is an intensive physical property?",
+      "options": [
+        { "text": "Mass", "isCorrect": false },
+        { "text": "Volume", "isCorrect": false },
+        { "text": "Density", "isCorrect": true },
+        { "text": "Weight", "isCorrect": false }
+      ],
+      "explanation": "An intensive property is one that does not depend on the amount of matter. Density, melting point, and color are intensive. An extensive property, like mass or volume, does depend on the amount of matter."
+    }
+  ]
+}

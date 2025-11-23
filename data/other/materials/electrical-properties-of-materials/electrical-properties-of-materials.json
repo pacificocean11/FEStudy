@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Electrical properties determine how a material responds to an electric field. The primary properties are conductivity and its reciprocal, resistivity.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Conductivity ($\\sigma$):</strong> A measure of a material's ability to conduct electric current. It is the ratio of the current density to the electric field strength. Units are Siemens per meter (S/m).</li>\n    <li><strong>Resistivity ($\\rho$):</strong> The reciprocal of conductivity. It measures how strongly a material opposes the flow of electric current. Units are Ohm-meters (\u03A9\u00B7m).</li>\n</ul>\n<h3 class=\"text-lg font-semibold mb-2\">3. Classification of Materials</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Conductors:</strong> Materials with high conductivity and low resistivity (e.g., copper, aluminum, silver). They have many free electrons that can move easily.</li>\n    <li><strong>Insulators (Dielectrics):</strong> Materials with low conductivity and high resistivity (e.g., glass, rubber, plastics). Their electrons are tightly bound to atoms and are not free to move.</li>\n    <li><strong>Semiconductors:</strong> Materials with intermediate conductivity that can be precisely controlled by adding impurities (doping). They are the basis of all modern electronics (e.g., silicon, germanium).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Which of the following materials is an electrical insulator?",
+      "options": [
+        { "text": "Copper", "isCorrect": false },
+        { "text": "Aluminum", "isCorrect": false },
+        { "text": "Silicon", "isCorrect": false },
+        { "text": "Glass", "isCorrect": true }
+      ],
+      "explanation": "Copper and aluminum are excellent conductors. Silicon is a semiconductor. Glass has very high resistivity and is a common electrical insulator."
+    }
+  ]
+}

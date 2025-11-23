@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\"><strong>Mohr's Circle</strong> is a graphical method used to determine principal stresses, maximum shear stresses, and the stresses on any inclined plane. It visualizes the state of stress at a point.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Construction</h3>\n<p class=\"mb-4\">For a state of plane stress defined by $\\sigma_x, \\sigma_y, \\text{ and } \\tau_{xy}$:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The center of the circle ($C$) is on the horizontal axis at the average normal stress:\n    $$ C = \\frac{\\sigma_x + \\sigma_y}{2} $$</li>\n    <li>The radius ($R$) of the circle is the maximum shear stress:\n    $$ R = \\tau_{max} = \\sqrt{\\left(\\frac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} $$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Key Points</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Principal Stresses:</strong> The points where the circle intersects the horizontal ($\\sigma$) axis. $\\sigma_1 = C + R$ and $\\sigma_2 = C - R$. Shear stress is zero at these points.</li>\n    <li><strong>Max Shear Stress:</strong> The highest and lowest points on the circle, corresponding to the radius $R$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The state of stress at a point is $\\sigma_x = 40$ MPa, $\\sigma_y = -20$ MPa, and $\\tau_{xy} = 40$ MPa. What is the radius of Mohr's circle?",
+      "options": [
+        { "text": "30 MPa", "isCorrect": false },
+        { "text": "40 MPa", "isCorrect": false },
+        { "text": "50 MPa", "isCorrect": true },
+        { "text": "10 MPa", "isCorrect": false }
+      ],
+      "explanation": "Radius $R = \\sqrt{((40 - (-20))/2)^2 + 40^2} = \\sqrt{(30)^2 + 40^2} = \\sqrt{900 + 1600} = 50$ MPa."
+    }
+  ]
+}

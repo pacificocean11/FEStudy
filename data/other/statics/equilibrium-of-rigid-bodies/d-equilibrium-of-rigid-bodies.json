@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Conditions for Equilibrium</h3>\n<p class=\"mb-4\">A rigid body is in equilibrium when it is stationary or moving with constant velocity. This requires both the net force and the net moment on the body to be zero.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>Vector Equations: $\\sum \\mathbf{F} = 0$ and $\\sum \\mathbf{M}_O = 0$ (about any point O).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Scalar Equations (2D)</h3>\n<p class=\"mb-4\">For coplanar force systems (2D), the vector conditions reduce to three scalar equations:</p>\n$$ \\sum F_x = 0, \\quad \\sum F_y = 0, \\quad \\sum M_O = 0 $$\n<p class=\"mb-4\">These three independent equations can solve for up to three unknowns (e.g., support reactions).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Support Reactions (2D)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Roller / Rocker:</strong> 1 unknown (Force perpendicular to surface). Resists translation in one direction only.</li>\n    <li><strong>Pin / Hinge:</strong> 2 unknowns (Force components $R_x, R_y$). Resists translation in any direction.</li>\n    <li><strong>Fixed Support:</strong> 3 unknowns ($R_x, R_y, M$). Resists translation and rotation.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Stability and Determinacy</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Statically Determinate:</strong> Number of unknowns = Number of equilibrium equations (3 in 2D).</li>\n    <li><strong>Statically Indeterminate:</strong> Number of unknowns > Number of equations. Cannot be solved by statics alone.</li>\n    <li><strong>Unstable:</strong> Number of unknowns < Number of equations, or improper constraints (e.g., all reactions are parallel or concurrent).</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported beam has a pin support at A and a roller support at B. How many unknown support reactions are there?",
+      "options": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "A pin support provides 2 reaction components (horizontal and vertical). A roller support provides 1 reaction component (vertical). Total unknowns = 2 + 1 = 3."
+    },
+    {
+      "question": "For a rigid body in 2D equilibrium, how many independent equations of equilibrium are available?",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "In 2D, the conditions for equilibrium are $\\sum F_x = 0$, $\\sum F_y = 0$, and $\\sum M_O = 0$. These are three independent equations."
+    },
+    {
+      "question": "A beam is supported by a pin at one end and a roller at the other. A vertical load is applied. To find the vertical reaction at the roller, it is usually most efficient to:",
+      "options": [
+        { "text": "Sum forces in the vertical direction.", "isCorrect": false },
+        { "text": "Sum moments about the roller.", "isCorrect": false },
+        { "text": "Sum moments about the pin support.", "isCorrect": true },
+        { "text": "Sum forces in the horizontal direction.", "isCorrect": false }
+      ],
+      "explanation": "Summing moments about the pin eliminates the two unknown reactions at the pin (since their moment arm is zero), leaving an equation with only one unknown: the vertical reaction at the roller."
+    }
+  ]
+}

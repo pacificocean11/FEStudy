@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Axial Stress ($\\sigma$)</h3>\n<p class=\"mb-4\">Axial stress is the normal stress distributed over the cross-section of a member when it is subjected to an axial force (tension or compression) acting through its centroid.</p>\n$$ \\sigma = \\frac{P}{A} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sigma$: Normal stress (Pa or psi). Positive for tension, negative for compression.</li>\n    <li>$P$: Applied axial force.</li>\n    <li>$A$: Cross-sectional area.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Axial Strain ($\\epsilon$)</h3>\n<p class=\"mb-4\">Axial strain is the deformation per unit length.</p>\n$$ \\epsilon = \\frac{\\delta}{L} $$\n<p class=\"mb-4\">where $\\delta$ is the change in length and $L$ is the original length.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Elastic Deformation</h3>\n<p class=\"mb-4\">For a linear elastic material (obeying Hooke's Law $\\sigma = E\\epsilon$), the total deformation is:</p>\n$$ \\delta = \\frac{PL}{AE} $$\n<p class=\"mb-4\">This formula assumes a constant load, constant cross-section, and homogeneous material properties.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 2-meter long steel rod with a cross-sectional area of $5 \\times 10^{-4} \\text{ m}^2$ is subjected to a tensile load of 100 kN. The Modulus of Elasticity for steel is 200 GPa. What is the elongation of the rod?",
+      "options": [
+        { "text": "1 mm", "isCorrect": false },
+        { "text": "2 mm", "isCorrect": true },
+        { "text": "0.5 mm", "isCorrect": false },
+        { "text": "4 mm", "isCorrect": false }
+      ],
+      "explanation": "Use the deformation formula $\\delta = PL/AE$. $P = 100,000$ N. $L = 2$ m. $A = 5 \\times 10^{-4}$ m². $E = 200 \\times 10^9$ Pa. $\\delta = \\frac{(100,000)(2)}{(5 \\times 10^{-4})(200 \\times 10^9)} = \\frac{200,000}{100,000,000} = 0.002$ m = 2 mm."
+    },
+    {
+      "question": "A concrete column carries a compressive load of 500 kips. If the column is 20 inches by 20 inches square, what is the compressive stress?",
+      "options": [
+        { "text": "1.25 ksi", "isCorrect": true },
+        { "text": "2.5 ksi", "isCorrect": false },
+        { "text": "0.8 ksi", "isCorrect": false },
+        { "text": "1250 psi", "isCorrect": true }
+      ],
+      "explanation": "Area $A = 20 \\times 20 = 400$ in². Load $P = 500$ kips. Stress $\\sigma = P/A = 500 / 400 = 1.25$ ksi (or 1250 psi)."
+    }
+  ]
+}

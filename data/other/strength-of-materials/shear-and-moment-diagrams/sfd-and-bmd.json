@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concepts</h3>\n<p class=\"mb-4\"><strong>Shear Force Diagrams (SFD)</strong> and <strong>Bending Moment Diagrams (BMD)</strong> are graphical representations of the internal shear force ($V$) and bending moment ($M$) at all points along the length of a beam.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Shear Force ($V$):</strong> The sum of all vertical forces acting on the beam to the left (or right) of a section. It tends to slide adjacent layers of the beam vertically.</li>\n    <li><strong>Bending Moment ($M$):</strong> The sum of all moments (including those from forces) acting on the beam to the left (or right) of a section. It tends to bend the beam.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Sign Convention</h3>\n<p class=\"mb-4\">The standard sign convention for internal forces is:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Positive Shear (+V):</strong> Upward on the left face, downward on the right face.</li>\n    <li><strong>Positive Moment (+M):</strong> Compresses the top fibers and elongates the bottom fibers (makes the beam 'smile').</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Differential Relationships</h3>\n<p class=\"mb-4\">There are fundamental mathematical relationships between the distributed load ($w(x)$), shear ($V(x)$), and moment ($M(x)$):</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The slope of the shear diagram is equal to the negative of the distributed load intensity.\n    $$ \\frac{dV}{dx} = -w(x) $$\n    So, the change in shear between two points is the area under the load curve (negative).\n    $$ \\Delta V = -\\int w(x) dx $$</li>\n    <li>The slope of the moment diagram is equal to the shear force.\n    $$ \\frac{dM}{dx} = V(x) $$\n    So, the change in moment between two points is the area under the shear curve.\n    $$ \\Delta M = \\int V(x) dx $$</li>\n</ul>\n<p class=\"mb-4\"><strong>Key Insight:</strong> Maximum and minimum moments occur where the shear force is zero (since $dM/dx = V = 0$).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "If the shear force diagram for a beam is a horizontal line with a constant positive value, what is the shape of the bending moment diagram?",
+      "options": [
+        { "text": "A horizontal line.", "isCorrect": false },
+        { "text": "A straight line with a positive slope.", "isCorrect": true },
+        { "text": "A straight line with a negative slope.", "isCorrect": false },
+        { "text": "A parabolic curve.", "isCorrect": false }
+      ],
+      "explanation": "The slope of the moment diagram is equal to the shear force ($dM/dx = V$). If V is a positive constant, then the slope of M is a positive constant, which describes a straight line sloping upwards."
+    },
+    {
+      "question": "The change in bending moment between two points on a beam is equal to:",
+      "options": [
+        { "text": "The area under the load diagram between those points.", "isCorrect": false },
+        { "text": "The area under the shear diagram between those points.", "isCorrect": true },
+        { "text": "The difference in shear force between those points.", "isCorrect": false },
+        { "text": "The slope of the shear diagram.", "isCorrect": false }
+      ],
+      "explanation": "According to the integral relationship $\\Delta M = \\int V(x) dx$, the change in moment is geometrically represented by the area under the shear force diagram."
+    }
+  ]
+}

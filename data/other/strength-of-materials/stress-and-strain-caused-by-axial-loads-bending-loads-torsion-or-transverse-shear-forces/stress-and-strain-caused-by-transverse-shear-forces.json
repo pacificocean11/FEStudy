@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. General Shear Formula</h3>\n<p class=\"mb-4\">Transverse shear forces ($V$) in a beam (such as those from bending loads) generate shear stresses ($\\tau$) across the section. Unlike axial stress, shear stress is not uniform.</p>\n$$ \\tau = \\frac{VQ}{It} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$V$: Shear force at the section.</li>\n    <li>$Q$: First moment of area of the portion of the section above the point of interest ($A'\\bar{y}'$).</li>\n    <li>$I$: Moment of inertia of the entire section.</li>\n    <li>$t$: Thickness (width) of the section at the point of interest.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Rectangular Sections</h3>\n<p class=\"mb-4\">For a rectangular beam of width $b$ and height $h$, the shear stress distribution is parabolic. The maximum shear stress occurs at the neutral axis.</p>\n$$ \\tau_{max} = 1.5 \\frac{V}{A} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Average Shear Stress</h3>\n<p class=\"mb-4\">For bolts, pins, and rivets undergoing direct shear, it is common to calculate the average shear stress:</p>\n$$ \\tau_{avg} = \\frac{V}{A} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A rectangular wood beam is 4 inches wide and 8 inches deep. It carries a shear force of 2,000 lbs. What is the maximum shear stress?",
+      "options": [
+        { "text": "62.5 psi", "isCorrect": false },
+        { "text": "93.75 psi", "isCorrect": true },
+        { "text": "100 psi", "isCorrect": false },
+        { "text": "50 psi", "isCorrect": false }
+      ],
+      "explanation": "For a rectangular section, $\\tau_{max} = 1.5 (V/A)$. Area $A = 4 \\times 8 = 32$ in². $\\tau_{max} = 1.5 (2000 / 32) = 1.5 (62.5) = 93.75$ psi."
+    },
+    {
+      "question": "Where does the maximum transverse shear stress occur in an I-beam?",
+      "options": [
+        { "text": "At the top flange.", "isCorrect": false },
+        { "text": "At the bottom flange.", "isCorrect": false },
+        { "text": "At the web (neutral axis).", "isCorrect": true },
+        { "text": "Shear stress is uniform.", "isCorrect": false }
+      ],
+      "explanation": "The shear stress formula $\\tau = VQ/It$ yields the highest value where $Q$ is maximum and $t$ is minimum. For an I-beam, $Q$ is maximum at the neutral axis (center), and the web thickness ($t$) is much smaller than the flange width, resulting in high shear stress in the web."
+    }
+  ]
+}

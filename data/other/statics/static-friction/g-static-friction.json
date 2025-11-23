@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Coulomb Friction Model</h3>\n<p class=\"mb-4\">Friction is a tangential force between two surfaces in contact that opposes relative motion.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Static Friction ($f_s$)</h3>\n<p class=\"mb-4\">Acts when there is no relative motion between the surfaces. It is a variable reactive force that balances the applied force to maintain equilibrium.</p>\n$$ f_s \\le \\mu_s N $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$N$: Normal force perpendicular to the surface.</li>\n    <li>$\\mu_s$: Coefficient of static friction.</li>\n</ul>\n<p class=\"mb-4\"><strong>Impending Motion:</strong> When the applied force increases to the point where motion is just about to start, static friction reaches its maximum value ($f_{s,max} = \\mu_s N$).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Kinetic Friction ($f_k$)</h3>\n<p class=\"mb-4\">Acts when the surfaces are sliding relative to each other. It is generally constant and lower than the maximum static friction.</p>\n$$ f_k = \\mu_k N $$\n<p class=\"mb-4\">Typically $\\mu_k < \\mu_s$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Angle of Friction ($\\phi_s$)</h3>\n<p class=\"mb-4\">At impending motion, the resultant contact force makes an angle $\\phi_s$ with the normal. $\\tan \\phi_s = \\mu_s$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 50 kg block rests on a floor. The coefficient of static friction is 0.4. What horizontal force is required to just start the block moving? (Use g = 9.81 m/s²)",
+      "options": [
+        { "text": "196.2 N", "isCorrect": true },
+        { "text": "490.5 N", "isCorrect": false },
+        { "text": "20 N", "isCorrect": false },
+        { "text": "122.6 N", "isCorrect": false }
+      ],
+      "explanation": "The normal force $N = mg = 50 \\times 9.81 = 490.5$ N. The force required to start motion must overcome the maximum static friction: $F = f_{s,max} = \\mu_s N = 0.4 \\times 490.5 = 196.2$ N."
+    },
+    {
+      "question": "A block sits on an inclined plane. As the angle of the incline increases, the block eventually begins to slip. The angle at which slipping starts is equal to:",
+      "options": [
+        { "text": "45 degrees", "isCorrect": false },
+        { "text": "The angle of kinetic friction", "isCorrect": false },
+        { "text": "The angle of static friction ($\\phi_s$)", "isCorrect": true },
+        { "text": "30 degrees", "isCorrect": false }
+      ],
+      "explanation": "On an incline, impending motion occurs when the component of weight down the slope equals maximum static friction. This geometric condition reduces to $\\tan \\theta = \\mu_s$. Since $\\mu_s = \\tan \\phi_s$, the incline angle $\\theta$ equals the angle of static friction $\\phi_s$."
+    },
+    {
+      "question": "If a horizontal force of 100 N acts on a block and the block remains stationary, and the maximum static friction is 150 N, what is the magnitude of the actual friction force?",
+      "options": [
+        { "text": "150 N", "isCorrect": false },
+        { "text": "100 N", "isCorrect": true },
+        { "text": "0 N", "isCorrect": false },
+        { "text": "50 N", "isCorrect": false }
+      ],
+      "explanation": "Since the applied force (100 N) is less than the maximum static friction (150 N), the block is in equilibrium. From $\\sum F_x = 0$, the friction force must exactly balance the applied force. So $f_s = 100$ N."
+    }
+  ]
+}

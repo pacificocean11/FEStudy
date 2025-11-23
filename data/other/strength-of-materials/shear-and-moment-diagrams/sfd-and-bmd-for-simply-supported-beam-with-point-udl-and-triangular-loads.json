@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Simply Supported Beam with Concentrated Load (P) at Midspan</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Reactions:</strong> Symmetrical. $R_A = R_B = P/2$.</li>\n    <li><strong>Shear Diagram:</strong> Constant $+P/2$ from left support to load, drops by $P$ to $-P/2$, then constant to right support.</li>\n    <li><strong>Moment Diagram:</strong> Increases linearly from 0 to maximum at midspan, then decreases linearly to 0.</li>\n    <li><strong>Maximum Moment:</strong> Occurs at midspan (where shear is zero/changes sign).</li>\n    $$ M_{max} = \\frac{PL}{4} $$\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Simply Supported Beam with Uniformly Distributed Load (w)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Reactions:</strong> Symmetrical. $R_A = R_B = wL/2$.</li>\n    <li><strong>Shear Diagram:</strong> Starts at $+wL/2$, decreases linearly with slope $-w$, crosses zero at midspan, ends at $-wL/2$.</li>\n    <li><strong>Moment Diagram:</strong> Parabolic curve opening downwards. Starts and ends at 0.</li>\n    <li><strong>Maximum Moment:</strong> Occurs at midspan.\n    $$ M_{max} = \\frac{wL^2}{8} $$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Simply Supported Beam with Triangular Load</h3>\n<p class=\"mb-4\">For a load increasing linearly from 0 at support A to $w_{max}$ at support B:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Reactions:</strong> $R_A = w_{max}L/6$, $R_B = w_{max}L/3$.</li>\n    <li><strong>Shear Diagram:</strong> Parabolic curve. $V(x) = \\frac{w_{max}L}{6} - \\frac{w_{max}x^2}{2L}$.</li>\n    <li><strong>Moment Diagram:</strong> Cubic curve. Maximum moment occurs at $x = L/\\sqrt{3} = 0.577L$.</li>\n    $$ M_{max} = \\frac{w_{max}L^2}{9\\sqrt{3}} \\approx 0.064 w_{max}L^2 $$\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported beam of length $L=10$ m carries a uniformly distributed load of $w=2$ kN/m over its entire span. What is the maximum bending moment?",
+      "options": [
+        { "text": "20 kN·m", "isCorrect": false },
+        { "text": "50 kN·m", "isCorrect": false },
+        { "text": "25 kN·m", "isCorrect": true },
+        { "text": "100 kN·m", "isCorrect": false }
+      ],
+      "explanation": "For a simply supported beam with a UDL, the maximum moment occurs at the center and is given by $M_{max} = wL^2/8$. Calculation: $M_{max} = (2 \\text{ kN/m})(10 \\text{ m})^2 / 8 = 2(100)/8 = 200/8 = 25$ kN·m."
+    },
+    {
+      "question": "A simply supported beam supports a central concentrated load P. If the span length is doubled while the load remains the same, how does the maximum bending moment change?",
+      "options": [
+        { "text": "It remains the same.", "isCorrect": false },
+        { "text": "It doubles.", "isCorrect": true },
+        { "text": "It quadruples.", "isCorrect": false },
+        { "text": "It is halved.", "isCorrect": false }
+      ],
+      "explanation": "The maximum moment for a central point load is $M_{max} = PL/4$. Since $M_{max}$ is directly proportional to length $L$, doubling the length will double the maximum moment."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Tresca Yield Criterion</strong>, also known as the <strong>Maximum Shear Stress Theory</strong>, applies to <strong>ductile materials</strong>. It assumes that yielding begins when the maximum shear stress in the material reaches a critical value.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Failure Criterion</h3>\n<p class=\"mb-4\">Yielding occurs when the maximum shear stress ($ \\tau_{max} $) equals half the yield strength ($ S_y $) obtained from a simple tension test.</p>\n$$ \\tau_{max} \\ge \\frac{S_y}{2} $$\n<p class=\"mb-4\">In terms of principal stresses (where $\\sigma_1 > \\sigma_2 > \\sigma_3$):</p>\n$$ \\frac{\\sigma_1 - \\sigma_3}{2} \\ge \\frac{S_y}{2} \\quad \\implies \\quad \\sigma_1 - \\sigma_3 \\ge S_y $$\n<p class=\"mb-4\">This theory is more conservative (predicts failure sooner) than the von Mises theory.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A ductile steel part ($S_y = 400$ MPa) is subjected to principal stresses $\\sigma_1 = 250$ MPa, $\\sigma_2 = 100$ MPa, and $\\sigma_3 = -50$ MPa. Using the Tresca criterion, what is the factor of safety?",
+      "options": [
+        { "text": "1.33", "isCorrect": true },
+        { "text": "1.6", "isCorrect": false },
+        { "text": "2.0", "isCorrect": false },
+        { "text": "1.0", "isCorrect": false }
+      ],
+      "explanation": "According to Tresca, failure relates to the maximum shear stress proportional to $\\sigma_1 - \\sigma_3$. Factor of Safety $n = S_y / (\\sigma_1 - \\sigma_3) = 400 / (250 - (-50)) = 400 / 300 = 1.33$."
+    }
+  ]
+}

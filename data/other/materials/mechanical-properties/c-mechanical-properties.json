@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Mechanical properties describe how a material responds to applied forces. They are crucial for engineering design to ensure components can withstand their service loads without failure.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Key Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Strength:</strong> A material's ability to withstand an applied stress without deformation or failure. Key measures include Yield Strength (stress at which plastic deformation begins) and Ultimate Tensile Strength (maximum stress before fracture).</li>\n    <li><strong>Hardness:</strong> A measure of a material's resistance to localized plastic deformation such as scratching or indentation (e.g., Brinell, Rockwell).</li>\n    <li><strong>Ductility:</strong> A measure of a material's ability to undergo significant plastic deformation before rupturing. It is often quantified by percent elongation or percent reduction in area. Ductile materials (like steel) fail after visible deformation, while brittle materials (like glass) fail suddenly.</li>\n    <li><strong>Toughness:</strong> A material's ability to absorb energy and plastically deform without fracturing. It is represented by the total area under the stress-strain curve.</li>\n    <li><strong>Elasticity:</strong> The ability of a material to deform under load and return to its original shape once the load is removed. The Modulus of Elasticity (Young's Modulus) is a measure of stiffness.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "The property that describes a material's ability to absorb energy up to fracture is called:",
+      "options": [
+        { "text": "Strength", "isCorrect": false },
+        { "text": "Hardness", "isCorrect": false },
+        { "text": "Ductility", "isCorrect": false },
+        { "text": "Toughness", "isCorrect": true }
+      ],
+      "explanation": "Toughness is the measure of energy absorption before fracture and is represented by the total area under the stress-strain curve. Strength refers to the maximum stress, while ductility refers to the amount of deformation before fracture."
+    },
+    {
+      "question": "A material that fractures with very little plastic deformation is described as:",
+      "options": [
+        { "text": "Ductile", "isCorrect": false },
+        { "text": "Brittle", "isCorrect": true },
+        { "text": "Tough", "isCorrect": false },
+        { "text": "Elastic", "isCorrect": false }
+      ],
+      "explanation": "Brittle materials, like ceramics and cast iron, exhibit little to no plastic deformation before they break. Ductile materials, like most metals, will stretch and deform noticeably before failing."
+    }
+  ]
+}

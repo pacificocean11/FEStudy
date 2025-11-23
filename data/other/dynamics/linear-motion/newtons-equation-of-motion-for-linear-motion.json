@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Equation of Motion</h3>\n<p class=\"mb-4\">Kinetics problems involving the motion of a particle are solved using the Equation of Motion, which is a direct application of Newton's Second Law.</p>\n$$ \\sum \\mathbf{F} = m\\mathbf{a} $$\n<p class=\"mb-4\">This vector equation can be broken down into scalar components based on the chosen coordinate system.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Rectangular Coordinates (x, y, z):</strong>\n        $$ \\sum F_x = ma_x \\quad \\sum F_y = ma_y \\quad \\sum F_z = ma_z $$</li>\n    <li><strong>Normal and Tangential Coordinates (n, t):</strong>\n        $$ \\sum F_t = ma_t \\quad \\sum F_n = ma_n $$\n        where $a_t = dv/dt$ (change in speed) and $a_n = v^2/\\rho$ (change in direction).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Procedure for Analysis</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Free-Body Diagram (FBD):</strong> Isolate the particle and show all external forces acting on it (gravity, friction, normal force, applied forces).</li>\n    <li><strong>Kinetic Diagram (KD):</strong> Draw the particle again, but show only the inertial vector $m\\mathbf{a}$ representing the resultant motion. The direction of $m\\mathbf{a}$ indicates the direction of acceleration.</li>\n    <li><strong>Apply Equations:</strong> Set the sum of forces from the FBD equal to the mass times acceleration from the KD for each coordinate direction (e.g., $\\sum F_x = ma_x$).</li>\n    <li><strong>Solve:</strong> Solve the resulting algebraic equations for the unknowns (acceleration, force, etc.).</li>\n</ol>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 50 kg crate is pushed across a horizontal floor with a horizontal force of 200 N. The coefficient of kinetic friction is $\\mu_k = 0.3$. What is the acceleration of the crate? (Use $g = 9.81 \\text{ m/s}^2$).",
+      "options": [
+        { "text": "1.06 m/s²", "isCorrect": true },
+        { "text": "4.0 m/s²", "isCorrect": false },
+        { "text": "2.94 m/s²", "isCorrect": false },
+        { "text": "0 m/s²", "isCorrect": false }
+      ],
+      "explanation": "First, find the friction force. The normal force balances the weight: $N = mg = 50(9.81) = 490.5$ N. Friction $f_k = \\mu_k N = 0.3(490.5) = 147.15$ N. Now apply $\\sum F_x = ma_x$: $F_{push} - f_k = ma$. $200 - 147.15 = 50a$. $52.85 = 50a \\implies a \\approx 1.057$ m/s²."
+    },
+    {
+      "question": "A 2000 lb elevator is being lifted by a cable. If the tension in the cable is 2500 lb, what is the upward acceleration of the elevator?",
+      "options": [
+        { "text": "8.05 ft/s²", "isCorrect": true },
+        { "text": "32.2 ft/s²", "isCorrect": false },
+        { "text": "4.0 ft/s²", "isCorrect": false },
+        { "text": "1.25 ft/s²", "isCorrect": false }
+      ],
+      "explanation": "First, find the mass of the elevator in slugs: $m = W/g = 2000/32.2 \\approx 62.11$ slugs. Apply Newton's Second Law in the vertical direction: $\\sum F_y = ma_y$. $T - W = ma$. $2500 - 2000 = (62.11)a$. $500 = 62.11a \\implies a = 500 / 62.11 \\approx 8.05 \\text{ ft/s}^2$."
+    },
+    {
+      "question": "If a particle is moving with constant velocity, what can be said about the net force acting on it?",
+      "options": [
+        { "text": "The net force is constant and non-zero.", "isCorrect": false },
+        { "text": "The net force is zero.", "isCorrect": true },
+        { "text": "The net force is increasing.", "isCorrect": false },
+        { "text": "The net force is perpendicular to the velocity.", "isCorrect": false }
+      ],
+      "explanation": "Constant velocity implies zero acceleration ($a=0$). According to Newton's Second Law, $\\sum F = ma$. If $a=0$, then $\\sum F = 0$. This is the condition of equilibrium."
+    }
+  ]
+}

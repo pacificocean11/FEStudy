@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Scalars and Vectors</h3>\n<p class=\"mb-4\"><strong>Scalars</strong> are quantities characterized by magnitude only (e.g., mass, time, temperature). <strong>Vectors</strong> are quantities characterized by both magnitude and direction (e.g., force, velocity, moment). Vectors obey the parallelogram law of addition.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Vector Representation</h3>\n<p class=\"mb-4\">A vector $\\mathbf{V}$ can be expressed in terms of its rectangular components ($V_x, V_y, V_z$) and unit vectors ($\\mathbf{i}, \\mathbf{j}, \\mathbf{k}$).</p>\n$$ \\mathbf{V} = V_x \\mathbf{i} + V_y \\mathbf{j} + V_z \\mathbf{k} $$\n<p class=\"mb-4\">The magnitude of the vector is:</p>\n$$ |\\mathbf{V}| = V = \\sqrt{V_x^2 + V_y^2 + V_z^2} $$\n<p class=\"mb-4\">The direction is defined by the direction cosines ($l, m, n$):</p>\n$$ \\cos \\alpha = \\frac{V_x}{V}, \\quad \\cos \\beta = \\frac{V_y}{V}, \\quad \\cos \\gamma = \\frac{V_z}{V} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Vector Operations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Addition:</strong> $\\mathbf{R} = \\mathbf{A} + \\mathbf{B} = (A_x + B_x)\\mathbf{i} + (A_y + B_y)\\mathbf{j} + (A_z + B_z)\\mathbf{k}$.</li>\n    <li><strong>Dot Product (Scalar Product):</strong> $\\mathbf{A} \\cdot \\mathbf{B} = A_x B_x + A_y B_y + A_z B_z = AB \\cos \\theta$. Used to find the angle $\\theta$ between two vectors or the projection of one vector onto another.</li>\n    <li><strong>Cross Product (Vector Product):</strong> $\\mathbf{A} \\times \\mathbf{B} = (A_y B_z - A_z B_y)\\mathbf{i} - (A_x B_z - A_z B_x)\\mathbf{j} + (A_x B_y - A_y B_x)\\mathbf{k}$. The result is a vector perpendicular to the plane containing $\\mathbf{A}$ and $\\mathbf{B}$. Magnitude is $AB \\sin \\theta$.</li>\n    <li><strong>Unit Vector:</strong> A vector with a magnitude of 1. $\\mathbf{u} = \\frac{\\mathbf{V}}{V}$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Given two vectors $\\mathbf{A} = 3\\mathbf{i} + 4\\mathbf{j}$ and $\\mathbf{B} = -2\\mathbf{i} + 6\\mathbf{j}$, what is the magnitude of the resultant vector $\\mathbf{R} = \\mathbf{A} + \\mathbf{B}$?",
+      "options": [
+        { "text": "10.05", "isCorrect": true },
+        { "text": "14.1", "isCorrect": false },
+        { "text": "5.0", "isCorrect": false },
+        { "text": "11.2", "isCorrect": false }
+      ],
+      "explanation": "First, find the components of the resultant vector: $R_x = 3 + (-2) = 1$, $R_y = 4 + 6 = 10$. So $\\mathbf{R} = 1\\mathbf{i} + 10\\mathbf{j}$. The magnitude is $|\\mathbf{R}| = \\sqrt{1^2 + 10^2} = \\sqrt{101} \\approx 10.05$."
+    },
+    {
+      "question": "Calculate the angle between vectors $\\mathbf{F}_1 = 2\\mathbf{i} + 2\\mathbf{j}$ and $\\mathbf{F}_2 = 3\\mathbf{i} + 0\\mathbf{j}$.",
+      "options": [
+        { "text": "30°", "isCorrect": false },
+        { "text": "45°", "isCorrect": true },
+        { "text": "60°", "isCorrect": false },
+        { "text": "90°", "isCorrect": false }
+      ],
+      "explanation": "Use the dot product formula: $\\mathbf{A} \\cdot \\mathbf{B} = AB \\cos \\theta$. $\\mathbf{F}_1 \\cdot \\mathbf{F}_2 = (2)(3) + (2)(0) = 6$. Magnitude $F_1 = \\sqrt{2^2 + 2^2} = \\sqrt{8}$. Magnitude $F_2 = \\sqrt{3^2} = 3$. So, $6 = (\\sqrt{8})(3) \\cos \\theta$. $\\cos \\theta = 6 / (3\\sqrt{8}) = 2 / \\sqrt{8} = 2 / (2\\sqrt{2}) = 1/\\sqrt{2}$. Thus, $\\theta = 45^\\circ$."
+    },
+    {
+      "question": "What is the unit vector in the direction of $\\mathbf{F} = 3\\mathbf{i} - 4\\mathbf{j}$?",
+      "options": [
+        { "text": "$0.6\\mathbf{i} - 0.8\\mathbf{j}$", "isCorrect": true },
+        { "text": "$3\\mathbf{i} - 4\\mathbf{j}$", "isCorrect": false },
+        { "text": "$0.3\\mathbf{i} - 0.4\\mathbf{j}$", "isCorrect": false },
+        { "text": "$0.75\\mathbf{i} - 1\\mathbf{j}$", "isCorrect": false }
+      ],
+      "explanation": "The magnitude of $\\mathbf{F}$ is $\\sqrt{3^2 + (-4)^2} = \\sqrt{25} = 5$. Divide the vector by its magnitude to get the unit vector: $\\mathbf{u} = (3/5)\\mathbf{i} - (4/5)\\mathbf{j} = 0.6\\mathbf{i} - 0.8\\mathbf{j}$."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>von Mises Yield Criterion</strong>, also known as the <strong>Distortion Energy Theory</strong>, is the most accurate failure theory for <strong>ductile materials</strong>. It states that yielding begins when the distortion energy per unit volume reaches the distortion energy at the yield point in a simple tension test.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. von Mises Stress ($\\sigma'$ or $\\sigma_{vm}$)</h3>\n<p class=\"mb-4\">The criterion uses an equivalent stress called the von Mises stress. For a general state of stress with principal stresses $\\sigma_1, \\sigma_2, \\sigma_3$:</p>\n$$ \\sigma' = \\sqrt{\\frac{(\\sigma_1-\\sigma_2)^2 + (\\sigma_2-\\sigma_3)^2 + (\\sigma_3-\\sigma_1)^2}{2}} $$\n<p class=\"mb-4\">For <strong>Plane Stress</strong> ($\\sigma_3=0$):</p>\n$$ \\sigma' = \\sqrt{\\sigma_1^2 - \\sigma_1\\sigma_2 + \\sigma_2^2} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Failure Condition</h3>\n<p class=\"mb-4\">Yielding occurs when:</p>\n$$ \\sigma' \\ge S_y $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A material yields when $\\sigma_1 = 300$ MPa in a uniaxial tension test. If the material is subjected to a state of pure shear stress $\\tau$, at what value of $\\tau$ will it yield according to the von Mises theory?",
+      "options": [
+        { "text": "150 MPa", "isCorrect": false },
+        { "text": "300 MPa", "isCorrect": false },
+        { "text": "173 MPa", "isCorrect": true },
+        { "text": "200 MPa", "isCorrect": false }
+      ],
+      "explanation": "For pure shear $\\tau$, the principal stresses are $\\sigma_1 = \\tau$ and $\\sigma_2 = -\\tau$. The von Mises stress is $\\sigma' = \\sqrt{\\tau^2 - (\\tau)(-\\tau) + (-\\tau)^2} = \\sqrt{3\\tau^2} = \\tau\\sqrt{3}$. Yielding occurs when $\\sigma' = S_y$. So $\\tau\\sqrt{3} = 300 \\implies \\tau = 300/\\sqrt{3} \\approx 173.2$ MPa."
+    }
+  ]
+}

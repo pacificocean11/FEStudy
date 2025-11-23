@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Newton's Second Law of Motion</h3>\n<p class=\"mb-4\">The relationship between force, mass, and acceleration is given by Newton's Second Law. It states that the net force acting on a particle is equal to the product of its mass and acceleration.</p>\n$$ \\mathbf{F} = m\\mathbf{a} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\mathbf{F}$: Net external force vector acting on the particle.</li>\n    <li>$m$: Mass of the particle (scalar).</li>\n    <li>$\\mathbf{a}$: Acceleration vector.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Mass vs. Weight</h3>\n<p class=\"mb-4\">It is crucial to distinguish between mass and weight. Mass ($m$) is a measure of an object's inertia or quantity of matter. Weight ($W$) is the force of gravity acting on that mass.</p>\n$$ W = mg $$\n<p class=\"mb-4\">where $g$ is the acceleration due to gravity.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Units</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>SI Units:</strong> Mass is in kilograms (kg), acceleration in meters per second squared ($m/s^2$), and force in Newtons (N). $1 \\text{ N} = 1 \\text{ kg} \\cdot \\text{m/s}^2$. Gravity $g \\approx 9.81 \\text{ m/s}^2$.</li>\n    <li><strong>US Customary Units:</strong> This system can be confusing. Force is typically in pounds-force (lbf) or kips. Acceleration is in $ft/s^2$. Gravity $g \\approx 32.2 \\text{ ft/s}^2$. Mass is technically measured in <strong>slugs</strong>.\n        $$ m [\\text{slugs}] = \\frac{W [\\text{lbf}]}{g [\\text{ft/s}^2]} = \\frac{W}{32.2} $$\n        Therefore, $1 \\text{ lbf} = 1 \\text{ slug} \\cdot 1 \\text{ ft/s}^2$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An object weighs 100 lbf on Earth. What is its mass in slugs?",
+      "options": [
+        { "text": "100 slugs", "isCorrect": false },
+        { "text": "3.11 slugs", "isCorrect": true },
+        { "text": "32.2 slugs", "isCorrect": false },
+        { "text": "3220 slugs", "isCorrect": false }
+      ],
+      "explanation": "Mass in slugs is calculated by dividing the weight in pounds-force by the acceleration of gravity in $ft/s^2$. $m = W/g = 100 \\text{ lbf} / 32.2 \\text{ ft/s}^2 \\approx 3.105$ slugs."
+    },
+    {
+      "question": "A net force of 50 N is applied to a 10 kg block. What is the acceleration of the block?",
+      "options": [
+        { "text": "5 m/s²", "isCorrect": true },
+        { "text": "0.2 m/s²", "isCorrect": false },
+        { "text": "500 m/s²", "isCorrect": false },
+        { "text": "40 m/s²", "isCorrect": false }
+      ],
+      "explanation": "Using Newton's Second Law, $F = ma$. Rearranging for acceleration: $a = F/m = 50 \\text{ N} / 10 \\text{ kg} = 5 \\text{ m/s}^2$."
+    },
+    {
+      "question": "Which of the following is a unit of mass in the US Customary system?",
+      "options": [
+        { "text": "Pound-force (lbf)", "isCorrect": false },
+        { "text": "Slug", "isCorrect": true },
+        { "text": "Newton", "isCorrect": false },
+        { "text": "Kip", "isCorrect": false }
+      ],
+      "explanation": "The slug is the standard unit of mass in the US Customary system. It is defined as the mass that accelerates by 1 ft/s² when acted upon by a force of 1 lbf. The pound-force and kip are units of force."
+    }
+  ]
+}

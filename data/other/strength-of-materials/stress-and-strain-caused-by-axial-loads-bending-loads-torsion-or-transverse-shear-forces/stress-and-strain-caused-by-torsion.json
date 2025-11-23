@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Torsional Shear Stress</h3>\n<p class=\"mb-4\">When a torque ($T$) is applied to a circular shaft, it induces shear stresses ($\\tau$) on the cross-section. The stress varies linearly from zero at the center to a maximum at the outer surface.</p>\n$$ \\tau = \\frac{Tr}{J} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$T$: Internal torque.</li>\n    <li>$r$: Radial distance from the center.</li>\n    <li>$J$: Polar moment of inertia ($J = \\pi c^4 / 2$ for solid shaft of radius $c$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Angle of Twist</h3>\n<p class=\"mb-4\">The angle of twist ($\\phi$) measures the rotational deformation over the length ($L$) of the shaft.</p>\n$$ \\phi = \\frac{TL}{JG} $$\n<p class=\"mb-4\">where $G$ is the shear modulus of the material.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Torsional Strain</h3>\n<p class=\"mb-4\">The shear strain ($\\gamma$) is related to the angle of twist:</p>\n$$ \\gamma = \\frac{r \\phi}{L} $$\n<p class=\"mb-4\">Maximum shear strain occurs at the surface: $\\gamma_{max} = c \\phi / L$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A solid steel shaft ($G = 80$ GPa) with a diameter of 50 mm is subjected to a torque of 1,000 N·m. What is the maximum shear stress?",
+      "options": [
+        { "text": "40.7 MPa", "isCorrect": true },
+        { "text": "20.4 MPa", "isCorrect": false },
+        { "text": "81.5 MPa", "isCorrect": false },
+        { "text": "10.2 MPa", "isCorrect": false }
+      ],
+      "explanation": "Radius $c = 0.025$ m. Polar moment of inertia $J = \\pi c^4 / 2 = \\pi (0.025)^4 / 2 \\approx 6.136 \\times 10^{-7} \\text{ m}^4$. Maximum stress $\\tau_{max} = Tc/J = (1000)(0.025) / (6.136 \\times 10^{-7}) \\approx 40,743,000$ Pa = 40.7 MPa."
+    },
+    {
+      "question": "If the length of a shaft is doubled while keeping torque and diameter constant, the angle of twist will:",
+      "options": [
+        { "text": "Remain the same.", "isCorrect": false },
+        { "text": "Double.", "isCorrect": true },
+        { "text": "Halve.", "isCorrect": false },
+        { "text": "Quadruple.", "isCorrect": false }
+      ],
+      "explanation": "Based on the formula $\\phi = TL/JG$, the angle of twist $\\phi$ is directly proportional to the length $L$."
+    }
+  ]
+}

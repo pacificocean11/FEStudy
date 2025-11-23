@@ -1,0 +1,18 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">The <strong>Maximum Normal Stress Theory</strong> (also known as Rankine's Theory) predicts failure when the maximum principal stress reaches the ultimate strength of the material. It is primarily used for <strong>brittle materials</strong> (like cast iron or glass) which typically fail by fracture rather than yielding.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Failure Criterion</h3>\n<p class=\"mb-4\">Let $\\sigma_1$ and $\\sigma_3$ be the maximum and minimum principal stresses.</p>\n<p class=\"mb-4\">Failure is predicted if:</p>\n$$ \\sigma_1 \\ge S_{ut} \\quad \\text{or} \\quad |\\sigma_3| \\ge |S_{uc}| $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$S_{ut}$: Ultimate Tensile Strength</li>\n    <li>$S_{uc}$: Ultimate Compressive Strength</li>\n</ul>\n<p class=\"mb-4\">Brittle materials often have much higher compressive strength than tensile strength ($S_{uc} \\gg S_{ut}$).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A brittle material has an ultimate tensile strength of 100 MPa and an ultimate compressive strength of 300 MPa. If the principal stresses at a point are $\\sigma_1 = 80$ MPa and $\\sigma_3 = -200$ MPa, what is the factor of safety?",
+      "options": [
+        { "text": "1.25", "isCorrect": true },
+        { "text": "1.5", "isCorrect": false },
+        { "text": "3.0", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false }
+      ],
+      "explanation": "We check both tension and compression. In tension: $n_t = S_{ut}/\\sigma_1 = 100/80 = 1.25$. In compression: $n_c = |S_{uc}|/|\\sigma_3| = 300/200 = 1.5$. The overall factor of safety is the minimum of these two values, so $n = 1.25$."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Normal Stress ($\\sigma$)</h3>\n<p class=\"mb-4\">Stress is the intensity of force per unit area. <strong>Normal stress</strong> occurs when a force acts perpendicular to the cross-sectional area of a member.</p>\n$$ \\sigma = \\frac{P}{A} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sigma$: Normal stress (Pa or psi).</li>\n    <li>$P$: Applied axial load (N or lb).</li>\n    <li>$A$: Cross-sectional area (m² or in²).</li>\n</ul>\n<p class=\"mb-4\">Tension is positive (+), and compression is negative (-).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Normal Strain ($\\epsilon$)</h3>\n<p class=\"mb-4\">Strain is a measure of deformation representing the displacement between particles in the material body. <strong>Normal strain</strong> is the change in length per unit of original length.</p>\n$$ \\epsilon = \\frac{\\delta}{L_0} = \\frac{L_f - L_0}{L_0} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\epsilon$: Normal strain (dimensionless, or mm/mm, in/in).</li>\n    <li>$\\delta$: Elongation or change in length.</li>\n    <li>$L_0$: Original length.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hooke's Law</h3>\n<p class=\"mb-4\">For many materials, stress is linearly proportional to strain within the elastic region. This relationship is known as <strong>Hooke's Law</strong>.</p>\n$$ \\sigma = E \\epsilon $$\n<p class=\"mb-4\">where $E$ is the <strong>Modulus of Elasticity</strong> (or Young's Modulus), a measure of the material's stiffness.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A steel rod with a cross-sectional area of 0.5 in² is subjected to a tensile load of 15,000 lbs. What is the normal stress in the rod?",
+      "options": [
+        { "text": "7,500 psi", "isCorrect": false },
+        { "text": "30,000 psi", "isCorrect": true },
+        { "text": "15,000 psi", "isCorrect": false },
+        { "text": "60,000 psi", "isCorrect": false }
+      ],
+      "explanation": "Stress is force divided by area: $\\sigma = P/A = 15,000 \\text{ lbs} / 0.5 \\text{ in²} = 30,000$ psi."
+    },
+    {
+      "question": "A 2-meter long bar stretches by 1 mm under a load. What is the normal strain?",
+      "options": [
+        { "text": "0.0005", "isCorrect": true },
+        { "text": "0.002", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false },
+        { "text": "0.001", "isCorrect": false }
+      ],
+      "explanation": "Strain is change in length divided by original length. Convert units to be consistent: 1 mm = 0.001 m. $\\epsilon = \\delta / L_0 = 0.001 \\text{ m} / 2 \\text{ m} = 0.0005$."
+    }
+  ]
+}

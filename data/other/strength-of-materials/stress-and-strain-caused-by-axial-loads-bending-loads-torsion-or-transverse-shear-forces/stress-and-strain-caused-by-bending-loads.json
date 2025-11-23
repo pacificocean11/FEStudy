@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Bending Stress</h3>\n<p class=\"mb-4\">When a beam bends, the material fibers stretch (tension) or shorten (compression). The resulting normal stress varies linearly from the neutral axis.</p>\n<p class=\"mb-4\">The <strong>Flexure Formula</strong> calculates the stress at a distance $y$ from the neutral axis:</p>\n$$ \\sigma = -\\frac{My}{I} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$M$: Internal bending moment at the section.</li>\n    <li>$y$: Perpendicular distance from the neutral axis.</li>\n    <li>$I$: Area moment of inertia about the neutral axis.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Maximum Stress</h3>\n<p class=\"mb-4\">The maximum bending stress occurs at the fibers farthest from the neutral axis ($y_{max} = c$).</p>\n$$ \\sigma_{max} = \\frac{Mc}{I} = \\frac{M}{S} $$\n<p class=\"mb-4\">where $S = I/c$ is the <strong>Section Modulus</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Bending Strain</h3>\n<p class=\"mb-4\">Since stress and strain are related by $E$, the strain also varies linearly:</p>\n$$ \\epsilon = -\\frac{y}{\\rho} $$\n<p class=\"mb-4\">where $\\rho$ is the radius of curvature of the bent beam.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A cantilever beam is subjected to a maximum bending moment of 5,000 lb-ft. The beam has a section modulus $S = 20 \\text{ in}^3$. What is the maximum bending stress?",
+      "options": [
+        { "text": "250 psi", "isCorrect": false },
+        { "text": "3,000 psi", "isCorrect": true },
+        { "text": "2,500 psi", "isCorrect": false },
+        { "text": "60,000 psi", "isCorrect": false }
+      ],
+      "explanation": "First, convert the moment to consistent units: $M = 5,000 \\text{ lb-ft} \\times 12 \\text{ in/ft} = 60,000$ lb-in. Then use $\\sigma_{max} = M/S = 60,000 / 20 = 3,000$ psi."
+    },
+    {
+      "question": "In a beam subjected to positive bending (sagging), the top fibers are in ________ and the bottom fibers are in ________.",
+      "options": [
+        { "text": "Tension; Compression", "isCorrect": false },
+        { "text": "Compression; Tension", "isCorrect": true },
+        { "text": "Tension; Tension", "isCorrect": false },
+        { "text": "Compression; Compression", "isCorrect": false }
+      ],
+      "explanation": "Positive bending causes the beam to smile. The top surface shortens (compression) and the bottom surface elongates (tension)."
+    }
+  ]
+}

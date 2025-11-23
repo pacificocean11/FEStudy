@@ -1,0 +1,17 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Material Selection Process</h3>\n<p class=\"mb-4\">Material selection is a systematic process used to identify the best material for a given application. It involves balancing performance, cost, manufacturing constraints, and environmental impact.</p>\n<h3 class=\"text-lg font-semibold mb-2\">2. Steps in Selection</h3>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li><strong>Translation:</strong> Define the design requirements. This includes the <strong>Function</strong> (what the component does), <strong>Constraints</strong> (essential requirements that must be met, e.g., maximum cost, minimum stiffness), <strong>Objective</strong> (what to maximize or minimize, e.g., minimize mass), and <strong>Free Variables</strong> (parameters that can be changed, e.g., thickness).</li>\n    <li><strong>Screening:</strong> Eliminate materials that do not meet the constraints. For example, if the service temperature is 500°C, all polymers are eliminated.</li>\n    <li><strong>Ranking:</strong> Order the remaining materials by their ability to meet the objective. This often uses <strong>Material Indices</strong> (e.g., $E/\\rho$ for a light, stiff beam).</li>\n    <li><strong>Supporting Information:</strong> Research the top candidates in detail (availability, manufacturing history) to make the final choice.</li>\n</ol>\n<h3 class=\"text-lg font-semibold mb-2\">3. Material Indices</h3>\n<p class=\"mb-4\">A material index is a combination of material properties that characterizes the performance of a material in a given application. Maximizing the index maximizes performance. For example, to minimize the mass of a tie rod carrying a tensile force, the index to maximize is $\\sigma_y / \\rho$ (specific strength).</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "In the material selection process, a property that must be met for a design to work (e.g., the material must conduct electricity) is called a:",
+      "options": [
+        { "text": "Objective", "isCorrect": false },
+        { "text": "Constraint", "isCorrect": true },
+        { "text": "Free Variable", "isCorrect": false },
+        { "text": "Material Index", "isCorrect": false }
+      ],
+      "explanation": "A constraint is a non-negotiable requirement. If a material does not meet a constraint, it is screened out immediately, regardless of how well it might perform on other metrics."
+    }
+  ]
+}

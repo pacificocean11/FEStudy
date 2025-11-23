@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Mass vs. Weight</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Mass (m):</strong> A measure of the amount of matter in an object. It is a scalar quantity and is constant regardless of location. SI unit: kg. US unit: slug (or lb-mass).</li>\n    <li><strong>Weight (W):</strong> The gravitational force acting on an object. It is a vector pointing towards the center of the Earth. Weight depends on the local acceleration due to gravity ($g$). SI unit: Newton (N). US unit: lb-force.</li>\n</ul>\n$$ W = mg $$\n<p class=\"mb-4\">Standard gravity $g \\approx 9.81 \\text{ m/s}^2 \\approx 32.2 \\text{ ft/s}^2$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Density and Specific Weight</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Density ($\\rho$):</strong> Mass per unit volume. $\\rho = m/V$. Units: kg/m³, slug/ft³.</li>\n    <li><strong>Specific Weight ($\\gamma$):</strong> Weight per unit volume. $\\gamma = W/V = \\rho g$. Units: N/m³, lb/ft³.</li>\n    <li><strong>Specific Gravity (SG):</strong> Ratio of the density of a substance to the density of water. Dimensionless. $\\rho_{substance} = SG \\times \\rho_{water}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Calculating Total Weight</h3>\n<p class=\"mb-4\">For a homogeneous body of volume $V$, total weight is $W = \\gamma V$. For composite bodies, sum the weights of individual parts: $W_{total} = \\sum W_i$.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "An object has a mass of 100 kg. What is its weight on Earth ($g = 9.81 \\text{ m/s}^2$)?",
+      "options": [
+        { "text": "100 N", "isCorrect": false },
+        { "text": "981 N", "isCorrect": true },
+        { "text": "10.2 N", "isCorrect": false },
+        { "text": "9810 N", "isCorrect": false }
+      ],
+      "explanation": "Weight $W = mg = 100 \\text{ kg} \\times 9.81 \\text{ m/s}^2 = 981 \\text{ N}$."
+    },
+    {
+      "question": "A concrete block has a volume of 2 cubic feet. If the specific weight of concrete is 150 lb/ft³, what is the weight of the block?",
+      "options": [
+        { "text": "75 lb", "isCorrect": false },
+        { "text": "150 lb", "isCorrect": false },
+        { "text": "300 lb", "isCorrect": true },
+        { "text": "3000 lb", "isCorrect": false }
+      ],
+      "explanation": "$W = \\gamma V = 150 \\text{ lb/ft}^3 \\times 2 \\text{ ft}^3 = 300 \\text{ lb}$."
+    },
+    {
+      "question": "In the US Customary system, 1 slug is equal to a mass that accelerates by 1 ft/s² when acted upon by a force of:",
+      "options": [
+        { "text": "1 lb", "isCorrect": true },
+        { "text": "32.2 lb", "isCorrect": false },
+        { "text": "1 Newton", "isCorrect": false },
+        { "text": "10 lb", "isCorrect": false }
+      ],
+      "explanation": "This definition comes from Newton's Second Law, $F=ma$. 1 lb force = 1 slug mass × 1 ft/s². Therefore, mass in slugs = Weight in lbs / 32.2."
+    }
+  ]
+}

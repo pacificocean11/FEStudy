@@ -1,0 +1,38 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Moment of a Force</h3>\n<p class=\"mb-4\">The moment of a force about a point is the measure of its tendency to rotate the body about that point.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Scalar Formulation (2D):</strong> $M_O = Fd$, where $d$ is the perpendicular distance from point O to the line of action of the force.</li>\n    <li><strong>Vector Formulation (3D):</strong> $\\mathbf{M}_O = \\mathbf{r} \\times \\mathbf{F}$, where $\\mathbf{r}$ is a position vector from O to any point on the line of action of $\\mathbf{F}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Couple</h3>\n<p class=\"mb-4\">A couple consists of two parallel forces that are equal in magnitude, opposite in direction, and non-collinear. A couple produces a pure rotation (moment) with zero net force.</p>\n<p class=\"mb-4\">The moment of a couple ($M$) is $F \\times d$, where $d$ is the perpendicular distance between the forces. This moment is a <strong>free vector</strong>; it acts effectively at any point on the rigid body.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Equivalent Systems</h3>\n<p class=\"mb-4\">Any system of forces and moments can be reduced to a single resultant force acting at a specific point and a resultant couple moment. This is known as an equivalent force-couple system.</p>\n<p class=\"mb-4\">Specifically, a force $\\mathbf{F}$ acting at point A can be moved to point B if a couple moment $\\mathbf{M} = \\mathbf{r}_{BA} \\times \\mathbf{F}$ is added to the system to account for the eccentric effect.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A force of 50 N acts tangentially on the rim of a wheel with a radius of 0.4 m. What is the moment of this force about the center of the wheel?",
+      "options": [
+        { "text": "12.5 N·m", "isCorrect": false },
+        { "text": "20 N·m", "isCorrect": true },
+        { "text": "200 N·m", "isCorrect": false },
+        { "text": "0 N·m", "isCorrect": false }
+      ],
+      "explanation": "The force is tangent to the rim, so the radius is perpendicular to the line of action. The moment arm is the radius. $M = Fd = 50 \\text{ N} \\times 0.4 \\text{ m} = 20$ N·m."
+    },
+    {
+      "question": "Which of the following is a property of a couple moment?",
+      "options": [
+        { "text": "It depends on the point about which moments are taken.", "isCorrect": false },
+        { "text": "It produces translation of the body.", "isCorrect": false },
+        { "text": "It is a free vector.", "isCorrect": true },
+        { "text": "The resultant force is non-zero.", "isCorrect": false }
+      ],
+      "explanation": "A couple moment is a free vector, meaning its effect on a rigid body is the same regardless of where it is applied. It causes pure rotation and has a zero resultant force."
+    },
+    {
+      "question": "Replacing a force acting at a point A with an equal parallel force acting at point B requires adding:",
+      "options": [
+        { "text": "Nothing else.", "isCorrect": false },
+        { "text": "A couple moment.", "isCorrect": true },
+        { "text": "Another force at A.", "isCorrect": false },
+        { "text": "A larger force at B.", "isCorrect": false }
+      ],
+      "explanation": "Moving a force's line of action to a new parallel position changes its rotational effect. To maintain equivalency, a couple moment equal to the moment of the original force about the new point B must be added."
+    }
+  ]
+}
