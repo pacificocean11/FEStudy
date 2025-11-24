@@ -1,6 +1,18 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pump Characteristic Curve</h3>\n<p class=\"mb-4\">Plots the Head ($H$) produced by the pump versus Flow Rate ($Q$). Typically, head decreases as flow increases. The highest head occurs at zero flow (shut-off head).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. System Curve</h3>\n<p class=\"mb-4\">Plots the Head required by the piping system versus Flow Rate. It consists of static head (elevation lift) plus friction losses.</p>\n$$ H_{sys} = H_{static} + K Q^2 $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Operating Point</h3>\n<p class=\"mb-4\">The point where the Pump Curve and System Curve intersect. This determines the actual flow rate and head for that specific pump in that specific system.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Other Curves</h3>\n<p class=\"mb-4\">Manufacturers also provide curves for Efficiency ($\\eta$) vs $Q$ and Power ($BHP$) vs $Q$. The best operating point is near the Best Efficiency Point (BEP).</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "The intersection of the pump characteristic curve (H vs Q) and the system head curve determines the:",
+      "options": [
+        { "text": "Maximum efficiency", "isCorrect": false },
+        { "text": "Shut-off head", "isCorrect": false },
+        { "text": "Pump operating point", "isCorrect": true },
+        { "text": "Cavitation limit", "isCorrect": false }
+      ],
+      "explanation": "The system requires a certain head to move a specific flow, and the pump provides a certain head at that flow. The system will naturally settle at the one point where supply equals demand."
+    }
+  ]
 }

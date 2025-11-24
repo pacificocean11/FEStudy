@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Reynolds Number (Re)</h3>\n<p class=\"mb-4\">Determines the flow regime in a pipe.</p>\n$$ Re = \\frac{\\rho v D}{\\mu} = \\frac{v D}{\\nu} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Re < 2300$: Laminar Flow</li>\n    <li>$Re > 4000$: Turbulent Flow</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Head Loss</h3>\n<p class=\"mb-4\">Total head loss is the sum of major losses (friction) and minor losses (fittings).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Major Loss (Darcy-Weisbach)</h3>\n$$ h_f = f \\frac{L}{D} \\frac{v^2}{2g} $$\n<p class=\"mb-4\">The friction factor $f$ is found from:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Laminar:</strong> $f = 64/Re$</li>\n    <li><strong>Turbulent:</strong> Moody Chart or Colebrook equation (depends on $\\epsilon/D$ and $Re$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Minor Losses</h3>\n$$ h_m = K \\frac{v^2}{2g} $$\n<p class=\"mb-4\">where $K$ is the loss coefficient for valves, elbows, tees, etc.</p>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "For laminar flow in a pipe, how does the friction factor $f$ vary with the Reynolds number?",
+      "options": [
+        { "text": "It is constant.", "isCorrect": false },
+        { "text": "It increases with Re.", "isCorrect": false },
+        { "text": "It is inversely proportional to Re ($f = 64/Re$).", "isCorrect": true },
+        { "text": "It depends on surface roughness.", "isCorrect": false }
+      ],
+      "explanation": "In the laminar regime, $f$ is independent of roughness and equals 64/Re."
+    },
+    {
+      "question": "Water flows through a pipe at 3 m/s. A valve with $K=2$ is located in the line. What is the head loss across the valve? ($g=9.81$ m/s²)",
+      "options": [
+        { "text": "0.92 m", "isCorrect": true },
+        { "text": "0.31 m", "isCorrect": false },
+        { "text": "1.84 m", "isCorrect": false },
+        { "text": "6.0 m", "isCorrect": false }
+      ],
+      "explanation": "$h_m = K \\frac{v^2}{2g} = 2 \\frac{3^2}{2(9.81)} = \\frac{18}{19.62} \\approx 0.917$ m."
+    }
+  ]
+}

@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Heating and Cooling Loads</h3>\n<p class=\"mb-4\">HVAC systems are designed to add or remove heat to maintain a space at a desired temperature and humidity. The energy balance involves sensible and latent heat.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Sensible Heat ($Q_s$):</strong> Heat transfer associated with a change in temperature. $\\dot{Q}_s = \\dot{m} c_p \\Delta T$.</li>\n    <li><strong>Latent Heat ($Q_l$):</strong> Heat transfer associated with a change in moisture content (phase change) at a constant temperature. $\\dot{Q}_l = \\dot{m} h_{fg} \\Delta \\omega$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Sensible Heat Ratio (SHR)</h3>\n<p class=\"mb-4\">The SHR describes the ratio of the sensible cooling load to the total cooling load. It determines the slope of the process line on a psychrometric chart.</p>\n$$ SHR = \\frac{\\dot{Q}_{sensible}}{\\dot{Q}_{total}} = \\frac{\\dot{Q}_{sensible}}{\\dot{Q}_{sensible} + \\dot{Q}_{latent}} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Bypass Factor (BF)</h3>\n<p class=\"mb-4\">In a cooling coil, not all air comes into direct contact with the coil surface. The fraction of air that passes through without being cooled is the Bypass Factor.</p>\n$$ BF = \\frac{T_{out} - T_{coil}}{T_{in} - T_{coil}} $$\n<p class=\"mb-4\">The efficiency of the coil (Contact Factor) is $1 - BF$.</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "A cooling coil removes 10 kW of sensible heat and 5 kW of latent heat from an air stream. What is the Sensible Heat Ratio (SHR) of the process?",
+      "options": [
+        { "text": "0.50", "isCorrect": false },
+        { "text": "2.0", "isCorrect": false },
+        { "text": "0.67", "isCorrect": true },
+        { "text": "0.33", "isCorrect": false }
+      ],
+      "explanation": "Total heat $Q_{total} = Q_s + Q_l = 10 + 5 = 15$ kW. $SHR = Q_s / Q_{total} = 10 / 15 = 2/3 \\approx 0.67$."
+    },
+    {
+      "question": "Ideally, heating moist air without adding water vapor is represented on a psychrometric chart by a straight line moving:",
+      "options": [
+        { "text": "Vertically Up", "isCorrect": false },
+        { "text": "Horizontally to the Right", "isCorrect": true },
+        { "text": "Horizontally to the Left", "isCorrect": false },
+        { "text": "Diagonally Up and Right", "isCorrect": false }
+      ],
+      "explanation": "Sensible heating increases the dry-bulb temperature (x-axis) without changing the humidity ratio (y-axis). Therefore, the process line is horizontal moving to the right."
+    }
+  ]
 }

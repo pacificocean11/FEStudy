@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Isentropic Efficiency</h3>\n<p class=\"mb-4\">Real steady-flow devices (turbines, compressors, pumps) are not reversible. They generate entropy due to friction and other irreversibilities. The <strong>isentropic efficiency</strong> compares the actual performance to the ideal, isentropic (reversible adiabatic) performance.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Turbine Efficiency ($\\eta_t$)</h3>\n<p class=\"mb-4\">For a turbine, the actual work output ($w_a$) is less than the ideal isentropic work output ($w_s$) for the same pressure drop.</p>\n$$ \\eta_t = \\frac{\\text{Actual Work Output}}{\\text{Isentropic Work Output}} = \\frac{w_a}{w_s} \\approx \\frac{h_1 - h_{2a}}{h_1 - h_{2s}} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Compressor and Pump Efficiency ($\\eta_c$, $\\eta_p$)</h3>\n<p class=\"mb-4\">For compressors and pumps, the actual work input ($w_a$) required is greater than the ideal isentropic work input ($w_s$).</p>\n$$ \\eta_c = \\frac{\\text{Isentropic Work Input}}{\\text{Actual Work Input}} = \\frac{w_s}{w_a} \\approx \\frac{h_{2s} - h_1}{h_{2a} - h_1} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Nozzle Efficiency ($\\eta_N$)</h3>\n<p class=\"mb-4\">For a nozzle, efficiency is defined in terms of kinetic energy.</p>\n$$ \\eta_N = \\frac{\\text{Actual KE at exit}}{\\text{Isentropic KE at exit}} = \\frac{V_{2a}^2}{V_{2s}^2} $$\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "Ideally, an adiabatic turbine expands steam from an inlet enthalpy of 3000 kJ/kg to an exit enthalpy of 2000 kJ/kg. The actual exit enthalpy is measured to be 2200 kJ/kg. What is the isentropic efficiency of the turbine?",
+      "options": [
+        { "text": "80%", "isCorrect": true },
+        { "text": "125%", "isCorrect": false },
+        { "text": "20%", "isCorrect": false },
+        { "text": "90%", "isCorrect": false }
+      ],
+      "explanation": "Ideal work $w_s = 3000 - 2000 = 1000$ kJ/kg. Actual work $w_a = 3000 - 2200 = 800$ kJ/kg. Efficiency $\\eta_t = w_a / w_s = 800 / 1000 = 0.80$ or 80%."
+    },
+    {
+      "question": "A compressor requires 50 kW of power to compress air isentropically. If the compressor has an isentropic efficiency of 80%, what is the actual power required?",
+      "options": [
+        { "text": "40 kW", "isCorrect": false },
+        { "text": "50 kW", "isCorrect": false },
+        { "text": "62.5 kW", "isCorrect": true },
+        { "text": "90 kW", "isCorrect": false }
+      ],
+      "explanation": "For a compressor (work input), $\\eta_c = W_{ideal} / W_{actual}$. So, $W_{actual} = W_{ideal} / \\eta_c = 50 \\text{ kW} / 0.80 = 62.5$ kW. Real compressors require *more* work than ideal ones."
+    }
+  ]
 }

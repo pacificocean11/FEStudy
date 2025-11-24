@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Definition</h3>\n<p class=\"mb-4\">When a beam is subjected to a bending moment, it deforms, causing normal stresses to develop through the depth of its cross-section. These are called <strong>bending stresses</strong> or <strong>flexural stresses</strong>.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. The Flexure Formula</h3>\n<p class=\"mb-4\">The normal stress ($\\sigma_x$) at any point on a beam's cross-section is given by the flexure formula:</p>\n$$ \\sigma_x = -\\frac{My}{I} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\sigma_x$: Normal stress at the point.</li>\n    <li>$M$: The internal bending moment at that section of the beam.</li>\n    <li>$y$: The perpendicular distance from the neutral axis to the point of interest.</li>\n    <li>$I$: The moment of inertia of the entire cross-section about the neutral axis.</li>\n</ul>\n<p class=\"mb-4\">The <strong>neutral axis</strong> is the axis within the cross-section where the bending stress is zero. For a symmetric cross-section, it passes through the centroid.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Maximum Bending Stress</h3>\n<p class=\"mb-4\">The stress is zero at the neutral axis and increases linearly to its maximum value at the outermost fibers of the beam (where $y$ is largest, denoted as $c$).</p>\n$$ \\sigma_{max} = \\frac{Mc}{I} $$\n<p class=\"mb-4\">The term $I/c$ is called the <strong>section modulus (S)</strong>, so the formula can be simplified to:</p>\n$$ \\sigma_{max} = \\frac{M}{S} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A simply supported rectangular beam with a height of 12 inches is subjected to a positive bending moment. Where is the normal stress equal to zero?",
+      "options": [
+        { "text": "At the top fiber of the beam.", "isCorrect": false },
+        { "text": "At the bottom fiber of the beam.", "isCorrect": false },
+        { "text": "At the neutral axis (6 inches from the top).", "isCorrect": true },
+        { "text": "Everywhere in the cross-section.", "isCorrect": false }
+      ],
+      "explanation": "The bending stress distribution is linear, changing from maximum compression at one outer fiber to zero at the neutral axis, and then to maximum tension at the other outer fiber. The neutral axis is the plane of zero bending stress."
+    },
+    {
+      "question": "A steel I-beam has a section modulus (S) of 48 in³. If it is subjected to a maximum bending moment of 1,200,000 in-lb, what is the maximum bending stress?",
+      "options": [
+        { "text": "25,000 psi", "isCorrect": true },
+        { "text": "57,600,000 psi", "isCorrect": false },
+        { "text": "40,000 psi", "isCorrect": false },
+        { "text": "2,500 psi", "isCorrect": false }
+      ],
+      "explanation": "Use the simplified flexure formula: $\\sigma_{max} = M/S = 1,200,000 \\text{ in-lb} / 48 \\text{ in³} = 25,000$ psi."
+    }
+  ]
+}

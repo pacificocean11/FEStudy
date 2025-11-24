@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Normal Shock Wave</h3>\n<p class=\"mb-4\">A normal shock wave is a thin region of abrupt change in fluid properties occurring in supersonic flow perpendicular to the flow direction. It is an irreversible process.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Property Changes</h3>\n<p class=\"mb-4\">Across a normal shock wave:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Velocity:</strong> Decreases from supersonic ($M_1 > 1$) to subsonic ($M_2 < 1$).</li>\n    <li><strong>Static Pressure ($P$):</strong> Increases ($P_2 > P_1$).</li>\n    <li><strong>Static Temperature ($T$):</strong> Increases ($T_2 > T_1$).</li>\n    <li><strong>Density ($\\rho$):</strong> Increases ($\\rho_2 > \\rho_1$).</li>\n    <li><strong>Stagnation Temperature ($T_0$):</strong> Remains constant ($T_{01} = T_{02}$) because the process is adiabatic.</li>\n    <li><strong>Stagnation Pressure ($P_0$):</strong> Decreases ($P_{02} < P_{01}$) due to the increase in entropy (irreversibility).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Rankine-Hugoniot Relations</h3>\n<p class=\"mb-4\">For an ideal gas, the downstream Mach number ($M_2$) depends only on the upstream Mach number ($M_1$) and $k$:</p>\n$$ M_2^2 = \\frac{1 + \\frac{k-1}{2}M_1^2}{kM_1^2 - \\frac{k-1}{2}} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "Air flows at Mach 2.0 and passes through a normal shock. What happens to the Mach number downstream of the shock?",
+      "options": [
+        { "text": "It remains 2.0.", "isCorrect": false },
+        { "text": "It increases above 2.0.", "isCorrect": false },
+        { "text": "It decreases to a value less than 1.0 (subsonic).", "isCorrect": true },
+        { "text": "It becomes exactly 1.0.", "isCorrect": false }
+      ],
+      "explanation": "A fundamental property of normal shocks is that they always decelerate the flow from supersonic to subsonic speeds. Thus, $M_2$ will always be less than 1."
+    },
+    {
+      "question": "Which property remains constant across a normal shock wave for an ideal gas?",
+      "options": [
+        { "text": "Static Pressure", "isCorrect": false },
+        { "text": "Stagnation Pressure", "isCorrect": false },
+        { "text": "Stagnation Temperature", "isCorrect": true },
+        { "text": "Density", "isCorrect": false }
+      ],
+      "explanation": "A shock wave is treated as an adiabatic process (no heat transfer). Therefore, the total energy, represented by the stagnation temperature ($T_0$), is conserved. Stagnation pressure drops due to entropy generation."
+    }
+  ]
+}

@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Energy Transfer by Heat ($Q$)</h3>\n<p class=\"mb-4\">Heat is energy transferred between a system and its surroundings due to a temperature difference. It always flows from higher to lower temperature.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Adiabatic Process:</strong> A process with zero heat transfer ($Q=0$).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Energy Transfer by Work ($W$)</h3>\n<p class=\"mb-4\">Work is energy transfer associated with a force acting through a distance. In thermodynamics, work is energy transfer across the system boundary that is <em>not</em> caused by a temperature difference.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Boundary Work ($W_b$):</strong> Work done by the expansion or compression of a fluid (moving boundary). $W_b = \\int P dV$.</li>\n    <li><strong>Shaft Work ($W_{sh}$):</strong> Energy transmitted by a rotating shaft (e.g., in a turbine or compressor). Power $\\dot{W}_{sh} = 2\\pi \\dot{n} T$.</li>\n    <li><strong>Electrical Work ($W_e$):</strong> Energy transferred by electrons crossing the system boundary. $\\dot{W}_e = VI$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Flow Work</h3>\n<p class=\"mb-4\">In open systems (control volumes), energy is required to push mass into or out of the control volume. This is called flow work or flow energy.</p>\n$$ W_{flow} = PV $$\n<p class=\"mb-4\">This term is combined with internal energy ($U$) to define enthalpy ($H = U + PV$), which simplifies the analysis of open systems.</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "A gas expands against a piston in a cylinder from $V_1 = 0.02 \\text{ m}^3$ to $V_2 = 0.10 \\text{ m}^3$ while the pressure remains constant at 200 kPa. How much boundary work is done by the gas?",
+      "options": [
+        { "text": "160 kJ", "isCorrect": false },
+        { "text": "16 kJ", "isCorrect": true },
+        { "text": "4 kJ", "isCorrect": false },
+        { "text": "20 kJ", "isCorrect": false }
+      ],
+      "explanation": "For a constant pressure (isobaric) process, the work is $W_b = P(V_2 - V_1)$. $W_b = (200 \\text{ kPa})(0.10 - 0.02 \\text{ m}^3) = 200(0.08) = 16 \\text{ kJ}$."
+    },
+    {
+      "question": "Which form of energy transfer is associated with the motion of a rotating shaft crossing the system boundary?",
+      "options": [
+        { "text": "Heat", "isCorrect": false },
+        { "text": "Boundary work", "isCorrect": false },
+        { "text": "Flow work", "isCorrect": false },
+        { "text": "Shaft work", "isCorrect": true }
+      ],
+      "explanation": "Shaft work is the energy transfer associated with the torque and rotational motion of a shaft, commonly seen in engines, turbines, and pumps."
+    }
+  ]
 }

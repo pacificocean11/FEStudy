@@ -1,0 +1,28 @@
+
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Fundamental Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Density ($\\rho$):</strong> Mass per unit volume (kg/m³). $\\rho_{water} \\approx 1000$ kg/m³.</li>\n    <li><strong>Specific Weight ($\\gamma$):</strong> Weight per unit volume (N/m³). $\\gamma = \\rho g$. $\\gamma_{water} \\approx 9810$ N/m³.</li>\n    <li><strong>Specific Gravity (SG):</strong> Ratio of fluid density to density of water. Dimensionless. $SG = \\rho / \\rho_{water}$.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Viscosity</h3>\n<p class=\"mb-4\">A measure of a fluid's resistance to deformation (flow).</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Dynamic Viscosity ($\\mu$):</strong> Ratio of shear stress to velocity gradient. Units: Pa·s or N·s/m².</li>\n    <li><strong>Kinematic Viscosity ($\\nu$):</strong> Ratio of dynamic viscosity to density. $\\nu = \\mu / \\rho$. Units: m²/s.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Other Properties</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Surface Tension ($\\sigma$):</strong> Force per unit length at a liquid-gas interface. Causes capillarity.</li>\n    <li><strong>Vapor Pressure ($P_v$):</strong> The pressure exerted by a vapor in thermodynamic equilibrium with its condensed phases. Cavitation occurs when liquid pressure drops below $P_v$.</li>\n</ul>\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A fluid has a specific gravity of 0.8 and a dynamic viscosity of 0.01 Pa·s. What is its kinematic viscosity? ($\\rho_{water} = 1000$ kg/m³)",
+      "options": [
+        { "text": "$1.25 \\times 10^{-5}$ m²/s", "isCorrect": true },
+        { "text": "$8.0 \\times 10^{-5}$ m²/s", "isCorrect": false },
+        { "text": "$1.25 \\times 10^{-4}$ m²/s", "isCorrect": false },
+        { "text": "$1.0 \\times 10^{-5}$ m²/s", "isCorrect": false }
+      ],
+      "explanation": "First, find the density: $\\rho = SG \\times \\rho_{water} = 0.8 \\times 1000 = 800$ kg/m³. Then, $\\nu = \\mu / \\rho = 0.01 / 800 = 1.25 \\times 10^{-5}$ m²/s."
+    },
+    {
+      "question": "Cavitation in pumps is primarily caused by the fluid pressure dropping below its:",
+      "options": [
+        { "text": "Atmospheric pressure", "isCorrect": false },
+        { "text": "Vapor pressure", "isCorrect": true },
+        { "text": "Critical pressure", "isCorrect": false },
+        { "text": "Stagnation pressure", "isCorrect": false }
+      ],
+      "explanation": "When local static pressure drops below the fluid's vapor pressure, the liquid boils (flashes to vapor) forming bubbles. The subsequent collapse of these bubbles is cavitation."
+    }
+  ]
+}

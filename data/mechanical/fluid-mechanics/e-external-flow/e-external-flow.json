@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Drag and Lift</h3>\n<p class=\"mb-4\">When a fluid flows over a body, it exerts a force. The component parallel to flow is <strong>drag</strong> ($F_D$); the component perpendicular is <strong>lift</strong> ($F_L$).</p>\n$$ F_D = \\frac{1}{2} C_D \\rho A v^2 $$\n$$ F_L = \\frac{1}{2} C_L \\rho A v^2 $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$C_D, C_L$: Drag and Lift coefficients (dimensionless).</li>\n    <li>$A$: Characteristic area (usually frontal area for drag, planform area for lift).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Boundary Layers</h3>\n<p class=\"mb-4\">The region adjacent to the surface where viscous effects are significant. Velocity transitions from 0 at the wall (no-slip condition) to the free stream velocity.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Laminar BL:</strong> Smooth, layered flow. Lower skin friction drag.</li>\n    <li><strong>Turbulent BL:</strong> Chaotic, mixed flow. Higher skin friction but more resistant to separation (pressure drag).</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "If the velocity of air flowing over a car is doubled, the aerodynamic drag force will theoretically:",
+      "options": [
+        { "text": "Double", "isCorrect": false },
+        { "text": "Quadruple", "isCorrect": true },
+        { "text": "Halve", "isCorrect": false },
+        { "text": "Increase by 8x", "isCorrect": false }
+      ],
+      "explanation": "Drag force is proportional to the square of the velocity ($F_D \\propto v^2$). Doubling the velocity ($2v$) results in $2^2 = 4$ times the drag."
+    },
+    {
+      "question": "The drag coefficient $C_D$ is primarily a function of:",
+      "options": [
+        { "text": "Fluid density only", "isCorrect": false },
+        { "text": "Body shape and Reynolds number", "isCorrect": true },
+        { "text": "Velocity only", "isCorrect": false },
+        { "text": "Surface temperature", "isCorrect": false }
+      ],
+      "explanation": "$C_D$ accounts for the geometry (form drag) and the flow regime (friction drag), which is characterized by the Reynolds number."
+    }
+  ]
 }

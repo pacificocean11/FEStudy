@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Thermal Expansion</h3>\n<p class=\"mb-4\">Most materials expand when their temperature increases and contract when their temperature decreases. If a member is unrestrained (free to move), a change in temperature will cause it to change in length. This change in length is the thermal deformation, $\\delta_T$.</p>\n$$ \\delta_T = \\alpha L \\Delta T $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$\\delta_T$: Change in length due to temperature.</li>\n    <li>$\\alpha$: Coefficient of thermal expansion, a material property.</li>\n    <li>$L$: Original length of the member.</li>\n    <li>$\\Delta T$: Change in temperature.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Thermal Stress</h3>\n<p class=\"mb-4\">If a member is restrained so that it cannot expand or contract freely, a change in temperature will induce an internal stress, known as <strong>thermal stress</strong>.</p>\n<p class=\"mb-4\">To find the thermal stress, we can imagine the process in two steps:</p>\n<ol class=\"list-decimal list-inside space-y-2 mb-4\">\n    <li>Imagine the member is unrestrained and let it deform by $\\delta_T = \\alpha L \\Delta T$.</li>\n    <li>Calculate the force, P, that would be required to push the member back to its original restrained length. This deformation is $\\delta_P = PL/AE$.</li>\n</ol>\n<p class=\"mb-4\">Since the net deformation is zero, $\\delta_T + \\delta_P = 0$.</p>\n$$ \\alpha L \\Delta T + \\frac{PL}{AE} = 0 $$\n<p class=\"mb-4\">The force is compressive, so $P = -\\alpha A E \\Delta T$. The thermal stress is $\\sigma = P/A$:</p>\n$$ \\sigma_T = - E \\alpha \\Delta T $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A 20-meter long steel bridge segment is installed at 10°C. What is its change in length on a hot day when the temperature reaches 40°C? (The coefficient of thermal expansion for steel is $12 \\times 10^{-6}$ /°C).",
+      "options": [
+        { "text": "4.8 mm", "isCorrect": false },
+        { "text": "7.2 mm", "isCorrect": true },
+        { "text": "9.6 mm", "isCorrect": false },
+        { "text": "2.4 mm", "isCorrect": false }
+      ],
+      "explanation": "The change in temperature is $\\Delta T = 40°C - 10°C = 30°C$. The change in length is $\\delta_T = \\alpha L \\Delta T = (12 \\times 10^{-6} /°C)(20 \\text{ m})(30°C) = 0.0072$ m, which is 7.2 mm."
+    },
+    {
+      "question": "A concrete bar ($E=30$ GPa, $\\alpha = 10 \\times 10^{-6}$ /°C) is fixed between two immovable supports. If the temperature increases by 25°C, what is the thermal stress induced in the bar?",
+      "options": [
+        { "text": "7.5 MPa (Tension)", "isCorrect": false },
+        { "text": "7.5 MPa (Compression)", "isCorrect": true },
+        { "text": "0.75 MPa (Compression)", "isCorrect": false },
+        { "text": "0 MPa", "isCorrect": false }
+      ],
+      "explanation": "The bar wants to expand due to the temperature increase, but the supports prevent it. This induces a compressive stress. The magnitude is $\\sigma_T = E \\alpha \\Delta T = (30 \\times 10^9 \\text{ Pa})(10 \\times 10^{-6} /°C)(25°C) = 7,500,000$ Pa, or 7.5 MPa."
+    }
+  ]
+}

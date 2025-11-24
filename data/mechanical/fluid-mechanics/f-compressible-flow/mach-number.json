@@ -1,27 +1,28 @@
+
 {
-  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Compressible flow is a branch of fluid mechanics that deals with flows in which the fluid density changes significantly. This typically occurs at high speeds. The key parameter to determine if a flow is compressible is the Mach number.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Mach Number (M)</h3>\n<p class=\"mb-4\">The <strong>Mach number</strong> is a dimensionless quantity representing the ratio of the flow velocity past a boundary to the local speed of sound in the medium.</p>\n$$ M = \\frac{v}{c} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$v$ is the velocity of the fluid flow.</li>\n    <li>$c$ is the local speed of sound in the fluid.</li>\n</ul>\n<p class=\"mb-4\">For an ideal gas, the speed of sound is given by:</p>\n$$ c = \\sqrt{kRT} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k$ is the specific heat ratio ($c_p/c_v$, approx. 1.4 for air).</li>\n    <li>$R$ is the specific gas constant (287 J/kg·K for air).</li>\n    <li>$T$ is the absolute temperature in Kelvin.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Flow Regimes</h3>\n<p class=\"mb-4\">Flows are classified based on their Mach number:</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Incompressible Flow:</strong> $M < 0.3$. Density variations are negligible (less than 5%).</li>\n    <li><strong>Subsonic Flow:</strong> $0.3 < M < 1$. Compressibility effects are significant.</li>\n    <li><strong>Transonic Flow:</strong> $M \\approx 1$. A mixture of subsonic and supersonic flow occurs.</li>\n    <li><strong>Supersonic Flow:</strong> $M > 1$. Flow is faster than the speed of sound. Shock waves can occur.</li>\n    <li><strong>Hypersonic Flow:</strong> $M > 5$. Very high-speed flow where extreme temperatures and chemical effects become important.</li>\n</ul>\n",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Speed of Sound</h3>\n<p class=\"mb-4\">The speed of sound ($c$) in an ideal gas depends on its temperature. It is given by:</p>\n$$ c = \\sqrt{kRT} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$k$: Specific heat ratio ($c_p/c_v$, approx 1.4 for air).</li>\n    <li>$R$: Specific gas constant (287 J/kg·K for air).</li>\n    <li>$T$: Absolute temperature (Kelvin).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Mach Number Definition</h3>\n<p class=\"mb-4\">The Mach number ($M$) is a dimensionless parameter defined as the ratio of the flow velocity ($V$) to the local speed of sound ($c$).</p>\n$$ M = \\frac{V}{c} = \\frac{V}{\\sqrt{kRT}} $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Flow Regimes</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Subsonic ($M < 1$):</strong> Disturbances propagate upstream and downstream. Density changes are often negligible for $M < 0.3$.</li>\n    <li><strong>Sonic ($M = 1$):</strong> Flow velocity equals the speed of sound.</li>\n    <li><strong>Supersonic ($M > 1$):</strong> Disturbances cannot propagate upstream. Shock waves can form.</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
   "solvedExamples": [
     {
-      "question": "An aircraft is flying at 600 m/s in air at a temperature where the speed of sound is 300 m/s. What is the Mach number?",
+      "question": "Air flows at 200 m/s. The local temperature is 300 K. What is the Mach number? ($k=1.4$, $R=287$ J/kg·K)",
       "options": [
-        { "text": "0.5", "isCorrect": false },
-        { "text": "1.0", "isCorrect": false },
-        { "text": "2.0", "isCorrect": true },
-        { "text": "Cannot be determined", "isCorrect": false }
+        { "text": "0.57", "isCorrect": true },
+        { "text": "0.67", "isCorrect": false },
+        { "text": "1.75", "isCorrect": false },
+        { "text": "0.23", "isCorrect": false }
       ],
-      "explanation": "Mach number is the ratio of the flow velocity to the speed of sound: $M = v/c = 600 \\text{ m/s} / 300 \\text{ m/s} = 2.0$."
+      "explanation": "First calculate the speed of sound: $c = \\sqrt{kRT} = \\sqrt{1.4 \\times 287 \\times 300} = \\sqrt{120,540} \\approx 347.2$ m/s. Then calculate Mach number: $M = V/c = 200 / 347.2 \\approx 0.576$."
     },
     {
-      "question": "A flow with a Mach number of 0.8 is classified as:",
+      "question": "If the Mach number is 2.0 and the temperature is 250 K, what is the velocity of the air? ($k=1.4$, $R=287$ J/kg·K)",
       "options": [
-        { "text": "Incompressible", "isCorrect": false },
-        { "text": "Subsonic", "isCorrect": true },
-        { "text": "Supersonic", "isCorrect": false },
-        { "text": "Hypersonic", "isCorrect": false }
+        { "text": "317 m/s", "isCorrect": false },
+        { "text": "634 m/s", "isCorrect": true },
+        { "text": "500 m/s", "isCorrect": false },
+        { "text": "158 m/s", "isCorrect": false }
       ],
-      "explanation": "Flows with Mach numbers between 0.3 and 1 are considered subsonic, where compressibility effects are important."
+      "explanation": "Calculate the speed of sound: $c = \\sqrt{1.4 \\times 287 \\times 250} = \\sqrt{100,450} \\approx 316.9$ m/s. Velocity $V = M \\times c = 2.0 \\times 316.9 \\approx 633.9$ m/s."
     }
   ]
 }

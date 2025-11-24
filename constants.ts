@@ -967,7 +967,14 @@ export const SUBJECTS_BY_DISCIPLINE: Record<Discipline, Subject[]> = {
         { name: 'C. Energy, impulse, and momentum', subtopics: [{ name: 'C. Energy, impulse, and momentum', content: null }] },
         { name: 'D. Internal flow', subtopics: [{ name: 'D. Internal flow', content: null }] },
         { name: 'E. External flow', subtopics: [{ name: 'E. External flow', content: null }] },
-        { name: 'F. Compressible flow', subtopics: [{ name: 'F. Compressible flow', content: null }] },
+        {
+          name: 'F. Compressible flow',
+          subtopics: [
+            { name: 'Mach Number', content: null },
+            { name: 'Isentropic Flow Relationships', content: null },
+            { name: 'Normal Shock', content: null },
+          ]
+        },
         { name: 'G. Power and efficiency', subtopics: [{ name: 'G. Power and efficiency', content: null }] },
         { name: 'H. Performance curves', subtopics: [{ name: 'H. Performance curves', content: null }] },
         { name: 'I. Scaling laws for fans, pumps, and compressors', subtopics: [{ name: 'I. Scaling laws for fans, pumps, and compressors', content: null }] },

@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. The Four Laws</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Zeroth Law:</strong> If two systems are in thermal equilibrium with a third system, they are in thermal equilibrium with each other. This defines <strong>temperature</strong>.</li>\n    <li><strong>First Law:</strong> Energy cannot be created or destroyed; it can only change forms. This defines <strong>internal energy ($U$)</strong>. For a cycle, net heat equals net work.</li>\n    <li><strong>Second Law:</strong> Processes occur in a certain direction. Energy has quality as well as quantity. It establishes the limits on the efficiency of heat engines and refrigerators. This defines <strong>entropy ($S$)</strong>.</li>\n    <li><strong>Third Law:</strong> The entropy of a pure crystalline substance at absolute zero temperature is zero. This establishes a base for calculating absolute entropy.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. First Law Equations</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Closed System:</strong> $\\Delta U = Q - W$</li>\n    <li><strong>Open System (Steady Flow):</strong> $\\dot{Q} - \\dot{W} = \\dot{m} \\Delta (h + v^2/2 + gz)$</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Second Law Principles</h3>\n<p class=\"mb-4\">The Second Law dictates that heat cannot spontaneously flow from a cold body to a hot body (Clausius Statement) and that no heat engine can be 100% efficient (Kelvin-Planck Statement). The maximum possible efficiency is the Carnot efficiency: $\\eta_{max} = 1 - T_L/T_H$.</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "Which law of thermodynamics asserts that energy is conserved?",
+      "options": [
+        { "text": "Zeroth Law", "isCorrect": false },
+        { "text": "First Law", "isCorrect": true },
+        { "text": "Second Law", "isCorrect": false },
+        { "text": "Third Law", "isCorrect": false }
+      ],
+      "explanation": "The First Law of Thermodynamics is the principle of conservation of energy applied to thermal systems. It states that energy can change from one form to another (e.g., heat to work) but the total amount remains constant."
+    },
+    {
+      "question": "A heat engine absorbs 500 J of heat from a source and rejects 300 J of heat to a sink. Which law dictates that the efficiency is less than 100%?",
+      "options": [
+        { "text": "First Law", "isCorrect": false },
+        { "text": "Second Law", "isCorrect": true },
+        { "text": "Third Law", "isCorrect": false },
+        { "text": "Zeroth Law", "isCorrect": false }
+      ],
+      "explanation": "The Second Law (specifically the Kelvin-Planck statement) states that it is impossible to build a heat engine that operates in a cycle and produces no other effect than the production of work and the transfer of heat from a single body. Some heat must be rejected, so efficiency is always < 100%."
+    }
+  ]
 }

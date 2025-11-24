@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Plane Stress</h3>\n<p class=\"mb-4\">Plane stress is a state where the stresses in one direction are zero (e.g., $\\sigma_z = \\tau_{xz} = \\tau_{yz} = 0$). This is common in thin plates loaded in their plane. The state of stress at a point can be described by $\\sigma_x$, $\\sigma_y$, and $\\tau_{xy}$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principal Stresses</h3>\n<p class=\"mb-4\">When the stress element is rotated, the normal and shear stresses change. The <strong>principal stresses</strong> are the maximum and minimum normal stresses that occur on any plane through the point. These stresses act on the <strong>principal planes</strong>, where the shear stress is zero.</p>\n<p class=\"mb-4\">The principal stresses, $\\sigma_1$ (maximum) and $\\sigma_2$ (minimum), are found using the formula:</p>\n$$\\sigma_{1,2} = \\frac{\\sigma_x + \\sigma_y}{2} \\pm \\sqrt{\\left(\\frac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2}$$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Maximum In-Plane Shear Stress</h3>\n<p class=\"mb-4\">The maximum in-plane shear stress, $\\tau_{max}$, occurs on planes that are 45° from the principal planes. Its magnitude is equal to the radius of Mohr's circle:</p>\n$$\\tau_{max} = \\sqrt{\\left(\\frac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} = \\frac{\\sigma_1 - \\sigma_2}{2}$$\n<p class=\"mb-4\">On the planes of maximum shear, the normal stress is not zero but is equal to the average normal stress:</p>\n$$\\sigma_{avg} = \\frac{\\sigma_x + \\sigma_y}{2}$$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A point in a material is subjected to a state of stress: $\\sigma_x = 80$ MPa, $\\sigma_y = 20$ MPa, and $\\tau_{xy} = 40$ MPa. What are the principal stresses?",
+      "options": [
+        { "text": "100 MPa and 0 MPa", "isCorrect": true },
+        { "text": "90 MPa and 10 MPa", "isCorrect": false },
+        { "text": "120 MPa and -20 MPa", "isCorrect": false },
+        { "text": "80 MPa and 20 MPa", "isCorrect": false }
+      ],
+      "explanation": "Use the principal stress formula: $\\sigma_{1,2} = \\frac{80 + 20}{2} \\pm \\sqrt{\\left(\\frac{80 - 20}{2}\\right)^2 + 40^2} = 50 \\pm \\sqrt{30^2 + 40^2} = 50 \\pm \\sqrt{900 + 1600} = 50 \\pm \\sqrt{2500} = 50 \\pm 50$. So, $\\sigma_1 = 50 + 50 = 100$ MPa, and $\\sigma_2 = 50 - 50 = 0$ MPa."
+    },
+    {
+      "question": "For the stress state in the previous problem, what is the maximum in-plane shear stress?",
+      "options": [
+        { "text": "30 MPa", "isCorrect": false },
+        { "text": "40 MPa", "isCorrect": false },
+        { "text": "50 MPa", "isCorrect": true },
+        { "text": "100 MPa", "isCorrect": false }
+      ],
+      "explanation": "The maximum in-plane shear stress is the radical term in the principal stress formula, which is also the radius of Mohr's circle: $\\tau_{max} = \\sqrt{\\left(\\frac{\\sigma_x - \\sigma_y}{2}\\right)^2 + \\tau_{xy}^2} = \\sqrt{\\left(\\frac{80 - 20}{2}\\right)^2 + 40^2} = \\sqrt{30^2 + 40^2} = 50$ MPa. It can also be found by $(\\sigma_1 - \\sigma_2)/2 = (100-0)/2 = 50$ MPa."
+    }
+  ]
+}

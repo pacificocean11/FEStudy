@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Pure Substances and Phases</h3>\n<p class=\"mb-4\">A <strong>pure substance</strong> has a fixed chemical composition throughout (e.g., water, nitrogen, helium). It can exist in three principal phases: solid, liquid, and gas.</p>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Compressed Liquid (Subcooled Liquid):</strong> Liquid that is not about to vaporize. Temperature is lower than the saturation temperature for the given pressure.</li>\n    <li><strong>Saturated Liquid:</strong> Liquid that is about to vaporize. Any addition of heat will cause some liquid to turn to vapor.</li>\n    <li><strong>Saturated Vapor:</strong> Vapor that is about to condense. Any removal of heat will cause some vapor to turn to liquid.</li>\n    <li><strong>Superheated Vapor:</strong> Vapor that is not about to condense. Temperature is higher than the saturation temperature.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Saturation and Quality</h3>\n<p class=\"mb-4\">During a phase change (boiling or condensation), liquid and vapor coexist in equilibrium. This is the <strong>saturated liquid-vapor mixture</strong> region.</p>\n<p class=\"mb-4\">The <strong>quality ($x$)</strong> is the ratio of the mass of vapor to the total mass of the mixture.</p>\n$$ x = \\frac{m_{vapor}}{m_{total}} = \\frac{m_{vapor}}{m_{liquid} + m_{vapor}} $$\n<p class=\"mb-4\">Quality ranges from 0 (saturated liquid) to 1 (saturated vapor). It is undefined in the compressed liquid and superheated vapor regions.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Property Calculation in the Two-Phase Region</h3>\n<p class=\"mb-4\">Any specific property ($y$) of a mixture (like $v$, $u$, $h$, or $s$) is an average of the saturated liquid ($y_f$) and saturated vapor ($y_g$) properties, weighted by quality.</p>\n$$ y = y_f + x(y_g - y_f) = y_f + x y_{fg} $$\n<p class=\"mb-4\">Rearranging to find quality: $x = (y - y_f) / y_{fg}$.</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "A rigid tank contains 10 kg of water at 90°C. If 8 kg of the water is in the liquid form and the rest is in the vapor form, what is the quality of the mixture?",
+      "options": [
+        { "text": "0.8", "isCorrect": false },
+        { "text": "0.2", "isCorrect": true },
+        { "text": "0.1", "isCorrect": false },
+        { "text": "0.0", "isCorrect": false }
+      ],
+      "explanation": "Quality ($x$) is the ratio of the mass of vapor to the total mass. Total mass $m_{total} = 10$ kg. Mass of liquid $m_f = 8$ kg. Mass of vapor $m_g = 10 - 8 = 2$ kg. $x = m_g / m_{total} = 2 / 10 = 0.2$."
+    },
+    {
+      "question": "Water at a pressure of 100 kPa has a specific volume of 1.2 m³/kg. Given that at 100 kPa, $v_f = 0.001$ m³/kg and $v_g = 1.694$ m³/kg, what is the phase of the water?",
+      "options": [
+        { "text": "Compressed liquid", "isCorrect": false },
+        { "text": "Saturated liquid-vapor mixture", "isCorrect": true },
+        { "text": "Superheated vapor", "isCorrect": false },
+        { "text": "Saturated liquid", "isCorrect": false }
+      ],
+      "explanation": "Compare the given specific volume ($v = 1.2$) to the saturation values. Since $v_f < v < v_g$ ($0.001 < 1.2 < 1.694$), the substance is a mixture of liquid and vapor."
+    }
+  ]
 }

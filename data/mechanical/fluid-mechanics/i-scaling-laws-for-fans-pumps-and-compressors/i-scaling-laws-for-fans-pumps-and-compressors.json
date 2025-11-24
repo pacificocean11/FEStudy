@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">Scaling laws, or <strong>Affinity Laws</strong>, allow prediction of the performance of a turbomachine (pump or fan) if its speed ($N$) or impeller diameter ($D$) is changed.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Changing Speed (N) with Constant Diameter</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flow Rate:</strong> $Q_2 / Q_1 = N_2 / N_1$ (Linear)</li>\n    <li><strong>Head/Pressure:</strong> $H_2 / H_1 = (N_2 / N_1)^2$ (Square)</li>\n    <li><strong>Power:</strong> $P_2 / P_1 = (N_2 / N_1)^3$ (Cubic)</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Changing Diameter (D) with Constant Speed</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Flow Rate:</strong> $Q_2 / Q_1 = (D_2 / D_1)^3$</li>\n    <li><strong>Head/Pressure:</strong> $H_2 / H_1 = (D_2 / D_1)^2$</li>\n    <li><strong>Power:</strong> $P_2 / P_1 = (D_2 / D_1)^5$</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "If the speed of a centrifugal pump is doubled, the power required to drive it increases by a factor of:",
+      "options": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "8", "isCorrect": true },
+        { "text": "16", "isCorrect": false }
+      ],
+      "explanation": "According to the affinity laws, power is proportional to the cube of the rotational speed ($P \\propto N^3$). $2^3 = 8$."
+    },
+    {
+      "question": "A fan delivers 1000 cfm. If its speed is reduced by 50%, what is the new flow rate?",
+      "options": [
+        { "text": "500 cfm", "isCorrect": true },
+        { "text": "250 cfm", "isCorrect": false },
+        { "text": "125 cfm", "isCorrect": false },
+        { "text": "750 cfm", "isCorrect": false }
+      ],
+      "explanation": "Flow rate is directly proportional to speed ($Q \\propto N$). If speed is halved, flow rate is halved. $1000 \\times 0.5 = 500$ cfm."
+    }
+  ]
 }

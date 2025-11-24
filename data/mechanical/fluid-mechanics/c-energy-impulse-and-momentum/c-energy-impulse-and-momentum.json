@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Continuity Equation (Conservation of Mass)</h3>\n<p class=\"mb-4\">For steady, incompressible flow:</p>\n$$ A_1 v_1 = A_2 v_2 = Q $$\n<p class=\"mb-4\">Where $Q$ is the volumetric flow rate.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Bernoulli Equation (Conservation of Energy)</h3>\n<p class=\"mb-4\">For steady, incompressible, frictionless flow along a streamline:</p>\n$$ \\frac{P_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 = \\frac{P_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 $$\n<p class=\"mb-4\">The extended energy equation includes pump head ($h_p$), turbine head ($h_t$), and head loss ($h_L$):</p>\n$$ \\frac{P_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 + h_p = \\frac{P_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 + h_t + h_L $$\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Linear Momentum Equation</h3>\n<p class=\"mb-4\">Relates the net force on a control volume to the change in momentum flow rate.</p>\n$$ \\sum \\mathbf{F} = \\dot{m}(\\mathbf{v}_{out} - \\mathbf{v}_{in}) $$\n<p class=\"mb-4\">Used to calculate forces on pipe bends, nozzles, and vanes.</p>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "Water flows through a horizontal nozzle. The inlet diameter is 10 cm and the outlet diameter is 5 cm. If the inlet velocity is 2 m/s, what is the outlet velocity?",
+      "options": [
+        { "text": "2 m/s", "isCorrect": false },
+        { "text": "4 m/s", "isCorrect": false },
+        { "text": "8 m/s", "isCorrect": true },
+        { "text": "16 m/s", "isCorrect": false }
+      ],
+      "explanation": "Use continuity: $A_1 v_1 = A_2 v_2$. Since $A \\propto D^2$, $D_1^2 v_1 = D_2^2 v_2$. $v_2 = v_1 (D_1/D_2)^2 = 2 (10/5)^2 = 2(2)^2 = 8$ m/s."
+    },
+    {
+      "question": "The Bernoulli equation requires which of the following assumptions?",
+      "options": [
+        { "text": "Steady, incompressible, viscous flow", "isCorrect": false },
+        { "text": "Unsteady, compressible, frictionless flow", "isCorrect": false },
+        { "text": "Steady, incompressible, frictionless flow", "isCorrect": true },
+        { "text": "Any flow condition", "isCorrect": false }
+      ],
+      "explanation": "The standard Bernoulli equation assumes the flow is steady, the fluid is incompressible, and inviscid (frictionless) along a streamline."
+    }
+  ]
 }

@@ -1,6 +1,28 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Hydrostatic Pressure</h3>\n<p class=\"mb-4\">Pressure in a static fluid increases linearly with depth.</p>\n$$ P = P_{atm} + \\rho g h $$\n<p class=\"mb-4\">Gage pressure is simply $P_g = \\gamma h$.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Manometry</h3>\n<p class=\"mb-4\">Manometers measure pressure differences using liquid columns. The pressure change moving through a fluid column of height $h$ is $\\Delta P = \\gamma h$. Down is positive (increase), up is negative (decrease).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Hydrostatic Forces on Plane Surfaces</h3>\n<p class=\"mb-4\">The resultant force ($F_R$) on a submerged plane surface acts at the <strong>center of pressure ($y_p$)</strong>, which is below the centroid ($y_c$).</p>\n$$ F_R = P_c A = \\gamma h_c A $$\n$$ y_p = y_c + \\frac{I_{xc}}{y_c A} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$h_c$: Vertical depth to centroid.</li>\n    <li>$y_c$: Slant distance to centroid.</li>\n    <li>$I_{xc}$: Moment of inertia about centroidal axis.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">4. Buoyancy</h3>\n<p class=\"mb-4\"><strong>Archimedes' Principle:</strong> The buoyant force is equal to the weight of the displaced fluid.</p>\n$$ F_B = \\gamma_{fluid} V_{displaced} $$\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "What is the gage pressure at the bottom of a 5 m deep tank of water? ($\\gamma = 9.81$ kN/m³)",
+      "options": [
+        { "text": "49.05 kPa", "isCorrect": true },
+        { "text": "9.81 kPa", "isCorrect": false },
+        { "text": "100 kPa", "isCorrect": false },
+        { "text": "19.62 kPa", "isCorrect": false }
+      ],
+      "explanation": "$P = \\gamma h = (9.81 \\text{ kN/m}^3)(5 \\text{ m}) = 49.05$ kN/m² = 49.05 kPa."
+    },
+    {
+      "question": "A cube of wood ($SG=0.6$) floats in water. What fraction of its volume is submerged?",
+      "options": [
+        { "text": "40%", "isCorrect": false },
+        { "text": "60%", "isCorrect": true },
+        { "text": "100%", "isCorrect": false },
+        { "text": "50%", "isCorrect": false }
+      ],
+      "explanation": "For a floating object, Weight = Buoyant Force. $\\rho_{body} g V_{total} = \\rho_{fluid} g V_{sub}$. The fraction submerged $V_{sub}/V_{total} = \\rho_{body}/\\rho_{fluid} = SG$. So, 0.6 or 60%."
+    }
+  ]
 }

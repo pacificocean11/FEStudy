@@ -1,6 +1,18 @@
+
 {
-  "notes": "<p>Content for this topic is under development and will be available soon.</p>",
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Hydraulic Power</h3>\n<p class=\"mb-4\">The power delivered to a fluid by a pump, or extracted from a fluid by a turbine.</p>\n$$ P_{fluid} = \\gamma Q H = \\rho g Q H $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>$Q$: Flow rate (m³/s).</li>\n    <li>$H$: Head added or removed (m).</li>\n    <li>$\\gamma$: Specific weight (N/m³).</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Brake Power (Shaft Power)</h3>\n<p class=\"mb-4\">The actual mechanical power at the shaft ($P_{shaft}$ or BHP).</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Efficiency ($\\eta$)</h3>\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li><strong>Pump Efficiency:</strong> $\\eta_P = \\frac{\\text{Power to Fluid}}{\\text{Shaft Power In}} = \\frac{\\gamma Q H}{P_{shaft}}$</li>\n    <li><strong>Turbine Efficiency:</strong> $\\eta_T = \\frac{\\text{Shaft Power Out}}{\\text{Power from Fluid}} = \\frac{P_{shaft}}{\\gamma Q H}$</li>\n</ul>\n",
   "video": "",
   "aiVideo": "",
-  "solvedExamples": []
+  "solvedExamples": [
+    {
+      "question": "A pump delivers 0.05 m³/s of water against a head of 20 m. If the pump is 80% efficient, what is the required shaft power? ($\\gamma = 9810$ N/m³)",
+      "options": [
+        { "text": "9.81 kW", "isCorrect": false },
+        { "text": "12.26 kW", "isCorrect": true },
+        { "text": "7.85 kW", "isCorrect": false },
+        { "text": "1.2 kW", "isCorrect": false }
+      ],
+      "explanation": "Fluid power $P_f = \\gamma Q H = (9810)(0.05)(20) = 9810$ W = 9.81 kW. Shaft power $P_{shaft} = P_f / \\eta = 9.81 / 0.80 = 12.26$ kW."
+    }
+  ]
 }

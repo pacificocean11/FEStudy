@@ -1,0 +1,27 @@
+{
+  "notes": "\n<h3 class=\"text-lg font-semibold mb-2\">1. Concept</h3>\n<p class=\"mb-4\">This is a very common type of combined loading, occurring in members like columns with eccentric loads or beams that are also under tension or compression. Both the axial load ($P$) and the bending moment ($M$) produce normal stresses that act in the same direction.</p>\n\n<h3 class=\"text-lg font-semibold mb-2\">2. Principle of Superposition</h3>\n<p class=\"mb-4\">The total normal stress at any point on the cross-section is the algebraic sum of the stress from the axial load and the stress from the bending moment.</p>\n$$ \\sigma_{total} = \\sigma_{axial} + \\sigma_{bending} $$\n$$ \\sigma_{total} = \\pm \\frac{P}{A} \\pm \\frac{My}{I} $$\n<ul class=\"list-disc list-inside space-y-2 mb-4\">\n    <li>The axial stress ($P/A$) is constant across the entire cross-section. It is positive for tension and negative for compression.</li>\n    <li>The bending stress ($My/I$) varies linearly from the neutral axis. It will be tensile on one side of the axis and compressive on the other. The signs must be determined based on the direction of the moment.</li>\n</ul>\n\n<h3 class=\"text-lg font-semibold mb-2\">3. Maximum and Minimum Stresses</h3>\n<p class=\"mb-4\">The maximum and minimum normal stresses occur at the outermost fibers of the cross-section (where $y$ is maximum, denoted by $c$).</p>\n$$ \\sigma_{max} = \\frac{P}{A} + \\frac{Mc}{I} $$$$ \\sigma_{min} = \\frac{P}{A} - \\frac{Mc}{I} $$\n",
+  "video": "",
+  "aiVideo": "",
+  "solvedExamples": [
+    {
+      "question": "A rectangular column with a cross-section of 10 in x 10 in is subjected to a compressive axial load of 50,000 lbs and a bending moment of 100,000 in-lbs. What is the maximum compressive stress in the column?",
+      "options": [
+        { "text": "500 psi", "isCorrect": false },
+        { "text": "600 psi", "isCorrect": false },
+        { "text": "1100 psi", "isCorrect": true },
+        { "text": "100 psi", "isCorrect": false }
+      ],
+      "explanation": "First, calculate the properties: Area $A = 10 \\times 10 = 100$ in². Moment of Inertia $I = bh^3/12 = (10)(10)^3/12 = 833.3$ in⁴. Distance to outer fiber $c = 10/2 = 5$ in.\nAxial stress (compressive) = $-P/A = -50,000 / 100 = -500$ psi.\nBending stress $\\sigma_b = Mc/I = 200,000(5)/833.3 = 1200$ psi. Wait, moment is 100,000. Re-calculating: $100,000(5)/833.3 = 600$ psi.\nMax compressive stress = $|-500| + |-600| = 1100$ psi. Note: My previous thought had an error in calculation in the explanation text, but the result 1100 is correct for 100k moment. $100000*5/833.33 = 600$. Correct."
+    },
+    {
+      "question": "In a member subjected to combined axial tension and bending, the neutral axis (where stress is zero):",
+      "options": [
+        { "text": "Passes through the centroid of the cross-section.", "isCorrect": false },
+        { "text": "Is located where the tensile axial stress equals the compressive bending stress.", "isCorrect": true },
+        { "text": "Is always at the bottom surface.", "isCorrect": false },
+        { "text": "Does not exist.", "isCorrect": false }
+      ],
+      "explanation": "The neutral axis is defined as the line where the total normal stress is zero. With combined loading, the uniform axial stress shifts the stress distribution. The zero stress point shifts away from the centroid to the location where the axial stress component is exactly canceled out by an equal and opposite bending stress component ($P/A = My/I$)."
+    }
+  ]
+}
